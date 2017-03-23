@@ -1,4 +1,4 @@
-# Fatal-Fury-Chronicals
+# Fatal-Fury-Chronicles
 An OpenBOR module based on the Fatal Fury Series.
 
 This module was first conceived in late 2007, and has undergone dozens of redesigns. It is intended to tell the story of Fatal Fury One, and originally used assets from that game, but has since been upgraded to KOF Era resources.
