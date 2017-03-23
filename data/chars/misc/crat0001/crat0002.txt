@@ -1,0 +1,40 @@
+#*****icons*****
+
+icon	data/chars/misc/crat0001/icon0001		#Normal. 					
+	
+#*****General*****
+
+name		crat0002
+health		20
+type		obstacle
+hmap		1 9
+gfxshadow	1
+
+#*****Alternates*******				
+
+palette	       data/chars/misc/crat0001/crat0001	#Brown.
+alternatepal   data/chars/misc/crat0001/crat0001	#KO.
+alternatepal   data/chars/misc/crat0001/crat0001	#Burn.
+alternatepal   data/chars/misc/crat0001/crat0001	#Shock.
+alternatepal   data/chars/misc/crat0001/crat0001	#Freeze.
+alternatepal   data/chars/misc/crat0001/crat0001	#Poison.
+alternatepal   data/chars/misc/crat0001/crat0001	#Reserved.
+alternatepal   data/chars/misc/crat0001/crat0001	#Reserved.
+alternatepal   data/chars/misc/crat0001/crat0001	#Reserved.
+alternatepal   data/chars/misc/crat0001/crat0001	#Reserved.
+#alternatepal   data/chars/misc/crat0001/crat0001	#Reserved.
+alternatepal   data/chars/misc/crat0001/aapa0011	#Burnished.
+alternatepal   data/chars/misc/crat0001/aapa0012	#Black.
+alternatepal   data/chars/misc/crat0001/aapa0012	#Blue.
+	
+anim idle
+	delay	1000
+	offset	30 67
+	bbox	0 -20 57 80
+		frame	data/chars/misc/crat0001/crat0002
+
+anim fall
+	delay	1000
+	offset	30 67
+		frame	data/chars/misc/crat0001/crat0002
+

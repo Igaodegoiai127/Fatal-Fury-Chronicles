@@ -1,0 +1,43 @@
+name	Gold
+health	0
+score	5000
+type	item
+shadow	0
+icon	data/chars/misc/goldicon.gif
+
+
+anim idle
+	loop	1
+	offset	9 13
+	bbox	0 0 17 13
+	delay	200
+	frame	data/chars/misc/gold00.gif
+	delay	15
+
+
+anim  grabforward
+	jumpframe  5  1  1  0
+	dropframe  7
+	landframe  8
+	flipframe  8
+		delay  8
+		offset  70  158
+	frame  data/chars/terry/throw/terr0583.png
+		offset  70  155
+	frame  data/chars/terry/caps/0302.png
+		offset  70  170
+		move  -50
+	frame  data/chars/terry/caps/0132.png
+		offset  70  158
+		move  50
+	frame  data/chars/terry/caps/0572.png
+		move  0
+	frame  data/chars/terry/caps/0515.png
+		offset  70  150
+	frame  data/chars/terry/caps/0330.png
+	frame  data/chars/terry/caps/0579.png
+		offset  100  150
+	frame  data/chars/terry/caps/0578.png
+		offset  70  158
+	frame  data/chars/terry/caps/0406.png
+

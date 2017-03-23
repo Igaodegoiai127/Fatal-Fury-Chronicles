@@ -1,0 +1,23 @@
+#Water strip for Sound Beach.
+
+name	 	beac0004
+health	 	1
+type	 	panel
+Speedf   	0.3
+setlayer 	-11
+globalmap 	1
+#alpha           4
+offscreenkill	1000000
+
+anim idle 
+
+	loop	1
+	delay	18
+	offset	0 -32
+	bbox	0
+		frame data/bgs/beach/drop0012
+		frame data/bgs/beach/drop0014
+		frame data/bgs/beach/drop0013
+		frame data/bgs/beach/drop0014
+	
+	

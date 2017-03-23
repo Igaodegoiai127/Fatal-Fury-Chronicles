@@ -1,0 +1,15 @@
+/*
+Animation script: 
+
+Ray McDougal (AI)
+
+*/
+
+#include "data/scripts/vars/entity.h"
+
+#include "data/scripts/com/bind0004.h" 
+#include "data/scripts/com/bind0010.h" 
+#include "data/scripts/com/dama0001.h" 
+#include "data/scripts/com/proj0002.h" 
+#include "data/scripts/com/soun0005.h" 
+#include "data/scripts/com/stat0001.h" 

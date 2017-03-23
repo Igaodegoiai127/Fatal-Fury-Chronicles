@@ -1,0 +1,717 @@
+#*****icons*****
+
+icon         data/chars/raiden/aaic0001 					#(Path) Icon displayed next to life bar.
+icondie	     data/chars/raiden/aaic0002 					#(Path) Player icon displayed upon death.
+iconpain     data/chars/raiden/aaic0003 					#(Path) Player icon displayed when hit.
+
+
+name			Raiden
+type			enemy
+health			100
+speed			11
+running      	18 4 2 1 1
+shadow			0
+score			1
+knockdowncount	3
+antigravity		-50
+projectilehit   enemy obstacle
+holdblock		1
+blockpain		1
+atchain			1 
+grabturn 		1
+height			120
+atchain			1 2 3
+
+animationscript 	data/chars/raiden/scripts/ani_p.c
+didblockscript  	data/scripts/z_block.c
+takedamagescript	data/scripts/z_damage.c 
+didhitscript		data/scripts/z_hit.c
+onmovezscript		data/scripts/z_movez.c
+onspawnscript		data/scripts/z_spawn.c 
+
+palette 			data/chars/raiden/aapa0000
+alternatepal		data/chars/raiden/aapa0011
+
+#*****Commands*****************************************************************************
+
+com          a2       	freespecial  		#Back dash
+#com          f u a    	freespecial2  		#Force plane up.
+#com          f d a    	freespecial3  		#Froce plane down.
+#com	     d u a    	freespecial4		#Plane attack up.
+#com	     u d a    	freespecial5		#Plane attack down.
+
+anim waiting
+
+	delay	1
+	offset	100 272
+	fshadow 0	
+		frame	data/chars/misc/blan0001
+	offset	100 122
+		frame	data/chars/raiden/aawa0001
+	offset	100 132
+		frame	data/chars/raiden/aawa0001
+	offset	100 142
+		frame	data/chars/raiden/aawa0001
+	offset	100 152
+		frame	data/chars/raiden/aawa0001
+	offset	100 162
+		frame	data/chars/raiden/aawa0001
+	offset	100 172
+		frame	data/chars/raiden/aawa0001
+	offset	100 182
+		frame	data/chars/raiden/aawa0001
+	offset	100 192
+		frame	data/chars/raiden/aawa0001
+	offset	100 202
+		frame	data/chars/raiden/aawa0001
+	offset	100 212
+		frame	data/chars/raiden/aawa0001
+	offset	100 222
+		frame	data/chars/raiden/aawa0001
+	offset	100 232
+		frame	data/chars/raiden/aawa0001
+	offset	100 242
+		frame	data/chars/raiden/aawa0001
+	offset	100 252
+		frame	data/chars/raiden/aawa0001
+	offset	100 262
+		frame	data/chars/raiden/aawa0001
+	offset	100 272	
+	sound	data/sounds/vrai0018.wav
+		frame	data/chars/raiden/aawa0002					
+
+anim select
+
+	delay	8
+	offset	100 272
+	fshadow 0
+		frame	data/chars/raiden/aase0001
+		frame	data/chars/raiden/aase0002
+	sound	data/sounds/vrai0020.wav
+		frame	data/chars/raiden/aase0003	
+		frame	data/chars/raiden/aase0004
+		frame	data/chars/raiden/aase0005
+		frame	data/chars/raiden/aase0006
+	delay	14	
+		frame	data/chars/raiden/aase0007
+		frame	data/chars/raiden/aase0008
+		frame	data/chars/raiden/aase0009
+		frame	data/chars/raiden/aase0010
+	delay	50
+		frame	data/chars/raiden/aase0011
+		
+		
+
+
+anim idle
+	
+	loop	1
+	offset	120 190
+	bbox 	95 75 50 120
+	delay	12
+		frame	data/chars/raiden/0007 
+		frame	data/chars/raiden/0008
+		frame	data/chars/raiden/0009
+		frame	data/chars/raiden/0010
+		frame	data/chars/raiden/0009
+		frame	data/chars/raiden/0008
+
+anim walk
+	
+	loop	1
+	offset	120 190
+	bbox 	95 75 50 120
+	delay	12
+		frame	data/chars/raiden/0365
+		frame	data/chars/raiden/0366
+		frame	data/chars/raiden/0367
+		frame	data/chars/raiden/0368
+		frame	data/chars/raiden/0369
+		frame	data/chars/raiden/0370
+		frame	data/chars/raiden/0367
+		frame	data/chars/raiden/0366
+
+anim backwalk
+
+	loop	1
+	offset	120 190
+	bbox 	95 75 50 120
+	delay	12
+		frame	data/chars/raiden/0364
+		frame	data/chars/raiden/0363
+		frame	data/chars/raiden/0362
+		frame	data/chars/raiden/0361
+		frame	data/chars/raiden/0360
+		frame	data/chars/raiden/0359
+		frame	data/chars/raiden/0358
+		frame	data/chars/raiden/0357
+
+anim run
+
+	loop	1
+	offset	120 190
+	bbox 	95 75 50 120
+	delay	10
+		frame	data/chars/raiden/0330
+		frame	data/chars/raiden/0329
+		frame	data/chars/raiden/0328
+		frame	data/chars/raiden/0327
+		frame	data/chars/raiden/0326
+		frame	data/chars/raiden/0325
+
+anim follow49 
+        
+	cancel  3 5 0 a freespecial6	
+
+	delay	6
+	offset	120 190
+	bbox 	95 75 50 120
+		frame	data/chars/raiden/0133
+		frame	data/chars/raiden/0132
+	attack	145 80 75 35 10 0 0 0 15
+		frame	data/chars/raiden/0131
+	attack	0
+	delay	8
+		frame	data/chars/raiden/0130
+		frame	data/chars/raiden/0129
+		frame	data/chars/raiden/0128
+
+anim attack1
+        
+	cancel  3 5 0 a freespecial6	
+	
+	jumpframe 2 2.5 0.5 0
+	landframe 6 dust0001
+	
+	delay	8
+	offset	120 190
+	bbox 	95 75 50 120
+		frame	data/chars/raiden/0193
+		frame	data/chars/raiden/0192	
+		frame	data/chars/raiden/0191	
+		frame	data/chars/raiden/0190
+	attack	135 75 77 53 20 1 0 0 20
+		frame	data/chars/raiden/0189
+	delay	-1000
+		frame	data/chars/raiden/0188	
+	delay	8	
+	attack	0
+		frame	data/chars/raiden/0341
+		frame	data/chars/raiden/0340
+		frame	data/chars/raiden/0339
+		frame	data/chars/raiden/0338
+
+anim attackup
+
+	#Up dash.
+	
+	jumpframe 2 2 0.5 -1
+	landframe 3 
+
+	delay	9
+	offset	120 190
+	bbox 	95 75 50 120
+		frame	data/chars/raiden/0349
+		frame	data/chars/raiden/0351	
+	bbox	0
+	delay	-1
+	sound	data/sounds/jump.wav 						#Sound effect.
+		frame	data/chars/raiden/0333
+	delay	8
+	bbox 	95 75 50 120
+	sound	data/sounds/sound002.wav					#Sound effect.
+		frame	data/chars/raiden/0332
+		frame	data/chars/raiden/0331
+
+anim attackdown
+
+	#Down dash.
+	
+	jumpframe 2 2 0.5 1
+	landframe 3 
+
+	delay	9
+	offset	120 190
+	bbox 	95 75 50 120
+		frame	data/chars/raiden/0349
+		frame	data/chars/raiden/0351	
+	bbox	0
+	delay	-1
+	sound	data/sounds/jump.wav 						#Sound effect.
+		frame	data/chars/raiden/0333
+	delay	8
+	bbox 	95 75 50 120
+	sound	data/sounds/sound002.wav					#Sound effect.
+		frame	data/chars/raiden/0332
+		frame	data/chars/raiden/0331
+
+#*****Special******************************************************************************
+
+anim cant
+
+	delay	6
+	offset 	120 190
+	bbox	75 110 35 90
+	sound	data/sounds/vand0004.wav
+		frame	data/chars/andy/0008
+		frame	data/chars/andy/0009
+		frame	data/chars/andy/0058
+	delay	40
+		frame	data/chars/andy/0059
+	delay	10
+		frame	data/chars/andy/0058
+		frame	data/chars/andy/0009
+		frame	data/chars/andy/0008
+
+#anim jumpcant 
+#anim special		
+#anim special2	
+
+anim freespecial 
+
+	#Back dash.
+	
+	jumpframe 2 2 -1.2
+	landframe 3 
+
+	delay	9
+	offset	120 190
+	bbox 	95 75 50 120
+		frame	data/chars/raiden/0349
+		frame	data/chars/raiden/0351	
+	bbox	0
+	delay	-1
+	sound	data/sounds/jump.wav 						#Sound effect.
+		frame	data/chars/raiden/0324
+	delay	8
+	bbox 	95 75 50 120
+	sound	data/sounds/sound002.wav					#Sound effect.
+		frame	data/chars/raiden/0323
+		frame	data/chars/raiden/0322
+	
+
+anim freespecial6
+
+	#one-two
+        
+	cancel  6 7 0 a freespecial7
+	
+	delay	8
+	offset	120 190
+	bbox 	95 75 50 120
+		frame	data/chars/raiden/0205
+		frame	data/chars/raiden/0204
+	delay	6
+		frame	data/chars/raiden/0203
+		frame	data/chars/raiden/0202
+	attack	145 80 75 35 10 0 0 0 15
+		frame	data/chars/raiden/0201
+	attack	0
+	delay	7
+		frame	data/chars/raiden/0200
+		frame	data/chars/raiden/0199
+		frame	data/chars/raiden/0205
+
+anim freespecial7
+
+	#Big boot
+        
+	delay	8
+	offset	120 190
+	bbox 	95 75 50 120
+		frame	data/chars/raiden/0141
+	move	1
+		frame	data/chars/raiden/0140
+		frame	data/chars/raiden/0139		
+	delay	12
+	attack	145 80 75 35 15 2 0 0 15
+	dropv   5 1 0
+		frame	data/chars/raiden/0138
+	attack	0
+		frame	data/chars/raiden/0137
+	delay	10
+	move	0
+		frame	data/chars/raiden/0136
+		frame	data/chars/raiden/0139
+		frame	data/chars/raiden/0140
+		frame	data/chars/raiden/0141
+
+#*************
+
+anim follow51
+
+	#Defending poses.
+	
+	delay	-1
+	offset	100 170
+	bbox	0
+		frame	data/chars/raiden/0413 				#0	Grabbed.
+		frame	data/chars/raiden/0414				#1	Grabbed Pain.
+		frame	data/chars/raiden/0415				#2	Horizontal Up.
+		frame	data/chars/raiden/0416				#3	Horizontal Down.
+		frame	data/chars/raiden/0417				#4	Vertical Up.
+		frame	data/chars/raiden/0418				#5	Vertical Down.
+		frame	data/chars/raiden/0419				#6	Tilt Up.
+		frame	data/chars/raiden/0420				#7	Tilt Down.
+		frame	data/chars/raiden/0421				#8	Vertical Down pain.
+		frame	data/chars/raiden/0422				#9	Down Up.
+		frame	data/chars/raiden/0423				#10	Down Up Pain.
+		frame	data/chars/raiden/0424				#11	Falling Up.
+		frame	data/chars/raiden/0425				#12	Falling Up tilted.
+	offset	100 165
+		frame	data/chars/raiden/0426				#13	Horizontal Up pain.
+
+anim follow100
+
+	#Air block.
+
+	delay	30
+	offset	120 190
+	bbox	95 95 35 60
+	@cmd	ai0001 "blocking" 1 0 0 
+		frame	data/chars/raiden/0237
+	delay	12
+	@cmd	ai0001 "blocking" 0 0 0
+		delay	10
+		frame	data/chars/raiden/0354
+		frame	data/chars/raiden/0355
+		frame	data/chars/raiden/0356
+
+#******Grappling***************************************************************************
+
+anim grab
+
+	delay	8
+	offset	120 190
+	bbox 	95 75 50 120
+		frame	data/chars/raiden/0319
+		frame   data/chars/raiden/0318
+
+anim grabwalk
+	
+	loop	1
+	offset	120 190
+	bbox 	95 75 50 120
+	delay	12
+
+		frame	data/chars/raiden/0365
+		frame	data/chars/raiden/0366
+		frame	data/chars/raiden/0367
+		frame	data/chars/raiden/0368
+		frame	data/chars/raiden/0369
+		frame	data/chars/raiden/0370
+		frame	data/chars/raiden/0367
+		frame	data/chars/raiden/0366
+
+
+#*****Jumping******************************************************************************
+	
+anim jumpdelay
+	
+	delay	9
+	offset	120 190
+	bbox	75 135 30 65
+		frame	data/chars/raiden/0349
+		frame	data/chars/raiden/0351
+			
+anim jumpland
+
+	delay	8
+	offset	120 190
+	bbox	75 135 30 65
+	sound	data/sounds/sound002.wav					#Sound effect.
+		frame	data/chars/raiden/0352
+		frame	data/chars/raiden/0351
+	delay	6
+		frame	data/chars/raiden/0350
+		frame	data/chars/raiden/0349
+		
+		
+anim jump #2
+
+	dropframe 4
+	
+	delay	10
+	offset	120 190
+	bbox	95 95 35 60
+		frame	data/chars/raiden/0356
+		frame	data/chars/raiden/0355
+		frame	data/chars/raiden/0354
+	delay	-1
+		frame	data/chars/raiden/0353
+	delay	10
+		frame	data/chars/raiden/0354
+		frame	data/chars/raiden/0355
+		frame	data/chars/raiden/0356
+	
+
+#anim forwardjump
+#anim runjump		
+#anim jumpattack	
+#anim jumpattack2
+#anim jumpattack3
+#anim jumpforward
+#anim runjumpattack
+	
+		
+
+#*****Injury and Defence*******************************************************************
+
+anim block
+
+	#Defence.
+		
+	delay	6
+	offset	120 190
+	bbox 	95 75 50 120
+		frame	data/chars/raiden/0337
+		
+anim blockpain
+	
+	delay	4
+	offset	120 190
+	bbox 	95 75 50 120
+	move	-2
+		frame	data/chars/raiden/0336
+	move	0
+	offset	123 190
+		frame	data/chars/raiden/0336
+	offset	120 190
+		frame	data/chars/raiden/0336		
+	offset	123 190
+		frame	data/chars/raiden/0336
+	delay	20
+	offset	120 190
+		frame	data/chars/raiden/0337
+
+anim blockpain6
+
+	delay	4
+	offset	120 190
+	bbox 	95 75 50 120
+	movez	-2
+		frame	data/chars/raiden/0243
+	move	0
+	offset	123 190
+		frame	data/chars/raiden/0243
+	offset	120 190
+		frame	data/chars/raiden/0243		
+	offset	123 190
+		frame	data/chars/raiden/0243
+	delay	20
+	offset	120 190
+		frame	data/chars/raiden/0244
+
+anim blockpain7
+
+	delay	4
+	offset	120 190
+	bbox 	95 75 50 120
+	movez	2
+		frame	data/chars/raiden/0243
+	move	0
+	offset	123 190
+		frame	data/chars/raiden/0243
+	offset	120 190
+		frame	data/chars/raiden/0243		
+	offset	123 190
+		frame	data/chars/raiden/0243
+	delay	20
+	offset	120 190
+		frame	data/chars/raiden/0244
+
+anim rise
+	
+	delay	15
+	offset	120 190
+	bbox 	95 75 50 120
+		frame	data/chars/raiden/0341
+		frame	data/chars/raiden/0340
+		frame	data/chars/raiden/0339
+		frame	data/chars/raiden/0338
+		frame	data/chars/raiden/0331
+
+anim grabbed
+
+	delay	3
+	offset	121 190
+	bbox 	95 75 50 120
+		frame	data/chars/raiden/0017
+	offset 	119 190
+		frame	data/chars/raiden/0017
+	offset	121 190	
+		frame	data/chars/raiden/0017
+	offset	119 190	
+		frame	data/chars/raiden/0017
+	delay	50
+	offset  120 190
+		frame	data/chars/raiden/0017
+
+anim pain
+
+	jumpframe 0 0 -0.1 0
+        
+	delay	6
+	offset	120 190
+	bbox 	95 75 50 120
+		frame	data/chars/raiden/0021
+		frame	data/chars/raiden/0020
+		frame	data/chars/raiden/0022
+
+anim bpain 
+
+	jumpframe 0 0 -0.1 0
+
+	delay	5
+	bbox	85 100 30 40
+	offset	100 200	
+		frame	data/chars/raiden/0020
+	offset	103 200
+		frame	data/chars/raiden/0020
+	offset	100 200	
+		frame	data/chars/raiden/0020
+	offset	103 200
+		frame	data/chars/raiden/0020
+	offset	100 200	
+		frame	data/chars/raiden/0020
+	offset	103 200
+		frame	data/chars/raiden/0020
+	offset	100 200	
+		frame	data/chars/raiden/0020
+	offset	103 200
+		frame	data/chars/raiden/0020
+	offset	100 200	
+		frame	data/chars/raiden/0020
+	offset	103 200
+		frame	data/chars/raiden/0020
+	offset	100 200	
+		frame	data/chars/raiden/0020
+	offset	103 200
+		frame	data/chars/raiden/0020
+	offset	100 200	
+		frame	data/chars/raiden/0020
+	offset	103 200
+		frame	data/chars/raiden/0020
+	offset	100 200	
+		frame	data/chars/raiden/0020
+	offset	103 200
+		frame	data/chars/raiden/0020
+	offset	100 200	
+		frame	data/chars/raiden/0020
+	offset	103 200
+		frame	data/chars/raiden/0020
+	offset	100 200
+		frame	data/chars/raiden/0021
+		frame	data/chars/raiden/0022
+
+anim burn
+	
+	dropframe 1
+	landframe 4
+
+	delay	-1
+	offset	120 190
+	bbox 	95 75 50 120
+		frame	data/chars/raiden/0398
+	delay	20
+		frame	data/chars/raiden/0390
+		frame	data/chars/raiden/0391
+	delay	1000
+		frame	data/chars/raiden/0392
+	delay	20
+	attack	0
+	bbox	0
+		frame	data/chars/raiden/0391
+		frame	data/chars/raiden/0342
+
+anim fall
+	
+	dropframe 1
+	landframe 4
+
+	delay	-1
+	offset	120 190
+	bbox 	95 75 50 120
+		frame	data/chars/raiden/0398
+	delay	20
+		frame	data/chars/raiden/0390
+		frame	data/chars/raiden/0391
+	delay	1000
+		frame	data/chars/raiden/0392
+	delay	20
+	attack	0
+	bbox	0
+		frame	data/chars/raiden/0391
+		frame	data/chars/raiden/0342
+
+anim fall5
+	
+	#tossed
+
+	dropframe 	1
+	landframe 	2
+	quakeframe 	2 4 -2
+
+	delay	-1
+	offset	120 190
+	bbox 	95 75 50 120
+	attack	95 75 50 120 15 1
+		frame	data/chars/raiden/0394
+	offset	120 150
+		frame	data/chars/raiden/0400
+	delay	5
+	offset	120 190
+	attack	0
+	bbox	0
+		frame	data/chars/raiden/0391
+		frame	data/chars/raiden/0391
+		frame	data/chars/raiden/0391
+		frame	data/chars/raiden/0391
+	delay	20
+		frame	data/chars/raiden/0342	
+
+anim fall8
+
+	#Splat.
+
+	landframe  1 
+	quakeframe 1 4 -2
+
+	delay	-1
+	offset	100 190
+	bbox	95 75 50 120
+	attack	95 75 50 120 12 1
+		frame	data/chars/raiden/0394	
+	delay	5
+	bbox	0
+	attack	0
+		frame	data/chars/raiden/0393
+		frame	data/chars/raiden/0393
+		frame	data/chars/raiden/0393
+		frame	data/chars/raiden/0393
+	delay	10
+		frame	data/chars/raiden/0394
+		frame	data/chars/raiden/0391
+		frame	data/chars/raiden/0342
+
+anim fall9
+
+	#Flat fall.
+
+	landframe  1 
+	quakeframe 1 4 -1
+	
+	delay	-1
+	offset	100 190
+	bbox	95 75 50 120
+	attack	95 75 50 120 12 1
+		frame	data/chars/raiden/0403	
+	delay	5
+	bbox	0
+	attack	0
+		frame	data/chars/raiden/0391
+		frame	data/chars/raiden/0391
+		frame	data/chars/raiden/0391
+		frame	data/chars/raiden/0391
+		frame	data/chars/raiden/0342
+

@@ -1,0 +1,29 @@
+#Power up scroll.
+
+#*****icons*****
+
+icon	data/chars/misc/pickups/aapa0004		#Normal. 					
+	
+#*****General*****
+
+name		scro0001
+health		1
+type		item
+hmap		1 9
+gfxshadow	1
+
+onmovezscript	data/scripts/z_movez.c
+didhitscript 	data/scripts/hit0002.c
+
+#*****Alternates*******				
+
+anim idle
+	delay	1000
+	offset	8 20
+	bbox	0 0 15 15
+		frame	data/chars/misc/pickups/scro0001
+
+anim fall
+	delay	1000
+	offset	8 20
+		frame	data/chars/misc/pickups/scro0001

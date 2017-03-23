@@ -1,0 +1,253 @@
+#*****Notes***************************************************************************
+
+#Andy bound visuals
+
+#*****Settings***************************************************************************
+
+#*****icons*****
+#*****General*****
+
+name        	andybe 	   			
+type	     	obstacle						
+health	     	1000
+antigravity  	1						
+alpha	     	1
+candamage    	none
+offscreenkill 	200
+noatflash 		1 
+flash			none
+blockflash		none
+mp				1000
+mprate			0
+komap			1 1
+
+#Immune to all attacks; responce to getting hit is be fully scripted.
+notgrab				1
+defense all			0 1000 0 1000 1000 0 0
+defense burn		0 1000 0 1000 1000 0 0
+defense shock		0 1000 0 1000 1000 0 0
+defense freeze		0 1000 0 1000 1000 0 0
+
+onspawnscript		data/scripts/spaw0011.c
+onkillscript		data/scripts/z_kill.c
+didhitscript		data/scripts/hit0003.c
+takedamagescript	data/scripts/dama0003.c
+#animationscript	data/scripts/blan0001.c
+
+#*****Alternates*******
+
+palette 			data/chars/misc/effects/effe0009/0001		#Geki Hishoken blast.
+alternatepal		data/chars/andy/pals/0001 					#KO.
+alternatepal   		data/chars/misc/effects/effe0015/0001 		#Shoryudan slash.
+alternatepal		data/chars/misc/effects/effe0010/0001		#Cho Reppa Dan
+
+#*****Commands*****************************************************************************
+#*****Basic********************************************************************************
+
+anim spawn
+	
+	delay	4
+	offset	100 200
+		frame	data/chars/misc/blan0001
+
+#*****Attack*******************************************************************************
+#*****Special******************************************************************************
+
+anim freespecial7
+
+	#Geki hishoken
+	fastattack 	1
+	forcedirection  1
+	
+	delay	2
+	offset  90 130
+		frame	data/chars/misc/effects/effe0009/0007	
+	attack	50 60 70 60 0 0 0 1 0
+	grabin	1 40
+	bbox	50 60 70 60 
+	noreflect	1
+		frame	data/chars/misc/effects/effe0009/0008
+		frame	data/chars/misc/effects/effe0009/0009
+		frame	data/chars/misc/effects/effe0009/0010
+		frame	data/chars/misc/effects/effe0009/0011
+		frame	data/chars/misc/effects/effe0009/0012
+		frame	data/chars/misc/effects/effe0009/0013
+		frame	data/chars/misc/effects/effe0009/0014
+		frame	data/chars/misc/effects/effe0009/0015
+		frame	data/chars/misc/effects/effe0009/0016
+		frame	data/chars/misc/effects/effe0009/0017
+		frame	data/chars/misc/effects/effe0009/0018
+		frame	data/chars/misc/effects/effe0009/0019
+		frame	data/chars/misc/effects/effe0009/0020
+		frame	data/chars/misc/effects/effe0009/0021
+	attack	0
+	bbox	0
+		frame	data/chars/misc/effects/effe0009/0022
+	delay	20
+		frame	data/chars/misc/blan0001
+	delay	4
+	offset  50 130
+		frame	data/chars/misc/effects/effe0009/0008
+	offset  25 80
+	attack	5 5 85 75 0 0 0 1 0
+	bbox	5 5 85 75
+		frame	data/chars/misc/effects/effe0009/0001
+	attack	0
+		frame	data/chars/misc/effects/effe0009/0002
+	attack	5 5 85 75 0 0 0 1 0
+		frame	data/chars/misc/effects/effe0009/0003
+	attack	0
+		frame	data/chars/misc/effects/effe0009/0004
+	attack	5 5 85 75 0 0 0 1 0
+		frame	data/chars/misc/effects/effe0009/0005
+	attack	0
+		frame	data/chars/misc/effects/effe0009/0006
+	attack	5 5 85 75 0 0 0 1 0
+		frame	data/chars/misc/effects/effe0009/0001
+	attack	0
+		frame	data/chars/misc/effects/effe0009/0002
+	attack	5 5 85 75 0 0 0 1 0
+		frame	data/chars/misc/effects/effe0009/0003
+	attack	0
+		frame	data/chars/misc/effects/effe0009/0004
+	attack	5 5 85 75 0 0 0 1 0
+		frame	data/chars/misc/effects/effe0009/0005
+	attack	0
+		frame	data/chars/misc/effects/effe0009/0006
+	attack	5 5 85 75 0 0 0 1 0
+		frame	data/chars/misc/effects/effe0009/0001
+	attack	0
+		frame	data/chars/misc/effects/effe0009/0002
+	attack	5 5 85 75 0 0 0 1 0
+		frame	data/chars/misc/effects/effe0009/0003
+	attack	0
+		frame	data/chars/misc/effects/effe0009/0004
+	attack	5 5 85 75 0 0 0 1 0
+		frame	data/chars/misc/effects/effe0009/0005
+	offset	47 97
+		frame	data/chars/misc/effects/effe0009/0023
+	attack	5 5 85 75 0 0 0 1 0
+		frame	data/chars/misc/effects/effe0009/0024
+	attack	0
+		frame	data/chars/misc/effects/effe0009/0025
+	attack	5 5 85 75 0 0 0 1 0
+		frame	data/chars/misc/effects/effe0009/0026
+	attack	0
+		frame	data/chars/misc/effects/effe0009/0027
+		frame	data/chars/misc/effects/effe0009/0028
+		frame	data/chars/misc/effects/effe0009/0029
+		frame	data/chars/misc/effects/effe0009/0030		
+
+anim freespecial10
+
+	#Shoryudan
+	
+	delay	4
+	offset	75 75
+	bbox	0
+		frame	data/chars/misc/effects/effe0015/0001
+		frame	data/chars/misc/effects/effe0015/0002
+		frame	data/chars/misc/effects/effe0015/0003
+		frame	data/chars/misc/effects/effe0015/0004
+		frame	data/chars/misc/effects/effe0015/0005
+		frame	data/chars/misc/effects/effe0015/0006
+		frame	data/chars/misc/effects/effe0015/0007
+		frame	data/chars/misc/effects/effe0015/0008
+		frame	data/chars/misc/effects/effe0015/0009
+		frame	data/chars/misc/effects/effe0015/0010
+		frame	data/chars/misc/effects/effe0015/0011
+		frame	data/chars/misc/effects/effe0015/0012		
+		frame	data/chars/misc/blan0001
+	
+
+anim freespecial18
+
+	#Cho Reppa Dan	
+
+	delay	-1000
+	offset	85 160
+		frame	data/chars/misc/blan0001
+		frame	data/chars/misc/blan0001
+		frame	data/chars/misc/blan0001
+		frame	data/chars/misc/blan0001
+		frame	data/chars/misc/blan0001	
+		frame	data/chars/misc/blan0001
+		frame	data/chars/misc/blan0001
+		frame	data/chars/misc/blan0001
+		frame	data/chars/misc/blan0001	
+		frame	data/chars/misc/effects/effe0010/0001
+		frame	data/chars/misc/effects/effe0010/0002
+		frame	data/chars/misc/effects/effe0010/0003
+		frame	data/chars/misc/effects/effe0010/0004
+		frame	data/chars/misc/effects/effe0010/0005
+		frame	data/chars/misc/effects/effe0010/0006
+		frame	data/chars/misc/effects/effe0010/0007	
+		frame	data/chars/misc/effects/effe0010/0008
+	offset	78 145
+		frame	data/chars/misc/effects/effe0011/0001
+		frame	data/chars/misc/effects/effe0011/0002
+		frame	data/chars/misc/effects/effe0011/0003
+		frame	data/chars/misc/effects/effe0011/0004
+		frame	data/chars/misc/effects/effe0011/0005
+		frame	data/chars/misc/effects/effe0011/0006
+		frame	data/chars/misc/effects/effe0011/0007	
+		frame	data/chars/misc/effects/effe0011/0008	
+		frame	data/chars/misc/blan0001		
+		frame	data/chars/misc/blan0001
+		frame	data/chars/misc/blan0001
+		frame	data/chars/misc/blan0001
+		frame	data/chars/misc/blan0001	
+
+#*****Followups****************************************************************************
+
+anim follow4
+
+	#Shin Cho Reppa Dan	
+
+	delay	-1000
+	offset	85 160
+		frame	data/chars/misc/blan0001
+		frame	data/chars/misc/blan0001
+		frame	data/chars/misc/blan0001
+		frame	data/chars/misc/blan0001	
+		frame	data/chars/misc/blan0001
+		frame	data/chars/misc/blan0001
+		frame	data/chars/misc/blan0001
+		frame	data/chars/misc/blan0001	
+		frame	data/chars/misc/effects/effe0013/0001
+		frame	data/chars/misc/effects/effe0013/0002
+		frame	data/chars/misc/effects/effe0013/0003
+		frame	data/chars/misc/effects/effe0013/0004
+		frame	data/chars/misc/effects/effe0013/0005
+		frame	data/chars/misc/effects/effe0013/0006
+		frame	data/chars/misc/effects/effe0013/0007	
+		frame	data/chars/misc/effects/effe0013/0008
+	offset	78 145
+		frame	data/chars/misc/effects/effe0014/0001
+		frame	data/chars/misc/effects/effe0014/0002
+		frame	data/chars/misc/effects/effe0014/0003
+		frame	data/chars/misc/effects/effe0014/0004
+		frame	data/chars/misc/effects/effe0014/0005
+		frame	data/chars/misc/effects/effe0014/0006
+		frame	data/chars/misc/effects/effe0014/0007	
+		frame	data/chars/misc/effects/effe0014/0008
+		frame	data/chars/misc/effects/effe0014/0009	
+		frame	data/chars/misc/effects/effe0014/0010
+		frame	data/chars/misc/effects/effe0014/0001
+		frame	data/chars/misc/effects/effe0014/0002
+		frame	data/chars/misc/effects/effe0014/0003
+		frame	data/chars/misc/effects/effe0014/0004
+		frame	data/chars/misc/effects/effe0014/0005
+		frame	data/chars/misc/blan0001	
+		frame	data/chars/misc/blan0001
+		frame	data/chars/misc/blan0001
+		frame	data/chars/misc/blan0001
+		frame	data/chars/misc/blan0001
+
+#*****Grappling****************************************************************************
+#*****Jumping******************************************************************************
+#*****Injury and Defence*******************************************************************
+#*****Footer*******************************************************************************
+
+#Always make sure to include a single blank line at bottom of file.
+

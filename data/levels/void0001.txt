@@ -1,0 +1,45 @@
+music		data/music/SoundB.bor
+
+BACKGROUND	data/chars/misc/blan0001
+panel		data/chars/misc/blan0001 none none
+ 
+order		a
+
+settime 	0
+bgspeed 	1 0 
+
+
+#---------------------
+
+spawn	Raiden
+map	8
+health	4000
+coords	550 170
+at	0
+
+spawn		crat0001
+item 		appl0001
+itemalias	Apple
+itemmap		12
+coords		240 210
+at		0
+
+#spawn	raid0001
+#map	8
+#health	400
+#coords	550 170
+#spawnscript data/scripts/spawn.c
+#at	0
+
+
+
+
+
+
+
+
+
+
+
+
+

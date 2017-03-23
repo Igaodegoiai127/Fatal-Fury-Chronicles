@@ -1,0 +1,95 @@
+colourselect 	1
+ajspecial 		1
+spdirection 	1 1 1 1
+maxfollows		120
+maxidles		4
+maxwalks		4
+maxattacks      10
+maxfreespecials 100
+maxattacktypes  20
+noaircancel     2
+
+#*****Flash/Hit sparks*****
+load	Flash		data/chars/misc/effects/models/flash/flash/flash.txt		#Standard hit flash.
+load	bflash		data/chars/misc/effects/models/flash/bflash/bflash.txt		#Standard block flash.
+load	pflash		data/chars/misc/effects/models/flash/pflash/pflash.txt		#Standard parry flash.
+load	iflash		data/chars/misc/effects/models/flash/iflash/iflash.txt		#Standard indirect flash.
+load	fflash		data/chars/misc/effects/models/flash/fflash/fflash.txt		#Standard fire flash.
+load	eflash		data/chars/misc/effects/models/flash/eflash/eflash.txt		#Standard electric flash.
+load    dust0001	data/chars/misc/effects/models/dust0001/dust0001.txt		#Fall dust effect.
+load    dust0002	data/chars/misc/effects/models/dust0002/dust0002.txt		#Takeoff dust effect.
+load    dust0003	data/chars/misc/effects/models/dust0003/dust0003.txt		#Land dust effect.
+load    dust0004	data/chars/misc/effects/models/dust0004/dust0004.txt		#Light impact dust effect.
+load    dust0005	data/chars/misc/effects/models/dust0005/dust0005.txt		#Heavy impact dust effect.
+load	hype0001	data/chars/misc/effects/models/text/hype0001/hype0001.txt	#Lvl 1 hyper spark.
+load	hype0002	data/chars/misc/effects/models/text/hype0002/hype0002.txt	#Lvl 2 hyper spark.
+load	hype0003	data/chars/misc/effects/models/text/hype0003/hype0003.txt	#Lvl 3 hyper spark.
+load	effe0001	data/chars/misc/effects/models/effe0001/effe0001.txt		#General one shot effects.
+
+#*****Items*****
+load	scro0001	data/chars/misc/pickups/scro0001.txt				#Power up scroll.
+know	appl0001	data/chars/misc/pickups/appl0001.txt				#Apple.
+know	Meat		data/chars/misc/pickups/meat.txt
+know	Money		data/chars/misc/pickups/money.txt
+know	Gold		data/chars/misc/pickups/gold.txt
+know    swit0001        data/chars/misc/pickups/swit0001/swit0001.txt				#Interact.
+
+#*****Obstacle*****
+know	crat0001	data/chars/misc/crat0001/crat0001.txt
+know	crat0002	data/chars/misc/crat0001/crat0002.txt
+
+#*****Generic Sub entities*****
+know	proj0001	data/chars/misc/effects/models/proj0001/proj0001.txt		#Small tornado projectile.
+
+#*****Backdrops/weather*****************************************************
+
+#*****Howard Arena*****
+
+#*****Sound Beach*****
+
+know	beac0001	data/bgs/beach/beac0001.txt				#Sound beach background layer 0a.
+know	beac0002	data/bgs/beach/beac0002.txt				#Sound beach background layer 0b.
+know	beac0003	data/bgs/beach/beac0003.txt				#Sound beach background layer 1a.
+know	beac0004	data/bgs/beach/beac0004.txt				#Sound beach background layer 1b.
+know	beac0005	data/bgs/beach/beac0005.txt				#Sound beach background layer 1c.
+know	beac0006	data/bgs/beach/beac0006.txt				#Sound beach background layer 2a.
+know	beac0007	data/bgs/beach/beac0007.txt				#Sound beach foreground layer 0a.
+know	beac0008	data/bgs/beach/beac0008.txt				#Sound beach foreground layer 0b.
+know	beac0009	data/bgs/beach/boat/beac0009.txt		#Boat for Sound Beach.
+
+#*****Sound Beach Deck*****
+
+know	deck0001	data/bgs/deck/deck0001.txt				#Sound beach deck background layer 0a.
+know	deck0002	data/bgs/deck/deck0002.txt				#Sound beach deck elec pole.
+
+#*****Characters************************************************************
+
+#*****Terry Bogard*****
+
+#load    Terry		data/chars/terry/terry.txt
+
+#*****Andy Bogard*****
+
+know	andybe		data/chars/andy/andybe.txt				#Bound visuals.
+know	andypa		data/chars/andy/andypa.txt				#Pause visuals.
+load	Andy		data/chars/andy/andy0001.txt				#PC Andy.
+
+#*****Duck King*****
+
+#*****Joe Higashi*****
+
+#*****Raiden*****
+
+#know	raid0001	data/chars/raiden/raiden.txt
+#load	Raiden		data/chars/raiden/raid0001.txt
+
+#*****Ray*****
+
+load	Ray		data/chars/ray/ray.txt
+load    Ray_		data/chars/ray/rayp.txt
+
+#*****Ryo Sakazaki*****
+
+#load    Ryo		data/chars/ryo/ryo.txt
+
+

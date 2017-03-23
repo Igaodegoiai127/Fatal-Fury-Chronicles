@@ -1,0 +1,18 @@
+#Boardwalk for sound beach.
+
+name	 	beac0007
+health	 	1
+type	 	panel
+setlayer 	100
+globalmap 	1
+offscreenkill	1000000
+
+anim idle 
+
+	delay	25
+	offset	0 -32
+	bbox	0
+		frame data/bgs/beach/fore0001
+		
+	
+	

@@ -1,0 +1,22 @@
+#City for sound beach.
+
+name	 	beac0003
+health	 	1
+type	 	panel
+Speedf   	0.3
+setlayer 	-11
+globalmap 	1
+offscreenkill   1000000
+
+anim idle 
+
+	loop	1
+	delay	15
+	offset	0 -32
+	bbox	0
+	frame data/bgs/beach/drop0003
+	frame data/bgs/beach/drop0004
+	frame data/bgs/beach/drop0005
+	frame data/bgs/beach/drop0004
+	
+	

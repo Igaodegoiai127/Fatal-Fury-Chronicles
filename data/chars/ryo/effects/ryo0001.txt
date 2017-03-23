@@ -1,0 +1,72 @@
+#*****Notes***************************************************************************
+
+#Ko'oh Ken Fireball II (enemy).
+
+#*****Settings***************************************************************************
+
+#*****icons*****
+#*****General*****
+
+name         ryo0001    					
+type	     enemy   						
+health	     100						
+antigravity  100
+speed	     20
+alpha	     1
+remove	     1
+candamage    player npc obstacle
+lifespan     2
+
+#*****Player Specific*****
+#*****NPC/Enemy Specific*****
+#*****Inert Specfic*****
+#*****Sub Entites*****
+#*****Scripts*****
+
+#animationscript data/scripts/com0001.c
+
+#*****Alternates*******
+#*****Commands*****************************************************************************
+#*****Basic********************************************************************************
+
+anim spawn
+
+	delay	3
+	offset	32 65
+	attack	20 20 40 25 28 
+	move	60
+	
+	sound	data/sounds/sound015.wav
+	frame	data/chars/ryo/effects/ryo0206
+
+anim idle
+
+	loop	1
+	delay	3
+	offset	32 65
+	attack	20 20 40 25 28 
+	frame	data/chars/ryo/effects/ryo0203
+	frame	data/chars/ryo/effects/ryo0204
+	frame	data/chars/ryo/effects/ryo0205
+	frame	data/chars/ryo/effects/ryo0206
+		
+#*****Attack*******************************************************************************
+
+anim attack1
+	
+	delay	8
+	offset	12 50
+	frame	data/chars/ryo/effects/ryo0207
+	frame	data/chars/ryo/effects/ryo0208
+	frame	data/chars/ryo/effects/ryo0209
+	frame	data/chars/ryo/effects/ryo0210
+
+#*****Special******************************************************************************
+#*****Followups****************************************************************************
+#*****Grappling****************************************************************************
+#*****Jumping******************************************************************************
+#*****Injury and Defence*******************************************************************
+#*****Footer********************************************************************************
+
+#Always make sure to include a single blank line at bottom of file.
+

@@ -1,0 +1,23 @@
+#Island for Sound Beach.
+
+name	 	beac0006
+health	 	1
+type	 	panel
+Speedf   	0.4
+setlayer 	-12
+globalmap 	1
+offscreenkill	1000000
+
+
+anim idle 
+
+	loop	1
+	delay	25
+	offset	0 -32
+	bbox	0
+		frame data/bgs/beach/drop0001
+		frame data/bgs/beach/drop0018
+		frame data/bgs/beach/drop0002
+	
+	
+	

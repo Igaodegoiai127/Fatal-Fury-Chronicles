@@ -1,0 +1,23 @@
+#Dock for Sound Beach.
+
+name	 	beac0005
+health	 	1
+type	 	panel
+Speedf   	0.3
+setlayer 	-11
+globalmap 	1
+#alpha           4
+offscreenkill 	1000000
+
+anim idle 
+
+	loop	1
+	delay	18
+	offset	0 -32
+	bbox	0
+		frame data/bgs/beach/drop0015
+		frame data/bgs/beach/drop0016
+		frame data/bgs/beach/drop0017
+		frame data/bgs/beach/drop0016
+	
+	

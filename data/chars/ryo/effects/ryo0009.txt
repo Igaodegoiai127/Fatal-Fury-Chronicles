@@ -1,0 +1,84 @@
+#*****Notes***************************************************************************
+
+#Tengu Sandles.
+
+#*****Settings***************************************************************************
+
+#*****icons*****
+#*****General*****
+
+name         ryo0009    					
+type	     pshot   						
+health	     100						
+speedf	     0.5
+candamage    enemy obstacle
+lifespan     2
+
+#*****Player Specific*****
+#*****NPC/Enemy Specific*****
+#*****Inert Specfic*****
+#*****Sub Entites*****
+#*****Scripts*****
+
+animationscript data/scripts/com0001.c
+
+#*****Alternates*******
+#*****Commands*****************************************************************************
+#*****Basic********************************************************************************
+
+anim idle
+
+	loop	1
+	delay	10
+	offset	10 10
+	@cmd 	autodraw0003 0 0 0 0 0 0 -1 0 90
+		frame	data/chars/ryo/effects/ryo0267
+	@cmd 	autodraw0003 0 0 0 0 0 0 -1 0 135
+		frame	data/chars/ryo/effects/ryo0267
+	@cmd	autodraw0003 0 0 0 0 0 0 -1 0 180
+		frame	data/chars/ryo/effects/ryo0267
+	@cmd	autodraw0003 0 0 0 0 0 0 -1 0 225
+		frame	data/chars/ryo/effects/ryo0267
+	@cmd	autodraw0003 0 0 0 0 0 0 -1 0 270
+		frame	data/chars/ryo/effects/ryo0267
+	@cmd	autodraw0003 0 0 0 0 0 0 -1 0 315
+		frame	data/chars/ryo/effects/ryo0267
+	@cmd	autodraw0003 0 0 0 0 0 0 -1 0 360
+		frame	data/chars/ryo/effects/ryo0267
+	@cmd	autodraw0003 0 0 0 0 0 0 -1 0 45
+		frame	data/chars/ryo/effects/ryo0267
+
+		
+#*****Attack*******************************************************************************
+
+anim attack1
+	
+	delay	3
+	offset	10 10
+	sound	data/sounds/hit002.wav
+	@cmd 	autodraw0003 0 0 0 0 0 0 -1 0 90
+		frame	data/chars/ryo/effects/ryo0267
+	@cmd 	autodraw0003 0 0 0 0 0 0 -1 0 135
+		frame	data/chars/ryo/effects/ryo0267
+	@cmd	autodraw0003 0 0 0 0 0 0 -1 0 180
+		frame	data/chars/ryo/effects/ryo0267
+	@cmd	autodraw0003 0 0 0 0 0 0 -1 0 225
+		frame	data/chars/ryo/effects/ryo0267
+	@cmd	autodraw0003 0 0 0 0 0 0 -1 0 270
+		frame	data/chars/ryo/effects/ryo0267
+	@cmd	autodraw0003 0 0 0 0 0 0 -1 0 315
+		frame	data/chars/ryo/effects/ryo0267
+	@cmd	autodraw0003 0 0 0 0 0 0 -1 0 360
+		frame	data/chars/ryo/effects/ryo0267
+	@cmd	autodraw0003 0 0 0 0 0 0 -1 0 45
+		frame	data/chars/ryo/effects/ryo0267
+
+#*****Special******************************************************************************
+#*****Followups****************************************************************************
+#*****Grappling****************************************************************************
+#*****Jumping******************************************************************************
+#*****Injury and Defence*******************************************************************
+#*****Footer********************************************************************************
+
+#Always make sure to include a single blank line at bottom of file.
+

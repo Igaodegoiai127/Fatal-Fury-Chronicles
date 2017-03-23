@@ -1,0 +1,41 @@
+#*****icons*****
+
+icon	data/chars/misc/pickups/aapa0000		#Normal. 					
+	
+#*****General*****
+
+name		appl0001
+health		50
+type		item
+hmap		1 9
+gfxshadow	1
+
+onmovezscript	data/scripts/z_movez.c
+
+#*****Alternates*******				
+
+palette	       data/chars/misc/pickups/aapa0000	#Red Delicious.
+alternatepal   data/chars/misc/pickups/aapa0000	#KO.
+alternatepal   data/chars/misc/pickups/aapa0000	#Burn.
+alternatepal   data/chars/misc/pickups/aapa0000	#Shock.
+alternatepal   data/chars/misc/pickups/aapa0000	#Freeze.
+alternatepal   data/chars/misc/pickups/aapa0000	#Poison.
+alternatepal   data/chars/misc/pickups/aapa0000	#Reserved.
+alternatepal   data/chars/misc/pickups/aapa0000	#Reserved.
+alternatepal   data/chars/misc/pickups/aapa0000	#Reserved.
+alternatepal   data/chars/misc/pickups/aapa0000	#Reserved.
+alternatepal   data/chars/misc/pickups/aapa0000	#Reserved.
+alternatepal   data/chars/misc/pickups/aapa0001	#Golden Delicious.
+alternatepal   data/chars/misc/pickups/aapa0002	#Granny Smith.
+
+	
+anim idle
+	delay	1000
+	offset	7 16
+	bbox	0 0 15 15
+		frame	data/chars/misc/pickups/appl0001
+
+anim fall
+	delay	1000
+	offset	7 16
+		frame	data/chars/misc/pickups/appl0001

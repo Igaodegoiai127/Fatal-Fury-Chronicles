@@ -1,0 +1,203 @@
+#*****Notes***************************************************************************
+
+#Ryo shadow trails
+
+#*****Settings***************************************************************************
+#*****icons*****
+#*****General*****
+
+name	     Ryos								
+type	     none     							
+alpha 	     1
+
+#*****Scripts*****
+#*****MP Specific*****
+#*****NPC/Enemy Specific*****
+#*****Inert Specfic*****
+#*****Sub Entites*****
+#*****Palettes*******
+
+palette 	data/chars/ryo/aapa0001				#Default.
+alternatepal	data/chars/ryo/aapa0002				#Dead.
+alternatepal	data/chars/ryo/aapa0003				#Burn.
+alternatepal	data/chars/ryo/aapa0004				#Shock.
+alternatepal	data/chars/ryo/aapa0005				#Freeze.
+alternatepal	data/chars/ryo/aapa0006				#Posion.
+alternatepal	data/chars/ryo/aapa0011				#Blue.
+alternatepal	data/chars/ryo/aapa0012				#Black
+alternatepal	data/chars/ryo/aapa0013				#Red.
+alternatepal	data/chars/ryo/aapa0014				#White.
+#alternatepal	data/chars/ryo/aapa0015				#Sky blue, red accessories (Aof2 alt).
+alternatepal	data/chars/ryo/aapa0016				#Mr. Karate.
+alternatepal	data/chars/ryo/aapa0017				#Mr. Karate; Blue.
+alternatepal	data/chars/ryo/aapa0018				#Mr. Karate; Black
+alternatepal	data/chars/ryo/aapa0019				#Mr. Karate; Red.
+alternatepal	data/chars/ryo/aapa0020				#Mr. Karate; White.
+#alternatepal	data/chars/ryo/aapa0021				#Mr. Karate; Sky blue, red accessories (Aof2 alt).
+
+#*****Commands*****************************************************************************
+#*****Basic********************************************************************************
+#*****Attack*******************************************************************************
+#*****Special******************************************************************************
+
+anim freespecial12
+	
+	#Renbu.
+	
+	#custentity    burs0001
+	
+	
+
+	delay	8
+	offset 	100 200
+	bbox	0
+	frame	data/chars/ryo/ryo0096
+	frame	data/chars/ryo/ryo0083
+	frame	data/chars/ryo/ryo0086
+	frame	data/chars/ryo/ryo0023
+	delay	1
+	frame	data/chars/ryo/ryo0186
+	move	0
+	frame	data/chars/ryo/ryo0186
+	frame	data/chars/ryo/ryo0186
+	delay	10
+	frame	data/chars/ryo/ryo0185
+	frame	data/chars/ryo/ryo0006
+	delay	1
+	frame	data/chars/ryo/ryo0006		
+	
+#anim jumpspecial
+
+
+#*****Followups****************************************************************************
+
+anim follow13
+
+	#Ranbu finish.
+	#Jab 2.		
+
+	delay	100
+	offset 	100 200
+	frame	data/chars/ryo/ryo0186
+	delay	4
+	frame	data/chars/ryo/ryo0104
+	frame	data/chars/ryo/ryo0105
+	frame	data/chars/ryo/ryo0106
+	
+	#Knukle Punch 3.
+	
+	frame	data/chars/ryo/ryo0106
+	frame	data/chars/ryo/ryo0110
+	frame	data/chars/ryo/ryo0111
+	frame	data/chars/ryo/ryo0112
+	frame	data/chars/ryo/ryo0111
+
+	#Upper 4.
+
+	frame	data/chars/ryo/ryo0113
+	frame	data/chars/ryo/ryo0114
+	frame	data/chars/ryo/ryo0115
+	frame	data/chars/ryo/ryo0116
+	frame	data/chars/ryo/ryo0106
+
+	#Elbow 5.
+
+	frame	data/chars/ryo/ryo0108
+	frame	data/chars/ryo/ryo0108
+	frame	data/chars/ryo/ryo0109
+	frame	data/chars/ryo/ryo0108
+
+	#Side Kick 6.
+	
+	frame	data/chars/ryo/ryo0107
+	frame	data/chars/ryo/ryo0117
+	frame	data/chars/ryo/ryo0118
+	frame	data/chars/ryo/ryo0119
+	frame	data/chars/ryo/ryo0118
+	frame	data/chars/ryo/ryo0117
+
+	#Shin kick 7.
+
+	frame	data/chars/ryo/ryo0120
+	frame	data/chars/ryo/ryo0121
+	frame	data/chars/ryo/ryo0122
+	frame	data/chars/ryo/ryo0121
+	frame	data/chars/ryo/ryo0128
+	
+	#Spin Kick 8.
+
+	frame	data/chars/ryo/ryo0123
+	frame	data/chars/ryo/ryo0124
+	frame	data/chars/ryo/ryo0125
+	frame	data/chars/ryo/ryo0126
+	frame	data/chars/ryo/ryo0127
+	frame	data/chars/ryo/ryo0121
+	frame	data/chars/ryo/ryo0128
+
+	#Upper 9.
+
+	frame	data/chars/ryo/ryo0113
+	frame	data/chars/ryo/ryo0114
+	frame	data/chars/ryo/ryo0115
+	frame	data/chars/ryo/ryo0116
+	frame	data/chars/ryo/ryo0106
+
+	#Knukle Punch 10.
+	
+	frame	data/chars/ryo/ryo0106
+	frame	data/chars/ryo/ryo0110
+	frame	data/chars/ryo/ryo0111
+	frame	data/chars/ryo/ryo0112
+	frame	data/chars/ryo/ryo0111
+
+	#Shin kick 11.
+
+	frame	data/chars/ryo/ryo0120
+	frame	data/chars/ryo/ryo0121
+	frame	data/chars/ryo/ryo0122
+	frame	data/chars/ryo/ryo0121
+	frame	data/chars/ryo/ryo0128
+
+	#Lift upper 12.
+
+	frame	data/chars/ryo/ryo0023
+	frame	data/chars/ryo/ryo0149
+	frame	data/chars/ryo/ryo0263
+	delay	30
+	frame	data/chars/ryo/ryo0263
+	delay	12
+	frame	data/chars/ryo/ryo0111
+
+anim follow14
+
+	#Renbu Kohou followup
+	
+	delay	3
+	offset 	100 200
+	frame	data/chars/ryo/ryo0111
+	frame	data/chars/ryo/ryo0208
+	frame	data/chars/ryo/ryo0207
+	frame	data/chars/ryo/ryo0206
+	frame	data/chars/ryo/ryo0205
+	frame	data/chars/ryo/ryo0205	
+	frame	data/chars/ryo/ryo0204
+	frame	data/chars/ryo/ryo0204
+	delay	1000
+	frame	data/chars/ryo/ryo0203
+	delay	20
+	frame	data/chars/ryo/ryo0203
+	frame	data/chars/ryo/ryo0202						#Dropframe
+	delay	1000
+	frame	data/chars/ryo/ryo0201
+	delay	8
+	sound   data/sounds/sound002.wav 					#Sound effect.
+	frame	data/chars/ryo/ryo0006						#Landframe
+	frame	data/chars/ryo/ryo0007
+	frame	data/chars/ryo/ryo0006
+	
+#*****Grappling****************************************************************************
+#*****Jumping******************************************************************************
+#*****Injury and Defence*******************************************************************
+#*****Footer********************************************************************************
+
+#Always make sure to include a single blank line at bottom of file.

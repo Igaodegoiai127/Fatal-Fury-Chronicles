@@ -1,0 +1,128 @@
+#*****Notes***************************************************************************
+
+#Ryo bound visual effects.
+
+#*****Settings***************************************************************************
+
+#*****icons*****
+#*****General*****
+
+name         ryo0003    					
+type	     pshot   						
+health	     100						
+#antigravity  100
+alpha	     1
+gfxshadow    0
+
+#*****Player Specific*****
+#*****NPC/Enemy Specific*****
+#*****Inert Specfic*****
+#*****Sub Entites*****
+#*****Scripts*****
+#*****Alternates*******
+
+palette	     data/chars/ryo/effects/ryo0211 #Ko'oh Ken
+alternatepal data/chars/ryo/effects/ryo0262 #Ku Ko'oh Ken
+alternatepal data/chars/ryo/effects/ryo0100 #Charge
+alternatepal data/chars/ryo/effects/ryo0218 #Chargeattack
+alternatepal data/chars/ryo/effects/ryo0249 #Heaven Glaze Punch
+
+#*****Commands*****************************************************************************
+#*****Basic********************************************************************************
+
+#anim idle
+
+	#offset	100 200
+	#frame	data/chars/misc/blan0001
+
+anim charge 
+
+	loop 	1
+	delay	3
+	offset	100 200	
+	frame	data/chars/ryo/effects/ryo0100	
+	frame	data/chars/ryo/effects/ryo0101	
+	frame	data/chars/ryo/effects/ryo0102
+	frame	data/chars/ryo/effects/ryo0103
+
+#*****Attack*******************************************************************************
+
+anim chargeattack
+
+	loop 	1
+	delay	3
+	offset	100 200
+	frame	data/chars/ryo/effects/ryo0218
+	frame	data/chars/ryo/effects/ryo0219
+	frame	data/chars/ryo/effects/ryo0220
+	frame	data/chars/ryo/effects/ryo0221
+
+#*****Special******************************************************************************
+
+anim freespecial7
+
+	#Ko'oh ken glow.
+
+	offset	101 200
+	frame	data/chars/ryo/effects/ryo0211 
+	frame	data/chars/ryo/effects/ryo0211 
+	frame	data/chars/ryo/effects/ryo0212 
+	frame	data/chars/ryo/effects/ryo0213 
+	frame	data/chars/ryo/effects/ryo0214 
+	frame	data/chars/ryo/effects/ryo0215 
+	frame	data/chars/ryo/effects/ryo0216 
+
+anim freespecial11
+
+	#Heaven Glaze Punch glow.
+
+	offset	100 200
+	frame	data/chars/ryo/effects/ryo0248
+	frame	data/chars/ryo/effects/ryo0248
+	frame	data/chars/ryo/effects/ryo0248
+	frame	data/chars/ryo/effects/ryo0248
+	frame	data/chars/ryo/effects/ryo0248
+	frame	data/chars/ryo/effects/ryo0248
+	frame	data/chars/ryo/effects/ryo0249
+	frame	data/chars/ryo/effects/ryo0250
+	frame	data/chars/misc/blan0001
+	frame	data/chars/misc/blan0001
+	frame	data/chars/misc/blan0001
+	frame	data/chars/misc/blan0001
+	frame	data/chars/misc/blan0001
+	frame	data/chars/misc/blan0001
+
+anim freespecial12
+	
+	#Renbu.	
+	
+	offset 	100 200
+	frame	data/chars/ryo/ryo0096
+	frame	data/chars/ryo/ryo0083
+	frame	data/chars/ryo/ryo0086
+	frame	data/chars/ryo/ryo0023
+	frame	data/chars/ryo/ryo0186
+	frame	data/chars/ryo/ryo0186
+	frame	data/chars/ryo/ryo0186
+	frame	data/chars/ryo/ryo0185
+	frame	data/chars/ryo/ryo0006
+	frame	data/chars/ryo/ryo0006
+	
+anim jumpspecial
+
+	#Ku Ko'oh Ken glow
+	
+	offset	100 200
+	frame	data/chars/ryo/effects/ryo0261
+	frame	data/chars/ryo/effects/ryo0261
+	frame	data/chars/ryo/effects/ryo0262
+	frame	data/chars/misc/blan0001
+	
+#*****Followups****************************************************************************
+#*****Grappling****************************************************************************
+#*****Jumping******************************************************************************
+#*****Injury and Defence*******************************************************************
+#*****Footer********************************************************************************
+
+#Always make sure to include a single blank line at bottom of file.
+

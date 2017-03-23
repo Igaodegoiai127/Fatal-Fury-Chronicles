@@ -1,0 +1,85 @@
+#*****Notes***************************************************************************
+
+#"Torch"
+
+#*****Settings***************************************************************************
+
+#*****icons*****
+#*****General*****
+
+name         fire0002    					
+type	     enemy
+health	     100						
+antigravity  100
+alpha	     6
+lifespan     2
+
+#*****Player Specific*****
+#*****NPC/Enemy Specific*****
+#*****Inert Specfic*****
+#*****Sub Entites*****
+#*****Scripts*****
+#*****Alternates*******
+
+palette data/chars/misc/effects/fire0042
+
+#*****Commands*****************************************************************************
+#*****Basic********************************************************************************
+#*****Attack*******************************************************************************
+
+anim chargeattack 
+
+	quakeframe 1 6 -1
+	
+	delay	5
+	offset	192 224
+	sound	data/sounds/sound020.wav
+	frame	data/chars/misc/blan0001
+	frame	data/chars/misc/blan0001
+	frame	data/chars/misc/effects/fire0042
+	frame	data/chars/misc/effects/fire0043
+	frame	data/chars/misc/effects/fire0044
+	frame	data/chars/misc/effects/fire0044
+	frame	data/chars/misc/effects/fire0045
+	frame	data/chars/misc/effects/fire0045
+	frame	data/chars/misc/effects/fire0046
+	frame	data/chars/misc/effects/fire0046
+	frame	data/chars/misc/effects/fire0047
+	frame	data/chars/misc/effects/fire0047
+	frame	data/chars/misc/effects/fire0048
+	frame	data/chars/misc/effects/fire0048
+	frame	data/chars/misc/effects/fire0049
+	frame	data/chars/misc/effects/fire0049
+	frame	data/chars/misc/effects/fire0050
+	frame	data/chars/misc/effects/fire0050
+	frame	data/chars/misc/effects/fire0051
+	frame	data/chars/misc/effects/fire0051
+	frame	data/chars/misc/effects/fire0052
+	frame	data/chars/misc/effects/fire0052
+	frame	data/chars/misc/effects/fire0046
+	frame	data/chars/misc/effects/fire0046
+	frame	data/chars/misc/effects/fire0047
+	frame	data/chars/misc/effects/fire0047
+	frame	data/chars/misc/effects/fire0048
+	frame	data/chars/misc/effects/fire0048
+	frame	data/chars/misc/effects/fire0049
+	frame	data/chars/misc/effects/fire0049
+	frame	data/chars/misc/effects/fire0050
+	frame	data/chars/misc/effects/fire0050
+	frame	data/chars/misc/effects/fire0051
+	frame	data/chars/misc/effects/fire0051
+	frame	data/chars/misc/effects/fire0052
+	frame	data/chars/misc/effects/fire0052
+	frame	data/chars/misc/effects/fire0044
+	frame	data/chars/misc/effects/fire0043
+	frame	data/chars/misc/effects/fire0042	
+
+#*****Special******************************************************************************
+#*****Followups****************************************************************************
+#*****Grappling****************************************************************************
+#*****Jumping******************************************************************************
+#*****Injury and Defence*******************************************************************
+#*****Footer********************************************************************************
+
+#Always make sure to include a single blank line at bottom of file.
+

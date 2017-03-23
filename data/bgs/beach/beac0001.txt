@@ -1,0 +1,22 @@
+#Boat, boathouse for Sound Beach.
+
+name	 	beac0001
+health	 	1
+type	 	panel
+Speedf   	0.2
+setlayer 	-10
+globalmap 	1
+#alpha           4
+offscreenkill	1000000
+anim idle 
+
+	loop	1
+	delay	15
+	offset	0 -32
+	bbox	0
+	frame data/bgs/beach/drop0006
+	frame data/bgs/beach/drop0007
+	frame data/bgs/beach/drop0008
+	frame data/bgs/beach/drop0007
+	
+	

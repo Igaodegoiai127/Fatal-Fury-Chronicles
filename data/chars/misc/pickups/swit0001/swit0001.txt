@@ -1,0 +1,25 @@
+name			swit0001
+health			10
+score			1
+type			obstacle
+shadow			0
+icon			data/chars/misc/pickups/aapa0003
+offscreenkill		1000000
+stealth			100
+throwdamage		3
+guardpoints		1
+nodrop			1
+
+didhitscript data/scripts/hit0002.c
+
+palette data/chars/misc/pickups/aapa0003
+
+anim idle	
+		
+	offset	0 0
+	bbox	0 0 0 0
+	delay	20
+	frame	data/chars/misc/blan0001
+	
+	
+	

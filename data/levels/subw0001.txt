@@ -1,0 +1,311 @@
+# Street
+music		data/music/duck.bor
+bossmusic	data/music/boss.bor
+cameratype 	1
+
+# Load images
+
+background	data/bgs/street/back0001.gif
+
+# Front layer
+
+frontpanel                  data/bgs/Street/rete1.gif
+frontpanel                  data/bgs/Street/rete2.gif
+
+
+
+
+# Load 'panels'. Up to 26 panels can be loaded.
+# They can be referenced using A-Z
+# Specify normal, neon and screen, or 'none'
+panel		data/bgs/street/n01.gif	data/bgs/street/neon01.gif	data/bgs/street/s01.gif
+panel		data/bgs/street/n02.gif	data/bgs/street/neon02.gif	data/bgs/street/s02.gif
+panel		data/bgs/street/n03.gif	data/bgs/street/n03n.gif	none
+panel		data/bgs/street/n04.gif	data/bgs/street/n04n.gif	none
+panel		data/bgs/street/n05.gif	data/bgs/street/n05n.gif	none
+panel		data/bgs/street/n06.gif	none				none
+panel		data/bgs/street/n07.gif	none				none
+panel		data/bgs/street/n05.gif	data/bgs/street/clubk		none
+
+# ab = Pinepot left
+# c = wall, ridge left
+# d = wall, ridge right + 078
+# e = window
+# f = door
+# g = wall
+# h = Club K neon
+
+
+# Set the order (don't make the lines too long)
+# Syntax:
+#	order	[a...z]		(a sequence of panels, e.g. abcdefghij)
+#	order	[a...z]
+#
+order	fdefecdhfecggdabcd
+order	fdefecdhfecggdab
+
+
+# Spawn format:
+#
+#	spawn	[id]
+#	alias	[name]		(change the displayed name, optional)
+#	map	[num]		(colourmap, range 0-3, optional)
+#	health	[num]		(optional)
+#	item	[id]		(obstacles only: contained item, optional)
+#	boss	[0/1]		(see below, optional)
+#	flip	[0/1]		(0 = face left, 1 = face right, optional)
+#	coords	[num] [num]	(coords relative to scrollpos)
+#	at	[scrollpos]
+#
+# Also:
+#	wait			(blocks scrolling until all enemies defeated)
+#	at	[scrollpos]
+#
+# And:
+#	group	[min] [max]	(set minimum and maximum enemies, see below)
+#	at	[scrollpos]
+#
+#
+#
+# Using group, you may set two values, namely:
+#
+# [min]
+# If the number of enemies drops below [min], more enemies will be spawned
+# (if possible).
+#
+# [max]
+# No more than [max] enemies will be present.
+#
+# So, to make enemies appear in groups of four, use this:
+# group 1 4
+#
+# To make them appear normally, use this:
+# group 4 4
+
+
+#--group1-----
+spawn	crate0001
+alias   Crate
+2pitem	Meat
+coords	2000 165
+at	0
+
+spawn	Drum
+alias   Barile
+item	Meat
+coords	2000 230
+at	0
+
+spawn	crate0001
+alias   Crate
+item	money
+coords	970 165
+at	0
+
+spawn	crate0002
+alias   Crate
+2pitem	money
+coords	930 190
+at	0
+
+spawn	crate0001
+alias   Crate
+2pitem  money
+coords	190 230
+at	0
+
+spawn	Steamer
+coords	-30 241
+at	55
+
+
+spawn	Raiden
+map	7
+health	455
+coords	-30 160
+at	220
+
+wait
+at	320
+
+#--group3-----------
+
+spawn	Ray
+health	15
+coords	-30 240
+at	400
+
+
+spawn	Ray
+alias	Roy
+map	8
+health	30
+coords	350 200
+at	470
+
+spawn	Ray
+health	15
+coords	-30 240
+at	470
+
+spawn	Ray
+alias	Victor
+map	7
+health	25
+coords	-33 150
+at	200
+
+spawn	Ray
+alias	Steve
+map     8
+health	25
+coords	350 165
+at	470
+
+wait
+at	500
+
+group	3 3
+at	500
+
+spawn	Ray
+alias	Ernest
+map     8
+health	65
+coords	200 220
+at	500
+
+spawn	Ray
+alias	Victor
+health	25
+coords	360 220
+at	500
+
+spawn	Ray
+map	8
+health	55
+coords	-30 200
+at	500
+
+spawn	Ray
+alias	Steve
+map     9
+coords	-30 160
+at	500
+
+#------------
+
+group	100 100
+at	510
+
+spawn	Ray
+alias	Victor
+health	25
+coords	380 220
+at	800
+
+spawn	Ray
+alias   Paul
+map     8
+coords	-30 180
+at	800
+
+#spawn	biker-k'
+#alias          Jason
+#health        1
+#coords	400 220
+#at	1000
+
+wait
+at	1200
+
+#------------------
+
+wait
+at	1500
+
+group	1 3
+at	1500
+
+spawn	Ray
+alias   Jimmy
+map     9
+coords	-30 180
+at	1500
+
+spawn	Ray
+alias   Victor
+map     8
+coords	-30 220
+at	1500
+
+spawn	Ray
+alias   Gabriel
+map	9
+health	25
+coords	380 160
+at	1500
+
+spawn	Ray
+alias	Steve
+map     8
+coords	380 230
+at	1500
+
+spawn	Ray
+map     8
+coords	-30 180
+at	1500
+
+#-------------------
+group	100 100
+at	1800
+
+wait
+at	1800
+
+
+spawn	Ray
+alias   Victor
+map	9
+health	25
+coords	30 160
+at	1800
+
+spawn	Raiden
+boss	1
+coords	200 220
+at	1800
+
+# Only AFTER the boss is spawned do we make the group size smaller
+
+group	2 2
+at	1800
+
+# Re-enforcements
+
+spawn	Ray
+alias   Roy
+map	8
+health	25
+coords	-30 230
+at	1800
+
+spawn	Ray
+coords	-30 230
+at	1800
+
+spawn	Ray
+alias   Ernest
+map 	8
+coords	-30 230
+at	1800
+
+spawn	Ray
+alias   Jimmy
+map 	9
+coords	-30 230
+at	1800
+
+
+

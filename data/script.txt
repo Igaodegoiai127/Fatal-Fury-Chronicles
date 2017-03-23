@@ -1,0 +1,12 @@
+#*****scriptvars*****
+maxscriptvars   10
+
+#*****entityvars*****
+maxentityvars   120
+
+#*****maxindexedvars*****
+maxindexedvars  17
+
+#*****maxglobalvars*****
+maxglobalvars  2048
+
