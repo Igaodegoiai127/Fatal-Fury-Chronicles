@@ -1,7 +1,6 @@
-#include	"data/scripts/vars/entity.h"
-#include	"data/scripts/com/draw0001.h"
-#include	"data/scripts/com/draw0002.h"
-#include	"data/scripts/com/spaw0006.h"
+#include "data/scripts/vars/entity.h"
+#include "data/scripts/com/draw0001.h"
+#include "data/scripts/com/draw0002.h"
 
 void bind0003(void vModel, int vAlias, int iMap, int iBlend, float fX, float fY, float fZ, int iDir, int iAniFlag){
 	
@@ -39,18 +38,25 @@ void bind0003(void vModel, int vAlias, int iMap, int iBlend, float fX, float fY,
     if (iMap == -1)                                                         //Map "-1"?
     { 
         iMap = getentityproperty(vSelf, "map");                             //Set iMap to callers current map.
-    }    
+    }  
     
-	vSpawn = spaw0006(vModel, vAlias, iX, iY, iZ, iMap, 0);					//Spawn entity.
-
+    clearspawnentry();                                                      //Clear current spawn entry.
+    setspawnentry("name",   vModel);                                        //Aquire spawn entity by name.
+    setspawnentry("alias",  vAlias);                                        //Set alias.
+    setspawnentry("map",    iMap);                                          //Set color remap.
+	setspawnentry("coords", iX, iZ, iY);                                    //Spawn location.
+    vSpawn = spawn();                                                       //Spawn entity.
+    clearspawnentry();                                                      //Clear current spawn entry.
+        
     setentityvar(vSelf, SPAWN, vSpawn);                                     //Store spawn into last spawn variant.
     setentityvar(vSelf, BINDE, vSpawn);                                     //Store into bind variant.
 
     changeentityproperty(vSpawn, "parent", vSelf);                          //Set caller as parent of spawn.
-    changeentityproperty(vSpawn, "alpha", iBlend);                          //Set transparency.
+        
+    setentityvar(vSpawn, ADBLEND, iBlend);                                  //Set transparency.
     
-    if (fX){ fX = draw0002(fRatio, fX); }									//If X bind, apply scaling to fX.
-    if (fY){ fY = draw0002(fRatio, fY); }									//If Y bind, apply scaling to fY.
+    if (fX){ fX = draw0002(fRatio, fX); }                               //If X bind, apply scaling to fX.
+    if (fY){ fY = draw0002(fRatio, fY); }                               //If Y bind, apply scaling to fY.
         
     bindentity(vSpawn, vSelf, fX, fZ, fY, iDir, iAniFlag);                  //Execute bind.
     

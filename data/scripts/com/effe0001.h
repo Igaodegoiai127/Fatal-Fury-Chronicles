@@ -1,7 +1,5 @@
-#include	"data/scripts/vars/entity.h"
-#include	"data/scripts/com/draw0001.h"
-#include	"data/scripts/com/ht0001.h"
-#include	"data/scripts/com/spaw0006.h"
+#include "data/scripts/vars/entity.h"
+#include "data/scripts/com/draw0001.h"
 
 void effe0001(int iMap){
 	
@@ -13,52 +11,49 @@ void effe0001(int iMap){
     but that won't work. At that point the engine has not set defender to appropriate reactive animation yet. 
     Therefore an animation match bind will kill the effect spawn instantly.
 
-    iMap:      Effect map (decides which effect to spawn).
+    vName:      Model name of spawn.
     */
     
-    void  vSelf     = getlocalvar("self");						//Caller.
-    void  vModel    = "effe0001";								//Model.
-    void  vBound    = getentityvar(vSelf, BINDHE);				//Previous effect entity.
-    float fRatio	= getentityvar(vSelf, ADSCALER);			//Caller's current scale ratio.
-    float fX		= getentityproperty(vSelf, "x");			//Caller X location.
-    float fY		= getentityproperty(vSelf, "a");			//Caller Y location.
-	float fZ		= getentityproperty(vSelf, "z");			//Caller Z location.
-	float fH;													//Caller's Height.
-	void  vSpawn;												//New spawn placeholder.
-	
-	fH = 0.5 * ht0001(vSelf);									//Get center height.
-
-    if (vBound)													//Previous effect entity in place? 
+    void  vSelf     = getlocalvar("self");                  //Caller.
+    void  vModel    = "effe0001";                           //Model.
+    void  vBound    = getentityvar(vSelf, BINDHE);          //Previous effect entity.
+    float fHeight   = getentityproperty(vSelf, "height");   //Caller's height.
+    void  vSpawn;                                           //New spawn placeholder.
+    float fRatio;                                           //Caller's current scale ratio.
+    float fX;                                               //Caller X location.
+    float fZ;                                               //Caller Z location.
+    float fY;                                               //Caller Y location.
+    int   iHt;                                              //Center height.    
+    
+    if (vBound)                                             //Previous effect entity in place? 
     {
-        if (vModel == getentityproperty(vBound, "model")		//Previous same as proposed?
-			&& iMap == getentityproperty(vBound, "map"))
-		{  
-			bindentity(vBound, vSelf, 0, 1, fH, 1, 4);			//Refresh bind.
-			return;												//Exit.			
+        if (vModel == getentityproperty(vBound, "model"))   //Previous same as proposed?
+        {  
+            return;                                         //Exit.
         }
         else
         {
-            killentity(vBound);									//Kill old effect.
+            killentity(vBound);                             //Kill old effect.
         }
-    }   
+    }
     
-	vSpawn = spaw0006(vModel, vModel, fX, fY+fH, fZ, iMap, 0);	//Spawn entity.
-	
-	changeentityproperty(vSpawn, "parent", vSelf);				//Set caller as parent of spawn.   
-    setentityvar(vSelf, SPAWN, vSpawn);							//Store spawn.            
+    fRatio    = getentityvar(vSelf, ADSCALER);              //Get Parent current scale ratio.
+    fHeight   = getentityproperty(vSelf, "height");         //Get Y height.
+    fX        = getentityproperty(vSelf, "x");              //Get caller X location.
+    fZ        = getentityproperty(vSelf, "z");              //Get caller Z location.
+    fY        = getentityproperty(vSelf, "a");              //Get caller A location.       
+        
+    clearspawnentry();                                      //Clear current spawn entry.
+    setspawnentry("name",   vModel);                        //Aquire spawn entity by name.    
+    setspawnentry("coords", fX, fZ, fY);                    //Spawn location.
+    setspawnentry("map", iMap);                             //Spawn map.
+    vSpawn = spawn();                                       //Spawn entity.
+    clearspawnentry();                                      //Clear current spawn entry.    
+    changeentityproperty(vSpawn, "parent", vSelf);          //Set caller as parent of spawn.   
+    setentityvar(vSelf, SPAWN, vSpawn);                     //Store spawn.            
     
-    bindentity(vSpawn, vSelf, 0, 1, fH, 1, 4);					//Execute bind.
-    setentityvar(vSelf, BINDHE, vSpawn);						//Store bind.
-    
-	changeentityproperty(vSpawn, "alpha", 1);					//Apply alpha mode 1
-	    
-	draw0001(vSpawn);											//Apply draw.     
-		    
-    /*
-    Get the map for self. It's a better idea to reserve uniform slots for effect maps,
-    but so long as maps start from KOMap and up, everything will work.
-    iMap = (iMap + getentityproperty(vSelf, "komap", 0)) - 1;
-	*/	
-    
-    changeentityproperty(vSelf, "colourmap", iMap);             //Set caller's effect map.    
+    bindentity(vSpawn, vSelf, 0, 1, fHeight * 0.4, 1, 4);   //Execute bind.
+    setentityvar(vSelf, BINDHE, vSpawn);                    //Store bind.
+    setentityvar(vSpawn, ADBLEND, 1);						//Apply alpha mode 1.
+	draw0001(vSpawn);                                       //Apply draw.     
 }

@@ -1,0 +1,40 @@
+#Land effect
+
+name	dust0001
+type	none
+lifespan 2
+shadow	0
+
+onspawnscript 	data/scripts/spaw0003.c
+onkillscript	data/scripts/kill0001.c
+
+palette		data/chars/misc/dust/dust0001
+alternatepal	data/chars/misc/effects/wate0001		
+
+anim idle	
+	
+	#Normal dust.
+
+	delay	5
+	offset	75 40		
+		frame	data/chars/misc/dust/dust0001
+		frame	data/chars/misc/dust/dust0002
+		frame	data/chars/misc/dust/dust0003
+		frame	data/chars/misc/dust/dust0004
+		frame	data/chars/misc/dust/dust0005
+		frame	data/chars/misc/dust/dust0006
+		frame	data/chars/misc/dust/dust0007
+
+anim follow1
+
+	#Water fatality splash.
+
+	delay	12
+	offset	85 90
+		frame	data/chars/misc/effects/wate0001
+		frame	data/chars/misc/effects/wate0002
+		frame	data/chars/misc/effects/wate0003
+		frame	data/chars/misc/effects/wate0004
+		frame	data/chars/misc/effects/wate0005
+		frame	data/chars/misc/effects/wate0006
+

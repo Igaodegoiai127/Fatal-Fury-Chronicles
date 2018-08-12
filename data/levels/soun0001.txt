@@ -1,4 +1,4 @@
-music		data/music/SoundB.bor
+music		data/music/Sound_B.bor
 
 background	data/bgs/BEACH/back0001
 frontpanel	data/bgs/BEACH/fore0002
@@ -12,15 +12,15 @@ order		abcd
 
 bgspeed 1 0 
 
-palette data/bgs/beach/pals/0001.act 1	
-palette data/bgs/beach/pals/0002.act 1		#First graduation.
-palette data/bgs/beach/pals/0003.act 1	
-palette data/bgs/beach/pals/0004.act 1	
-palette data/bgs/beach/pals/0005.act 1	
-palette data/bgs/beach/pals/0006.act 1	
-palette data/bgs/beach/pals/0007.act 1	
-palette data/bgs/beach/pals/0008.act 1	
-palette data/bgs/beach/pals/0009.act 1		#Darkest variation.
+palette data/bgs/beach/beac0001.act 1	
+palette data/bgs/beach/beac0002.act 1	#First graduation.
+palette data/bgs/beach/beac0003.act 1	
+palette data/bgs/beach/beac0004.act 1	
+palette data/bgs/beach/beac0005.act 1	
+palette data/bgs/beach/beac0006.act 1	
+palette data/bgs/beach/beac0007.act 1	
+palette data/bgs/beach/beac0008.act 1	
+palette data/bgs/beach/beac0009.act 1	#Darkest variation.
 
 #---------------------
 
@@ -31,7 +31,7 @@ palette data/bgs/beach/pals/0009.act 1		#Darkest variation.
 
 # {int} Layer order from panel toward background.
 # {alpha} Model order along {int} layer.
-# {int2} Placement along same layer.
+# {int} Placement along same layer.
 
 #Layer  0a
 spawn	beac0001
@@ -144,35 +144,22 @@ at	0
 #Fore   0b1
 spawn	beac0008
 flip    0
-coords	25 0
-at	0
-
-
-#Fore   0b2
-spawn	beac0008
-flip    0
-coords	75 0
-at	0
-
-#Fore   0b3
-spawn	beac0008
-flip    0
 coords	500 0
 at	0
 
-#Fore   0b4
+#Fore   0b2
 spawn	beac0008
 flip    0
 coords	1200 0
 at	0
 
-#Fore   0b5
+#Fore   0b3
 spawn	beac0008
 flip    0
 coords	2000 0
 at	0
 
-#Fore   0b6
+#Fore   0b4
 spawn	beac0008
 flip    0
 coords	2500 0
@@ -210,17 +197,15 @@ itemmap		12
 coords		700 230
 at		0
 
-spawn		swit0001
-health		100
-aggression 	1
-coords		465 210
-at		0
+spawn	musi0001
+Alias   Estrada
+coords	465 210
+at	0
 
-spawn		swit0001
-health		100
-aggression 	1
-coords		1915 210
-at		0
+spawn	musi0001
+Alias   Estrada
+coords	1915 210
+at	0
 
 spawn	ray
 alias 	Random

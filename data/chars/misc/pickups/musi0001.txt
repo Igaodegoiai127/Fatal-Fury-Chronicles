@@ -1,0 +1,21 @@
+name		musi0001
+health		0
+type		item
+shadow		0
+icon		data/chars/misc/pickups/aapa0003
+offscreenkill	1000000
+reactive	0
+remove		0
+
+didhitscript data/scripts/hit0002.c
+
+palette data/chars/misc/pickups/aapa0003
+
+anim idle	
+		
+	offset	0 0
+	bbox	0 0 10 10
+	delay	20
+	frame	data/chars/misc/blan0001
+	
+	

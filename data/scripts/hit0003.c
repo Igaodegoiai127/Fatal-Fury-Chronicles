@@ -2,14 +2,9 @@
 #include "data/scripts/com/ani0011.h"
 #include "data/scripts/com/hit0002.h"
 #include "data/scripts/com/host0001.h"
-#include "data/scripts/com/summ0002.h"
+#include "data/scripts/com/summ0001.h"
 
-/*
-Projectile didhit script.
-Damon V. Caskey
-08/28/2009
-Simulates projectile systems from various fighting systems.
-*/
+//Projectile didhit script.
 
 void main()
 {
@@ -197,9 +192,8 @@ void main()
         */
         iX = openborvariant("lasthitx") - openborvariant("xpos");                           //Last hit X - X pos.
         iY = openborvariant("lasthita");                                                    //Last hit Y.
-        iZ = openborvariant("lasthitz");                                                    //Last hit Z.	
-		
-		summ0002(vDef, "flash", "flash", 0, 1, iX, iY, iZ, 1, 0, 0, 1);						//Spawn flash.    
+        iZ = openborvariant("lasthitz");                                                    //Last hit Z.
+        summ0001("flash", "flash", 0, 1, iX, iY, iZ, 1, 0, 0, 1);                           //Spawn flash.    
     
         iRush = getentityproperty(vParent, "rush_count");
 	    changeentityproperty(vParent, "rush_count", iRush + 1);                             //Increment parent's rush count.

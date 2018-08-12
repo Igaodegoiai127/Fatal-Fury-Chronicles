@@ -1,4 +1,4 @@
-#include "data/scripts/com/bind0023.h"  
+#include "data/scripts/com/bind0008.h"  
 #include "data/scripts/com/dama0001.h"
 
 void obst0001()
@@ -52,9 +52,9 @@ void obst0001()
 				iDir	= -2;																			//Set facing left.
 				iXVel	= 1.5;																			//Set movement right.
 				iDamage += ((-iXDir) * 3);																//Set damage (Resigned velocity * 3).
-			}			
+			}						
 			
-			bind0023(vOpp, "flash", "flash", 0, 1, 0, 0, 0, 0, 0, 0, 1);								//Spawn flash.
+			bind0008("flash", "flash", 0, 1, 0, 0, 0, 0, 0, 0, 1);										//Spawn flash.
 			
             dama0001(vSelf, iDamage+iDOL, 100, openborconstant("ATK_NORMAL"), iDir, 0, 0, 0, 0, 0, 0);	//Apply damage to self.			
             

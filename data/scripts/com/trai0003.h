@@ -1,6 +1,5 @@
 #include "data/scripts/vars/trails.h"      
 #include "data/scripts/vars/entity.h"
-#include "data/scripts/com/summ0002.h"
 
 void trai0003()
 {
@@ -59,8 +58,13 @@ void trai0003()
                         fX  = getentityproperty(vOpp, "x") - openborvariant("xpos");
                         fY  = getentityproperty(vOpp, "a") + (iHt * 0.5);
                         fZ  = getentityproperty(vOpp, "z") + 2;
-                        						
-						summ0002(vOpp, "flash", "flash", 0, -1, fX, fY, fZ, 0, 0, 0, 1);	//Spawn flash.                       
+                        
+                        clearspawnentry();                          //Clear current spawn entry.
+                        setspawnentry("name",   "flash");           //Aquire spawn entity by name.                       
+	                    setspawnentry("coords", fX, fZ, fY);        //Spawn location.
+                        vSpawn = spawn();                           //Spawn entity.
+                        clearspawnentry();
+                        changeentityproperty(vSpawn, "autokill", 1);
 
                         damageentity(vOpp, vAtk, iDamage * 0.1, iDrop, iType);  //Apply attack/damage. 
 						iRush = getentityproperty(vAtk, "rush_count");

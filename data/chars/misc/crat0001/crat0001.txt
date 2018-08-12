@@ -28,8 +28,8 @@ alternatepal   data/chars/misc/crat0001/aapa0011	#Burnished.
 alternatepal   data/chars/misc/crat0001/aapa0012	#Black.
 alternatepal   data/chars/misc/crat0001/aapa0012	#Blue.
 
-onspawnscript		data/scripts/z_spawn.c
-onkillscript		data/scripts/z_kill.c
+onspawnscript		data/scripts/spaw0001.c
+onkillscript		data/scripts/kill0001.c
 	
 anim idle
 	delay	1000

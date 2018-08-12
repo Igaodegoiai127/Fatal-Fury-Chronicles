@@ -12,7 +12,7 @@ type		item
 hmap		1 9
 gfxshadow	1
 
-onmovezscript	data/scripts/z_movez.c
+onmovezscript	data/scripts/movz0001.c
 didhitscript 	data/scripts/hit0002.c
 
 #*****Alternates*******				

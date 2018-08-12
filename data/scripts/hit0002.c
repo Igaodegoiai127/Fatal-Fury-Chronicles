@@ -1,7 +1,6 @@
-#include	"data/scripts/vars/entity.h"
-#include	"data/scripts/vars/anims.h"
-#include	"data/scripts/com/ani0009.h"
-#include	"data/scripts/com/spaw0006.h"
+#include "data/scripts/vars/entity.h"
+#include "data/scripts/vars/anims.h"
+#include "data/scripts/com/ani0009.h"
 
 void main(){
     
@@ -25,14 +24,22 @@ void main(){
         //Spawn next selection item.
         if      (vAlias == "Estrada"){ vAlias = "Sound_B";  }               //Sound Beach Alt 1.
         else if (vAlias == "Sound_B"){ vAlias = "Estrada";  }               //Sound Beach default.        
-                
+        
+        changeentityproperty(vSelf, "name", vAlias);
+
+        /*
         fX     = getentityproperty(vSelf, "x") - openborvariant("xpos");    //Item X location.
         fY     = getentityproperty(vSelf, "a");                             //Item A location.
-        fZ     = getentityproperty(vSelf, "z");                             //Item Z location.       
-        
-		vSpawn = spaw0006("musi0001", vAlias, fX, fY, fZ, 0, 0);			//Spawn entity.
+        fZ     = 210;                                                       //Quick and dirty fix. Get Z location is not working on items. 
+                    
+        clearspawnentry();                                                  //Clear current spawn entry.
+        setspawnentry("name",   "musi0001");                                //Aquire spawn entity by name.
+        setspawnentry("alias",  vAlias);                                    //Set alias.
+        setspawnentry("coords", fX, fZ, fY);                                //Spawn location.
+        vSpawn = spawn();                                                   //Spawn entity.
+        clearspawnentry();                                                  //Clear current spawn entry.
+        */
 
-		changeplayerproperty(iPlIndex, "score", iScore - 1);				//One point was given by item to activate score sound (health sound defaults otherwise). Take point back.
     }
 	else if (vModel == "scro0001")											//Power up scroll.
 	{

@@ -1,18 +1,17 @@
-#include	"data/scripts/vars/entity.h"
-#include	"data/scripts/com/draw0001.h"
-#include	"data/scripts/com/draw0002.h"
-#include	"data/scripts/com/spaw0006.h"
+#include "data/scripts/vars/entity.h"
+#include "data/scripts/com/draw0001.h"
+#include "data/scripts/com/draw0002.h"
 
-void bind0008(char cModel, char cAlias, int iMap, int iBlend, float fAX, float fAY, int iAZ, int iDir, int iAni, int iFrame, int iKill){
-		
+void bind0008(void vModel, void vAlias, int iMap, int iBlend, float fAX, float fAY, int iAZ, int iDir, int iAni, int iFrame, int iKill){
+	
     /*
      bind0008
      Damon Vaughn Caskey
      02/25/2008
      Spawn an entity, place it in location with relation to caller, but do not bind.
      
-     vModel:     Model name of spawn.
-     cAlias:     Display name of spawn. 
+     vName:      Model name of spawn.
+     vAlias:     Display name of spawn. 
      vMap:       Color map of spawn.
      iBlend:     Transparency setting of spawn. 
      fX, fY, fZ: Location offset.
@@ -26,9 +25,9 @@ void bind0008(char cModel, char cAlias, int iMap, int iBlend, float fAX, float f
     int	  iZ     = getentityproperty(vSelf, "z");                           //Caller Z location.
     int	  iY     = getentityproperty(vSelf, "a");                           //Caller Y location.
 	int	  iDir	 = getentityproperty(vSelf, "direction");					//Caller direction.
-	
-	if (fAX){ fAX = draw0002(fRatio, fAX); }								//If X adjust, apply scaling to fX.
-    if (fAY){ fAY = draw0002(fRatio, fAY); }								//If Y adjust, apply scaling to fY.
+
+	if (fAX){ fAX = draw0002(fRatio, fAX); }                            //If X adjust, apply scaling to fX.
+    if (fAY){ fAY = draw0002(fRatio, fAY); }                            //If Y adjust, apply scaling to fY.
     if (!iDir){ fAX = -fAX;   }                                             //Reverse horizontal adjustment if facing left.
 
     if (iMap == -1)                                                         //Map "-1"?
@@ -36,20 +35,19 @@ void bind0008(char cModel, char cAlias, int iMap, int iBlend, float fAX, float f
         iMap = getentityproperty(vSelf, "map");                             //Set iMap to callers current map.
     }  
     
-	iX	+= fAX;																//Add X adjustment.	
-	iY	+= fAY;																//Add Y adjustment.
-	iZ	+= iAZ;																//Add Z adjustment.
-
-	vSpawn = spaw0006(cModel, cAlias, iX, iY, iZ, iMap, 0);					//Spawn entity.	
-
+    clearspawnentry();                                                      //Clear current spawn entry.
+    setspawnentry("name",   vModel);                                        //Aquire spawn entity by name.
+    setspawnentry("alias",  vAlias);                                        //Set alias.
+    setspawnentry("map",    iMap);                                          //Set color remap.
+	setspawnentry("coords", iX + fAX, iZ + iAZ, iY + fAY);                  //Spawn location.
+    vSpawn = spawn();                                                       //Spawn entity.
+    clearspawnentry();                                                      //Clear current spawn entry.
+        
     setentityvar(vSelf, SPAWN, vSpawn);                                     //Store spawn into last spawn variant.
     changeentityproperty(vSpawn, "direction", iDir);
-    changeentityproperty(vSpawn, "parent", vSelf);                          //Set caller as parent of spawn.	
-    
-	if(iBlend != -1)
-	{
-		changeentityproperty(vSpawn, "alpha", iBlend);                      //Set transparency.        
-	}
+    changeentityproperty(vSpawn, "parent", vSelf);                          //Set caller as parent of spawn.
+	
+    setentityvar(vSpawn, ADBLEND, iBlend);                                  //Set transparency.        
     
     draw0001(vSpawn);                                                       //Update draw for spawn.    
 
@@ -59,6 +57,6 @@ void bind0008(char cModel, char cAlias, int iMap, int iBlend, float fAX, float f
     }
 
     changeentityproperty(vSpawn, "autokill", iKill);
-	
+
     return vSpawn;
 }

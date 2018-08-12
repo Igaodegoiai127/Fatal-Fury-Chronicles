@@ -22,22 +22,22 @@ facing	     1
 #*****Scripts*****
 
 #onspawnscript		data/scripts/spaw0010.c
-onkillscript		data/scripts/z_kill.c
+onkillscript		data/scripts/kill0001.c
 
 #*****Alternates*******
 
-palette				data/chars/andy/pals/0000		#Default.
-alternatepal		data/chars/andy/pals/0001 		#KO.
-alternatepal		data/chars/andy/pals/0002 		#Burn.
-alternatepal		data/chars/andy/pals/0003 		#Shock.
-alternatepal		data/chars/andy/pals/0004 		#Freeze.
-alternatepal		data/chars/andy/pals/0005 		#Poison.
-alternatepal		data/chars/andy/pals/0011 		#KOF 2001.
-alternatepal		data/chars/andy/pals/0012 		#KOF 2002.
-alternatepal		data/chars/andy/pals/0013 		#FF2 Alt.
-alternatepal		data/chars/andy/pals/0014 		#Navy.
-alternatepal		data/chars/andy/pals/0015 		#Black.
-alternatepal		data/chars/andy/pals/0016 		#Red, blue trim.
+palette	       data/chars/andy/aapa0000		#Default.
+alternatepal   data/chars/andy/aapa0001 	#KO.
+alternatepal   data/chars/andy/aapa0002 	#Burn.
+alternatepal   data/chars/andy/aapa0003 	#Shock.
+alternatepal   data/chars/andy/aapa0004 	#Freeze.
+alternatepal   data/chars/andy/aapa0005 	#Poison.
+alternatepal   data/chars/andy/aapa0011 	#KOF 2001.
+alternatepal   data/chars/andy/aapa0012 	#KOF 2002.
+alternatepal   data/chars/andy/aapa0013 	#FF2 Alt.
+alternatepal   data/chars/andy/aapa0014 	#Navy.
+alternatepal   data/chars/andy/aapa0015 	#Black.
+alternatepal   data/chars/andy/aapa0016 	#Red, blue trim.
 
 #*****Commands*****************************************************************************
 #*****Basic********************************************************************************

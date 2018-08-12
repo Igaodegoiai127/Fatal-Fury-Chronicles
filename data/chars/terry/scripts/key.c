@@ -23,13 +23,13 @@ void main(){
     {
         if (iUp)																		//Holding up?
         {
-            iETime  = openborvariant("elapsed_time");                                   //Get elapsed time.
+            iETime  = openborvariant("Elapsed_time");                                   //Get elapsed time.
             iKey1AT = getentityvar(vSelf, KEY1AT) + 500;                                //Get last Attack press.
 
             if (iKey1AT < iETime)                                                       //Enough time passed?
             {
-                iAni    = openborconstant("ANI_FREESPECIAL6");							//Set ani to Rising Tackle.
-                iCost   = getentityproperty(vSelf, "energycost", iAni, 0);              //Get energy cost.
+                iAni    = openborconstant("ANI_FREESPECIAL6");                         //Set ani to Zaneiken.
+                iCost   = getentityproperty(vSelf, "energycost", iAni);                 //Get energy cost.
                 iMP     = getentityproperty(vSelf, "mp");                               //Get current mp.
                 iSeal   = getentityproperty(vSelf, "seal");                             //Get seal flag.
                 

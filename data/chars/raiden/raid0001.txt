@@ -5,31 +5,30 @@ icondie	     data/chars/raiden/aaic0002 					#(Path) Player icon displayed upon 
 iconpain     data/chars/raiden/aaic0003 					#(Path) Player icon displayed when hit.
 
 
-name			Raiden
-type			enemy
-health			100
-speed			11
+name		Raiden
+type		player
+health		100
+speed		11
 running      	18 4 2 1 1
-shadow			0
-score			1
+type		player
+shadow		0
+score		1
 knockdowncount	3
-antigravity		-50
+antigravity	-50
 projectilehit   enemy obstacle
-holdblock		1
-blockpain		1
-atchain			1 
-grabturn 		1
-height			120
-atchain			1 2 3
-
+holdblock	1
+blockpain	1
+atchain		1 
+grabturn 	1
+ 
 animationscript 	data/chars/raiden/scripts/ani_p.c
-didblockscript  	data/scripts/z_block.c
-takedamagescript	data/scripts/z_damage.c 
-didhitscript		data/scripts/z_hit.c
-onmovezscript		data/scripts/z_movez.c
-onspawnscript		data/scripts/z_spawn.c 
+didblockscript  	data/scripts/bloc0001.c
+takedamagescript	data/scripts/dama0001.c 
+didhitscript		data/scripts/hit0001.c
+onmovezscript		data/scripts/movz0001.c
+onspawnscript		data/scripts/spaw0001.c 
 
-palette 			data/chars/raiden/aapa0000
+palette 		data/chars/raiden/aapa0000
 alternatepal		data/chars/raiden/aapa0011
 
 #*****Commands*****************************************************************************
@@ -109,12 +108,12 @@ anim idle
 	offset	120 190
 	bbox 	95 75 50 120
 	delay	12
-		frame	data/chars/raiden/0007 
-		frame	data/chars/raiden/0008
-		frame	data/chars/raiden/0009
-		frame	data/chars/raiden/0010
-		frame	data/chars/raiden/0009
-		frame	data/chars/raiden/0008
+		frame	data/chars/raiden/raid0007 
+		frame	data/chars/raiden/raid0008
+		frame	data/chars/raiden/raid0009
+		frame	data/chars/raiden/raid0010
+		frame	data/chars/raiden/raid0009
+		frame	data/chars/raiden/raid0008
 
 anim walk
 	
@@ -122,14 +121,14 @@ anim walk
 	offset	120 190
 	bbox 	95 75 50 120
 	delay	12
-		frame	data/chars/raiden/0365
-		frame	data/chars/raiden/0366
-		frame	data/chars/raiden/0367
-		frame	data/chars/raiden/0368
-		frame	data/chars/raiden/0369
-		frame	data/chars/raiden/0370
-		frame	data/chars/raiden/0367
-		frame	data/chars/raiden/0366
+		frame	data/chars/raiden/raid0365
+		frame	data/chars/raiden/raid0366
+		frame	data/chars/raiden/raid0367
+		frame	data/chars/raiden/raid0368
+		frame	data/chars/raiden/raid0369
+		frame	data/chars/raiden/raid0370
+		frame	data/chars/raiden/raid0367
+		frame	data/chars/raiden/raid0366
 
 anim backwalk
 
@@ -137,14 +136,14 @@ anim backwalk
 	offset	120 190
 	bbox 	95 75 50 120
 	delay	12
-		frame	data/chars/raiden/0364
-		frame	data/chars/raiden/0363
-		frame	data/chars/raiden/0362
-		frame	data/chars/raiden/0361
-		frame	data/chars/raiden/0360
-		frame	data/chars/raiden/0359
-		frame	data/chars/raiden/0358
-		frame	data/chars/raiden/0357
+		frame	data/chars/raiden/raid0364
+		frame	data/chars/raiden/raid0363
+		frame	data/chars/raiden/raid0362
+		frame	data/chars/raiden/raid0361
+		frame	data/chars/raiden/raid0360
+		frame	data/chars/raiden/raid0359
+		frame	data/chars/raiden/raid0358
+		frame	data/chars/raiden/raid0357
 
 anim run
 
@@ -152,54 +151,29 @@ anim run
 	offset	120 190
 	bbox 	95 75 50 120
 	delay	10
-		frame	data/chars/raiden/0330
-		frame	data/chars/raiden/0329
-		frame	data/chars/raiden/0328
-		frame	data/chars/raiden/0327
-		frame	data/chars/raiden/0326
-		frame	data/chars/raiden/0325
+		frame	data/chars/raiden/raid0330
+		frame	data/chars/raiden/raid0329
+		frame	data/chars/raiden/raid0328
+		frame	data/chars/raiden/raid0327
+		frame	data/chars/raiden/raid0326
+		frame	data/chars/raiden/raid0325
 
-anim follow49 
+anim attack1
         
 	cancel  3 5 0 a freespecial6	
 
 	delay	6
 	offset	120 190
 	bbox 	95 75 50 120
-		frame	data/chars/raiden/0133
-		frame	data/chars/raiden/0132
+		frame	data/chars/raiden/raid0133
+		frame	data/chars/raiden/raid0132
 	attack	145 80 75 35 10 0 0 0 15
-		frame	data/chars/raiden/0131
+		frame	data/chars/raiden/raid0131
 	attack	0
 	delay	8
-		frame	data/chars/raiden/0130
-		frame	data/chars/raiden/0129
-		frame	data/chars/raiden/0128
-
-anim attack1
-        
-	cancel  3 5 0 a freespecial6	
-	
-	jumpframe 2 2.5 0.5 0
-	landframe 6 dust0001
-	
-	delay	8
-	offset	120 190
-	bbox 	95 75 50 120
-		frame	data/chars/raiden/0193
-		frame	data/chars/raiden/0192	
-		frame	data/chars/raiden/0191	
-		frame	data/chars/raiden/0190
-	attack	135 75 77 53 20 1 0 0 20
-		frame	data/chars/raiden/0189
-	delay	-1000
-		frame	data/chars/raiden/0188	
-	delay	8	
-	attack	0
-		frame	data/chars/raiden/0341
-		frame	data/chars/raiden/0340
-		frame	data/chars/raiden/0339
-		frame	data/chars/raiden/0338
+		frame	data/chars/raiden/raid0130
+		frame	data/chars/raiden/raid0129
+		frame	data/chars/raiden/raid0128
 
 anim attackup
 
@@ -211,17 +185,17 @@ anim attackup
 	delay	9
 	offset	120 190
 	bbox 	95 75 50 120
-		frame	data/chars/raiden/0349
-		frame	data/chars/raiden/0351	
+		frame	data/chars/raiden/raid0349
+		frame	data/chars/raiden/raid0351	
 	bbox	0
 	delay	-1
 	sound	data/sounds/jump.wav 						#Sound effect.
-		frame	data/chars/raiden/0333
+		frame	data/chars/raiden/raid0333
 	delay	8
 	bbox 	95 75 50 120
 	sound	data/sounds/sound002.wav					#Sound effect.
-		frame	data/chars/raiden/0332
-		frame	data/chars/raiden/0331
+		frame	data/chars/raiden/raid0332
+		frame	data/chars/raiden/raid0331
 
 anim attackdown
 
@@ -233,17 +207,17 @@ anim attackdown
 	delay	9
 	offset	120 190
 	bbox 	95 75 50 120
-		frame	data/chars/raiden/0349
-		frame	data/chars/raiden/0351	
+		frame	data/chars/raiden/raid0349
+		frame	data/chars/raiden/raid0351	
 	bbox	0
 	delay	-1
 	sound	data/sounds/jump.wav 						#Sound effect.
-		frame	data/chars/raiden/0333
+		frame	data/chars/raiden/raid0333
 	delay	8
 	bbox 	95 75 50 120
 	sound	data/sounds/sound002.wav					#Sound effect.
-		frame	data/chars/raiden/0332
-		frame	data/chars/raiden/0331
+		frame	data/chars/raiden/raid0332
+		frame	data/chars/raiden/raid0331
 
 #*****Special******************************************************************************
 
@@ -253,15 +227,15 @@ anim cant
 	offset 	120 190
 	bbox	75 110 35 90
 	sound	data/sounds/vand0004.wav
-		frame	data/chars/andy/0008
-		frame	data/chars/andy/0009
-		frame	data/chars/andy/0058
+		frame	data/chars/andy/andy0008
+		frame	data/chars/andy/andy0009
+		frame	data/chars/andy/andy0058
 	delay	40
-		frame	data/chars/andy/0059
+		frame	data/chars/andy/andy0059
 	delay	10
-		frame	data/chars/andy/0058
-		frame	data/chars/andy/0009
-		frame	data/chars/andy/0008
+		frame	data/chars/andy/andy0058
+		frame	data/chars/andy/andy0009
+		frame	data/chars/andy/andy0008
 
 #anim jumpcant 
 #anim special		
@@ -277,17 +251,17 @@ anim freespecial
 	delay	9
 	offset	120 190
 	bbox 	95 75 50 120
-		frame	data/chars/raiden/0349
-		frame	data/chars/raiden/0351	
+		frame	data/chars/raiden/raid0349
+		frame	data/chars/raiden/raid0351	
 	bbox	0
 	delay	-1
 	sound	data/sounds/jump.wav 						#Sound effect.
-		frame	data/chars/raiden/0324
+		frame	data/chars/raiden/raid0324
 	delay	8
 	bbox 	95 75 50 120
 	sound	data/sounds/sound002.wav					#Sound effect.
-		frame	data/chars/raiden/0323
-		frame	data/chars/raiden/0322
+		frame	data/chars/raiden/raid0323
+		frame	data/chars/raiden/raid0322
 	
 
 anim freespecial6
@@ -299,18 +273,18 @@ anim freespecial6
 	delay	8
 	offset	120 190
 	bbox 	95 75 50 120
-		frame	data/chars/raiden/0205
-		frame	data/chars/raiden/0204
+		frame	data/chars/raiden/raid0205
+		frame	data/chars/raiden/raid0204
 	delay	6
-		frame	data/chars/raiden/0203
-		frame	data/chars/raiden/0202
+		frame	data/chars/raiden/raid0203
+		frame	data/chars/raiden/raid0202
 	attack	145 80 75 35 10 0 0 0 15
-		frame	data/chars/raiden/0201
+		frame	data/chars/raiden/raid0201
 	attack	0
 	delay	7
-		frame	data/chars/raiden/0200
-		frame	data/chars/raiden/0199
-		frame	data/chars/raiden/0205
+		frame	data/chars/raiden/raid0200
+		frame	data/chars/raiden/raid0199
+		frame	data/chars/raiden/raid0205
 
 anim freespecial7
 
@@ -319,22 +293,22 @@ anim freespecial7
 	delay	8
 	offset	120 190
 	bbox 	95 75 50 120
-		frame	data/chars/raiden/0141
+		frame	data/chars/raiden/raid0141
 	move	1
-		frame	data/chars/raiden/0140
-		frame	data/chars/raiden/0139		
+		frame	data/chars/raiden/raid0140
+		frame	data/chars/raiden/raid0139		
 	delay	12
 	attack	145 80 75 35 15 2 0 0 15
 	dropv   5 1 0
-		frame	data/chars/raiden/0138
+		frame	data/chars/raiden/raid0138
 	attack	0
-		frame	data/chars/raiden/0137
+		frame	data/chars/raiden/raid0137
 	delay	10
 	move	0
-		frame	data/chars/raiden/0136
-		frame	data/chars/raiden/0139
-		frame	data/chars/raiden/0140
-		frame	data/chars/raiden/0141
+		frame	data/chars/raiden/raid0136
+		frame	data/chars/raiden/raid0139
+		frame	data/chars/raiden/raid0140
+		frame	data/chars/raiden/raid0141
 
 #*************
 
@@ -345,21 +319,21 @@ anim follow51
 	delay	-1
 	offset	100 170
 	bbox	0
-		frame	data/chars/raiden/0413 				#0	Grabbed.
-		frame	data/chars/raiden/0414				#1	Grabbed Pain.
-		frame	data/chars/raiden/0415				#2	Horizontal Up.
-		frame	data/chars/raiden/0416				#3	Horizontal Down.
-		frame	data/chars/raiden/0417				#4	Vertical Up.
-		frame	data/chars/raiden/0418				#5	Vertical Down.
-		frame	data/chars/raiden/0419				#6	Tilt Up.
-		frame	data/chars/raiden/0420				#7	Tilt Down.
-		frame	data/chars/raiden/0421				#8	Vertical Down pain.
-		frame	data/chars/raiden/0422				#9	Down Up.
-		frame	data/chars/raiden/0423				#10	Down Up Pain.
-		frame	data/chars/raiden/0424				#11	Falling Up.
-		frame	data/chars/raiden/0425				#12	Falling Up tilted.
+		frame	data/chars/raiden/raid0413 				#0	Grabbed.
+		frame	data/chars/raiden/raid0414				#1	Grabbed Pain.
+		frame	data/chars/raiden/raid0415				#2	Horizontal Up.
+		frame	data/chars/raiden/raid0416				#3	Horizontal Down.
+		frame	data/chars/raiden/raid0417				#4	Vertical Up.
+		frame	data/chars/raiden/raid0418				#5	Vertical Down.
+		frame	data/chars/raiden/raid0419				#6	Tilt Up.
+		frame	data/chars/raiden/raid0420				#7	Tilt Down.
+		frame	data/chars/raiden/raid0421				#8	Vertical Down pain.
+		frame	data/chars/raiden/raid0422				#9	Down Up.
+		frame	data/chars/raiden/raid0423				#10	Down Up Pain.
+		frame	data/chars/raiden/raid0424				#11	Falling Up.
+		frame	data/chars/raiden/raid0425				#12	Falling Up tilted.
 	offset	100 165
-		frame	data/chars/raiden/0426				#13	Horizontal Up pain.
+		frame	data/chars/raiden/raid0426				#13	Horizontal Up pain.
 
 anim follow100
 
@@ -369,13 +343,13 @@ anim follow100
 	offset	120 190
 	bbox	95 95 35 60
 	@cmd	ai0001 "blocking" 1 0 0 
-		frame	data/chars/raiden/0237
+		frame	data/chars/raiden/raid0237
 	delay	12
 	@cmd	ai0001 "blocking" 0 0 0
 		delay	10
-		frame	data/chars/raiden/0354
-		frame	data/chars/raiden/0355
-		frame	data/chars/raiden/0356
+		frame	data/chars/raiden/raid0354
+		frame	data/chars/raiden/raid0355
+		frame	data/chars/raiden/raid0356
 
 #******Grappling***************************************************************************
 
@@ -384,8 +358,8 @@ anim grab
 	delay	8
 	offset	120 190
 	bbox 	95 75 50 120
-		frame	data/chars/raiden/0319
-		frame   data/chars/raiden/0318
+		frame	data/chars/raiden/raid0319
+		frame   data/chars/raiden/raid0318
 
 anim grabwalk
 	
@@ -394,14 +368,14 @@ anim grabwalk
 	bbox 	95 75 50 120
 	delay	12
 
-		frame	data/chars/raiden/0365
-		frame	data/chars/raiden/0366
-		frame	data/chars/raiden/0367
-		frame	data/chars/raiden/0368
-		frame	data/chars/raiden/0369
-		frame	data/chars/raiden/0370
-		frame	data/chars/raiden/0367
-		frame	data/chars/raiden/0366
+		frame	data/chars/raiden/raid0365
+		frame	data/chars/raiden/raid0366
+		frame	data/chars/raiden/raid0367
+		frame	data/chars/raiden/raid0368
+		frame	data/chars/raiden/raid0369
+		frame	data/chars/raiden/raid0370
+		frame	data/chars/raiden/raid0367
+		frame	data/chars/raiden/raid0366
 
 
 #*****Jumping******************************************************************************
@@ -411,8 +385,8 @@ anim jumpdelay
 	delay	9
 	offset	120 190
 	bbox	75 135 30 65
-		frame	data/chars/raiden/0349
-		frame	data/chars/raiden/0351
+		frame	data/chars/raiden/raid0349
+		frame	data/chars/raiden/raid0351
 			
 anim jumpland
 
@@ -420,11 +394,11 @@ anim jumpland
 	offset	120 190
 	bbox	75 135 30 65
 	sound	data/sounds/sound002.wav					#Sound effect.
-		frame	data/chars/raiden/0352
-		frame	data/chars/raiden/0351
+		frame	data/chars/raiden/raid0352
+		frame	data/chars/raiden/raid0351
 	delay	6
-		frame	data/chars/raiden/0350
-		frame	data/chars/raiden/0349
+		frame	data/chars/raiden/raid0350
+		frame	data/chars/raiden/raid0349
 		
 		
 anim jump #2
@@ -434,15 +408,15 @@ anim jump #2
 	delay	10
 	offset	120 190
 	bbox	95 95 35 60
-		frame	data/chars/raiden/0356
-		frame	data/chars/raiden/0355
-		frame	data/chars/raiden/0354
+		frame	data/chars/raiden/raid0356
+		frame	data/chars/raiden/raid0355
+		frame	data/chars/raiden/raid0354
 	delay	-1
-		frame	data/chars/raiden/0353
+		frame	data/chars/raiden/raid0353
 	delay	10
-		frame	data/chars/raiden/0354
-		frame	data/chars/raiden/0355
-		frame	data/chars/raiden/0356
+		frame	data/chars/raiden/raid0354
+		frame	data/chars/raiden/raid0355
+		frame	data/chars/raiden/raid0356
 	
 
 #anim forwardjump
@@ -464,7 +438,7 @@ anim block
 	delay	6
 	offset	120 190
 	bbox 	95 75 50 120
-		frame	data/chars/raiden/0337
+		frame	data/chars/raiden/raid0337
 		
 anim blockpain
 	
@@ -472,17 +446,17 @@ anim blockpain
 	offset	120 190
 	bbox 	95 75 50 120
 	move	-2
-		frame	data/chars/raiden/0336
+		frame	data/chars/raiden/raid0336
 	move	0
 	offset	123 190
-		frame	data/chars/raiden/0336
+		frame	data/chars/raiden/raid0336
 	offset	120 190
-		frame	data/chars/raiden/0336		
+		frame	data/chars/raiden/raid0336		
 	offset	123 190
-		frame	data/chars/raiden/0336
+		frame	data/chars/raiden/raid0336
 	delay	20
 	offset	120 190
-		frame	data/chars/raiden/0337
+		frame	data/chars/raiden/raid0337
 
 anim blockpain6
 
@@ -490,17 +464,17 @@ anim blockpain6
 	offset	120 190
 	bbox 	95 75 50 120
 	movez	-2
-		frame	data/chars/raiden/0243
+		frame	data/chars/raiden/raid0243
 	move	0
 	offset	123 190
-		frame	data/chars/raiden/0243
+		frame	data/chars/raiden/raid0243
 	offset	120 190
-		frame	data/chars/raiden/0243		
+		frame	data/chars/raiden/raid0243		
 	offset	123 190
-		frame	data/chars/raiden/0243
+		frame	data/chars/raiden/raid0243
 	delay	20
 	offset	120 190
-		frame	data/chars/raiden/0244
+		frame	data/chars/raiden/raid0244
 
 anim blockpain7
 
@@ -508,44 +482,44 @@ anim blockpain7
 	offset	120 190
 	bbox 	95 75 50 120
 	movez	2
-		frame	data/chars/raiden/0243
+		frame	data/chars/raiden/raid0243
 	move	0
 	offset	123 190
-		frame	data/chars/raiden/0243
+		frame	data/chars/raiden/raid0243
 	offset	120 190
-		frame	data/chars/raiden/0243		
+		frame	data/chars/raiden/raid0243		
 	offset	123 190
-		frame	data/chars/raiden/0243
+		frame	data/chars/raiden/raid0243
 	delay	20
 	offset	120 190
-		frame	data/chars/raiden/0244
+		frame	data/chars/raiden/raid0244
 
 anim rise
 	
 	delay	15
 	offset	120 190
 	bbox 	95 75 50 120
-		frame	data/chars/raiden/0341
-		frame	data/chars/raiden/0340
-		frame	data/chars/raiden/0339
-		frame	data/chars/raiden/0338
-		frame	data/chars/raiden/0331
+		frame	data/chars/raiden/raid0341
+		frame	data/chars/raiden/raid0340
+		frame	data/chars/raiden/raid0339
+		frame	data/chars/raiden/raid0338
+		frame	data/chars/raiden/raid0331
 
 anim grabbed
 
 	delay	3
 	offset	121 190
 	bbox 	95 75 50 120
-		frame	data/chars/raiden/0017
+		frame	data/chars/raiden/raid0017
 	offset 	119 190
-		frame	data/chars/raiden/0017
+		frame	data/chars/raiden/raid0017
 	offset	121 190	
-		frame	data/chars/raiden/0017
+		frame	data/chars/raiden/raid0017
 	offset	119 190	
-		frame	data/chars/raiden/0017
+		frame	data/chars/raiden/raid0017
 	delay	50
 	offset  120 190
-		frame	data/chars/raiden/0017
+		frame	data/chars/raiden/raid0017
 
 anim pain
 
@@ -554,9 +528,9 @@ anim pain
 	delay	6
 	offset	120 190
 	bbox 	95 75 50 120
-		frame	data/chars/raiden/0021
-		frame	data/chars/raiden/0020
-		frame	data/chars/raiden/0022
+		frame	data/chars/raiden/raid0021
+		frame	data/chars/raiden/raid0020
+		frame	data/chars/raiden/raid0022
 
 anim bpain 
 
@@ -565,44 +539,44 @@ anim bpain
 	delay	5
 	bbox	85 100 30 40
 	offset	100 200	
-		frame	data/chars/raiden/0020
+		frame	data/chars/raiden/raid0020
 	offset	103 200
-		frame	data/chars/raiden/0020
+		frame	data/chars/raiden/raid0020
 	offset	100 200	
-		frame	data/chars/raiden/0020
+		frame	data/chars/raiden/raid0020
 	offset	103 200
-		frame	data/chars/raiden/0020
+		frame	data/chars/raiden/raid0020
 	offset	100 200	
-		frame	data/chars/raiden/0020
+		frame	data/chars/raiden/raid0020
 	offset	103 200
-		frame	data/chars/raiden/0020
+		frame	data/chars/raiden/raid0020
 	offset	100 200	
-		frame	data/chars/raiden/0020
+		frame	data/chars/raiden/raid0020
 	offset	103 200
-		frame	data/chars/raiden/0020
+		frame	data/chars/raiden/raid0020
 	offset	100 200	
-		frame	data/chars/raiden/0020
+		frame	data/chars/raiden/raid0020
 	offset	103 200
-		frame	data/chars/raiden/0020
+		frame	data/chars/raiden/raid0020
 	offset	100 200	
-		frame	data/chars/raiden/0020
+		frame	data/chars/raiden/raid0020
 	offset	103 200
-		frame	data/chars/raiden/0020
+		frame	data/chars/raiden/raid0020
 	offset	100 200	
-		frame	data/chars/raiden/0020
+		frame	data/chars/raiden/raid0020
 	offset	103 200
-		frame	data/chars/raiden/0020
+		frame	data/chars/raiden/raid0020
 	offset	100 200	
-		frame	data/chars/raiden/0020
+		frame	data/chars/raiden/raid0020
 	offset	103 200
-		frame	data/chars/raiden/0020
+		frame	data/chars/raiden/raid0020
 	offset	100 200	
-		frame	data/chars/raiden/0020
+		frame	data/chars/raiden/raid0020
 	offset	103 200
-		frame	data/chars/raiden/0020
+		frame	data/chars/raiden/raid0020
 	offset	100 200
-		frame	data/chars/raiden/0021
-		frame	data/chars/raiden/0022
+		frame	data/chars/raiden/raid0021
+		frame	data/chars/raiden/raid0022
 
 anim burn
 	
@@ -612,17 +586,17 @@ anim burn
 	delay	-1
 	offset	120 190
 	bbox 	95 75 50 120
-		frame	data/chars/raiden/0398
+		frame	data/chars/raiden/raid0398
 	delay	20
-		frame	data/chars/raiden/0390
-		frame	data/chars/raiden/0391
+		frame	data/chars/raiden/raid0390
+		frame	data/chars/raiden/raid0391
 	delay	1000
-		frame	data/chars/raiden/0392
+		frame	data/chars/raiden/raid0392
 	delay	20
 	attack	0
 	bbox	0
-		frame	data/chars/raiden/0391
-		frame	data/chars/raiden/0342
+		frame	data/chars/raiden/raid0391
+		frame	data/chars/raiden/raid0342
 
 anim fall
 	
@@ -632,17 +606,17 @@ anim fall
 	delay	-1
 	offset	120 190
 	bbox 	95 75 50 120
-		frame	data/chars/raiden/0398
+		frame	data/chars/raiden/raid0398
 	delay	20
-		frame	data/chars/raiden/0390
-		frame	data/chars/raiden/0391
+		frame	data/chars/raiden/raid0390
+		frame	data/chars/raiden/raid0391
 	delay	1000
-		frame	data/chars/raiden/0392
+		frame	data/chars/raiden/raid0392
 	delay	20
 	attack	0
 	bbox	0
-		frame	data/chars/raiden/0391
-		frame	data/chars/raiden/0342
+		frame	data/chars/raiden/raid0391
+		frame	data/chars/raiden/raid0342
 
 anim fall5
 	
@@ -656,19 +630,19 @@ anim fall5
 	offset	120 190
 	bbox 	95 75 50 120
 	attack	95 75 50 120 15 1
-		frame	data/chars/raiden/0394
+		frame	data/chars/raiden/raid0394
 	offset	120 150
-		frame	data/chars/raiden/0400
+		frame	data/chars/raiden/raid0400
 	delay	5
 	offset	120 190
 	attack	0
 	bbox	0
-		frame	data/chars/raiden/0391
-		frame	data/chars/raiden/0391
-		frame	data/chars/raiden/0391
-		frame	data/chars/raiden/0391
+		frame	data/chars/raiden/raid0391
+		frame	data/chars/raiden/raid0391
+		frame	data/chars/raiden/raid0391
+		frame	data/chars/raiden/raid0391
 	delay	20
-		frame	data/chars/raiden/0342	
+		frame	data/chars/raiden/raid0342	
 
 anim fall8
 
@@ -681,18 +655,18 @@ anim fall8
 	offset	100 190
 	bbox	95 75 50 120
 	attack	95 75 50 120 12 1
-		frame	data/chars/raiden/0394	
+		frame	data/chars/raiden/raid0394	
 	delay	5
 	bbox	0
 	attack	0
-		frame	data/chars/raiden/0393
-		frame	data/chars/raiden/0393
-		frame	data/chars/raiden/0393
-		frame	data/chars/raiden/0393
+		frame	data/chars/raiden/raid0393
+		frame	data/chars/raiden/raid0393
+		frame	data/chars/raiden/raid0393
+		frame	data/chars/raiden/raid0393
 	delay	10
-		frame	data/chars/raiden/0394
-		frame	data/chars/raiden/0391
-		frame	data/chars/raiden/0342
+		frame	data/chars/raiden/raid0394
+		frame	data/chars/raiden/raid0391
+		frame	data/chars/raiden/raid0342
 
 anim fall9
 
@@ -705,13 +679,13 @@ anim fall9
 	offset	100 190
 	bbox	95 75 50 120
 	attack	95 75 50 120 12 1
-		frame	data/chars/raiden/0403	
+		frame	data/chars/raiden/raid0403	
 	delay	5
 	bbox	0
 	attack	0
-		frame	data/chars/raiden/0391
-		frame	data/chars/raiden/0391
-		frame	data/chars/raiden/0391
-		frame	data/chars/raiden/0391
-		frame	data/chars/raiden/0342
+		frame	data/chars/raiden/raid0391
+		frame	data/chars/raiden/raid0391
+		frame	data/chars/raiden/raid0391
+		frame	data/chars/raiden/raid0391
+		frame	data/chars/raiden/raid0342
 

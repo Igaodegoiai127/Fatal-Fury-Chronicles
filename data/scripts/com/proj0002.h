@@ -6,10 +6,8 @@
 #include "data/scripts/com/hit0001.h"
 
 void proj0002(void vModel, int iMap, int iBlend, float fAX, float fAY, int iAZ, int iDir, int iAni, int iAniH, int iAniD, int iKill, int iGrav, int iBase, int iHP, int iMP, int iPen, int iPhys, float fXS, float fYS, float fZS, int iStyle, int iForce, int iFin, int iType, int iDrop, float fTX, float fTY, float fTZ, int iReset, int iWX, int iWY, int iWZ, int iWT){
-			
-	/*			1				 2            3         4           5 
+/*   
 Big Tornado     "proj0001"        0           1         90          1        0         1         1          2          2          1          1          0        3        3         0         -1        0.5          0          0           0          15         0         -1          0          2          3          0           1        0        0        0        0
-@cmd	        "proj0001"		 11           1         70         50        1         1         4          4          4          1          1          0     1000       15        -1         -1          0          0          0           0          25         0         -1          1        3.8        1.8          0           1        0          0 0 0
 Hishoken        "proj0001"       11           1         70         50        1         1         4          4          4          1          1          0     1000       15        -1         -1          0          0          0           0          25         0         -1          1        3.8        1.8          0           1        0        0        0        0
 G. Hishoken     "andybe"          3           1         85         30        1         1         5          0          0          1          1          0     1000       15        -1         -1          0          0          0           1           4         0         -1          1          2          3          0           1       75        0        0        0
   
@@ -37,8 +35,6 @@ G. Hishoken     "andybe"          3           1         85         30        1  
      iForce:        Damage.
      iType:         Damage type.
      iDrop:         Knockdown power.     
-	 
-	 #				proj0002          "wind0001"  90         1          0        1         0         0          1          0          1          0          0        1
 	 */    
 
     void  vSpawn;

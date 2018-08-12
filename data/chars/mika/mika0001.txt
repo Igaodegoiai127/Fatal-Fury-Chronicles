@@ -1,0 +1,894 @@
+#*****icons*****
+
+#icon         data/chars/mika/aaic0001 					#(Path) Icon displayed next to life bar.
+#icondie	     data/chars/mika/aaic0002 					#(Path) Player icon displayed upon death.
+#iconpain     data/chars/mika/aaic0003 					#(Path) Player icon displayed when hit.
+
+
+name		Mika
+#diesound data/sounds/maxdie.wav
+health		100
+speed		12
+type		player
+shadow		0
+projectilehit   enemy obstacle
+running      	25 4 2 1 1
+atchain		1 2 3 4
+risetime	100
+holdblock	1
+blockpain	1
+
+gfxshadow	1
+
+#script 		data/chars/omote/scripts/update.c
+animationscript 	data/chars/mika/scripts/ani_p.c
+#didhitscript		data/chars/homoura/scripts/hit0001.c
+#keyscript	 	data/chars/homoura/scripts/key.c
+takedamagescript	data/scripts/dama0001.c
+onfallscript	        data/scripts/fall0001.c
+ondeathscript		data/scripts/deat0001.c
+onmovezscript		data/scripts/movz0001.c
+#onspawnscript		data/scripts/spaw0001.c
+
+palette 	data/chars/mika/aapa0000
+alternatepal	data/chars/mika/aapa0011
+
+anim waiting
+
+	delay	1
+	offset	100 272
+	fshadow 0	
+		frame	data/chars/misc/blan0001
+	offset	100 122
+		frame	data/chars/mika/aawa0001
+	offset	100 132
+		frame	data/chars/mika/aawa0001
+	offset	100 142
+		frame	data/chars/mika/aawa0001
+	offset	100 152
+		frame	data/chars/mika/aawa0001
+	offset	100 162
+		frame	data/chars/mika/aawa0001
+	offset	100 172
+		frame	data/chars/mika/aawa0001
+	offset	100 182
+		frame	data/chars/mika/aawa0001
+	offset	100 192
+		frame	data/chars/mika/aawa0001
+	offset	100 202
+		frame	data/chars/mika/aawa0001
+	offset	100 212
+		frame	data/chars/mika/aawa0001
+	offset	100 222
+		frame	data/chars/mika/aawa0001
+	offset	100 232
+		frame	data/chars/mika/aawa0001
+	offset	100 242
+		frame	data/chars/mika/aawa0001
+	offset	100 252
+		frame	data/chars/mika/aawa0001
+	offset	100 262
+		frame	data/chars/mika/aawa0001
+	offset	100 272
+	sound	data/sounds/vmik0023.wav			#Voice effect.
+		frame	data/chars/mika/aawa0002
+
+anim select
+
+	delay	12
+	offset	100 272
+	fshadow 0
+		frame	data/chars/mika/aase0001
+	sound	data/sounds/vmik0025.wav			#Voice effect.
+		frame	data/chars/mika/aase0002
+		frame	data/chars/mika/aase0003
+		frame	data/chars/mika/aase0004
+		frame	data/chars/mika/aase0005
+		frame	data/chars/mika/aase0006
+	delay	50
+		frame	data/chars/mika/aase0007
+			
+
+anim idle
+
+	loop	1
+	offset	150 175
+	bbox 	140 90 30 85
+	delay	13
+		frame	data/chars/mika/mika0435
+		frame	data/chars/mika/mika0436
+		frame	data/chars/mika/mika0437
+		frame	data/chars/mika/mika0438
+		frame	data/chars/mika/mika0439
+		frame	data/chars/mika/mika0440
+		frame	data/chars/mika/mika0441
+		frame	data/chars/mika/mika0442
+		frame	data/chars/mika/mika0435
+		frame	data/chars/mika/mika0436
+		frame	data/chars/mika/mika0437
+		frame	data/chars/mika/mika0000
+		frame	data/chars/mika/mika0001
+		frame	data/chars/mika/mika0440
+		frame	data/chars/mika/mika0441
+		frame	data/chars/mika/mika0442
+
+anim walk
+
+	loop	1
+	offset	150 175
+	bbox 	140 90 30 85
+	delay	10
+		frame	data/chars/mika/mika0009
+		frame	data/chars/mika/mika0007
+		frame	data/chars/mika/mika0006
+		frame	data/chars/mika/mika0005
+		frame	data/chars/mika/mika0004
+		frame	data/chars/mika/mika0003
+		frame	data/chars/mika/mika0002
+
+
+anim run
+
+	loop	1
+	offset	150 175
+	bbox 	140 90 30 85
+	delay	8
+		frame	data/chars/mika/mika0184
+		frame	data/chars/mika/mika0185
+		frame	data/chars/mika/mika0186
+		frame	data/chars/mika/mika0187
+		frame	data/chars/mika/mika0188
+		frame	data/chars/mika/mika0189
+		frame	data/chars/mika/mika0190
+		frame	data/chars/mika/mika0191
+		frame	data/chars/mika/mika0192
+		frame	data/chars/mika/mika0193
+
+#anim backwalk
+
+anim turn
+
+	offset	150 175
+	bbox 	140 90 30 85
+	delay	6
+		frame	data/chars/mika/mika0013
+		frame	data/chars/mika/mika0011
+	move	10
+		frame	data/chars/mika/mika0012
+	move	-16
+		frame	data/chars/mika/mika0443
+
+anim attack1
+
+	delay	6
+	offset	150 175
+	bbox 	140 90 30 85
+		frame	data/chars/mika/mika0125
+		frame	data/chars/mika/mika0126
+	attack  156  91  71  18  6  0  0  0  10
+		frame	data/chars/mika/mika0127
+	attack  0  0  0  0
+		frame	data/chars/mika/mika0128
+
+anim attack2
+
+	delay	6
+	offset	150 175
+	bbox 	140 90 30 85
+		frame	data/chars/mika/mika0363
+		frame	data/chars/mika/mika0364
+		frame	data/chars/mika/mika0365
+		frame	data/chars/mika/mika0366
+		frame  data/chars/mika/mika0367
+	attack  149  91  75  38  10  0  0  0  10
+		frame  data/chars/mika/mika0368
+		frame  data/chars/mika/mika0369
+	attack	0
+		frame  data/chars/mika/mika0370
+		frame  data/chars/mika/mika0363
+
+anim attack3
+
+	delay	6
+	offset	150 175
+	bbox 	140 90 30 85
+		frame	data/chars/mika/mika0363
+		frame  data/chars/mika/mika0364
+		frame  data/chars/mika/mika0365
+		frame  data/chars/mika/mika0358
+		frame  data/chars/mika/mika0359
+		move  20
+		frame  data/chars/mika/mika0360
+	attack  122  84  88  30  12  0  0  0  20
+		move  0
+		frame  data/chars/mika/mika0361
+		move  2
+		frame  data/chars/mika/mika0362
+	attack	0
+		move  0
+		frame  data/chars/mika/mika0363
+
+anim attack4
+
+	followanim 1
+	followcond 3
+	
+	delay	12
+	offset	150 175
+	bbox 	140 90 30 85
+		frame	data/chars/mika/mika0255
+	delay  	4
+		frame	data/chars/mika/mika0256
+		frame	data/chars/mika/mika0257	
+	move	10
+	attack  134  90  101  41  0  0  1  0  30
+		frame  	data/chars/mika/mika0410
+	delay	12
+	attack  0
+	move	0
+		frame  	data/chars/mika/mika0257
+
+anim attack5
+
+	delay	12
+	offset	150 175
+	bbox 	140 90 30 85
+		frame	data/chars/mika/mika0255
+	delay  	4
+		frame	data/chars/mika/mika0256
+		frame	data/chars/mika/mika0257
+		frame	data/chars/mika/mika0258
+	move	10
+	attack  134  90  101  41  20  1  0  0  30
+		frame  	data/chars/mika/mika0259
+	delay	12
+	attack  0
+	move	0
+		frame   data/chars/mika/mika0260
+		frame  	data/chars/mika/mika0257
+
+#*************
+
+anim follow1
+
+	cancel 		14 14 0 a freespecial2
+	quakeframe	9  4 -2
+
+	delay	12
+	offset	150 175
+	bbox 	140 90 30 85
+		frame	data/chars/mika/mika0410
+	move	50
+	@cmd	dama0001 1 0 10 "ATK_NORMAL" 0 0 0 0 0 0 0
+	@cmd	bind0010 1 -15 0 -2 0 1
+		frame  	data/chars/mika/mika0411
+	delay	8
+	move	0
+	@cmd	bind0010 1 -45 0 -2 0 0
+		frame  	data/chars/mika/mika0412
+		frame  	data/chars/mika/mika0413
+		frame  	data/chars/mika/mika0414
+		frame  	data/chars/mika/mika0415
+	@cmd	bind0010 1 -50 0 -2 0 0
+		frame  	data/chars/mika/mika0416
+		frame  	data/chars/mika/mika0417
+	delay	10
+	@cmd	bind0010 1 0 70 -2 0 2
+		frame  	data/chars/mika/mika0418
+	delay	5
+	@cmd	bind0010 1 50 0 -2 0 8
+	@cmd    stat0001 1 0 -9 0 0 0 0 0
+	@cmd	dust0002 6 50 0 0 0 0 0 0 0 0					#Dust effect.
+		frame  	data/chars/mika/mika0419
+		frame  	data/chars/mika/mika0419
+		frame  	data/chars/mika/mika0420
+	delay	10
+		frame  	data/chars/mika/mika0420
+	delay	10
+	@cmd	bind0010 1 50 0 -2 0 5
+		frame  	data/chars/mika/mika0420
+	delay	20
+		frame  	data/chars/mika/mika0420
+	delay	8
+	@cmd	bind0004 1 0 0 0 11 0						#Release bind.		
+	@cmd	dama0001 1 1 10 "ATK_NORMAL8" 0 2.5 1 0 0 0 0
+		frame  	data/chars/mika/mika0421
+		frame  	data/chars/mika/mika0422
+		frame  	data/chars/mika/mika0423
+		frame  	data/chars/mika/mika0424
+		frame  	data/chars/mika/mika0425
+	delay	20
+		frame  	data/chars/mika/mika0426
+	delay	12
+		frame  	data/chars/mika/mika0427
+		frame	data/chars/mika/mika0145
+
+anim freespecial2
+
+	cancel 		14 14 0 a freespecial3
+	quakeframe 	9 4 -2
+	flipframe  	6
+
+	delay	8
+	offset	150 175
+	bbox 	140 90 30 85
+		frame	data/chars/mika/mika0421
+	delay	12
+	@cmd	bind0010 1 50 0 2 1 8
+		frame	data/chars/mika/mika0421
+	@cmd	bind0010 1 70 -10 2 1 11
+		frame  	data/chars/mika/mika0422
+	offset	130 175
+		frame  	data/chars/mika/mika0349
+	offset	150 175
+	@cmd	bind0010 1 50 0 -2 0 9
+		frame  	data/chars/mika/mika0350
+	@cmd	bind0010 1 50 0 2 0 6
+		frame  	data/chars/mika/mika0351
+	move	-20
+	@cmd	bind0010 1 -65 0 -2 -1 6
+		frame  	data/chars/mika/mika0415
+	move	0	
+		frame  	data/chars/mika/mika0416
+	@cmd	bind0010 1 -62 5 -2 -1 6
+		frame  	data/chars/mika/mika0417
+	delay	15
+	@cmd	bind0010 1 5 70 -2 -1 2
+		frame  	data/chars/mika/mika0418
+	delay	5
+	@cmd	bind0010 1 55 0 -2 1 8
+	@cmd    stat0001 1 0 -9 0 0 0 0 0
+	@cmd	dust0002 6 50 0 0 0 0 0 0 0 0					#Dust effect.
+		frame  	data/chars/mika/mika0419
+		frame  	data/chars/mika/mika0419
+		frame  	data/chars/mika/mika0420
+	delay	10
+		frame  	data/chars/mika/mika0420
+	delay	20
+	@cmd	bind0010 1 65 0 -2 1 5
+		frame  	data/chars/mika/mika0420
+	delay	8
+	@cmd	bind0004 1 0 0 0 11 0						#Release bind.		
+	@cmd	dama0001 1 1 10 "ATK_NORMAL8" -2 2.5 1 0 0 0 0
+		frame  	data/chars/mika/mika0421
+		frame  	data/chars/mika/mika0422
+		frame  	data/chars/mika/mika0423
+		frame  	data/chars/mika/mika0424
+		frame  	data/chars/mika/mika0425
+	delay	20
+		frame  	data/chars/mika/mika0426
+	delay	12
+		frame  	data/chars/mika/mika0427
+		frame	data/chars/mika/mika0145
+
+anim freespecial3
+
+	quakeframe 9 4 -2
+	flipframe  6
+
+	delay	8
+	offset	150 175
+	bbox 	140 90 30 85
+		frame	data/chars/mika/mika0421
+	delay	12
+	@cmd	bind0010 1 50 0 2 1 8
+		frame	data/chars/mika/mika0421
+	@cmd	bind0010 1 70 -10 2 1 11
+		frame  	data/chars/mika/mika0422
+	offset	130 175
+		frame  	data/chars/mika/mika0349
+	offset	150 175
+	@cmd	bind0010 1 50 0 -2 0 9
+		frame  	data/chars/mika/mika0350
+	@cmd	bind0010 1 50 0 2 0 6
+		frame  	data/chars/mika/mika0351
+	move	-20
+	@cmd	bind0010 1 -65 0 -2 -1 6
+		frame  	data/chars/mika/mika0415
+	move	0	
+		frame  	data/chars/mika/mika0416
+	@cmd	bind0010 1 -62 5 -2 -1 6
+		frame  	data/chars/mika/mika0417
+	delay	15
+	@cmd	bind0010 1 5 70 -2 -1 2
+		frame  	data/chars/mika/mika0418
+	delay	5
+	@cmd	bind0010 1 55 0 -2 1 8
+	@cmd    stat0001 1 0 -9 0 0 0 0 0
+	@cmd	dust0002 6 50 0 0 0 0 0 0 0 0					#Dust effect.
+		frame  	data/chars/mika/mika0419
+		frame  	data/chars/mika/mika0419
+		frame  	data/chars/mika/mika0420
+	delay	10
+		frame  	data/chars/mika/mika0420
+	delay	20
+	@cmd	bind0010 1 65 0 -2 1 5
+		frame  	data/chars/mika/mika0420
+	delay	8
+	@cmd	bind0004 1 0 0 0 11 0						#Release bind.		
+	@cmd	dama0001 1 1 10 "ATK_NORMAL8" -1 2.5 1 0 0 0 0
+		frame  	data/chars/mika/mika0421
+		frame  	data/chars/mika/mika0422
+		frame  	data/chars/mika/mika0423
+		frame  	data/chars/mika/mika0424
+		frame  	data/chars/mika/mika0425
+	delay	20
+		frame  	data/chars/mika/mika0426
+	delay	12
+		frame  	data/chars/mika/mika0427
+		frame	data/chars/mika/mika0145	
+
+anim follow51
+
+	#Defending poses.
+	
+	delay	-1
+	offset	100 170
+	bbox	0
+		frame	data/chars/mika/mika0461			#0	Grabbed.
+		frame	data/chars/mika/mika0462			#1	Grabbed Pain.
+		frame	data/chars/mika/mika0463			#2	Horizontal Up.
+		frame	data/chars/mika/mika0464			#3	Horizontal Down.
+		frame	data/chars/mika/mika0465			#4	Vertical Up.
+		frame	data/chars/mika/mika0466			#5	Vertical Down.
+		frame	data/chars/mika/mika0467			#6	Tilt Up.
+		frame	data/chars/mika/mika0468			#7	Tilt Down.
+		frame	data/chars/mika/mika0469			#8	Vertical Down pain.
+		frame	data/chars/mika/mika0470			#9	Down Up.
+		frame	data/chars/mika/mika0471			#10	Down Up Pain.
+		frame	data/chars/mika/mika0472			#11	Falling Up.
+		frame	data/chars/mika/mika0473			#12	Falling Up tilted.
+		frame	data/chars/mika/mika0474			#13	Horizontal Up pain.
+		frame	data/chars/mika/mika0475			#14	Middle pain.
+
+#*****Grappling****************************************************************************
+
+anim grab
+
+	delay	6
+	offset	150 175
+	bbox 	140 90 30 85
+	@cmd	bind0002 17 0 0
+		frame	data/chars/mika/mika0444
+
+
+anim grabforward
+
+	cancel 		13 13 0 a freespecial2
+	quakeframe	8  4 -2
+
+	delay	12
+	offset	150 175
+	bbox 	140 90 30 85		
+	move	50
+	#	dama0001 1 0 10 "ATK_NORMAL" 0 0 0 0 0 0 0
+	#	bind0010 1 -17 0 -2 0 1
+		frame  	data/chars/mika/mika0411
+	delay	8
+	move	0
+	@cmd	bind0010 1 -45 0 -2 -1 0
+		frame  	data/chars/mika/mika0412
+		frame  	data/chars/mika/mika0413
+		frame  	data/chars/mika/mika0414
+		frame  	data/chars/mika/mika0415
+	@cmd	bind0010 1 -50 0 -2 -1 0
+		frame  	data/chars/mika/mika0416
+		frame  	data/chars/mika/mika0417
+	delay	10
+	@cmd	bind0010 1 5 70 -2 -1 2
+		frame  	data/chars/mika/mika0418
+	delay	5
+	@cmd	bind0010 1 55 0 -2 1 8
+	@cmd    stat0001 1 0 -9 0 0 0 0 0
+	@cmd	dust0002 6 50 0 0 0 0 0 0 0 0					#Dust effect.
+		frame  	data/chars/mika/mika0419
+		frame  	data/chars/mika/mika0419
+		frame  	data/chars/mika/mika0420
+	delay	10
+		frame  	data/chars/mika/mika0420
+	delay	10
+	@cmd	bind0010 1 65 0 -2 1 5
+		frame  	data/chars/mika/mika0420
+	delay	20
+		frame  	data/chars/mika/mika0420
+	delay	8
+	@cmd	bind0004 1 0 0 0 11 0						#Release bind.		
+	@cmd	dama0001 1 1 10 "ATK_NORMAL8" -1 2.5 1 0 0 0 0
+		frame  	data/chars/mika/mika0421
+		frame  	data/chars/mika/mika0422
+		frame  	data/chars/mika/mika0423
+		frame  	data/chars/mika/mika0424
+		frame  	data/chars/mika/mika0425
+	delay	20
+		frame  	data/chars/mika/mika0426
+	delay	12
+		frame  	data/chars/mika/mika0427
+		frame	data/chars/mika/mika0145
+
+
+
+#*****Jumping******************************************************************************
+
+anim jumpdelay
+
+	delay	18
+	offset	150 175
+	bbox 	140 90 30 85
+		frame	data/chars/mika/mika0145
+
+
+anim jumpland
+
+	delay	8
+	offset	150 175
+	bbox 	140 90 30 85
+	sound	data/sounds/sound002.wav					#Sound effect.
+		frame	data/chars/mika/mika0317
+		frame	data/chars/mika/mika0010
+		frame	data/chars/mika/mika0145
+
+anim jump
+
+	dropframe 10
+	
+	delay	3
+	offset	150 175
+	bbox 	140 90 30 85
+		frame	data/chars/mika/mika0014
+		frame	data/chars/mika/mika0015
+		frame	data/chars/mika/mika0014
+		frame	data/chars/mika/mika0015
+		frame	data/chars/mika/mika0014
+		frame	data/chars/mika/mika0015
+		frame	data/chars/mika/mika0014
+		frame	data/chars/mika/mika0015
+		frame	data/chars/mika/mika0014
+		frame	data/chars/mika/mika0015
+	delay	6
+		frame	data/chars/mika/mika0097
+		frame	data/chars/mika/mika0098
+		frame	data/chars/mika/mika0108
+		frame	data/chars/mika/mika0109
+		frame	data/chars/mika/mika0099
+		frame	data/chars/mika/mika0252
+	delay	3
+		frame	data/chars/mika/mika0253
+		frame	data/chars/mika/mika0254
+		frame	data/chars/mika/mika0253
+		frame	data/chars/mika/mika0254
+		frame	data/chars/mika/mika0253
+		frame	data/chars/mika/mika0254
+		frame	data/chars/mika/mika0253
+		frame	data/chars/mika/mika0254
+
+#anim forwardjump
+
+anim runjump
+
+	dropframe 10
+	
+	delay	3
+	offset	150 175
+	bbox 	140 90 30 85
+		frame	data/chars/mika/mika0243
+		frame	data/chars/mika/mika0244
+		frame	data/chars/mika/mika0243
+		frame	data/chars/mika/mika0244
+		frame	data/chars/mika/mika0243
+		frame	data/chars/mika/mika0244
+		frame	data/chars/mika/mika0243
+		frame	data/chars/mika/mika0244
+		frame	data/chars/mika/mika0243
+		frame	data/chars/mika/mika0244
+	delay	6
+		frame	data/chars/mika/mika0245
+		frame	data/chars/mika/mika0246
+		frame	data/chars/mika/mika0247
+		frame	data/chars/mika/mika0268
+		frame	data/chars/mika/mika0269
+		frame	data/chars/mika/mika0270
+	delay	3
+		frame	data/chars/mika/mika0271
+		frame	data/chars/mika/mika0272
+		frame	data/chars/mika/mika0271
+		frame	data/chars/mika/mika0272
+		frame	data/chars/mika/mika0271
+		frame	data/chars/mika/mika0272
+		frame	data/chars/mika/mika0271
+		frame	data/chars/mika/mika0272
+
+anim jumpattack
+
+	#Elbow
+
+	delay	6
+	offset	150 175
+	bbox	140 90 30 85
+		frame	data/chars/mika/mika0248
+		frame	data/chars/mika/mika0251			
+	delay	3
+	attack	150 100 90 50 40 2
+		frame	data/chars/mika/mika0249	
+		frame	data/chars/mika/mika0250
+	attack	150 100 90 50 30 1
+		frame	data/chars/mika/mika0249	
+		frame	data/chars/mika/mika0250
+		frame	data/chars/mika/mika0249	
+		frame	data/chars/mika/mika0250
+	delay	6
+	attack	0
+		frame	data/chars/mika/mika0251
+	delay	3
+		frame	data/chars/mika/mika0252
+		frame	data/chars/mika/mika0253
+		frame	data/chars/mika/mika0254
+		frame	data/chars/mika/mika0253
+		frame	data/chars/mika/mika0254
+		frame	data/chars/mika/mika0253
+		frame	data/chars/mika/mika0254
+		frame	data/chars/mika/mika0253
+		frame	data/chars/mika/mika0254
+
+		
+
+anim jumpattack2
+
+	#Palm thrust
+
+	delay	6
+	offset	100 200
+	bbox	95 95 35 60
+	sound	data/sounds/vand0008.wav					#Voice effect.
+		frame	data/chars/andy/andy0171
+	attack  100 105 40 35 20
+		frame	data/chars/andy/andy0174
+	attack  100 105 40 35 8
+		frame	data/chars/andy/andy0174
+
+anim jumpattack3
+
+	#Upward Flying kick
+
+	counterattack	1
+
+	delay	8
+	offset	100 200
+	bbox	95 95 35 60
+	sound	data/sounds/vand0008.wav					#Voice effect.
+		frame	data/chars/andy/andy0240
+	delay	20
+	attack  70 120 65 35 15 1
+		frame	data/chars/andy/andy0182
+	attack	0
+	delay	8
+		frame	data/chars/andy/andy0240
+		frame	data/chars/andy/andy0044
+		frame	data/chars/andy/andy0045
+		frame	data/chars/andy/andy0046
+
+anim jumpforward
+
+	#Side kick
+
+	delay	10
+	offset	100 200
+	bbox	95 95 35 60
+	sound	data/sounds/vand0002.wav					#Voice effect.
+		frame	data/chars/andy/andy0176
+		frame	data/chars/andy/andy0177
+	delay	20
+	attack  90 120 70 30 15 1
+		frame	data/chars/andy/andy0181
+	delay	8
+	attack	0
+		frame	data/chars/andy/andy0177
+		frame	data/chars/andy/andy0175
+		frame	data/chars/andy/andy0044
+		frame	data/chars/andy/andy0045
+		frame	data/chars/andy/andy0046
+
+anim runjumpattack
+
+	#Side kick
+
+	delay	10
+	offset	100 200
+	bbox	95 95 35 60
+	sound	data/sounds/vand0019.wav					#Voice effect.
+		frame	data/chars/andy/andy0176
+		frame	data/chars/andy/andy0177
+	attack  90 120 70 30 18 1
+		frame	data/chars/andy/andy0180
+
+#*****Injury and Defence*******************************************************************
+
+anim block
+
+	offset	145 175
+	bbox 	140 90 30 85
+	delay	10
+		frame	data/chars/mika/mika0319
+	
+anim blockpain
+	
+	delay	3
+	offset	145 175
+	bbox	85 100 30 100
+	move	-1
+		frame	data/chars/mika/mika0016
+	offset	148 175
+		frame	data/chars/mika/mika0016
+	offset	145 175
+	move	0
+		frame	data/chars/mika/mika0016
+	offset	148 175
+		frame	data/chars/mika/mika0016
+	delay	20
+	offset	145 175
+		frame	data/chars/mika/mika0016		
+
+anim rise
+
+	jumpframe 2 1 0 0
+	dropframe 3
+	landframe 4
+
+	delay	10
+	offset	150 175
+	bbox 	0
+		frame	data/chars/mika/mika0313
+		frame	data/chars/mika/mika0314
+	delay	-1
+		frame	data/chars/mika/mika0315
+		frame	data/chars/mika/mika0316
+	delay	8
+		frame	data/chars/mika/mika0317
+		frame	data/chars/mika/mika0010
+		frame	data/chars/mika/mika0318
+
+anim grabbed
+
+	delay	3
+	offset	151 175
+	bbox	0
+		frame	data/chars/mika/mika0017
+	offset  149 175
+		frame	data/chars/mika/mika0017
+	offset  151 175
+		frame	data/chars/mika/mika0017
+	offset  149 175
+		frame	data/chars/mika/mika0017
+	delay 	50
+	offset	150 175
+		frame	data/chars/mika/mika0017
+
+anim pain
+
+	jumpframe 0 0 -0.1 0
+
+	delay	10
+	offset	150 175
+	bbox 	140 90 30 85
+		frame	data/chars/mika/mika0065
+		frame	data/chars/mika/mika0055
+		frame	data/chars/mika/mika0056
+		frame	data/chars/mika/mika0057
+
+anim fall
+
+	dropframe 1
+	landframe 5
+
+	delay	-1
+	offset	150 175
+	bbox 	140 90 30 85
+		frame	data/chars/mika/mika0090		
+	delay	8
+		frame	data/chars/mika/mika0091
+		frame	data/chars/mika/mika0092
+		frame	data/chars/mika/mika0093		
+	delay	-1
+		frame	data/chars/mika/mika0094
+	delay	12
+		frame	data/chars/mika/mika0070
+		frame	data/chars/mika/mika0071
+		frame	data/chars/mika/mika0072
+	
+
+anim fall5
+
+	#Tossed
+
+	dropframe 	1
+	landframe 	3
+	delay	-1
+	offset	150 175
+	bbox 	140 90 30 85
+	attack	140 90 30 85 6 1
+		frame	data/chars/mika/mika0067
+	delay	15
+		frame	data/chars/mika/mika0070
+	delay	-1
+		frame	data/chars/mika/mika0066			
+	delay	15
+	attack	0
+	bbox	0		
+		frame	data/chars/mika/mika0071
+		frame	data/chars/mika/mika0072
+
+anim bpain	
+
+	jumpframe 0 0 -0.1 0
+
+	delay	5
+	bbox	85 100 30 40
+	offset	100 200	
+		frame	data/chars/mika/mika0065
+	offset	103 200
+		frame	data/chars/mika/mika0065
+	offset	100 200	
+		frame	data/chars/mika/mika0065
+	offset	103 200
+		frame	data/chars/mika/mika0065
+	offset	100 200	
+		frame	data/chars/mika/mika0065
+	offset	103 200
+		frame	data/chars/mika/mika0065
+	offset	100 200	
+		frame	data/chars/mika/mika0065
+	offset	103 200
+		frame	data/chars/mika/mika0065
+	offset	100 200	
+		frame	data/chars/mika/mika0065
+	offset	103 200
+		frame	data/chars/mika/mika0065
+	offset	100 200	
+		frame	data/chars/mika/mika0065
+	offset	103 200
+		frame	data/chars/mika/mika0065
+	offset	100 200	
+		frame	data/chars/mika/mika0065
+	offset	103 200
+		frame	data/chars/mika/mika0065
+	offset	100 200	
+		frame	data/chars/mika/mika0065
+	offset	103 200
+		frame	data/chars/mika/mika0065
+	offset	100 200	
+		frame	data/chars/mika/mika0065
+	offset	103 200
+		frame	data/chars/mika/mika0065
+	delay	10
+	offset	100 200
+		frame	data/chars/mika/mika0057
+
+anim burn
+
+	anim fall5
+
+	#Tossed
+
+	dropframe 	1
+	landframe 	3
+	delay	-1
+	offset	150 175
+	bbox 	140 90 30 85
+	attack	140 90 30 85 6 1
+		frame	data/chars/mika/mika0067
+	delay	15
+		frame	data/chars/mika/mika0070
+	delay	-1
+		frame	data/chars/mika/mika0066			
+	delay	15
+	attack	0
+	bbox	0		
+		frame	data/chars/mika/mika0071
+		frame	data/chars/mika/mika0072
+
+
+		
+
+
+
+
+

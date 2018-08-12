@@ -1,97 +1,106 @@
 #*****icons*****
 
-icon         data/chars/ray/aaic0001
-icondie      data/chars/ray/aaic0002
-iconpain     data/chars/ray/aaic0003
+icon         data/chars/ray/aaic0001 					
+icondie      data/chars/ray/aaic0002 				
+iconpain     data/chars/ray/aaic0003 					
 #iconget     									
 #iconw	     									
 
 #*****General*****
 
-name			Ray
-health			100
-speed			8
-running      	15 4 2 1 0
-subtype 		chase
-type			enemy
-combostyle 		1
-atchain 		1 2 3 0 4 5
-blockpain		1
+name		Ray
+health		100
+speed		8
+running      	15 4 2 0 0
+subtype 	chase
+type		enemy
+combostyle 	1
+atchain 	1 2 3 0 4 5
+blockpain	1
 holdblock       1
 turndelay    	10
-risetime        -350 -200
-falldie			2
+risetime        -1350 -2000
+falldie		2
 nodieblink      3
 noquake         1
-score			1
-gfxshadow		1
+score		1
+gfxshadow	1
 projectilehit 	enemy panel
-candamage		player npc panel
-hmap			1 5
-komap 			1 1
-mp				1
-height			95
-dust			dust0001 dust0003 dust0002
-#riseattacktype 3
+candamage	player npc panel
+hmap		1 5
+mp		1
+height		95
+dust		dust0001 dust0003 dust0002
+#riseattacktype 	3
+komap 		1 1
 nopassiveblock 	1
-grabfinish		1
-throwdamage		0
+grabfinish	1
 
 #*****Scripts*****
 
-animationscript 	data/chars/ray/scripts/ani.c		#Animation updated.
-didblockscript		data/scripts/z_block.c				#Block incoming attack.
-didhitscript 		data/scripts/z_hit.c				#Hit another entity.
-keyscript			data/scripts/z_key.c				#Controlling player press/release key.
-onblockascript		data/scripts/z_blocka.c				#Movement (rise/fall) blocked by platform.
-onblockoscript		data/scripts/z_blocko.c				#Movement blocked by obstacle.
-onblocksscript		data/scripts/z_blocks.c				#Movement blocked by screen boundary.
-onblockwscript		data/scripts/z_blockw.c				#Movement blocked by wall.				
-onblockzscript		data/scripts/z_blockz.c				#Movement blocked by Z boundary.				
-ondeathscript		data/scripts/z_death.c				#Killed by damage.
-onfallscript		data/scripts/z_fall.c				#Fall status set.
-onkillscript		data/scripts/z_kill.c				#Removed from playfield.
-onmoveascript		data/scripts/z_movea.c				#Moving on Y axis.
-onmovexscript		data/scripts/z_movex.c				#Moving on X axis.
-onmovezscript		data/scripts/z_movez.c				#Moving on Z axis.
-onpainscript		data/scripts/z_pain.c				#Pain status set.
-onspawnscript		data/scripts/z_spawn.c				#Spawned to playfied.
-#script				data/chars/ray/scripts/update.c				#Entity updated.
-takedamagescript	data/scripts/z_damage.c				#Damaged.
-thinkscript			data/scripts/z_think.c				#Entity AI updates.
+animationscript 	data/chars/ray/scripts/ani_a.c
+didhitscript		data/scripts/hit0001.c
+takedamagescript	data/scripts/dama0001.c
+didblockscript		data/scripts/bloc0001.c
+onpainscript		data/scripts/pain0001.c
+onfallscript	        data/scripts/fall0001.c
+ondeathscript		data/scripts/deat0001.c
+onmovezscript		data/scripts/movz0001.c
+onspawnscript		data/scripts/spaw0001.c
+onkillscript		data/scripts/kill0001.c
+onblockoscript		data/scripts/onbo0001.c
+onblockwscript		data/scripts/onbw0001.c
 
 #*****MP Specific*****
 
-mp			100
-mprate       4
-chargerate   2
+mp	     100      								
+mprate       4	 								
+chargerate   2									
 
 #*****NPC/Enemy Specific*****
 
-bflash			bflash
 #nopassiveblock 1
-blockodds		1
+blockodds      1									
 #score										
-aggression		0
+aggression   -120	        							
 
 #*****Inert Specfic*****
 #*****Sub Entites*****
 #*****Alternates*******
 
-palette 		data/chars/ray/aapa0000				#Default.
+palette 	data/chars/ray/aapa0000				#Default.
 alternatepal	data/chars/ray/aapa0001				#KO.
 alternatepal	data/chars/ray/aapa0002				#Burn.
 alternatepal	data/chars/ray/aapa0003				#Shock
 alternatepal	data/chars/ray/aapa0004				#Freeze.
 alternatepal	data/chars/ray/aapa0005				#Poison.
-alternatepal	data/chars/ray/aapa0011				#
-alternatepal	data/chars/ray/aapa0012				#
-alternatepal	data/chars/ray/aapa0013				#
-alternatepal	data/chars/ray/aapa0014				#
+alternatepal	data/chars/ray/aapa0011				#Blue/Dark Red
+alternatepal	data/chars/ray/aapa0012				#Blue/Blue
+alternatepal	data/chars/ray/aapa0013				#Blue/Yellow
+alternatepal	data/chars/ray/aapa0014				#Blue/Orange
+alternatepal	data/chars/ray/aapa0015				#Grey/Red
+alternatepal	data/chars/ray/aapa0016				#Grey/Dark Red
+alternatepal	data/chars/ray/aapa0017				#Grey/Blue
+alternatepal	data/chars/ray/aapa0018				#Grey/Yellow
+alternatepal	data/chars/ray/aapa0019				#Grey/Orange
+alternatepal	data/chars/ray/aapa0020				#Brown/Red
+alternatepal	data/chars/ray/aapa0021				#Brown/Dark Red
+alternatepal	data/chars/ray/aapa0022				#Brown/Blue
+alternatepal	data/chars/ray/aapa0023				#Brown/Yellow
+alternatepal	data/chars/ray/aapa0024				#Brown/Orange
+alternatepal	data/chars/ray/aapa0025				#Green/Red
+alternatepal	data/chars/ray/aapa0026				#Green/Dark Red
+alternatepal	data/chars/ray/aapa0027				#Green/Blue
+alternatepal	data/chars/ray/aapa0028				#Green/Yellow
+alternatepal	data/chars/ray/aapa0029				#Green/Orange
 
 #*****Commands*****************************************************************************
 
-
+com          d u j   freespecial1  						#Backdash.
+com          f u a   freespecial3  						#Uppercut (force plane up).
+com          f d a   freespecial4  						#Spin Kick (force plane down).
+com          d u a   freespecial5  						#Front kick (plane up).
+com          u d a   freespecial6  						#Front Kick (plane down).
 
 #*****Basic********************************************************************************
 
@@ -100,12 +109,12 @@ anim spawn
 	offset	100 200
 	bbox	85 100 30 100
 	delay	7
-		frame	data/chars/ray/0001
-		frame	data/chars/ray/0002
-		frame	data/chars/ray/0003
-		frame	data/chars/ray/0004
-		frame	data/chars/ray/0003
-		frame	data/chars/ray/0002
+		frame	data/chars/ray/ray0001	
+		frame	data/chars/ray/ray0002
+		frame	data/chars/ray/ray0003
+		frame	data/chars/ray/ray0004
+		frame	data/chars/ray/ray0003
+		frame	data/chars/ray/ray0002
 
 anim waiting
 
@@ -144,39 +153,39 @@ anim waiting
 	offset	100 262
 		frame	data/chars/ray/aawa0001
 	offset	100 272
-	sound	data/chars/ray/sounds/25_1.wav
-		frame	data/chars/ray/aawa0002
+	sound	data/sounds/vray0005.wav
+		frame	data/chars/ray/aawa0002		
 
 anim select
 
 	delay	6
 	offset	100 272
 	fshadow 0
-		frame	data/chars/ray/0001.png
-		frame	data/chars/ray/0040.png
-		frame	data/chars/ray/0041.png
-		frame	data/chars/ray/0042.png
-		frame	data/chars/ray/0043.png
-	sound	data/chars/ray/sounds/1_0.wav
-		frame	data/chars/ray/0044.png
+		frame	data/chars/ray/aase0001
+		frame	data/chars/ray/aase0002
+		frame	data/chars/ray/aase0003
+		frame	data/chars/ray/aase0004
+		frame	data/chars/ray/aase0005
+	sound	data/sounds/vray0004.wav
+		frame	data/chars/ray/aase0006
 
 anim idle
-
+	
 	loop	1
 	offset	100 200
 	bbox	85 100 30 100
 	delay	7
-		frame	data/chars/ray/0001
-		frame	data/chars/ray/0002
-		frame	data/chars/ray/0003
-		frame	data/chars/ray/0004
-		frame	data/chars/ray/0003
-		frame	data/chars/ray/0002
+		frame	data/chars/ray/ray0001
+		frame	data/chars/ray/ray0002
+		frame	data/chars/ray/ray0003
+		frame	data/chars/ray/ray0004
+		frame	data/chars/ray/ray0003
+		frame	data/chars/ray/ray0002
 
 anim idle2
 
 	#Straffe idle, opponent in front on Z.
-
+	
 	range   -250 250
 	rangez  15 250
 
@@ -184,23 +193,23 @@ anim idle2
 	offset	100 200
 	bbox	85 100 30 100
 	delay	12
-		frame	data/chars/ray/0169
-		frame	data/chars/ray/0170
-		frame	data/chars/ray/0171
-		frame	data/chars/ray/0170
-
+		frame	data/chars/ray/ray0169
+		frame	data/chars/ray/ray0170
+		frame	data/chars/ray/ray0171
+		frame	data/chars/ray/ray0170
+		
 anim walk
-
+	
 	loop	1
 	offset	100 200
 	bbox	85 100 30 100
 	delay	7
-		frame	data/chars/ray/0014
-		frame	data/chars/ray/0015
-		frame	data/chars/ray/0016
-		frame	data/chars/ray/0017
-		frame	data/chars/ray/0018
-		frame	data/chars/ray/0019
+		frame	data/chars/ray/ray0014
+		frame	data/chars/ray/ray0015
+		frame	data/chars/ray/ray0016
+		frame	data/chars/ray/ray0017
+		frame	data/chars/ray/ray0018
+		frame	data/chars/ray/ray0019
 
 anim run
 
@@ -208,324 +217,288 @@ anim run
 	offset	100 200
 	bbox	85 100 30 100
 	delay	5
-		frame	data/chars/ray/0014
-		frame	data/chars/ray/0015
-		frame	data/chars/ray/0016
-		frame	data/chars/ray/0017
-		frame	data/chars/ray/0018
-		frame	data/chars/ray/0019
+		frame	data/chars/ray/ray0014
+		frame	data/chars/ray/ray0015
+		frame	data/chars/ray/ray0016
+		frame	data/chars/ray/ray0017
+		frame	data/chars/ray/ray0018
+		frame	data/chars/ray/ray0019
 
 anim backwalk
-
+	
 	loop	1
 	offset	100 200
 	bbox	85 100 30 100
 	delay	7
-		frame	data/chars/ray/0020.png
-		frame	data/chars/ray/0021.png
-		frame	data/chars/ray/0022.png
-		frame	data/chars/ray/0023.png
-		frame	data/chars/ray/0024.png
-		frame	data/chars/ray/0025.png
+		frame	data/chars/ray/ray0020
+		frame	data/chars/ray/ray0021
+		frame	data/chars/ray/ray0022
+		frame	data/chars/ray/ray0023
+		frame	data/chars/ray/ray0024
+		frame	data/chars/ray/ray0025
 
 anim turn
 
 	offset	100 200
 	bbox	85 100 30 100
 	delay	7
-		frame	data/chars/ray/0005
-		frame	data/chars/ray/0006
-		frame	data/chars/ray/0007
+		frame	data/chars/ray/ray0005
+		frame	data/chars/ray/ray0006
+		frame	data/chars/ray/ray0007
 
 anim get
 
 	offset	100 200
 	bbox	85 100 30 100
 	delay	7
-		frame	data/chars/ray/0011
-		frame	data/chars/ray/0012
-		frame	data/chars/ray/0013
+		frame	data/chars/ray/ray0011
+		frame	data/chars/ray/ray0012
+		frame	data/chars/ray/ray0013
 	delay	12
-		frame	data/chars/ray/0078
+		frame	data/chars/ray/ray0078
 	delay	7
-		frame	data/chars/ray/0013
-		frame	data/chars/ray/0012
-		frame	data/chars/ray/0011
+		frame	data/chars/ray/ray0013
+		frame	data/chars/ray/ray0012
+		frame	data/chars/ray/ray0011
 
 #*****Attack*******************************************************************************
 
 anim attack1
-
+	
 	#Jab
 
 	range   0 65
 
-	offset	99 201
-	bbox	93 103 25 96
-	delay	6
-	@cmd	soun0005 0 VOIATKL	-1 0.75 0 0
-	@cmd	soun0005 0 SNDWIFFL -1 1	0 0
-		frame	data/chars/ray/0049.png
-	attack1	121 111 48 12 5 0 0 0 10
-		bbox  93  103  28  95
-		delay  3
-		frame	data/chars/ray/0182.png
-		bbox  93  103  25  96
-	frame  data/chars/ray/0050.png
-		attack1  121  111  47  12  5  0  0  0  10
-		Attack1  0
-	frame  data/chars/ray/0183.png
-		Attack1  0
-		delay  6
-		Attack1  0
-	frame  data/chars/ray/0184.png
+	offset	100 200
+	bbox	85 100 30 100
+	delay	10
+	@cmd	soun0001 "vsho0001.wav"
+		frame	data/chars/ray/ray0049
+	attack	110 110 60 15 5 0 0 0 10
+		frame	data/chars/ray/ray0050
+	attack	0
+		frame	data/chars/ray/ray0049
 
+anim attack2
+	
+	#Side Kick
+
+	range   0 40
+
+	offset	100 200
+	bbox	85 100 30 100
+	delay	8
+		frame	data/chars/ray/ray0056
+		frame	data/chars/ray/ray0069
+	@cmd	soun0001 "vsho0001.wav"
+		frame	data/chars/ray/ray0070
+	attack	90 85 50 55 12 0 0 0 10
+		frame	data/chars/ray/ray0071
+	delay	10
+	attack	0
+		frame	data/chars/ray/ray0070
+		frame	data/chars/ray/ray0069
+		frame	data/chars/ray/ray0062
+
+anim attack3
+	
+	#Uppercut
+
+	range   0 40
+
+	offset	100 200
+	bbox	85 100 30 100
+	delay	8
+	@cmd	soun0001 "vsho0007.wav"
+		frame	data/chars/ray/ray0064		
+	attack	90 70 60 65 10 1 0 0 15
+	dropv   4 1 0.3
+		frame	data/chars/ray/ray0065
+	delay	20
+		frame	data/chars/ray/ray0066
+	attack	0
+		frame	data/chars/ray/ray0065
+	delay	15
+		
 anim attack4
-
+	
 	#Straight
 
 	range   0 90
 
 	offset	100 200
-	bbox	80 106 36 92
-	@cmd	soun0005 0 VOIATKL	-1 0.75 0 0
-	@cmd	soun0005 0 SNDWIFFL -1 1	0 0
-		delay  7
-		frame	data/chars/ray/0209.png
-		bbox  86  113  40  86
-		frame	data/chars/ray/0210.png
-	attack1	116 129 54 15 8 0 0 0 10
-		bbox  93  105  39  93
-		delay  5
-		frame	data/chars/ray/0211.png
-		Attack1  0
-		delay  8
-	frame  data/chars/ray/0212.png
-		bbox  85  112  39  86
-		frame	data/chars/ray/0210.png
-	frame  data/chars/ray/0011.png
+	bbox	85 100 30 100
+	delay	8
+	@cmd	soun0001 "vsho0002.wav"
+		frame	data/chars/ray/ray0051
+		frame	data/chars/ray/ray0052
+	attack	85 110 82 25 8 0 0 0 10
+		frame	data/chars/ray/ray0053
+	delay	10
+	attack	0
+		frame	data/chars/ray/ray0052
 
 anim attack5
-
+	
 	#Roundhouse
 
 	range   0 90
 
 	offset	100 200
-	bbox	89 101 28 97
-	delay	10
-		frame	data/chars/ray/0056.png
-	@cmd	soun0005 0 VOIATKH	-1 1 0 0
-	@cmd	soun0005 0 SNDWIFFH -1 1	0 0
-		delay  7
-		bbox  92  101  29  96
-		frame	data/chars/ray/0057.png
-		bbox  107  98  26  99
-		move  2
-		frame	data/chars/ray/0058.png
-	attack1	126 96 63 50 10 1 0 0 10
+	bbox	85 100 30 100
+	delay	8
+		frame	data/chars/ray/ray0056
+	@cmd	soun0001 "vsho0007.wav"
+		frame	data/chars/ray/ray0057
+		frame	data/chars/ray/ray0058
+	attack	100 90 90 45 10 1 0 0 10
 	dropv   3 1 -0.3
-		bbox  97  99  42  100
-		move  0
-		frame	data/chars/ray/0059.png
+		frame	data/chars/ray/ray0059
 	delay	10
-	attack1	0
-		frame	data/chars/ray/0060.png
-		bbox  94  100  28  98
-		move  -2
-		frame	data/chars/ray/0061.png
-		bbox  90  101  27  98
-		delay  7
-		move  0
-	frame  data/chars/ray/0056.png
-
-anim  attackbackward
-	jumpframe  1  2  0  0  dust0002
-	range  0  80
-	landframe  7
-	flipframe  1
-
-		offset  100  200
-		bbox  85  100  30  100
-		delay  8
-	frame  data/chars/ray/0011.png
-		@cmd  soun0005  0  VOIATKH  -1  1  0  0
-		@cmd  soun0005  0  SNDWIFFH  -1  1  0  0
-
-	frame  data/chars/ray/0093.png
-		bbox  88  100  28  91
-
-	frame  data/chars/ray/0094.png
-		attack7  95  133  78  26  15  1  0  0  15
-		damageonlanding  0  1
-		offset  100  190
-		bbox  82  98  30  78
-		attack1  106  134  66  24  15  1  0  0  10
-		dropv  4  0.5  0.5
-	frame  data/chars/ray/0095.png
-		attack1  0
-		bbox  87  105  30  82
-		Attack1  0
-	frame  data/chars/ray/0096.png
-		bbox  87  92  28  108
-	frame  data/chars/ray/0188.png
-		delay  -1000
-		offset  100  200
-		bbox  87  99  31  101
-	frame  data/chars/ray/0189.png
-		delay  6
-		bbox  87  109  27  91
-	frame  data/chars/ray/0011.png
-		bbox  84  124  29  76
-	frame  data/chars/ray/0012.png
-		bbox  87  109  27  91
-	frame  data/chars/ray/0011.png
+	attack	0
+		frame	data/chars/ray/ray0060
+		frame	data/chars/ray/ray0061
+	delay	15
+		frame	data/chars/ray/ray0062
 
 anim chargeattack
 
 	#Wheel Kick
-
+	
 	jumpframe 3 2 4 0 dust0002
-	landframe 8
+	landframe 7 dust0003
 	range     0 200
-		delay  6
-		offset  100  200
-		bbox  88  102  30  96
-	frame  data/chars/ray/0056.png
-
-	bbox	88 108 29 91
-	@cmd	soun0005 0 VOIS1	-1 1 0 0
-		frame	data/chars/ray/0062.png
-		bbox  92  100  29  98
-		frame	data/chars/ray/0057.png
-		bbox  92  124  28  73
-		frame	data/chars/ray/0103.png
-		bbox  78  105  33  91
-		frame	data/chars/ray/0104.png
-	attack1	96 76 38 71 12 0 0 0 10
-		bbox  82  98  27  100
-		frame	data/chars/ray/0105.png
+	
+	offset	100 200
+	bbox	85 100 30 100
+	delay	8
+	@cmd	soun0001 "vray0003.wav"
+		frame	data/chars/ray/ray0056
+		frame	data/chars/ray/ray0057
+		frame	data/chars/ray/ray0103	
+		frame	data/chars/ray/ray0104
+	attack	90 70 45 75 12 0 0 0 10
+		frame	data/chars/ray/ray0105
 	delay	1
-	attack1	0
-		frame	data/chars/ray/0105.png
-	delay	-1000
-	attack1	97 122 75 25 12 0 0 0 10
-		bbox  81  98  35  67
-		frame	data/chars/ray/0106.png
+	attack	0
+		frame	data/chars/ray/ray0105
+	delay	-100
+	attack	90 115 85 35 12 0 0 0 10
+		frame	data/chars/ray/ray0106
 	delay	5
-	attack1	0
-		bbox  82  101  32  64
-		frame	data/chars/ray/0107.png
-		bbox  80  129  35  70
-		frame	data/chars/ray/0012.png
+	attack	0	
+		frame	data/chars/ray/ray0107
+		frame	data/chars/ray/ray0012
 	delay	12
-		bbox  80  142  34  57
-		frame	data/chars/ray/0013.png
-		bbox  80  129  35  70
-	frame  data/chars/ray/0012.png
+		frame	data/chars/ray/ray0013
+		frame	data/chars/ray/ray0012
 
 
-anim runattack
-
-	jumpframe 1 0 1.2 0 dust0002
-
+anim runattack	
+	
+	jumpframe 1 0 1.2 0 dust0002	
+	
 	delay	8
 	offset	100 200
 	bbox	95 125 50 47
-		frame	data/chars/ray/0111
-	attack1	95 125 55 47 15 1 0 0 20
-	@cmd	soun0005 0 VOIATKH	-1 1 0 0
-	@cmd	soun0005 0 SNDWIFFH -1 1	0 0
-		frame	data/chars/ray/0108
-		frame	data/chars/ray/0109
-	attack1	110 125 60 60 20 1 0 0 20
-		frame	data/chars/ray/0110
+		frame	data/chars/ray/ray0111	
+	attack	95 125 55 47 15 1 0 0 20	
+	@cmd	soun0001 "vsho0008.wav"
+		frame	data/chars/ray/ray0108
+		frame	data/chars/ray/ray0109
+	attack	110 125 60 60 20 1 0 0 20
+		frame	data/chars/ray/ray0110
 	move	20
-	attack1	95 125 55 47 10 1 0 0 20
-		frame	data/chars/ray/0109
+	attack	95 125 55 47 10 1 0 0 20
+		frame	data/chars/ray/ray0109
 	move	0
-	attack1	0
-		frame	data/chars/ray/0111
+	attack	0	
+		frame	data/chars/ray/ray0111
 
 #anim attackforward #41
 
+anim attackbackward
 
+	#Sweep
+
+	flipframe 1
+
+	offset	100 200
+	bbox	80 135 35 65
+	delay	8
+		frame	data/chars/ray/ray0011
+		frame	data/chars/ray/ray0012
+	@cmd	soun0001 "vsho0005.wav"	
+		frame	data/chars/ray/ray0077
+	offset	100 197
+		frame	data/chars/ray/ray0078
+	attack	100 170 90 30 10 1 0 0 10
+		frame	data/chars/ray/ray0079
+	delay	10
+	attack	0
+		frame	data/chars/ray/ray0078
+	offset	100 200
+		frame	data/chars/ray/ray0077
+		frame	data/chars/ray/ray0012
+		frame	data/chars/ray/ray0011
 
 #anim attackboth
 
 anim attackup
 
 	jumpframe 3 3 -0.1 -0.8 dust0002
-	landframe 11
+	landframe 11 dust0003
 
-	delay	6
-	offset	100 200
-	bbox	0
-		frame	data/chars/ray/0011.png
-		frame	data/chars/ray/0012.png
-		frame	data/chars/ray/0011.png
 	delay	8
-		Attack1  0
-		frame	data/chars/ray/0026.png
-		bbox  76  102  42  58
-		frame	data/chars/ray/0035.png
-		bbox  75  110  44  41
-		frame	data/chars/ray/0034.png
-		bbox  81  106  42  52
-		frame	data/chars/ray/0033.png
-		bbox  83  101  42  53
-		frame	data/chars/ray/0032.png
-		bbox  87  107  42  49
-		frame	data/chars/ray/0031.png
-		bbox  84  91  42  81
-		frame	data/chars/ray/0030.png
+	offset	100 200
+	bbox	80 135 35 65
+		frame	data/chars/ray/ray0011
+		frame	data/chars/ray/ray0012
+		frame	data/chars/ray/ray0011
+	delay	8
+	bbox	85 100 30 100
+		frame	data/chars/ray/ray0026
+		frame	data/chars/ray/ray0035
+		frame	data/chars/ray/ray0034
+		frame	data/chars/ray/ray0033
+		frame	data/chars/ray/ray0032
+		frame	data/chars/ray/ray0031
+		frame	data/chars/ray/ray0030
 	delay	-1000
-		bbox  89  89  33  96
-		frame	data/chars/ray/0026.png
+		frame	data/chars/ray/ray0026
 	delay	5
-	bbox	81 126 32 73
-		frame	data/chars/ray/0012.png
-		bbox  81  141  31  58
-		frame	data/chars/ray/0013.png
-		bbox  81  127  31  72
-		frame	data/chars/ray/0012.png
+	bbox	80 135 35 65
+		frame	data/chars/ray/ray0012
+		frame	data/chars/ray/ray0013
+		frame	data/chars/ray/ray0012
 
 anim attackdown
 
 	jumpframe 3 3 -0.1 0.8 dust0002
-	landframe 11
+	landframe 11 dust0003
 
-	delay	6
-	offset	100 200
-	bbox	0
-		frame	data/chars/ray/0011.png
-		frame	data/chars/ray/0012.png
-		frame	data/chars/ray/0011.png
 	delay	8
-		Attack1  0
-		frame	data/chars/ray/0026.png
-		bbox  76  102  42  58
-		frame	data/chars/ray/0035.png
-		bbox  75  110  44  41
-		frame	data/chars/ray/0034.png
-		bbox  81  106  42  52
-		frame	data/chars/ray/0033.png
-		bbox  83  101  42  53
-		frame	data/chars/ray/0032.png
-		bbox  87  107  42  49
-		frame	data/chars/ray/0031.png
-		bbox  84  91  42  81
-		frame	data/chars/ray/0030.png
+	offset	100 200
+	bbox	80 135 35 65
+		frame	data/chars/ray/ray0011
+		frame	data/chars/ray/ray0012
+		frame	data/chars/ray/ray0011
+	delay	8
+	bbox	85 100 30 100
+		frame	data/chars/ray/ray0026
+		frame	data/chars/ray/ray0035
+		frame	data/chars/ray/ray0034
+		frame	data/chars/ray/ray0033
+		frame	data/chars/ray/ray0032
+		frame	data/chars/ray/ray0031
+		frame	data/chars/ray/ray0030
 	delay	-1000
-		bbox  89  89  33  96
-		frame	data/chars/ray/0026.png
+		frame	data/chars/ray/ray0026
 	delay	5
-	bbox	81 126 32 73
-		frame	data/chars/ray/0012.png
-		bbox  81  141  31  58
-		frame	data/chars/ray/0013.png
-		bbox  81  127  31  72
-		frame	data/chars/ray/0012.png
+	bbox	80 135 35 65	
+		frame	data/chars/ray/ray0012
+		frame	data/chars/ray/ray0013
+		frame	data/chars/ray/ray0012	
 
 anim riseattack
 
@@ -533,254 +506,215 @@ anim riseattack
 
 	delay	12
 	offset	100 200
-		frame	data/chars/ray/0140.png
+		frame	data/chars/ray/ray0140
 	bbox	80 135 35 65
-		delay  11
-		offset  100  196
-		frame	data/chars/ray/0141.png
-	@cmd	soun0005 0 VOIATKM	-1 1 0 0
-	@cmd	soun0005 0 SNDWIFFM -1 1	0 0
-		delay  8
-		offset  101  200
-		frame	data/chars/ray/0075.png
-	attack1	99 179 69 21 10 1 0 0 10
-		delay  10
-		frame	data/chars/ray/0076.png
-	attack1	0
-		frame	data/chars/ray/0075.png
+		frame	data/chars/ray/ray0141
+	@cmd	soun0001 "vsho0007.wav"
+	offset	100 197
+		frame	data/chars/ray/ray0075
+	attack	100 170 70 30 10 1 0 0 10
+		frame	data/chars/ray/ray0076
+	delay	10
+	attack	0
+		frame	data/chars/ray/ray0075
 	offset	100 200
-		delay  8
-		bbox  78  139  36  60
-		frame	data/chars/ray/0013.png
-		bbox  80  125  35  75
-		frame	data/chars/ray/0012.png
-		bbox  80  109  35  90
-		attack1  0
-	frame  data/chars/ray/0011.png
+		frame	data/chars/ray/ray0142
+		frame	data/chars/ray/ray0143
 
 #*****Special******************************************************************************
 
+anim special
+
+	energycost 400
+	jumpframe  2 0 1.5 0 dust0002
+
+	delay	8
+	offset	100 200
+	bbox	85 100 30 100
+		frame	data/chars/ray/ray0011
+		frame	data/chars/ray/ray0012
+	offset	100 155
+		frame	data/chars/ray/ray0031
+	offset	100 160
+		frame	data/chars/ray/ray0032
+	offset	100 155
+		frame	data/chars/ray/ray0033	
+		frame	data/chars/ray/ray0034
+	offset	100 200	
+		frame	data/chars/ray/ray0012
+		frame	data/chars/ray/ray0011
+
 anim freespecial
 
-	#Backstep
-
 	jumpframe 3 2 -2 0 dust0002
-	landframe 5
+	landframe 5 dust0003
 
 	delay	8
 	offset	100 200
 	bbox	80 135 35 65
-		frame	data/chars/ray/0011
-		frame	data/chars/ray/0012
-		frame	data/chars/ray/0011
-	bbox	85 100 30 100
-		frame	data/chars/ray/0057
+		frame	data/chars/ray/ray0011
+		frame	data/chars/ray/ray0012
+		frame	data/chars/ray/ray0011
+	delay	8
+	bbox	85 100 30 100	
+		frame	data/chars/ray/ray0057
 	delay	-100
-		frame	data/chars/ray/0107
+		frame	data/chars/ray/ray0107	
 	delay	5
-	bbox	80 135 35 65
-		frame	data/chars/ray/0012
-		frame	data/chars/ray/0013
-		frame	data/chars/ray/0012
+	bbox	80 135 35 65	
+		frame	data/chars/ray/ray0012
+		frame	data/chars/ray/ray0013
+		frame	data/chars/ray/ray0012
 
 anim freespecial2
 
 	#Wheel Kick
-
+	
 	jumpframe 3 2 4 0 dust0002
-	landframe 7
+	landframe 7 dust0003
 	range     0 200
+	
+	offset	100 200
+	bbox	85 100 30 100
+	delay	8
+	@cmd	soun0001 "vray0003.wav"
+		frame	data/chars/ray/ray0056
+		frame	data/chars/ray/ray0057
+		frame	data/chars/ray/ray0103
+		frame	data/chars/ray/ray0104
+	attack	90 70 45 75 12 0 0 0 10
+		frame	data/chars/ray/ray0105
+	delay	1
+	attack	0
+		frame	data/chars/ray/ray0105
+	delay	-1000
+	attack	90 115 85 35 12 0 0 0 10
+		frame	data/chars/ray/ray0106
+	delay	5
+	attack	0
+		frame	data/chars/ray/ray0107
+		frame	data/chars/ray/ray0012
+	delay	12
+		frame	data/chars/ray/ray0013
+		frame	data/chars/ray/ray0012
+
+anim freespecial3
+
+	#Uppercut (Force plane up)
+	
+	range   0 70
 
 	offset	100 200
 	bbox	85 100 30 100
 	delay	8
-	@cmd	soun0005 0 VOIS1	-1 1 0 0
-		frame	data/chars/ray/0056.png
-		frame	data/chars/ray/0057.png
-		frame	data/chars/ray/0103.png
-		frame	data/chars/ray/0104
-	attack1	90 70 45 75 12 0 0 0 10
-		frame	data/chars/ray/0105
-	delay	1
-	attack1	0
-		frame	data/chars/ray/0105
-	delay	-1000
-	attack1	90 115 85 35 12 0 0 0 10
-		frame	data/chars/ray/0106
-	delay	5
-	attack1	0
-		frame	data/chars/ray/0107
-		frame	data/chars/ray/0012
-	delay	12
-		frame	data/chars/ray/0013
-		frame	data/chars/ray/0012
-
-anim freespecial3
-
-	#Rear Uppercut (Force plane up)
-
-	range   0 70
-
-	offset	100 200
-	bbox	85 108 29 91
-	delay	8
-		frame	data/chars/ray/0011.png
-		bbox  85  125  28  74
-		frame	data/chars/ray/0012.png
-	@cmd	soun0005 0 VOIATKH	-1 1 0 0
-	@cmd	soun0005 0 SNDWIFFH -1 1	0 0
-		bbox  93  129  38  70
-		frame	data/chars/ray/0072.png
-	delay	5
-	attack6	110 64 39 90 15 1 0 0 15
+		frame	data/chars/ray/ray0011
+		frame	data/chars/ray/ray0012
+	@cmd	soun0001 "vsho0007.wav"
+		frame	data/chars/ray/ray0072		
+	delay	40
+	attack6	90 70 65 65 15 1 0 0 15
 	damageonlanding 0 1
 	dropv   4.5 0.5 -0.5
-		bbox  93  94  31  105
-		frame	data/chars/ray/0074.png
+		frame	data/chars/ray/ray0074
+	delay	20
+		frame	data/chars/ray/ray0073
+	attack	0
+		frame	data/chars/ray/ray0064
+
+anim freespecial4
+
+	#Spin kick (Force plane down)
+
+	jumpframe 1 2 0 0 dust0002
+	landframe 6 dust0003
+	range     0 80
+
+	offset	100 200
+	bbox	85 100 30 100
+	delay	8
+		frame	data/chars/ray/ray0041
+	@cmd	soun0001 "vsho0005.wav"
+		frame	data/chars/ray/ray0093
+		frame	data/chars/ray/ray0094		
+	attack7 90 130 80 30 15 1 0 0 15
+	damageonlanding 0 1
+	dropv   4 0.5 0.5
+		frame	data/chars/ray/ray0095
+	attack	0
+		frame	data/chars/ray/ray0096
+	delay	-100
+		frame	data/chars/ray/ray0088
 	delay	15
-		Attack1  0
-		frame	data/chars/ray/0185.png
-		delay  12
-		bbox  94  102  40  97
-	frame  data/chars/ray/0186.png
-		bbox  96  108  42  91
-		frame	data/chars/ray/0187.png
-		bbox  81  103  34  96
-	frame  data/chars/ray/0036.png
-
-anim  freespecial4
-
-	#Lead Uppercut (Force plane up)
-
-	range  0  40
-		delay  8
-		offset  104  200
-		bbox  85  109  36  89
-	frame  data/chars/ray/0040.png
-		offset  108  200
-		@cmd  soun0005  0  VOIATKH  -1  1  0  0
-		@cmd  soun0005  0  SNDWIFFH  -1  1  0  0
-		delay  10
-	frame  data/chars/ray/0064.png
-		bbox  96  98  29  101
-		delay  6
-		attack7  112  113  47  26 10  1  0  0  15
-		dropv  4  1  0.3
-	frame  data/chars/ray/0065.png
-		delay  12
-		attack7  117  67  38  72  10  1  0  0  15
-	frame  data/chars/ray/0178.png
-		delay  15
-		Attack1  0
-		Attack1  0
-	frame  data/chars/ray/0066.png
-		delay  10
-	frame  data/chars/ray/0065.png
-		offset  106  200
-	frame  data/chars/ray/0056.png
+		frame	data/chars/ray/ray0072
+		frame	data/chars/ray/ray0011
 
 anim freespecial5
 
 	#Front kick (Plane attack up)
 
 	jumpframe 3 3.1 0.3 -0.8 dust0002
-	landframe 11
+	landframe 9 dust0003
 	range     0    100
 	rangez    -120 -25
 
 	delay	8
 	offset	100 200
-	bbox	80 108 36 91
-		frame	data/chars/ray/0011.png
-		bbox  78  124  37  75
-		frame	data/chars/ray/0012.png
-		bbox  80  108  35  91
-		frame	data/chars/ray/0011.png
-	bbox	89 80 34 116
-		frame	data/chars/ray/0026.png
-		bbox  88  85  35  103
-		frame	data/chars/ray/0027.png
-		bbox  89  86  33  88
-		frame	data/chars/ray/0088.png
-	@cmd	soun0005 0 VOIATKH	-1 1 0 0
-	@cmd	soun0005 0 SNDWIFFH -1 1	0 0
-		bbox  79  89  45  75
-		frame	data/chars/ray/0089.png
+	bbox	80 135 35 65
+		frame	data/chars/ray/ray0011
+		frame	data/chars/ray/ray0012
+		frame	data/chars/ray/ray0011
+	bbox	85 100 30 100
+		frame	data/chars/ray/ray0026
+		frame	data/chars/ray/ray0027
+		frame	data/chars/ray/ray0088
+	@cmd	soun0001 "vsho0005.wav"
+		frame	data/chars/ray/ray0089
 	delay	20
-	attack1	93 82 54 70 12 1 0 0 20
+	attack	90 80 55 70 12 1 0 0 20
 	dropv   3 1 -0.5
-		frame	data/chars/ray/0090.png
-	delay	8
-	attack1	0
-		frame	data/chars/ray/0089.png
-		bbox  88  86  35  100
-	frame  data/chars/ray/0027.png
-		delay  -1000
-	frame  data/chars/ray/0026.png
-		delay  5
-		bbox  85  108  29  91
-	frame  data/chars/ray/0011.png
-	bbox	80 125 35 75
-		frame	data/chars/ray/0012.png
-		bbox  79  137  35  63
-		frame	data/chars/ray/0013.png
-		bbox  79  124  36  76
-		frame	data/chars/ray/0012.png
-		bbox  79  109  37  91
-	frame  data/chars/ray/0011.png
+		frame	data/chars/ray/ray0090		
+	delay	-100
+	attack	0
+		frame	data/chars/ray/ray0089
+	delay	5
+	bbox	80 135 35 65
+		frame	data/chars/ray/ray0012
+		frame	data/chars/ray/ray0013
+		frame	data/chars/ray/ray0012
 
 anim freespecial6
 
 	#Front kick (Plane attack down)
 
 	jumpframe 3 3.1 0.3 0.8 dust0002
-	landframe 12
+	landframe 9 dust0003
 	range     0  100
 	rangez    25 120
 
 	delay	8
 	offset	100 200
-	bbox	83 107 31 92
-		frame	data/chars/ray/0011.png
-		bbox  81  123  34  76
-		frame	data/chars/ray/0012.png
-		bbox  82  107  33  91
-		frame	data/chars/ray/0011.png
-	bbox	88 80 34 113
-		frame	data/chars/ray/0026.png
-		bbox  88  86  35  98
-		frame	data/chars/ray/0027.png
-		bbox  89  87  34  92
-		frame	data/chars/ray/0236.png
-	@cmd	soun0005 0 VOIATKH	-1 1 0 0
-	@cmd	soun0005 0 SNDWIFFH -1 1	0 0
-		bbox  86  87  36  82
-		frame	data/chars/ray/0237.png
+	bbox	80 135 35 65
+		frame	data/chars/ray/ray0011
+		frame	data/chars/ray/ray0012
+		frame	data/chars/ray/ray0011
+	bbox	85 100 30 100
+		frame	data/chars/ray/ray0026
+		frame	data/chars/ray/ray0027
+		frame	data/chars/ray/ray0088
+	@cmd	soun0001 "vsho0005.wav"
+		frame	data/chars/ray/ray0085
 	delay	20
-	attack1	90 80 60 72 12 1 0 0 20
+	attack	90 80 55 70 12 1 0 0 20
 	dropv   3 1 0.5
-		bbox  77  92  50  68
-		frame	data/chars/ray/0238.png
-	delay	8
-	attack1	0
-		bbox  86  87  34  81
-		frame	data/chars/ray/0237.png
-	frame  data/chars/ray/0236.png
-	frame  data/chars/ray/0027.png
-		delay  -1000
-		bbox  87  87  35  101
-	frame  data/chars/ray/0026.png
+		frame	data/chars/ray/ray0105		
+	delay	-1000
+	attack	0
+		frame	data/chars/ray/ray0085
 	delay	5
-	bbox	80 107 35 93
-		frame	data/chars/ray/0011.png
-		bbox  80  123  34  77
-		frame	data/chars/ray/0012.png
-		bbox  79  135  35  65
-	frame  data/chars/ray/0013.png
-		bbox  79  124  35  76
-	frame  data/chars/ray/0012.png
-		bbox  82  107  34  93
-		frame	data/chars/ray/0011.png
+	bbox	80 135 35 65
+		frame	data/chars/ray/ray0012
+		frame	data/chars/ray/ray0013
+		frame	data/chars/ray/ray0012
 
 
 anim freespecial7
@@ -789,103 +723,17 @@ anim freespecial7
 
 	offset	100 200
 	bbox	85 100 30 100
-	delay	6
-		frame	data/chars/ray/0172.png
-		frame	data/chars/ray/0195.png
-	frame  data/chars/ray/0196.png
-		bbox  73  108  43  89
-		frame	data/chars/ray/0174.png
-		bbox  88  106  47  90
-		frame	data/chars/ray/0197.png
-		bbox  92  108  47  88
-	frame  data/chars/ray/0175.png
-	attack1	0
-	@cmd proj0002 "proj0001"   2 1 90  1 0 1 1 2 2 1 1 0    3  3  0 -1 0.5 0 0 0 15 0 -1 0   2   3 0 1 0 0 0 0
-	#	 proj0002 "proj0001"  11 1 70 50 1 1 4 4 4 1 1 0 1000 15 -1 -1   0 0 0 0 25 0 -1 1 3.8 1.8 0 1 0 0 0 0
-		bbox  90  117  63  79
-		frame	data/chars/ray/0198.png
-	frame  data/chars/ray/0199.png
-	frame  data/chars/ray/0200.png
-		delay  30
-	frame  data/chars/ray/0201.png
+	delay	10
+		frame	data/chars/ray/ray0172	
+		frame	data/chars/ray/ray0173
+		frame	data/chars/ray/ray0174	
+		frame	data/chars/ray/ray0175
+	attack	0
+	delay	40
+	@cmd	proj0002 "wind0001" 90 1 0 1 0 0 1 0 1 0 0 1
+		frame	data/chars/ray/ray0176	
 	delay	12
-		bbox  89  101  37  95
-		frame	data/chars/ray/0052.png
-	frame  data/chars/ray/0194.png
-
-anim  freespecial8
-
-	#wheel kick
-
-	jumpframe  3  2  4  0 dust0002
-	landframe  7
-		delay  6
-		offset  100  200
-		bbox  67  116  45  82
-	frame  data/chars/ray/0005.png
-		bbox  79  99  38  100
-		move  -9
-	frame  data/chars/ray/0208.png
-
-		bbox  67  116  45  82
-	@cmd	soun0005 0 VOIS1	-1 1 0 0
-	@cmd	soun0005 0 SNDWIFFH -1 1	0 0
-		move  0
-	frame  data/chars/ray/0202.png
-		bbox  74  96  39  102
-		delay  8
-	frame  data/chars/ray/0203.png
-		bbox  73  90  42  83
-		attack1  70  85  34  32  15  0  0  0  10
-	frame  data/chars/ray/0204.png
-		bbox  67  97  47  51
-		attack1  100  87  46  52  15  0  0  0  10
-	frame  data/chars/ray/0205.png
-		delay  -1000
-		bbox  78  96  47  55
-		attack1  95  134  61  24  15  0  0  0  10
-	frame  data/chars/ray/0206.png
-		delay  8
-		bbox  74  120  47  77
-		Attack1  0
-	frame  data/chars/ray/0207.png
-		delay  12
-		bbox  84  129  48  69
-		move  5
-	frame  data/chars/ray/0013.png
-		move  0
-	frame  data/chars/ray/0012.png
-
-anim freespecial41
-
-	#Sweep
-	energycost	0 0 -2 #Ai can't use without script.
-	range		10 100
-	jumpframe 	0 0 0.5 0 dust0003
-
-	offset	100 200
-	delay	8
-	@cmd	soun0005 0 VOIATKM	-1 1 0 0
-	@cmd	soun0005 0 SNDWIFFM -1 1	0 0
-		bbox  81  139  31  59
-		frame	data/chars/ray/0077.png
-	offset	100 197
-		bbox  81  144  32  53
-		frame	data/chars/ray/0078.png
-	attack1	113 175 75 21 10 1 0 0 10
-		bbox  83  153  42  44
-		frame	data/chars/ray/0079.png
-	attack1	0
-		bbox  79  149  39  49
-		frame	data/chars/ray/0078.png
-	offset	100 200
-		bbox  81  141  37  57
-		frame	data/chars/ray/0077.png
-	frame  data/chars/ray/0013.png
-		bbox  78  128  35  70
-		frame	data/chars/ray/0012.png
-		bbox  81  112  32  86
-		frame	data/chars/ray/0011.png
+		frame	data/chars/ray/ray0052	
 
 #*****Followups****************************************************************************
 
@@ -896,49 +744,48 @@ anim freespecial41
 anim follow51
 
 	#Defending poses.
-
+	
 	delay	-1
 	offset	100 170
 	bbox	0
-		frame	data/chars/ray/0148.png 				#0	Grabbed.
-		frame	data/chars/ray/0149.png				#1	Grabbed Pain.
-		frame	data/chars/ray/0150.png				#2	Horizontal Up.
-		frame	data/chars/ray/0151.png				#3	Horizontal Down.
-		frame	data/chars/ray/0152.png				#4	Vertical Up.
-		frame	data/chars/ray/0153.png				#5	Vertical Down.
-		frame	data/chars/ray/0154.png				#6	Tilt Up.
-		frame	data/chars/ray/0155.png				#7	Tilt Down.
-		frame	data/chars/ray/0156.png				#8	Vertical Down pain.
-		frame	data/chars/ray/0157.png				#9	Down Up.
-		frame	data/chars/ray/0158.png				#10	Down Up Pain.
-		frame	data/chars/ray/0159.png				#11	Falling Up.
-		frame	data/chars/ray/0160.png				#12	Falling Up tilted.
-		frame	data/chars/ray/0161.png				#13	Horizontal Up pain.
-		frame	data/chars/ray/0167.png				#14	Middle pain.
+		frame	data/chars/ray/ray0148 				#0	Grabbed.
+		frame	data/chars/ray/ray0149				#1	Grabbed Pain.
+		frame	data/chars/ray/ray0150				#2	Horizontal Up.
+		frame	data/chars/ray/ray0151				#3	Horizontal Down.
+		frame	data/chars/ray/ray0152				#4	Vertical Up.
+		frame	data/chars/ray/ray0153				#5	Vertical Down.
+		frame	data/chars/ray/ray0154				#6	Tilt Up.
+		frame	data/chars/ray/ray0155				#7	Tilt Down.
+		frame	data/chars/ray/ray0156				#8	Vertical Down pain.
+		frame	data/chars/ray/ray0157				#9	Down Up.
+		frame	data/chars/ray/ray0158				#10	Down Up Pain.
+		frame	data/chars/ray/ray0159				#11	Falling Up.
+		frame	data/chars/ray/ray0160				#12	Falling Up tilted.
+		frame	data/chars/ray/ray0161				#13	Horizontal Up pain.
+		frame	data/chars/ray/ray0167				#14	Middle pain.
 
 anim follow52
 
 	#Fatality: Fly into foreground.	
 
-	landframe  2
+	landframe  2 
 	quakeframe 2 4 -1
-
+	
 	delay	10
 	offset	100 100
 	bbox	55 140 70 45
-	attack1	55 140 70 45 12 1
-		frame	data/chars/ray/0147.png
-	delay	-1000
-		frame	data/chars/ray/0147.png
+	attack	55 140 70 45 12 1
+		frame	data/chars/ray/ray0147
+	delay	-1
+		frame	data/chars/ray/ray0147	
 	delay	5
 	bbox	0
-	attack1	0
-		offset  100  165
-		frame	data/chars/ray/0158.png
-		frame	data/chars/ray/0158.png
-		frame	data/chars/ray/0158.png
-		frame	data/chars/ray/0158.png
-		frame	data/chars/ray/0158.png
+	attack	0					
+		frame	data/chars/ray/ray0133
+		frame	data/chars/ray/ray0133
+		frame	data/chars/ray/ray0133
+		frame	data/chars/ray/ray0133
+		frame	data/chars/ray/ray0133		
 
 anim follow53
 
@@ -946,75 +793,67 @@ anim follow53
 
 	dropframe 	2
 	landframe 	5
-
+	
 	delay	20
 	offset	100 200
 	bbox	0
-	attack1	71 120 56 63 12 1
-		frame	data/chars/ray/0129.png
-	delay	-1000
-		offset  100  150
-		attack1  75  63  66  66  12  1
-		frame	data/chars/ray/0147.png
+	attack	55 140 70 45 12 1
+		frame	data/chars/ray/ray0129
+	delay	-1
+		frame	data/chars/ray/ray0130
 	delay	10
-		offset  100  180
-		attack1  54  128  86  36  12  1
-		frame	data/chars/ray/0159.png
-		attack1  63  102  53  66  12  1
-		frame	data/chars/ray/0160.png
-	delay	-1000
-		offset  100  190
-		attack1  84  111  37  79  12  1
-		frame	data/chars/ray/0137.png
+		frame	data/chars/ray/ray0131
+		frame	data/chars/ray/ray0139	
+	delay	-1
+		frame	data/chars/ray/ray0137
 	delay	1
-		frame	data/chars/misc/blan0001.png
+		frame	data/chars/misc/blan0001
 
 anim follow82
 
 	#Down Attack
-
+	
 	range   0 95
 	otg	1
 	offset	100 200
 	bbox	85 100 30 100
 	delay	10
-		frame	data/chars/ray/0056
-	@cmd	soun0005 0 VOIATKM	-1 1 0 0
-	@cmd	soun0005 0 SNDWIFFM -1 1	0 0
-		frame	data/chars/ray/0054
+		frame	data/chars/ray/ray0056
+	@cmd	soun0001 "vsho0007.wav"
+		frame	data/chars/ray/ray0054
 	attack9	120 160 72 40 10 0 0 0 10
-	staydown -500 0
-		frame	data/chars/ray/0055
-	attack1	0
-		frame	data/chars/ray/0057
-		frame	data/chars/ray/0056
-
+	staydown -500 0		
+		frame	data/chars/ray/ray0055
+	attack	0
+		frame	data/chars/ray/ray0057
+		frame	data/chars/ray/ray0056
+	
 anim follow92
 
 	#Power up.	
-
+	
 	offset	100 200
 	bbox	0
 	delay	7
-		frame	data/chars/ray/0011
-		frame	data/chars/ray/0012
-		frame	data/chars/ray/0013
+		frame	data/chars/ray/ray0011
+		frame	data/chars/ray/ray0012
+		frame	data/chars/ray/ray0013
 	delay	12
-		frame	data/chars/ray/0078
+		frame	data/chars/ray/ray0078
 	delay	7
-		frame	data/chars/ray/0013
-		frame	data/chars/ray/0012
-		frame	data/chars/ray/0011
+		frame	data/chars/ray/ray0013
+		frame	data/chars/ray/ray0012
+		frame	data/chars/ray/ray0011	
 	delay	8
-		frame	data/chars/ray/0045
-		frame	data/chars/ray/0046
-		frame	data/chars/ray/0047
-	attack1	0
+		frame	data/chars/ray/ray0045	
+		frame	data/chars/ray/ray0046		
+		frame	data/chars/ray/ray0047
+	attack	0
 	delay	50
-		frame	data/chars/ray/0048
+		frame	data/chars/ray/ray0048
 	delay	10
-		frame	data/chars/ray/0056
-
+		frame	data/chars/ray/ray0056
+	
 #*****Grappling****************************************************************************
 
 anim grab
@@ -1023,22 +862,23 @@ anim grab
 	offset	102 200
 	bbox	85 100 30 100
 	offset	100 200
-		frame	data/chars/ray/0166
-		frame	data/chars/ray/0166
-	offset	100 200
-		frame	data/chars/ray/0166
+		frame	data/chars/ray/ray0166
 	offset	102 200
-		frame	data/chars/ray/0166
+		frame	data/chars/ray/ray0166
 	offset	100 200
-		frame	data/chars/ray/0166
+		frame	data/chars/ray/ray0166
 	offset	102 200
-		frame	data/chars/ray/0166
+		frame	data/chars/ray/ray0166
 	offset	100 200
-		frame	data/chars/ray/0166
+		frame	data/chars/ray/ray0166
 	offset	102 200
-		frame	data/chars/ray/0166
+		frame	data/chars/ray/ray0166
 	offset	100 200
-		frame	data/chars/ray/0166
+		frame	data/chars/ray/ray0166
+	offset	102 200
+		frame	data/chars/ray/ray0166
+	offset	100 200
+		frame	data/chars/ray/ray0166
 
 anim grabattack
 
@@ -1047,56 +887,43 @@ anim grabattack
 	offset	92 200
 	bbox	85 100 30 100
 	delay	10
-	@cmd	soun0005 0 VOIATKL	-1 1 0 0
-	@cmd	soun0005 0 SNDWIFFL -1 1	0 0
-		frame	data/chars/ray/0067
+	@cmd	soun0001 "vsho0001.wav"
+		frame	data/chars/ray/ray0067
 	offset	100 200
-	attack1	120 110 40 45 5 0 0 0 10
-		frame	data/chars/ray/0068
+	attack	120 110 40 45 5 0 0 0 10
+		frame	data/chars/ray/ray0068
 	offset	92 200
-	attack1	0
-		frame	data/chars/ray/0067
+	attack	0	
+		frame	data/chars/ray/ray0067		
 
 anim grabattack2
 
-	#Elbow and Sidekick
-
+	#Roundhouse
+	
 	fastattack 1
 
 	offset	100 200
 	bbox	85 100 30 100
 	delay	6
-	@cmd	soun0005 0 VOIATKM	-1 1 0 0
-	@cmd	soun0005 0 SNDWIFFM -1 1	0 0
-		frame	data/chars/ray/0056.png
-		frame	data/chars/ray/0062.png
+	@cmd	soun0001 "vsho0005.wav"	
+		frame	data/chars/ray/ray0056
+		frame	data/chars/ray/ray0062
 	delay	8
-	attack1	107 111 43 17 5 0 0 0 10
-		frame	data/chars/ray/0063.png
-	attack1	0
-		frame	data/chars/ray/0062.png
-		delay  6
-	frame  data/chars/ray/0056.png
-	@cmd	soun0005 0 VOIATKH	-1 1 0 0
-	@cmd	soun0005 0 SNDWIFFH -1 1	0 0
-		frame	data/chars/ray/0069.png
-		delay  4
-		bbox  75  97  36  101
-	frame  data/chars/ray/0070.png
-		bbox  70  98  38  101
-	frame  data/chars/ray/0179.png
-		bbox  70  97  38  102
-	attack1  85  124  67  19  10  1
-	frame  data/chars/ray/0213.png
-		delay  10
-		Attack1  0
-	frame  data/chars/ray/0214.png
-		delay  15
-	frame  data/chars/ray/0215.png
-		delay  10
-	frame  data/chars/ray/0070.png
-		bbox  77  100  32  98
-	frame  data/chars/ray/0069.png
+	attack	120 110 40 45 5 0 0 0 10
+		frame	data/chars/ray/ray0063
+	attack	0	
+		frame	data/chars/ray/ray0062
+	@cmd	soun0001 "vsho0003.wav"	
+		frame	data/chars/ray/ray0061
+		frame	data/chars/ray/ray0060
+	attack	100 90 90 45 10 1 0 0 10
+	dropv   3 1 0.3
+		frame	data/chars/ray/ray0059		
+	attack	0
+		frame	data/chars/ray/ray0058		
+		frame	data/chars/ray/ray0057
+	delay	15
+		frame	data/chars/ray/ray0056
 
 anim grabforward
 
@@ -1110,65 +937,57 @@ anim grabforward
 
 	offset	100 200
 	bbox	0
-	delay	12
-	@cmd	bind0010 0 0 0 40 0 -2 -1 HELD 0
-		frame	data/chars/ray/0030.png
+	delay	12	
+	@cmd	bind0010 1 40 0 -2 -1 HELD
+		frame	data/chars/ray/ray0030
 	move	10
-	@cmd	bind0010 0 0 0 30 0 -2 -1 HELD 0
+	@cmd	bind0010 1 30 0 -2 -1 HELD
 	offset	90 230
-	@cmd	soun0005 0 VOIATKS	-1 1 0 0
-	@cmd	soun0005 0 SNDWIFFH -1 1	0 0
-		frame	data/chars/ray/0031.png
+	@cmd	soun0001 "vsho0008.wav"
+		frame	data/chars/ray/ray0031
 	move	20
-	@cmd	bind0010 0 0 0 1 0 -2 -1 HELDMP 0
-		frame	data/chars/ray/0032.png
+	@cmd	bind0010 1 1 0 -2 -1 HELDMP
+		frame	data/chars/ray/ray0032
 	move	50
-	@cmd	bind0010 0 0 0 -40 0 -2 -1 HELDP 0
+	@cmd	bind0010 1 -40 0 -2 -1 HELDP
 	offset	100 250
 	delay	15
-		frame	data/chars/ray/0033.png
-	@cmd	bind0010 0 0 0 -50 -5 -2 -1 TLTUP 0
+		frame	data/chars/ray/ray0033	
+	@cmd	bind0010 1 -50 -5 -2 -1 TLTUP
 	move	0
-		frame	data/chars/ray/0102.png
+		frame	data/chars/ray/ray0102
 	delay	-100
 	offset	100 220
-	@cmd	bind0010 0 0 0 -80 15 -2 -1 FALUP 0
-		frame	data/chars/ray/0101.png
+	@cmd	bind0010 1 -80 15 -2 -1 FALUP
+		frame	data/chars/ray/ray0101
 	delay	4
 	offset	100 200
-	@cmd	soun0005 0 VOIATKL	-1 0.75 0 0
-	@cmd	bind0010 0 0 0 -75 -5 -2 -1 DWNUPP 0
+	@cmd	soun0001 "soun0012.wav"
+	@cmd	bind0010 1 -75 -5 -2 -1 DWNUPP				
 	@cmd    stat0001 1 0 -29 0 0 0 0 0
-		frame	data/chars/ray/0168.png
-		frame	data/chars/ray/0168.png
-		frame	data/chars/ray/0168.png
-		frame	data/chars/ray/0168.png
-		frame	data/chars/ray/0168.png
+		frame	data/chars/ray/ray0168
+		frame	data/chars/ray/ray0168
+		frame	data/chars/ray/ray0168
+		frame	data/chars/ray/ray0168
+		frame	data/chars/ray/ray0168	
 	@cmd	bind0004 1 0 0 0 11 0						#Release bind.		
 	@cmd	dama0001 1 1 10 "ATK_NORMAL9" -1 2.5 -1.5 0 0 0 0
-		frame	data/chars/ray/0168.png
-	delay	8
-	bbox	61 157 72 42
-		frame	data/chars/ray/0140.png
-		offset  100  196
-		bbox  73  141  46  54
-		frame	data/chars/ray/0141.png
-		offset  100  200
-		bbox  75  131  36  68
-		frame	data/chars/ray/0142.png
-		bbox  84  117  33  82
-		frame	data/chars/ray/0143.png
-		bbox  85  108  30  91
-	frame  data/chars/ray/0011.png
+		frame	data/chars/ray/ray0168
+	delay	12
+	bbox	85 100 30 100
+		frame	data/chars/ray/ray0140
+	@cmd	soun0001 "vray0004.wav"
+		frame	data/chars/ray/ray0141
+		frame	data/chars/ray/ray0142
+		frame	data/chars/ray/ray0143	
 
 anim grabbackward
 
 	#DDT
 
 	jumpframe  2 2.5 -1 0 dust0002
-	dropframe  3
-	landframe  4
-	flipframe  16
+	dropframe  3 
+	landframe  4 dust0003
 	quakeframe 4 6 -2
 	custentity dust0004
 	spawnframe 4 -30 0 0 0
@@ -1177,98 +996,87 @@ anim grabbackward
 	bbox	0
 	delay	15
 	@cmd	dama0001 1 0 10 "ATK_NORMAL" 0 0 0 0 0 0 0
-	@cmd	bind0010 0 0 0 20 0 -2 -1 0 0
-		frame	data/chars/ray/0098.png
+	@cmd	bind0010 1 20 0 -2 -1 0
+		frame	data/chars/ray/ray0098
 	delay	12
-	@cmd	soun0005 0 VOIS0	-1 0.75 0 0
-		frame	data/chars/ray/0099.png
+	@cmd	soun0001 "vray0001.wav"
+		frame	data/chars/ray/ray0099
 	delay	-1
-	@cmd	bind0010 0 0 0 20 10 -2 -1 7 0
-		frame	data/chars/ray/0100.png
-	@cmd	bind0010 0 0 0 -40 0 -2 1 5 0
-		frame	data/chars/ray/0101.png
+	@cmd	bind0010 1 20 10 -2 -1 7								
+		frame	data/chars/ray/ray0100
+	@cmd	bind0010 1 -40 0 -2 1 5
+		frame	data/chars/ray/ray0101
 	delay	1
-	@cmd	bind0010 0 0 0 -30 0 -2 1 8 0
-		frame	data/chars/ray/0102.png
-	delay	4
+	@cmd	bind0010 1 -30 0 -2 1 8
+		frame	data/chars/ray/ray0102
+	delay	4				
 	@cmd    stat0001 1 0 -29 0 0 0 0 0
-		frame	data/chars/ray/0102.png
-		frame	data/chars/ray/0102.png
-		frame	data/chars/ray/0102.png
-		frame	data/chars/ray/0102.png
+		frame	data/chars/ray/ray0102
+		frame	data/chars/ray/ray0102
+		frame	data/chars/ray/ray0102
+		frame	data/chars/ray/ray0102
 	delay	12
-		frame	data/chars/ray/0102.png
+		frame	data/chars/ray/ray0102
 	@cmd	bind0004 1 0 0 0 11 0						#Release bind.		
 	@cmd	dama0001 1 1 10 "ATK_NORMAL5" -1 2.5 -1.5 0 0 0 0
-		move  10
-		frame	data/chars/ray/0101.png
+		frame	data/chars/ray/ray0101
 	delay	10
-	bbox	61 161 82 38
-		move  0
-		frame	data/chars/ray/0101.png
-		delay  8
-		bbox  60  159  77  40
-		frame	data/chars/ray/0140.png
-		offset  100  196
-		bbox  73  144  45  51
-		frame	data/chars/ray/0141.png
-		offset  100  200
-		bbox  76  134  38  65
-		frame	data/chars/ray/0142.png
-		bbox  85  116  30  83
-		frame	data/chars/ray/0143.png
-		bbox  85  107  30  91
-	frame  data/chars/ray/0011.png
+	bbox	85 100 30 100
+		frame	data/chars/ray/ray0101
+		frame	data/chars/ray/ray0140
+		frame	data/chars/ray/ray0141
+		frame	data/chars/ray/ray0142
+		frame	data/chars/ray/ray0143
 
 #*****Jumping******************************************************************************
-
+	
 anim jumpdelay
-
+	
 	delay   5
 	offset	100 200
 	bbox	80 135 35 65
-		frame	data/chars/ray/0011
-		frame	data/chars/ray/0012
-		frame	data/chars/ray/0011
-	delay	1
-		frame	data/chars/ray/0011
-
+		frame	data/chars/ray/ray0011
+		frame	data/chars/ray/ray0012
+		frame	data/chars/ray/ray0011
+	delay	1	
+		frame	data/chars/ray/ray0011
+		
 anim jumpland
 
 	delay	5
 	offset	100 200
 	bbox	80 135 35 65
-		frame	data/chars/ray/0012
-		frame	data/chars/ray/0013
-		frame	data/chars/ray/0012
+		frame	data/chars/ray/ray0012
+		frame	data/chars/ray/ray0013
+		frame	data/chars/ray/ray0012	
 
 anim jump
 
 	delay	12
 	offset	100 200
 	bbox	85 100 30 100
-		frame	data/chars/ray/0026.png
-		frame	data/chars/ray/0027
-		frame	data/chars/ray/0028
-		frame	data/chars/ray/0029
-		frame	data/chars/ray/0028
-		frame	data/chars/ray/0027
-		frame	data/chars/ray/0026
+		frame	data/chars/ray/ray0026
+		frame	data/chars/ray/ray0027
+		frame	data/chars/ray/ray0028
+		frame	data/chars/ray/ray0029
+		frame	data/chars/ray/ray0028
+		frame	data/chars/ray/ray0027
+		frame	data/chars/ray/ray0026
 
 anim forwardjump
 
 	delay	8
 	offset	100 200
 	bbox	85 100 30 100
-		frame	data/chars/ray/0026
-		frame	data/chars/ray/0030
-		frame	data/chars/ray/0031
-		frame	data/chars/ray/0032
-		frame	data/chars/ray/0033
-		frame	data/chars/ray/0034
-		frame	data/chars/ray/0035
-		frame	data/chars/ray/0027
-		frame	data/chars/ray/0026
+		frame	data/chars/ray/ray0026
+		frame	data/chars/ray/ray0030
+		frame	data/chars/ray/ray0031
+		frame	data/chars/ray/ray0032
+		frame	data/chars/ray/ray0033
+		frame	data/chars/ray/ray0034
+		frame	data/chars/ray/ray0035
+		frame	data/chars/ray/ray0027
+		frame	data/chars/ray/ray0026
 
 anim jumpattack
 
@@ -1277,21 +1085,19 @@ anim jumpattack
 	delay	8
 	offset	100 200
 	bbox	85 100 30 100
-		frame	data/chars/ray/0081.png
+		frame	data/chars/ray/ray0081
 	delay	10
-	@cmd	soun0005 0 VOIATKH	-1 1 0 0
-	@cmd	soun0005 0 SNDWIFFH -1 1 0 0
-	frame	data/chars/ray/0080
+	@cmd	soun0001 "vsho0008.wav"	
+		frame	data/chars/ray/ray0080
 	delay	8
-		frame	data/chars/ray/0081
-	attack1	100 100 60 50 15 1 0 0 20
+		frame	data/chars/ray/ray0081
+	attack	100 100 60 50 15 1 0 0 20
 	#	proj0002 "wind0001" 90 1 0 1 1 0 1 0 0 0 0 1
 	#	proj0002 "wind0001" 90 1 0 1 0 0 1 0 0 0 0 1
-	#	proj0002 "wind0001" 90 1 0 1 -1 0 1 0 1 0 0 1
-
-		frame	data/chars/ray/0082
-	attack1	100 100 60 50 8 0 0 0 10
-		frame	data/chars/ray/0082			#Extended hit is weaker.
+	@cmd	proj0002 "wind0001" 90 1 0 1 -1 0 1 0 1 0 0 1
+		frame	data/chars/ray/ray0082
+	attack	100 100 60 50 8 0 0 0 10
+		frame	data/chars/ray/ray0082			#Extended hit is weaker.
 
 anim jumpattack2
 
@@ -1302,13 +1108,11 @@ anim jumpattack2
 	delay	10
 	offset	100 200
 	bbox	85 100 30 100
-	@cmd	soun0005 0 VOIATKM	-1 1 0 0
-	@cmd	soun0005 0 SNDWIFFM -1 1 0 0
-		frame	data/chars/ray/0080
-		frame	data/chars/ray/0083
-	attack1	80 125 50 35 8 1 0 0 10
-		frame	data/chars/ray/0084
-
+	@cmd	soun0001 "vsho0001.wav"	
+		frame	data/chars/ray/ray0083
+	attack	80 125 50 35 8 1 0 0 10
+		frame	data/chars/ray/ray0084
+	
 anim jumpforward
 
 	#Side kick.
@@ -1316,16 +1120,15 @@ anim jumpforward
 	delay	10
 	offset	100 200
 	bbox	85 100 30 100
-		frame	data/chars/ray/0085
-	@cmd	soun0005 0 VOIATKM	-1 1 0 0
-	@cmd	soun0005 0 SNDWIFFM -1 1 0 0
-		frame	data/chars/ray/0086
-	attack1	100 125 70 40 20 1 0 0 20
-		frame	data/chars/ray/0087
-	attack1	0
-		frame	data/chars/ray/0086
-		frame	data/chars/ray/0085
-		frame	data/chars/ray/0026
+		frame	data/chars/ray/ray0085
+	@cmd	soun0001 "vsho0004.wav"	
+		frame	data/chars/ray/ray0086	
+	attack	100 125 70 40 20 1 0 0 20
+		frame	data/chars/ray/ray0087
+	attack	0
+		frame	data/chars/ray/ray0086			
+		frame	data/chars/ray/ray0085
+		frame	data/chars/ray/ray0026
 
 anim runjumpattack
 
@@ -1333,897 +1136,416 @@ anim runjumpattack
 
 	delay	10
 	offset	100 200
-	bbox	85 89 37 73
-	@cmd	soun0005 0 VOIATKS	-1 1 0 0
-	@cmd	soun0005 0 SNDWIFFH -1 1 0 0
-		frame	data/chars/ray/0085.png
-		bbox  80  89  45  65
-		frame	data/chars/ray/0234.png
-	attack1	104 124 66 36 15 1 0 0 10
-		frame	data/chars/ray/0235.png			#Extended hit is weaker.
+	bbox	85 100 30 100
+	@cmd	soun0001 "vsho0008.wav"
+		frame	data/chars/ray/ray0085		
+	attack	100 100 60 50 20 1 0 0 20
+		frame	data/chars/ray/ray0106
+	attack	100 100 60 50 15 1 0 0 10
+		frame	data/chars/ray/ray0106			#Extended hit is weaker.
 
 
 #*****Injury and Defence*******************************************************************
 
 anim block
-
+	
 	delay	8
 	offset	100 200
 	bbox	85 100 30 100
-		frame	data/chars/ray/0036.png
+		frame	data/chars/ray/ray0036
+		frame	data/chars/ray/ray0037
 
 anim blockpain
-
+	
 	jumpframe 0 0 -0.1 0
 
 	delay	3
 	offset	103 200
-	bbox	78 99 38 100
+	bbox	85 100 30 100
 	offset	100 200
-		frame	data/chars/ray/0037.png
-		frame	data/chars/ray/0037
-	offset	100 200
-		frame	data/chars/ray/0037
+		frame	data/chars/ray/ray0037
 	offset	103 200
-		frame	data/chars/ray/0037
+		frame	data/chars/ray/ray0037
+	offset	100 200
+		frame	data/chars/ray/ray0037
+	offset	103 200
+		frame	data/chars/ray/ray0037
 	delay	30
 	offset	100 200
-		frame	data/chars/ray/0037
+		frame	data/chars/ray/ray0037
 	delay	15
-		frame	data/chars/ray/0036
+		frame	data/chars/ray/ray0036
 
 anim blockpain2
-
+	
 	#Middle block
 
 	jumpframe 0 0 -0.1 0
 
 	delay	3
 	offset	103 200
-	bbox	80 108 33 90
+	bbox	85 100 30 100
 	offset	100 200
-		frame	data/chars/ray/0177.png
-		frame	data/chars/ray/0177
-	offset	100 200
-		frame	data/chars/ray/0177
+		frame	data/chars/ray/ray0162
 	offset	103 200
-		frame	data/chars/ray/0177
+		frame	data/chars/ray/ray0162
+	offset	100 200
+		frame	data/chars/ray/ray0162
+	offset	103 200
+		frame	data/chars/ray/ray0162
 	delay	30
 	offset	100 200
-		frame	data/chars/ray/0177
+		frame	data/chars/ray/ray0162	
 	delay	15
-		frame   data/chars/ray/0036
+		frame   data/chars/ray/ray0036
 
 anim blockpain3
 
 	#Low block
-
+		
 	jumpframe 0 0 -0.1 0
 
 	delay	3
-	offset	103 198
-	bbox	84 135 36 63
+	offset	103 200
+	bbox	85 100 30 100
 	offset	100 200
-		frame	data/chars/ray/0164.png
-		Attack1  0
-		frame	data/chars/ray/0164.png
-	offset	100 198
-		frame	data/chars/ray/0164.png
-	offset	103 198
-		frame	data/chars/ray/0164.png
+		frame	data/chars/ray/ray0164
+	offset	103 200
+		frame	data/chars/ray/ray0164
+	offset	100 200
+		frame	data/chars/ray/ray0164
+	offset	103 200
+		frame	data/chars/ray/ray0164
 	delay	30
-	offset	100 198
-		frame	data/chars/ray/0164.png
+	offset	100 200
+		frame	data/chars/ray/ray0164	
 	delay	15
-		frame   data/chars/ray/0163.png
-		delay  8
-		offset  100  200
-		frame   data/chars/ray/0012.png
-		bbox  84  109  36  89
-		Attack1  0
-	frame  data/chars/ray/0011.png
+		frame   data/chars/ray/ray0163
+		frame   data/chars/ray/ray0012
 
 anim blockpain4
-
+	
 	#High block.
-
+	
 	jumpframe 0 0 -0.1 0
 
 	delay	3
 	offset	103 200
-	bbox	75 111 32 87
+	bbox	85 100 30 100
 	offset	100 200
-		frame	data/chars/ray/0165.png
-		frame	data/chars/ray/0165
-	offset	100 200
-		frame	data/chars/ray/0165
+		frame	data/chars/ray/ray0165
 	offset	103 200
-		frame	data/chars/ray/0165
+		frame	data/chars/ray/ray0165
+	offset	100 200
+		frame	data/chars/ray/ray0165
+	offset	103 200
+		frame	data/chars/ray/ray0165
 	delay	30
 	offset	100 200
-		frame	data/chars/ray/0165
+		frame	data/chars/ray/ray0165
 	delay	15
-		frame	data/chars/ray/0036
+		frame	data/chars/ray/ray0036
 
 anim rise
-
-	delay	10
+	
+	delay	12
 	offset	100 200
 	bbox	0
-		frame	data/chars/ray/0140.png
-		offset  100  196
-		frame	data/chars/ray/0141.png
-		delay  8
-		offset  100  200
-		frame	data/chars/ray/0142.png
-		frame	data/chars/ray/0143.png
-	frame  data/chars/ray/0011.png
+		frame	data/chars/ray/ray0140
+		frame	data/chars/ray/ray0141
+		frame	data/chars/ray/ray0142
+		frame	data/chars/ray/ray0143
 
 anim grabbed
-
+	
 	loop	1
 	delay	3
-	offset	101 170
-	bbox	81 79 33 91
-		frame	data/chars/ray/0148.png
-		offset  99  170
-	frame  data/chars/ray/0148.png
-		offset  101  170
-	frame  data/chars/ray/0148.png
-		offset  99  170
-	frame  data/chars/ray/0148.png
-		delay  50
-		offset  100  170
-	frame  data/chars/ray/0148.png
+	offset	101 200
+	bbox	85 100 30 100
+		frame	data/chars/ray/ray0123
+	offset	99 200
+		frame	data/chars/ray/ray0123
+	offset	101 200
+		frame	data/chars/ray/ray0123
+	offset	99 200
+		frame	data/chars/ray/ray0123
+	offset	100 200
+	delay	50
+		frame	data/chars/ray/ray0123		
 
-anim pain
-
+anim pain	
+	
 	jumpframe 0 0 -0.1 0
 
 	delay	10
 	offset	100 200
 	bbox	85 100 30 100
-		frame	data/chars/ray/0118.png
-		bbox  75  99  40  101
-		frame	data/chars/ray/0119.png
-		offset  101  170
-		bbox  71  71  38  99
-		frame	data/chars/ray/0149.png
-		offset  100  200
-		frame	data/chars/ray/0121.png
-		offset  101  170
-	frame  data/chars/ray/0149.png
-		offset  100  200
-		frame	data/chars/ray/0119.png
-		frame	data/chars/ray/0118.png
+		frame	data/chars/ray/ray0118
+		frame	data/chars/ray/ray0119
+		frame	data/chars/ray/ray0120
+		frame	data/chars/ray/ray0121
+		frame	data/chars/ray/ray0120
+		frame	data/chars/ray/ray0119
+		frame	data/chars/ray/ray0118
 
-anim pain2
-
+anim pain2	
+	
 	#In the breadbasket
 
 	jumpframe 0 0 -0.1 0
 
 	delay	10
 	offset	100 200
-	bbox	84 105 30 95
-		frame	data/chars/ray/0122.png
-		offset  100  170
-		bbox  82  81  34  87
-		frame	data/chars/ray/0148.png
-		offset  100  200
-		bbox  71  116  39  84
-		frame	data/chars/ray/0124.png
-		offset  100  170
-		bbox  60  87  46  82
-		frame	data/chars/ray/0167.png
-		offset  100  200
-		bbox  71  116  39  84
-	frame  data/chars/ray/0124.png
-		offset  100  170
-		bbox  82  81  34  87
-	frame  data/chars/ray/0148.png
-		offset  100  200
-		bbox  84  105  30  95
-	frame  data/chars/ray/0122.png
+	bbox	85 100 30 100
+		frame	data/chars/ray/ray0122
+		frame	data/chars/ray/ray0123
+		frame	data/chars/ray/ray0124
+		frame	data/chars/ray/ray0125
+		frame	data/chars/ray/ray0124
+		frame	data/chars/ray/ray0123
+		frame	data/chars/ray/ray0122	
+
+anim fall
+	
+	dropframe 1
+	landframe 3
+
+	delay	1
+	offset	100 200
+	bbox	55 140 70 45
+	attack	55 140 70 45 6 1	
+		frame	data/chars/ray/ray0129
+	delay	20
+		frame	data/chars/ray/ray0130
+	delay	1000
+		frame	data/chars/ray/ray0131
+	delay	12
+	offset	100 196
+	attack	0
+	bbox	45 145 100 45
+		frame	data/chars/ray/ray0132
+		frame	data/chars/ray/ray0133
+		frame	data/chars/ray/ray0134
 
 anim fall2
-
+	
 	#Collapse	
 
-	hitflash iflash
-
 	offset	100 200
-	bbox	81 122 34 76
+	bbox	55 140 70 45		
 	delay	3
 	move	-3
-		frame	data/chars/ray/0143.png
+		frame	data/chars/ray/ray0143
 	move	3
-		frame	data/chars/ray/0143.png
+		frame	data/chars/ray/ray0143	
 	move	-3
-		frame	data/chars/ray/0143.png
+		frame	data/chars/ray/ray0143
 	move	3
-		frame	data/chars/ray/0143.png
+		frame	data/chars/ray/ray0143
 	delay	50
-		offset  100  170
-		bbox  80  83  32  86
-		frame	data/chars/ray/0148.png
-	delay	12
-		bbox  59  88  44  81
-		frame	data/chars/ray/0167.png
-		bbox  74  65  66  59
-		offset  100  130
-		move  0
-		frame	data/chars/ray/0147.png
-		delay  10
-		offset  100  166
-		bbox  56  142  69  24
-		move  -5
-	frame  data/chars/ray/0150.png
-		bbox  61  159  60  36
-		offset  100  196
-		move  0
-		frame	data/chars/ray/0140.png
-		offset  100  166
-		bbox  50  145  110  21
-		move  -5
-	frame  data/chars/ray/0157.png
+		frame	data/chars/ray/ray0123
+	delay	12	
+		frame	data/chars/ray/ray0125	
+		frame	data/chars/ray/ray0130
+	delay	10
+	offset	100 196	
+	bbox	45 145 115 25
+		frame	data/chars/ray/ray0138
+		frame	data/chars/ray/ray0140	
+		frame	data/chars/ray/ray0134
 
 anim fall3
-	landframe  5
-		hitflash  iflash
-		delay  12
-		offset  100  170
-		bbox  73  93  50  65
-	frame  data/chars/ray/0155.png
-		offset  100  200
-		bbox  63  166  87  31
-	frame  data/chars/ray/0144.png
-		bbox  86  115  34  82
-		frame   data/chars/ray/0137.png
-		bbox  62  110  50  60
-		offset  80  170
-		frame	data/chars/ray/0160.png
-	delay	-1000
-		bbox  53  137  75  29
-		offset  100  170
-		move  0
-		frame	data/chars/ray/0150.png
+
+	#Swept
+	
+	landframe 4
+
 	delay	12
-	attack1	0
-	bbox	46 139 89 27
-		offset  100  160
-		frame	data/chars/ray/0161.png
-		bbox  51  140  93  23
-		offset  100  162
-		frame	data/chars/ray/0158.png
-		bbox  48  146  106  20
-		offset  100  165
-		frame	data/chars/ray/0157.png
+	offset	100 200
+	bbox	55 140 70 45
+		frame   data/chars/ray/ray0146
+		frame   data/chars/ray/ray0137
+		frame	data/chars/ray/ray0139
+	delay	-1
+		frame	data/chars/ray/ray0138		
+	delay	12
+	attack	0
+	bbox	45 145 115 25
+		frame	data/chars/ray/ray0132
+		frame	data/chars/ray/ray0133
+		frame	data/chars/ray/ray0134
 
 anim fall5
 
 	#Tossed
-
+	
 	dropframe 1
-	landframe 2
-	hitflash iflash
+	landframe 3
 
-	delay	-1000
-	offset	90 170
-	bbox	63 103 48 66
-	attack1	63 102 48 67 6 1
-		frame	data/chars/ray/0160.png
-		bbox  55  141  71  26
-		attack1  55  141  72  26  6  1
-		frame	data/chars/ray/0150.png
+	delay	-1
+	offset	100 200
+	bbox	55 140 70 45
+	attack	55 140 70 45 6 1
+		frame	data/chars/ray/ray0139
+		frame	data/chars/ray/ray0138		
 	delay	12
-	attack1	0
-	bbox	50 140 87 27
-		offset  90  165
-		frame	data/chars/ray/0161.png
-		frame	data/chars/ray/0158.png
-		bbox  48  148  106  20
-		frame	data/chars/ray/0157.png
+	attack	0
+	bbox	45 145 115 25
+		frame	data/chars/ray/ray0132
+		frame	data/chars/ray/ray0133
+		frame	data/chars/ray/ray0134
 
 anim fall8
 
 	#Splat.
 
-	landframe  1
+	landframe  1 
 	quakeframe 1 1 -2
-	hitflash iflash
 
-	delay	-1000
-	offset	90 170
-	bbox	62 109 50 60
-	attack1	62 108 50 61 12 1
-		frame	data/chars/ray/0160.png
+	delay	-1
+	offset	100 200
+	bbox	55 140 70 45
+	attack	55 140 70 45 12 1
+		frame	data/chars/ray/ray0139	
 	delay	15
-	attack1	79  128  42  67
-		bbox  80  128  41  66
-		offset  100  195
-		frame	data/chars/ray/0145.png
+	attack	0
+		frame	data/chars/ray/ray0145
 	delay	10
-	bbox	63 108 48 61
-		offset  90  170
-		Attack1  0
-		frame	data/chars/ray/0160.png
-		bbox  49  139  95  27
-		offset  90  165
-		frame	data/chars/ray/0158.png
-		bbox  47  145  105  21
-		frame	data/chars/ray/0157.png
+	bbox	45 145 115 25
+		frame	data/chars/ray/ray0139
+		frame	data/chars/ray/ray0133
+		frame	data/chars/ray/ray0134
 
 anim fall9
 
 	#Flat fall.
 
-	landframe  1
-	hitflash iflash
-
-	delay	-1000
-	offset	100 170
-	bbox	49 140 92 26
-	attack1	50 139 92 27 12 1
-		frame	data/chars/ray/0161.png
+	landframe  1 
+	
+	delay	-1
+	offset	100 200
+	bbox	45 145 115 25
+	attack	55 140 70 45 12 1
+		frame	data/chars/ray/ray0132	
 	delay	15
-	attack1	0
-		offset  90  165
-		frame	data/chars/ray/0158.png
-		bbox  50  145  104  19
-		frame	data/chars/ray/0157.png
+	attack	0
+		frame	data/chars/ray/ray0133
+		frame	data/chars/ray/ray0134
 
-anim death
-
+anim death	
+	
 	jumpframe 9 0.9 -1 0
 	landframe 11
-	hitflash iflash
 
 	delay	50
-	offset	90 165
+	offset	100 200
 	bbox	0
-		frame	data/chars/ray/0157.png
+		frame	data/chars/ray/ray0134
 	delay	15
-		offset  100  195
-		move  20
-		frame	data/chars/ray/0140.png
-		move  0
-		frame	data/chars/ray/0141.png
-		offset  100  198
-		frame	data/chars/ray/0142.png
+		frame	data/chars/ray/ray0140
+		frame	data/chars/ray/ray0141
+		frame	data/chars/ray/ray0142
 	delay	3
 	move	-3
-		offset  100  200
-		frame	data/chars/ray/0143.png
+		frame	data/chars/ray/ray0143
 	move	3
-		frame	data/chars/ray/0143.png
+		frame	data/chars/ray/ray0143	
 	move	-3
-		frame	data/chars/ray/0143.png
+		frame	data/chars/ray/ray0143
 	move	3
-		frame	data/chars/ray/0143.png
+		frame	data/chars/ray/ray0143
 	delay	50
-		offset  100  170
-		frame	data/chars/ray/0148.png
-	delay	12
-		offset  100  190
-		frame	data/chars/ray/0129.png
+		frame	data/chars/ray/ray0123
+	delay	12	
+		frame	data/chars/ray/ray0129	
 	delay	1000
-		offset  90  170
-		frame	data/chars/ray/0160.png
+		frame	data/chars/ray/ray0139
 	delay	10
-	offset	100 165
-		move  0
-		frame	data/chars/ray/0150.png
-		frame	data/chars/ray/0158.png
-		hitflash  iflash
-		delay  50
-		offset  90  165
-		move  -10
-	frame  data/chars/ray/0157.png
+	offset	100 196	
+		frame	data/chars/ray/ray0138
+		frame	data/chars/ray/ray0133
+		frame	data/chars/ray/ray0134	
 
 anim  bpain
 
 	jumpframe 0 0 -0.1 0
-	hitflash fflash
 
 	delay	5
-	bbox	76 103 29 96
+	bbox	85 100 30 100
 	offset	100 200
-		frame	data/chars/ray/0119.png
+		frame	data/chars/ray/ray0119
 	offset	103 200
-		frame	data/chars/ray/0119.png
+		frame	data/chars/ray/ray0119
 	offset	100 200
-		frame	data/chars/ray/0119.png
+		frame	data/chars/ray/ray0119
 	offset	103 200
-		frame	data/chars/ray/0119.png
+		frame	data/chars/ray/ray0119
 	offset	100 200
-		frame	data/chars/ray/0119.png
+		frame	data/chars/ray/ray0119
 	offset	103 200
-		frame	data/chars/ray/0119.png
+		frame	data/chars/ray/ray0119
 	offset	100 200
-		frame	data/chars/ray/0119.png
+		frame	data/chars/ray/ray0119
 	offset	103 200
-		frame	data/chars/ray/0119.png
+		frame	data/chars/ray/ray0119
 	offset	100 200
-		frame	data/chars/ray/0119.png
+		frame	data/chars/ray/ray0119
 	offset	103 200
-		frame	data/chars/ray/0119.png
+		frame	data/chars/ray/ray0119
 	offset	100 200
-		frame	data/chars/ray/0119.png
+		frame	data/chars/ray/ray0119
 	offset	103 200
-		frame	data/chars/ray/0119.png
+		frame	data/chars/ray/ray0119
 	offset	100 200
-		frame	data/chars/ray/0119.png
+		frame	data/chars/ray/ray0119
 	offset	103 200
-		frame	data/chars/ray/0119.png
+		frame	data/chars/ray/ray0119
 	offset	100 200
-		frame	data/chars/ray/0119.png
+		frame	data/chars/ray/ray0119
 	offset	103 200
-		frame	data/chars/ray/0119.png
+		frame	data/chars/ray/ray0119
 	offset	100 200
-		frame	data/chars/ray/0119.png
+		frame	data/chars/ray/ray0119
 	offset	103 200
-		frame	data/chars/ray/0119.png
+		frame	data/chars/ray/ray0119
 	delay	10
 	offset	100 200
-		frame	data/chars/ray/0118.png
-
-anim burn
+		frame	data/chars/ray/ray0118		
+		
+anim burn	
 
 	dropframe  1
 	landframe  3
-	animheight 75
-	hitflash fflash
+	animheight 10
 
 	delay	1
 	offset	100 200
-	bbox	68 123 58 49
-	burn	68 123 58 49 12 1
-		frame	data/chars/ray/0129.png
+	bbox	90 110 30 90
+	burn	90 110 30 90 12 1	
+		frame	data/chars/ray/ray0129
 	delay	20
-		bbox  74  66  62  55
-		burn  74  66  62  55  12  1
-		offset  100  140
-		move  -10
-		frame	data/chars/ray/0147.png
-	delay	-1000
-		bbox  50  125  79  39
-		burn  49  125  81  39  12  1
-		offset  100  180
-		move  10
-		frame	data/chars/ray/0159.png
+		frame	data/chars/ray/ray0130
+	delay	-1
+		frame	data/chars/ray/ray0131
 	delay	12
-	offset	100 165
-	bbox	50 139 88 26
-		move  0
-		Attack1  0
-		frame	data/chars/ray/0161.png
-		offset  100  162
-		frame	data/chars/ray/0158.png
-		bbox  49  147  110  18
-		frame	data/chars/ray/0157.png
-
-anim sdie
-
-	hitflash eflash
+	offset	100 196
+	bbox	45 145 115 25
+	attack	0
+		frame	data/chars/ray/ray0132
+		frame	data/chars/ray/ray0133
+		frame	data/chars/ray/ray0134
+anim bdie	
 
 	delay	50
-	offset	90 165
+	offset	100 200
 	bbox	0
-		frame	data/chars/ray/0157.png
+		frame	data/chars/ray/ray0134
 	delay	15
-		offset  100  195
-		move  20
-		frame	data/chars/ray/0140.png
-		move  0
-		frame	data/chars/ray/0141.png
-		offset  100  198
-		frame	data/chars/ray/0142.png
+		frame	data/chars/ray/ray0140
+		frame	data/chars/ray/ray0141
+		frame	data/chars/ray/ray0142
 	delay	3
-		offset  100  200
-		frame	data/chars/ray/0143.png
-
-
-
-
-
-
-
-
-
-
-
-anim  fall
-	dropframe  1
-	landframe  3
-	animheight  75
-		hitflash  fflash
-		delay  1
-		offset  100  200
-		bbox  68  123  58  49
-		burn  68  123  58  49  12  1
-		attack1  68  123  59  49  6  1  0  0  10
-	frame  data/chars/ray/0129.png
-		delay  20
-		bbox  74  66  62  55
-		burn  74  66  62  55  12  1
-		offset  100  140
-		move  -10
-		attack1  74  66  63  55  6  1  0  0  10
-	frame  data/chars/ray/0147.png
-		delay  -1000
-		bbox  50  125  79  39
-		burn  49  125  81  39  12  1
-		offset  100  180
-		move  10
-		attack1  50  126  80  39  6  1  0  0  10
-	frame  data/chars/ray/0159.png
-		delay  12
-		offset  100  165
-		bbox  50  139  88  26
-		move  0
-		attack1  49  138  89  28
-		Attack1  0
-	frame  data/chars/ray/0161.png
-		offset  100  162
-		Attack1  0
-		Attack1  0
-	frame  data/chars/ray/0158.png
-		bbox  49  147  110  18
-	frame  data/chars/ray/0157.png
-anim  shock
-	dropframe  1
-	landframe  3
-	animheight  75
-		hitflash  fflash
-		delay  1
-		offset  100  200
-		bbox  68  123  58  49
-		burn  68  123  58  49  12  1
-		shock  68  123  58  49  12  1  0  0  10
-	frame  data/chars/ray/0129.png
-		delay  20
-		bbox  74  66  62  55
-		burn  74  66  62  55  12  1
-		offset  100  140
-		move  -10
-		shock  73  66  63  55  12  1  0  0  10
-	frame  data/chars/ray/0147.png
-		delay  -1000
-		bbox  50  125  79  39
-		burn  49  125  81  39  12  1
-		offset  100  180
-		move  10
-		shock  50  125  80  39  12  1  0  0  10
-	frame  data/chars/ray/0159.png
-		delay  12
-		offset  100  165
-		bbox  50  139  88  26
-		move  0
-		Attack1  0
-		Attack1  0
-	frame  data/chars/ray/0161.png
-		offset  100  162
-	frame  data/chars/ray/0158.png
-		bbox  49  147  110  18
-	frame  data/chars/ray/0157.png
-anim  spain
-	jumpframe  0  0  -0.1  0
-		hitflash  fflash
-		delay  5
-		bbox  76  103  29  96
-		offset  100  200
-	frame  data/chars/ray/0119.png
-		offset  103  200
-	frame  data/chars/ray/0119.png
-		offset  100  200
-	frame  data/chars/ray/0119.png
-		offset  103  200
-	frame  data/chars/ray/0119.png
-		offset  100  200
-	frame  data/chars/ray/0119.png
-		offset  103  200
-	frame  data/chars/ray/0119.png
-		offset  100  200
-	frame  data/chars/ray/0119.png
-		offset  103  200
-	frame  data/chars/ray/0119.png
-		offset  100  200
-	frame  data/chars/ray/0119.png
-		offset  103  200
-	frame  data/chars/ray/0119.png
-		offset  100  200
-	frame  data/chars/ray/0119.png
-		offset  103  200
-	frame  data/chars/ray/0119.png
-		offset  100  200
-	frame  data/chars/ray/0119.png
-		offset  103  200
-	frame  data/chars/ray/0119.png
-		offset  100  200
-	frame  data/chars/ray/0119.png
-		offset  103  200
-	frame  data/chars/ray/0119.png
-		offset  100  200
-	frame  data/chars/ray/0119.png
-		offset  103  200
-	frame  data/chars/ray/0119.png
-		delay  10
-		offset  100  200
-	frame  data/chars/ray/0118.png
-anim  bdie
-		hitflash  eflash
-		delay  50
-		offset  90  165
-		bbox  0
-	frame  data/chars/ray/0157.png
-		delay  15
-		offset  100  195
-		move  20
-	frame  data/chars/ray/0140.png
-		move  0
-	frame  data/chars/ray/0141.png
-		offset  100  198
-	frame  data/chars/ray/0142.png
-		delay  3
-		offset  100  200
-	frame  data/chars/ray/0143.png
-
-anim  follow46
-	range  0  90
-		offset  100  200
-		bbox  91  102  29  96
-		@cmd  soun0005  0  VOIATKL  -1  0.75  0  0
-		@cmd  soun0005  0  SNDWIFFL  -1  1  0  0
-		delay  7
-	frame  data/chars/ray/0051.png
-		bbox  93  102  31  97
-	frame  data/chars/ray/0052.png
-		attack1  117  117  72  12  8  0  0  0  10
-		bbox  100  106  40  92
-		delay  5
-	frame  data/chars/ray/0053.png
-		Attack1  0
-		delay  6
-	frame  data/chars/ray/0193.png
-		bbox  94  104  29  94
-	frame  data/chars/ray/0192.png
-		delay  10
-	frame  data/chars/ray/0194.png
-anim  special
-		delay  10
-		offset  100  200
-	frame  data/chars/ray/0001.png
-	frame  data/chars/ray/0040.png
-		offset  107  200
-		delay  30
-	frame  data/chars/ray/0143.png
-		delay  10
-		offset  100  200
-	frame  data/chars/ray/0040.png
-
-anim  attack3
-	range  0  50
-		bbox  79  105  29  93
-		delay  8
-		offset  100  200
-	frame  data/chars/ray/0069.png
-		@cmd  soun0005  0  VOIATKL  -1  0.75  0  0
-		@cmd  soun0005  0  SNDWIFFL  -1  1  0  0
-		bbox  74  98  27  100
-		delay  4
-	frame  data/chars/ray/0070.png
-	frame  data/chars/ray/0179.png
-		attack1  90  86  57  54  12  1  0  0  10
-		bbox  67  98  34  100
-		delay  8
-	frame  data/chars/ray/0071.png
-		delay  4
-
-	frame  data/chars/ray/0181.png
-		delay  12
-		Attack1  0
-	frame  data/chars/ray/0180.png
-		delay  10
-		bbox  74  98  31  101
-	frame  data/chars/ray/0070.png
-		bbox  77  103  32  96
-	frame  data/chars/ray/0069.png
-
-
-anim  attack2
-
-	range	0 50
-		delay  7
-		offset  100  200
-		bbox  80  103  35  95
-	frame  data/chars/ray/0216.png
-		bbox  82  100  30  97
-		attack1  89  111  55  17  8  0  0  0  10
-	frame  data/chars/ray/0217.png
-		bbox  86  100  33  97
-		Attack1  0
-	frame  data/chars/ray/0218.png
-	frame  data/chars/ray/0219.png
-		bbox  82  100  30  97
-	frame  data/chars/ray/0217.png
-		bbox  80  103  35  95
-	frame  data/chars/ray/0216.png
-
-
-
-
-
-anim  runslide
-
-	cancel	  5 6 0 a freespecial41		#Sweep.
-	jumpframe  2  0  2  0	dust0002
-
-		delay  8
-		offset  100  200
-		bbox  85  109  30  89
-	frame  data/chars/ray/0011.png
-		bbox  82  128  33  70
-	frame  data/chars/ray/0012.png
-		offset  100  155
-		bbox  84  105  43  48
-	frame  data/chars/ray/0031.png
-		offset  100  160
-	frame  data/chars/ray/0032.png
-		offset  100  155
-	frame  data/chars/ray/0033.png
-		bbox  70  107  53  43
-	frame  data/chars/ray/0034.png
-		offset  100  200
-		bbox  79  136  36  61
-	frame  data/chars/ray/0013.png
-		bbox  79  128  37  68
-	frame  data/chars/ray/0012.png
-		bbox  84  112  30  86
-	frame  data/chars/ray/0011.png
-
-
-anim slide
-	cancel	  5 7 0 a freespecial40		#Jab.
-	jumpframe  2 0 1.5 0 dust0002
-
-	delay	8
-	offset	100 200
-	bbox	85 109 30 89
-		frame	data/chars/ray/0011.png
-		bbox  82  128  33  70
-		frame	data/chars/ray/0012.png
-	offset	100 155
-		bbox  84  105  43  48
-		frame	data/chars/ray/0031.png
-	offset	100 160
-		frame	data/chars/ray/0032.png
-	offset	100 155
-		frame	data/chars/ray/0033.png
-		bbox  70  107  53  43
-		frame	data/chars/ray/0034.png
-	offset	100 200
-		bbox  79  136  37  62
-		frame	data/chars/ray/0013.png
-		bbox  79  128  37  68
-	frame  data/chars/ray/0012.png
-		bbox  84  112  30  86
-		frame	data/chars/ray/0011.png
-
-
-anim  freespecial40
-
-	#Low Jab
-	cancel	  	4 5 1 a freespecial42
-	jumpframe 0 0 0.2 0
-
-		offset  100  200
-		delay  8
-		bbox  77  138  37  59
-	frame  data/chars/ray/0013.png
-		bbox  83  130  33  66
-		offset  101  196
-	frame  data/chars/ray/0220.png
-		bbox  83  128  33  68
-		delay  4
-		attack1  97  139  61  12  5  0  0  0  10
-	frame  data/chars/ray/0221.png
-	frame  data/chars/ray/0222.png
-		bbox  83  130  33  66
-		delay  8
-		Attack1  0
-	frame  data/chars/ray/0223.png
-		bbox  77  138  37  59
-		offset  100  200
-	frame  data/chars/ray/0013.png
-		bbox  78  124  38  74
-	frame  data/chars/ray/0012.png
-		bbox  83  112  33  87
-	frame  data/chars/ray/0011.png
-
-anim  freespecial42
-
-	#Second low jab
-	cancel	  	3 4 1 a freespecial43
-
-		offset  101  196
-		delay  10
-		bbox  82  131  39  67
-	frame  data/chars/ray/0220.png
-		delay  4
-		offset  100  196
-		attack1  95  137  64  14  5  0  0  0  10
-	frame  data/chars/ray/0221.png
-		Attack1  0
-	frame  data/chars/ray/0222.png
-		delay  8
-	frame  data/chars/ray/0223.png
-		offset  100  200
-		bbox  77  137  36  61
-	frame  data/chars/ray/0013.png
-		bbox  78  125  35  73
-	frame  data/chars/ray/0012.png
-		bbox  82  109  33  89
-	frame  data/chars/ray/0011.png
-
-anim  freespecial43
-
-	#Low straight.
-
-		offset  100  200
-	frame  data/chars/ray/0013.png
-		offset  101  196
-		bbox  83  128  32  70
-		delay  8
-	frame  data/chars/ray/0224.png
-		bbox  86  125  34  72
-	frame  data/chars/ray/0225.png
-		offset  101  195
-		bbox  89  128  43  68
-		attack1  94  137  81  13  10  1  0  0  15
-	frame  data/chars/ray/0226.png
-		Attack1  0
-	frame  data/chars/ray/0227.png
-		offset  101  196
-		bbox  83  124  40  71
-	frame  data/chars/ray/0228.png
-		bbox  77  124  37  75
-		offset  100  200
-	frame  data/chars/ray/0012.png
-		bbox  80  108  37  91
-	frame  data/chars/ray/0011.png
-anim  follow83
-		offset  100  200
-		bbox  79  126  39  72
-		delay  7
-	frame  data/chars/ray/0012.png
-		bbox  78  139  41  59
-	frame  data/chars/ray/0013.png
-		offset  102  196
-		bbox  77  134  41  61
-	frame  data/chars/ray/0229.png
-		bbox  85  135  34  61
-	frame  data/chars/ray/0230.png
-		bbox  88  138  35  58
-		attack1  105  181  63  15  10  2  0  0  10
-	frame  data/chars/ray/0231.png
-		Attack1  0
-	frame  data/chars/ray/0232.png
-		bbox  82  134  36  62
-	frame  data/chars/ray/0233.png
-		bbox  78  139  41  59
-		offset  100  200
-	frame  data/chars/ray/0013.png
-		bbox  78  124  39  74
-	frame  data/chars/ray/0012.png
-		bbox  80  106  38  92
-	frame  data/chars/ray/0011.png
-
-anim  jumpattack3
-		delay  8
-		offset  100  200
-		bbox  94  89  33  64
-	frame  data/chars/ray/0239.png
-		attack1  110  89  51  52  8
-	frame  data/chars/ray/0240.png
-
+		frame	data/chars/ray/ray0143
+	
+	
+		

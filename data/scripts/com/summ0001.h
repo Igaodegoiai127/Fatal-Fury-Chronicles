@@ -1,7 +1,6 @@
-#include	"data/scripts/vars/entity.h"
-#include	"data/scripts/com/spaw0006.h"
+#include "data/scripts/vars/entity.h"
 
-void summ0001(char cModel, char cAlias, int iMap, int iBlend, int iX, int iY, int iZ, int iDir, int iAni, int iFrame, int iKill){
+void summ0001(void vModel, void vAlias, int iMap, int iBlend, int iX, int iY, int iZ, int iDir, int iAni, int iFrame, int iKill){
 	
     /*
      summ0001
@@ -9,8 +8,8 @@ void summ0001(char cModel, char cAlias, int iMap, int iBlend, int iX, int iY, in
      02/25/2008
      Spawn an entity in relation to screen position, no draw adjustments.
      
-     cModel:     Model name of spawn.
-     cAlias:     Display name of spawn. 
+     vName:      Model name of spawn.
+     vAlias:     Display name of spawn. 
      vMap:       Color map of spawn.
      iBlend:     Transparency setting of spawn. 
      fX, fY, fZ: Location offset.
@@ -26,18 +25,21 @@ void summ0001(char cModel, char cAlias, int iMap, int iBlend, int iX, int iY, in
     { 
         iMap = getentityproperty(vSelf, "map");                             //Set iMap to callers current map.
     }  
+    
+    clearspawnentry();                                                      //Clear current spawn entry.
+    setspawnentry("name",   vModel);                                        //Aquire spawn entity by name.
+    setspawnentry("alias",  vAlias);                                        //Set alias.
+    setspawnentry("map",    iMap);                                          //Set color remap.
+	setspawnentry("coords", iX, iZ, iY);                                    //Spawn location.
+    vSpawn = spawn();                                                       //Spawn entity.
+    clearspawnentry();                                                      //Clear current spawn entry.
         
-	vSpawn = spaw0006(cModel, cAlias, iX, iY, iZ, iMap, 0);					//Spawn entity.
-
     setentityvar(vSelf, SPAWN, vSpawn);                                     //Store spawn into last spawn variant.
     changeentityproperty(vSpawn, "direction", iDir);
-    changeentityproperty(vSpawn, "parent", vSelf);                          //Set caller as parent of spawn.	
+    changeentityproperty(vSpawn, "parent", vSelf);                          //Set caller as parent of spawn.
+	
+    setentityvar(vSpawn, ADBLEND, iBlend);                                  //Set transparency.        
     
-	if(iBlend != -1)
-	{
-		changeentityproperty(vSpawn, "alpha", iBlend);							//Set transparency.        
-	}
-
     //draw0001(vSpawn);                                                     //Update draw for spawn.    
 
     if (iAni)

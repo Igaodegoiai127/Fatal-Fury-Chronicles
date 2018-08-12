@@ -1,259 +1,203 @@
-#include	"data/scripts/vars/anims.h"
-#include	"data/scripts/vars/entity.h"
-#include	"data/scripts/com/ani0009.h"
-#include	"data/scripts/com/key0002.h"
-#include	"data/scripts/com/key0004.h"
-#include	"data/scripts/com/debu0001.h"
-#include	"data/scripts/com/musi0001.h"
-#include	"data/scripts/com/targ0002.h"
+#include "data/scripts/vars/anims.h"
+#include "data/scripts/vars/entity.h"
+#include "data/scripts/com/ani0009.h"
+#include "data/scripts/com/key0002.h"
+#include "data/scripts/com/key0004.h"
 
 void main(){
-
+    
 	/*
     Damon Vaughn Caskey
     06/25/2007
     Capture keystrokes and perform actions accordingly.
     */
 
-    int     iPlIndex    = getlocalvar("player");											//Player index.
-    void    vSelf       = getplayerproperty(iPlIndex, "entity");							//Get calling entity.
-    int     iFlIdle     = getentityproperty(vSelf, "aiflag", "idling");						//Self idling?
-    int     iFlAttack   = getentityproperty(vSelf, "aiflag", "attacking");					//Self attacking (freespecial, jumpattack, follow, or attack)?
-    int     iFlJump     = getentityproperty(vSelf, "aiflag", "jumping");					//Self jumping?
-	int     iTime       = openborvariant("elapsed_time");									//Current time.
-    float   fXDir;																			//X velocity.
-	float	fZDir;																			//Z veolocity.
-	int     iAni;																			//Current animation.
-    int     iFrame;																			//Current animation frame.
-    void    vTarget;																		//Opponent/target.
+    int     iPlIndex    = getlocalvar("player");                                    //Player index.
+    void    vSelf       = getplayerproperty(iPlIndex, "entity");                    //Get calling entity.
+    int     iFlIdle     = getentityproperty(vSelf, "aiflag", "idling");             //Self idling?
+    int     iFlAttack   = getentityproperty(vSelf, "aiflag", "attacking");          //Self attacking (freespecial, jumpattack, follow, or attack)?
+    int     iFlJump     = getentityproperty(vSelf, "aiflag", "jumping");            //Self jumping?
+    int     iUpH        = playerkeys(iPlIndex, 0, "moveup");                        //Hold  "Up".
+    int     iDownH      = playerkeys(iPlIndex, 0, "movedown");                      //Hold  "Down".
+    int     iLeftH      = playerkeys(iPlIndex, 0, "moveleft");                      //Hold  "Left".
+    int     iRightH     = playerkeys(iPlIndex, 0, "moveright");                     //Hold  "Right".
+    int     iRight      = playerkeys(iPlIndex, 1, "moveright");                     //Press "Right".
+    int     iRightR     = playerkeys(iPlIndex, 2, "moveright");                     //Release "Right".
+    int     iUp         = playerkeys(iPlIndex, 1, "moveup");                        //Press "Up".
+    int     iDown       = playerkeys(iPlIndex, 1, "movedown");                      //Press "Down".
+    int     iSpecial    = playerkeys(iPlIndex, 1, "Special");                       //Press "Special".
+    int     iAttack     = playerkeys(iPlIndex, 1, "attack");                        //Press "Attack".
+    int     iAttack3    = playerkeys(iPlIndex, 1, "attack3");                       //Press "Attack3". 
+    int     iAttack4    = playerkeys(iPlIndex, 1, "attack4");                       //Press "Attack4".    
+	int     iXDir       = getentityproperty(vSelf, "xdir");                         //X velocity.
+    int     iTime       = openborvariant("elapsed_time");                           //Current time.
+    int     iAni;                                                                   //Current animation.
+    int     iFrame;                                                                 //Current animation frame.
+    void    vTarget;                                                                //Opponent.    
 
-	int     iKUpH       = playerkeys(iPlIndex, 0, "moveup");								//Hold "Up".
-    int     iKDnH       = playerkeys(iPlIndex, 0, "movedown");								//Hold "Down".
-	int     iKLtH       = playerkeys(iPlIndex, 0, "moveleft");								//Hold "Left".
-    int     iKRtH       = playerkeys(iPlIndex, 0, "moveright");								//Hold "Right".
-    int     iKAtkH      = playerkeys(iPlIndex, 0, "attack");								//Hold "Attack".
-    int     iKAtk2H     = playerkeys(iPlIndex, 0, "attack2");								//Hold "Attack2".
-    int     iKAtk3H     = playerkeys(iPlIndex, 0, "attack3");								//Hold "Attack3".
-    int     iKAtk4H     = playerkeys(iPlIndex, 0, "attack4");								//Hold "Attack4".
-    int     iKJmpH      = playerkeys(iPlIndex, 0, "jump");									//Hold "Jump".
-    int     iKSpH       = playerkeys(iPlIndex, 0, "special");								//Hold "Special".
-	int     iKStH       = playerkeys(iPlIndex, 0, "start");									//Hold "Start".
-	int     iKSsH       = playerkeys(iPlIndex, 0, "SCREENSHOT");							//Hold "Screenshot".
-    int     iKEscH      = playerkeys(iPlIndex, 0, "esc");									//Hold "esc".
-	int     iKAnyH      = playerkeys(iPlIndex, 0, "ANYBUTTON");								//Hold any key.
-
-	int     iKUp        = playerkeys(iPlIndex, 1, "moveup");								//Press "Up".
-    int     iKDn        = playerkeys(iPlIndex, 1, "movedown");								//Press "Down".
-    int     iKLt        = playerkeys(iPlIndex, 1, "moveleft");								//Press "Left".
-    int     iKRt        = playerkeys(iPlIndex, 1, "moveright");								//Press "Right".
-	int     iKAtk       = playerkeys(iPlIndex, 1, "attack");								//Press "Attack".
-	int     iKAtk2      = playerkeys(iPlIndex, 1, "attack2");								//Press "Attack2".
-    int     iKAtk3      = playerkeys(iPlIndex, 1, "attack3");								//Press "Attack3".
-    int     iKAtk4      = playerkeys(iPlIndex, 1, "attack4");								//Press "Attack4".
-	int     iKJmp       = playerkeys(iPlIndex, 1, "jump");									//Press "Jump".
-    int     iKSp        = playerkeys(iPlIndex, 1, "special");								//Press "Special".
-    int     iKSt        = playerkeys(iPlIndex, 1, "start");
-	int     iKSs        = playerkeys(iPlIndex, 1, "SCREENSHOT");							//Press "Screenshot".
-	int     iKEsc       = playerkeys(iPlIndex, 1, "esc");									//Press "escape".
-	int     iKAny       = playerkeys(iPlIndex, 1, "ANYBUTTON");								//Press any key.
-
-    int     iKUpR       = playerkeys(iPlIndex, 2, "moveup");								//Release "Up".
-    int     iKDnR       = playerkeys(iPlIndex, 2, "movedown");								//Release "Down".
-	int     iKLtR       = playerkeys(iPlIndex, 2, "moveleft");								//Release "Left".
-    int     iKRtR       = playerkeys(iPlIndex, 2, "moveright");								//Release "Right".
-	int     iKAtkR      = playerkeys(iPlIndex, 2, "attack");								//Release "Attack".
-    int     iKAtk2R     = playerkeys(iPlIndex, 2, "attack2");								//Release "Attack2".
-    int     iKAtk3R     = playerkeys(iPlIndex, 2, "attack3");								//Release "Attack3".
-    int     iKAtk4R     = playerkeys(iPlIndex, 2, "attack4");								//Release "Attack4".
-	int     iKJmpR      = playerkeys(iPlIndex, 2, "jump");									//Release "Jump".
-	int     iKSpR       = playerkeys(iPlIndex, 2, "special");								//Release "Special".
-    int     iKStR       = playerkeys(iPlIndex, 2, "start");									//Release "Start".
-    int     iKSsR       = playerkeys(iPlIndex, 2, "SCREENSHOT");							//Release "Screenshot".
-    int     iKAnyR      = playerkeys(iPlIndex, 2, "ANYBUTTON");								//Release any key.
-
-	//debu0001(vSelf, iKUp, iKDn, iKLt, iKRt, iKAtk, iKAtk2, iKAtk3, iKAtk4, iKSt, iKSs, iKEsc, iKAtkH, iKAtk2H, iKAtk3H, iKAtk4H, iKSp, iKJmpH, iKEscH);
-
-    if (iKSp)
+    if (iSpecial)
     {
-        setentityvar(vSelf, KEY1SP, iTime);													//Store last press of special key.
+        setentityvar(vSelf, KEY1SP, iTime);                                         //Store last press of special key.        
     }
-	else if(iKAtk)
+	else if(iAttack)
     {
-        setentityvar(vSelf, KEY1AT, iTime);													//Store last press of Attack key.
+        setentityvar(vSelf, KEY1AT, iTime);                                         //Store last press of Attack key.        
     }
 
-    if (iFlIdle)																			//Idle?
+    if (iFlIdle)                                                                    //Idle?
     {
-        if (iKAtk)																			//New attack press?
+        if (iAttack)                                                                //New attack press?
         {
-			/*
-			Poses. What's the point of thrashing someone if you can't rub their noses in it? This also
-			has a nice side effect of stoping players from attacking while they hold the block button.
-			*/
-			if (iKSpH)																			//Holding Special?
-			{
-				changeentityproperty(vSelf, "velocity", 0, 0, 0);								//Stop moving.
-				changeplayerproperty(vSelf, "playkeys", 0);										//Clear key event.
-
-				if (iKUpH)																		//Holding up?
-				{
-					ani0009(vSelf, openborconstant("ANI_FOLLOW71"), 0);							//Set pose 2.
-				}
-				else if (iKDnH)																	//Holding down?
-				{
-					ani0009(vSelf, openborconstant("ANI_FOLLOW72"), 0);							//Set pose 3.
-				}
-				else if (iKLtH)																	//Holding left?
-				{
-					ani0009(vSelf, openborconstant("ANI_FOLLOW73"), 0);							//Set pose 4.
-				}
-				else if (iKRtH)																	//Holding right?
-				{
-					ani0009(vSelf, openborconstant("ANI_FOLLOW74"), 0);							//Set pose 5.
-				}
-				else																			//No direction?
-				{
-					ani0009(vSelf, openborconstant("ANI_FOLLOW70"), 0);							//Set pose 1.
-				}
-
-				iAni = getentityproperty(vSelf, "animationid");									//Get current animation.
-
-				if(iAni != openborconstant("ANI_BLOCK"))										//Not in block animation?
-				{
-					changeentityproperty(vSelf, "aiflag", "blocking", 0);						//Make sure blocking flag is clear.
-				}
-			}
-
-			/*
-			Down Attack
-			*/
-            if (iKDnH && getentityproperty(vSelf, "animvalid", ATKDOWN))					//Holding down and have a Down Attack?
+            if (iDownH && getentityproperty(vSelf, "animvalid", ATKDOWN))           //Holding down and have a Down Attack?
             {
-                vTarget = findtarget(vSelf, ATKDOWN);										//Look for opponent within range of Down Attack.
-
-                if (vTarget && !getentityproperty(vTarget, "aiflag", "animating"))			//Target found and is not animating (finished with fall)?
+                vTarget = findtarget(vSelf, ATKDOWN);                               //Look for opponent within range of Down Attack.
+                
+                if (vTarget && !getentityproperty(vTarget, "aiflag", "animating"))  //Target found and is not animating (finished with fall)?
                 {
-                    if (getentityproperty(vTarget, "health") > 0)							//Target still alive?
-                    {
-                        if (ani0009(vSelf, ATKDOWN, 1))										//Set downattack.
+                    if (getentityproperty(vTarget, "health") > 0)                   //Target still alive?
+                    {                        
+                        if (ani0009(vSelf, ATKDOWN, 1))                             //Set downattack.
                         {
-                            changeentityproperty(vSelf, "velocity", 0,0,0);					//If animation was valid and set, stop moving.
+                            changeentityproperty(vSelf, "velocity", 0,0,0);         //If downattack was valid and set, stop moving.                                 //Set Downattack.                                        
                         }
                     }
                 }
             }
-
-			/*
-			Music change.
-			*/
-			vTarget = targ0002(vSelf, openborconstant("ANI_GET"), openborconstant("TYPE_OBSTACLE"), -1, 3);
-
-			if(vTarget)																		//Music change object found?
-			{
-				musi0001(vTarget, 1);
-
-				if(ani0009(vSelf, openborconstant("ANI_GET"), 1))							//Set/verify animation.
-				{
-					changeentityproperty(vSelf, "velocity", 0,0,0);							//If animation was valid and set, stop moving.
-				}
-			}
         }
-    }
-    else if (iFlJump)																		//Jumping?
-    {
-        if (!iFlAttack)																		//Not attacking?
+        ////Poses////
+        else if (iAttack3)                                                          //New attack3 press?
         {
-            if (iKSp)																		//New Special press?
-            {
-                ani0009(vSelf, AIRBLOCK, -1);												//Set Airblock.
-            }
-            else if (iKAtk)																	//New Attack press?
-            {
-                if (key0002(vSelf, iKLtH, iKRtH))											//Holding Back?
-                {
-                    ani0009(vSelf, AIRBACK, -1);											//Set Air back attack.
-                }
-                else if (iKDnH)																//Holding Down?
-                {
-					fXDir		= getentityproperty(vSelf, "xdir");							//Get X velocity.
+			
+            changeentityproperty(vSelf, "velocity", 0, 0, 0);                       //Stop moving.
+            changeplayerproperty(vSelf, "playkeys", 0);                             //Clear key event.
 
-                    if (!fXDir)																//Not moving horizontally?
+            if (iUpH)                                                               //Holding up?
+            {                
+                ani0009(vSelf, openborconstant("ANI_FOLLOW71"), 0);                 //Set pose 2.                                        
+            }
+            else if (iDownH)                                                        //Holding down?
+            {                                
+                ani0009(vSelf, openborconstant("ANI_FOLLOW72"), 0);                 //Set pose 3.                              
+            }
+            else if (iLeftH)                                                        //Holding left?
+            {
+                ani0009(vSelf, openborconstant("ANI_FOLLOW73"), 0);                 //Set pose 4.
+            }
+            else if (iRightH)                                                       //Holding right?
+            {
+                ani0009(vSelf, openborconstant("ANI_FOLLOW74"), 0);                 //Set pose 5.
+            }
+            else                                                                    //No direction?
+            {
+                ani0009(vSelf, openborconstant("ANI_FOLLOW70"), 0);                 //Set pose 1.
+            }
+			performattack(vSelf, POWUP, 0);
+        }
+    }    
+    else if (iFlJump)                                                               //Jumping?
+    {
+        /*
+        //Mario style jumpheight control.
+        if (playerkeys(iPlIndex, 2, "jump"))                                        //Jump key release?
+        {
+            iTossV  = getentityproperty(vSelf, "tossv");                            //Get Y velocity.
+            iXDir   = getentityproperty(vSelf, "xdir");                             //Get X velocity.
+            iZDir   = getentityproperty(vSelf, "zdir");                             //Get Z velocity.
+            if (iTossV > 0)                                                         //Not falling already?
+            {			
+                iTossV /= 4;                                                        //Cut Y velcoity to 25%.
+                changeentityproperty(vSelf, "velocity", iXDir, iZDir, iTossV);      //Apply velocity.
+            }
+        }
+        */
+            
+        if (!iFlAttack)                                                             //Not attacking?
+        {
+            if (iSpecial)                                                           //New Special press?
+            {               
+                ani0009(vSelf, AIRBLOCK, -1);                                       //Set Airblock.                               
+            }
+            else if (iAttack)                                                       //New Attack press?
+            { 
+                if (key0002(vSelf, iLeftH, iRightH))                                //Holding Back?
+                {   
+                    ani0009(vSelf, AIRBACK, -1);                                    //Set Air back attack.                                           
+                }
+                else if (iDownH)                                                    //Holding Down?
+                {
+                    if (!iXDir)                                                     //Not moving horizontally?
                     {
-                        ani0009(vSelf, AIRJ2AL, -1);										//Set Jumpattack 2 alt.
+                        ani0009(vSelf, AIRJ2AL, -1);                                //Set Jumpattack 2 alt.                        
                     }
                 }
             }
         }
     }
-    else if (iFlAttack)																		//Attacking?
-    {
-        iAni    = getentityproperty(vSelf, "animationid");									//Get current animation.
-        iFrame  = getentityproperty(vSelf, "animpos");										//Get current frame.
-
-        if (iAni == openborconstant("ANI_SPECIAL"))											//Special (dodge) animation?
+    else if (iFlAttack)                                                             //Attacking?
+    {        
+        iAni    = getentityproperty(vSelf, "animationid");                          //Get current animation.
+        iFrame  = getentityproperty(vSelf, "animpos");                              //Get current frame.
+        
+        if (iAni == openborconstant("ANI_SPECIAL"))                                 //Special (dodge) animation?             
         {
-            if (iKAtk)
+            if (iAttack)
             {
-                key0004(vSelf, iKLtH, iKRtH);												//Change direction?
-                ani0009(vSelf, DODATK, -1);													//Set Dodge Attack.
-                changeplayerproperty(vSelf, "playkeys", 0);									//Clear key event.
+                key0004(vSelf, iLeftH, iRightH);                                    //Change direction?
+                ani0009(vSelf, DODATK, -1);                                         //Set Dodge Attack.                
+                changeplayerproperty(vSelf, "playkeys", 0);                         //Clear key event.                
             }
-            else if (iKUp)
+            else if (iUp)
             {
-                key0004(vSelf, iKLtH, iKRtH);												//Change direction?
-                ani0009(vSelf, openborconstant("ANI_ATTACKUP"), -1);						//Set Dodge Up.
-                changeplayerproperty(vSelf, "playkeys", 0);									//Clear key event.
+                key0004(vSelf, iLeftH, iRightH);                                    //Change direction?
+                ani0009(vSelf, openborconstant("ANI_ATTACKUP"), -1);                //Set Dodge Up.
+                changeplayerproperty(vSelf, "playkeys", 0);                         //Clear key event.
             }
-            else if (iKDn)
+            else if (iDown)
             {
-                key0004(vSelf, iKLtH, iKRtH);												//Change direction?
-                ani0009(vSelf, openborconstant("ANI_ATTACKDOWN"), -1);						//Set Dodge Down.
-
+                key0004(vSelf, iLeftH, iRightH);                                    //Change direction?
+                ani0009(vSelf, openborconstant("ANI_ATTACKDOWN"), -1);              //Set Dodge Down.
+                
             }
         }
-        else if (iAni == openborconstant("ANI_ATTACKUP"))									//Sidestep up?
+        else if (iAni == openborconstant("ANI_ATTACKUP"))                           //Sidestep up?             
         {
-			fZDir = getentityproperty(vSelf, "zdir");										//Get Z velocity.
-
-            if (iKAtk && !fZDir && iFrame > 0)												//Attack press, have stopped moving and not at begining of animation?
+            if (iAttack && !getentityproperty(vSelf, "zdir") && iFrame > 0)         //Attack press, have stopped moving and not at begining of animation?
             {
-                key0004(vSelf, iKLtH, iKRtH);												//Change direction?
-
-                if (iKUpH)
+                key0004(vSelf, iLeftH, iRightH);                                    //Change direction?
+                
+                if (iUpH)
                 {
-                    ani0009(vSelf, DODATKSU, -1);											//Set Short Side Attack Down.
+                    ani0009(vSelf, DODATKSU, -1);                                   //Set Short Side Attack Down.                    
                 }
-                else if (iKDnH)
+                else if (iDownH)
                 {
-                    ani0009(vSelf, DODATKSD, -1);											//Set Short Side Attack Up.
+                    ani0009(vSelf, DODATKSD, -1);                                   //Set Short Side Attack Up.
                 }
                 else
                 {
-                    ani0009(vSelf, DODATKU, -1);											 //Set Side Dodge Up Attack.
-                }
+                    ani0009(vSelf, DODATKU, -1);                                    //Set Side Dodge Up Attack.                                
+                }               
             }
         }
-        else if (iAni == openborconstant("ANI_ATTACKDOWN"))									//Sidestep down?
+        else if (iAni == openborconstant("ANI_ATTACKDOWN"))                         //Sidestep down?                   
         {
-			fZDir = getentityproperty(vSelf, "zdir");										//Get Z velocity.
-
-            if (iKAtk && !fZDir && iFrame > 0)												//Attack press, have stopped moving and not at begining of animation?
+            if (iAttack && !getentityproperty(vSelf, "zdir") && iFrame > 0)         //Attack press, have stopped moving and not at begining of animation?
             {
-                key0004(vSelf, iKLtH, iKRtH);												//Change direction?
+                key0004(vSelf, iLeftH, iRightH);                                    //Change direction?
 
-                if (iKUpH)
+                if (iUpH)
                 {
-                    ani0009(vSelf, DODATKSU, -1);											//Set Short Side Attack Down.
+                    ani0009(vSelf, DODATKSU, -1);                                   //Set Short Side Attack Down.                    
                 }
-                else if (iKDnH)
+                else if (iDownH)
                 {
-                    ani0009(vSelf, DODATKSD, -1);											//Set Short Side Attack Up.
+                    ani0009(vSelf, DODATKSD, -1);                                   //Set Short Side Attack Up.
                 }
                 else
                 {
-                    ani0009(vSelf, DODATKD, -1);											//Set Side Dodge Down Attack.
-                }
+                    ani0009(vSelf, DODATKD, -1);                                    //Set Side Dodge Down Attack.                                
+                }                
             }
-        }
+        }        
     }
 }

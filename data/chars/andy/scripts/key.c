@@ -1,5 +1,5 @@
-#include	"data/scripts/vars/entity.h"
-#include	"data/scripts/com/key0003.h"
+#include "data/scripts/vars/entity.h"
+#include "data/scripts/com/key0003.h"
 
 //Andy Bogard key key capture.
 
@@ -26,19 +26,19 @@ void main(){
     int  iKey1AT;                                                                       //Time of last key 1 press.
     int  iCost;                                                                         //Energycost.
     int  iMP;                                                                           //Current MP.
-    int  iSeal;                                                                         //Current seal flag.	
-		
+    int  iSeal;                                                                         //Current seal flag.
+
     if (iAttackR && iFlIdle && !iFlJump)                                                //Release attack while idle and not jumping?
     {
-        if (key0003(vSelf, iLeftH, iRightH))                                            //Holding forward?
+        if (key0003(vSelf, iLeftH, iRightH))                                              //Holding forward?
         {
-            iETime  = openborvariant("elapsed_time");                                   //Get elapsed time.
+            iETime  = openborvariant("Elapsed_time");                                   //Get elapsed time.
             iKey1AT = getentityvar(vSelf, KEY1AT) + 500;                                //Get last Attack press.
 
             if (iKey1AT < iETime)                                                       //Enough time passed?
-            {				
+            {
                 iAni    = openborconstant("ANI_FREESPECIAL12");                         //Set ani to Zaneiken.
-                iCost   = getentityproperty(vSelf, "energycost", iAni, 0);              //Get energy cost.
+                iCost   = getentityproperty(vSelf, "energycost", iAni);                 //Get energy cost.
                 iMP     = getentityproperty(vSelf, "mp");                               //Get current mp.
                 iSeal   = getentityproperty(vSelf, "seal");                             //Get seal flag.
                 
@@ -94,7 +94,7 @@ void main(){
             
 		}
     }
-	else if (iAni == openborconstant("ANI_FREESPECIAL16"))								//In gen'ei Shiranui - Uwa Agito?
+	else if (iAni == openborconstant("ANI_FREESPECIAL16"))
 	{
 		iXDir	= getentityproperty(vSelf, "xdir");
 		iTossV	= getentityproperty(vSelf, "tossv");

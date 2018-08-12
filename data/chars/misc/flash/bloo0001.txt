@@ -1,0 +1,25 @@
+#Small wound flash
+
+name	bloo0001
+type	none
+shadow	0
+toflip	1
+
+anim idle
+		
+	delay	6
+	offset	200 150
+	
+	frame	data/chars/misc/flash/bloo0047
+	frame	data/chars/misc/flash/bloo0048
+	frame	data/chars/misc/flash/bloo0049	
+	frame	data/chars/misc/flash/bloo0050
+	frame	data/chars/misc/flash/bloo0051
+	frame	data/chars/misc/flash/bloo0052
+	frame	data/chars/misc/flash/bloo0053	
+	frame	data/chars/misc/flash/bloo0054
+	frame	data/chars/misc/flash/bloo0055	
+	frame	data/chars/misc/flash/bloo0056
+	frame	data/chars/misc/flash/bloo0057
+	
+

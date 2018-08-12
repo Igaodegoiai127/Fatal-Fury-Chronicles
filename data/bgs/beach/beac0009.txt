@@ -1,0 +1,67 @@
+#Boat for sound beach.
+
+name	 	beac0009
+health	 	5
+type	 	obstacle
+scroll		0.17
+#speedf   	0.17
+setlayer 	-8
+globalmap	1
+offscreenkill	1000000
+height		100
+nomove		1
+falldie		1
+nodieblink	2
+no_adjust_base	1
+
+animationscript	 data/scripts/blan0001.c
+onspawnscript	 data/scripts/spaw0005.c
+takedamagescript data/scripts/dama0002.c
+onkillscript	 data/scripts/kill0002.c
+ondeathscript	 data/scripts/deat0002.c
+
+anim idle 
+
+	loop	1
+	delay	14
+	offset	55 150
+	bbox	15 60 70 100	
+		frame data/bgs/beach/boat0001	
+	offset	55 151
+		frame data/bgs/beach/boat0002	
+	offset	55 152
+		frame data/bgs/beach/boat0003	
+	offset	55 153
+		frame data/bgs/beach/boat0002	
+	offset	55 154
+		frame data/bgs/beach/boat0001	
+	offset	55 153
+		frame data/bgs/beach/boat0002	
+	offset	55 152
+		frame data/bgs/beach/boat0003	
+	offset	55 151
+		frame data/bgs/beach/boat0002
+
+anim death	
+	
+	loop    1
+	delay	3
+	offset	56 150
+	bbox	0
+	@script
+		void vSelf = getlocalvar("self");
+		int  iBase = 0.0 + getentityproperty(vSelf, "base");		
+		if (iBase < -180)
+		{
+			killentity(vSelf);
+		}
+		else
+		{
+			changeentityproperty(vSelf, "base",  --iBase);
+			changeentityproperty(vSelf, "velocity", 0, 0, 0);
+		}
+	@end_script
+		frame data/bgs/beach/boat0001
+	offset	54 150
+		frame data/bgs/beach/boat0001
+	

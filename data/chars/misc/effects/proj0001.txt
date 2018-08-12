@@ -1,0 +1,141 @@
+#*****Notes***************************************************************************
+
+#Projectiles and offensive special effects. 
+
+#*****Settings***************************************************************************
+
+#*****icons*****
+#*****General*****
+
+name         	proj0001    					
+type	     	obstacle						
+health	     	1000
+antigravity  	1						
+alpha	     	1
+candamage    	none
+offscreenkill 	200
+noatflash 	1 
+flash		none
+blockflash	none
+mp		1000
+mprate		0
+
+#Immune to all attacks; responce to getting hit is be fully scripted.
+notgrab  1
+defense all    0 1000 0 1000 1000 0 0
+defense burn   0 1000 0 1000 1000 0 0
+defense shock  0 1000 0 1000 1000 0 0
+defense freeze 0 1000 0 1000 1000 0 0
+
+onspawnscript		data/scripts/spaw0011.c
+onkillscript		data/scripts/kill0001.c
+didhitscript		data/scripts/hit0003.c
+takedamagescript	data/scripts/dama0003.c
+
+#*****Alternates*******
+
+palette		data/chars/misc/effects/wind0001 #0:	Tornado.
+alternatepal	data/chars/misc/effects/impa0001 #1: 	KO (do not use, activates random color on spawn).
+alternatepal	data/chars/misc/effects/fata0001 #2: 	Burn.
+alternatepal	data/chars/misc/effects/impa0001 #3: 	Shock.
+alternatepal	data/chars/misc/effects/impa0001 #4: 	Freeze.
+alternatepal	data/chars/misc/effects/impa0001 #5: 	Poison.
+alternatepal	data/chars/misc/effects/impa0001 #6: 	Reserved.
+alternatepal	data/chars/misc/effects/impa0001 #7: 	Reserved.
+alternatepal	data/chars/misc/effects/impa0001 #8: 	Reserved.
+alternatepal	data/chars/misc/effects/impa0001 #9: 	Reserved.
+alternatepal	data/chars/misc/effects/impa0001 #10: 	Reserved.
+alternatepal	data/chars/misc/effects/effe0001 #11:	CVS Geese close blasts (blue), CVS Athena reflector, (blue), CVS Kyosuke Slash (red), CVS Shin Akuma Air Fireball & impact (Gold).
+alternatepal	data/chars/misc/effects/aapa0001 #12:	CVS Geese close blasts (red), CVS Athena reflector, (red), CVS Kyosuke Slash (red), CVS Shin Akuma Air Fireball & impact (Gold).
+
+
+#*****Basic********************************************************************************
+
+anim idle	
+	
+	delay	1
+	offset	0 0
+		frame	data/chars/misc/blan0001
+		
+anim follow1
+
+	#Tornado
+
+	loop	  1 0 7
+	landframe 8 dust0002
+	
+	delay	4
+	offset	43 135
+	attack    35 10 15 125 0 0 0 1 0
+	bbox	  35 10 15 125
+	noreflect 1
+		frame	data/chars/misc/effects/wind0001	
+		frame	data/chars/misc/effects/wind0002	
+		frame	data/chars/misc/effects/wind0003
+		frame	data/chars/misc/effects/wind0004
+		frame	data/chars/misc/effects/wind0005
+		frame	data/chars/misc/effects/wind0006
+		frame	data/chars/misc/effects/wind0007
+		frame	data/chars/misc/effects/wind0008
+	delay	8
+	attack	0
+	bbox	0
+		frame	data/chars/misc/effects/wind0009
+		frame	data/chars/misc/effects/wind0010
+		frame	data/chars/misc/effects/wind0012
+		frame	data/chars/misc/effects/wind0013
+		frame	data/chars/misc/effects/wind0014
+		frame	data/chars/misc/effects/wind0015
+
+anim follow2
+
+	#Tornado hits		
+	
+	delay	8
+	offset	43 135	
+	attack	0
+	bbox	0
+		frame	data/chars/misc/effects/wind0009
+		frame	data/chars/misc/effects/wind0010
+		frame	data/chars/misc/effects/wind0012
+		frame	data/chars/misc/effects/wind0013
+		frame	data/chars/misc/effects/wind0014
+		frame	data/chars/misc/effects/wind0015
+
+anim follow4		
+
+	#CVS Geese close blast (small)
+	#Andy: Hishoken
+
+	forcedirection -1
+	fastattack 	1
+
+	delay	  2
+	offset 	  85 100	
+	attack	  50 50 60  50 0 0 0 1 0
+	bbox	  50 50 60  60
+	noreflect 1
+		frame	data/chars/misc/effects/effe0018	
+		frame	data/chars/misc/effects/effe0019
+		frame	data/chars/misc/effects/effe0020
+	attack	  40 50 170 50 0 0 0 1 0
+	bbox	  40 50 170 50
+		frame	data/chars/misc/effects/effe0021
+		frame	data/chars/misc/effects/effe0022
+		frame	data/chars/misc/effects/effe0023
+		frame	data/chars/misc/effects/effe0024
+	attack	  50 50 60  50 0 0 0 1 0
+	bbox	  50 50 60  60
+		frame	data/chars/misc/effects/effe0025
+		frame	data/chars/misc/effects/effe0026
+		frame	data/chars/misc/effects/effe0027
+	attack	0
+	bbox	0
+		frame	data/chars/misc/effects/effe0028
+		frame	data/chars/misc/effects/effe0029
+		frame	data/chars/misc/effects/effe0030
+		frame	data/chars/misc/effects/effe0031
+		frame	data/chars/misc/effects/effe0032
+		frame	data/chars/misc/effects/effe0033
+
+

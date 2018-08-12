@@ -4,5 +4,4 @@ Ray 	Aussie	Baxter		Bloundie	Brush		Bryl		Dapper		Dep	Fop		Gel		Mesh		Moouse		Mu
 Mika	Brianna	Chyna		Elisabeth	Lita		Molly		Nicole		Sable	Stacy		Torri		Trish		Victoria	Woman	1
 Brian	Ali	Dempsey		Frazier		Haggler		Holmes		Holyfield	Johnson	Louis		Marciano	Patterson	Robinson	Tyson	1
 Rick	Catcher	Catchweight	General		Journeyman	Knockoff	Mouse		Palooka	Queensberry	Skinner		Solon		Southpaw	Tomato	1
-1	SoundB
 End 	1

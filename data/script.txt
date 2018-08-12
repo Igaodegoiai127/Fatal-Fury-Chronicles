@@ -5,7 +5,7 @@ maxscriptvars   10
 maxentityvars   120
 
 #*****maxindexedvars*****
-maxindexedvars  17
+maxindexedvars  10
 
 #*****maxglobalvars*****
 maxglobalvars  2048

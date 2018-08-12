@@ -1,0 +1,79 @@
+# Fire Hit flash
+
+name	 flas0002
+type	 none
+shadow	 0
+lifespan 1
+
+anim idle
+	
+	loop	0
+	delay	2
+	offset	60 100
+	frame	data/chars/misc/flash/fire0001
+	frame	data/chars/misc/flash/fire0002
+	frame	data/chars/misc/flash/fire0003
+	frame	data/chars/misc/flash/fire0004
+	frame	data/chars/misc/flash/fire0005
+	frame	data/chars/misc/flash/fire0006
+	frame	data/chars/misc/flash/fire0007
+	frame	data/chars/misc/flash/fire0008
+	frame	data/chars/misc/flash/fire0009
+	frame	data/chars/misc/flash/fire0010
+	frame	data/chars/misc/flash/fire0011
+	frame	data/chars/misc/flash/fire0012
+	frame	data/chars/misc/flash/fire0013
+	frame	data/chars/misc/flash/fire0014
+	frame	data/chars/misc/flash/fire0015
+	frame	data/chars/misc/flash/fire0016
+	frame	data/chars/misc/flash/fire0017
+	frame	data/chars/misc/flash/fire0018
+	frame	data/chars/misc/flash/fire0019
+	frame	data/chars/misc/flash/fire0020
+	frame	data/chars/misc/flash/fire0021
+	frame	data/chars/misc/flash/fire0022
+	frame	data/chars/misc/flash/fire0023
+	frame	data/chars/misc/flash/fire0024
+	frame	data/chars/misc/flash/fire0025
+	frame	data/chars/misc/flash/fire0026
+	frame	data/chars/misc/flash/fire0027
+	frame	data/chars/misc/flash/fire0028
+	frame	data/chars/misc/flash/fire0029
+	frame	data/chars/misc/flash/fire0030	
+	frame	data/chars/misc/flash/fire0031
+	frame	data/chars/misc/flash/fire0032
+	frame	data/chars/misc/flash/fire0033
+	frame	data/chars/misc/flash/fire0034
+	frame	data/chars/misc/flash/fire0035
+	frame	data/chars/misc/flash/fire0036
+	frame	data/chars/misc/flash/fire0037
+	frame	data/chars/misc/flash/fire0038
+	frame	data/chars/misc/flash/fire0039
+	frame	data/chars/misc/flash/fire0040
+	frame	data/chars/misc/flash/fire0041
+	frame	data/chars/misc/flash/fire0042
+	frame	data/chars/misc/flash/fire0043
+	frame	data/chars/misc/flash/fire0044
+	frame	data/chars/misc/flash/fire0045
+	frame	data/chars/misc/flash/fire0046
+	frame	data/chars/misc/flash/fire0047
+	frame	data/chars/misc/flash/fire0048
+	frame	data/chars/misc/flash/fire0049
+	frame	data/chars/misc/flash/fire0050
+	frame	data/chars/misc/flash/fire0051
+	frame	data/chars/misc/flash/fire0052
+	frame	data/chars/misc/flash/fire0053
+	frame	data/chars/misc/flash/fire0054
+	frame	data/chars/misc/flash/fire0055
+	frame	data/chars/misc/flash/fire0056
+	frame	data/chars/misc/flash/fire0057
+	frame	data/chars/misc/flash/fire0058
+	frame	data/chars/misc/flash/fire0059
+	frame	data/chars/misc/flash/fire0060
+	frame	data/chars/misc/flash/fire0061
+	frame	data/chars/misc/flash/fire0062
+	frame	data/chars/misc/flash/fire0063
+	frame	data/chars/misc/flash/fire0064
+	frame	data/chars/misc/flash/fire0065
+	frame	data/chars/misc/flash/fire0066
+	

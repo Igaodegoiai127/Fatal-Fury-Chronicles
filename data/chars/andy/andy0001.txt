@@ -3,98 +3,85 @@
 
 #*****icons*****
 
-icon         		data/chars/andy/aaic0001		#Normal.
-icondie	     		data/chars/andy/aaic0002 		#KO.
-iconpain     		data/chars/andy/aaic0003 		#Pain.
+icon         	data/chars/andy/aaic0001		#Normal. 					
+icondie	     	data/chars/andy/aaic0002 		#KO.		
+iconpain     	data/chars/andy/aaic0003 		#Pain.		
 
 #*****General*****
 
-name	     		Andy
-type	     		player
-bounce	     		2
-health	     		200
-speed	     		12
-holdblock    		1
-nodieblink   		2
-falldie      		2
-risetime     		150
-running      		30 4 2 1 1
-turndelay    		15
-makeinv      		3
-projectilehit 		player
-candamage     		enemy obstacle
-hostile				enemy
-hmap         		1 5
-gfxshadow    		1
-blockpain    		1
-sleepwait			1000
-combostyle			1
-atchain      		1 2 3 4 0 5 6 7
-height 				95
-komap				1 0
-dust				dust0001 dust0003 dust0002
-mpset 				100 3 50 1 2 2
-bflash				bflash
+name	     	Andy								
+type	     	player     							
+bounce	     	2
+health	     	200								
+speed	     	12        							
+holdblock    	1         								
+nodieblink   	2									
+falldie      	2	     								
+risetime     	150								
+running      	30 4 2 1 1 							
+turndelay    	15
+makeinv      	3									
+projectilehit 	player 
+candamage     	enemy obstacle
+hostile		enemy 
+hmap         	1 5
+gfxshadow    	1
+blockpain    	1 
+sleepwait       1000
+combostyle	1
+atchain      	1 2 3 4 0 5 6 7
+height 		95
+komap		1 0
+dust		dust0001 dust0003 dust0002
+mpset 		100 3 50 1 2 2
 
 #*****Scripts*****
 
-animationscript 	data/chars/andy/scripts/ani.c		#Animation updated.
-didblockscript		data/scripts/z_block.c				#Block incoming attack.
-didhitscript 		data/chars/andy/scripts/didhit.c	#Hit another entity.
-keyscript			data/chars/andy/scripts/key.c		#Controlling player press/release key.
-onblockascript		data/scripts/z_blocka.c				#Movement (rise/fall) blocked by platform.
-onblockoscript		data/scripts/z_blocko.c				#Movement blocked by obstacle.
-onblocksscript		data/scripts/z_blocks.c				#Movement blocked by screen boundary.
-onblockwscript		data/scripts/z_blockw.c				#Movement blocked by wall.
-onblockzscript		data/scripts/z_blockz.c				#Movement blocked by Z boundary.
-ondoattackscript	data/scripts/z_datk.c				#Attack hit confirmed.
-ondeathscript		data/scripts/z_death.c				#Killed by damage.
-onfallscript		data/chars/andy/scripts/onfall.c	#Fall status set.
-onkillscript		data/scripts/z_kill.c				#Removed from playfield.
-onmoveascript		data/scripts/z_movea.c				#Moving on Y axis.
-onmovexscript		data/scripts/z_movex.c				#Moving on X axis.
-onmovezscript		data/scripts/z_movez.c				#Moving on Z axis.
-onpainscript		data/scripts/z_pain.c				#Pain status set.
-onspawnscript		data/scripts/z_spawn.c				#Spawned to playfied.
-#script				data/chars/andy/scripts/update.c	#Entity updated.
-takedamagescript	data/chars/andy/scripts/damage.c	#Damaged.
-#thinkscript			data/scripts/z_think.c				#Entity AI updates.
+script			data/chars/andy/scripts/update.c
+keyscript 		data/chars/andy/scripts/key.c
+animationscript 	data/chars/andy/scripts/ani_p.c
+didblockscript  	data/scripts/bloc0001.c
+takedamagescript	data/chars/andy/scripts/dama0001.c 
+didhitscript		data/chars/andy/scripts/hit0001.c
+onmovezscript		data/scripts/movz0001.c
+onspawnscript		data/scripts/spaw0001.c
+onfallscript		data/chars/andy/scripts/fall0001.c									
+onpainscript		data/scripts/pain0001.c
 
 #*****Sub Entites*****
 
-load	proj0001	#Bound visuals
 load	andybe		#Bound visuals
 load	andypa		#Pause visuals
+								
+#*****Alternates*******							
 
-#*****Alternates*******
-
-palette				data/chars/andy/pals/0000		#Default.
-alternatepal		data/chars/andy/pals/0001 		#KO.
-alternatepal		data/chars/andy/pals/0002 		#Burn.
-alternatepal		data/chars/andy/pals/0003 		#Shock.
-alternatepal		data/chars/andy/pals/0004 		#Freeze.
-alternatepal		data/chars/andy/pals/0005 		#Poison.
-alternatepal		data/chars/andy/pals/0011 		#KOF 2001.
-alternatepal		data/chars/andy/pals/0012 		#KOF 2002.
-alternatepal		data/chars/andy/pals/0013 		#FF2 Alt.
-alternatepal		data/chars/andy/pals/0014 		#Navy.
-alternatepal		data/chars/andy/pals/0015 		#Black.
-alternatepal		data/chars/andy/pals/0016 		#Red, blue trim.
+palette	       data/chars/andy/aapa0000		#Default.
+alternatepal   data/chars/andy/aapa0001 	#KO.
+alternatepal   data/chars/andy/aapa0002 	#Burn.
+alternatepal   data/chars/andy/aapa0003 	#Shock.
+alternatepal   data/chars/andy/aapa0004 	#Freeze.
+alternatepal   data/chars/andy/aapa0005 	#Poison.
+alternatepal   data/chars/andy/aapa0011 	#KOF 2001.
+alternatepal   data/chars/andy/aapa0012 	#KOF 2002.
+alternatepal   data/chars/andy/aapa0013 	#FF2 Alt.
+alternatepal   data/chars/andy/aapa0014 	#Navy.
+alternatepal   data/chars/andy/aapa0015 	#Black.
+alternatepal   data/chars/andy/aapa0016 	#Red, blue trim.
 
 #*****Commands*****************************************************************************
 
-com      a2       		freespecial  				#Back dash
-com      f u a    		freespecial2  				#Force plane up.
-com      f d a    		freespecial3  				#Froce plane down.
-com	     d u a    		freespecial4				#Plane attack up.
-com	     u d a    		freespecial5				#Plane attack down.
-com	     d b a    		freespecial6				#Hishoken.
-com	     d b s    		freespecial7				#Geki Hishoken.
-com	     d f a    		freespecial8				#Ku Ha dan (short).
-com	     d b f s		freespecial9				#Zanei Ryuusei Ken.
-com      f d f a  		freespecial10				#Shoryudan.
-com      d u s    		freespecial17				#Yami Abise Geri.
-com	     d f d f a 		freespecial18				#Cho Reppaa Dan.
+com          a2       		freespecial  		#Back dash
+com          f u a    		freespecial2  		#Force plane up.
+com          f d a    		freespecial3  		#Froce plane down.
+com	     d u a    		freespecial4		#Plane attack up.
+com	     u d a    		freespecial5		#Plane attack down.
+com	     d b a    		freespecial6		#Hishoken.
+com	     d b s    		freespecial7		#Geki Hishoken.
+com	     d f a    		freespecial8		#Ku Ha dan (short).
+com	     d b f s		freespecial9		#Zanei Ryuusei Ken.
+com          f d f a  		freespecial10		#Shoryudan.
+com          d u s    		freespecial17		#Yami Abise Geri.
+com	     d f d f a 		freespecial18		#Cho Reppaa Dan.
 
 
 #*****Basic********************************************************************************
@@ -103,41 +90,41 @@ anim spawn
 
 	jumpframe 0 8 0 0 0
 	dropframe 1
-	landframe 2
+	landframe 2 dust0003	
 
 	delay	-1000
 	offset	100 200
-	bbox	75 110 35 90
-		frame	data/chars/misc/blan0001
-		frame	data/chars/andy/0046
-	delay	8
-		frame	data/chars/andy/0024
-		frame	data/chars/andy/0025
-		frame	data/chars/andy/0024
+	bbox	75 110 35 90	
+		frame	data/chars/misc/blan0001	
+		frame	data/chars/andy/andy0046
+	delay	8	
+		frame	data/chars/andy/andy0024
+		frame	data/chars/andy/andy0025
+		frame	data/chars/andy/andy0024
 	delay	10
-		frame	data/chars/andy/0091
-		frame	data/chars/andy/0092
-		frame	data/chars/andy/0093
-		frame	data/chars/andy/0094
-	@cmd	soun0005 0 VOITAU -1 1 0 0
-		frame	data/chars/andy/0095
-		frame	data/chars/andy/0096
-		frame	data/chars/andy/0097
-		frame	data/chars/andy/0098
-		frame	data/chars/andy/0099
-		frame	data/chars/andy/0100
-		frame	data/chars/andy/0101
-		frame	data/chars/andy/0100
-		frame	data/chars/andy/0101
-		frame	data/chars/andy/0102
-		frame	data/chars/andy/0103
-		frame	data/chars/andy/0104
+		frame	data/chars/andy/andy0091
+		frame	data/chars/andy/andy0092	
+		frame	data/chars/andy/andy0093
+		frame	data/chars/andy/andy0094
+	@cmd 	soun0001 "vand0016.wav"				
+		frame	data/chars/andy/andy0095
+		frame	data/chars/andy/andy0096
+		frame	data/chars/andy/andy0097
+		frame	data/chars/andy/andy0098
+		frame	data/chars/andy/andy0099	
+		frame	data/chars/andy/andy0100
+		frame	data/chars/andy/andy0101
+		frame	data/chars/andy/andy0100
+		frame	data/chars/andy/andy0101
+		frame	data/chars/andy/andy0102
+		frame	data/chars/andy/andy0103
+		frame	data/chars/andy/andy0104
 	delay	12
 	move	10
-	frame	data/chars/andy/0009
+	frame	data/chars/andy/andy0009
 	move	-5
-		frame	data/chars/andy/0008
-		frame	data/chars/andy/0007
+		frame	data/chars/andy/andy0008
+		frame	data/chars/andy/andy0007			
 
 #anim respawn
 
@@ -145,7 +132,7 @@ anim waiting
 
 	delay	1
 	offset	100 272
-	fshadow 0
+	fshadow 0				
 		frame	data/chars/misc/blan0001
 	offset	100 122
 		frame	data/chars/andy/aawa0001
@@ -178,8 +165,8 @@ anim waiting
 	offset	100 262
 		frame	data/chars/andy/aawa0001
 	offset	100 272
-	sound	data/chars/andy/sounds/22_0.wav		#Can't use a script command in selection screen.
-		frame	data/chars/andy/aawa0002
+	sound	data/sounds/vand0016.wav
+		frame	data/chars/andy/aawa0002					
 
 anim select
 
@@ -187,12 +174,12 @@ anim select
 	delay	8
 	offset	100 272
 	fshadow 0
-		frame	data/chars/andy/aase0001
+		frame	data/chars/andy/aase0001				
 		frame	data/chars/andy/aase0002
 		frame	data/chars/andy/aase0003
 		frame	data/chars/andy/aase0004
 		frame	data/chars/andy/aase0005
-	sound	data/chars/andy/sounds/24_1.wav		#Can't use a script command in selection screen.
+	sound	data/sounds/vand0018.wav
 		frame	data/chars/andy/aase0006
 	delay	12
 		frame	data/chars/andy/aase0007
@@ -201,82 +188,81 @@ anim select
 		frame	data/chars/andy/aase0010
 		frame	data/chars/andy/aase0011
 		frame	data/chars/andy/aase0012
-		frame	data/chars/andy/aase0013
+		frame	data/chars/andy/aase0013		
 
 anim idle
 
-	#Relaxed idle
+	#Relaxed idle	
 
 	loop 	1
 	delay	12
 	offset	100 200
-	bbox	77 91 26 107
-		frame	data/chars/andy/0477.png
-
-	delay	100
-		frame	data/chars/andy/0539.png
+	bbox	75 110 35 90
+	#idle	1						
+		frame	data/chars/andy/andy0477
+	
+	delay	100	
+		frame	data/chars/andy/andy0539
 	delay	20
-		frame	data/chars/andy/0472.png
-		frame	data/chars/andy/0539.png
+		frame	data/chars/andy/andy0472	
+		frame	data/chars/andy/andy0539
 	delay	30
-		frame	data/chars/andy/0540.png
-	delay	100
-		frame	data/chars/andy/0539.png
+		frame	data/chars/andy/andy0540
+	delay	100	
+		frame	data/chars/andy/andy0539
 	delay	20
-		frame	data/chars/andy/0472.png
-		frame	data/chars/andy/0539.png
+		frame	data/chars/andy/andy0472	
+		frame	data/chars/andy/andy0539
 	delay	30
-		frame	data/chars/andy/0540.png
-	delay	100
-		frame	data/chars/andy/0539.png
+		frame	data/chars/andy/andy0540
+	delay	100	
+		frame	data/chars/andy/andy0539
 	delay	20
-		frame	data/chars/andy/0472.png
-		frame	data/chars/andy/0539.png
+		frame	data/chars/andy/andy0472	
+		frame	data/chars/andy/andy0539
 	delay	30
-		frame	data/chars/andy/0540.png
-	delay	100
-		frame	data/chars/andy/0539.png
-		frame	data/chars/andy/0473.png
+		frame	data/chars/andy/andy0540
+	delay	100	
+		frame	data/chars/andy/andy0539
+		frame	data/chars/andy/andy0473
 	delay	40
-		frame	data/chars/andy/0474.png
+		frame	data/chars/andy/andy0474
 	delay	12
-		frame	data/chars/andy/0475.png
-		frame	data/chars/andy/0476.png
-		frame	data/chars/andy/0475.png
-		frame	data/chars/andy/0476.png
-	delay	15
-		frame	data/chars/andy/0477.png
-		frame	data/chars/andy/0478.png
-		frame	data/chars/andy/0479.png
-	delay	10
-		frame	data/chars/andy/0480.png
-		frame	data/chars/andy/0481.png
-		frame	data/chars/andy/0480.png
-		frame	data/chars/andy/0481.png
+		frame	data/chars/andy/andy0475
+		frame	data/chars/andy/andy0476
+		frame	data/chars/andy/andy0475
+		frame	data/chars/andy/andy0476
+	delay	15	 
+		frame	data/chars/andy/andy0477	
+		frame	data/chars/andy/andy0478
+		frame	data/chars/andy/andy0479
+	delay	10	
+		frame	data/chars/andy/andy0480	 
+		frame	data/chars/andy/andy0481
+		frame	data/chars/andy/andy0480	 
+		frame	data/chars/andy/andy0481
 	delay	16
-		frame	data/chars/andy/0478.png
+		frame	data/chars/andy/andy0478
 	delay	4
-		frame	data/chars/andy/0477.png
+		frame	data/chars/andy/andy0477
 
 anim idle2
 
-	#Strafe Idle (opponent behind on z)
+	#Strafe Idle (opponent behind on z)	
 
 	range  -250 250
 	rangez -250 -15
-
+	
 	loop 	1 2
-		delay  6
-		offset  100  200
-		bbox  80  96  23  103
-	frame  data/chars/andy/0112.png
+	delay	6
+	offset	100 200
+	bbox	75 110 35 90
+		frame	data/chars/andy/andy0008	
 	delay	15
-		offset  80  200
-		bbox  67  99  23  100
-		frame	data/chars/andy/0533.png
-		frame	data/chars/andy/0534.png
-		frame	data/chars/andy/0535.png
-		frame	data/chars/andy/0536.png
+		frame	data/chars/andy/andy0533		 
+		frame	data/chars/andy/andy0534	
+		frame	data/chars/andy/andy0535
+		frame	data/chars/andy/andy0536
 
 anim idle3
 
@@ -284,117 +270,107 @@ anim idle3
 
 	range   -250 250
 	rangez  15 250
-
+	
 	loop 	1 2
-	delay	10
+	delay	3
 	offset	100 200
-	bbox	81 110 31 89
-		frame	data/chars/andy/0112.png
-	delay	15
-		bbox  81  112  27  86
-		frame	data/chars/andy/0021.png
-		frame	data/chars/andy/0537.png
-		frame	data/chars/andy/0538.png
-		frame	data/chars/andy/0537.png
+	bbox	75 110 35 90
+		frame	data/chars/andy/andy0091
+		frame	data/chars/andy/andy0092
+	delay	15		
+		frame	data/chars/andy/andy0021	
+		frame	data/chars/andy/andy0537	
+		frame	data/chars/andy/andy0538
+		frame	data/chars/andy/andy0537
 
 anim idle4
 
 	#Normal idle.
 
-	range 	-300 300
+	range 	-300 300	
 	rangez  -250 250
 
 	loop	1
 	delay	8
 	offset	100 200
-	bbox    79 110 33 89
-	idle	1						#So we can set this with performattack().
-		frame	data/chars/andy/0112.png
+	bbox    75 110 35 90
+	idle	1						#So we can set this with performattack().				
+		frame	data/chars/andy/andy0112		
 	delay	55
-		bbox  77  110  32  89
-		frame	data/chars/andy/0002.png
+	
+		frame	data/chars/andy/andy0002
 	delay	25
-		frame	data/chars/andy/0003.png
-		frame	data/chars/andy/0004.png
+		frame	data/chars/andy/andy0003
+		frame	data/chars/andy/andy0004
 	delay	50
-		frame	data/chars/andy/0005.png
+		frame	data/chars/andy/andy0005
 	delay	25
-		frame	data/chars/andy/0004.png
-		frame	data/chars/andy/0003.png
-		frame	data/chars/andy/0002.png
+		frame	data/chars/andy/andy0004
+		frame	data/chars/andy/andy0003
+		frame	data/chars/andy/andy0002
 	delay	55
-		frame	data/chars/andy/0002.png
+		frame	data/chars/andy/andy0002
 	delay	25
-		frame	data/chars/andy/0003.png
-		frame	data/chars/andy/0004.png
+		frame	data/chars/andy/andy0003
+		frame	data/chars/andy/andy0004
 	delay	50
-		frame	data/chars/andy/0005.png
+		frame	data/chars/andy/andy0005
 	delay	25
-		frame	data/chars/andy/0004.png
-		frame	data/chars/andy/0003.png
-		frame	data/chars/andy/0002.png
+		frame	data/chars/andy/andy0004
+		frame	data/chars/andy/andy0003
+		frame	data/chars/andy/andy0002
 	delay	55
-		frame	data/chars/andy/0002.png
+		frame	data/chars/andy/andy0002
 	delay	25
-		frame	data/chars/andy/0003.png
-		frame	data/chars/andy/0004.png
+		frame	data/chars/andy/andy0003
+		frame	data/chars/andy/andy0004
 	delay	50
-		frame	data/chars/andy/0005.png
+		frame	data/chars/andy/andy0005
 	delay	25
-		frame	data/chars/andy/0004.png
-		frame	data/chars/andy/0003.png
-		frame	data/chars/andy/0002.png
+		frame	data/chars/andy/andy0004
+		frame	data/chars/andy/andy0003
+		frame	data/chars/andy/andy0002
 	delay	20
-		bbox  74  106  26  92
-		frame	data/chars/andy/0006.png
+		frame	data/chars/andy/andy0006
 	delay	12
-		bbox  71  105  24  93
-		frame	data/chars/andy/0007.png
-		frame	data/chars/andy/0008.png
-		bbox  71  102  22  96
-		frame	data/chars/andy/0009.png
-		frame	data/chars/andy/0010.png
-		frame	data/chars/andy/0011.png
-		frame	data/chars/andy/0010.png
-		frame	data/chars/andy/0009.png
-		frame	data/chars/andy/0010.png
-		frame	data/chars/andy/0011.png
-		frame	data/chars/andy/0010.png
-		frame	data/chars/andy/0009.png
-		frame	data/chars/andy/0010.png
-		frame	data/chars/andy/0011.png
-		frame	data/chars/andy/0010.png
-		frame	data/chars/andy/0009.png
-		frame	data/chars/andy/0010.png
-		frame	data/chars/andy/0011.png
+		frame	data/chars/andy/andy0007
+		frame	data/chars/andy/andy0008
+		frame	data/chars/andy/andy0009
+		frame	data/chars/andy/andy0010
+		frame	data/chars/andy/andy0011
+		frame	data/chars/andy/andy0010
+		frame	data/chars/andy/andy0009
+		frame	data/chars/andy/andy0010
+		frame	data/chars/andy/andy0011
+		frame	data/chars/andy/andy0010
+		frame	data/chars/andy/andy0009
+		frame	data/chars/andy/andy0010
+		frame	data/chars/andy/andy0011
+		frame	data/chars/andy/andy0010
+		frame	data/chars/andy/andy0009
+		frame	data/chars/andy/andy0010
+		frame	data/chars/andy/andy0011
 	delay	15
-		frame	data/chars/andy/0012.png
-		bbox  73  107  28  91
-		frame	data/chars/andy/0013.png
-		bbox  82  118  33  80
-		frame	data/chars/andy/0014.png
-		bbox  85  123  32  75
-		frame	data/chars/andy/0015.png
-		frame	data/chars/andy/0016.png
-		frame	data/chars/andy/0017.png
-		frame	data/chars/andy/0018.png
+		frame	data/chars/andy/andy0012
+		frame	data/chars/andy/andy0013
+		frame	data/chars/andy/andy0014
+		frame	data/chars/andy/andy0015
+		frame	data/chars/andy/andy0016
+		frame	data/chars/andy/andy0017
+		frame	data/chars/andy/andy0018
 	delay	50
-		bbox  85  120  27  78
-		frame	data/chars/andy/0019.png
+		frame	data/chars/andy/andy0019
 	delay	15
-		frame	data/chars/andy/0020.png
-		bbox  86  121  29  77
-		frame	data/chars/andy/0016.png
-		frame	data/chars/andy/0015.png
-		frame	data/chars/andy/0014.png
-		bbox  70  106  27  92
-		frame	data/chars/andy/0007.png
+		frame	data/chars/andy/andy0020
+		frame	data/chars/andy/andy0016
+		frame	data/chars/andy/andy0015
+		frame	data/chars/andy/andy0014
+		frame	data/chars/andy/andy0007
 	delay	8
-		bbox  73  106  28  92
-		frame 	data/chars/andy/0006.png
+		frame 	data/chars/andy/andy0006		
 
 #anim sleep
-
+	
 anim faint
 
 	#Heavy fatigue.
@@ -402,162 +378,139 @@ anim faint
 	loop	1
 	delay	18
 	offset	100 200
-	bbox	71 151 40 48
-		frame	data/chars/andy/0383
-		frame	data/chars/andy/0384
-		frame	data/chars/andy/0385
-		frame	data/chars/andy/0384
-
+	bbox	75 135 30 65
+		frame	data/chars/andy/andy0383
+		frame	data/chars/andy/andy0384
+		frame	data/chars/andy/andy0385
+		frame	data/chars/andy/andy0384
+	
 anim walk
-
+	
 	loop	1
 	delay	12
 	offset	100 200
-	bbox	83 104 27 94
-		frame	data/chars/andy/0026.png
-		frame	data/chars/andy/0027.png
-		frame	data/chars/andy/0028.png
-		frame	data/chars/andy/0029.png
-		bbox  80  103  30  96
-		frame	data/chars/andy/0030.png
-
+	bbox	75 110 35 90
+		frame	data/chars/andy/andy0026
+		frame	data/chars/andy/andy0027
+		frame	data/chars/andy/andy0028
+		frame	data/chars/andy/andy0029
+		frame	data/chars/andy/andy0030
+			
 anim backwalk
 
 	loop	1
 	delay	12
 	offset	100 200
 	bbox	75 110 35 90
-		frame	data/chars/andy/0021
+		frame	data/chars/andy/andy0021	
 
-#anim up
-#anim down
+#anim up 
+#anim down	
 
-anim run
+anim run 
 
 	loop	1
 	delay	10
 	offset	100 200
-	bbox	99 124 56 74
-		frame	data/chars/andy/0036.png
-		bbox  106  125  52  73
-		frame	data/chars/andy/0037.png
-		bbox  114  118  44  80
-		frame	data/chars/andy/0038.png
-		bbox  100  124  62  75
-		frame	data/chars/andy/0039.png
-		bbox  106  124  55  75
-		frame	data/chars/andy/0040.png
-		bbox  111  119  44  79
-		frame	data/chars/andy/0041.png
+	bbox	75 110 35 90
+		frame	data/chars/andy/andy0036
+		frame	data/chars/andy/andy0037
+		frame	data/chars/andy/andy0038
+		frame	data/chars/andy/andy0039
+		frame	data/chars/andy/andy0040
+		frame	data/chars/andy/andy0041
 
 anim get
 
-	range  -15 15
-	rangez -5 5
 	delay	8
 	offset	100 200
-	bbox	78 121 28 78
-		frame	data/chars/andy/0024.png
-	bbox	75 135 30 63
-		frame	data/chars/andy/0269.png
-		bbox  72  142  33  56
-		frame	data/chars/andy/0268.png
-		bbox  74  137  31  61
-		frame	data/chars/andy/0269.png
-	bbox	76 122 29 77
-		frame	data/chars/andy/0024.png
+	bbox	75 110 35 90
+		frame	data/chars/andy/andy0024
+	bbox	75 135 30 65
+		frame	data/chars/andy/andy0269
+		frame	data/chars/andy/andy0268
+		frame	data/chars/andy/andy0269
+	bbox	75 110 35 90
+		frame	data/chars/andy/andy0024
 
 anim duck
 
 	loop	1
 	delay	12
 	offset	100 200
-	bbox	76 119 29 79
-		frame	data/chars/andy/0024.png
-		bbox  77  132  28  65
-		frame	data/chars/andy/0025.png
-
+	bbox	75 135 30 65
+		frame	data/chars/andy/andy0024
+		frame	data/chars/andy/andy0025
+	
 anim charge
-
+	
 	loop	1 6
 	delay	8
 	offset	100 200
-	bbox	75 95 33 102
-		frame	data/chars/andy/0339.png
-	@cmd	soun0005 0 VOIVIC 1 1 0 0
-		bbox  72  106  31  91
-		frame	data/chars/andy/0060.png
-		bbox  73  88  28  109
-		frame	data/chars/andy/0081.png
-		frame	data/chars/andy/0082.png
-		bbox  74  98  28  99
-		frame	data/chars/andy/0083.png
+	bbox	75 110 35 90
+		frame	data/chars/andy/andy0339
+	@cmd	soun0001 "vand0018.wav"				
+		frame	data/chars/andy/andy0060
+		frame	data/chars/andy/andy0081
+		frame	data/chars/andy/andy0082
+		frame	data/chars/andy/andy0083
 	delay	4
-		bbox  85  116  34  81
-		frame	data/chars/andy/0084.png
-		bbox  85  126  41  71
-		frame	data/chars/andy/0085.png
-		frame	data/chars/andy/0086.png
-		frame	data/chars/andy/0087.png
-		frame	data/chars/andy/0088.png
-		frame	data/chars/andy/0089.png
-		frame	data/chars/andy/0090.png
+		frame	data/chars/andy/andy0084
+		frame	data/chars/andy/andy0085
+		frame	data/chars/andy/andy0086
+		frame	data/chars/andy/andy0087
+		frame	data/chars/andy/andy0088
+		frame	data/chars/andy/andy0089
+		frame	data/chars/andy/andy0090			
+				
 #anim dodge
-
 anim turn
 
 	delay	10
 	offset	100 200
-	bbox	82 112 29 87
-		frame	data/chars/andy/0022.png
+	bbox	75 110 35 90
+		#frame	data/chars/andy/andy0021
+		frame	data/chars/andy/andy0022
 
 anim slide
-
-	cancel	  3 5 0 a freespecial40			#Backhand
-	cancel	  1 3 0 d f s freespecial19		#Bakushin
+	
+	cancel	  3 5 0 a freespecial40		#Backhand
+	cancel	  1 3 0 d f s freespecial19	#Bakushin		
 	jumpframe 0 0 2 0 dust0002
 
 	delay	8
 	offset	100 200
-	bbox	73 145 34 53
-		frame	data/chars/andy/0202.png
+	bbox	75 135 30 65						
+		frame	data/chars/andy/andy0202
 	move	-10
-		bbox  88  155  37  44
-		frame	data/chars/andy/0203.png
+		frame	data/chars/andy/andy0203
 	move	0
 	offset	100 155
-		bbox  82  104  41  49
-		frame	data/chars/andy/0049.png
-		frame	data/chars/andy/0050.png
+		frame	data/chars/andy/andy0049
+		frame	data/chars/andy/andy0050
 	offset	100 200
-		bbox  63  145  33  54
-		frame	data/chars/andy/0162.png
-		bbox  77  125  27  74
-		frame	data/chars/andy/0024.png
+		frame	data/chars/andy/andy0162
+		frame	data/chars/andy/andy0024			
 
 anim runslide
-
+	
 	cancel	  3 5 0 a freespecial41		#Lunge palm strike.
-	cancel	  1 3 0 d f s freespecial19	#Bakushin
+	cancel	  1 3 0 d f s freespecial19	#Bakushin	
 	jumpframe 0 0 3 0 dust0002
 
 	delay	8
 	offset	100 200
-	bbox	73 147 35 51
-		frame	data/chars/andy/0202.png
+	bbox	75 135 30 65					
+		frame	data/chars/andy/andy0202
 	move	-10
-		bbox  88  155  36  45
-		frame	data/chars/andy/0203.png
+		frame	data/chars/andy/andy0203
 	move	0
 	offset	100 155
-		bbox  83  101  41  51
-		frame	data/chars/andy/0049.png
-		frame	data/chars/andy/0050.png
+		frame	data/chars/andy/andy0049
+		frame	data/chars/andy/andy0050
 	offset	100 200
-		bbox  63  145  37  55
-		frame	data/chars/andy/0162.png
-		bbox  76  124  31  75
-		frame	data/chars/andy/0024.png
+		frame	data/chars/andy/andy0162
+		frame	data/chars/andy/andy0024
 
 #*****Attack*******************************************************************************
 
@@ -565,44 +518,38 @@ anim attack1
 
 	#Jab
 
-	range	0 55
-	rangea  0 100
-
 	fastattack 1
-	hitflash eflash
-	delay	5
+
+	delay	6
 	offset	100 200
-	bbox	85 110 30 90
-	@cmd	soun0005 0 VOIATKL	-1 0.75 0 0
-	@cmd	soun0005 0 SNDWIFFL -1 1	0 0
-		frame	data/chars/andy/0112
-	shock  100 120 55 20 5
-		frame	data/chars/andy/0113
+	bbox	75 110 35 90
+	@cmd 	soun0001 "vand0008.wav"					
+		frame	data/chars/andy/andy0112	
+	attack  100 120 55 20 5	
+		frame	data/chars/andy/andy0113
 	delay	3
-	attack1	0
-		frame	data/chars/andy/0114
-		frame	data/chars/andy/0112
+	attack	0
+		frame	data/chars/andy/andy0114
+		frame	data/chars/andy/andy0112		
 
-anim attack2
-
+anim attack2		
+	
 	#Front kick
 
 	fastattack 1
 	range   -40 50
 
-		delay  7
-		offset  100  200
-		bbox  64  106  25  90
-		frame	data/chars/andy/0131.png
-	attack1  77 121 59 34 8 0 0 0 10
-		frame	data/chars/andy/0132.png
-	@cmd	soun0005 0 VOIATKL	-1 1 0 0
-	@cmd	soun0005 0 SNDWIFFL -1 1 0 0
-		Attack1  0
-		frame	data/chars/andy/0131.png
+	delay	7
+	offset	100 200
+	bbox	75 110 35 90
+	@cmd 	soun0001 "vand0003.wav"					
+		frame	data/chars/andy/andy0131
+	attack  100 120 55 20 8 0 0 0 10
+		frame	data/chars/andy/andy0132
+	attack	0
+		frame	data/chars/andy/andy0131
 
-
-anim attack3
+anim attack3	
 
 	#Palm/elbow
 
@@ -611,98 +558,71 @@ anim attack3
 
 	delay	6
 	offset	100 200
-	bbox	83 106 28 93
-	@cmd	soun0005 0 VOIATKM	-1 1 0 0
-	@cmd	soun0005 0 SNDWIFFM -1 1 0 0
-		frame	data/chars/andy/0120.png
-		bbox  92  105  28  94
-		frame	data/chars/andy/0121.png
+	bbox	75 110 35 90
+	@cmd 	soun0001 "vand0001.wav"					
+		frame	data/chars/andy/andy0120
+		frame	data/chars/andy/andy0121
 	delay	3
-	attack1  99 108 59 17 8 0 0 0 20
-		bbox  95  104  31  95
-		frame	data/chars/andy/0122.png
+	attack  100 105 60 20 8 0 0 0 20
+		frame	data/chars/andy/andy0122
 	delay	2
-	attack1	0
-		frame	data/chars/andy/0122.png
+	attack	0
+		frame	data/chars/andy/andy0122
 	delay	5
-	attack1  100 117 50 14 8 0 0 0 20
-		frame	data/chars/andy/0123.png
-	attack1	0
-		frame	data/chars/andy/0124.png
-		frame	data/chars/andy/0125.png
-		bbox  92  104  28  95
-		frame	data/chars/andy/0126.png
+	attack  100 105 60 20 8 0 0 0 20
+		frame	data/chars/andy/andy0123
+	attack	0
+		frame	data/chars/andy/andy0124
+		frame	data/chars/andy/andy0125
+		frame	data/chars/andy/andy0126		
 
 anim attack4
 
 	#Spin Kick.
-
+	
 	fastattack 1
 	range      -40 50
 
 	delay	7
 	offset	100 200
-	bbox	75 110 34 88
-	@cmd	soun0005 0 VOIATKH	-1 1 0 0
-	@cmd	soun0005 0 SNDWIFFH -1 1 0 0
-		frame	data/chars/andy/0057.png
-		bbox  88  117  35  80
-		frame	data/chars/andy/0143.png
-	attack1	106 78 57 64 12 1 0 0 10
+	bbox	75 110 35 90
+	@cmd 	soun0001 "vand0008.wav"					
+		frame	data/chars/andy/andy0057
+		frame	data/chars/andy/andy0143
+	attack	100 55 65 55 12 1 0 0 10
 	dropv   5 1 0
-		bbox  88  121  40  77
-		frame	data/chars/andy/0144.png
-	move	-7
-		bbox  103  106  31  92
-		Attack1  0
-		frame	data/chars/andy/0130.png
+		frame	data/chars/andy/andy0144
+	move	-5
+		frame	data/chars/andy/andy0130
 	move	0
-		bbox  106  99  26  99
-		frame	data/chars/andy/0129.png
-		frame	data/chars/andy/0128.png
-		bbox  87  102  34  95
-		frame	data/chars/andy/0127.png
-		bbox  74  107  32  90
-		move  5
-		frame	data/chars/andy/0239.png
+	attack	0
+		frame	data/chars/andy/andy0129
+		frame	data/chars/andy/andy0128
+		frame	data/chars/andy/andy0127
+		frame	data/chars/andy/andy0239
 
-anim attack5
+anim attack5	
 
 	#Spin backhand
 
-	fastattack 1
+	fastattack 1	
 
 	delay	5
 	offset	100 200
-	bbox	74 100 29 95
-	@cmd	soun0005 0 VOIATKL	-1 1 0 0
-	@cmd	soun0005 0 SNDWIFFL -1 1 0 0
-		frame	data/chars/andy/0105.png
-		bbox  82  99  24  98
-		move  -2
-		frame	data/chars/andy/0106.png
-		bbox  88  98  24  99
-		frame	data/chars/andy/0107.png
-	attack1  108 103 62 16 8
-		bbox  92  98  26  99
+	bbox	75 110 35 90
+	@cmd 	soun0001 "vand0001.wav"					
+		frame	data/chars/andy/andy0105
+		frame	data/chars/andy/andy0106
+		frame	data/chars/andy/andy0107
+	attack  110 100 65 20 8
+		frame	data/chars/andy/andy0108
+	attack	0
+		frame	data/chars/andy/andy0109
+		frame	data/chars/andy/andy0110
+		frame	data/chars/andy/andy0111
+		frame	data/chars/andy/andy0105
 
-		move  0
-		frame	data/chars/andy/0108.png
-		Attack1  0
-
-		frame	data/chars/andy/0109.png
-		bbox  88  98  24  99
-
-		frame	data/chars/andy/0110.png
-		bbox  82  99  24  98
-
-		frame	data/chars/andy/0111.png
-		bbox  74  100  29  99
-
-		move  2
-		frame	data/chars/andy/0105.png
-
-anim attack6
+anim attack6	
 
 	#Roundhouse Kick.
 
@@ -710,26 +630,19 @@ anim attack6
 
 	delay	6
 	offset	100 200
-	bbox	89 103 29 95
-	@cmd	soun0005 0 VOIATKL	-1 1 0 0
-	@cmd	soun0005 0 SNDWIFFL -1 1 0 0
+	bbox	75 110 35 90
+	@cmd 	soun0001 "vand0008.wav"					
 	move	-5
-		frame	data/chars/andy/0127.png
+		frame	data/chars/andy/andy0127
 	move	0
-		bbox  104  97  25  101
-		frame	data/chars/andy/0128.png
-		bbox  107  97  24  101
-		frame	data/chars/andy/0129.png
-	attack1	125 104 67 38 10 0 0 0 10
-		delay  8
-		bbox  106  104  25  94
-		frame	data/chars/andy/0130.png
-	attack1	0
-		bbox  107  97  24  101
-		frame	data/chars/andy/0129.png
-		bbox  89  103  29  95
-		frame	data/chars/andy/0127.png
-
+		frame	data/chars/andy/andy0128
+		frame	data/chars/andy/andy0129
+	attack	115 100 75 45 10 0 0 0 10
+		frame	data/chars/andy/andy0130
+	attack	0
+		frame	data/chars/andy/andy0129
+		frame	data/chars/andy/andy0127
+		
 anim attack7
 
 	#Lead spin Kick.
@@ -738,225 +651,174 @@ anim attack7
 
 	delay	7
 	offset	100 200
-	bbox	90 97 25 101
-	@cmd	soun0005 0 VOIATKH	-1 1 0 0
-	@cmd	soun0005 0 SNDWIFFH -1 1 0 0
+	bbox	75 110 35 90
+	@cmd 	soun0001 "vand0001.wav"					
 	move	10
-		frame	data/chars/andy/0104.png
+		frame	data/chars/andy/andy0104
 	move	0
-		bbox  81  96  22  101
-		frame	data/chars/andy/0103.png
-	move	30
-		bbox  59  97  28  100
-		frame	data/chars/andy/0133.png
+		frame	data/chars/andy/andy0103
+	move	20
+		frame	data/chars/andy/andy0133
 	move	0
+	delay	10
+		frame	data/chars/andy/andy0134
 	delay	8
-		frame	data/chars/andy/0134.png
-		frame	data/chars/andy/0135.png
-	attack2	75 120 67 24 15 1
+		frame	data/chars/andy/andy0135
+	attack2	75 100 70 40 15 1
 	staydown 500 1000
-		bbox  58  102  30  96
-		frame	data/chars/andy/0136.png
-		frame	data/chars/andy/0137.png
-	attack1	0
-		frame	data/chars/andy/0138.png
-		frame	data/chars/andy/0139.png
-		frame	data/chars/andy/0140.png
-		delay  6
-		frame	data/chars/andy/0141.png
-		bbox  74  108  29  90
-		move  2
-	frame  data/chars/andy/0543.png
+		frame	data/chars/andy/andy0136
+		frame	data/chars/andy/andy0137
+	attack	0
+		frame	data/chars/andy/andy0138
+		frame	data/chars/andy/andy0139
+		frame	data/chars/andy/andy0140
+		frame	data/chars/andy/andy0141	
 
-
-anim chargeattack
+anim chargeattack	
 
 	#Ram
-
-	fastattack		1
+	
+	fastattack	1
 	chargetime    	1
 	counterattack 	1
 	quakeframe    	4 3 -2
 	custentity    	dust0001
-	spawnframe    	4 0 0 0 0
+	spawnframe    	4 0 0 0 0  
 
 	delay	10
 	offset	100 200
-	bbox	75 103 26 95
-		frame	data/chars/andy/0145.png
-	@cmd	soun0005 0 VOIATKH	-1 1 0 0
-		bbox  65  100  26  98
-		frame	data/chars/andy/0146.png
-		bbox  70  96  25  101
-		frame	data/chars/andy/0147.png
-	@cmd	soun0005 0 SNDWIFFH -1 1 0 0
-		offset  112  200
-		bbox  94  103  33  94
-		move  10
-		frame	data/chars/andy/0148.png
-	attack1	100 125 70 73 20 2 0 0 20
+	bbox	75 110 35 90
+		frame	data/chars/andy/andy0145
+	@cmd 	soun0001 "vand0002.wav"
+		frame	data/chars/andy/andy0146
+		frame	data/chars/andy/andy0147
+		frame	data/chars/andy/andy0148					
+	attack	100 130 70 70 20 2 0 0 20
 	dropv   4.5 1 0
-		offset  135  200
-		bbox  116  125  47  73
-		move  20
-		frame	data/chars/andy/0149.png
-		move  0
-		frame	data/chars/andy/0150.png
-	attack1	0
+		frame	data/chars/andy/andy0149
+		frame	data/chars/andy/andy0150
+	attack	0
 	delay   15
-		frame	data/chars/andy/0151.png
-		offset  112  200
-		bbox  100  112  38  86
-		move  -20
-		frame	data/chars/andy/0152.png
-		offset  100  200
-		bbox  84  108  32  90
-		move  -10
-		frame	data/chars/andy/0153.png
+		frame	data/chars/andy/andy0151
+		frame	data/chars/andy/andy0152
+		frame	data/chars/andy/andy0153	
 
 anim runattack
-
+	
 	#Lunge palm.
 
 	jumpframe	0 0 1.2 0 dust0002
 	fastattack 	1
 
 	delay	8
-	offset	100 197
-	bbox	99 106 31 91
-	@cmd	soun0005 0 VOIATKM	-1 1 0 0
-	@cmd	soun0005 0 SNDWIFFM -1 1 0 0
-		frame	data/chars/andy/0115.png
-		offset  100  198
-		bbox  122  113  37  85
-		frame	data/chars/andy/0116.png
-	attack1  163 132 36 11 12 1 0 0 15
-		bbox  136  115  45  83
-		frame	data/chars/andy/0117.png
+	offset	100 200
+	bbox	75 110 35 90
+	@cmd 	soun0001 "vand0001.wav"					
+		frame	data/chars/andy/andy0115
+		frame	data/chars/andy/andy0116
+	attack  140 125 60 20 12 1 0 0 15
+		frame	data/chars/andy/andy0117
 	move	15
-		bbox  143  122  33  76
-		attack1  169  129  22  13  12  1  0  0  15
-		frame	data/chars/andy/0118.png
+		frame	data/chars/andy/andy0118
 	move	0
-	attack1	0
-		bbox  143  122  30  76
-		frame	data/chars/andy/0119.png
+	attack	0
+		frame	data/chars/andy/andy0119
 	move	-15
-		bbox  150  116  30  82
-		frame	data/chars/andy/0117.png
+		frame	data/chars/andy/andy0117
 	move	0
-		bbox  131  112  28  86
-		frame	data/chars/andy/0116.png
-		bbox  103  106  26  91
-		frame	data/chars/andy/0115.png
+		frame	data/chars/andy/andy0116
+		frame	data/chars/andy/andy0115
 
 #anim attackforward
 
 anim attackbackward
 
-	#Back foot sweep.
+	#Back foot sweep.	
 
 	flipframe 2
 	fastattack 1
 
 	delay	5
 	offset	100 200
-	bbox	75 121 30 78
-		frame	data/chars/andy/0024.png
-	@cmd	soun0005 0 VOIATKM	-1 1 0 0
-	@cmd	soun0005 0 SNDWIFFM -1 1 0 0
-		bbox  75  133  30  66
-		frame	data/chars/andy/0025.png
+	bbox	75 135 30 65
+		frame	data/chars/andy/andy0024
+	@cmd 	soun0001 "vand0002.wav"					
+		frame	data/chars/andy/andy0025
 	move	-20
-		bbox  62  140  33  59
-		frame	data/chars/andy/0162.png
+		frame	data/chars/andy/andy0162
 	move	0
-		bbox  50  160  48  39
-		frame	data/chars/andy/0163.png
+		frame	data/chars/andy/andy0163
 	delay	12
-	attack1  85 162 81 36 15 1
+	attack  90 165 75 35 15 1
 	dropv	3 0.2 0
-		bbox  59  161  39  37
-		frame	data/chars/andy/0164.png
-		Attack1  0
-		frame	data/chars/andy/0165.png
+		frame	data/chars/andy/andy0164
+		frame	data/chars/andy/andy0165
+	attack  0
 	delay	8
-		bbox  50  160  38  39
-		frame	data/chars/andy/0163.png
-		bbox  62  140  33  59
-		frame	data/chars/andy/0162.png
-		bbox  77  132  28  65
-		frame	data/chars/andy/0025.png
-		bbox  77  119  27  78
-		frame	data/chars/andy/0024.png
-
+		frame	data/chars/andy/andy0163	
+		frame	data/chars/andy/andy0162
+		frame	data/chars/andy/andy0025	
+		frame	data/chars/andy/andy0024
+	 
 #anim attackboth
 
 anim attackup
 
 	#Jump out.
-
+	
 	jumpframe 1 1 -1 -1.5 dust0002
-	landframe 3
-	dropframe  2
-
+	landframe 2 dust0003
+	
 	delay	10
 	offset 100 200
 	bbox	0
-		frame	data/chars/andy/0024.png
-	delay	-1000
-	@cmd	soun0005 0 SNDWIFFL -1 1 0 0
-		frame	data/chars/andy/0051.png
-		@cmd  soun0005  0  SNDWIFFL  -1  1  0  0
-		bbox  72  102  29  82
-	frame  data/chars/andy/0051.png
-	delay	10
-		bbox  78  121  27  78
-		frame	data/chars/andy/0024.png
+		frame	data/chars/andy/andy0024
+	delay	-1
+	bbox	75 135 30 65
+	@cmd 	soun0001 "vand0008.wav"					
+		frame	data/chars/andy/andy0051
+	delay	10	
+		frame	data/chars/andy/andy0024		
 
 anim attackdown
 
-	#Jump in.
+	#Jump in.	
 
 	jumpframe 1 1 -1 1.5 dust0002
-	landframe 3
-	dropframe  2
-
+	landframe 2 dust0003
+	
 	delay	10
 	offset 100 200
 	bbox	0
-		frame	data/chars/andy/0024.png
-	delay	-1000
-	@cmd	soun0005 0 VOIATKL	-1 1 0 0
-		frame	data/chars/andy/0051.png
-		@cmd  soun0005  0  VOIATKL  -1  1  0  0
-		bbox  72  102  29  82
-	frame  data/chars/andy/0051.png
+		frame	data/chars/andy/andy0024
+	delay	-1
+	bbox	75 135 30 65
+	@cmd 	soun0001 "vand0008.wav"					
+		frame	data/chars/andy/andy0051
 	delay	10
-		bbox  78  121  27  78
-		frame	data/chars/andy/0024.png
+		frame	data/chars/andy/andy0024
 
 anim riseattack
 
 	#Back roll.
-
+	
 	jumpframe 2 0 -1 0 dust0002
 
 	delay	6
 	offset	100 200
-	bbox	0
-		frame	data/chars/andy/0251
+	bbox	0	
+		frame	data/chars/andy/andy0251
 	move	-25
-	@cmd	soun0005 0 VOIATKL	-1 1 0 0
-		frame	data/chars/andy/0241
+	@cmd 	soun0001 "vand0008.wav"				
+		frame	data/chars/andy/andy0241
 	move	-20
-		frame	data/chars/andy/0205
+		frame	data/chars/andy/andy0205
 	move	0
-		frame	data/chars/andy/0204
+		frame	data/chars/andy/andy0204
 	move	-25
-		frame	data/chars/andy/0289
+		frame	data/chars/andy/andy0289		
 	move	0
-		frame	data/chars/andy/0308
+		frame	data/chars/andy/andy0308		
 
 #anim upper
 
@@ -966,119 +828,105 @@ anim cant
 
 	delay	6
 	offset 100 200
-	bbox	71 102 27 95
-	@cmd	soun0005 0 VOICNT	-1 1 0 0
-		frame	data/chars/andy/0008.png
-		frame	data/chars/andy/0009.png
-		bbox  78  101  30  96
-		frame	data/chars/andy/0058.png
+	bbox	75 110 35 90
+	@cmd 	soun0001 "vand0004.wav"
+		frame	data/chars/andy/andy0008
+		frame	data/chars/andy/andy0009
+		frame	data/chars/andy/andy0058
 	delay	40
-		bbox  76  120  32  77
-		frame	data/chars/andy/0059.png
+		frame	data/chars/andy/andy0059
 	delay	10
-		bbox  78  101  30  96
-		frame	data/chars/andy/0058.png
-		bbox  71  102  27  95
-		frame	data/chars/andy/0009.png
-		frame	data/chars/andy/0008.png
+		frame	data/chars/andy/andy0058
+		frame	data/chars/andy/andy0009
+		frame	data/chars/andy/andy0008
 
-#anim jumpcant
+#anim jumpcant 
 
 anim special
 
 	#Dodge.
 
 	energycost 0
-
+	
 	delay	10
 	offset 100 200
-	bbox	0 0 0 0
-		frame	data/chars/andy/0553.png
-		frame	data/chars/andy/0541
+	bbox	0 0 0 0	
+		frame	data/chars/andy/andy0553
+		frame	data/chars/andy/andy0541
 	delay	20
-		frame	data/chars/andy/0542
+		frame	data/chars/andy/andy0542
 	delay	10
-		frame	data/chars/andy/0541
+		frame	data/chars/andy/andy0541
 	bbox	75 110 35 90
-		frame	data/chars/andy/0553
+		frame	data/chars/andy/andy0553		
 
-anim special2
+anim special2 
 
 	#Uwa Agito
 
 	jumpframe  5 2 1 0 dust0002
-	landframe  10
+	landframe  10 dust0003
+	fastattack 1
 
 	delay	5
 	offset	100 200
-	bbox	76 122 30 77
-		frame	data/chars/andy/0024.png
-		bbox  67  149  46  46
-		frame	data/chars/andy/0381.png
+	bbox	75 110 35 90
+		frame	data/chars/andy/andy0024
+		frame	data/chars/andy/andy0381
 	move	20
-		bbox  53  139  47  58
-		frame	data/chars/andy/0204.png
+		frame	data/chars/andy/andy0204
 	move	0
-	@cmd	soun0005 0 VOIATKL	-1 1 0 0
-		bbox  75  139  40  58
-		frame	data/chars/andy/0205.png
+	@cmd 	soun0001 "vand0008.wav"					
+		frame	data/chars/andy/andy0205
 	move	20
-		bbox  78  122  32  76
-		frame	data/chars/andy/0206.png
+		frame	data/chars/andy/andy0206
 	move	10
-		bbox  72  126  38  44
-		frame	data/chars/andy/0207.png
-	delay	8
+		frame	data/chars/andy/andy0207		
+	delay	7
 	move	-20
-	attack1  97 114 60 35 10 0 0 0 15
-		bbox  74  112  31  48
-		frame	data/chars/andy/0208.png
+	attack  85 110 72 45 10 0 0 0 15
+		frame	data/chars/andy/andy0208
+	delay	1
 	move	0
-	attack1  90 147 67 26 10 0 0 0 15
-		bbox  74  114  37  47
-		frame	data/chars/andy/0209.png
-	delay	-1000
-	attack1	0
-		bbox  75  113  36  73
-		frame	data/chars/andy/0210.png
+	attack	0
+		frame	data/chars/andy/andy0208	
 	delay	8
-		bbox  75  123  29  74
-		frame	data/chars/andy/0024.png
-		bbox  79  135  25  64
-		frame	data/chars/andy/0025.png
-		bbox  79  125  24  74
-		frame	data/chars/andy/0024.png
+	attack  90 145 70 30 10 0 0 0 15
+		frame	data/chars/andy/andy0209
+	delay	-100
+	attack	0
+		frame	data/chars/andy/andy0210
+	delay	8		
+	move	0
+		frame	data/chars/andy/andy0024
+		frame	data/chars/andy/andy0025
+		frame	data/chars/andy/andy0024		
 
-anim freespecial
+anim freespecial 
 
 	#Back handspring.
-
+	
 	jumpframe 1 0 -1 0 dust0002
-
+		
 	delay	6
 	offset  100 200
 	bbox	0
-		frame	data/chars/andy/0056.png
+		frame	data/chars/andy/andy0056
 	move	-25
-		frame	data/chars/andy/0450.png
-		bbox  56  138  80  37
-		frame	data/chars/andy/0451.png
-
-		bbox  77  123  33  76
-		frame	data/chars/andy/0452.png
+		frame	data/chars/andy/andy0450
+		frame	data/chars/andy/andy0451
+	
+		frame	data/chars/andy/andy0452
 	move	-15
-	bbox	86 121 28 78
-		frame	data/chars/andy/0380.png
+	bbox	75 135 30 65	
+		frame	data/chars/andy/andy0380		
 	move	0
-		bbox  75  124  57  36
-		frame	data/chars/andy/0335.png
+		frame	data/chars/andy/andy0335
 	move	-10
-		bbox  78  127  56  33
-		frame	data/chars/andy/0336.png
+		frame	data/chars/andy/andy0336
 	move	-20
-		bbox  94  123  29  76
-		frame	data/chars/andy/0308.png
-
+		frame	data/chars/andy/andy0308
+		
 anim freespecial2
 
 	#Plane force up (Palm upper)
@@ -1087,174 +935,149 @@ anim freespecial2
 
 	delay	8
 	offset	100 200
-	bbox	84 116 24 83
-	@cmd	soun0005 0 VOIATKM	-1 1 0 0
-		frame	data/chars/andy/0194.png
-		bbox  85  125  21  74
-		frame	data/chars/andy/0195.png
+	bbox	75 110 35 90
+	@cmd 	soun0001 "vand0001.wav"					
+		frame	data/chars/andy/andy0194
+		frame	data/chars/andy/andy0195
 	delay	6
-		bbox  93  127  31  70
-		frame	data/chars/andy/0196.png
-	attack6	105 148 54 16 10 1 0 0 20
-		bbox  98  126  41  71
-		frame	data/chars/andy/0197.png
-	attack1	0
-		bbox  106  121  37  76
-		frame	data/chars/andy/0198.png
-		bbox  114  116  39  81
-		attack6  136  91  47  57  10  1  0  0  20
-		frame	data/chars/andy/0199.png
+		frame	data/chars/andy/andy0196
+	attack6	90 130 55 70 10 1 0 0 20
+		frame	data/chars/andy/andy0197
+	attack	0
+		frame	data/chars/andy/andy0198
+		frame	data/chars/andy/andy0199
 	delay	12
+	attack6	130 90 55 60 10 1 0 0 20
 	damageonlanding 0 1
-		Attack1  0
 	dropv   4 0.5 -0.5
-		frame	data/chars/andy/0200.png
-		bbox  100  125  40  73
-		frame	data/chars/andy/0201.png
+		frame	data/chars/andy/andy0200
+	attack	0
+		frame	data/chars/andy/andy0201
+	
+anim freespecial3 
 
-anim freespecial3
-
-	#Plane Force Down (Jumping back spin kick)
-
-	jumpframe 2 2 0.1 0 dust0002
-	landframe 7
+	#Plane force down (Spin kick)
+	
+	jumpframe 2 2 0.1 0 dust0002	
+	landframe 7 dust0003
 	fastattack 1
 
 	delay	6
 	offset	100 200
-	bbox	80 117 29 82
-		frame	data/chars/andy/0194.png
-	bbox	81 127 29 70
-		frame	data/chars/andy/0195.png
+	bbox	75 110 35 90
+		frame	data/chars/andy/andy0194
+	bbox	95 95 35 60
+		frame	data/chars/andy/andy0195
 	delay	10
-	@cmd	soun0005 0 VOIATKM	-1 1 0 0
+	@cmd 	soun0001 "vand0008.wav"					
 	move	10
-		bbox  79  89  26  76
-		frame	data/chars/andy/0170.png
+		frame	data/chars/andy/andy0170
 	move	-10
-		bbox  86  98  34  44
-		frame	data/chars/andy/0183.png
+		frame	data/chars/andy/andy0183
 	move	0
-	attack7 90 98 70 35 15 1 0 0 15
+	attack7 85 110 72 45 15 1 0 0 15
 	damageonlanding 0 1
 	dropv   4 0.5 0.5
-		bbox  73  95  35  42
-		frame	data/chars/andy/0184.png
-	attack1	0
-		bbox  77  89  34  56
-		frame	data/chars/andy/0176.png
+		frame	data/chars/andy/andy0184
+	attack	0
+		frame	data/chars/andy/andy0176
 	delay	-100
-		bbox  79  92  31  55
-		frame	data/chars/andy/0175.png
+		frame	data/chars/andy/andy0175
 	delay	8
-	bbox	78 123 26 75
-		frame	data/chars/andy/0024.png
-		bbox  78  134  25  64
-		frame	data/chars/andy/0025.png
-		bbox  79  123  25  75
-		frame	data/chars/andy/0024.png
-
+	bbox	75 135 30 65		
+		frame	data/chars/andy/andy0024
+		frame	data/chars/andy/andy0025
+		frame	data/chars/andy/andy0024
 
 anim freespecial4
 
 	#Plane attack up (Palm thrust)
 
 	jumpframe 2 3.1 0.3 -0.9 dust0002
-	landframe 5
+	landframe 5 dust0003
 	range     0    100
 	rangez    -100 -25
 	fastattack 1
 
 	delay	6
 	offset	100 200
-	bbox	77 122 27 77
-		frame	data/chars/andy/0024.png
-		bbox  67  142  23  55
-		frame	data/chars/andy/0501.png
-	bbox	84 98 29 97
-	@cmd	soun0005 0 VOIATKM	-1 1 0 0
-		frame	data/chars/andy/0502.png
-		frame	data/chars/andy/0503.png
+	bbox	75 135 30 65
+		frame	data/chars/andy/andy0024
+		frame	data/chars/andy/andy0501	
+	bbox	95 95 35 60
+	@cmd 	soun0001 "vand0001.wav"						
+		frame	data/chars/andy/andy0502
+		frame	data/chars/andy/andy0503
 	delay	-100
-	attack1  95 102 43 30 12 0 0 0 20
-		frame	data/chars/andy/0506.png
+	attack  80 100 60 70 12 0 0 0 20 
+		frame	data/chars/andy/andy0506
 	delay	8
-	bbox	95 136 29 63
-	attack1	0
-		frame	data/chars/andy/0306.png
-		bbox  102  130  29  67
-		frame	data/chars/andy/0307.png
-		bbox  93  124  31  73
-		frame	data/chars/andy/0308.png
-
+	bbox	75 135 30 65
+	attack	0				
+		frame	data/chars/andy/andy0306
+		frame	data/chars/andy/andy0307
+		frame	data/chars/andy/andy0308
+		
 anim freespecial5
 
 	#Plane attack down (Flip kick)
 
 	jumpframe 2 3.1 0.3 0.9 dust0002
-	landframe 6
+	landframe 6 dust0003
 	range     0   100
 	rangez    100 25
 	fastattack 1
 
 	delay	10
 	offset	100 200
-	bbox	78 122 25 76
-		frame	data/chars/andy/0024.png
-		bbox  76  134  24  63
-		frame 	data/chars/andy/0494.png
-	bbox	84 84 21 95
-	@cmd	soun0005 0 VOIATKM	-1 1 0 0
-		frame	data/chars/andy/0042.png
-		bbox  82  103  34  40
-		frame	data/chars/andy/0495.png
-		frame	data/chars/andy/0496.png
+	bbox	75 135 30 65
+		frame	data/chars/andy/andy0024	
+		frame 	data/chars/andy/andy0494
+	bbox	95 95 35 60
+	@cmd 	soun0001 "vand0001.wav"						
+		frame	data/chars/andy/andy0042
+		frame	data/chars/andy/andy0495
+		frame	data/chars/andy/andy0496
 	delay	-100
-	attack1  96 86 20 54 12 0 0 0 20
-		bbox  82  92  28  52
-		frame	data/chars/andy/0497.png
+	attack  80 85 45 75 12 0 0 0 20 
+		frame	data/chars/andy/andy0497
 	delay	8
-	bbox	78 135 27 63
-	attack1	0
-		frame	data/chars/andy/0498.png
-		bbox  78  135  24  63
-		frame	data/chars/andy/0025.png
-		bbox  78  124  25  74
-		frame	data/chars/andy/0024.png
+	bbox	75 135 30 65
+	attack	0
+		frame	data/chars/andy/andy0498
+		frame	data/chars/andy/andy0025
+		frame	data/chars/andy/andy0024
 
 
 anim freespecial6
 
 	#Hishoken
-
+	
 	energycost 	20
 	mponly 	   	1
-
+	
 	delay	4
 	offset  100 200
-	bbox	79 109 27 89
-	@cmd	soun0005 0 VOIS4 -1 1 0 0
-		frame	data/chars/andy/0212.png
+	bbox	75 135 30 65
+	@cmd 	soun0001 "vand0009.wav"					#Voice effect.
+		frame	data/chars/andy/andy0212
 	delay	10
-		frame	data/chars/andy/0213.png
+		frame	data/chars/andy/andy0213
 	delay	3
-	@cmd	soun0005 0 SNDEFF7 -1 1 0 0
-		bbox  84  107  23  91
-		frame	data/chars/andy/0214.png
+	@cmd 	soun0001 "sand0001.wav"					#Sound effect.
+		frame	data/chars/andy/andy0214	
 	@cmd	proj0002 "proj0001" 11 1 70 50 1 1 4 4 4 1 1 0 1000 15 -1 -1 0 0 0 0 25 0 -1 1 3.8 1.8 0 1 0 0 0 0
 	delay	8
-		bbox  90  110  24  88
-		frame	data/chars/andy/0215.png
+		frame	data/chars/andy/andy0215
 	delay	2
-	attack1	0
-		frame	data/chars/andy/0216.png
-		bbox  84  108  24  90
-		frame	data/chars/andy/0217.png
-		frame	data/chars/andy/0218.png
+	attack	0
+		frame	data/chars/andy/andy0216
+		frame	data/chars/andy/andy0217
+		frame	data/chars/andy/andy0218
 	delay	8
-		frame	data/chars/andy/0219.png
-		frame	data/chars/andy/0460.png
-		frame	data/chars/andy/0212.png
+		frame	data/chars/andy/andy0219
+		frame	data/chars/andy/andy0460
+		frame	data/chars/andy/andy0212
 
 anim freespecial7
 
@@ -1267,67 +1090,52 @@ anim freespecial7
 
 	delay	5
 	offset  100 200
-	bbox	81 110 25 89
-		frame	data/chars/andy/0212.png
-	@cmd	soun0005 0 VOIS3	-1 1 0 0
-		frame	data/chars/andy/0213.png
-	@cmd	soun0005 0 SNDEFF7	-1 1 0 0
-		frame	data/chars/andy/0221.png
-		bbox  84  108  24  91
-		frame	data/chars/andy/0222.png
+	bbox	75 135 30 65
+		frame	data/chars/andy/andy0212
+	@cmd 	soun0001 "vand0010.wav"					#Voice effect.
+		frame	data/chars/andy/andy0213	
+	@cmd 	soun0001 "sand0001.wav"					#Sound effect.
+		frame	data/chars/andy/andy0221
+		frame	data/chars/andy/andy0222	
 	@cmd	proj0002 "andybe" 3 1 85 30 1 1 5 0 0 1 1 0 1000 15 -1 -1 0 0 0 1 4 0 -1 0 2 3 0 1 0 0 0 0
-		bbox  90  111  31  87
-		frame	data/chars/andy/0223.png
-		bbox  90  111  30  87
-		frame	data/chars/andy/0224.png
-
-		bbox  94  109  31  89
-		frame	data/chars/andy/0225.png
-		bbox  97  109  33  89
-		frame	data/chars/andy/0226.png
-		bbox  96  109  32  89
-		frame	data/chars/andy/0227.png
-		frame	data/chars/andy/0228.png
-		bbox  91  110  28  88
-		frame	data/chars/andy/0229.png
-	@cmd	soun0005 0 SNDEFF8	-1 1 0 0
-		bbox  93  110  29  88
-		frame	data/chars/andy/0230.png
-	@cmd	soun0005 0 VOIS7	-1 1 0 0
-		bbox  99  110  28  88
-		frame	data/chars/andy/0231.png
-		frame	data/chars/andy/0232.png
-		bbox  112  120  28  78
-		move  0
-		frame	data/chars/andy/0233.png
-		bbox  110  119  28  79
-		frame	data/chars/andy/0234.png
-		frame	data/chars/andy/0235.png
-		frame	data/chars/andy/0236.png
-		frame	data/chars/andy/0235.png
-		frame	data/chars/andy/0236.png
-		frame	data/chars/andy/0235.png
-		frame	data/chars/andy/0236.png
-		frame	data/chars/andy/0235.png
-		frame	data/chars/andy/0236.png
-		frame	data/chars/andy/0235.png
-		frame	data/chars/andy/0236.png
-		frame	data/chars/andy/0235.png
-		frame	data/chars/andy/0236.png
-		frame	data/chars/andy/0235.png
-		frame	data/chars/andy/0236.png
-		frame	data/chars/andy/0235.png
-		frame	data/chars/andy/0236.png
-		frame	data/chars/andy/0235.png
-		frame	data/chars/andy/0236.png
+		frame	data/chars/andy/andy0223
+		frame	data/chars/andy/andy0224
+	
+		frame	data/chars/andy/andy0225	
+		frame	data/chars/andy/andy0226	
+		frame	data/chars/andy/andy0227
+		frame	data/chars/andy/andy0228
+		frame	data/chars/andy/andy0229
+	@cmd 	soun0001 "sand0002.wav"					#Sound effect.
+		frame	data/chars/andy/andy0230
+	@cmd 	soun0001 "vand0011.wav"					#Voice effect.
+		frame	data/chars/andy/andy0231
+		frame	data/chars/andy/andy0232	
+		frame	data/chars/andy/andy0233
+		frame	data/chars/andy/andy0234
+		frame	data/chars/andy/andy0235	
+		frame	data/chars/andy/andy0236
+		frame	data/chars/andy/andy0235	
+		frame	data/chars/andy/andy0236	
+		frame	data/chars/andy/andy0235	
+		frame	data/chars/andy/andy0236	
+		frame	data/chars/andy/andy0235	
+		frame	data/chars/andy/andy0236	
+		frame	data/chars/andy/andy0235	
+		frame	data/chars/andy/andy0236
+		frame	data/chars/andy/andy0235	
+		frame	data/chars/andy/andy0236	
+		frame	data/chars/andy/andy0235	
+		frame	data/chars/andy/andy0236	
+		frame	data/chars/andy/andy0235	
+		frame	data/chars/andy/andy0236	
+		frame	data/chars/andy/andy0235	
+		frame	data/chars/andy/andy0236
 	delay	8
-	attack1	0
-		bbox  97  111  25  87
-		frame	data/chars/andy/0237.png
-		bbox  83  106  30  93
-		frame	data/chars/andy/0238.png
-		bbox  76  106  30  93
-		frame	data/chars/andy/0239.png
+	attack	0	
+		frame	data/chars/andy/andy0237
+		frame	data/chars/andy/andy0238
+		frame	data/chars/andy/andy0239		
 
 anim freespecial8
 
@@ -1336,64 +1144,56 @@ anim freespecial8
 	energycost 	15
 	mponly 	   	1
 	jumpframe  	5 3 2 0 dust0002
-	landframe  	12
+	landframe  	12 dust0003
 	fastattack 	1
 
 	delay	8
 	offset	100 200
-	bbox	76 146 32 52
-		frame	data/chars/andy/0202.png
+	bbox	75 110 35 90
+		frame	data/chars/andy/andy0202
 	move	-10
-	@cmd	soun0005 0 VOIS5	-1 1 0 0
-		bbox  87  155  39  43
-		frame	data/chars/andy/0203.png
+	@cmd 	soun0001 "vand0012.wav"					#Voice effect.
+		frame	data/chars/andy/andy0203
 	move	20
-	@cmd	soun0005 0 SNDEFF9	-1 1 0 0
-		bbox  74  157  34  40
-		frame	data/chars/andy/0241.png
+	@cmd	soun0001 "sand0003.wav"
+		frame	data/chars/andy/andy0241
 	move	0
 	delay	7
-	bbox	77 121 32 77
-	attack1	99 66 44 72 12 0 0 0 15
-		frame	data/chars/andy/0242.png
+	bbox	95 95 35 60
+	attack	85 65 115 60 12 0 0 0 15
+		frame	data/chars/andy/andy0242
 	delay	1
-	attack1	0
-		frame	data/chars/andy/0242.png
+	attack	0
+		frame	data/chars/andy/andy0242
 	delay	14
-	attack1	103 104 67 36 8 0 0 0 15
-		bbox  50  119  59  54
-		frame	data/chars/andy/0243.png
+	attack	90 100 80 85 8 0 0 0 15
+		frame	data/chars/andy/andy0243
 	delay	1
-	attack1	0
-		frame	data/chars/andy/0243.png
+	attack	0
+		frame	data/chars/andy/andy0243
 	delay	14
-	attack1	97 126 77 23 8 0 0 0 15
-		bbox  51  126  99  24
-		frame	data/chars/andy/0244.png
+	attack	90 100 80 85 8 0 0 0 15
+		frame	data/chars/andy/andy0244
 	delay	1
-	attack1	0
-		frame	data/chars/andy/0244.png
+	attack	0
+		frame	data/chars/andy/andy0244				
 	delay	14
-	attack1	102 131 64 53 8 0 0 0 15
-		frame	data/chars/andy/0245.png
+	attack	90 100 80 85 8 0 0 0 15
+		frame	data/chars/andy/andy0245
 	delay	1
-	attack1	0
-		frame	data/chars/andy/0245.png
+	attack	0
+		frame	data/chars/andy/andy0245
 	delay	-100
-	attack1	91 139 42 51 8 0 0 0 15
-		bbox  76  106  38  60
-		frame	data/chars/andy/0246.png
-	delay	8
+	attack	90 100 80 85 8 0 0 0 15
+		frame	data/chars/andy/andy0246		
+	delay	8		
 	move	-10
-	attack1	0
-		bbox  92  145  35  54
-		frame	data/chars/andy/0247.png
+	attack	0
+		frame	data/chars/andy/andy0247
 	move	0
-		frame	data/chars/andy/0248.png
-		frame	data/chars/andy/0249.png
-		bbox  76  124  32  75
-		move  18
-		frame	data/chars/andy/0024.png
+		frame	data/chars/andy/andy0248
+		frame	data/chars/andy/andy0249
+		frame	data/chars/andy/andy0024
 
 anim freespecial9
 
@@ -1409,31 +1209,25 @@ anim freespecial9
 
 	delay	1
 	offset	100 200
-	bbox	77 124 27 72
+	bbox	75 135 30 65
 	@cmd	ani0003 openborconstant("ANI_FOLLOW8")
-		frame	data/chars/andy/0271.png
+		frame	data/chars/andy/andy0271
 	delay	4
-	@cmd	bind0008 "hype0001" "visual" 0  1 -25 90 -1 1 0 0 1
-		frame	data/chars/andy/0271.png
-		bbox  64  122  37  74
-		frame	data/chars/andy/0272.png
-	@cmd	soun0005 0 SNDEFF9	-1 1 0 0
-		bbox  81  119  32  78
-		frame	data/chars/andy/0273.png
-	attack1	80 120 47 24 0
+	@cmd	bind0008 "paus0001" "visual" 12 1 -25 90 -1 1 openborconstant("ANI_FOLLOW3") 0 1
+		frame	data/chars/andy/andy0271
+		frame	data/chars/andy/andy0272
+	@cmd	soun0001 "sand0003.wav"				
+		frame	data/chars/andy/andy0273
+	attack	75 135 30 65 0
 	grabin	1 25
 	delay	20
-	@cmd	soun0005 0 VOIS17 -1 1 0 0
-		bbox  90  115  29  81
-		frame	data/chars/andy/0274.png
-	delay	16
-	attack1	0
+		frame	data/chars/andy/andy0274
+	delay	16	
+	attack	0
 	@cmd	velo0001 2 0 0
-		bbox  82  123  29  74
-		frame	data/chars/andy/0275.png
+		frame	data/chars/andy/andy0275		
 	@cmd	velo0001 0 0 0
-		bbox  84  110  31  86
-		frame	data/chars/andy/0114.png
+		frame	data/chars/andy/andy0114
 
 anim freespecial10
 
@@ -1443,7 +1237,7 @@ anim freespecial10
 	energycost 	10
 	mponly 	   	1
 	jumpframe  	4 4.2 1 0 dust0002
-	landframe  	21
+	landframe  	21 dust0003
 	fastattack 	1
 	counterattack 	1
 	forcedirection  -1
@@ -1451,78 +1245,64 @@ anim freespecial10
 	delay	5
 	offset	100 200
 	bbox	0
-		frame	data/chars/andy/0024.png
-	@cmd	soun0005 0 VOIS8	-1 1 0 0
-		frame	data/chars/andy/0252.png
-		frame	data/chars/andy/0253.png
+		frame	data/chars/andy/andy0024
+	@cmd 	soun0001 "vand0013.wav"					
+		frame	data/chars/andy/andy0252
+		frame	data/chars/andy/andy0253
 	@cmd    hit0001 10 1 -1 -0.5 4 0 1 1 35 25 0 2 0
-	attack1	90 107 38 57 0 0 0 0 15
-		frame	data/chars/andy/0254.png
-	attack1	0
-		bbox  99  91  26  47
-		frame	data/chars/andy/0255.png
+	attack	90 105 40 60 0 0 0 0 15		
+		frame	data/chars/andy/andy0254
+	attack	0
+		frame	data/chars/andy/andy0255
 	delay	4
-	@cmd	soun0005 0 SNDEFF9	-1 1 0 0
-	attack1	65 101 95 34 0 0 0 0 15
+	@cmd	soun0001 "sand0003.wav"					
+	attack	65 100 95 35 0 0 0 0 15
 	@cmd    hit0001 5 1 -1 -0.5 3 0 1 1 35 25 0 2 0
 	@cmd	bind0003 "andybe" "andybe" 2 1 15 60 1 1 5
-		bbox  94  102  31  47
-		frame	data/chars/andy/0256.png
+		frame	data/chars/andy/andy0256
 	delay	1
-	attack1	0
-		frame	data/chars/andy/0256.png
+	attack	0
+	bbox	75 110 35 90
+		frame	data/chars/andy/andy0256
 	delay	4
-	attack1	78 85 68 80 0 0 0 0 15
-		bbox  94  103  33  51
-		frame	data/chars/andy/0257.png
+	attack	75 85 75 80 0 0 0 0 15
+		frame	data/chars/andy/andy0257
 	delay	1
-	attack1	0
-		frame	data/chars/andy/0257.png
+	attack	0
+		frame	data/chars/andy/andy0257	
 	delay	4
-	attack1	86 79 52 72 0 0 0 0 15
-		frame	data/chars/andy/0258.png
+	attack	80 75 65 75 0 0 0 0 15
+		frame	data/chars/andy/andy0258
 	delay	1
-	attack1	0
-		frame	data/chars/andy/0258.png
+	attack	0	
+		frame	data/chars/andy/andy0258
 	delay	5
-	@cmd    hit0001 0 0 -2 0 0 0 0 0 0 0 0 0 0
-		bbox  96  109  31  44
-		frame	data/chars/andy/0259.png
-	attack8	74 98 82 70 10 1 0 0 15
+	@cmd    hit0001 0 0 -2 0 0 0 0 0 0 0 0 0 0 
+		frame	data/chars/andy/andy0259
+	attack8	65 95 95 45 10 1 0 0 15
 	damageonlanding 0 1
 	dropv   -3 2 1
-		bbox  95  120  28  30
-		frame	data/chars/andy/0260.png
-	attack1	0
-		bbox  92  120  28  44
-		frame	data/chars/andy/0261.png
+		frame	data/chars/andy/andy0260
+	attack	0
+		frame	data/chars/andy/andy0261
 	@cmd	jump0001 0 0.8 0
-		bbox  75  126  38  33
-		frame	data/chars/andy/0262.png
+		frame	data/chars/andy/andy0262
 	delay	8
 	@cmd	jump0001 0 0.7 0
-		bbox  69  110  45  41
-		frame	data/chars/andy/0263.png
+		frame	data/chars/andy/andy0263
 	@cmd	jump0001 0 0.6 0
-		bbox  74  98  28  56
-		frame	data/chars/andy/0264.png
+		frame	data/chars/andy/andy0264
 	@cmd	jump0001 -1 0.5 0					#Stop forward movement.
-		bbox  78  99  23  64
-		frame	data/chars/andy/0265.png
+		frame	data/chars/andy/andy0265
 	delay	4
-		bbox  80  99  20  84
-		frame	data/chars/andy/0266.png
-		frame	data/chars/andy/0588.png
-		frame	data/chars/andy/0589.png
+		frame	data/chars/andy/andy0266
+		frame	data/chars/andy/andy0588
+		frame	data/chars/andy/andy0589
 	delay	8
-		bbox  79  117  22  81
-		frame	data/chars/andy/0267.png
-		bbox  73  142  32  55
-		frame	data/chars/andy/0268.png
-		bbox  73  136  32  61
-		frame	data/chars/andy/0269.png
-		bbox  76  122  30  76
-		frame	data/chars/andy/0270.png
+		frame	data/chars/andy/andy0267
+		frame	data/chars/andy/andy0268
+		frame	data/chars/andy/andy0269
+		frame	data/chars/andy/andy0270
 
 #anim freespecial11
 
@@ -1539,245 +1319,191 @@ anim freespecial12
 
 	delay	4
 	offset	100 200
-	bbox	75 123 30 75
-		frame	data/chars/andy/0271.png
-	@cmd	soun0005 0 VOIS10	-1 1 0 0
-		bbox  64  122  41  77
-		frame	data/chars/andy/0272.png
-	@cmd	soun0005 0 SNDEFF9	-1 1 0 0
-		bbox  87  118  27  81
-		frame	data/chars/andy/0273.png
-	attack1	92 114 35 37 25
+	bbox	75 135 30 65
+		frame	data/chars/andy/andy0271
+	@cmd 	soun0001 "vand0014.wav"	
+		frame	data/chars/andy/andy0272
+	@cmd	soun0001 "sand0003.wav"				
+		frame	data/chars/andy/andy0273
+	attack	75 135 30 65 25
 	delay	20
-		bbox  92  114  27  85
-		frame	data/chars/andy/0274.png
-	delay	16
-	attack1	0
+		frame	data/chars/andy/andy0274
+	delay	16	
+	attack	0
 	@cmd	velo0001 2 0 0
-		bbox  82  124  29  74
-		frame	data/chars/andy/0275.png
+		frame	data/chars/andy/andy0275		
 	@cmd	velo0001 0 0 0
-		bbox  84  109  31  89
-		frame	data/chars/andy/0114.png
+		frame	data/chars/andy/andy0114
 
 
 anim freespecial13
 
 	#Shippuu Ouken
-
+	
 	fastattack 1
 
 	delay	5
 	offset	100 200
-	bbox	85 123 31 76
-	@cmd	soun0005 0 VOIATKM	-1 1 0 0
-		frame	data/chars/andy/0278.png
-		bbox  83  128  30  71
-		frame	data/chars/andy/0279.png
-		bbox  79  130  32  68
-		frame	data/chars/andy/0280.png
-		bbox  88  125  36  72
-		frame	data/chars/andy/0281.png
-	attack1	100 131 79 15 15 1
+	bbox	75 110 35 90
+	@cmd 	soun0001 "vand0002.wav"					#Voice effect.
+		frame	data/chars/andy/andy0278
+		frame	data/chars/andy/andy0279
+		frame	data/chars/andy/andy0280
+		frame	data/chars/andy/andy0281
+	attack	100 125 80 25 15 1 0 0
 	dropv   1 5 0
-		bbox  100  121  40  78
-		frame	data/chars/andy/0282.png
+		frame	data/chars/andy/andy0282
 	delay	25
-		Attack1  0
-		frame	data/chars/andy/0283.png
+		frame	data/chars/andy/andy0283
 	delay	12
-		bbox  84  113  33  86
-		frame	data/chars/andy/0284.png
-		frame	data/chars/andy/0153.png
+		frame	data/chars/andy/andy0284
+		frame	data/chars/andy/andy0153
 
 anim freespecial14
 
 	#Gen'ei Shiranui
-
+	
 	energycost 10
 	mponly 	   1
-	landframe  4
-	fastattack 1
+	landframe  5
+	fastattack 1	
 
 	delay	6
 	offset	100 200
-	bbox	97 83 29 64
-		frame	data/chars/andy/0285.png
-		frame	data/chars/andy/0286.png
-	@cmd	soun0005 0 VOIATKM	-1 1 0 0							#Voice effect.
-		offset  100  170
-		bbox  99  86  25  64
-		frame	data/chars/andy/0287.png
-	delay	-1000
-	@cmd	soun0005 0 SNDEFF9	-1 1 0 0
+	bbox	95 90 35 60
+	#script	
+	#This code is stupid and not how tosstime works, I'll come back to fix it.										
+	#void vSelf = getlocalvar("self");
+	#int  iToss = getentityproperty(vSelf, "tosstime");
+
+	#changeentityproperty(vSelf, "tosstime", iToss + 6);
+	#end_script
+		frame	data/chars/andy/andy0285	
+		frame	data/chars/andy/andy0286
+	@cmd 	soun0001 "vand0008.wav"										#Voice effect.
+		frame	data/chars/andy/andy0287		
+	attack  75 180 75 30 10
+	delay	-100
+	attack	100 100 35 50 20 0 0 0 20
+	@cmd	soun0001 "sand0003.wav"
 	@cmd	velo0001 4 0 -4											#Dive.
-		bbox  99  86  24  64
-		attack1  90  83  47  43
-		frame	data/chars/andy/0288.png
+		frame	data/chars/andy/andy0288
 	delay	6
 	move	15
+		frame	data/chars/andy/andy0289
+	move	0
 	@cmd	velo0001 0 0 0											#Stop motion.
-		offset  100  200
-		bbox  105  124  25  73
-		Attack1  0
-		frame	data/chars/andy/0289.png
+		frame	data/chars/andy/andy0290
+	bbox	75 135 30 65
+		frame	data/chars/andy/andy0291
+		frame	data/chars/andy/andy0292
+	move	20
+		frame	data/chars/andy/andy0025
 	move	0
-		bbox  96  148  35  50
-		frame	data/chars/andy/0290.png
-	bbox	98 150 35 48
-		frame	data/chars/andy/0291.png
-		frame	data/chars/andy/0292.png
-	move	13
-		bbox  79  134  25  65
-		frame	data/chars/andy/0025.png
-	move	0
-		bbox  78  121  27  77
-		frame	data/chars/andy/0024.png
+		frame	data/chars/andy/andy0024
 
 anim freespecial15
 
 	#Gen'ei Shiranui - Shimo Agito.
-
+	
 	fastattack 1
 
 	delay	3
 	offset	100 200
-	bbox	90 144 37 55
-	@cmd	soun0005 0 VOIATKM	-1 1 0 0
-		frame	data/chars/andy/0293.png
-	@cmd	soun0005 0 SNDWIFFM	-1 1 0 0
-		frame	data/chars/andy/0294.png
-		frame	data/chars/andy/0295.png
-		bbox  86  144  33  54
-		frame	data/chars/andy/0296.png
+	bbox	75 110 35 90
+	@cmd 	soun0001 "vand0002.wav"					
+		frame	data/chars/andy/andy0293
+		frame	data/chars/andy/andy0294
+		frame	data/chars/andy/andy0295
+		frame	data/chars/andy/andy0296
 	delay	4
-		bbox  84  150  44  48
-		frame	data/chars/andy/0297.png
-		bbox  92  146  41  52
-		frame	data/chars/andy/0298.png
-		bbox  96  144  37  54
-		frame	data/chars/andy/0299.png
-	attack1  120 132 66 67 12 1 0 0 0 20
-		bbox  100  144  37  55
-		frame	data/chars/andy/0300.png
-		attack1  119  143  49  55  12  1  0  0  0  20
-		frame	data/chars/andy/0301.png
-	attack1	0
-		bbox  98  142  35  56
-		frame	data/chars/andy/0302.png
-		bbox  94  143  31  56
-		frame	data/chars/andy/0303.png
-		bbox  82  146  39  52
-		frame	data/chars/andy/0304.png
-	attack1	47 183 56 16 10 1 0 0 0 20
-		bbox  86  146  31  52
-		frame	data/chars/andy/0305.png
+		frame	data/chars/andy/andy0297
+		frame	data/chars/andy/andy0298
+		frame	data/chars/andy/andy0299
+	attack  120 130 65 70 12 1 0 0 0 20
+		frame	data/chars/andy/andy0300
+		frame	data/chars/andy/andy0301
+	attack	0
+		frame	data/chars/andy/andy0302
+		frame	data/chars/andy/andy0303
+		frame	data/chars/andy/andy0304
+	attack	45 175 65 25 10 1 0 0 0 20
+		frame	data/chars/andy/andy0305
 	delay	8
-		bbox  97  135  24  61
-		attack1  66  183  36  16  10  1  0  0  0  20
-		frame	data/chars/andy/0306.png
-	attack1	0
-		bbox  102  129  26  69
-		frame	data/chars/andy/0307.png
+		frame	data/chars/andy/andy0306
+	attack	0	
+		frame	data/chars/andy/andy0307
 	move	25
-		bbox  94  122  29  76
-		frame	data/chars/andy/0308.png
+		frame	data/chars/andy/andy0308
 	move	0
-		bbox  80  111  32  87
-		frame	data/chars/andy/0112.png
+		frame	data/chars/andy/andy0112
 
 anim freespecial16
 
 	#Gen'ei Shiranui - Uwa Agito.
-
+	
 	jumpframe 3 2 2 0 dust0002
-	landframe 8
+	landframe 8 dust0003
 	fastattack 1
 
 	delay	6
 	offset	100 200
-	bbox	75 130 34 68
-	@cmd	soun0005 0 VOIATKM	-1 1 0 0
-		frame	data/chars/andy/0310.png
-		bbox  83  106  30  91
-		frame	data/chars/andy/0311.png
-		bbox  88  94  32  103
-		frame	data/chars/andy/0312.png
-		bbox  77  107  55  42
-		frame	data/chars/andy/0313.png
-		bbox  78  121  44  39
-		frame	data/chars/andy/0314.png
-		bbox  81  111  26  59
-		frame	data/chars/andy/0315.png
-		bbox  78  114  30  55
-		frame	data/chars/andy/0316.png
+	bbox	75 110 35 90
+	@cmd 	soun0001 "vand0002.wav"					
+		frame	data/chars/andy/andy0310
+		frame	data/chars/andy/andy0311
+		frame	data/chars/andy/andy0312	
+		frame	data/chars/andy/andy0313
+		frame	data/chars/andy/andy0314
+		frame	data/chars/andy/andy0315
+		frame	data/chars/andy/andy0316
 	delay	-100
-	attack1  87 142 68 32 25 1 0 0 0 20
+	attack  90 130 65 45 25 1 0 0 0 20
 	dropv   1 2 0
-		bbox  64  111  32  58
-		frame	data/chars/andy/0317.png
-	attack1	0
+		frame	data/chars/andy/andy0317
+	attack	0
 	delay	5
-		bbox  75  94  21  100
-		frame	data/chars/andy/0318.png
-		bbox  82  97  27  100
-		frame	data/chars/andy/0319.png
-		bbox  85  110  32  88
-		frame	data/chars/andy/0320.png
-		frame	data/chars/andy/0321.png
-		bbox  86  113  33  83
-		frame	data/chars/andy/0322.png
-		bbox  89  116  33  82
-		frame	data/chars/andy/0323.png
-		bbox  80  109  31  90
-		move  13
-		frame	data/chars/andy/0112.png
+		frame	data/chars/andy/andy0318
+		frame	data/chars/andy/andy0319
+		frame	data/chars/andy/andy0320
+		frame	data/chars/andy/andy0321
+		frame	data/chars/andy/andy0322
+		frame	data/chars/andy/andy0323		
+		frame	data/chars/andy/andy0112
 
 anim freespecial17
 
-	#Yami Abse Geri
+	#Yami Abse Geri	
 
-	jumpframe	2 0 -0.01 0 dust0003
-	fastattack	1
-	hitflash	fflash
+	jumpframe 2 0 -0.01 0 dust0003
+	fastattack 1
 
 	delay	10
 	offset	100 200
-	bbox	78 111 27 87
-		frame	data/chars/andy/0449.png
-		bbox  72  115  40  81
-		frame	data/chars/andy/0450.png
-	@cmd	soun0005 0 VOIATKS	-1 1 0 0
-		bbox  48  127  64  45
-		frame	data/chars/andy/0211.png
-	@cmd	soun0005 0 SNDEFF10	-1 1 0 0
-	burn	93 96 53 84 20 2 0 0 10
+	bbox	75 135 30 65
+		frame	data/chars/andy/andy0449
+		frame	data/chars/andy/andy0450
+	@cmd	soun0001 "vand0015.wav"
+		frame	data/chars/andy/andy0211
+	@cmd	soun0001 "sand0007.wav"
+	burn	95 95 60 85 20 2 0 0 10
 	dropv   5 -1 0
-	@cmd	bind0009 "effe0001" "effe0001" 15 1 30 135 1 1 openborconstant("ANI_FOLLOW8") 0 1 1 1 0 0 0 0 -180 0
-		bbox  74  117  37  80
-		frame	data/chars/andy/0504.png
-	burn	58 79 57 54 20 2 0 0 10
-		bbox  62  119  34  78
-		frame	data/chars/andy/0505.png
-	move	-18
-		bbox  77  138  35  60
-		frame	data/chars/andy/0205.png
+	@cmd	bind0009 "effe0001" "effe0001" 2 1 30 135 1 1 openborconstant("ANI_FOLLOW8") 0 1 1 1 0 0 0 0 -180 0
+		frame	data/chars/andy/andy0504
+	burn	55 75 80 90 20 2 0 0 10	
+		frame	data/chars/andy/andy0505
+	move	-20
+		frame	data/chars/andy/andy0205
 	delay	5
-		frame	data/chars/andy/0381.png
-	move	-10
-		bbox  94  148  37  50
-		frame	data/chars/andy/0290.png
+		frame	data/chars/andy/andy0381
+	move	-10	
+		frame	data/chars/andy/andy0290
 	move	0
-		bbox  97  153  36  44
-		frame	data/chars/andy/0291.png
-		frame	data/chars/andy/0292.png
-		bbox  98  145  30  53
-		frame	data/chars/andy/0293.png
-		bbox  78  122  27  75
-		move  15
-		burn  42  79  51  40  20  2  0  0  10
-		frame	data/chars/andy/0024.png
-
+		frame	data/chars/andy/andy0291
+		frame	data/chars/andy/andy0292
+		frame	data/chars/andy/andy0293
+		frame	data/chars/andy/andy0024
+		
 anim freespecial18
 
 	#Cho Reppa Dan
@@ -1785,263 +1511,233 @@ anim freespecial18
 	energycost 	75
 	mponly 	   	1
 	jumpframe  	7 3.6 2 0 dust0002
-	landframe  	26
+	landframe  	26 dust0003
 	fastattack 	1
-
+	
 	delay	1
 	offset	100 200
 	bbox	0
 	@cmd	ani0003 openborconstant("ANI_FOLLOW4")
-		frame	data/chars/andy/0002.png
+		frame	data/chars/andy/andy0002
 	delay	6
-	@cmd	bind0008 "hype0001" "visual" 0 1 -10 80 1 1 0 0 1
-		frame	data/chars/andy/0024.png
-	@cmd	soun0005 0 VOIS2	-1 1 0 0			#Voice effect.
-		frame	data/chars/andy/0202.png
+	@cmd	bind0008 "paus0001" "visual" 12 1 -10 80 1 1 openborconstant("ANI_FOLLOW3") 0 1
+		frame	data/chars/andy/andy0024
+	@cmd 	soun0001 "vand0020.wav"					#Voice effect.
+		frame	data/chars/andy/andy0202
 	move	-10
-		bbox  91  154  36  44
-		frame	data/chars/andy/0203.png
+		frame	data/chars/andy/andy0203
 	move	20
-	@cmd	soun0005 0 SNDEFF9	-1 1 0 0			#Sound effect.
-		bbox  73  153  35  44
-		frame	data/chars/andy/0241.png
+	@cmd	soun0001 "sand0003.wav"					#Sound effect.
+		frame	data/chars/andy/andy0241
 	move	0
 	delay	7
-	bbox	85 98 36 100
-	attack1	104 65 39 75 9 0 0 0 15
+	bbox	95 95 35 60	
+	attack	85 65 115 60 9 0 0 0 15
 	forcedirection  -1
-		frame	data/chars/andy/0242.png
+		frame	data/chars/andy/andy0242
 	delay	1
-	attack1	0
-		frame	data/chars/andy/0242.png
+	attack	0
+		frame	data/chars/andy/andy0242
 	delay	6
-	attack1	95 102 76 32 9 0 0 0 15
-	@cmd	soun0005 0 SNDEFF11	-1 1 0 0			#Sound effect.
+	attack	90 100 80 85 9 0 0 0 15
+	@cmd	soun0001 "sand0007.wav"
 	@cmd	bind0009 "effe0001" "visual" 13 1 15 50 0 1 openborconstant("ANI_FOLLOW11") 0 1 1 1 0 0 0 0 -90 0
-		bbox  62  113  63  47
-		frame	data/chars/andy/0243.png
+		frame	data/chars/andy/andy0243
 	delay	1
-	attack1	0
-	@cmd	soun0005 0 SNDEFF12	-1 1 0 0			#Sound effect.
+	attack	0
+	@cmd	soun0001 "sand0008.wav"
 	@cmd	bind0003 "andybe" "visual2" 3 1 1 1 1 1 6
-		frame	data/chars/andy/0243.png
+		frame	data/chars/andy/andy0243	
 	delay	3
-	attack1	92 125 83 26 9 0 0 0 10
-		bbox  56  126  113  22
-		frame	data/chars/andy/0244.png
-	attack1	0
-		frame	data/chars/andy/0244.png
-	attack1	92 126 83 26 9 0 0 0 10
-		frame	data/chars/andy/0244.png
-	attack1	0
-		frame	data/chars/andy/0244.png
-	attack1	93 126 81 26 9 0 0 0 10
-		frame	data/chars/andy/0244.png
-	attack1	0
-		frame	data/chars/andy/0244.png
-	attack1	92 126 83 25 9 0 0 0 10
-		frame	data/chars/andy/0244.png
-	attack1	0
-		frame	data/chars/andy/0244.png
-	attack1	98 130 68 55 9 0 0 0 10
-		bbox  66  111  57  50
-		frame	data/chars/andy/0245.png
-	attack1	0
-		frame	data/chars/andy/0245.png
-	attack1	97 130 68 53 9 0 0 0 10
-		frame	data/chars/andy/0245.png
-	attack1	0
-		frame	data/chars/andy/0245.png
-	attack1	96 132 69 51 9 0 0 0 10
-		frame	data/chars/andy/0245.png
-	attack1	0
-		frame	data/chars/andy/0245.png
-	attack1	96 131 68 52 9 0 0 0 10
-		frame	data/chars/andy/0245.png
-	attack1	0
-	@cmd	soun0005 0 SNDEFF11	-1 1 0 0			#Sound effect.
-		frame	data/chars/andy/0245.png
-	delay	-1000
-	@cmd	bind0008 "effe0001" "visual3" 13 1 -15 15 0 1 openborconstant("ANI_FOLLOW11") 0 1
-	attack1	90 140 49 50 9 10 0 0 15
+	attack	90 100 110 85 9 0 0 0 10
+		frame	data/chars/andy/andy0244
+	attack	0
+		frame	data/chars/andy/andy0244
+	attack	70 100 110 85 9 0 0 0 10
+		frame	data/chars/andy/andy0244
+	attack	0
+		frame	data/chars/andy/andy0244
+	attack	70 100 110 85 9 0 0 0 10
+		frame	data/chars/andy/andy0244
+	attack	0
+		frame	data/chars/andy/andy0244
+	attack	70 100 110 85 9 0 0 0 10
+		frame	data/chars/andy/andy0244
+	attack	0
+		frame	data/chars/andy/andy0244
+	attack	70 100 110 85 9 0 0 0 10
+		frame	data/chars/andy/andy0245
+	attack	0
+		frame	data/chars/andy/andy0245
+	attack	70 100 110 85 9 0 0 0 10
+		frame	data/chars/andy/andy0245
+	attack	0
+		frame	data/chars/andy/andy0245
+	attack	70 100 110 85 9 0 0 0 10
+		frame	data/chars/andy/andy0245
+	attack	0
+		frame	data/chars/andy/andy0245
+	attack	70 100 110 85 9 0 0 0 10
+		frame	data/chars/andy/andy0245
+	attack	0
+		frame	data/chars/andy/andy0245
+	delay	-100
+	@cmd	bind0008 "effe0001" "visual3" 13 1 -15 15 0 1 openborconstant("ANI_FOLLOW11") 0 1 			
+	attack	70 100 110 85 9 10 0 0 15
 	dropv	3 3 0
-		bbox  74  103  30  56
-		frame	data/chars/andy/0246.png
-	delay	8
+		frame	data/chars/andy/andy0246		
+	delay	8		
 	move	-10
-	attack1	0
-		bbox  90  147  37  53
-		frame	data/chars/andy/0247.png
+	attack	0
+		frame	data/chars/andy/andy0247
 	move	0
-		frame	data/chars/andy/0248.png
+		frame	data/chars/andy/andy0248
 	delay	30
-		frame	data/chars/andy/0249.png
+		frame	data/chars/andy/andy0249
 	delay	10
-		bbox  78  123  26  76
-		frame	data/chars/andy/0024.png
+		frame	data/chars/andy/andy0024
 
 anim freespecial19
-
+	
 	#Bakushin.
-
+	
 	jumpframe 	2 2.5 4 0 dust0002
-	landframe 	5
+	landframe 	5 dust0003
 	energycost	25
 	mponly		1
 	fastattack 	1
-
+	
 	delay	12
 	offset	100 200
 	bbox	75 135 30 65
-	@cmd	soun0005 0 VOIATKL	-1 1 0 0			#Voice effect.
-		frame	data/chars/andy/0252.png
-		frame	data/chars/andy/0253.png
-	@cmd	soun0005 0 VOIATKS	-1 1 0 0			#Voice effect.
-		bbox  101  126  57  44
-		frame	data/chars/andy/0036.png
+	@cmd	soun0001 "vand0003.wav"									
+		frame	data/chars/andy/andy0252
+		frame	data/chars/andy/andy0253
+	@cmd	soun0001 "vand0046.wav"
+		frame	data/chars/andy/andy0036
 	offset	100 180
-		bbox  86  90  22  72
-		frame	data/chars/andy/0047.png
+		frame	data/chars/andy/andy0047
 	delay	-1000
-	attack1	91 108 56 28 0 0 1 0 10
+	attack	90 105 55 40 0 0 20 0 10
 	attackone 1
-		bbox  73  96  42  55
-		frame	data/chars/andy/0172.png
-	delay	8
-	attack1	0
+		frame	data/chars/andy/andy0172
+	delay	8	
+	attack	0
 	offset	100 200
-		bbox  93  147  34  51
-		frame	data/chars/andy/0247.png
+		frame	data/chars/andy/andy0247
 	move	0
-		frame	data/chars/andy/0248.png
+		frame	data/chars/andy/andy0248
 	delay	30
-		frame	data/chars/andy/0249.png
+		frame	data/chars/andy/andy0249
 	delay	10
-		bbox  79  123  25  74
-		frame	data/chars/andy/0024.png
+		frame	data/chars/andy/andy0024
 
 anim freespecial20
 
 	#Grab testing.
-
+	
 	delay	100
 	offset	100 170
 	fshadow 0
 	bbox	0
-	@cmd	bind0010 0 0 0 0 0 1 1 HELD 0
-		frame	data/chars/misc/pose/HELD.png
-	@cmd	bind0010 0 0 0 0 0 1 1 HELDP 0
-		frame	data/chars/misc/pose/HELDP.png
-	@cmd	bind0010 0 0 0 0 0 1 1 HORUP 0
+	@cmd	bind0010 1 0 0 1 1 HELD
+		frame	data/chars/misc/pose/HELD
+	@cmd	bind0010 1 0 0 1 1 HELDP
+		frame	data/chars/misc/pose/HELDP
+	@cmd	bind0010 1 0 0 1 1 HORUP
 		frame	data/chars/misc/pose/HORUP
-	@cmd	bind0010 0 0 0 0 0 1 1 HORDN 0
+	@cmd	bind0010 1 0 0 1 1 HORDN
 		frame	data/chars/misc/pose/HORDN
-	@cmd	bind0010 0 0 0 0 0 1 1 VERUP 0
+	@cmd	bind0010 1 0 0 1 1 VERUP
 		frame	data/chars/misc/pose/VERUP
-	@cmd	bind0010 0 0 0 0 0 1 1 VERDN 0
+	@cmd	bind0010 1 0 0 1 1 VERDN
 		frame	data/chars/misc/pose/VERDN
-	@cmd	bind0010 0 0 0 0 0 1 1 TLTUP 0
+	@cmd	bind0010 1 0 0 1 1 TLTUP
 		frame	data/chars/misc/pose/TLTUP
-	@cmd	bind0010 0 0 0 0 0 1 1 TLTDN 0
+	@cmd	bind0010 1 0 0 1 1 TLTDN
 		frame	data/chars/misc/pose/TLTDN
-	@cmd	bind0010 0 0 0 0 0 1 1 VERDNP 0
+	@cmd	bind0010 1 0 0 1 1 VERDNP
 		frame	data/chars/misc/pose/VERDNP
-	@cmd	bind0010 0 0 0 0 0 1 1 DWNUP 0
+	@cmd	bind0010 1 0 0 1 1 DWNUP
 		frame	data/chars/misc/pose/DWNUP
-	@cmd	bind0010 0 0 0 0 0 1 1 DWNUPP 0
+	@cmd	bind0010 1 0 0 1 1 DWNUPP
 		frame	data/chars/misc/pose/DWNUPP
-	@cmd	bind0010 0 0 0 0 0 1 1 FALUP 0
+	@cmd	bind0010 1 0 0 1 1 FALUP
 		frame	data/chars/misc/pose/FALUP
-	@cmd	bind0010 0 0 0 0 0 1 1 FALUPT 0
+	@cmd	bind0010 1 0 0 1 1 FALUPT
 		frame	data/chars/misc/pose/FALUPT
-	@cmd	bind0010 0 0 0 0 0 1 1 HORUPP 0
+	@cmd	bind0010 1 0 0 1 1 HORUPP
 		frame	data/chars/misc/pose/HORUPP
-	@cmd	bind0010 0 0 0 0 0 1 1 HELDMP 0
-		frame	data/chars/misc/pose/HELDMP
+	@cmd	bind0010 1 0 0 1 1 HELDMP
+		frame	data/chars/misc/pose/HELDMP	
 
 anim freespecial21
-
-	#Ku Bakushin.
-
+	
+	#Ku Bakushin.	
+	
 	energycost	20
 	mponly		1
 	fastattack 	1
-
+	
 	delay	1
 	offset	100 200
-	bbox	78 93 28 63
-		frame	data/chars/andy/0167.png
-	attack1	82 97 42 37 0 0 1 0 10
+	bbox	75 135 30 65
+		frame	data/chars/andy/andy0167
+	attack	90 105 55 40 0 0 20 0 10
 	attackone 1
 	delay	10
-		bbox  78  88  28  59
-		frame	data/chars/andy/0171.png
-	attack1	0
-		bbox  82  87  26  75
-		frame	data/chars/andy/0044.png
-		bbox  83  87  24  84
-		frame	data/chars/andy/0045.png
-		bbox  84  88  24  92
-		frame	data/chars/andy/0046.png
+		frame	data/chars/andy/andy0171		
+	attack	0	
+		frame	data/chars/andy/andy0044
+		frame	data/chars/andy/andy0045
+		frame	data/chars/andy/andy0046	
 
 anim freespecial40
 
 	#Slide attack.
 	#Backhand.
-
+	
 	cancel	  	1 3 1 a freespecial42
 	jumpframe 	0 0 0.1 0 dust0003
-	fastattack 	1
+	fastattack 	1	
 
 	delay	6
 	offset	100 200
-	bbox	78 134 25 65
-		frame	data/chars/andy/0154.png
-	@cmd	soun0005 0 VOIATKL	-1 1 0 0			#Voice effect.
-	@cmd	soun0005 0 SNDWIFFL	-1 1 0 0			#Sound effect.
-	attack1	106 138 45 18 3 0 0 0 10
-		bbox  88  131  26  68
-		frame	data/chars/andy/0155.png
-	attack1	0
-		bbox  80  132  25  67
-		frame	data/chars/andy/0154.png
+	bbox	75 135 30 65									
+		frame	data/chars/andy/andy0154
+	@cmd	soun0001 "vand0003.wav"	
+	attack	100 135 50 25 3 0 0 0 10
+		frame	data/chars/andy/andy0155
+	attack	0
+		frame	data/chars/andy/andy0154
 	delay	12
-		frame	data/chars/andy/0025.png
-		bbox  80  123  25  75
-		frame	data/chars/andy/0024.png
+		frame	data/chars/andy/andy0025
+		frame	data/chars/andy/andy0024		
 
 anim freespecial41
 
 	#Runslide attack
-	#Shoulder strike.
+	#Lunge palm strike.
 
 	counterattack 	1
 	jumpframe 	0 0 0.5 0 dust0003
 	fastattack 	1
-		delay  8
-		offset  100  200
-		bbox  75  135  30  65
-	@cmd	soun0005 0 VOIATKH	-1 1 0 0
-	@cmd	soun0005 0 SNDWIFFH 	-1 1 0 0
-	frame  data/chars/andy/0498.png
-		bbox  81  124  27  75
-		move  25
-	frame  data/chars/andy/0559.png
-		bbox  91  132  41  66
-		move  0
-		attack1  86  130  49  34  25  2  0  0  10
-		dropv  5 1 0
-	frame  data/chars/andy/0560.png
-		Attack1  0
-	frame  data/chars/andy/0561.png
-		bbox  98  119  30  78
-		dropv  4  1  0
-	frame  data/chars/andy/0562.png
-		bbox  85  111  28  86
-		move  10
-	frame  data/chars/andy/0563.png
-		bbox  72  107  24  91
-		frame	data/chars/andy/0007.png
+
+	delay	10
+	offset	100 200
+	bbox	75 135 30 65
+	@cmd	soun0001 "vand0002.wav"	
+		frame	data/chars/andy/andy0498
+	attack	100 140 85 15 20 2 0 0 15
+		frame	data/chars/andy/andy0499
+	attack	0
+		frame	data/chars/andy/andy0500
+	delay	12
+	bbox    75 110 35 90
+		frame	data/chars/andy/andy0448
+	@cmd	velo0001 0 0 0		
+		frame	data/chars/andy/andy0449
+		frame	data/chars/andy/andy0007		
 
 anim freespecial42
 
@@ -2049,27 +1745,20 @@ anim freespecial42
 	#Low kick
 
 	cancel	  	1 3 1 a freespecial43
-	fastattack 	1
+	fastattack 	1		
 
 	delay	6
 	offset	100 200
-	bbox	70 140 27 59
-	@cmd	soun0005 0 VOIATKL	-1 1 0 0			#Voice effect.
-	@cmd	soun0005 0 SNDWIFFL	-1 1 0 0			#Sound effect.
-		frame	data/chars/andy/0160.png
-	attack1	85 176 70 22 3 0 0 0 10
-		bbox  63  144  34  55
-		frame	data/chars/andy/0161.png
-		bbox  70  140  27  59
-		@cmd  soun0005  0  VOIATKL  -1  1  0  0
-		@cmd  soun0005  0  SNDWIFFL  -1  1  0  0
-		Attack1  0
-	frame  data/chars/andy/0160.png
+	bbox	75 135 30 65
+	@cmd	soun0001 "vand0001.wav"										
+		frame	data/chars/andy/andy0160
+	attack	85 175 70 20 3 0 0 0 10
+		frame	data/chars/andy/andy0161
+	attack	0
+		frame	data/chars/andy/andy0160
 	delay	12
-		bbox  78  137  25  62
-		frame	data/chars/andy/0025.png
-		bbox  78  123  27  76
-		frame	data/chars/andy/0024.png
+		frame	data/chars/andy/andy0025
+		frame	data/chars/andy/andy0024
 
 anim freespecial43
 
@@ -2080,24 +1769,18 @@ anim freespecial43
 
 	delay	8
 	offset	100 200
-	bbox	80 132 25 65
-	@cmd	soun0005 0 VOIATKM	-1 1 0 0			#Voice effect.
-		frame	data/chars/andy/0156.png
-	@cmd	soun0005 0 SNDWIFFM	-1 1 0 0			#Sound effect.
-		frame	data/chars/andy/0157.png
-	attack1	100 137 61 19 6 1 0 0 10
-		bbox  90  134  41  65
-		frame	data/chars/andy/0158.png
-	attack1	0
+	bbox	75 135 30 65
+	@cmd	soun0001 "vand0002.wav"										
+		frame	data/chars/andy/andy0156
+		frame	data/chars/andy/andy0157
+	attack	100 135 60 25 6 1 0 0 10
+		frame	data/chars/andy/andy0158
+	attack	0
 	delay	12
-		frame	data/chars/andy/0159.png
-		@cmd  soun0005  0  SNDWIFFM  -1  1  0  0
-		bbox  76  135  29  64
-	frame  data/chars/andy/0157.png
-		bbox  79  134  25  64
-		frame	data/chars/andy/0025.png
-		bbox  79  122  25  76
-		frame	data/chars/andy/0024.png
+		frame	data/chars/andy/andy0159
+		frame	data/chars/andy/andy0157
+		frame	data/chars/andy/andy0025
+		frame	data/chars/andy/andy0024
 
 #*****Followups****************************************************************************
 
@@ -2111,14 +1794,113 @@ anim follow1
 
 	delay	15
 	offset	100 200
-	bbox	90 120 33 79
-	attack1	0
-		frame	data/chars/andy/0276.png
+	bbox	75 110 35 90
+	attack	0	
+		frame	data/chars/andy/andy0276
 	delay	25
-		frame	data/chars/andy/0277.png
+		frame	data/chars/andy/andy0277
 	delay	10
-		bbox  78  107  30  92
-		frame	data/chars/andy/0212.png
+		frame	data/chars/andy/andy0212
+
+anim follow2
+
+	#Counter block impact.
+
+	cancel 		1 4 0 a freespecial11
+	fastattack 	1
+
+	delay	3
+	offset	100 200
+	bbox	85 100 30 40
+	@cmd	ai0001 "blocking" 1 0 0						#Turn block flag on.
+	move    -5
+		frame	data/chars/andy/andy0057
+	move	3
+		frame	data/chars/andy/andy0057
+	move	-3
+		frame	data/chars/andy/andy0057
+	move	3
+	delay	20
+		frame	data/chars/andy/andy0057
+	delay	10
+	move	0
+		frame	data/chars/andy/andy0056
+
+anim follow3
+
+	#Shiranui Spider Clutch (tall opponent alt.)
+
+	flipframe 3
+	jumpframe 12 4 -2 0
+	landframe 20 dust0003
+
+	offset  100 200		
+	delay	8
+	@cmd	bind0010 1 25 0 0 -1 HELD
+	move	0
+		frame	data/chars/andy/andy0115	
+		frame	data/chars/andy/andy0116
+	move	50
+	offset  100 220
+	@cmd	bind0010 1 -25 0 0 -1 HELD
+		frame	data/chars/andy/andy0142
+	move	-15	
+	offset	100 230
+	@cmd	bind0010 1 10 0 0 1 HELD	
+		frame	data/chars/andy/andy0457	
+	delay	15
+	move	0
+	offset	100 230
+	@cmd	soun0001 "soun0011.wav"
+		frame	data/chars/andy/andy0453
+	delay	5
+	offset	101 230
+	move	0
+		frame	data/chars/andy/andy0453
+	offset	100 230
+		frame	data/chars/andy/andy0453
+	offset	101 230
+		frame	data/chars/andy/andy0453
+	delay	12
+	offset	100 230
+	@cmd	soun0001 "soun0012.wav"
+		frame	data/chars/andy/andy0453
+	delay	30
+	@cmd	bind0010 1 10 0 -1 0 HELDP
+	@cmd    stat0001  1 0 -40 0 0 0 0 0
+		frame	data/chars/andy/andy0454		
+	delay	15		
+	offset	115 230
+		frame	data/chars/andy/andy0167
+	@cmd 	soun0001 "vand0003.wav"
+		frame	data/chars/andy/andy0171
+	delay	12
+	offset	100 270
+	move	-20
+	@cmd	bind0008 "flash" "flash" 0 1 20 75 0 0 0 0 1		
+	@cmd	bind0004 1 20 0 0 11 0						#Release bind.		
+	@cmd	dama0001 1 20 10 "ATK_NORMAL" -1 2 2 0 0 0 0
+		frame	data/chars/andy/andy0209
+	delay	10
+	move	0
+	offset	100 260
+		frame	data/chars/andy/andy0263
+	offset	100 250
+		frame	data/chars/andy/andy0262
+	offset	100 220
+		frame	data/chars/andy/andy0049
+	offset	100 200
+		frame	data/chars/andy/andy0048
+		frame	data/chars/andy/andy0044
+		frame	data/chars/andy/andy0045
+	delay	-1	
+		frame	data/chars/andy/andy0046
+	delay	8
+	offset	100 200
+	bbox	75 135 30 65
+		frame	data/chars/andy/andy0024
+		frame	data/chars/andy/andy0025
+		frame	data/chars/andy/andy0024
 
 anim follow4
 
@@ -2130,111 +1912,104 @@ anim follow4
 	#Counterattack property
 
 	jumpframe  	6 4.5 2.5 0 dust0002
-	landframe  	31
+	landframe  	32 dust0003
 	fastattack 	1
-
+	
 	delay	6
 	offset	100 200
 	bbox	0
-	@cmd	bind0008 "hype0003" "visual"  0 1 -10 80 1 1 0 0 1
-		frame	data/chars/andy/0024.png
-	@cmd	soun0005 0 VOIS2	-1 1 0 0			#Voice effect.
-		frame	data/chars/andy/0202.png
+	@cmd	bind0008 "paus0001" "visual" 12 1 -10 80 1 1 openborconstant("ANI_FOLLOW5") 0 1
+		frame	data/chars/andy/andy0024
+	@cmd 	soun0001 "vand0020.wav"					#Voice effect.
+		frame	data/chars/andy/andy0202
 	move	-10
-		frame	data/chars/andy/0203.png
+		frame	data/chars/andy/andy0203
 	move	20
-	@cmd	soun0005 0 VOIATKM	-1 1 0 0			#Sound effect.
-		frame	data/chars/andy/0241.png
+	@cmd	soun0001 "sand0003.wav"					#Sound effect.
+		frame	data/chars/andy/andy0241
 	move	0
-	delay	7
+	delay	7		
 	@cmd    hit0001 13 1 -1 0 2 0 1 1 35 15 0 2 0
-	attack1	91 65 53 100 0 1 0 0 15
+	attack	85 65 115 60 0 1 0 0 15	
 	forcedirection  -1
-		frame	data/chars/andy/0242.png
+		frame	data/chars/andy/andy0242
 	delay	1
-	attack1	0
-	bbox	86 101 36 72
-		frame	data/chars/andy/0242.png
+	attack	0
+	bbox	95 95 35 60
+		frame	data/chars/andy/andy0242
 	delay	6
-	attack1	101 86 72 65 0 1 0 0 5
-	@cmd	soun0005 0 SNDEFF11	-1 1 0 0			#Sound effect.
-	@cmd	bind0009 "effe0001" "visual" 13 1 15 50 0 1 openborconstant("ANI_FOLLOW11") 0 1 1 1 0 0 0 0 -90 0
-		bbox  62  121  62  35
-		frame	data/chars/andy/0243.png
+	attack	90 100 80 85 0 1 0 0 5
+	@cmd	soun0001 "sand0007.wav"
+	@cmd	bind0009 "effe0001" "visual" 13 1 15 50 0 1 openborconstant("ANI_FOLLOW11") 0 1 1 1 0 0 0 0 -90 0	
+		frame	data/chars/andy/andy0243
 	delay	1
-	attack1	0
-	@cmd	soun0005 0 SNDEFF12	-1 1 0 0			#Sound effect.
+	attack	0
+	@cmd	soun0001 "sand0008.wav"
 	@cmd	bind0003 "andybe" "visual2" 3 1 1 1 1 1 6
-		frame	data/chars/andy/0243.png
+		frame	data/chars/andy/andy0243	
 	delay	3
-	attack1	89 114 86 49 0 1 0 0 5
-		bbox  53  126  76  22
-		frame	data/chars/andy/0244.png
-	attack1	0
-		frame	data/chars/andy/0244.png
-	attack1	89 114 86 49 0 1 0 0 5
-		frame	data/chars/andy/0244.png
-	attack1	0
-		frame	data/chars/andy/0244.png
-	attack1	89 114 86 49 0 1 0 0 5
-		frame	data/chars/andy/0244.png
-	attack1	0
-		frame	data/chars/andy/0244.png
-	attack1	89 114 86 49 0 1 0 0 5
-		frame	data/chars/andy/0244.png
-	attack1	0
+	attack	90 100 110 85 0 1 0 0 5
+		frame	data/chars/andy/andy0244
+	attack	0
+		frame	data/chars/andy/andy0244
+	attack	70 100 110 85 0 1 0 0 5
+		frame	data/chars/andy/andy0244
+	attack	0
+		frame	data/chars/andy/andy0244
+	attack	70 100 110 85 0 1 0 0 5
+		frame	data/chars/andy/andy0244
+	attack	0
+		frame	data/chars/andy/andy0244
+	attack	70 100 110 85 0 1 0 0 5
+		frame	data/chars/andy/andy0244
+	attack	0
 	@cmd    hit0001 18 1 -1 0 2 0 1 1 35 1 0 2 0
-		frame	data/chars/andy/0244.png
-	attack1	97 127 71 58 0 1 0 0 5
-		bbox  58  111  65  41
-		frame	data/chars/andy/0245.png
-	attack1	0
-		frame	data/chars/andy/0245.png
-	attack1	97 127 71 59 0 1 0 0 5
-		frame	data/chars/andy/0245.png
-	attack1	0
-		frame	data/chars/andy/0245.png
-	attack1	97 127 71 59 0 1 0 0 5
-		frame	data/chars/andy/0245.png
-	attack1	0
-		frame	data/chars/andy/0245.png
-	attack1	97 127 71 59 0 1 0 0 5
-		frame	data/chars/andy/0245.png
-	attack1	0
-		frame	data/chars/andy/0245.png
-	attack1	97 127 71 59 0 1 0 0 5
-		frame	data/chars/andy/0245.png
-	attack1	0
-		frame	data/chars/andy/0245.png
-	attack1	97 127 71 59 0 1 0 0 5
-		frame	data/chars/andy/0245.png
-	attack1	0
-		frame	data/chars/andy/0245.png
-	attack1	97 127 71 59 0 1 0 0 5
-		frame	data/chars/andy/0245.png
-	attack1	0
-		delay  6
-		frame	data/chars/andy/0245.png
-	delay	-1000
-	@cmd	soun0005 0 SNDEFF11	-1 1 0 0			#Sound effect.
+		frame	data/chars/andy/andy0244	
+	attack	70 100 110 85 0 1 0 0 5	
+		frame	data/chars/andy/andy0245
+	attack	0
+		frame	data/chars/andy/andy0245
+	attack	70 100 110 85 0 1 0 0 5
+		frame	data/chars/andy/andy0245
+	attack	0
+		frame	data/chars/andy/andy0245
+	attack	70 100 110 85 0 1 0 0 5
+		frame	data/chars/andy/andy0245
+	attack	0
+		frame	data/chars/andy/andy0245
+	attack	70 100 110 85 0 1 0 0 5
+		frame	data/chars/andy/andy0245
+	attack	0
+		frame	data/chars/andy/andy0245		
+	attack	70 100 110 85 0 1 0 0 5
+		frame	data/chars/andy/andy0245
+	attack	0
+		frame	data/chars/andy/andy0245
+	attack	70 100 110 85 0 1 0 0 5
+		frame	data/chars/andy/andy0245
+	attack	0
+		frame	data/chars/andy/andy0245
+	attack	70 100 110 85 0 1 0 0 5
+		frame	data/chars/andy/andy0245
+	attack	0
+		frame	data/chars/andy/andy0245	
+		frame	data/chars/andy/andy0245
+	delay	-100
 	@cmd	bind0008 "effe0001" "visual3" 13 1 -15 15 0 1 openborconstant("ANI_FOLLOW11") 0 1
-	@cmd	hit0001 0 0 -2 0 0 0 0 0 0 0 0 0 0				#Erase hitflags.
-	attack1	87 123 54 67 12 1 0 1 15
+	@cmd	hit0001 0 0 -2 0 0 0 0 0 0 0 0 0 0				#Erase hitflags.			
+	attack	70 100 110 85 12 1 0 1 15
 	dropv	3 2 0
-		bbox  76  104  37  56
-		frame	data/chars/andy/0246.png
-	delay	8
+		frame	data/chars/andy/andy0246		
+	delay	8		
 	move	-10
-	attack1	0
-		bbox  89  143  38  56
-		frame	data/chars/andy/0247.png
+	attack	0
+		frame	data/chars/andy/andy0247
 	move	0
-		frame	data/chars/andy/0248.png
+		frame	data/chars/andy/andy0248
 	delay	30
-		frame	data/chars/andy/0249.png
+		frame	data/chars/andy/andy0249
 	delay	10
-		bbox  76  119  29  79
-		frame	data/chars/andy/0024.png
+		frame	data/chars/andy/andy0024
 
 anim follow5
 
@@ -2248,90 +2023,80 @@ anim follow5
 
 	delay	1
 	offset	100 200
-	bbox	80 87 33 94
-		frame	data/chars/andy/0166.png
+	bbox	75 105 40 95	
+		frame	data/chars/andy/andy0166
 	delay	20
-	@cmd	bind0010 0 0 0 15 0 -2 -1 HELD 0
-	@cmd	soun0005 0 VOIATKM	-1 1 0 0														#Sound effect.
+	@cmd	bind0010 1 15 0 -2 -1 HELD	
+	@cmd 	soun0001 "vand0002.wav"					#Voice effect.				
 	move	20
-		frame	data/chars/andy/0166.png
+		frame	data/chars/andy/andy0166
 	delay	6
-	offset	102 200
+	offset	102 200		
 	move	0
-		bbox  79  88  26  70
-		frame	data/chars/andy/0167.png
+		frame	data/chars/andy/andy0167
 	offset	100 200
-		frame	data/chars/andy/0167.png
+		frame	data/chars/andy/andy0167
 	offset	102 200
-		frame	data/chars/andy/0167.png
+		frame	data/chars/andy/andy0167
 	offset	100 200
-		frame	data/chars/andy/0167.png
+		frame	data/chars/andy/andy0167		
 	delay	4
 	offset	102 200
-		frame	data/chars/andy/0167.png
+		frame	data/chars/andy/andy0167
 	offset	100 200
 	delay	12
-		bbox  78  87  29  64
-		frame	data/chars/andy/0171.png
+		frame	data/chars/andy/andy0171
 	delay	20
 	offset	100 215
-	@cmd	soun0005 0 SNDEFF15	-1 1 0 0														#Sound effect.
-	@cmd	soun0005 0 VOIS1	-1 1 0 0														#voice effect.
-	@cmd	bind0010 0 0 0 15 0 -2 -1 HELDP	0
-	@cmd	bind0004 1 0 0 0 12 0																#Release bind, but retain bind record.
-	@cmd	bind0008 "flash" "flash" 0 1 30 100 0 0 0 0 1										#Hit flash
-	@cmd	bind0008 "effe0001" "effe0001" 13 1 30 100 0 0 openborconstant("ANI_FOLLOW9") 0 0	#Spawn "C4 on the face".
-		frame	data/chars/andy/0173.png
+	@cmd 	soun0001 "soun0016.wav"									#Sound effect.
+	@cmd 	soun0001 "vand0039.wav"									#voice effect.					
+	@cmd	bind0010 1 15 0 -2 -1 HELDP	
+	@cmd	bind0004 1 0 0 0 12 0									#Release bind, but retain bind record.
+	@cmd	bind0008 "flash" "flash" 0 1 30 100 0 0 0 0 1						#Hit flash
+	@cmd	bind0008 "effe0001" "effe0001" 12 1 30 100 0 0 openborconstant("ANI_FOLLOW9") 0 0	#Spawn "C4 on the face".		
+		frame	data/chars/andy/andy0173
 	offset	100 210
-		frame	data/chars/andy/0176.png
+		frame	data/chars/andy/andy0176
 	offset	100 200
-		bbox  77  97  26  69
-		frame	data/chars/andy/0266.png
+		frame	data/chars/andy/andy0266
 	delay	-1000
-		bbox  76  117  29  74
-		frame	data/chars/andy/0267.png
+		frame	data/chars/andy/andy0267
 	delay	10
-		bbox  73  135  33  63
-		frame	data/chars/andy/0269.png
-		bbox  72  141  35  58
-		frame	data/chars/andy/0268.png														#Land frame.
-		bbox  71  136  36  62
-		frame	data/chars/andy/0269.png
-	move	-15
-		bbox  74  119  31  77
-		frame	data/chars/andy/0024.png														#Flipframe
+		frame	data/chars/andy/andy0269
+		frame	data/chars/andy/andy0268							#Land frame.
+		frame	data/chars/andy/andy0269
+	move	-15			
+		frame	data/chars/andy/andy0024							#Flipframe
 	move	0
-		bbox  74  91  25  106
-		frame	data/chars/andy/0489.png
+		frame	data/chars/andy/andy0489
 	delay	30
-		frame	data/chars/andy/0485.png
+		frame	data/chars/andy/andy0485
 	delay	6
-		frame	data/chars/andy/0486.png
-	@cmd	soun0005 0 VOIS0	-1 1 0 0														#voice effect.
-		frame	data/chars/andy/0487.png
-		frame	data/chars/andy/0488.png
+		frame	data/chars/andy/andy0486
+	@cmd 	soun0001 "vand0023.wav"									#Voice effect.
+		frame	data/chars/andy/andy0487
+		frame	data/chars/andy/andy0488
 	delay	2
-		frame	data/chars/andy/0489.png
-		frame	data/chars/andy/0490.png
-		frame	data/chars/andy/0491.png
-		frame	data/chars/andy/0492.png
+		frame	data/chars/andy/andy0489
+		frame	data/chars/andy/andy0490
+		frame	data/chars/andy/andy0491
+		frame	data/chars/andy/andy0492
 	delay	3
-	@cmd	soun0005 0 SNDEFF16	-1 1 0 0														#Sound effect.
-	@cmd	soun0005 0 SNDEFF17	-1 1 0 0														#Sound effect.
-	@cmd	ani0008 SPAWN 2 openborconstant("ANI_FOLLOW10") 0 1 0 0 0 0 0						#Set "C4 in UR face" to explode animation and self kill.
-	@cmd	bind0004 1 0 0 0 11 0																#Release bind and clear bind record.
-	@cmd	dama0001 1 90 10 "ATK_NORMAL" 1 2 -2 0 0 0 0
-		frame	data/chars/andy/0493.png														#Quakeframe
+	@cmd 	soun0001 "soun0017.wav"									#Sound effect.
+	@cmd 	soun0001 "soun0015.wav"									#Sound effect.
+	@cmd	ani0008 SPAWN 2 openborconstant("ANI_FOLLOW10") 0 1 0 0 0 0 0				#Set "C4 in UR face" to explode animation and self kill.
+	@cmd	bind0004 1 0 0 0 11 0									#Release bind and clear bind record.		
+	@cmd	dama0001 1 90 10 "ATK_NORMAL" 1 2 -2 0 0 0 0			
+		frame	data/chars/andy/andy0493							#Quakeframe
 	delay	4
-		frame	data/chars/andy/0493.png
-		frame	data/chars/andy/0493.png
+		frame	data/chars/andy/andy0493
+		frame	data/chars/andy/andy0493
 	delay	10
-		frame	data/chars/andy/0492.png
+		frame	data/chars/andy/andy0492
 	delay	30
-		frame	data/chars/andy/0492.png
+		frame	data/chars/andy/andy0492
 	delay	10
-		bbox  70  103  30  95
-		frame	data/chars/andy/0007.png
+		frame	data/chars/andy/andy0007
 
 anim follow6
 
@@ -2343,51 +2108,44 @@ anim follow6
 
 	delay	1
 	offset	100 200
-	bbox	77 97 31 91
-		frame	data/chars/andy/0412.png			#Extra frame to give scripts chance to activate.
+	bbox	75 105 40 95	
+		frame	data/chars/andy/andy0412			#Extra frame to give scripts chance to activate.
 	delay	-1000
 	@cmd	dama0001 2 0 10 "ATK_NORMAL" 0 0 0 0 0 0 0		#Put opponent into fall state.
-	@cmd	bind0010 0 0 0 10 20 1 -1 TLTUP 0
-		bbox  76  119  33  70
-		frame	data/chars/andy/0413.png
+	@cmd	bind0010 1 10 20 1 -1 TLTUP
+		frame	data/chars/andy/andy0413		
 	delay	4
-	@cmd	bind0010 0 0 0 15 0 1 -1 DWNUPP 0
-	@cmd    stat0001 1 0 -30 0 0 0 0 0				#Apply non lethal HP loss.
-		bbox  75  152  35  47
-		frame	data/chars/andy/0414.png
-		frame	data/chars/andy/0414.png
-		frame	data/chars/andy/0414.png
-		frame	data/chars/andy/0414.png
-		frame	data/chars/andy/0414.png
-	@cmd	bind0010 0 0 0 15 0 1 -1 DWNUP 0
+	@cmd	bind0010 1 15 0 1 -1 DWNUPP
+	@cmd    stat0001 1 0 -30 0 0 0 0 0				#Apply non lethal HP loss.				
+		frame	data/chars/andy/andy0414
+		frame	data/chars/andy/andy0414
+		frame	data/chars/andy/andy0414
+		frame	data/chars/andy/andy0414
+		frame	data/chars/andy/andy0414
+	@cmd	bind0010 1 15 0 1 -1 DWNUP	
 	delay	10
-		frame	data/chars/andy/0414.png
+		frame	data/chars/andy/andy0414
 		delay	8
-		bbox  74  121  35  77
-		frame	data/chars/andy/0270.png
-		bbox  71  97  26  100
-		frame	data/chars/andy/0415.png
-		frame	data/chars/andy/0416.png
+		frame	data/chars/andy/andy0270
+		frame	data/chars/andy/andy0415
+		frame	data/chars/andy/andy0416
 		delay	6
-	@cmd	soun0005 0 VOIATKL	-1 1 0 0			#Voice effect.
-		bbox  67  95  24  104
-		frame	data/chars/andy/0417.png
-		frame	data/chars/andy/0418.png
-	@cmd	bind0008 "flash" "flash" 0 1 30 10 0 0 0 0 1
-	@cmd	bind0004 1 0 0 0 11 0					#Release bind.
+	@cmd 	soun0001 "vand0008.wav"					#Voice effect.				
+		frame	data/chars/andy/andy0417
+		frame	data/chars/andy/andy0418
+	@cmd	bind0008 "flash" "flash" 0 1 30 10 0 0 0 0 1		
+	@cmd	bind0004 1 0 0 0 11 0					#Release bind.		
 	@cmd	dama0001 1 15 10 "ATK_NORMAL9" -1 2.5 3 0 0 0 0
-		frame	data/chars/andy/0419.png
-		frame	data/chars/andy/0420.png
-		bbox  70  95  29  102
-		frame	data/chars/andy/0421.png
+		frame	data/chars/andy/andy0419
+		frame	data/chars/andy/andy0420
+		frame	data/chars/andy/andy0421
 	delay	8
-		frame	data/chars/andy/0420.png
-		bbox  70  97  24  100
-		frame	data/chars/andy/0419.png
-		frame	data/chars/andy/0418.png
+		frame	data/chars/andy/andy0420
+		frame	data/chars/andy/andy0419
+		frame	data/chars/andy/andy0418
 
 anim follow7
-
+	
 	#Zan'ei Ryuusei Ken normal finish
 
 	jumpframe  	0 0 0 0 dust0003
@@ -2397,87 +2155,88 @@ anim follow7
 	delay	10
 	offset	100 200
 	bbox	0
-	attack1	0
-		frame	data/chars/andy/0276.png
-		frame	data/chars/andy/0277.png
+	attack	0	
+		frame	data/chars/andy/andy0276
+		frame	data/chars/andy/andy0277
 	delay	4
-		frame	data/chars/andy/0212.png
-	offset	135 200
-		frame	data/chars/andy/0115.png
-		frame	data/chars/andy/0116.png
-	@cmd    hit0001 5 1 -1 0 2 0 0 1 0 0 0 0 0
-	attack1  140 125 60 20 0 0 0 0 5
-		frame	data/chars/andy/0117.png
-		frame	data/chars/andy/0118.png
+		frame	data/chars/andy/andy0212
+	offset	135 200						
+		frame	data/chars/andy/andy0115
+		frame	data/chars/andy/andy0116
+	@cmd    hit0001 5 1 -1 0 2 0 0 1 0 0 0 0 0	
+	attack  140 125 60 20 0 0 0 0 5
+		frame	data/chars/andy/andy0117	
+		frame	data/chars/andy/andy0118
 	move	0
-	attack1	0
-		frame	data/chars/andy/0119.png
-		frame	data/chars/andy/0117.png
-		frame	data/chars/andy/0116.png
-		frame	data/chars/andy/0115.png
-	move	-10
-	offset	100 200
-	@cmd	soun0005 0 VOIATKM	-1 1 0 0			#Sound effect.
-		frame	data/chars/andy/0120.png
+	attack	0
+		frame	data/chars/andy/andy0119	
+		frame	data/chars/andy/andy0117	
+		frame	data/chars/andy/andy0116
+		frame	data/chars/andy/andy0115
+	move	-10	
+	offset	100 200	
+	@cmd 	soun0001 "vand0001.wav"					
+		frame	data/chars/andy/andy0120
 	move	0
-		frame	data/chars/andy/0121.png
+		frame	data/chars/andy/andy0121
 	delay	2
-	attack1  100 105 60 20 0 0 0 0 5
-		frame	data/chars/andy/0122.png
-	attack1	0
-		frame	data/chars/andy/0122.png
+	attack  100 105 60 20 0 0 0 0 5	
+		frame	data/chars/andy/andy0122
+	move	0
+	delay	2
+	attack	0
+		frame	data/chars/andy/andy0122
 	delay	4
-	attack1  100 105 60 20 0 0 0 0 5
-		frame	data/chars/andy/0123.png
-	attack1	0
-		frame	data/chars/andy/0124.png
-		frame	data/chars/andy/0125.png
-		frame	data/chars/andy/0126.png
+	attack  100 105 60 20 0 0 0 0 5
+		frame	data/chars/andy/andy0123
+	attack	0
+		frame	data/chars/andy/andy0124
+		frame	data/chars/andy/andy0125
+		frame	data/chars/andy/andy0126
 	delay	6
-	move	-15
-	@cmd    hit0001 0 -2 0 0 0 0 0 0 0 0 0 0 0
-		frame	data/chars/andy/0212.png
+	move	-15	
+	@cmd    hit0001 0 -2 0 0 0 0 0 0 0 0 0 0 0	
+		frame	data/chars/andy/andy0212
 	move	0
 	delay	7
-		frame	data/chars/andy/0391.png
-		frame	data/chars/andy/0392.png
+		frame	data/chars/andy/andy0391
+		frame	data/chars/andy/andy0392
 	@cmd 	paus0001 1 1000
-		frame	data/chars/andy/0393.png
-		frame	data/chars/andy/0394.png
+		frame	data/chars/andy/andy0393
+		frame	data/chars/andy/andy0394
 	delay	15
-	@cmd	soun0005 0 VOIVIC	1 1 0 0							#Voice effect.
-		frame	data/chars/andy/0395.png
+	@cmd 	soun0001 "vand0018.wav"
+		frame	data/chars/andy/andy0395	
 	delay	5
-		frame	data/chars/andy/0396.png
-		frame	data/chars/andy/0397.png
-		frame	data/chars/andy/0398.png
-		frame	data/chars/andy/0399.png
-		frame	data/chars/andy/0400.png
-		frame	data/chars/andy/0401.png
-		frame	data/chars/andy/0402.png
+		frame	data/chars/andy/andy0396		
+		frame	data/chars/andy/andy0397
+		frame	data/chars/andy/andy0398
+		frame	data/chars/andy/andy0399
+		frame	data/chars/andy/andy0400
+		frame	data/chars/andy/andy0401	
+		frame	data/chars/andy/andy0402		
 	delay	50
-		frame	data/chars/andy/0403.png
+		frame	data/chars/andy/andy0403
 	delay	5
 	@cmd	paus0001 0 0
-	@cmd	soun0005 0 VOIS9	-1 1 0 0							#Voice effect.
-		frame	data/chars/andy/0404.png
+	@cmd 	soun0001 "vand0015.wav"
+		frame	data/chars/andy/andy0404
 	attack6  115 130 65 20 70 10 0 0 5
 	damageonlanding 0 1
 	dropv	 3 3 0
-	@cmd	soun0005 0 SNDEFF16	-1 1 0 0							#Sound effect.
-	@cmd 	bind0008 "effe0001" "effe0001" 13 1 65 52 1 1 openborconstant("ANI_FOLLOW7") 0 1
-		frame	data/chars/andy/0405.png
+	@cmd 	soun0001 "soun0015.wav"
+	@cmd 	bind0008 "effe0001" "effe0001" 13 1 65 52 1 1 openborconstant("ANI_FOLLOW7") 0 1	
+		frame	data/chars/andy/andy0405
 	delay	50
-		frame	data/chars/andy/0406.png
+		frame	data/chars/andy/andy0406
 	delay	10
 	move	-15
-		Attack1  0
-		frame	data/chars/andy/0448.png
+		frame	data/chars/andy/andy0448
 
 anim follow8
 
 	#SDM Zan'ei Ryuusei Ken
-
+	
 	jumpframe  	3 0 9 0 dust0002
 	followanim 	9
 	followcond 	2
@@ -2487,28 +2246,22 @@ anim follow8
 
 	delay	4
 	offset	100 200
-	bbox	74 122 31 76
-	@cmd	bind0008 "hype0003" "visual" 0  1 -25 90 -1 1 0 0 1
-		frame	data/chars/andy/0271.png
-		bbox  64  121  33  77
-		frame	data/chars/andy/0272.png
-	@cmd	soun0005 0 SNDEFF9	-1 1 0 0			#Sound effect.
-	@cmd	soun0005 0 VOIS17 -1 1 0 0
-		bbox  83  115  31  84
-		frame	data/chars/andy/0273.png
-	attack1	89 114 38 38 0
+	bbox	75 135 30 65	
+	@cmd	bind0008 "paus0001" "visual" 12 1 -25 90 -1 1 openborconstant("ANI_FOLLOW5") 0 1
+		frame	data/chars/andy/andy0271
+		frame	data/chars/andy/andy0272
+	@cmd	soun0001 "sand0003.wav"				
+		frame	data/chars/andy/andy0273
+	attack	75 135 30 65 0
 	grabin	1 25
 	delay	20
-		bbox  87  113  32  83
-		frame	data/chars/andy/0274.png
-	delay	16
-	attack1	0
+		frame	data/chars/andy/andy0274
+	delay	16	
+	attack	0
 	@cmd	velo0001 2 0 0
-		bbox  81  119  31  79
-		frame	data/chars/andy/0275.png
+		frame	data/chars/andy/andy0275		
 	@cmd	velo0001 0 0 0
-		bbox  84  108  31  90
-		frame	data/chars/andy/0114.png
+		frame	data/chars/andy/andy0114
 
 anim follow9
 
@@ -2521,240 +2274,210 @@ anim follow9
 	delay	10
 	offset	100 200
 	bbox	0
-	attack1	0
-		frame	data/chars/andy/0276.png
-		frame	data/chars/andy/0277.png
+	attack	0	
+		frame	data/chars/andy/andy0276
+		frame	data/chars/andy/andy0277
 	delay	5
-		frame	data/chars/andy/0212.png
+		frame	data/chars/andy/andy0212
 	offset	110 200
-		frame	data/chars/andy/0439.png
+		frame	data/chars/andy/andy0439
 	@cmd    hit0001 10 1 -1 0 2 0 0 1 0 0 0 0 0
-	attack1  140 125 60 20 0 0 0 0 5
+	attack  140 125 60 20 0 0 0 0 5
 	grabin	1 25
-		frame	data/chars/andy/0443.png
-	attack1	0
-		frame	data/chars/andy/0439.png
+		frame	data/chars/andy/andy0443
+	attack	0
+		frame	data/chars/andy/andy0439
 	delay	4
-	offset	135 200
-		frame	data/chars/andy/0115.png
-		frame	data/chars/andy/0116.png
-	attack1  140 125 60 20 0 0 0 0 5
-		frame	data/chars/andy/0117.png
-		frame	data/chars/andy/0118.png
+	offset	135 200						
+		frame	data/chars/andy/andy0115
+		frame	data/chars/andy/andy0116		
+	attack  140 125 60 20 0 0 0 0 5
+		frame	data/chars/andy/andy0117	
+		frame	data/chars/andy/andy0118
 	move	0
-	attack1	0
-		frame	data/chars/andy/0119.png
-		frame	data/chars/andy/0117.png
-		frame	data/chars/andy/0116.png
-		frame	data/chars/andy/0115.png
-	move	-10
-	offset	100 200
-	@cmd	soun0005 0 VOIATKM	-1 1 0 0			#Voice effect.
-		frame	data/chars/andy/0120.png
+	attack	0
+		frame	data/chars/andy/andy0119	
+		frame	data/chars/andy/andy0117	
+		frame	data/chars/andy/andy0116
+		frame	data/chars/andy/andy0115
+	move	-10	
+	offset	100 200	
+	@cmd 	soun0001 "vand0001.wav"					
+		frame	data/chars/andy/andy0120
 	move	0
-		frame	data/chars/andy/0121.png
+		frame	data/chars/andy/andy0121
 	delay	2
-	attack1  100 105 60 20 0 0 0 0 5
-		frame	data/chars/andy/0122.png
-	attack1	0
-		frame	data/chars/andy/0122.png
+	attack  100 105 60 20 0 0 0 0 5	
+		frame	data/chars/andy/andy0122
+	move	0
+	delay	2
+	attack	0
+		frame	data/chars/andy/andy0122
 	delay	6
-	attack1  100 105 60 20 0 0 0 0 5
-		frame	data/chars/andy/0123.png
-	attack1	0
-		frame	data/chars/andy/0124.png
-		frame	data/chars/andy/0125.png
-		frame	data/chars/andy/0126.png
-		frame	data/chars/andy/0391.png
+	attack  100 105 60 20 0 0 0 0 5
+		frame	data/chars/andy/andy0123
+	attack	0
+		frame	data/chars/andy/andy0124
+		frame	data/chars/andy/andy0125
+		frame	data/chars/andy/andy0126
+		frame	data/chars/andy/andy0391
 	move	-10
-		frame	data/chars/andy/0271.png
+		frame	data/chars/andy/andy0271
 	move	0
-		frame	data/chars/andy/0272.png
+		frame	data/chars/andy/andy0272
 	@cmd    hit0001 20 1 -1 0 2 0 0 1 0 0 0 0 0
-		frame	data/chars/andy/0273.png
+		frame	data/chars/andy/andy0273	
 	delay	10
-	attack1  140 125 60 20 0 0 0 0 10
-	@cmd	soun0005 0 SNDEFF7	-1 1 0 0			#Sound effect.
+	attack  140 125 60 20 0 0 0 0 10
+	@cmd 	soun0001 "sand0001.wav"
 	@cmd	bind0008 "effe0001" "effe0001" 13 1 90 38 1 1 openborconstant("ANI_FOLLOW6") 0 1
-		frame	data/chars/andy/0566.png
+		frame	data/chars/andy/andy0566
 	delay	7
-	attack1	0
-		frame	data/chars/andy/0273.png
-		frame	data/chars/andy/0271.png
-		frame	data/chars/andy/0272.png
-		frame	data/chars/andy/0273.png
+	attack	0
+		frame	data/chars/andy/andy0273
+		frame	data/chars/andy/andy0271
+		frame	data/chars/andy/andy0272
+		frame	data/chars/andy/andy0273	
 	delay	10
-	attack1  140 125 60 20 0 0 0 0 10
-	@cmd	soun0005 0 SNDEFF7	-1 1 0 0			#Sound effect.
+	attack  140 125 60 20 0 0 0 0 10
+	@cmd 	soun0001 "sand0001.wav"
 	@cmd	bind0008 "effe0001" "effe0001" 13 1 90 38 1 1 openborconstant("ANI_FOLLOW6") 0 1
-		frame	data/chars/andy/0566.png
-	attack1	0
+		frame	data/chars/andy/andy0566
+	attack	0
 	delay	7
-		frame	data/chars/andy/0273.png
-	move	-5
-	@cmd    hit0001 0 -2 0 0 0 0 0 0 0 0 0 0 0
-		frame	data/chars/andy/0212.png
+		frame	data/chars/andy/andy0273	
+	move	-5	
+	@cmd    hit0001 0 -2 0 0 0 0 0 0 0 0 0 0 0	
+		frame	data/chars/andy/andy0212
 	move	0
-		frame	data/chars/andy/0391.png
-		frame	data/chars/andy/0392.png
+		frame	data/chars/andy/andy0391
+		frame	data/chars/andy/andy0392
 	@cmd 	paus0001 1 1000
-		frame	data/chars/andy/0393
-		frame	data/chars/andy/0394
+		frame	data/chars/andy/andy0393
+		frame	data/chars/andy/andy0394
 	delay	15
-	@cmd	soun0005 0 VOIVIC	1 1 0 0							#Voice effect.
-		frame	data/chars/andy/0395
+	@cmd 	soun0001 "vand0018.wav"
+		frame	data/chars/andy/andy0395	
 	delay	5
-		frame	data/chars/andy/0396
-		frame	data/chars/andy/0397
-		frame	data/chars/andy/0398
-		frame	data/chars/andy/0399
-		frame	data/chars/andy/0400
-		frame	data/chars/andy/0401
-		frame	data/chars/andy/0402
+		frame	data/chars/andy/andy0396		
+		frame	data/chars/andy/andy0397
+		frame	data/chars/andy/andy0398
+		frame	data/chars/andy/andy0399
+		frame	data/chars/andy/andy0400
+		frame	data/chars/andy/andy0401	
+		frame	data/chars/andy/andy0402		
 	delay	50
-		frame	data/chars/andy/0403
+		frame	data/chars/andy/andy0403
 	delay	5
 	@cmd	paus0001 0 0
-	@cmd	soun0005 0 VOIS9	-1 1 0 0							#Voice effect.
-		frame	data/chars/andy/0404
+	@cmd 	soun0001 "vand0015.wav"
+		frame	data/chars/andy/andy0404
 	attack6  115 130 65 20 100 10 0 0 5
 	damageonlanding 0 1
 	dropv	 3 3 0
-	@cmd	soun0005 0 VOIS9	-1 1 0 0							#Voice effect.
-	@cmd 	bind0008 "effe0001" "effe0001" 14 1 65 52 1 1 openborconstant("ANI_FOLLOW7") 0 1
-		frame	data/chars/andy/0405
+	@cmd 	soun0001 "soun0015.wav"
+	@cmd 	bind0008 "effe0001" "effe0001" 14 1 65 52 1 1 openborconstant("ANI_FOLLOW7") 0 1	
+		frame	data/chars/andy/andy0405
 	delay	50
-		frame	data/chars/andy/0406
+		frame	data/chars/andy/andy0406
 	delay	10
 	move	-15
-		frame	data/chars/andy/0448
+		frame	data/chars/andy/andy0448
 
 anim follow51
-
+	
 	#Defense poses
 
 	loop	1
 	delay	-100
 	offset	100 170
-	bbox	85  84  26  76
-		frame	data/chars/andy/0507.png				#0	Grabbed.
-		bbox  69  80  27  76
-		frame	data/chars/andy/0508.png				#1	Grabbed Pain.
-		bbox  63  142  84  28
-		frame	data/chars/andy/0509.png				#2	Horizontal Up.
-		bbox  60  135  78  26
-		frame	data/chars/andy/0510.png				#3	Horizontal Down.
-		bbox  70  75  36  74
-		frame	data/chars/andy/0511.png				#4	Vertical Up.
-		bbox  81  94  29  71
-		frame	data/chars/andy/0512.png				#5	Vertical Down.
-		bbox  61  97  51  56
-		frame	data/chars/andy/0513.png				#6	Tilt Up.
-		bbox  74  95  49  57
-		frame	data/chars/andy/0514.png				#7	Tilt Down.
-		bbox  86  106  32  69
-		frame	data/chars/andy/0515.png				#8	Vertical Down pain.
-		bbox  50  147  95  22
-		frame	data/chars/andy/0516.png				#9	Fall Up.
-		bbox  51  141  83  28
-		frame	data/chars/andy/0517.png				#10	Fall Up Pain.
-		bbox  50  136  76  31
-		frame	data/chars/andy/0518.png				#11	Falling Up.
-		bbox  61  108  52  61
-		frame	data/chars/andy/0519.png				#12	Falling Up tilted.
-		bbox  51  130  69  48
-		frame	data/chars/andy/0520.png				#13	Horizontal Up Pain.
-		bbox  76  87  38  73
-		frame	data/chars/andy/0587.png				#14	Middle pain.
+	bbox	0
+		frame	data/chars/andy/andy0507				#0	Grabbed.
+		frame	data/chars/andy/andy0508				#1	Grabbed Pain.
+		frame	data/chars/andy/andy0509				#2	Horizontal Up.
+		frame	data/chars/andy/andy0510				#3	Horizontal Down.
+		frame	data/chars/andy/andy0511				#4	Vertical Up.
+		frame	data/chars/andy/andy0512				#5	Vertical Down.
+		frame	data/chars/andy/andy0513				#6	Tilt Up.
+		frame	data/chars/andy/andy0514				#7	Tilt Down.
+		frame	data/chars/andy/andy0515				#8	Vertical Down pain.
+		frame	data/chars/andy/andy0516				#9	Fall Up.
+		frame	data/chars/andy/andy0517				#10	Fall Up Pain.
+		frame	data/chars/andy/andy0518				#11	Falling Up.
+		frame	data/chars/andy/andy0519				#12	Falling Up tilted.
+		frame	data/chars/andy/andy0520				#13	Horizontal Up Pain.
+		frame	data/chars/andy/andy0587				#14	Middle pain.
 
-anim follow70
+anim follow70	
 
-	#Taunt.
+	#Taunt.	
 
 	delay	10
 	offset	100 200
-	bbox	90 96 24 102
-		frame	data/chars/andy/0091.png
-		bbox  81  96  21  102
-		frame	data/chars/andy/0092.png
-		bbox  70  97  24  101
-		frame	data/chars/andy/0093.png
-		bbox  65  96  26  102
-		frame	data/chars/andy/0094.png
-	@cmd	soun0005 0 VOITAU	-1 1 0 0							#Voice effect.
-		bbox  60  97  27  101
-		frame	data/chars/andy/0095.png
-		frame	data/chars/andy/0096.png
-		frame	data/chars/andy/0097.png
-		frame	data/chars/andy/0098.png
-		frame	data/chars/andy/0099.png
-		frame	data/chars/andy/0100.png
-		frame	data/chars/andy/0101.png
-		frame	data/chars/andy/0100.png
-		frame	data/chars/andy/0101.png
-		bbox  65  96  25  102
-		frame	data/chars/andy/0102.png
-		bbox  82  94  19  104
-		frame	data/chars/andy/0103.png
-		bbox  89  95  26  102
-		frame	data/chars/andy/0104.png
+	bbox	75 135 30 65
+		frame	data/chars/andy/andy0091
+		frame	data/chars/andy/andy0092	
+		frame	data/chars/andy/andy0093
+		frame	data/chars/andy/andy0094
+	@cmd 	soun0001 "vand0016.wav"			#Voice effect.
+		frame	data/chars/andy/andy0095
+		frame	data/chars/andy/andy0096
+		frame	data/chars/andy/andy0097
+		frame	data/chars/andy/andy0098
+		frame	data/chars/andy/andy0099	
+		frame	data/chars/andy/andy0100
+		frame	data/chars/andy/andy0101
+		frame	data/chars/andy/andy0100
+		frame	data/chars/andy/andy0101
+		frame	data/chars/andy/andy0102
+		frame	data/chars/andy/andy0103
+		frame	data/chars/andy/andy0104
 	delay	12
 	move	10
-		bbox  70  101  25  97
-	frame	data/chars/andy/0009.png
+	frame	data/chars/andy/andy0009
 	move	-5
-		frame	data/chars/andy/0008.png
-		bbox  70  104  28  94
-		frame	data/chars/andy/0007.png
+		frame	data/chars/andy/andy0008
+		frame	data/chars/andy/andy0007
+		frame	data/chars/andy/andy0002
 
 anim follow71
 
-	#Victory 1.
+	#Victory 1.	
 
 	delay	10
 	offset	100 200
-	bbox	72 107 31 92
-		frame	data/chars/andy/0060.png
-		bbox  72  84  28  114
-		frame	data/chars/andy/0061.png
-	@cmd	soun0005 0 VOIVIC	0 1 0 0							#Voice effect.
-		bbox  73  90  29  108
-		frame	data/chars/andy/0062.png
-		frame	data/chars/andy/0063.png
+	bbox	75 135 30 65
+		frame	data/chars/andy/andy0060
+		frame	data/chars/andy/andy0061
+	@cmd 	soun0001 "vand0017.wav"			#Voice effect.
+		frame	data/chars/andy/andy0062
+		frame	data/chars/andy/andy0063
 	delay	50
-		frame	data/chars/andy/0064.png
-	delay	10
-		bbox  80  109  30  90
-		frame	data/chars/andy/0021.png
+		frame	data/chars/andy/andy0064
+	delay	10		
+		frame	data/chars/andy/andy0021
+		frame	data/chars/andy/andy0112
 
 anim follow72
 
-	#Victory 2.
+	#Victory 2.	
 
 	delay	10
 	offset	100 200
-	bbox	79 110 28 89
-		frame	data/chars/andy/0021.png
-	@cmd	soun0005 0 VOIVIC	1 1 0 0							#Voice effect.
-		bbox  92  103  29  96
-		frame	data/chars/andy/0065.png
-		bbox  84  104  27  94
-		frame	data/chars/andy/0066.png
-		bbox  90  112  25  86
-		frame	data/chars/andy/0067.png
-		bbox  95  116  26  82
-		frame	data/chars/andy/0068.png
-		bbox  95  118  27  81
-		frame	data/chars/andy/0069.png
+	bbox	75 135 30 65
+		frame	data/chars/andy/andy0021
+	@cmd 	soun0001 "vand0018.wav"			#Voice effect.
+		frame	data/chars/andy/andy0065
+		frame	data/chars/andy/andy0066
+		frame	data/chars/andy/andy0067
+		frame	data/chars/andy/andy0068
+		frame	data/chars/andy/andy0069
 	delay	50
-		frame	data/chars/andy/0070.png
+		frame	data/chars/andy/andy0070
 	delay	10
-		bbox  94  116  27  83
-		frame	data/chars/andy/0068.png
-		bbox  90  114  27  85
-		frame	data/chars/andy/0067.png
-		bbox  82  110  26  88
-		frame	data/chars/andy/0021.png
+		frame	data/chars/andy/andy0068
+		frame	data/chars/andy/andy0067
+		frame	data/chars/andy/andy0021
 
 anim follow80
 
@@ -2762,17 +2485,14 @@ anim follow80
 
 	delay	30
 	offset	100 200
-	bbox	79 101 40 47
-	@cmd	ai0001 "blocking" 1 0 0
-		frame	data/chars/andy/0080.png
+	bbox	95 95 35 60
+	@cmd	ai0001 "blocking" 1 0 0 
+		frame	data/chars/andy/andy0080		
 	delay	12
 	@cmd	ai0001 "blocking" 0 0 0
-		bbox  82  87  27  79
-		frame	data/chars/andy/0044.png
-		bbox  81  87  26  88
-		frame	data/chars/andy/0045.png
-		bbox  82  87  26  102
-		frame	data/chars/andy/0046.png
+		frame	data/chars/andy/andy0044
+		frame	data/chars/andy/andy0045
+		frame	data/chars/andy/andy0046
 
 anim follow81
 
@@ -2780,30 +2500,24 @@ anim follow81
 
 	flipframe 1
 	fastattack 1
-
+	
 	delay	10
 	offset	100 200
-	bbox 79 89 34 53
-	@cmd	soun0005 0 VOIATKM	-1 1 0 0			#Sound effect.
-		frame	data/chars/andy/0325.png
-		bbox  76  90  28  57
-		frame 	data/chars/andy/0326.png
-	attack8	84 76 62 49 30 2 0 0 15
-		bbox  70  89  35  57
-		frame 	data/chars/andy/0327.png
-	attack8	95 111 58 45 30 2 0 0 15
+	bbox 95 95 35 60
+	@cmd 	soun0001 "vand0001.wav"					#Voice effect.
+		frame	data/chars/andy/andy0325
+		frame 	data/chars/andy/andy0326
+	attack8	75 70 70 45 30 2 0 0 15
+		frame 	data/chars/andy/andy0327
+	attack8	95 100 60 60 30 2 0 0 15
 	dropv   -2 2 0
-		bbox  74  92  32  65
-		frame 	data/chars/andy/0328.png
-		bbox  77  89  28  62
-		Attack1  0
-		frame 	data/chars/andy/0325.png
-		bbox  81  88  25  73
-		frame	data/chars/andy/0044.png
-		bbox  81  88  25  81
-		frame	data/chars/andy/0045.png
-		bbox  82  87  26  98
-		frame	data/chars/andy/0046.png
+		frame 	data/chars/andy/andy0328
+		frame 	data/chars/andy/andy0325
+	attack	0
+	delay	10
+		frame	data/chars/andy/andy0044
+		frame	data/chars/andy/andy0045
+		frame	data/chars/andy/andy0046
 
 anim follow82
 
@@ -2812,31 +2526,19 @@ anim follow82
 	otg	1
 	range   -75 75
 	fastattack 1
-		delay  8
-		offset  100  200
-		bbox  94  114  27  85
-		Attack1  0
-		Attack1  0
-	frame  data/chars/andy/0527.png
 
 	delay	6
-	bbox	102 114 26 85
-	@cmd	soun0005 0 VOIATKL	-1 1 0 0			#Voice effect.
-		frame	data/chars/andy/0524.png
-		bbox  102  128  27  71
-		frame	data/chars/andy/0525.png
-	attack9 110 165 35 34 15 0
-	staydown -1000 0
+	offset	100 200
+	bbox	75 110 35 90
+	@cmd 	soun0001 "vand0008.wav"				#Voice effect
+		frame	data/chars/andy/andy0524	 
+		frame	data/chars/andy/andy0525
+	attack9 100 165 45 60 15 0	
+	staydown -500 0
 	delay	15
-		bbox  102  132  31  67
-		frame	data/chars/andy/0526.png
-		bbox  102  128  27  71
-		Attack1  0
-		Attack1  0
-	frame  data/chars/andy/0525.png
-		delay  8
-		bbox  94  114  27  85
-	frame  data/chars/andy/0527.png
+		frame	data/chars/andy/andy0526
+	attack	0
+		frame	data/chars/andy/andy0527
 
 anim follow83
 
@@ -2847,152 +2549,118 @@ anim follow83
 
 	delay	6
 	offset	100 200
-	bbox	85 106 28 91
-	@cmd	soun0005 0 VOIATKL	-1 1 0 0			#Voice effect.
-		frame	data/chars/andy/0425.png
-	attack1	112 93 51 29 15 2 0 0 10
+	bbox	75 110 35 90
+	@cmd 	soun0001 "vand0008.wav"				#Voice effect
+		frame	data/chars/andy/andy0425
+	attack	105 90 60 32 15 2 0 0 10
 	dropv	2 3 0
 	damageonlanding 0 1
-		bbox  94  101  28  96
-		frame	data/chars/andy/0426.png
-	attack1	0
-		frame	data/chars/andy/0427.png
-		frame	data/chars/andy/0428.png
-		bbox  86  103  25  95
-		frame	data/chars/andy/0429.png
-
+		frame	data/chars/andy/andy0426
+	attack	0
+		frame	data/chars/andy/andy0427	
+		frame	data/chars/andy/andy0428
+		frame	data/chars/andy/andy0429
+	
 anim follow84
 
-	#Side Dodge (up) attack.
+	#Side Dodge (up) attack.	
 
 	fastattack 1
 
 	delay	6
 	offset	100 200
-	bbox	75 107 26 92
-	@cmd	soun0005 0 VOIATKL	-1 1 0 0			#Voice effect.
-		frame	data/chars/andy/0553.png
-		bbox  76  132  41  65
-		frame	data/chars/andy/0554.png
-		bbox  72  139  42  58
-		frame	data/chars/andy/0555.png
-		bbox  76  131  42  66
-		frame	data/chars/andy/0556.png
-		bbox  103  104  26  94
-		frame	data/chars/andy/0557.png
-	attack7 120 125 74 20 20 2 0 0 10
+	bbox	75 110 35 90
+	@cmd 	soun0001 "vand0008.wav"				#Voice effect
+		frame	data/chars/andy/andy0553	 
+		frame	data/chars/andy/andy0554
+		frame	data/chars/andy/andy0555	
+		frame	data/chars/andy/andy0556
+		frame	data/chars/andy/andy0557
+	attack7 120 126 75 14 20 2 0 0 10
 	dropv	3 1 0.5
-		delay  8
-		frame	data/chars/andy/0558.png
-	attack1	0
-		delay  7
-		bbox  108  100  23  98
-		move  -11
-		frame	data/chars/andy/0129.png
-		bbox  102  100  28  97
-		move  0
-	frame  data/chars/andy/0128.png
-		bbox  90  100  23  98
-		frame	data/chars/andy/0127.png
-
+		frame	data/chars/andy/andy0558
+	attack	0
+		frame	data/chars/andy/andy0129
+		frame	data/chars/andy/andy0127
+	
 anim follow85
-
+	
 	#Side Dodge (down) attack.
 
 	fastattack 1
 
 	delay	6
 	offset	100 200
-	bbox	76 109 26 90
-	@cmd	soun0005 0 VOIATKL	-1 1 0 0			#Voice effect.
-		frame	data/chars/andy/0543.png
-		bbox  70  107  26  91
-		frame	data/chars/andy/0544.png
-		bbox  63  107  32  91
-		frame	data/chars/andy/0545.png
-		frame	data/chars/andy/0546.png
-	attack6 80 114 65 31 20 2 0 0 10
+	bbox	75 110 35 90
+	@cmd 	soun0001 "vand0008.wav"				#Voice effect
+		frame	data/chars/andy/andy0543	 
+		frame	data/chars/andy/andy0544
+		frame	data/chars/andy/andy0545	
+		frame	data/chars/andy/andy0546
+	attack6 80 115 65 34 20 2 0 0 10
 	dropv	3 1 -0.5
-		delay  7
-		bbox  58  103  30  94
-		frame	data/chars/andy/0547.png
-	attack1	0
-		bbox  64  107  34  89
-		frame	data/chars/andy/0548.png
-		bbox  55  109  41  89
-		frame	data/chars/andy/0549.png
-		bbox  62  99  27  100
-		frame	data/chars/andy/0550.png
-		frame	data/chars/andy/0551.png
-		bbox  75  102  28  97
-		frame	data/chars/andy/0552.png
-		bbox  81  114  29  84
-	frame  data/chars/andy/0022.png
-	frame  data/chars/andy/0021.png
+		frame	data/chars/andy/andy0547
+	attack	0
+		frame	data/chars/andy/andy0548
+		frame	data/chars/andy/andy0549
+		frame	data/chars/andy/andy0550
+		frame	data/chars/andy/andy0551
+		frame	data/chars/andy/andy0552
 
 anim follow86
-
-	#Side Dodge (up) step in attack.
+	
+	#Side Dodge (up) step in attack.	
 
 	jumpframe 2 1.5 0.6 0.9 dust0002
-	landframe 6
+	landframe 6 dust0003
 	fastattack 1
-
+	
 	delay	5
 	offset	100 200
-	bbox	78 122 27 74
-		frame	data/chars/andy/0024.png
-		bbox  76  133  26  64
-		frame 	data/chars/andy/0494.png
-	bbox	83 83 22 106
-	@cmd	soun0005 0 VOIATKM	-1 1 0 0			#Sound effect.
-		frame	data/chars/andy/0042.png
-		bbox  85  104  29  47
-		frame	data/chars/andy/0495.png
-		bbox  86  101  27  47
-		frame	data/chars/andy/0496.png
+	bbox	75 135 30 65
+		frame	data/chars/andy/andy0024	
+		frame 	data/chars/andy/andy0494
+	bbox	95 95 35 60
+	@cmd 	soun0001 "vand0001.wav"					
+		frame	data/chars/andy/andy0042
+		frame	data/chars/andy/andy0495
+		frame	data/chars/andy/andy0496
 	delay	-1
-	attack1  85 86 35 68 12 0 0 0 20
-		bbox  83  91  25  51
-		frame	data/chars/andy/0497.png
+	attack  80 85 45 75 12 0 0 0 20 
+		frame	data/chars/andy/andy0497
 	delay	5
-	bbox	76 133 30 65
-	attack1	0
-		frame	data/chars/andy/0498.png
-		bbox  78  133  27  65
-		frame	data/chars/andy/0025.png
-		bbox  78  121  28  77
-		frame	data/chars/andy/0024.png
+	bbox	75 135 30 65
+	attack	0
+		frame	data/chars/andy/andy0498
+		frame	data/chars/andy/andy0025
+		frame	data/chars/andy/andy0024
 
 anim follow87
 
-	#Side dodge (down) step in attack.
+	#Side dodge (down) step in attack.	
 
 	jumpframe 2 1.5 0.6 -0.9 dust0002
-	landframe 5
+	landframe 5 dust0003
 	fastattack 1
-
+	
 	delay	4
 	offset	100 200
-	bbox	78 121 27 78
-		frame	data/chars/andy/0024.png
-		bbox  67  141  26  57
-		frame	data/chars/andy/0501.png
-	bbox	86 97 27 78
-	@cmd	soun0005 0 VOIATKM	-1 1 0 0			#Sound effect.
-		frame	data/chars/andy/0502.png
-		frame	data/chars/andy/0503.png
+	bbox	75 135 30 65
+		frame	data/chars/andy/andy0024
+		frame	data/chars/andy/andy0501	
+	bbox	95 95 35 60
+	@cmd 	soun0001 "vand0001.wav"					
+		frame	data/chars/andy/andy0502
+		frame	data/chars/andy/andy0503
 	delay	-1
-	attack1  100 102 37 59 12 0 0 0 20
-		frame	data/chars/andy/0506.png
+	attack  80 100 60 70 12 0 0 0 20 
+		frame	data/chars/andy/andy0506
 	delay	4
-	bbox	97 134 27 66
-	attack1	0
-		frame	data/chars/andy/0306.png
-		bbox  101  129  29  69
-		frame	data/chars/andy/0307.png
-		bbox  94  122  29  78
-		frame	data/chars/andy/0308.png
+	bbox	75 135 30 65
+	attack	0
+		frame	data/chars/andy/andy0306
+		frame	data/chars/andy/andy0307
+		frame	data/chars/andy/andy0308
 
 anim follow88
 
@@ -3001,24 +2669,24 @@ anim follow88
 	energycost	15
 	mponly		1
 	fastattack 	1
-
+	
 	delay	6
 	offset 100 200
-	bbox	0 0 0 0
-		frame	data/chars/andy/0007.png
-		frame	data/chars/andy/0212.png
-		frame	data/chars/andy/0391.png
-		frame	data/chars/andy/0392.png
-		frame	data/chars/andy/0393.png
-		frame	data/chars/andy/0394.png
+	bbox	0 0 0 0	
+		frame	data/chars/andy/andy0007
+		frame	data/chars/andy/andy0212
+		frame	data/chars/andy/andy0391
+		frame	data/chars/andy/andy0392
+		frame	data/chars/andy/andy0393
+		frame	data/chars/andy/andy0394
 	delay	15
-		frame	data/chars/andy/0395.png
-		frame	data/chars/andy/0396.png
-		frame	data/chars/andy/0392.png
+		frame	data/chars/andy/andy0395
+		frame	data/chars/andy/andy0396
+		frame	data/chars/andy/andy0392
 	delay	10
 	bbox	75 110 35 90
-		frame	data/chars/andy/0021.png
-		frame	data/chars/andy/0007.png
+		frame	data/chars/andy/andy0021
+		frame	data/chars/andy/andy0007
 
 anim follow89
 
@@ -3029,51 +2697,32 @@ anim follow89
 
 	delay	10
 	offset	100 200
-	bbox	81 88 30 67
-	@cmd	soun0005 0 VOIATKM	-1 1 0 0			#Sound effect.
-		frame	data/chars/andy/0176.png
-		bbox  70  90  33  59
-		frame	data/chars/andy/0177.png
+	bbox	95 95 35 60
+	@cmd 	soun0001 "vand0002.wav"					#Voice effect.
+		frame	data/chars/andy/andy0176
+		frame	data/chars/andy/andy0177
 	delay	100
-	attack1  99 125 63 37 10 0
-		bbox  70  91  36  57
-		frame	data/chars/andy/0178.png
-		frame	data/chars/andy/0179.png
+	attack  90 120 70 30 10 0
+		frame	data/chars/andy/andy0178
+		frame	data/chars/andy/andy0179
 
 anim follow91
 
 	#Parry
-
+	
 	fastattack 1
-
+	
 	delay	10
 	offset	100 200
-	bbox	0
-	@cmd	soun0005 0 VOIATKM	-1 1 0 0			#Sound effect.
-		Attack1  0
-		frame	data/chars/andy/0569.png
+	bbox	0	
+	@cmd 	soun0001 "vand0002.wav"					#Voice effect.
+		frame	data/chars/andy/andy0569
 	delay	5
-		frame	data/chars/andy/0568.png
+		frame	data/chars/andy/andy0568
 
 anim follow92
 
-	#Air parry.
-
-	delay	30
-	offset	100 200
-	bbox	80 99 40 47
-		frame	data/chars/andy/0080.png
-	delay	12
-		bbox  85  90  24  74
-		frame	data/chars/andy/0044.png
-		bbox  85  88  21  91
-		frame	data/chars/andy/0045.png
-		bbox  86  87  20  93
-		frame	data/chars/andy/0046.png
-
-anim follow94
-
-	#Power up
+	#Power up	
 
 	#custentity andypa
 	#spawnframe 6 240 136 0 1
@@ -3081,24 +2730,24 @@ anim follow94
 	delay	8
 	offset	100 200
 	bbox	0
-		frame	data/chars/andy/0024.png
-		frame	data/chars/andy/0269.png
-		frame	data/chars/andy/0268.png
-		frame	data/chars/andy/0269.png
-		frame	data/chars/andy/0024.png
+		frame	data/chars/andy/andy0024	
+		frame	data/chars/andy/andy0269
+		frame	data/chars/andy/andy0268
+		frame	data/chars/andy/andy0269	
+		frame	data/chars/andy/andy0024
 	@cmd	vars0002 STATUS 1
-		frame	data/chars/andy/0339.png
-	@cmd	soun0005 0 VOIATKL	-1 1 0 0		#Voice effect.
+		frame	data/chars/andy/andy0339
+	@cmd	soun0001 "vand0003.wav"
 	@cmd	summ0001 "andypa" "andypa" -1 0 240 0 220 1 openborconstant("ANI_FOLLOW1") 0 1
-		frame	data/chars/andy/0340.png
-		frame	data/chars/andy/0341
-		frame	data/chars/andy/0342
-		frame	data/chars/andy/0343
-		frame	data/chars/andy/0344
-		frame	data/chars/andy/0345
-		frame	data/chars/andy/0346
-		frame	data/chars/andy/0347
-		frame	data/chars/andy/0340
+		frame	data/chars/andy/andy0340
+		frame	data/chars/andy/andy0341
+		frame	data/chars/andy/andy0342
+		frame	data/chars/andy/andy0343
+		frame	data/chars/andy/andy0344
+		frame	data/chars/andy/andy0345
+		frame	data/chars/andy/andy0346
+		frame	data/chars/andy/andy0347
+		frame	data/chars/andy/andy0340	
 
 #*****Grappling****************************************************************************
 
@@ -3107,184 +2756,79 @@ anim grab
 	loop	1
 	delay	3
 	offset	94 200
-	bbox	87 103 24 94
+	bbox	75 105 40 95
 	@cmd	bind0002 40 0 0
-		frame	data/chars/andy/0429.png
+		frame	data/chars/andy/andy0429
 	offset	96 200
-		frame	data/chars/andy/0429.png
+		frame	data/chars/andy/andy0429
 	offset	94 200
-		frame	data/chars/andy/0429.png
+		frame	data/chars/andy/andy0429
 	offset	96 200
-		frame	data/chars/andy/0429.png
+		frame	data/chars/andy/andy0429
 	delay	50
 	offset	94 200
-		frame	data/chars/andy/0429.png
+		frame	data/chars/andy/andy0429	
 
 anim grabattack
 
 	#Palm
-
+	
 	fastattack 1
 
 	delay	6
 	offset	100 200
-	bbox	84 106 27 90
-	@cmd	soun0005 0 VOIATKM	-1 1 0 0			#Sound effect.
-		frame	data/chars/andy/0120.png
-		bbox  93  106  29  90
-		frame	data/chars/andy/0121.png
-	attack1  126 108 32 17 8 0 0 0 20
-		bbox  96  104  33  93
-		frame	data/chars/andy/0122.png
-		bbox  94  102  27  96
-		Attack1  0
-		frame	data/chars/andy/0126.png
+	bbox	75 105 40 95
+	@cmd 	soun0001 "vand0001.wav"				#Voice effect.
+		frame	data/chars/andy/andy0120
+		frame	data/chars/andy/andy0121
+	attack  100 105 60 20 8 0 0 0 20
+		frame	data/chars/andy/andy0122
+		frame	data/chars/andy/andy0126
 
 anim grabattack2
 
 	#Leg-Cutter.
-
+	
 	fastattack 1
 
 	delay	4
 	offset	100 200
-	bbox	90 101 27 96
-	@cmd	soun0005 0 VOIATKL	-1 1 0 0			#Voice effect.
+	bbox	75 105 40 95
+	@cmd 	soun0001 "vand0008.wav"				#Voice effect.
 	move	-5
-		frame	data/chars/andy/0127.png
+		frame	data/chars/andy/andy0127
 	move	0
-		bbox  101  101  28  96
-		frame	data/chars/andy/0128.png
-	attack1	140 140 35 35 0 2 0 0 10
+		frame	data/chars/andy/andy0128
+	attack	140 140 35 35 0 2 0 0 10
 	dropv	2 -0.5 0
 	forcedirection 1
-		bbox  106  100  25  97
-		frame	data/chars/andy/0129.png
-	delay	3
-	attack1	0
-		frame	data/chars/andy/0128.png
-		bbox  89  109  31  89
-		frame	data/chars/andy/0223.png
-		frame	data/chars/andy/0224.png
-		frame	data/chars/andy/0225.png
-	@cmd	soun0005 0 VOIATKM	-1 1 0 0		#Voice effect.
-		bbox  96  108  34  90
-		frame	data/chars/andy/0226.png
-		bbox  94  108  33  90
-		frame	data/chars/andy/0227.png
-		frame	data/chars/andy/0228.png
-		delay  4
-		bbox  88  109  31  89
-		frame	data/chars/andy/0229.png
-		bbox  97  104  32  94
-		move  20
-		attack8  101  106  57  25  10  1  0  0  10
-		dropv   -2 -4 1
-	frame  data/chars/andy/0122.png
-	move	5
-	delay	8
-		bbox  68  115  33  82
-		Attack1  0
-		frame	data/chars/andy/0530.png
+		frame	data/chars/andy/andy0129
+	delay	2
+	attack	0
+		frame	data/chars/andy/andy0128
+		frame	data/chars/andy/andy0223
+		frame	data/chars/andy/andy0224
+		frame	data/chars/andy/andy0225
+	@cmd 	soun0001 "vand0002.wav"				#Voice effect.
+		frame	data/chars/andy/andy0226
+		frame	data/chars/andy/andy0227
+		frame	data/chars/andy/andy0228
+		frame	data/chars/andy/andy0229
+	move	25
+	attack8	115 100 75 45 10 0 0 0 10
+	dropv   -2 -4 1
+	delay	6
+		frame	data/chars/andy/andy0530		
 	move	0
 	delay	10
-		frame	data/chars/andy/0531.png
-		frame	data/chars/andy/0532.png
-		bbox  75  111  27  86
-		frame	data/chars/andy/0435.png
-		bbox  69  105  28  92
-		frame	data/chars/andy/0008.png
-		bbox  70  107  26  90
-		frame	data/chars/andy/0007.png
-#anim follow5
+		frame	data/chars/andy/andy0531
+		frame	data/chars/andy/andy0532
+	delay	10
+		frame	data/chars/andy/andy0435
+		frame	data/chars/andy/andy0008
+		frame	data/chars/andy/andy0007		
 
 anim grabforward
-
-	#Bakushin normal finish.
-
-	jumpframe 	8 3 -2 0
-	landframe 	12
-	flipframe 	15
-	quakeframe 	25 5 -2
-	fastattack 	1
-
-	delay	-100
-	offset	100 150
-	bbox	75 105 40 95
-	@cmd	bind0014 1 0 0 0 0														#Initialize bind variable.
-	@cmd bind0010 7 0 0 -2 -52 0 -1 HELDP 0
-		frame	data/chars/andy/0166.png
-	@cmd	soun0005 0 VOIATKM	-1 1 0 0											#Sound effect.
-	delay	-6
-	offset	102 150
-	@cmd bind0010 7 0 0 11 -48 0 -1 HELD 0
-		frame	data/chars/andy/0167.png
-	offset	100 150
-		frame	data/chars/andy/0167
-	offset	102 150
-		frame	data/chars/andy/0167
-	offset	100 150
-		frame	data/chars/andy/0167
-	delay	-4
-	offset	102 150
-		frame	data/chars/andy/0167
-	offset	100 150
-	delay	-12
-	#	bind0010 1 0 0 14 48 1 -1 HELD 0
-		frame	data/chars/andy/0171
-	delay	-20
-	offset	100 215
-	@cmd	soun0005 0 SNDEFF15	-1 1 0 0														#Sound effect.
-	@cmd	soun0005 0 VOIS1	-1 1 0 0														#voice effect.
-	@cmd	bind0010 1 0 0 11 9 1 -1 HELDP 0
-	#	bind0004 1 0 0 0 12 0																#Release bind, but retain bind record.
-	#	bind0008 "flash" "flash" 0 1 30 100 0 0 0 0 1										#Hit flash
-	#	bind0008 "effe0001" "effe0001" 13 1 30 100 0 0 openborconstant("ANI_FOLLOW9") 0 0	#Spawn "C4 on the face".
-		frame	data/chars/andy/0173
-	offset	100 210
-		frame	data/chars/andy/0176
-	offset	100 200
-		frame	data/chars/andy/0266
-	delay	-1000
-		frame	data/chars/andy/0267
-	delay	10
-		frame	data/chars/andy/0269
-		frame	data/chars/andy/0268														#Land frame.
-		frame	data/chars/andy/0269
-	move	-15
-		frame	data/chars/andy/0024														#Flipframe
-	move	0
-		frame	data/chars/andy/0489
-	delay	30
-		frame	data/chars/andy/0485
-	delay	6
-		frame	data/chars/andy/0486
-	@cmd	soun0005 0 VOIS0	-1 1 0 0														#voice effect.
-		frame	data/chars/andy/0487
-		frame	data/chars/andy/0488
-	delay	2
-		frame	data/chars/andy/0489
-		frame	data/chars/andy/0490
-		frame	data/chars/andy/0491
-		frame	data/chars/andy/0492
-	delay	3
-	@cmd	soun0005 0 SNDEFF16	-1 1 0 0														#Sound effect.
-	@cmd	soun0005 0 SNDEFF17	-1 1 0 0														#Sound effect.
-	@cmd	ani0008 SPAWN 2 openborconstant("ANI_FOLLOW10") 0 1 0 0 0 0 0						#Set "C4 in UR face" to explode animation and self kill.
-	@cmd	bind0004 1 0 0 0 11 0																#Release bind and clear bind record.
-	@cmd	dama0001 1 90 10 "ATK_NORMAL" 1 2 -2 0 0 0 0
-		frame	data/chars/andy/0493														#Quakeframe
-	delay	4
-		frame	data/chars/andy/0493
-		frame	data/chars/andy/0493
-	delay	10
-		frame	data/chars/andy/0492
-	delay	30
-		frame	data/chars/andy/0492
-	delay	10
-		frame	data/chars/andy/0007
-
-anim upper
 
 	#Gourin Kai
 
@@ -3297,355 +2841,300 @@ anim upper
 	delay	10
 	offset	100 200
 	bbox	75 105 40 95
-
-	@cmd	bind0014 1 0 0 0 0														#Initialize bind variable.
 	@cmd	dama0001 2 0 10 "ATK_NORMAL" 0 0 0 0 0 0 0
-	@cmd	bind0010 0 0 0 32 0 -2 -1 0	0
-		frame	data/chars/andy/0407.png
-		frame	data/chars/andy/0408.png
-	@cmd	bind0010 0 0 0 28 0 -2 -1 HELDMP 0
-		frame	data/chars/andy/0409.png
-	@cmd	bind0010 0 0 0 25 11 1 -1 7 0
-		frame	data/chars/andy/0410.png
+	@cmd	bind0010 1 32 0 -2 -1 0	
+		frame	data/chars/andy/andy0407	
+		frame	data/chars/andy/andy0408
+	@cmd	bind0010 1 28 0 -2 -1 HELDMP									
+		frame	data/chars/andy/andy0409
+	@cmd	bind0010 1 25 11 1 -1 7
+		frame	data/chars/andy/andy0410
 	delay	1
-	@cmd	soun0005 0 VOIATKH	-1 1 0 0			#Voice effect.
-		frame	data/chars/andy/0410.png
+	@cmd 	soun0001 "vand0019.wav"					#Voice effect.				
+		frame	data/chars/andy/andy0410
 	delay	-1
-	@cmd	bind0010 0 0 0 10 125 1 1 3 0
-		frame	data/chars/andy/0411
+	@cmd	bind0010 1 10 125 1 1 3
+		frame	data/chars/andy/andy0411
 	delay	12
-	@cmd	bind0010 0 0 0 10 98 1 0 3 0
-		frame	data/chars/andy/0412
+	@cmd	bind0010 1 10 98 1 0 3
+		frame	data/chars/andy/andy0412
 	delay	-1
-	@cmd	bind0010 0 0 0 20 30 1 0 3 0
-		frame	data/chars/andy/0413
+	@cmd	bind0010 1 20 30 1 0 3
+		frame	data/chars/andy/andy0413		
 	delay	4
-	@cmd	bind0010 0 0 0 20 0 1 1 10 0
-	@cmd    stat0001 1 0 -20 0 0 0 0 0				#Apply non lethal HP loss.
-		frame	data/chars/andy/0414
-		frame	data/chars/andy/0414
-		frame	data/chars/andy/0414
-		frame	data/chars/andy/0414
-		frame	data/chars/andy/0414
-	@cmd	bind0010 0 0 0 20 0 1 1 9 0
+	@cmd	bind0010 1 20 0 1 1 10
+	@cmd    stat0001 1 0 -20 0 0 0 0 0				#Apply non lethal HP loss.				
+		frame	data/chars/andy/andy0414
+		frame	data/chars/andy/andy0414
+		frame	data/chars/andy/andy0414
+		frame	data/chars/andy/andy0414
+		frame	data/chars/andy/andy0414
+	@cmd	bind0010 1 20 0 1 1 9	
 	delay	10
-		frame	data/chars/andy/0414
+		frame	data/chars/andy/andy0414
 		delay	8
-		frame	data/chars/andy/0270
-		frame	data/chars/andy/0415
-		frame	data/chars/andy/0416
+		frame	data/chars/andy/andy0270
+		frame	data/chars/andy/andy0415
+		frame	data/chars/andy/andy0416
 		delay	6
-	@cmd	soun0005 0 VOIATKL	-1 1 0 0			#Voice effect.
-		frame	data/chars/andy/0417
-		frame	data/chars/andy/0418
-	@cmd	bind0022 0 "flash" "flash" 0 1 30 10 0 0 0 0 1
-	@cmd	bind0004 1 0 0 0 11 0					#Release bind.
-	@cmd	dama0004 0 -2 20 10 openborconstant("ATK_NORMAL9") 1 2.5 3 0 0 0 0 0
-		frame	data/chars/andy/0419
-		frame	data/chars/andy/0420
-		frame	data/chars/andy/0421
+	@cmd 	soun0001 "vand0008.wav"					#Voice effect.				
+		frame	data/chars/andy/andy0417
+		frame	data/chars/andy/andy0418
+	@cmd	bind0008 "flash" "flash" 0 1 30 10 0 0 0 0 1		
+	@cmd	bind0004 1 0 0 0 11 0					#Release bind.		
+	@cmd	dama0001 1 20 10 "ATK_NORMAL9" 1 2.5 3 0 0 0 0
+		frame	data/chars/andy/andy0419
+		frame	data/chars/andy/andy0420
+		frame	data/chars/andy/andy0421
 	delay	8
-		frame	data/chars/andy/0420
-		frame	data/chars/andy/0419
-		frame	data/chars/andy/0418
-
+		frame	data/chars/andy/andy0420
+		frame	data/chars/andy/andy0419
+		frame	data/chars/andy/andy0418
+		
 anim grabbackward
 
 	#Kakaekomi Nage
 
 	flipframe 4
 	fastattack 1
-
+		
 	delay	10
 	offset	100 200
 	bbox	0
 	move	30
-	@cmd	bind0014 1 0 0 0 0														#Initialize bind variable.
-	@cmd	bind0010 0 0 0 15 0 -2 -1 HELD 0
-	@cmd	soun0005 0 VOIATKM	-1 1 0 0											#Voice effect.
-		frame	data/chars/andy/0103
+	@cmd	bind0010 1 15 0 -2 -1 HELD	
+	@cmd 	soun0001 "vand0002.wav"					#Voice effect.				
+		frame	data/chars/andy/andy0103
 	delay	20
-	move	0
-		frame	data/chars/andy/0430
+	move	0	
+		frame	data/chars/andy/andy0430
 	delay	12
-		frame	data/chars/andy/0431
+	move	0
+		frame	data/chars/andy/andy0431
 	delay	8
-	@cmd	bind0010 0 0 0 10 10 -2 -1 TLTDN 0
-		frame	data/chars/andy/0432
+	@cmd	bind0010 1 10 10 -2 -1 TLTDN
+		frame	data/chars/andy/andy0432
 	delay	4
 	move	-40
-	@cmd	bind0010 0 0 0 0 40 -2 -1 VERDN 0
-	@cmd	soun0005 0 VOIATKH	-1 1 0 0											#Voice effect.
-		frame	data/chars/andy/0433
+	@cmd	bind0010 1 0 40 -2 -1 VERDN
+	@cmd 	soun0001 "vand0019.wav"					#Voice effect.				
+		frame	data/chars/andy/andy0433
 	move	0
-	@cmd	bind0004 1 0 0 0 11 0													#Release bind.
-    @cmd	dama0004 0 -2  0 10 openborconstant("ATK_NORMAL5") 1 2.5 2.5 0 30 1 1 0	#Apply damage, falling properties and final animation values.
-	 		frame	data/chars/andy/0433
+	@cmd	bind0004 1 0 0 0 11 0						#Release bind.		
+	@cmd	dama0001 1 0 10 "ATK_NORMAL5" 1 3 3 0 30 1 1			#Put into thrown ani and apply damage on landing values.
+     		frame	data/chars/andy/andy0433
 	delay	10
-		frame	data/chars/andy/0434
-		frame	data/chars/andy/0528
-		frame	data/chars/andy/0529
-	bbox	75 110 35 90
-		frame	data/chars/andy/0008
-
+	move	0
+		frame	data/chars/andy/andy0434
+		frame	data/chars/andy/andy0528
+		frame	data/chars/andy/andy0529
+	bbox	75 110 35 90		
+		frame	data/chars/andy/andy0008		
+		
 anim grabup
 
 	#Gekiheki Haisui Shou
-
+	
 	jumpframe 3 0 0.2 0
-	fastattack 1
+	fastattack 1	
 
 	delay	5
 	offset	100 200
-	bbox	79 108 28 90
-		frame	data/chars/andy/0212.png
-		frame	data/chars/andy/0213.png
-		frame	data/chars/andy/0221.png
+	bbox	75 105 40 95
+		frame	data/chars/andy/andy0212
+		frame	data/chars/andy/andy0213
+		frame	data/chars/andy/andy0221
 	delay	8
-	attack1	110 125 33 14 0 0 0 0 15
+	attack	110 120 35 25 0 0 0 0 15
 	seal	2
 	@cmd 	hit0001 5 1 -1 0 0 0 0 0 50 0 0 0 0
-		bbox  95  109  29  89
-		frame	data/chars/andy/0437.png
-	attack1	0
-		bbox  86  118  29  80
-		frame	data/chars/andy/0438.png
-		bbox  103  121  31  77
-		move  -12
-		frame	data/chars/andy/0439.png
+		frame	data/chars/andy/andy0437
+	attack	0
+		frame	data/chars/andy/andy0438
+		frame	data/chars/andy/andy0439
 	offset	120 200
-		bbox  131  112  26  85
-		move  0
-		frame	data/chars/andy/0116.png
+		frame	data/chars/andy/andy0116
 	offset	100 200
-	attack1	115 133 57 16 0 0 0 0 15
+	attack	115 130 60 20 0 0 0 0 15
 	@cmd 	hit0001 5 1 -1 0 0 0 0 0 60 0 0 0 0
-		bbox  104  122  31  74
-		frame	data/chars/andy/0440.png
-	attack1	0
-		bbox  67  107  24  92
-		frame	data/chars/andy/0441.png
-		frame	data/chars/andy/0442.png
-	attack1	115 127 61 13 0 0 0 0 15
+		frame	data/chars/andy/andy0440
+	attack	0
+		frame	data/chars/andy/andy0441
+		frame	data/chars/andy/andy0442
+	attack	115 130 65 20 0 0 0 0 15
 	@cmd 	hit0001 5 1 -1 0 0 0 0 0 60 0 0 0 0
-		bbox  100  117  30  81
-		frame	data/chars/andy/0443.png
-	attack1	0
-		frame	data/chars/andy/0444.png
-	@cmd	soun0005 0 VOIATKH	-1 1 0 0		#Voice effect.
-		frame	data/chars/andy/0445.png
-	attack6	115 130 66 20 15 10 0 0 15
+		frame	data/chars/andy/andy0443
+	attack	0
+		frame	data/chars/andy/andy0444
+	@cmd 	soun0001 "vand0002.wav"
+		frame	data/chars/andy/andy0445
+	attack6	115 130 65 20 15 10 0 0 15
 	dropv	5 1 0
-		bbox  114  125  39  73
-		frame	data/chars/andy/0446.png
-		bbox  115  122  35  76
-		Attack1  0
-		frame	data/chars/andy/0447.png
-		bbox  99  121  32  77
-		frame	data/chars/andy/0448.png
-		bbox  78  107  25  91
-		frame	data/chars/andy/0449.png
+		frame	data/chars/andy/andy0446
+		frame	data/chars/andy/andy0447
+	attack	0
+		frame	data/chars/andy/andy0448
+		frame	data/chars/andy/andy0449
 	delay	5
-		bbox  69  99  27  98
-		frame	data/chars/andy/0010.png
-		frame	data/chars/andy/0009.png
-		bbox  71  102  24  95
-		frame	data/chars/andy/0008.png
-		bbox  71  103  26  94
-		frame	data/chars/andy/0007.png
-
+		frame	data/chars/andy/andy0010
+		frame	data/chars/andy/andy0009
+		frame	data/chars/andy/andy0008
+		frame	data/chars/andy/andy0007
+		
 anim grabdown
 
 	#Shiranui Spider Clutch
 
 	flipframe 4
 	jumpframe 13 4 -2 0
-	landframe 21
+	landframe 21 dust0003
 	fastattack 1
-
+		
 	delay	1
 	offset	100 200
-	bbox	101 104 29 93
+	bbox	75 110 35 90
 	move	15
 	@cmd	ani0007 1 "height" 115 500 "ANI_FOLLOW3"
-		frame	data/chars/andy/0115.png
+		frame	data/chars/andy/andy0115	
 	delay	8
-	@cmd	bind0014 1 0 0 0 0													#Initialize bind variable.
-	@cmd	bind0010 0 0 0 25 0 0 -1 HELD 0
+	@cmd	bind0010 1 25 0 0 -1 HELD
 	move	0
-		frame	data/chars/andy/0115.png
-		bbox  126  112  32  86
-		frame	data/chars/andy/0116.png
+		frame	data/chars/andy/andy0115	
+		frame	data/chars/andy/andy0116
 	move	50
-	@cmd	bind0010 0 0 0 -25 0 0 -1 HELD 0
-		bbox  75  114  42  76
-		frame	data/chars/andy/0142.png
-	move	-15
-	@cmd	bind0010 0 0 0 10 0 0 1 HELD 0
-		bbox  80  89  27  88
-		frame	data/chars/andy/0457.png
+	@cmd	bind0010 1 -25 0 0 -1 HELD
+		frame	data/chars/andy/andy0142
+	move	-15	
+	offset	100 200
+	@cmd	bind0010 1 10 0 0 1 HELD	
+		frame	data/chars/andy/andy0457	
 	delay	15
 	move	0
-	@cmd	soun0005 0 SNDPULLM	-1 1 0 0			#Sound effect.
-		bbox  69  93  34  66
-		frame	data/chars/andy/0453.png
+	offset	100 200
+	@cmd	soun0001 "soun0011.wav"
+		frame	data/chars/andy/andy0453
 	delay	5
 	offset	101 200
-		frame	data/chars/andy/0453.png
+	move	0
+		frame	data/chars/andy/andy0453
 	offset	100 200
-		frame	data/chars/andy/0453.png
+		frame	data/chars/andy/andy0453
 	offset	101 200
-		frame	data/chars/andy/0453.png
+		frame	data/chars/andy/andy0453
 	delay	12
 	offset	100 200
-	@cmd	soun0005 0 SNDHITBOM	-1 1 0 0										#Sound effect.
-		frame	data/chars/andy/0453.png
+	@cmd	soun0001 "soun0012.wav"
+		frame	data/chars/andy/andy0453
 	delay	30
-	@cmd	dama0004 0 0 35 0 openborconstant("ATK_NORMAL") 0 0 0 0 0 0 0 -1		#Apply damage, falling properties and final animation values.
-	@cmd	bind0010 0 0 0 10 0 -1 0 HELDP 0
-		bbox  55  94  28  57
-		frame	data/chars/andy/0454.png
-	delay	15
+	@cmd	bind0010 1 10 0 -1 0 HELDP
+	@cmd    stat0001  1 0 -40 0 0 0 0 0
+		frame	data/chars/andy/andy0454		
+	delay	15		
 	offset	115 200
-		bbox  76  91  31  61
-		frame	data/chars/andy/0167.png
-	@cmd	soun0005 0 VOIATKL	-1 1 0 0											#Voice effect.
-		frame	data/chars/andy/0171.png
+		frame	data/chars/andy/andy0167
+	@cmd 	soun0001 "vand0003.wav"
+		frame	data/chars/andy/andy0171
 	delay	12
 	offset	100 240
 	move	-20
-	@cmd	bind0008 "flash" "flash" 0 1 20 75 0 0 0 0 1
-	@cmd	bind0004 1 20 0 0 11 0													#Release bind.
-	@cmd	dama0004 0 -2 18 10 openborconstant("ATK_NORMAL") -1 2 2 0 0 0 0 0		#Apply damage, falling properties and final animation values.
-		bbox  74  114  36  58
-		frame	data/chars/andy/0209.png
+	@cmd	bind0008 "flash" "flash" 0 1 20 75 0 0 0 0 1		
+	@cmd	bind0004 1 20 0 0 11 0						#Release bind.		
+	@cmd	dama0001 1 20 10 "ATK_NORMAL" -1 2 2 0 0 0 0
+		frame	data/chars/andy/andy0209
 	delay	10
 	move	0
 	offset	100 230
-		bbox  68  109  52  42
-		frame	data/chars/andy/0263.png
+		frame	data/chars/andy/andy0263
 	offset	100 220
-		bbox  71  108  41  54
-		frame	data/chars/andy/0262.png
+		frame	data/chars/andy/andy0262
 	offset	100 210
-		bbox  82  101  37  51
-		frame	data/chars/andy/0049.png
+		frame	data/chars/andy/andy0049
 	offset	100 200
-		frame	data/chars/andy/0048.png
-		bbox  79  90  30  79
-		frame	data/chars/andy/0044.png
-		bbox  79  89  28  83
-		frame	data/chars/andy/0045.png
-	delay	-1
-		bbox  82  89  26  98
-		frame	data/chars/andy/0046.png
+		frame	data/chars/andy/andy0048
+		frame	data/chars/andy/andy0044
+		frame	data/chars/andy/andy0045
+	delay	-1	
+		frame	data/chars/andy/andy0046
 	delay	8
-	bbox	74 122 30 75
-		frame	data/chars/andy/0024.png
-		bbox  75  135  26  62
-		frame	data/chars/andy/0025.png
-		bbox  76  123  27  74
-		frame	data/chars/andy/0024.png
+	offset	100 200
+	bbox	75 135 30 65
+		frame	data/chars/andy/andy0024
+		frame	data/chars/andy/andy0025
+		frame	data/chars/andy/andy0024
 
 #*****Jumping******************************************************************************
-
+	
 anim jumpdelay
-
-	delay	5
+	
+	delay	18
 	offset	100 200
-	bbox	75 123 29 76
-		frame	data/chars/andy/0024.png
+	bbox	75 135 30 65
+		frame	data/chars/andy/andy0024
 	delay	1
-		frame	data/chars/andy/0024.png
-
+		frame	data/chars/andy/andy0024
+			
 anim jumpland
 
 	delay	8
 	offset	100 200
-	bbox	75 123 29 76
-		frame	data/chars/andy/0024.png
-		bbox  78  135  25  63
-		frame	data/chars/andy/0025.png
-		bbox  78  122  25  76
-		frame	data/chars/andy/0024.png
-
+	bbox	75 135 30 65
+		frame	data/chars/andy/andy0024
+		frame	data/chars/andy/andy0025
+		frame	data/chars/andy/andy0024		
+		
 anim jump
 
 	dropframe 1
-	cancel 	  0 3 0 d f a freespecial14			#Geni Shiranui
-	rangea	0 100
+	cancel 	  0 3 0 d f a freespecial14					#Geni Shiranui
 
-	delay	-1000
+	delay	-1
 	offset	100 200
-	bbox	83 86 22 92
-		frame	data/chars/andy/0042.png
+	bbox	95 95 35 60
+		frame	data/chars/andy/andy0042
 	delay	10
-		bbox  83  86  22  82
-		frame	data/chars/andy/0043.png
-		bbox  83  88  22  72
-		frame	data/chars/andy/0044.png
-		bbox  83  88  24  79
-		frame	data/chars/andy/0045.png
-		bbox  83  87  25  95
-		frame	data/chars/andy/0046.png
+		frame	data/chars/andy/andy0043
+		frame	data/chars/andy/andy0044
+		frame	data/chars/andy/andy0045
+		frame	data/chars/andy/andy0046	
 
 anim forwardjump
 
 	cancel 	  0 3 0 d f a freespecial14					#Geni Shiranui
-	dropframe 3
 
 	delay	8
 	offset	100 200
-	bbox	84 85 22 93
-		frame	data/chars/andy/0042.png
-		bbox  84  86  23  89
-		frame	data/chars/andy/0043.png
-	@cmd	ani0012 0 50 6
-		bbox  84  86  23  80
-		frame	data/chars/andy/0047.png
-	@cmd	ani0012 0 50 6
-		bbox  83  105  41  45
-		frame	data/chars/andy/0048.png
-		frame	data/chars/andy/0049.png
-		frame	data/chars/andy/0050.png
-		bbox  84  89  24  73
-		frame	data/chars/andy/0044.png
-		bbox  84  88  23  78
-		frame	data/chars/andy/0045.png
-		bbox  84  87  24  88
-		frame	data/chars/andy/0046.png
+	bbox	95 95 35 60
+		frame	data/chars/andy/andy0042
+		frame	data/chars/andy/andy0043
+		frame	data/chars/andy/andy0047
+		frame	data/chars/andy/andy0048
+		frame	data/chars/andy/andy0049
+		frame	data/chars/andy/andy0050
+		frame	data/chars/andy/andy0044
+		frame	data/chars/andy/andy0045
+		frame	data/chars/andy/andy0046
 
 anim runjump
 
-	dropframe 1
-
 	delay	8
 	offset	100 200
-	bbox	84 84 23 96
-		frame	data/chars/andy/0042.png
-		bbox  84  85  23  88
-		frame	data/chars/andy/0043.png
-	@cmd	ani0012 0 40 10
-		bbox  83  87  25  74
-		frame	data/chars/andy/0047.png
+	bbox	95 95 35 60
+		frame	data/chars/andy/andy0042
+		frame	data/chars/andy/andy0043
+		frame	data/chars/andy/andy0047
 	delay	6
-		bbox  82  105  43  45
-		frame	data/chars/andy/0048.png
-		frame	data/chars/andy/0049.png
-		frame	data/chars/andy/0050.png
-	@cmd	ani0012 0 40 10
-		frame	data/chars/andy/0193.png
-		frame	data/chars/andy/0048.png
-		frame	data/chars/andy/0049.png
-		frame	data/chars/andy/0050.png
-		bbox  82  89  25  71
-		frame	data/chars/andy/0044.png
-		bbox  82  89  25  82
-		frame	data/chars/andy/0045.png
-		bbox  83  88  25  87
-		frame	data/chars/andy/0046.png
-
-anim jumpattack
+		frame	data/chars/andy/andy0048
+		frame	data/chars/andy/andy0049
+		frame	data/chars/andy/andy0050
+		frame	data/chars/andy/andy0193
+		frame	data/chars/andy/andy0048
+		frame	data/chars/andy/andy0049
+		frame	data/chars/andy/andy0050
+		frame	data/chars/andy/andy0044
+		frame	data/chars/andy/andy0045
+		frame	data/chars/andy/andy0046	
+		
+anim jumpattack	
 
 	#Swipe
 
@@ -3654,26 +3143,20 @@ anim jumpattack
 
 	delay	6
 	offset	100 200
-	bbox	79 90 29 50
-	@cmd	soun0005 0 VOIATKM	-1 1 0 0			#Sound effect.
-		frame	data/chars/andy/0171.png
-		bbox  79  91  27  49
-		frame	data/chars/andy/0167.png
-	attack1	95 100 46 25 20 1
-		frame	data/chars/andy/0168.png
-		attack1  92  103  34  25  20  1
-		frame	data/chars/andy/0169.png
-	attack1	80  112  33  14
-		frame	data/chars/andy/0170.png
+	bbox	95 95 35 60
+	@cmd 	soun0001 "vand0001.wav"					#Voice effect.
+		frame	data/chars/andy/andy0171
+		frame	data/chars/andy/andy0167
+	attack	95 100 46 25 20 1
+		frame	data/chars/andy/andy0168
+		frame	data/chars/andy/andy0169
+	attack	0
+		frame	data/chars/andy/andy0170
 	delay	10
-		bbox  82  88  24  50
-		Attack1  0
-		frame	data/chars/andy/0044.png
-		bbox  83  89  24  71
-		frame	data/chars/andy/0045.png
-		bbox  83  87  26  92
-		frame	data/chars/andy/0046.png
-
+		frame	data/chars/andy/andy0044
+		frame	data/chars/andy/andy0045
+		frame	data/chars/andy/andy0046
+				
 anim jumpattack2
 
 	#Palm thrust
@@ -3683,16 +3166,16 @@ anim jumpattack2
 
 	delay	6
 	offset	100 200
-	bbox	80 91 28 48
-	@cmd	soun0005 0 VOIATKL	-1 1 0 0			#Voice effect.
-		frame	data/chars/andy/0171.png
-	attack1  102 106 38 33 20
-		bbox  81  91  26  49
-		frame	data/chars/andy/0174.png
-		frame	data/chars/andy/0174.png
-
+	bbox	95 95 35 60
+	@cmd 	soun0001 "vand0008.wav"					#Voice effect.
+		frame	data/chars/andy/andy0171
+	attack  100 105 40 35 20
+		frame	data/chars/andy/andy0174
+	attack  100 105 40 35 8
+		frame	data/chars/andy/andy0174
+			
 anim jumpattack3
-
+	
 	#Upward Flying kick
 
 	counterattack	1
@@ -3701,23 +3184,18 @@ anim jumpattack3
 
 	delay	8
 	offset	100 200
-	bbox	71 95 30 44
-	@cmd	soun0005 0 VOIATKL	-1 1 0 0			#Voice effect.
-		frame	data/chars/andy/0240.png
+	bbox	95 95 35 60
+	@cmd 	soun0001 "vand0008.wav"					#Voice effect.
+		frame	data/chars/andy/andy0240
 	delay	20
-	attack1  98 87 50 47 15 1
-		bbox  76  91  27  48
-		frame	data/chars/andy/0182.png
-	attack1	0
+	attack  70 120 65 35 15 1
+		frame	data/chars/andy/andy0182
+	attack	0
 	delay	8
-		bbox  72  93  30  47
-		frame	data/chars/andy/0240.png
-		bbox  80  90  28  70
-		frame	data/chars/andy/0044.png
-		bbox  81  89  26  79
-		frame	data/chars/andy/0045.png
-		bbox  83  88  26  90
-		frame	data/chars/andy/0046.png
+		frame	data/chars/andy/andy0240
+		frame	data/chars/andy/andy0044
+		frame	data/chars/andy/andy0045
+		frame	data/chars/andy/andy0046	
 
 anim jumpforward
 
@@ -3728,27 +3206,20 @@ anim jumpforward
 
 	delay	10
 	offset	100 200
-	bbox	80 88 25 58
-	@cmd	soun0005 0 VOIATKM	-1 1 0 0			#Sound effect.
-		frame	data/chars/andy/0176.png
-		bbox  69  88  33  52
-		frame	data/chars/andy/0177.png
+	bbox	95 95 35 60
+	@cmd 	soun0001 "vand0002.wav"					#Voice effect.
+		frame	data/chars/andy/andy0176
+		frame	data/chars/andy/andy0177
 	delay	20
-	attack1  93 124 67 27 15 1
-		bbox  68  93  35  49
-		frame	data/chars/andy/0181.png
+	attack  90 120 70 30 15 1
+		frame	data/chars/andy/andy0181
 	delay	8
-	attack1	0
-		bbox  69  89  35  54
-		frame	data/chars/andy/0177.png
-		bbox  83  92  25  64
-		frame	data/chars/andy/0175.png
-		bbox  83  89  23  72
-		frame	data/chars/andy/0044.png
-		bbox  83  89  23  80
-		frame	data/chars/andy/0045.png
-		bbox  83  88  25  88
-		frame	data/chars/andy/0046.png
+	attack	0
+		frame	data/chars/andy/andy0177
+		frame	data/chars/andy/andy0175
+		frame	data/chars/andy/andy0044
+		frame	data/chars/andy/andy0045
+		frame	data/chars/andy/andy0046
 
 anim runjumpattack
 
@@ -3760,44 +3231,44 @@ anim runjumpattack
 	delay	10
 	offset	100 200
 	bbox	95 95 35 60
-	@cmd	soun0005 0 VOIATKH	-1 1 0 0			#Sound effect.
-		frame	data/chars/andy/0176.png
-		frame	data/chars/andy/0177.png
-	attack1  99 125 66 30 18 1
-		bbox  66  96  44  44
-		frame	data/chars/andy/0180.png
-
-
+	@cmd 	soun0001 "vand0019.wav"					#Voice effect.
+		frame	data/chars/andy/andy0176
+		frame	data/chars/andy/andy0177
+	attack  90 120 70 30 18 1
+		frame	data/chars/andy/andy0180
+		
+	
 #*****Injury and Defence*******************************************************************
 
 anim block
 
 	#Defence.
-
+	
 	delay	6
-	offset	100 200
-	bbox	72 106 30 92
-		frame	data/chars/andy/0052
-		#frame	data/chars/andy/0053
+	offset	100 199
+	bbox	85 100 30 40
+		frame	data/chars/andy/andy0052
+		frame	data/chars/andy/andy0053
 
 anim blockpain
-
+	
 	#Normal block
 
 	delay	3
 	offset	100 200
-	bbox	66 106 31 92
-		frame	data/chars/andy/0053
+	bbox	85 100 30 40
+	move	-2
+		frame	data/chars/andy/andy0053
 	move	0
 	offset	103 200
-		frame	data/chars/andy/0053
+		frame	data/chars/andy/andy0053
 	offset	100 200
-		frame	data/chars/andy/0053
+		frame	data/chars/andy/andy0053
 	offset	103 200
-		frame	data/chars/andy/0053
+		frame	data/chars/andy/andy0053
 	delay	30
 	offset	100 200
-		frame	data/chars/andy/0053
+		frame	data/chars/andy/andy0053
 
 anim blockpain2
 
@@ -3805,20 +3276,20 @@ anim blockpain2
 
 	delay	3
 	offset	103 200
-	bbox	75 111 31 87
-		frame	data/chars/andy/0057
+	bbox	85 100 30 40
+		frame	data/chars/andy/andy0057
 	offset	100 200
-		frame	data/chars/andy/0057
+		frame	data/chars/andy/andy0057
 	offset	103 200
-		frame	data/chars/andy/0057
+		frame	data/chars/andy/andy0057
 	offset	100 200
-		frame	data/chars/andy/0057
+		frame	data/chars/andy/andy0057
 	delay	30
 	offset	103 200
-		frame	data/chars/andy/0057
+		frame	data/chars/andy/andy0057
 	delay	10
 	offset	100 200
-		frame	data/chars/andy/0056
+		frame	data/chars/andy/andy0056
 
 anim blockpain3
 
@@ -3826,21 +3297,21 @@ anim blockpain3
 
 	delay	3
 	offset	103 200
-	bbox	74 132 25 67
-		frame	data/chars/andy/0055
+	bbox	85 100 30 40
+		frame	data/chars/andy/andy0055
 	offset	100 200
-		frame	data/chars/andy/0055
+		frame	data/chars/andy/andy0055
 	offset	103 200
-		frame	data/chars/andy/0055
+		frame	data/chars/andy/andy0055
 	offset	100 200
-		frame	data/chars/andy/0055
+		frame	data/chars/andy/andy0055
 	delay	30
 	offset	103 200
-		frame	data/chars/andy/0055
+		frame	data/chars/andy/andy0055
 	delay	20
 	offset	100 200
-		frame	data/chars/andy/0054
-		frame	data/chars/andy/0024
+		frame	data/chars/andy/andy0054
+		frame	data/chars/andy/andy0024
 
 anim blockpain4
 
@@ -3848,566 +3319,663 @@ anim blockpain4
 
 	delay	3
 	offset	103 200
-	bbox	75 111 31 87
-		frame	data/chars/andy/0057
+	bbox	85 100 30 40
+		frame	data/chars/andy/andy0057
 	offset	100 200
-		frame	data/chars/andy/0057
+		frame	data/chars/andy/andy0057
 	offset	103 200
-		frame	data/chars/andy/0057
+		frame	data/chars/andy/andy0057
 	offset	100 200
-		frame	data/chars/andy/0057
+		frame	data/chars/andy/andy0057
 	delay	30
 	offset	103 200
-		frame	data/chars/andy/0057
+		frame	data/chars/andy/andy0057
 	delay	10
 	offset	100 200
-		frame	data/chars/andy/0056
+		frame	data/chars/andy/andy0056	
 
 anim land
 
-	landframe 4
+	landframe 4 dust0003
 	jumpframe 1 1 1 0 dust0002
 
 	delay	8
 	offset	100 200
 	bbox	0
-		frame	data/chars/andy/0020.png
-		frame	data/chars/andy/0022.png
-		frame	data/chars/andy/0023.png
+	
+		frame	data/chars/andy/andy0020
+		frame	data/chars/andy/andy0022
+		frame	data/chars/andy/andy0023
 	delay	-1
-		frame	data/chars/andy/0024.png
+		frame	data/chars/andy/andy0024
 	delay	8
-		frame	data/chars/andy/0016.png
-		frame	data/chars/andy/0007.png
-		frame	data/chars/andy/0016.png
+		frame	data/chars/andy/andy0016
+		frame	data/chars/andy/andy0007
+		frame	data/chars/andy/andy0016
 
 anim rise
-
+	
 	jumpframe 3 1.2 0.2 0 dust0002
-	landframe 5
-
+	landframe 5 dust0003
+		
 	delay	8
 	offset	100 200
-		frame	data/chars/andy/0251.png
+		frame	data/chars/andy/andy0251
 	move	-20
-		frame	data/chars/andy/0241.png
+		frame	data/chars/andy/andy0241
 	move	0
-		frame	data/chars/andy/0242.png
+		frame	data/chars/andy/andy0242
 	delay	12
-	move	30
-		frame	data/chars/andy/0250
+	move	30	
+		frame	data/chars/andy/andy0250
 	move	0
 	delay	-1
-		frame	data/chars/andy/0246
+		frame	data/chars/andy/andy0246
 	delay	8
-		frame	data/chars/andy/0247
-		frame	data/chars/andy/0248
-		frame	data/chars/andy/0249
-		frame	data/chars/andy/0024
+		frame	data/chars/andy/andy0247
+		frame	data/chars/andy/andy0248
+		frame	data/chars/andy/andy0249
+		frame	data/chars/andy/andy0024
 
 anim rise3
 
 	jumpframe 5 1.2 -0.2 0 dust0002
 	landframe 8 dust0003
-
+		
 	delay	6
 	offset	100 200
-		frame	data/chars/andy/0376
-		frame	data/chars/andy/0377
-		frame	data/chars/andy/0378
-		frame	data/chars/andy/0379
-		frame	data/chars/andy/0380
+		frame	data/chars/andy/andy0376
+		frame	data/chars/andy/andy0377
+		frame	data/chars/andy/andy0378
+		frame	data/chars/andy/andy0379
+		frame	data/chars/andy/andy0380
 	offset	100 220
-		frame	data/chars/andy/0381
+		frame	data/chars/andy/andy0381
 	offset	100 200
 	move	-10
-		frame	data/chars/andy/0382
+		frame	data/chars/andy/andy0382
 	delay	-1
 	move	0
-		frame	data/chars/andy/0266
+		frame	data/chars/andy/andy0266
 	delay	8
-		frame	data/chars/andy/0267
-		frame	data/chars/andy/0268
-		frame	data/chars/andy/0269
-		frame	data/chars/andy/0270
+		frame	data/chars/andy/andy0267
+		frame	data/chars/andy/andy0268
+		frame	data/chars/andy/andy0269
+		frame	data/chars/andy/andy0270
 
 anim rise6
 
 	jumpframe 5 1.2 -0.2 0 dust0002
 	landframe 8 dust0003
-
+		
 	delay	6
 	offset	100 200
-		frame	data/chars/andy/0376
-		frame	data/chars/andy/0377
-		frame	data/chars/andy/0378
-		frame	data/chars/andy/0379
-		frame	data/chars/andy/0380
+		frame	data/chars/andy/andy0376
+		frame	data/chars/andy/andy0377
+		frame	data/chars/andy/andy0378
+		frame	data/chars/andy/andy0379
+		frame	data/chars/andy/andy0380
 	offset	100 220
-		frame	data/chars/andy/0381
+		frame	data/chars/andy/andy0381
 	offset	100 200
 	move	-10
-		frame	data/chars/andy/0382
+		frame	data/chars/andy/andy0382
 	delay	-1
 	move	0
-		frame	data/chars/andy/0266
+		frame	data/chars/andy/andy0266
 	delay	8
-		frame	data/chars/andy/0267
-		frame	data/chars/andy/0268
-		frame	data/chars/andy/0269
-		frame	data/chars/andy/0270
+		frame	data/chars/andy/andy0267
+		frame	data/chars/andy/andy0268
+		frame	data/chars/andy/andy0269
+		frame	data/chars/andy/andy0270
 
 anim rise7
 
 	jumpframe 5 1.2 -0.2 0 dust0002
 	landframe 8 dust0003
-
+		
 	delay	6
 	offset	100 200
-		frame	data/chars/andy/0376
-		frame	data/chars/andy/0377
-		frame	data/chars/andy/0378
-		frame	data/chars/andy/0379
-		frame	data/chars/andy/0380
+		frame	data/chars/andy/andy0376
+		frame	data/chars/andy/andy0377
+		frame	data/chars/andy/andy0378
+		frame	data/chars/andy/andy0379
+		frame	data/chars/andy/andy0380
 	offset	100 220
-		frame	data/chars/andy/0381
+		frame	data/chars/andy/andy0381
 	offset	100 200
 	move	-10
-		frame	data/chars/andy/0382
+		frame	data/chars/andy/andy0382
 	delay	-1
 	move	0
-		frame	data/chars/andy/0266
+		frame	data/chars/andy/andy0266
 	delay	8
-		frame	data/chars/andy/0267
-		frame	data/chars/andy/0268
-		frame	data/chars/andy/0269
-		frame	data/chars/andy/0270
+		frame	data/chars/andy/andy0267
+		frame	data/chars/andy/andy0268
+		frame	data/chars/andy/andy0269
+		frame	data/chars/andy/andy0270
 
 anim rise8
 
 	jumpframe 5 1.2 -0.2 0 dust0002
 	landframe 8 dust0003
-
+		
 	delay	6
 	offset	100 200
-		frame	data/chars/andy/0376
-		frame	data/chars/andy/0377
-		frame	data/chars/andy/0378
-		frame	data/chars/andy/0379
-		frame	data/chars/andy/0380
-	offset	100 220
-		frame	data/chars/andy/0381
+		frame	data/chars/andy/andy0376
+		frame	data/chars/andy/andy0377
+		frame	data/chars/andy/andy0378
+		frame	data/chars/andy/andy0379
+		frame	data/chars/andy/andy0380
+	offset	100 220	
+		frame	data/chars/andy/andy0381
 	offset	100 200
 	move	-10
-		frame	data/chars/andy/0382
+		frame	data/chars/andy/andy0382
 	delay	-1
 	move	0
-		frame	data/chars/andy/0266
+		frame	data/chars/andy/andy0266
 	delay	8
-		frame	data/chars/andy/0267
-		frame	data/chars/andy/0268
-		frame	data/chars/andy/0269
-		frame	data/chars/andy/0270
+		frame	data/chars/andy/andy0267
+		frame	data/chars/andy/andy0268
+		frame	data/chars/andy/andy0269
+		frame	data/chars/andy/andy0270
 
 anim rise11
 
 	jumpframe 5 1.2 -0.2 0 dust0002
-	landframe 8
-
+	landframe 8 dust0003
+		
 	delay	6
 	offset	100 200
-		frame	data/chars/andy/0376
-		frame	data/chars/andy/0377
-		frame	data/chars/andy/0378
-		frame	data/chars/andy/0379
-		frame	data/chars/andy/0380
-	offset	100 220
-		frame	data/chars/andy/0381
+		frame	data/chars/andy/andy0376
+		frame	data/chars/andy/andy0377
+		frame	data/chars/andy/andy0378
+		frame	data/chars/andy/andy0379
+		frame	data/chars/andy/andy0380
+	offset	100 220	
+		frame	data/chars/andy/andy0381
 	offset	100 200
 	move	-10
-		frame	data/chars/andy/0382
+		frame	data/chars/andy/andy0382
 	delay	-1
 	move	0
-		frame	data/chars/andy/0266
+		frame	data/chars/andy/andy0266
 	delay	8
-		frame	data/chars/andy/0267
-		frame	data/chars/andy/0268
-		frame	data/chars/andy/0269
-		frame	data/chars/andy/0270
+		frame	data/chars/andy/andy0267
+		frame	data/chars/andy/andy0268
+		frame	data/chars/andy/andy0269
+		frame	data/chars/andy/andy0270
 
 anim grabbed
 
 	delay	3
 	offset	91 200
-	bbox	74 116 29 82
-		frame	data/chars/andy/0352.png
+	bbox	85 100 30 40
+		frame	data/chars/andy/andy0352
 	offset	89 200
-		frame	data/chars/andy/0352.png
+		frame	data/chars/andy/andy0352
 	offset	91 200
-		frame	data/chars/andy/0352.png
+		frame	data/chars/andy/andy0352
 	offset	89 200
-		frame	data/chars/andy/0352.png
+		frame	data/chars/andy/andy0352
 	delay	50
 	offset	90 200
-		frame	data/chars/andy/0352.png
-
+		frame	data/chars/andy/andy0352
+		
 anim pain
-
+	
 	jumpframe 0 0 -0.1 0
 
 	delay	8
 	offset	100 200
-	bbox	76 108 25 90
-		frame	data/chars/andy/0348.png
-		bbox  68  107  27  92
-		frame	data/chars/andy/0349.png
-		bbox  63  110  31  88
-		frame	data/chars/andy/0350.png
-		bbox  61  112  32  86
-		frame	data/chars/andy/0351.png
-		frame	data/chars/andy/0350.png
-		bbox  67  109  30  90
-		frame	data/chars/andy/0349.png
-		bbox  76  108  26  90
-		frame	data/chars/andy/0348.png
+	bbox	85 100 30 40
+		frame	data/chars/andy/andy0348
+		frame	data/chars/andy/andy0349
+		frame	data/chars/andy/andy0350
+		frame	data/chars/andy/andy0351
+		frame	data/chars/andy/andy0350
+		frame	data/chars/andy/andy0349
+		frame	data/chars/andy/andy0348
 
 anim pain2
 
 	#Middle pain.
-
+	
 	jumpframe 0 0 -0.1 0
 
 	delay	8
 	offset	100 200
-	bbox	76 112 30 85
-		frame	data/chars/andy/0355.png
-		bbox  75  116  29  82
-		frame	data/chars/andy/0352.png
-		frame	data/chars/andy/0353.png
-		bbox  71  122  33  76
-		frame	data/chars/andy/0354.png
-		frame	data/chars/andy/0353.png
-		bbox  73  117  31  80
-		frame	data/chars/andy/0352.png
-		bbox  76  113  30  86
-		frame	data/chars/andy/0355.png
+	bbox	85 100 30 40
+		frame	data/chars/andy/andy0355
+		frame	data/chars/andy/andy0352
+		frame	data/chars/andy/andy0353
+		frame	data/chars/andy/andy0354
+		frame	data/chars/andy/andy0353
+		frame	data/chars/andy/andy0352
+		frame	data/chars/andy/andy0355
 
 anim fall
-
+	
 	dropframe 1
 	landframe 4
-
-	delay	-100
+		
+	delay	-1
 	offset	100 200
-	bbox	65 118 58 55
-	attack1  65 117 59 56 1
-		frame	data/chars/andy/0360.png
+	bbox	65 170 75 30
+	attack  65 170 75 30 8
+		frame	data/chars/andy/andy0360
 	delay	15
-	bbox  59  147  75  29
-	attack1  59  147  75  29  1
-		frame	data/chars/andy/0361.png
-	bbox  59  168  81  31
-	attack1  59  168  81  31  1
-		frame	data/chars/andy/0362.png
-	delay	-1000
-	bbox  72  141  45  57
-	attack1  71  140  46  58  1
-		frame	data/chars/andy/0364.png
+		frame	data/chars/andy/andy0361
+		frame	data/chars/andy/andy0362
+	delay	-1
+		frame	data/chars/andy/andy0364
 	delay	20
-	attack1	0
-	bbox	59  168  81  31
-		frame	data/chars/andy/0362.png
-	bbox  45  177  96  22
-		frame	data/chars/andy/0366.png
+	attack	0
+	bbox	0
+		frame	data/chars/andy/andy0362
+		frame	data/chars/andy/andy0366
 
-
-anim fall3
-
+anim fall3	
+	
 	#Swept.
 
 	landframe 3
 
 	delay	12
 	offset	100 200
-	bbox	86 116 42 63
-	attack1  85 115 44 65 8
-		frame	data/chars/andy/0386.png
-		bbox  77  149  63  29
-		attack1  77  149  64  30  8
-		frame	data/chars/andy/0369.png
+	bbox	65 170 75 30
+	attack  65 170 75 30 8
+		frame	data/chars/andy/andy0386	
+		frame	data/chars/andy/andy0369
 	delay	-100
-		bbox  71  129  34  68
-		attack1  71  129  35  68  8
-		frame	data/chars/andy/0365.png
+		frame	data/chars/andy/andy0365
 	delay	10
-	attack1	66  158  61  41
-	bbox	66  158  61  41
-		frame	data/chars/andy/0375.png
-		bbox  61  160  65  35
-		Attack1  0
-		frame	data/chars/andy/0367.png
-		bbox  32  177  100  21
-		frame	data/chars/andy/0368.png
+	attack	0
+	bbox	0
+		frame	data/chars/andy/andy0375
+		frame	data/chars/andy/andy0367
+		frame	data/chars/andy/andy0368
 
-anim fall5
-
-	#Tossed.
+anim fall5	
+	
+	#Flat fall.
 
 	landframe 1
 
-	delay	-1000
+	delay	-1
 	offset	100 200
-	bbox	72 134 46 65
-	attack1  73 132 46 67 8
-		frame	data/chars/andy/0364.png
+	bbox	65 170 75 30
+	attack  65 170 75 30 8
+		frame	data/chars/andy/andy0364
 	delay	15
-		bbox  58  171  68  27
-		Attack1  0
-		frame	data/chars/andy/0362.png
-		bbox  44  178  96  21
-		frame	data/chars/andy/0366.png
-
+		frame	data/chars/andy/andy0362
+		frame	data/chars/andy/andy0366
+	
 anim fall6
 
-	#Spin (into background)
-
 	landframe 13
-
+		
 	delay	6
 	offset	100 200
-	bbox	68 111 53 67
-	attack1  68 111 54 67 8
-		frame	data/chars/andy/0360.png
-		bbox  53  130  75  42
-		attack1  52  130  78  42  8
-		frame	data/chars/andy/0371.png
-		frame	data/chars/andy/0372.png
-		frame	data/chars/andy/0373.png
-		frame	data/chars/andy/0374.png
-		frame	data/chars/andy/0371.png
-		frame	data/chars/andy/0372.png
-		frame	data/chars/andy/0373.png
-		frame	data/chars/andy/0374.png
-		bbox  56  148  81  27
-		attack1  56  148  82  28  8
-		frame	data/chars/andy/0361.png
-		bbox  56  174  79  25
-		attack1  56  173  80  26  8
-		frame	data/chars/andy/0362.png
-		bbox  78  127  28  71
-		attack1  77  126  29  72  8
-		frame	data/chars/andy/0363.png
+	bbox	65 170 75 30
+	attack  65 170 75 30 8
+		frame	data/chars/andy/andy0360
+		frame	data/chars/andy/andy0371
+		frame	data/chars/andy/andy0372
+		frame	data/chars/andy/andy0373
+		frame	data/chars/andy/andy0374
+		frame	data/chars/andy/andy0371
+		frame	data/chars/andy/andy0372
+		frame	data/chars/andy/andy0373
+		frame	data/chars/andy/andy0374
+		frame	data/chars/andy/andy0361
+		frame	data/chars/andy/andy0362
+		frame	data/chars/andy/andy0363
 	delay	-1
-		bbox  74  126  35  73
-		attack1  73  126  37  72  8
-		frame	data/chars/andy/0365.png
+		frame	data/chars/andy/andy0365
 	delay	10
-	bbox	66  155  63  43
-		Attack1  0
-		frame	data/chars/andy/0375.png
-		bbox  55  163  73  30
-		frame	data/chars/andy/0367.png
-		bbox  47  178  83  21
-		frame	data/chars/andy/0368.png
+	attack	0
+	bbox	0
+		frame	data/chars/andy/andy0375
+		frame	data/chars/andy/andy0367
+		frame	data/chars/andy/andy0368
 
 anim fall7
 
-	#Spin (into foreground)
-
 	landframe 13
-
+		
 	delay	6
 	offset	100 200
-	bbox	68 111 53 67
-	attack1  68 111 54 67 8
-		frame	data/chars/andy/0360.png
-		bbox  53  130  75  42
-		attack1  52  130  78  42  8
-		frame	data/chars/andy/0371.png
-		frame	data/chars/andy/0372.png
-		frame	data/chars/andy/0373.png
-		frame	data/chars/andy/0374.png
-		frame	data/chars/andy/0371.png
-		frame	data/chars/andy/0372.png
-		frame	data/chars/andy/0373.png
-		frame	data/chars/andy/0374.png
-		bbox  56  148  81  27
-		attack1  56  148  82  28  8
-		frame	data/chars/andy/0361.png
-		bbox  56  174  79  25
-		attack1  56  173  80  26  8
-		frame	data/chars/andy/0362.png
-		bbox  78  127  28  71
-		attack1  77  126  29  72  8
-		frame	data/chars/andy/0363.png
+	bbox	65 170 75 30
+	attack  65 170 75 30 8
+		frame	data/chars/andy/andy0360
+		frame	data/chars/andy/andy0371
+		frame	data/chars/andy/andy0372
+		frame	data/chars/andy/andy0373
+		frame	data/chars/andy/andy0374
+		frame	data/chars/andy/andy0371
+		frame	data/chars/andy/andy0372
+		frame	data/chars/andy/andy0373
+		frame	data/chars/andy/andy0374
+		frame	data/chars/andy/andy0361
+		frame	data/chars/andy/andy0362
+		frame	data/chars/andy/andy0363
 	delay	-1
-		bbox  74  126  35  73
-		attack1  73  126  37  72  8
-		frame	data/chars/andy/0365.png
+		frame	data/chars/andy/andy0365
 	delay	10
-	bbox	66  155  63  43
-		Attack1  0
-		frame	data/chars/andy/0375.png
-		bbox  55  163  73  30
-		frame	data/chars/andy/0367.png
-		bbox  47  178  83  21
-		frame	data/chars/andy/0368.png
+	attack	0
+	bbox	0
+		frame	data/chars/andy/andy0375
+		frame	data/chars/andy/andy0367
+		frame	data/chars/andy/andy0368
 
-anim fall8
-
+anim fall8		
+	
 	#Splat.
 
-	landframe  1
+	landframe  1 
 	quakeframe 1 1 -2
 
 	delay	-1
 	offset	100 200
-	bbox	77 131 31 66
-	attack1	77 130 32 68 12 1
-		frame	data/chars/andy/0363.png
+	bbox	55 140 70 45
+	attack	55 140 70 45 12 1
+		frame	data/chars/andy/andy0363	
 	delay	15
-	bbox	71  138  34  59
-	attack1	71  139  34  58
-		frame	data/chars/andy/0365.png
+	bbox	0
+	attack	0
+		frame	data/chars/andy/andy0365
 	delay	12
-		bbox  70  156  56  42
-		attack1  70  156  56  43
-		frame	data/chars/andy/0375.png
-		bbox  55  162  72  28
-		Attack1  0
-		frame	data/chars/andy/0367.png
-		bbox  44  176  87  21
-		frame	data/chars/andy/0368.png
+		frame	data/chars/andy/andy0375
+		frame	data/chars/andy/andy0367
+		frame	data/chars/andy/andy0368
 
 anim fall9
 
 	#Flat fall
-
+	
 	landframe 1
-
+		
 	delay	-1
 	offset	100 200
-	bbox	58 171 71 29
-	attack1  58 170 72 30 8
-		frame	data/chars/andy/0362.png
-	delay	15
-		bbox  43  177  88  22
-		Attack1  0
-		frame	data/chars/andy/0366.png
+	bbox	65 170 75 30
+	attack  65 170 75 30 8
+		frame	data/chars/andy/andy0362
+	delay	15		
+		frame	data/chars/andy/andy0366
 
+	
+	
 anim death
 
-	jumpframe 10 0.5 0.5 0
-	landframe 11 dust0003
-
-	delay	12
+	jumpframe 3 1.2 0.2 0 dust0002
+	landframe 5 dust0003
+		
+	delay	8
 	offset	100 200
-		frame	data/chars/andy/0163.png
-		frame	data/chars/andy/0162.png
-		frame	data/chars/andy/0024.png
+		frame	data/chars/andy/andy0251
+	move	-20
+		frame	data/chars/andy/andy0241
+	move	0
+		frame	data/chars/andy/andy0242
+	delay	12
+	move	30
+		frame	data/chars/andy/andy0250
+	move	0
+	delay	-1
+		frame	data/chars/andy/andy0246
+	delay	8	
+		frame	data/chars/andy/andy0247
+		frame	data/chars/andy/andy0248
+		frame	data/chars/andy/andy0249
+		frame	data/chars/andy/andy0024
 	delay	50
-		frame	data/chars/andy/0352.png
+		frame	data/chars/andy/andy0352
 	delay	20
-		frame	data/chars/andy/0349.png
-		frame	data/chars/andy/0350.png
-
-		frame	data/chars/andy/0351.png
-
-		frame	data/chars/andy/0350.png
-		frame	data/chars/andy/0349.png
+		frame	data/chars/andy/andy0349
+		frame	data/chars/andy/andy0350
+		frame	data/chars/andy/andy0351
+		frame	data/chars/andy/andy0350
+		frame	data/chars/andy/andy0349
 	delay	15
-		frame	data/chars/andy/0336.png
-		delay  -1000
-	frame  data/chars/andy/0365.png
+		frame	data/chars/andy/andy0336
 	move	10
-		delay  10
-		frame	data/chars/andy/0367.png
+		frame	data/chars/andy/andy0367
 	delay	100
-		move  0
-		frame	data/chars/andy/0368.png
+		frame	data/chars/andy/andy0368
 
+anim death6
 
-anim bpain
+	jumpframe 5 1.2 -0.2 0 dust0002
+	landframe 8 dust0003
+		
+	delay	6
+	offset	100 200
+		frame	data/chars/andy/andy0376
+		frame	data/chars/andy/andy0377
+		frame	data/chars/andy/andy0378
+		frame	data/chars/andy/andy0379
+		frame	data/chars/andy/andy0380
+	offset	100 220
+		frame	data/chars/andy/andy0381
+	offset	100 200
+	move	-10
+		frame	data/chars/andy/andy0382
+	delay	-1
+	move	0
+		frame	data/chars/andy/andy0266
+	delay	8
+		frame	data/chars/andy/andy0267
+		frame	data/chars/andy/andy0268
+		frame	data/chars/andy/andy0269
+		frame	data/chars/andy/andy0270
+	delay	50
+		frame	data/chars/andy/andy0352
+	delay	20
+		frame	data/chars/andy/andy0349
+		frame	data/chars/andy/andy0350
+		frame	data/chars/andy/andy0351
+		frame	data/chars/andy/andy0350
+		frame	data/chars/andy/andy0349
+	delay	15
+		frame	data/chars/andy/andy0336
+	move	10
+		frame	data/chars/andy/andy0367
+	delay	100
+		frame	data/chars/andy/andy0368
+
+anim death7
+
+	jumpframe 5 1.2 -0.2 0 dust0002
+	landframe 8 dust0003
+		
+	delay	6
+	offset	100 200
+		frame	data/chars/andy/andy0376
+		frame	data/chars/andy/andy0377
+		frame	data/chars/andy/andy0378
+		frame	data/chars/andy/andy0379
+		frame	data/chars/andy/andy0380
+	offset	100 220
+		frame	data/chars/andy/andy0381
+	offset	100 200
+	move	-10
+		frame	data/chars/andy/andy0382
+	delay	-1
+	move	0
+		frame	data/chars/andy/andy0266
+	delay	8	
+		frame	data/chars/andy/andy0267
+		frame	data/chars/andy/andy0268
+		frame	data/chars/andy/andy0269
+		frame	data/chars/andy/andy0270
+	delay	50
+		frame	data/chars/andy/andy0352
+	delay	20
+		frame	data/chars/andy/andy0349
+		frame	data/chars/andy/andy0350
+		frame	data/chars/andy/andy0351
+		frame	data/chars/andy/andy0350
+		frame	data/chars/andy/andy0349
+	delay	15
+		frame	data/chars/andy/andy0336
+	move	10
+		frame	data/chars/andy/andy0367
+	delay	100
+		frame	data/chars/andy/andy0368	
+
+anim death8
+
+	jumpframe 5 1.2 -0.2 0 dust0002
+	landframe 8 dust0003
+		
+	delay	6
+	offset	100 200
+		frame	data/chars/andy/andy0376
+		frame	data/chars/andy/andy0377
+		frame	data/chars/andy/andy0378
+		frame	data/chars/andy/andy0379
+		frame	data/chars/andy/andy0380
+	offset	100 220
+		frame	data/chars/andy/andy0381
+	offset	100 200
+	move	-10
+		frame	data/chars/andy/andy0382
+	delay	-1
+	move	0
+		frame	data/chars/andy/andy0266
+	delay	8	
+		frame	data/chars/andy/andy0267
+		frame	data/chars/andy/andy0268
+		frame	data/chars/andy/andy0269
+		frame	data/chars/andy/andy0270
+	delay	50
+		frame	data/chars/andy/andy0352
+	delay	20
+		frame	data/chars/andy/andy0349
+		frame	data/chars/andy/andy0350
+		frame	data/chars/andy/andy0351
+		frame	data/chars/andy/andy0350
+		frame	data/chars/andy/andy0349
+	delay	15
+		frame	data/chars/andy/andy0336
+	move	10
+		frame	data/chars/andy/andy0367
+	delay	100
+		frame	data/chars/andy/andy0368
+
+anim death11
+
+	jumpframe 5 1.2 -0.2 0 dust0002
+	landframe 8 dust0003
+		
+	delay	6
+	offset	100 200
+		frame	data/chars/andy/andy0376
+		frame	data/chars/andy/andy0377
+		frame	data/chars/andy/andy0378
+		frame	data/chars/andy/andy0379
+		frame	data/chars/andy/andy0380
+	offset	100 220
+		frame	data/chars/andy/andy0381
+	offset	100 200
+	move	-10
+		frame	data/chars/andy/andy0382
+	delay	-1
+	move	0
+		frame	data/chars/andy/andy0266
+	delay	8
+		frame	data/chars/andy/andy0267
+		frame	data/chars/andy/andy0268
+		frame	data/chars/andy/andy0269
+		frame	data/chars/andy/andy0270
+	delay	50
+		frame	data/chars/andy/andy0352
+	delay	20
+		frame	data/chars/andy/andy0349
+		frame	data/chars/andy/andy0350
+		frame	data/chars/andy/andy0351
+		frame	data/chars/andy/andy0350
+		frame	data/chars/andy/andy0349
+	delay	15
+		frame	data/chars/andy/andy0336
+	move	10
+		frame	data/chars/andy/andy0367
+	delay	100
+		frame	data/chars/andy/andy0368		
+	
+
+anim bpain 
+
+	jumpframe 0 0 -0.1 0
 
 	delay	5
-	bbox	61 108 36 91
-	offset	100 200
-		frame	data/chars/andy/0350.png
+	bbox	85 100 30 40
+	offset	100 200	
+		frame	data/chars/andy/andy0350
 	offset	103 200
-		frame	data/chars/andy/0350.png
-	offset	100 200
-		frame	data/chars/andy/0350.png
+		frame	data/chars/andy/andy0350
+	offset	100 200	
+		frame	data/chars/andy/andy0350
 	offset	103 200
-		frame	data/chars/andy/0350.png
-	offset	100 200
-		frame	data/chars/andy/0350.png
+		frame	data/chars/andy/andy0350
+	offset	100 200	
+		frame	data/chars/andy/andy0350
 	offset	103 200
-		frame	data/chars/andy/0350.png
-	offset	100 200
-		frame	data/chars/andy/0350.png
+		frame	data/chars/andy/andy0350
+	offset	100 200	
+		frame	data/chars/andy/andy0350
 	offset	103 200
-		frame	data/chars/andy/0350.png
-	offset	100 200
-		frame	data/chars/andy/0350.png
+		frame	data/chars/andy/andy0350
+	offset	100 200	
+		frame	data/chars/andy/andy0350
 	offset	103 200
-		frame	data/chars/andy/0350.png
-	offset	100 200
-		frame	data/chars/andy/0350.png
+		frame	data/chars/andy/andy0350
+	offset	100 200	
+		frame	data/chars/andy/andy0350
 	offset	103 200
-		frame	data/chars/andy/0350.png
-	offset	100 200
-		frame	data/chars/andy/0350.png
+		frame	data/chars/andy/andy0350
+	offset	100 200	
+		frame	data/chars/andy/andy0350
 	offset	103 200
-		frame	data/chars/andy/0350.png
-	offset	100 200
-		frame	data/chars/andy/0350.png
+		frame	data/chars/andy/andy0350
+	offset	100 200	
+		frame	data/chars/andy/andy0350
 	offset	103 200
-		frame	data/chars/andy/0350.png
-	offset	100 200
-		frame	data/chars/andy/0350.png
+		frame	data/chars/andy/andy0350
+	offset	100 200	
+		frame	data/chars/andy/andy0350
 	offset	103 200
-		frame	data/chars/andy/0350.png
+		frame	data/chars/andy/andy0350
 	offset	100 200
-		bbox  65  108  32  91
-		frame	data/chars/andy/0349.png
-		bbox  74  105  29  93
-		frame	data/chars/andy/0348.png
+		frame	data/chars/andy/andy0349
+		frame	data/chars/andy/andy0348		
 
 anim burn
 
 	dropframe 1
 	landframe 4
-
+		
 	delay	-100
 	offset	100 200
-	bbox	65 118 58 55
-	burn  65 117 59 56 1
-		frame	data/chars/andy/0360.png
+	bbox	65 170 75 30
+	burn  65 170 75 12 1
+		frame	data/chars/andy/andy0360
 	delay	15
-		bbox  59  147  75  29
-		burn  59  147  75  29  1
-		frame	data/chars/andy/0361.png
-		bbox  59  168  81  31
-		burn  59  168  81  31  1
-		frame	data/chars/andy/0362.png
-	delay	-1000
-		bbox  72  141  45  57
-		burn  71  140  46  58  1
-		frame	data/chars/andy/0364.png
+		frame	data/chars/andy/andy0361
+		frame	data/chars/andy/andy0362
+	delay	-100
+		frame	data/chars/andy/andy0364
 	delay	20
-	attack1	0
-	bbox	59  168  81  31
-		frame	data/chars/andy/0362.png
-		bbox  45  177  96  22
-		frame	data/chars/andy/0366.png
-#Always make sure to include a single blank line at bottom of file.
-
-
-
+	attack	0
+	bbox	0
+		frame	data/chars/andy/andy0362
+		frame	data/chars/andy/andy0366
 
 #anim bdie
 #anim spain
-#anim shock
+#anim shock	
 #anim sdie
 #anim fpain 									#Note, as of 2.5x this animation does not exist. Included for possible future updates.
 #anim freeze 									#Note, as of 2.5x this animation does not exist. Included for possible future updates.
@@ -4415,45 +3983,4 @@ anim burn
 
 #*****Footer********************************************************************************
 
-
-
-anim  follow99
-	counterattack  1
-	jumpframe  0  0  0.5  0  dust0003
-	fastattack  1
-		delay  10
-		offset  100  200
-		bbox  75  135  30  65
-	frame  data/chars/andy/0442.png
-		move  0
-	frame  data/chars/andy/0272.png
-		delay  7
-	frame  data/chars/andy/0271.png
-	frame  data/chars/andy/0196.png
-		attack1  117  140  67  14  20  2  0  0  15
-		offset  125  200
-		bbox  110  137  45  61
-		move  25
-	frame  data/chars/andy/0499.png
-		attack1  0
-		delay  12
-		move  0
-	frame  data/chars/andy/0500.png
-		bbox  97  124  34  73
-		offset  100  200
-		move  -25
-	frame  data/chars/andy/0448.png
-		@cmd  velo0001  0  0  0
-		bbox  79  110  26  87
-		move  0
-	frame  data/chars/andy/0449.png
-		bbox  72  107  24  91
-		move  4
-	frame  data/chars/andy/0007.png
-
-
-
-
-
-
-
+#Always make sure to include a single blank line at bottom of file.

@@ -14,8 +14,8 @@ void soun0001(void vSample)
     
     void  vSelf     = getlocalvar("self");    
     float fSourceX  = getentityproperty(vSelf, "x") - openborvariant("xpos");
-    int   iLVol     = 255;
-    int   iRVol     = 255;
+    int   iLVol     = 200;
+    int   iRVol     = 200;
 	int   iSample;
 
 	iSample = loadsample("data/sounds/" + vSample);
@@ -25,10 +25,7 @@ void soun0001(void vSample)
     iLVol -= (iLVol / 2) * fSourceX;
     iRVol = (iRVol / 2) * fSourceX;        
     
-	if (iSample && iSample != -1)
-	{
-		playsample(iSample, 0, iLVol, iRVol, 100, 0);
-	}
+    playsample(iSample, 0, iLVol, iRVol, 100, 0);
 }
 
 

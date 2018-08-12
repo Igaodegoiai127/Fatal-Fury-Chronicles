@@ -14,32 +14,31 @@ antigravity  	1
 alpha	     	1
 candamage    	none
 offscreenkill 	200
-noatflash 		1 
-flash			none
-blockflash		none
-mp				1000
-mprate			0
-komap			1 1
+noatflash 	1 
+flash		none
+blockflash	none
+mp		1000
+mprate		0
 
 #Immune to all attacks; responce to getting hit is be fully scripted.
-notgrab				1
-defense all			0 1000 0 1000 1000 0 0
-defense burn		0 1000 0 1000 1000 0 0
-defense shock		0 1000 0 1000 1000 0 0
-defense freeze		0 1000 0 1000 1000 0 0
+notgrab  1
+defense all    0 1000 0 1000 1000 0 0
+defense burn   0 1000 0 1000 1000 0 0
+defense shock  0 1000 0 1000 1000 0 0
+defense freeze 0 1000 0 1000 1000 0 0
 
 onspawnscript		data/scripts/spaw0011.c
-onkillscript		data/scripts/z_kill.c
+onkillscript		data/scripts/kill0001.c
 didhitscript		data/scripts/hit0003.c
 takedamagescript	data/scripts/dama0003.c
-#animationscript	data/scripts/blan0001.c
+#animationscript		data/scripts/blan0001.c
 
 #*****Alternates*******
 
-palette 			data/chars/misc/effects/effe0009/0001		#Geki Hishoken blast.
-alternatepal		data/chars/andy/pals/0001 					#KO.
-alternatepal   		data/chars/misc/effects/effe0015/0001 		#Shoryudan slash.
-alternatepal		data/chars/misc/effects/effe0010/0001		#Cho Reppa Dan
+palette 	data/chars/misc/effects/effe0061	#Geki Hishoken blast.
+alternatepal	data/chars/andy/aapa0000		#KO map.
+alternatepal   	data/chars/misc/effects/effe0143 	#Shoryudan slash.
+alternatepal	data/chars/misc/effects/effe0085	#Cho Reppa Dan
 
 #*****Commands*****************************************************************************
 #*****Basic********************************************************************************
@@ -61,82 +60,82 @@ anim freespecial7
 	
 	delay	2
 	offset  90 130
-		frame	data/chars/misc/effects/effe0009/0007	
+		frame	data/chars/misc/effects/effe0061	
 	attack	50 60 70 60 0 0 0 1 0
 	grabin	1 40
 	bbox	50 60 70 60 
 	noreflect	1
-		frame	data/chars/misc/effects/effe0009/0008
-		frame	data/chars/misc/effects/effe0009/0009
-		frame	data/chars/misc/effects/effe0009/0010
-		frame	data/chars/misc/effects/effe0009/0011
-		frame	data/chars/misc/effects/effe0009/0012
-		frame	data/chars/misc/effects/effe0009/0013
-		frame	data/chars/misc/effects/effe0009/0014
-		frame	data/chars/misc/effects/effe0009/0015
-		frame	data/chars/misc/effects/effe0009/0016
-		frame	data/chars/misc/effects/effe0009/0017
-		frame	data/chars/misc/effects/effe0009/0018
-		frame	data/chars/misc/effects/effe0009/0019
-		frame	data/chars/misc/effects/effe0009/0020
-		frame	data/chars/misc/effects/effe0009/0021
+		frame	data/chars/misc/effects/effe0062
+		frame	data/chars/misc/effects/effe0063
+		frame	data/chars/misc/effects/effe0064
+		frame	data/chars/misc/effects/effe0065
+		frame	data/chars/misc/effects/effe0066
+		frame	data/chars/misc/effects/effe0067
+		frame	data/chars/misc/effects/effe0068
+		frame	data/chars/misc/effects/effe0069
+		frame	data/chars/misc/effects/effe0070
+		frame	data/chars/misc/effects/effe0071
+		frame	data/chars/misc/effects/effe0072
+		frame	data/chars/misc/effects/effe0073
+		frame	data/chars/misc/effects/effe0074
+		frame	data/chars/misc/effects/effe0075
 	attack	0
 	bbox	0
-		frame	data/chars/misc/effects/effe0009/0022
+		frame	data/chars/misc/effects/effe0076
 	delay	20
 		frame	data/chars/misc/blan0001
 	delay	4
 	offset  50 130
-		frame	data/chars/misc/effects/effe0009/0008
+		frame	data/chars/misc/effects/effe0062
 	offset  25 80
 	attack	5 5 85 75 0 0 0 1 0
 	bbox	5 5 85 75
-		frame	data/chars/misc/effects/effe0009/0001
+		frame	data/chars/misc/effects/effe0055
 	attack	0
-		frame	data/chars/misc/effects/effe0009/0002
+		frame	data/chars/misc/effects/effe0056
 	attack	5 5 85 75 0 0 0 1 0
-		frame	data/chars/misc/effects/effe0009/0003
+		frame	data/chars/misc/effects/effe0057
 	attack	0
-		frame	data/chars/misc/effects/effe0009/0004
+		frame	data/chars/misc/effects/effe0058
 	attack	5 5 85 75 0 0 0 1 0
-		frame	data/chars/misc/effects/effe0009/0005
+		frame	data/chars/misc/effects/effe0059
 	attack	0
-		frame	data/chars/misc/effects/effe0009/0006
+		frame	data/chars/misc/effects/effe0060
 	attack	5 5 85 75 0 0 0 1 0
-		frame	data/chars/misc/effects/effe0009/0001
+		frame	data/chars/misc/effects/effe0055
 	attack	0
-		frame	data/chars/misc/effects/effe0009/0002
+		frame	data/chars/misc/effects/effe0056
 	attack	5 5 85 75 0 0 0 1 0
-		frame	data/chars/misc/effects/effe0009/0003
+		frame	data/chars/misc/effects/effe0057
 	attack	0
-		frame	data/chars/misc/effects/effe0009/0004
+		frame	data/chars/misc/effects/effe0058
 	attack	5 5 85 75 0 0 0 1 0
-		frame	data/chars/misc/effects/effe0009/0005
+		frame	data/chars/misc/effects/effe0059
 	attack	0
-		frame	data/chars/misc/effects/effe0009/0006
+		frame	data/chars/misc/effects/effe0060
 	attack	5 5 85 75 0 0 0 1 0
-		frame	data/chars/misc/effects/effe0009/0001
+		frame	data/chars/misc/effects/effe0055
 	attack	0
-		frame	data/chars/misc/effects/effe0009/0002
+		frame	data/chars/misc/effects/effe0056
 	attack	5 5 85 75 0 0 0 1 0
-		frame	data/chars/misc/effects/effe0009/0003
+		frame	data/chars/misc/effects/effe0057
 	attack	0
-		frame	data/chars/misc/effects/effe0009/0004
+		frame	data/chars/misc/effects/effe0058
 	attack	5 5 85 75 0 0 0 1 0
-		frame	data/chars/misc/effects/effe0009/0005
+		frame	data/chars/misc/effects/effe0059
 	offset	47 97
-		frame	data/chars/misc/effects/effe0009/0023
+		frame	data/chars/misc/effects/effe0077
 	attack	5 5 85 75 0 0 0 1 0
-		frame	data/chars/misc/effects/effe0009/0024
+		frame	data/chars/misc/effects/effe0078
 	attack	0
-		frame	data/chars/misc/effects/effe0009/0025
+		frame	data/chars/misc/effects/effe0078
 	attack	5 5 85 75 0 0 0 1 0
-		frame	data/chars/misc/effects/effe0009/0026
+		frame	data/chars/misc/effects/effe0080
 	attack	0
-		frame	data/chars/misc/effects/effe0009/0027
-		frame	data/chars/misc/effects/effe0009/0028
-		frame	data/chars/misc/effects/effe0009/0029
-		frame	data/chars/misc/effects/effe0009/0030		
+		frame	data/chars/misc/effects/effe0081
+		frame	data/chars/misc/effects/effe0082
+		frame	data/chars/misc/effects/effe0083
+		frame	data/chars/misc/effects/effe0084		
 
 anim freespecial10
 
@@ -145,18 +144,18 @@ anim freespecial10
 	delay	4
 	offset	75 75
 	bbox	0
-		frame	data/chars/misc/effects/effe0015/0001
-		frame	data/chars/misc/effects/effe0015/0002
-		frame	data/chars/misc/effects/effe0015/0003
-		frame	data/chars/misc/effects/effe0015/0004
-		frame	data/chars/misc/effects/effe0015/0005
-		frame	data/chars/misc/effects/effe0015/0006
-		frame	data/chars/misc/effects/effe0015/0007
-		frame	data/chars/misc/effects/effe0015/0008
-		frame	data/chars/misc/effects/effe0015/0009
-		frame	data/chars/misc/effects/effe0015/0010
-		frame	data/chars/misc/effects/effe0015/0011
-		frame	data/chars/misc/effects/effe0015/0012		
+		frame	data/chars/misc/effects/effe0143
+		frame	data/chars/misc/effects/effe0144
+		frame	data/chars/misc/effects/effe0145
+		frame	data/chars/misc/effects/effe0146
+		frame	data/chars/misc/effects/effe0147
+		frame	data/chars/misc/effects/effe0148
+		frame	data/chars/misc/effects/effe0149
+		frame	data/chars/misc/effects/effe0150
+		frame	data/chars/misc/effects/effe0151
+		frame	data/chars/misc/effects/effe0152
+		frame	data/chars/misc/effects/effe0153
+		frame	data/chars/misc/effects/effe0154		
 		frame	data/chars/misc/blan0001
 	
 
@@ -175,23 +174,23 @@ anim freespecial18
 		frame	data/chars/misc/blan0001
 		frame	data/chars/misc/blan0001
 		frame	data/chars/misc/blan0001	
-		frame	data/chars/misc/effects/effe0010/0001
-		frame	data/chars/misc/effects/effe0010/0002
-		frame	data/chars/misc/effects/effe0010/0003
-		frame	data/chars/misc/effects/effe0010/0004
-		frame	data/chars/misc/effects/effe0010/0005
-		frame	data/chars/misc/effects/effe0010/0006
-		frame	data/chars/misc/effects/effe0010/0007	
-		frame	data/chars/misc/effects/effe0010/0008
+		frame	data/chars/misc/effects/effe0085
+		frame	data/chars/misc/effects/effe0086
+		frame	data/chars/misc/effects/effe0087
+		frame	data/chars/misc/effects/effe0088
+		frame	data/chars/misc/effects/effe0089
+		frame	data/chars/misc/effects/effe0090
+		frame	data/chars/misc/effects/effe0091	
+		frame	data/chars/misc/effects/effe0092
 	offset	78 145
-		frame	data/chars/misc/effects/effe0011/0001
-		frame	data/chars/misc/effects/effe0011/0002
-		frame	data/chars/misc/effects/effe0011/0003
-		frame	data/chars/misc/effects/effe0011/0004
-		frame	data/chars/misc/effects/effe0011/0005
-		frame	data/chars/misc/effects/effe0011/0006
-		frame	data/chars/misc/effects/effe0011/0007	
-		frame	data/chars/misc/effects/effe0011/0008	
+		frame	data/chars/misc/effects/effe0095
+		frame	data/chars/misc/effects/effe0096
+		frame	data/chars/misc/effects/effe0097
+		frame	data/chars/misc/effects/effe0098
+		frame	data/chars/misc/effects/effe0099
+		frame	data/chars/misc/effects/effe0100
+		frame	data/chars/misc/effects/effe0101
+		frame	data/chars/misc/effects/effe0102	
 		frame	data/chars/misc/blan0001		
 		frame	data/chars/misc/blan0001
 		frame	data/chars/misc/blan0001
@@ -214,30 +213,30 @@ anim follow4
 		frame	data/chars/misc/blan0001
 		frame	data/chars/misc/blan0001
 		frame	data/chars/misc/blan0001	
-		frame	data/chars/misc/effects/effe0013/0001
-		frame	data/chars/misc/effects/effe0013/0002
-		frame	data/chars/misc/effects/effe0013/0003
-		frame	data/chars/misc/effects/effe0013/0004
-		frame	data/chars/misc/effects/effe0013/0005
-		frame	data/chars/misc/effects/effe0013/0006
-		frame	data/chars/misc/effects/effe0013/0007	
-		frame	data/chars/misc/effects/effe0013/0008
+		frame	data/chars/misc/effects/effe0123
+		frame	data/chars/misc/effects/effe0124
+		frame	data/chars/misc/effects/effe0125
+		frame	data/chars/misc/effects/effe0126
+		frame	data/chars/misc/effects/effe0127
+		frame	data/chars/misc/effects/effe0128
+		frame	data/chars/misc/effects/effe0129
+		frame	data/chars/misc/effects/effe0130
 	offset	78 145
-		frame	data/chars/misc/effects/effe0014/0001
-		frame	data/chars/misc/effects/effe0014/0002
-		frame	data/chars/misc/effects/effe0014/0003
-		frame	data/chars/misc/effects/effe0014/0004
-		frame	data/chars/misc/effects/effe0014/0005
-		frame	data/chars/misc/effects/effe0014/0006
-		frame	data/chars/misc/effects/effe0014/0007	
-		frame	data/chars/misc/effects/effe0014/0008
-		frame	data/chars/misc/effects/effe0014/0009	
-		frame	data/chars/misc/effects/effe0014/0010
-		frame	data/chars/misc/effects/effe0014/0001
-		frame	data/chars/misc/effects/effe0014/0002
-		frame	data/chars/misc/effects/effe0014/0003
-		frame	data/chars/misc/effects/effe0014/0004
-		frame	data/chars/misc/effects/effe0014/0005
+		frame	data/chars/misc/effects/effe0133
+		frame	data/chars/misc/effects/effe0134
+		frame	data/chars/misc/effects/effe0135
+		frame	data/chars/misc/effects/effe0136
+		frame	data/chars/misc/effects/effe0137
+		frame	data/chars/misc/effects/effe0138
+		frame	data/chars/misc/effects/effe0139
+		frame	data/chars/misc/effects/effe0140	
+		frame	data/chars/misc/effects/effe0141
+		frame	data/chars/misc/effects/effe0142
+		frame	data/chars/misc/effects/effe0133
+		frame	data/chars/misc/effects/effe0134
+		frame	data/chars/misc/effects/effe0135
+		frame	data/chars/misc/effects/effe0136
+		frame	data/chars/misc/effects/effe0137
 		frame	data/chars/misc/blan0001	
 		frame	data/chars/misc/blan0001
 		frame	data/chars/misc/blan0001

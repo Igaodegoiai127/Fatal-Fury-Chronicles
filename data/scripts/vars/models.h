@@ -1,11 +1,5 @@
-#ifndef MODELS
-
-#define MODELS 1
-
 //*****Models*****
-#define EFBURNF    "";									//Flash burn.
-#define EFSHOCC    "";									//Consistent electric ("shocked").
-#define EFSHOCF    "";									//Shock flash.
-#define EFFATAL    "fata0001";							//Fatality.
-
-#endif
+void EFBURNF    = "";									//Flash burn.
+void EFSHOCC    = "";									//Consistent electric ("shocked").
+void EFSHOCF    = "";									//Shock flash.
+void EFFATAL    = "fata0001";							//Fatality.

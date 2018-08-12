@@ -16,7 +16,7 @@ void vars0001(void vTarget, int iBindBreak, int B, int C, int D, int E){
     int vBound;                                            //Bound entity placeholder.
     int iMax = openborvariant("maxentityvars");            //Entity var count.
 
-    if (!iBindBreak)
+    if (iBindBreak)
     {
         vBound  = getentityvar(vTarget, BIND);              //Get bound entity (if any).    
         if (vBound)

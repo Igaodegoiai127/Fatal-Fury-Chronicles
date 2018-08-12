@@ -1,8 +1,7 @@
-#include "data/scripts/vars/index.h"
 #include "data/scripts/vars/entity.h"
 #include "data/scripts/com/draw0002.h"
 
-void draw0001(void vEnt){
+void draw0001(void vTarget){
         
     /*
     draw0001()
@@ -15,77 +14,37 @@ void draw0001(void vEnt){
     2. This function will overidde other uses of drawmethod. Therfore values are taken and applied from entity variables stored 
     by other functions to control other setdrawmethod parameters. This includes manual adjustment of scale values if desired.
     3. Autozoom variance is controlled by fMinZ * X. By changing the value of fMax, it is also possible to change the Z location in
-    which entity is shown at its normal size.    
-	
-	iDMode:
-
-		0	= SNK Style:	Auto zoom applied based on Z location with manual adjustments.
-		1	= Capcom style: Auto zoom is always at 100% with manual adjustments unless entity is out of the normal playfield.		
-	*/
+    which entity is shown at its normal size.
+    */
     
-	int		iDMode;													//Draw mode setting. See above.
-	float	fScaleX;												//X scale adjustment.                
-    float	fScaleY;												//Y scale adjustment.
-    int		iFlipX;													//Flip X.
-    int		iFlipY;													//Flip Y.
-    int		iShiftX;												//Shift X.
-    int		iFill;													//Fill.
-    int		iRotate;												//Rotate.
-    int		iARotat;												//Auto Rotation.
-    float	fMinZ, fMaxZ;											//Minimum/Maximum Z location.                                       
-    float	fDeltaZ;												//Range betwen fMinZ and MaxZ                                            
-    float	fFactor;												//Autozoom calculation placeholder.
-	float	fZ;														//Current Z location.
+    float fScaleX   = getentityvar(vTarget, ADSCALEX);              //X scale adjustment.                
+    float fScaleY   = getentityvar(vTarget, ADSCALEY);              //Y scale adjustment.
+    int   iFlipX    = getentityvar(vTarget, ADFLIPX);               //Flip X.
+    int   iFlipY    = getentityvar(vTarget, ADFLIPY);               //Flip Y.
+    int   iShiftX   = getentityvar(vTarget, ADSHIFTX);              //Shift X.
+    int   iBlend    = getentityvar(vTarget, ADBLEND);               //Blend.
+    int   iRemap    = getentityvar(vTarget, ADREMAP);               //Remap.
+    int   iFill     = getentityvar(vTarget, ADFILL);                //Fill.
+    int   iRotate   = getentityvar(vTarget, ADROTATE);              //Rotate.
+    int   iARotat   = getentityvar(vTarget, ADAROTAT);              //Auto Rotation.
+    float fMinZ     = openborconstant("PLAYER_MIN_Z") * 1.1;        //Minimum Z location * Zoom factor.                                       
+    float fDeltaZ   = (openborconstant("PLAYER_MAX_Z")) - fMinZ;    //Range betwen fMinZ and MaxZ                                            
+    float fFactor;                                                  //Autozoom calculation placeholder.                
+       
+    fFactor  = getentityproperty(vTarget, "z") - fMinZ; //Distance of caller from fMinZ.
+    fFactor /= fDeltaZ;                                 //Resolve Delta (midpoint) value.
+    fFactor *= 0.1;                                     //Set scale to .9 thru 1
+    fFactor += 0.9;                                     //Resolve %.
+    setentityvar(vTarget, ADSCALER, fFactor);           //Store scale ratio for use by sub entity (shooting, spawning, binding etc.) functions.
+    fFactor *= 256;                                     //% of maximum size.
 
-	/*
-	Failsafe in case function is called and entity does not exist (otherwise setdrawmethod() will cause shut down).
-	*/
-	if (!vEnt)
-	{ 
-		return; 
-	}
-
-	iDMode		=	1; //getindexedvar(DRAWMOD);							//Get draw mode setting. 
-    fScaleX		=	getentityvar(vEnt, ADSCALEX);					//X scale adjustment.                
-    fScaleY		=	getentityvar(vEnt, ADSCALEY);					//Y scale adjustment.
-    iFlipX		=	getentityvar(vEnt, ADFLIPX);					//Flip X.
-    iFlipY		=	getentityvar(vEnt, ADFLIPY);					//Flip Y.
-    iShiftX		=	getentityvar(vEnt, ADSHIFTX);					//Shift X.	
-    iFill		=	getentityvar(vEnt, ADFILL);						//Fill.
-    iRotate		=	getentityvar(vEnt, ADROTATE);					//Rotate.
-    iARotat		=	getentityvar(vEnt, ADAROTAT);					//Auto Rotation.
-    fMinZ		=	openborconstant("PLAYER_MIN_Z");				//Minimum Z location * Zoom factor.                                       
-    fMaxZ		=	openborconstant("PLAYER_MAX_Z");				//Maximum Z location.
-	fDeltaZ		=	fMaxZ - (fMinZ * 1.1);							//Range betwen fMinZ * Zoom factor and MaxZ                                            
-    fZ			=	getentityproperty(vEnt, "z");					//Ent's current Z location.
-
-	if(iDMode && (fZ > fMinZ || fZ < fMaxZ))						//Autozoom disabled and entity in bounds?
-	{
-		fFactor		= 1;											//Factor = 1 (100% normal size).
-	}
-	else
-	{
-		fFactor		=	fZ - fMinZ;									//Distance of Ent from fMinZ.
-		fFactor		/=	fDeltaZ;									//Resolve Delta (midpoint) value.
-		fFactor		*=	0.1;										//Set scale to .9 thru 1
-		fFactor		+=	0.9;										//Resolve %.
-	}
-	
-	setentityvar(vEnt, ADSCALER, fFactor);							//Store scale ratio for use by sub entity (shooting, spawning, binding etc.) functions.
-    fFactor *= 256;													//Calculate % of normal size (256) for setdrawmethod().
-	
-	/*
-	Auto rotation.
-	*/
     if (iARotat)
     {                
         iRotate = iRotate + iARotat;
-        setentityvar(vEnt, ADROTATE, iRotate);
+        setentityvar(vTarget, ADROTATE, iRotate);
     }
     
-    /*
-	If ScaleX Adjustment provided, apply it with autozoom factor.
-	*/
+    //If ScaleX Adjustment provided, apply it with autozoom factor.
     if (fScaleX)
     {
         fScaleX = draw0002(fFactor, fScaleX); 
@@ -95,9 +54,7 @@ void draw0001(void vEnt){
         fScaleX = fFactor;
     }
 
-    /*
-	If ScaleY Adjustment provided, apply it with autozoom factor.
-	*/
+    //If ScaleY Adjustment provided, apply it with autozoom factor.
     if (fScaleY)
     {
         fScaleY = draw0002(fFactor, fScaleY);
@@ -107,26 +64,23 @@ void draw0001(void vEnt){
         fScaleY = fFactor; 
     }
 
-	/*
-	Reverse rotation if target facing opposite direction.
-	*/
     if (iRotate)
     {
-        if (!getentityproperty(vEnt, "direction"))
+        if (!getentityproperty(vTarget, "direction"))
         {
             iRotate = -iRotate;
         }
     }
     
-    /*
-	If Values are not available, apply defaults.
-	*/
+    //If Values are not available, apply defaults.
     if (!iFlipX)  { iFlipX  = 0;    }   //FlipX.
     if (!iFlipY)  { iFlipY  = 0;    }   //FlipY.
     if (!iShiftX) { iShiftX = 0;    }   //ShiftX.
+    if (!iBlend)  { iBlend  = 0;    }   //Alpha.
+    if (!iRemap)  { iRemap  = -1;   }   //Remap.
     if (!iFill)   { iFill   = 0;    }   //Fill.
     if (!iRotate) { iRotate = 0;    }   //Fill.
 
-    setdrawmethod(vEnt, 1, fScaleX, fScaleY, iFlipX, iFlipY, iShiftX, -1, -1, iFill, iRotate);  //Set final values to drawmethod.    
+    setdrawmethod(vTarget, 1, fScaleX, fScaleY, iFlipX, iFlipY, iShiftX, iBlend, iRemap, iFill, iRotate);  //Set final values to drawmethod.    
 
 }

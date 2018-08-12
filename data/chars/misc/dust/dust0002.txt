@@ -1,0 +1,26 @@
+#Jump liftoff effect
+
+name	dust0002
+type	none
+lifespan 2
+shadow	0
+
+onspawnscript 	data/scripts/spaw0006.c
+onkillscript	data/scripts/kill0001.c
+
+palette		data/chars/misc/dust/dust0001
+
+anim idle	
+	
+	#Normal dust.
+
+	delay	5
+	offset	75 40		
+		frame	data/chars/misc/dust/dust0001
+		frame	data/chars/misc/dust/dust0002
+		frame	data/chars/misc/dust/dust0003
+		frame	data/chars/misc/dust/dust0004
+		frame	data/chars/misc/dust/dust0005
+		frame	data/chars/misc/dust/dust0006
+		frame	data/chars/misc/dust/dust0007
+
