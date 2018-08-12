@@ -4,8 +4,8 @@
 void spaw0001()
 {
     void vSelf      = getlocalvar("self");                                  //Caller.
-    
+
     spaw0002();         //Run spawn function.
-    draw0001(vSelf);    //Apply draw settings.
+    //draw0001(vSelf);    //Apply draw settings.
 
 }
