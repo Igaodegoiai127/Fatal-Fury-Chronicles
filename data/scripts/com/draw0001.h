@@ -2,22 +2,22 @@
 #include "data/scripts/com/draw0002.h"
 
 void draw0001(void vTarget){
-        
+
     /*
     draw0001()
     Damon Vaughn Caskey
     01/25/2008
     Applies requested draweffects and autozoom to all valid entities. The overall effect is to cause an entity to shirink as it
     moves "away" from the player's viewpoint and expand as it moves toward the player's vantage, similar to many Neo-Geo games.
-    
+
     1. Zoom ratio is stored as entity variable for later use, and applied to ScaleX/ScaleY parameters of setdrawmthod for entity.
-    2. This function will overidde other uses of drawmethod. Therfore values are taken and applied from entity variables stored 
+    2. This function will overidde other uses of drawmethod. Therfore values are taken and applied from entity variables stored
     by other functions to control other setdrawmethod parameters. This includes manual adjustment of scale values if desired.
     3. Autozoom variance is controlled by fMinZ * X. By changing the value of fMax, it is also possible to change the Z location in
     which entity is shown at its normal size.
     */
-    
-    float fScaleX   = getentityvar(vTarget, ADSCALEX);              //X scale adjustment.                
+
+    float fScaleX   = getentityvar(vTarget, ADSCALEX);              //X scale adjustment.
     float fScaleY   = getentityvar(vTarget, ADSCALEY);              //Y scale adjustment.
     int   iFlipX    = getentityvar(vTarget, ADFLIPX);               //Flip X.
     int   iFlipY    = getentityvar(vTarget, ADFLIPY);               //Flip Y.
@@ -27,10 +27,10 @@ void draw0001(void vTarget){
     int   iFill     = getentityvar(vTarget, ADFILL);                //Fill.
     int   iRotate   = getentityvar(vTarget, ADROTATE);              //Rotate.
     int   iARotat   = getentityvar(vTarget, ADAROTAT);              //Auto Rotation.
-    float fMinZ     = openborconstant("PLAYER_MIN_Z") * 1.1;        //Minimum Z location * Zoom factor.                                       
-    float fDeltaZ   = (openborconstant("PLAYER_MAX_Z")) - fMinZ;    //Range betwen fMinZ and MaxZ                                            
-    float fFactor;                                                  //Autozoom calculation placeholder.                
-       
+    float fMinZ     = openborconstant("PLAYER_MIN_Z") * 1.1;        //Minimum Z location * Zoom factor.
+    float fDeltaZ   = (openborconstant("PLAYER_MAX_Z")) - fMinZ;    //Range betwen fMinZ and MaxZ
+    float fFactor;                                                  //Autozoom calculation placeholder.
+
     fFactor  = getentityproperty(vTarget, "z") - fMinZ; //Distance of caller from fMinZ.
     fFactor /= fDeltaZ;                                 //Resolve Delta (midpoint) value.
     fFactor *= 0.1;                                     //Set scale to .9 thru 1
@@ -39,15 +39,15 @@ void draw0001(void vTarget){
     fFactor *= 256;                                     //% of maximum size.
 
     if (iARotat)
-    {                
+    {
         iRotate = iRotate + iARotat;
         setentityvar(vTarget, ADROTATE, iRotate);
     }
-    
+
     //If ScaleX Adjustment provided, apply it with autozoom factor.
     if (fScaleX)
     {
-        fScaleX = draw0002(fFactor, fScaleX); 
+        fScaleX = draw0002(fFactor, fScaleX);
     }
     else
     {
@@ -61,7 +61,7 @@ void draw0001(void vTarget){
     }
     else
     {
-        fScaleY = fFactor; 
+        fScaleY = fFactor;
     }
 
     if (iRotate)
@@ -71,7 +71,7 @@ void draw0001(void vTarget){
             iRotate = -iRotate;
         }
     }
-    
+
     //If Values are not available, apply defaults.
     if (!iFlipX)  { iFlipX  = 0;    }   //FlipX.
     if (!iFlipY)  { iFlipY  = 0;    }   //FlipY.
@@ -81,6 +81,6 @@ void draw0001(void vTarget){
     if (!iFill)   { iFill   = 0;    }   //Fill.
     if (!iRotate) { iRotate = 0;    }   //Fill.
 
-    setdrawmethod(vTarget, 1, fScaleX, fScaleY, iFlipX, iFlipY, iShiftX, iBlend, iRemap, iFill, iRotate);  //Set final values to drawmethod.    
+    setdrawmethod(vTarget, 1, fScaleX, fScaleY, iFlipX, iFlipY, iShiftX, iBlend, iRemap, iFill, iRotate);  //Set final values to drawmethod.
 
 }
