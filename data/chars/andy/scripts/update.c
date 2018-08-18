@@ -9,10 +9,10 @@ void main()
     void vSelf      = getlocalvar("self");
     int  iAni       = getentityproperty(vSelf, "animationid");
     int  iStatus    = getentityvar(vSelf, STATUS);
-    
+
     if (iStatus == 1)
     {
-        trai0002(); //Shadow trails.
+        trai0002(vSelf); //Shadow trails.
         trai0003(); //After hits.
         return;
     }
@@ -22,10 +22,10 @@ void main()
         || iAni == openborconstant("ANI_FREESPECIAL9")      //Zan'ei Ryuusei Ken?
         || iAni == openborconstant("ANI_FOLLOW8"))          //Zan'ei Ryuusei Ken SDM?
     {
-        if (getentityproperty(vSelf, "xdir"))               //Moving horizontally? 
-        {            
-            trai0002();                                     //Run shadow function.
+        if (getentityproperty(vSelf, "xdir"))               //Moving horizontally?
+        {
+            trai0002(vSelf);                                     //Run shadow function.
         }
-    }    
+    }
 }
 

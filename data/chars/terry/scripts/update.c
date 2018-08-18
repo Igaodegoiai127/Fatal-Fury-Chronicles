@@ -1,5 +1,5 @@
 /*
-Update script: 
+Update script:
 
 Terry Bogard
 */
@@ -16,11 +16,11 @@ void main(){
     void    vSprite = getentityproperty(vSelf, "sprite");
     int     iDir    = !getentityproperty(vSelf, "direction");
     int     iAni    = getentityproperty(vSelf, "animationid");
-    
+
     if (!openborvariant("in_selectscreen"))
     {
-        setdrawmethod(NULL(), 1, fScale, fScale, iDir, 0, 0, 6, 0, 255, 0, 0, 0);                 //Set global draw method.                                                  
+        setdrawmethod(NULL(), 1, fScale, fScale, iDir, 0, 0, 6, 0, 255, 0, 0, 0);                 //Set global draw method.
         drawsprite(vSprite, fX-openborvariant("xpos"), fZ-fY-openborvariant("ypos"), fZ, 0);  //Draw stored sprite.
-        setdrawmethod(NULL(), 0, 256, 256, 0, 0, 0, 0, 0, 0);                                   //Clear global drawmethod.    
+        setdrawmethod(NULL(), 0, 256, 256, 0, 0, 0, 0, 0, 0);                                   //Clear global drawmethod.
     }
 }
