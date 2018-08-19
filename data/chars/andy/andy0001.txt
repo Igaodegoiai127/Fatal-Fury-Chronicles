@@ -3066,11 +3066,9 @@ anim grabdown
 	
 anim jumpdelay
 	
-	delay	18
+	delay	8
 	offset	100 200
 	bbox	75 135 30 65
-		frame	data/chars/andy/andy0024
-	delay	1
 		frame	data/chars/andy/andy0024
 			
 anim jumpland
