@@ -19,7 +19,9 @@ void trai0001()
 	float   pos_Z;
 	int     draw_flip_x;        // facing.
     void    draw_table;
-    float   draw_scale;
+    float   draw_scale_x;
+    float   draw_scale_y;
+    int     key_index;
 
     //  Existing draw methods.
     void    old_draw_table;
@@ -29,87 +31,82 @@ void trai0001()
 	int     old_draw_flip_x;
     int     old_draw_enable;
 
-
-	for(i=1; i<=TRAILMAX; i++)                                  //Loop trailer slots.
+    // Loop afterimage slots.
+	for(i=1; i<=DC_AFTERIMAGE_GLOBAL_MAX; i++)
 	{
-	     // Get sprite.
-		sprite = getglobalvar("trailer"+i+".s");
+        // Get afterimage sprite.
+		sprite = getglobalvar(DC_AFTERIMAGE_KEY_BASE+i+DC_AFTERIMAGE_KEY_SPRITE);
 
 		// Sprite found?
 		if(sprite)
 		{
-			cd = getglobalvar("trailer"+i+".c");                //Get expire time.
+		    // If there is no expired time or the time is
+		    // 0, then we know this afterimage is expired.
+		    // We'll clear out the globals for this index
+		    // and exit the function.
+			cd = getglobalvar(DC_AFTERIMAGE_KEY_BASE+i+DC_AFTERIMAGE_KEY_EXPIRE);
 
-			// No expire time or decremented to 0?
 			if(!cd)
 			{
-			    // Clear the globals for this element.
-				setglobalvar("trailer"+i+".c", NULL());         // expire time.
-				setglobalvar("trailer"+i+".s", NULL());         // sprite.
-				setglobalvar("trailer"+i+".x", NULL());         // X
-				setglobalvar("trailer"+i+".z", NULL());         // Y
-				setglobalvar("trailer"+i+".a", NULL());         // Z
-                setglobalvar("trailer"+i+".m", NULL());         // map.
-                setglobalvar("trailer"+i+".r", NULL());         // scale ratio.
-			}
-			else
-			{
-			    // Let's get the old drawmethods so we can reapply them
-                // when we're done.
-                old_draw_enable     = getdrawmethod(NULL(), "enabled");
-                old_draw_flip_x     = getdrawmethod(NULL(), "flipx");
-                old_draw_scale_x    = getdrawmethod(NULL(), "scalex");
-                old_draw_scale_y    = getdrawmethod(NULL(), "scaley");
-                old_draw_table      = getdrawmethod(NULL(), "table");
-                old_draw_alpha      = getdrawmethod(NULL(), "alpha");
-
-			    // Game not paused?
-				if(openborvariant("game_paused")==0)
-				{
-				    // Decrement expire time.
-					setglobalvar("trailer"+i+".c", cd-1);
-				}
-
-                // Get global sprite adjustment values.
-				pos_X       = getglobalvar("trailer"+i+".x");       // stored X.
-				pos_Z       = getglobalvar("trailer"+i+".z");       // stored Z.
-				pos_Y       = getglobalvar("trailer"+i+".a");       // stored Y.
-				draw_flip_x = getglobalvar("trailer"+i+".f");       // stored facing.
-                draw_table  = getglobalvar("trailer"+i+".m");       // stored map.
-                draw_scale  = getglobalvar("trailer"+i+".r"); // scale ratio.
-
-                if(!draw_scale)
+			    for(key_index = 0; key_index < DC_AFTERIMAGE_KEY_THE_END; key_index++)
                 {
-                    draw_scale = 1;
+                    // Clear the globals for this element.
+                    setglobalvar(DC_AFTERIMAGE_KEY_BASE+i+key_index, NULL());
                 }
 
-                draw_scale *= 256;
-
-                // Position adjustments.
-                pos_X -= openborvariant("xpos");
-                pos_Y = pos_Z-pos_Y-openborvariant("ypos");
-                pos_Z -= i;
-
-                // Set global drawmethods.
-                changedrawmethod(NULL(), "enabled", 1);
-                changedrawmethod(NULL(), "alpha", 6);
-                changedrawmethod(NULL(), "scalex", draw_scale);
-                changedrawmethod(NULL(), "scaley", draw_scale);
-                changedrawmethod(NULL(), "flipx", draw_flip_x);
-                changedrawmethod(NULL(), "table", draw_table);
-
-				// Draw the sprite.
-				drawsprite(sprite, pos_X, pos_Y, pos_Z, 0);
-
-				// Restore old drawmthods.
-				changedrawmethod(NULL(), "enabled", old_draw_enable);
-                changedrawmethod(NULL(), "flipx", old_draw_flip_x);
-                changedrawmethod(NULL(), "scalex", old_draw_scale_x);
-                changedrawmethod(NULL(), "scaley", old_draw_scale_y);
-                changedrawmethod(NULL(), "flipx", old_draw_flip_x);
-                changedrawmethod(NULL(), "table", old_draw_table);
-                changedrawmethod(NULL(), "alpha", old_draw_alpha);
+                return;
 			}
+
+            // Let's get the current drawmethod settings
+            // so we can reapply them when we're done.
+            old_draw_enable     = getdrawmethod(NULL(), "enabled");
+            old_draw_flip_x     = getdrawmethod(NULL(), "flipx");
+            old_draw_scale_x    = getdrawmethod(NULL(), "scalex");
+            old_draw_scale_y    = getdrawmethod(NULL(), "scaley");
+            old_draw_table      = getdrawmethod(NULL(), "table");
+            old_draw_alpha      = getdrawmethod(NULL(), "alpha");
+
+            // Game not paused?
+            if(openborvariant("game_paused")==0)
+            {
+                // Decrement expire time.
+                setglobalvar(DC_AFTERIMAGE_KEY_BASE+i+DC_AFTERIMAGE_KEY_EXPIRE, cd-1);
+            }
+
+            // Get global sprite adjustment values.
+            pos_X           = getglobalvar(DC_AFTERIMAGE_KEY_BASE+i+DC_AFTERIMAGE_KEY_POS_X);
+            pos_Z           = getglobalvar(DC_AFTERIMAGE_KEY_BASE+i+DC_AFTERIMAGE_KEY_POS_Z);
+            pos_Y           = getglobalvar(DC_AFTERIMAGE_KEY_BASE+i+DC_AFTERIMAGE_KEY_POS_Y);
+            draw_flip_x     = getglobalvar(DC_AFTERIMAGE_KEY_BASE+i+DC_AFTERIMAGE_KEY_FLIP_X);
+            draw_table      = getglobalvar(DC_AFTERIMAGE_KEY_BASE+i+DC_AFTERIMAGE_KEY_TABLE);
+            draw_scale_x    = getglobalvar(DC_AFTERIMAGE_KEY_BASE+i+DC_AFTERIMAGE_KEY_SCALE_X);
+            draw_scale_y    = getglobalvar(DC_AFTERIMAGE_KEY_BASE+i+DC_AFTERIMAGE_KEY_SCALE_Y);
+
+            // Position adjustments.
+            pos_X -= openborvariant("xpos");
+            pos_Y = pos_Z-pos_Y-openborvariant("ypos");
+            pos_Z -= i;
+
+            // Set global drawmethods.
+            changedrawmethod(NULL(), "enabled", 1);
+            changedrawmethod(NULL(), "alpha", DC_AFTERIMAGE_BLEND);
+            changedrawmethod(NULL(), "scalex", draw_scale_x);
+            changedrawmethod(NULL(), "scaley", draw_scale_x);
+            changedrawmethod(NULL(), "flipx", draw_flip_x);
+            changedrawmethod(NULL(), "table", draw_table);
+
+            // Draw the afterimage sprite.
+            drawsprite(sprite, pos_X, pos_Y, pos_Z, 0);
+
+            // Restore old drawmethods.
+            changedrawmethod(NULL(), "enabled", old_draw_enable);
+            changedrawmethod(NULL(), "flipx", old_draw_flip_x);
+            changedrawmethod(NULL(), "scalex", old_draw_scale_x);
+            changedrawmethod(NULL(), "scaley", old_draw_scale_y);
+            changedrawmethod(NULL(), "flipx", old_draw_flip_x);
+            changedrawmethod(NULL(), "table", old_draw_table);
+            changedrawmethod(NULL(), "alpha", old_draw_alpha);
+
 		}
 	}
 }

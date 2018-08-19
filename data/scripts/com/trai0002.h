@@ -1,5 +1,4 @@
 #include "data/scripts/vars/trails.h"
-#include "data/scripts/vars/entity.h"
 
 void trai0002(void target)
 {
@@ -12,52 +11,55 @@ void trai0002(void target)
     be displayed as a shadow trail.
     */
 
-	int     iSlot;                                                      //Trailer slot.
-	void    vSprite;                                                    //Current sprite.
-	int     iDir;                                                       //Current facing.
-	float   fY, fZ, fX;                                                 //Current location.
-	float   fRatio;                                                     //Current scale ratio.
-    void    vMap;                                                       //Current remap.
-    int     iETime;
-    int     iTimer;// = getentityvar(self, "SHDELAY");
+    int     i;
+    int     draw_scale_x;
+    int     draw_scale_y;
+	void    old_sprite;
+	void    sprite;
+	void    draw_table;
+	int     time_remaining;
+	float   pos_x;
+	float   pos_y;
+	float   pos_z;
+	int     direction;
+	int     elapsed_time;
 
-    iTimer = getentityvar(target, "SHDELAY");
+    elapsed_time = openborvariant("elapsed_time");
 
-    if (!iTimer) iTimer = 0;
-    if (iTimer < 1)
-    {
-        setentityvar(target, "SHDELAY", ++iTimer);
-        return;
-    }
-
-    setentityvar(target, "SHDELAY", NULL());
-    iETime = openborvariant("elapsed_time");
-
-	if(iETime%TRAILDLY==0)                                              //Modulo of elapsed time and trailer expire time 0?
+    // Modulo of elapsed time and trailer expire time 0?
+	if(elapsed_time%DC_AFTERIMAGE_DELAY==0)
 	{
-
-		vSprite = getentityproperty(target, "sprite");                   //Get current sprite.
-		fX      = getentityproperty(target, "x");                        //Get X location.
-		fZ      = getentityproperty(target, "z");                        //Get Z location.
-		fY      = getentityproperty(target, "a");                        //Get Y location.
-		iDir    = !getentityproperty(target, "direction");               //Get facing.
-        vMap    = getentityproperty(target, "colourmap");                //Get current map.
-        fRatio  = getentityvar(target, ADSCALER);                        //Get current scale ratio.
-
-
-
-        for(iSlot=1; iSlot<=TRAILMAX; iSlot++)                          //Loop through trailer slots.
+        // Loop through trailer slots.
+        for(i=1; i<=DC_AFTERIMAGE_GLOBAL_MAX; i++)
 		{
-			if(getglobalvar("trailer"+iSlot+".s")==NULL())              //Slot empty?
+            // Is this an empty slot? If so lets
+            // populate our artificial array with
+            // current sprite, drawmethods, and time.
+
+			old_sprite = getglobalvar(DC_AFTERIMAGE_KEY_BASE+i+DC_AFTERIMAGE_KEY_SPRITE);
+
+			if(!old_sprite)
 			{
-                setglobalvar("trailer"+iSlot+".r", fRatio);             //Current draw ratio.
-				setglobalvar("trailer"+iSlot+".s", vSprite);            //Store sprite
-                setglobalvar("trailer"+iSlot+".m", vMap);               //Store map.
-				setglobalvar("trailer"+iSlot+".x", fX);                 //Store X
-				setglobalvar("trailer"+iSlot+".z", fZ);                 //Store Z
-				setglobalvar("trailer"+iSlot+".a", fY);                 //Store Y
-				setglobalvar("trailer"+iSlot+".f", iDir);               //Store facing
-				setglobalvar("trailer"+iSlot+".c", TRAILCNT*TRAILDLY);  //Store total * delay as expire time.
+			    draw_scale_x    = getdrawmethod(target, "scalex");
+			    draw_scale_y    = getdrawmethod(target, "scaley");
+			    draw_table      = getdrawmethod(target, "table");
+			    time_remaining  = DC_AFTERIMAGE_ENTITY_MAX * DC_AFTERIMAGE_DELAY;
+			    pos_x           = getentityproperty(target, "x");
+                pos_z           = getentityproperty(target, "z");
+                pos_y           = getentityproperty(target, "y");
+                direction       = !getentityproperty(target, "direction");
+                sprite          = getentityproperty(target, "sprite");
+
+                setglobalvar(DC_AFTERIMAGE_KEY_BASE+i+DC_AFTERIMAGE_KEY_SCALE_X, draw_scale_x);
+                setglobalvar(DC_AFTERIMAGE_KEY_BASE+i+DC_AFTERIMAGE_KEY_SCALE_X, draw_scale_y);
+				setglobalvar(DC_AFTERIMAGE_KEY_BASE+i+DC_AFTERIMAGE_KEY_SPRITE, sprite);
+                setglobalvar(DC_AFTERIMAGE_KEY_BASE+i+DC_AFTERIMAGE_KEY_TABLE, draw_table);
+				setglobalvar(DC_AFTERIMAGE_KEY_BASE+i+DC_AFTERIMAGE_KEY_POS_X, pos_x);
+				setglobalvar(DC_AFTERIMAGE_KEY_BASE+i+DC_AFTERIMAGE_KEY_POS_Z, pos_z);
+				setglobalvar(DC_AFTERIMAGE_KEY_BASE+i+DC_AFTERIMAGE_KEY_POS_Y, pos_y);
+				setglobalvar(DC_AFTERIMAGE_KEY_BASE+i+DC_AFTERIMAGE_KEY_FLIP_X, direction);
+				setglobalvar(DC_AFTERIMAGE_KEY_BASE+i+DC_AFTERIMAGE_KEY_EXPIRE, time_remaining);
+
 				break;
 			}
 		}
