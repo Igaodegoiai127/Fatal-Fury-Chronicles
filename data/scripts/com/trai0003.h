@@ -1,13 +1,12 @@
-#include "data/scripts/vars/trails.h"      
 #include "data/scripts/vars/entity.h"
 
 void trai0003()
 {
     /*
     trai0002
-    Damon Caskey, based on shadow trail system by Utunnels 
+    Damon Caskey, based on shadow trail system by Utunnels
     11152009
-    Parses artificial array (created by numerically sequenced global vars) and applies stored 
+    Parses artificial array (created by numerically sequenced global vars) and applies stored
     damage values to simulate shadows hitting.
     */
 
@@ -17,7 +16,7 @@ void trai0003()
     //hit.k: Drop (knockdown)
     //hit.o: Opponent (target)
     //hit.a: Attacker.
-    
+
 	int     i;                                                  //Counting placeholder.
     int     cd;                                                 //Expire time.
     void    iType;                                              //Attack type.
@@ -35,17 +34,17 @@ void trai0003()
 
 	for(i=1; i<=15; i++)                                        //Loop hit slots.
 	{
-        vAtk    = getglobalvar("hit"+i+".a");                   //Get stored Attacker.		
+        vAtk    = getglobalvar("hit"+i+".a");                   //Get stored Attacker.
 		if(vAtk)                                                //Hit type found?
 		{
 			cd = getglobalvar("hit"+i+".c");                    //Get expire time.
 			if(!cd)                                             //No expire time or decremented to 0?
-			{   
+			{
                 iType   = getglobalvar("hit"+i+".t");           //Get hit type.
 				iDamage = getglobalvar("hit"+i+".d");           //Get stored Damage.
 				iDrop   = getglobalvar("hit"+i+".k");           //Get stored Drop.
-				vOpp    = getglobalvar("hit"+i+".o");           //Get stored Target.                
-                
+				vOpp    = getglobalvar("hit"+i+".o");           //Get stored Target.
+
                 iHP     = getentityproperty(vOpp, "health");    //Get opponent health.
                 vBind   = getentityvar(vAtk, BIND);             //Get bound entity.
                 vGrab   = getentityproperty(vAtk, "grabbing");  //Held entity.
@@ -54,19 +53,19 @@ void trai0003()
                 {
                     if (getentityproperty(vOpp, "type") != openborconstant("TYPE_OBSTACLE")) //Target not an obstacle?
                     {
-                        iHt = getentityproperty(vOpp, "height"); 
+                        iHt = getentityproperty(vOpp, "height");
                         fX  = getentityproperty(vOpp, "x") - openborvariant("xpos");
                         fY  = getentityproperty(vOpp, "a") + (iHt * 0.5);
                         fZ  = getentityproperty(vOpp, "z") + 2;
-                        
+
                         clearspawnentry();                          //Clear current spawn entry.
-                        setspawnentry("name",   "flash");           //Aquire spawn entity by name.                       
+                        setspawnentry("name",   "flash");           //Aquire spawn entity by name.
 	                    setspawnentry("coords", fX, fZ, fY);        //Spawn location.
                         vSpawn = spawn();                           //Spawn entity.
                         clearspawnentry();
                         changeentityproperty(vSpawn, "autokill", 1);
 
-                        damageentity(vOpp, vAtk, iDamage * 0.1, iDrop, iType);  //Apply attack/damage. 
+                        damageentity(vOpp, vAtk, iDamage * 0.1, iDrop, iType);  //Apply attack/damage.
 						iRush = getentityproperty(vAtk, "rush_count");
 						changeentityproperty(vAtk, "rush_count", iRush + 1);
                     }
@@ -77,15 +76,15 @@ void trai0003()
 				setglobalvar("hit"+i+".d", NULL());             //Clear damage.
 				setglobalvar("hit"+i+".k", NULL());             //Clear drop.
                 setglobalvar("hit"+i+".o", NULL());             //Clear target.
-                setglobalvar("hit"+i+".a", NULL());             //Clear attacker.                
+                setglobalvar("hit"+i+".a", NULL());             //Clear attacker.
 			}
 			else
 			{
 				if(openborvariant("game_paused")==0)            //Game active (not paused)?
-				{   
+				{
 					setglobalvar("hit"+i+".c", cd-1);           //Decrement expire time.
 				}
 			}
 		}
-	}    
+	}
 }
