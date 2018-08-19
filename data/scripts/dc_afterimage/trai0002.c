@@ -1,4 +1,4 @@
-#include "data/scripts/vars/trails.h"
+#include "data/scripts/dc_afterimage/config.h"
 
 void trai0002(void target)
 {

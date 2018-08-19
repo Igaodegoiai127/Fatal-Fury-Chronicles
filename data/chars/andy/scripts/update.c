@@ -1,5 +1,5 @@
 #include "data/scripts/vars/entity.h"
-#include "data/scripts/com/trai0002.h"
+#include "data/scripts/dc_afterimage/main.c"
 #include "data/scripts/com/trai0003.h"
 
 //Andy Bogard's update.

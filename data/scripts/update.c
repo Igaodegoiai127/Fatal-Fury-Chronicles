@@ -1,5 +1,4 @@
-#include "data/scripts/com/trai0001.h"
-#include "data/scripts/com/trai0002.h"
+#include "data/scripts/dc_afterimage/main.c"
 
 void main()
 {
