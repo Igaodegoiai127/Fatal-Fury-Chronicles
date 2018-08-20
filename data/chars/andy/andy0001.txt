@@ -390,11 +390,11 @@ anim walk
 	delay	12
 	offset	100 200
 	bbox	75 110 35 90
-		frame	data/chars/andy/andy0026
-		frame	data/chars/andy/andy0027
-		frame	data/chars/andy/andy0028
-		frame	data/chars/andy/andy0029
-		frame	data/chars/andy/andy0030
+		frame	data/chars/andy/4_0.png
+		frame	data/chars/andy/4_1.png
+		frame	data/chars/andy/4_2.png
+		frame	data/chars/andy/4_3.png
+		frame	data/chars/andy/4_4.png
 			
 anim backwalk
 
