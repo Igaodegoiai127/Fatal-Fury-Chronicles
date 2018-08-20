@@ -98,9 +98,9 @@ anim spawn
 		frame	data/chars/misc/blan0001	
 		frame	data/chars/andy/andy0046
 	delay	8	
-		frame	data/chars/andy/andy0024
-		frame	data/chars/andy/andy0025
-		frame	data/chars/andy/andy0024
+		frame	data/chars/andy/3_0.png
+		frame	data/chars/andy/3_1.png
+		frame	data/chars/andy/3_0.png
 	delay	10
 		frame	data/chars/andy/andy0091
 		frame	data/chars/andy/andy0092	
@@ -425,13 +425,13 @@ anim get
 	delay	8
 	offset	100 200
 	bbox	75 110 35 90
-		frame	data/chars/andy/andy0024
+		frame	data/chars/andy/3_0.png
 	bbox	75 135 30 65
 		frame	data/chars/andy/andy0269
 		frame	data/chars/andy/andy0268
 		frame	data/chars/andy/andy0269
 	bbox	75 110 35 90
-		frame	data/chars/andy/andy0024
+		frame	data/chars/andy/3_0.png
 
 anim duck
 
@@ -439,8 +439,8 @@ anim duck
 	delay	12
 	offset	100 200
 	bbox	75 135 30 65
-		frame	data/chars/andy/andy0024
-		frame	data/chars/andy/andy0025
+		frame	data/chars/andy/3_0.png
+		frame	data/chars/andy/3_1.png
 	
 anim charge
 	
@@ -490,7 +490,7 @@ anim slide
 		frame	data/chars/andy/andy0050
 	offset	100 200
 		frame	data/chars/andy/andy0162
-		frame	data/chars/andy/andy0024			
+		frame	data/chars/andy/3_0.png			
 
 anim runslide
 	
@@ -510,7 +510,7 @@ anim runslide
 		frame	data/chars/andy/andy0050
 	offset	100 200
 		frame	data/chars/andy/andy0162
-		frame	data/chars/andy/andy0024
+		frame	data/chars/andy/3_0.png
 
 #*****Attack*******************************************************************************
 
@@ -741,9 +741,9 @@ anim attackbackward
 	delay	5
 	offset	100 200
 	bbox	75 135 30 65
-		frame	data/chars/andy/andy0024
+		frame	data/chars/andy/3_0.png
 	@cmd 	soun0001 "vand0002.wav"					
-		frame	data/chars/andy/andy0025
+		frame	data/chars/andy/3_1.png
 	move	-20
 		frame	data/chars/andy/andy0162
 	move	0
@@ -757,8 +757,8 @@ anim attackbackward
 	delay	8
 		frame	data/chars/andy/andy0163	
 		frame	data/chars/andy/andy0162
-		frame	data/chars/andy/andy0025	
-		frame	data/chars/andy/andy0024
+		frame	data/chars/andy/3_1.png	
+		frame	data/chars/andy/3_0.png
 	 
 #anim attackboth
 
@@ -772,13 +772,13 @@ anim attackup
 	delay	10
 	offset 100 200
 	bbox	0
-		frame	data/chars/andy/andy0024
+		frame	data/chars/andy/3_0.png
 	delay	-1
 	bbox	75 135 30 65
 	@cmd 	soun0001 "vand0008.wav"					
 		frame	data/chars/andy/andy0051
 	delay	10	
-		frame	data/chars/andy/andy0024		
+		frame	data/chars/andy/3_0.png		
 
 anim attackdown
 
@@ -790,13 +790,13 @@ anim attackdown
 	delay	10
 	offset 100 200
 	bbox	0
-		frame	data/chars/andy/andy0024
+		frame	data/chars/andy/3_0.png
 	delay	-1
 	bbox	75 135 30 65
 	@cmd 	soun0001 "vand0008.wav"					
 		frame	data/chars/andy/andy0051
 	delay	10
-		frame	data/chars/andy/andy0024
+		frame	data/chars/andy/3_0.png
 
 anim riseattack
 
@@ -871,7 +871,7 @@ anim special2
 	delay	5
 	offset	100 200
 	bbox	75 110 35 90
-		frame	data/chars/andy/andy0024
+		frame	data/chars/andy/3_0.png
 		frame	data/chars/andy/andy0381
 	move	20
 		frame	data/chars/andy/andy0204
@@ -898,9 +898,9 @@ anim special2
 		frame	data/chars/andy/andy0210
 	delay	8		
 	move	0
-		frame	data/chars/andy/andy0024
-		frame	data/chars/andy/andy0025
-		frame	data/chars/andy/andy0024		
+		frame	data/chars/andy/3_0.png
+		frame	data/chars/andy/3_1.png
+		frame	data/chars/andy/3_0.png		
 
 anim freespecial 
 
@@ -985,9 +985,9 @@ anim freespecial3
 		frame	data/chars/andy/andy0175
 	delay	8
 	bbox	75 135 30 65		
-		frame	data/chars/andy/andy0024
-		frame	data/chars/andy/andy0025
-		frame	data/chars/andy/andy0024
+		frame	data/chars/andy/3_0.png
+		frame	data/chars/andy/3_1.png
+		frame	data/chars/andy/3_0.png
 
 anim freespecial4
 
@@ -1002,7 +1002,7 @@ anim freespecial4
 	delay	6
 	offset	100 200
 	bbox	75 135 30 65
-		frame	data/chars/andy/andy0024
+		frame	data/chars/andy/3_0.png
 		frame	data/chars/andy/andy0501	
 	bbox	95 95 35 60
 	@cmd 	soun0001 "vand0001.wav"						
@@ -1031,7 +1031,7 @@ anim freespecial5
 	delay	10
 	offset	100 200
 	bbox	75 135 30 65
-		frame	data/chars/andy/andy0024	
+		frame	data/chars/andy/3_0.png	
 		frame 	data/chars/andy/andy0494
 	bbox	95 95 35 60
 	@cmd 	soun0001 "vand0001.wav"						
@@ -1045,8 +1045,8 @@ anim freespecial5
 	bbox	75 135 30 65
 	attack	0
 		frame	data/chars/andy/andy0498
-		frame	data/chars/andy/andy0025
-		frame	data/chars/andy/andy0024
+		frame	data/chars/andy/3_1.png
+		frame	data/chars/andy/3_0.png
 
 
 anim freespecial6
@@ -1193,7 +1193,7 @@ anim freespecial8
 	move	0
 		frame	data/chars/andy/andy0248
 		frame	data/chars/andy/andy0249
-		frame	data/chars/andy/andy0024
+		frame	data/chars/andy/3_0.png
 
 anim freespecial9
 
@@ -1245,7 +1245,7 @@ anim freespecial10
 	delay	5
 	offset	100 200
 	bbox	0
-		frame	data/chars/andy/andy0024
+		frame	data/chars/andy/3_0.png
 	@cmd 	soun0001 "vand0013.wav"					
 		frame	data/chars/andy/andy0252
 		frame	data/chars/andy/andy0253
@@ -1398,9 +1398,9 @@ anim freespecial14
 		frame	data/chars/andy/andy0291
 		frame	data/chars/andy/andy0292
 	move	20
-		frame	data/chars/andy/andy0025
+		frame	data/chars/andy/3_1.png
 	move	0
-		frame	data/chars/andy/andy0024
+		frame	data/chars/andy/3_0.png
 
 anim freespecial15
 
@@ -1502,7 +1502,7 @@ anim freespecial17
 		frame	data/chars/andy/andy0291
 		frame	data/chars/andy/andy0292
 		frame	data/chars/andy/andy0293
-		frame	data/chars/andy/andy0024
+		frame	data/chars/andy/3_0.png
 		
 anim freespecial18
 
@@ -1521,7 +1521,7 @@ anim freespecial18
 		frame	data/chars/andy/0_1.png
 	delay	6
 	@cmd	bind0008 "paus0001" "visual" 12 1 -10 80 1 1 openborconstant("ANI_FOLLOW3") 0 1
-		frame	data/chars/andy/andy0024
+		frame	data/chars/andy/3_0.png
 	@cmd 	soun0001 "vand0020.wav"					#Voice effect.
 		frame	data/chars/andy/andy0202
 	move	-10
@@ -1595,7 +1595,7 @@ anim freespecial18
 	delay	30
 		frame	data/chars/andy/andy0249
 	delay	10
-		frame	data/chars/andy/andy0024
+		frame	data/chars/andy/3_0.png
 
 anim freespecial19
 	
@@ -1630,7 +1630,7 @@ anim freespecial19
 	delay	30
 		frame	data/chars/andy/andy0249
 	delay	10
-		frame	data/chars/andy/andy0024
+		frame	data/chars/andy/3_0.png
 
 anim freespecial20
 
@@ -1711,8 +1711,8 @@ anim freespecial40
 	attack	0
 		frame	data/chars/andy/andy0154
 	delay	12
-		frame	data/chars/andy/andy0025
-		frame	data/chars/andy/andy0024		
+		frame	data/chars/andy/3_1.png
+		frame	data/chars/andy/3_0.png		
 
 anim freespecial41
 
@@ -1757,8 +1757,8 @@ anim freespecial42
 	attack	0
 		frame	data/chars/andy/andy0160
 	delay	12
-		frame	data/chars/andy/andy0025
-		frame	data/chars/andy/andy0024
+		frame	data/chars/andy/3_1.png
+		frame	data/chars/andy/3_0.png
 
 anim freespecial43
 
@@ -1779,8 +1779,8 @@ anim freespecial43
 	delay	12
 		frame	data/chars/andy/andy0159
 		frame	data/chars/andy/andy0157
-		frame	data/chars/andy/andy0025
-		frame	data/chars/andy/andy0024
+		frame	data/chars/andy/3_1.png
+		frame	data/chars/andy/3_0.png
 
 #*****Followups****************************************************************************
 
@@ -1898,9 +1898,9 @@ anim follow3
 	delay	8
 	offset	100 200
 	bbox	75 135 30 65
-		frame	data/chars/andy/andy0024
-		frame	data/chars/andy/andy0025
-		frame	data/chars/andy/andy0024
+		frame	data/chars/andy/3_0.png
+		frame	data/chars/andy/3_1.png
+		frame	data/chars/andy/3_0.png
 
 anim follow4
 
@@ -1919,7 +1919,7 @@ anim follow4
 	offset	100 200
 	bbox	0
 	@cmd	bind0008 "paus0001" "visual" 12 1 -10 80 1 1 openborconstant("ANI_FOLLOW5") 0 1
-		frame	data/chars/andy/andy0024
+		frame	data/chars/andy/3_0.png
 	@cmd 	soun0001 "vand0020.wav"					#Voice effect.
 		frame	data/chars/andy/andy0202
 	move	-10
@@ -2009,7 +2009,7 @@ anim follow4
 	delay	30
 		frame	data/chars/andy/andy0249
 	delay	10
-		frame	data/chars/andy/andy0024
+		frame	data/chars/andy/3_0.png
 
 anim follow5
 
@@ -2066,7 +2066,7 @@ anim follow5
 		frame	data/chars/andy/andy0268							#Land frame.
 		frame	data/chars/andy/andy0269
 	move	-15			
-		frame	data/chars/andy/andy0024							#Flipframe
+		frame	data/chars/andy/3_0.png							#Flipframe
 	move	0
 		frame	data/chars/andy/andy0489
 	delay	30
@@ -2618,7 +2618,7 @@ anim follow86
 	delay	5
 	offset	100 200
 	bbox	75 135 30 65
-		frame	data/chars/andy/andy0024	
+		frame	data/chars/andy/3_0.png	
 		frame 	data/chars/andy/andy0494
 	bbox	95 95 35 60
 	@cmd 	soun0001 "vand0001.wav"					
@@ -2632,8 +2632,8 @@ anim follow86
 	bbox	75 135 30 65
 	attack	0
 		frame	data/chars/andy/andy0498
-		frame	data/chars/andy/andy0025
-		frame	data/chars/andy/andy0024
+		frame	data/chars/andy/3_1.png
+		frame	data/chars/andy/3_0.png
 
 anim follow87
 
@@ -2646,7 +2646,7 @@ anim follow87
 	delay	4
 	offset	100 200
 	bbox	75 135 30 65
-		frame	data/chars/andy/andy0024
+		frame	data/chars/andy/3_0.png
 		frame	data/chars/andy/andy0501	
 	bbox	95 95 35 60
 	@cmd 	soun0001 "vand0001.wav"					
@@ -2730,11 +2730,11 @@ anim follow92
 	delay	8
 	offset	100 200
 	bbox	0
-		frame	data/chars/andy/andy0024	
+		frame	data/chars/andy/3_0.png	
 		frame	data/chars/andy/andy0269
 		frame	data/chars/andy/andy0268
 		frame	data/chars/andy/andy0269	
-		frame	data/chars/andy/andy0024
+		frame	data/chars/andy/3_0.png
 	@cmd	vars0002 STATUS 1
 		frame	data/chars/andy/andy0339
 	@cmd	soun0001 "vand0003.wav"
@@ -3058,9 +3058,9 @@ anim grabdown
 	delay	8
 	offset	100 200
 	bbox	75 135 30 65
-		frame	data/chars/andy/andy0024
-		frame	data/chars/andy/andy0025
-		frame	data/chars/andy/andy0024
+		frame	data/chars/andy/3_0.png
+		frame	data/chars/andy/3_1.png
+		frame	data/chars/andy/3_0.png
 
 #*****Jumping******************************************************************************
 	
@@ -3069,16 +3069,16 @@ anim jumpdelay
 	delay	8
 	offset	100 200
 	bbox	75 135 30 65
-		frame	data/chars/andy/andy0024
+		frame	data/chars/andy/3_0.png
 			
 anim jumpland
 
 	delay	8
 	offset	100 200
 	bbox	75 135 30 65
-		frame	data/chars/andy/andy0024
-		frame	data/chars/andy/andy0025
-		frame	data/chars/andy/andy0024		
+		frame	data/chars/andy/3_0.png
+		frame	data/chars/andy/3_1.png
+		frame	data/chars/andy/3_0.png		
 		
 anim jump
 
@@ -3309,7 +3309,7 @@ anim blockpain3
 	delay	20
 	offset	100 200
 		frame	data/chars/andy/andy0054
-		frame	data/chars/andy/andy0024
+		frame	data/chars/andy/3_0.png
 
 anim blockpain4
 
@@ -3345,7 +3345,7 @@ anim land
 		frame	data/chars/andy/1_1.png
 		frame	data/chars/andy/2_0.png
 	delay	-1
-		frame	data/chars/andy/andy0024
+		frame	data/chars/andy/3_0.png
 	delay	8
 		frame	data/chars/andy/0_15.png
 		frame	data/chars/andy/0_6.png
@@ -3373,7 +3373,7 @@ anim rise
 		frame	data/chars/andy/andy0247
 		frame	data/chars/andy/andy0248
 		frame	data/chars/andy/andy0249
-		frame	data/chars/andy/andy0024
+		frame	data/chars/andy/3_0.png
 
 anim rise3
 
@@ -3727,7 +3727,7 @@ anim death
 		frame	data/chars/andy/andy0247
 		frame	data/chars/andy/andy0248
 		frame	data/chars/andy/andy0249
-		frame	data/chars/andy/andy0024
+		frame	data/chars/andy/3_0.png
 	delay	50
 		frame	data/chars/andy/andy0352
 	delay	20
