@@ -121,10 +121,10 @@ anim spawn
 		frame	data/chars/andy/andy0104
 	delay	12
 	move	10
-	frame	data/chars/andy/andy0009
+	frame	data/chars/andy/0_8.png
 	move	-5
-		frame	data/chars/andy/andy0008
-		frame	data/chars/andy/andy0007			
+		frame	data/chars/andy/0_7.png
+		frame	data/chars/andy/0_6.png			
 
 #anim respawn
 
@@ -257,7 +257,7 @@ anim idle2
 	delay	6
 	offset	100 200
 	bbox	75 110 35 90
-		frame	data/chars/andy/andy0008	
+		frame	data/chars/andy/0_7.png	
 	delay	15
 		frame	data/chars/andy/andy0533		 
 		frame	data/chars/andy/andy0534	
@@ -298,76 +298,76 @@ anim idle4
 		frame	data/chars/andy/andy0112		
 	delay	55
 	
-		frame	data/chars/andy/andy0002
+		frame	data/chars/andy/0_1.png
 	delay	25
-		frame	data/chars/andy/andy0003
-		frame	data/chars/andy/andy0004
+		frame	data/chars/andy/0_2.png
+		frame	data/chars/andy/0_3.png
 	delay	50
-		frame	data/chars/andy/andy0005
+		frame	data/chars/andy/0_4.png
 	delay	25
-		frame	data/chars/andy/andy0004
-		frame	data/chars/andy/andy0003
-		frame	data/chars/andy/andy0002
+		frame	data/chars/andy/0_3.png
+		frame	data/chars/andy/0_2.png
+		frame	data/chars/andy/0_1.png
 	delay	55
-		frame	data/chars/andy/andy0002
+		frame	data/chars/andy/0_1.png
 	delay	25
-		frame	data/chars/andy/andy0003
-		frame	data/chars/andy/andy0004
+		frame	data/chars/andy/0_2.png
+		frame	data/chars/andy/0_3.png
 	delay	50
-		frame	data/chars/andy/andy0005
+		frame	data/chars/andy/0_4.png
 	delay	25
-		frame	data/chars/andy/andy0004
-		frame	data/chars/andy/andy0003
-		frame	data/chars/andy/andy0002
+		frame	data/chars/andy/0_3.png
+		frame	data/chars/andy/0_2.png
+		frame	data/chars/andy/0_1.png
 	delay	55
-		frame	data/chars/andy/andy0002
+		frame	data/chars/andy/0_1.png
 	delay	25
-		frame	data/chars/andy/andy0003
-		frame	data/chars/andy/andy0004
+		frame	data/chars/andy/0_2.png
+		frame	data/chars/andy/0_3.png
 	delay	50
-		frame	data/chars/andy/andy0005
+		frame	data/chars/andy/0_4.png
 	delay	25
-		frame	data/chars/andy/andy0004
-		frame	data/chars/andy/andy0003
-		frame	data/chars/andy/andy0002
+		frame	data/chars/andy/0_3.png
+		frame	data/chars/andy/0_2.png
+		frame	data/chars/andy/0_1.png
 	delay	20
-		frame	data/chars/andy/andy0006
+		frame	data/chars/andy/0_5.png
 	delay	12
-		frame	data/chars/andy/andy0007
-		frame	data/chars/andy/andy0008
-		frame	data/chars/andy/andy0009
-		frame	data/chars/andy/andy0010
-		frame	data/chars/andy/andy0011
-		frame	data/chars/andy/andy0010
-		frame	data/chars/andy/andy0009
-		frame	data/chars/andy/andy0010
-		frame	data/chars/andy/andy0011
-		frame	data/chars/andy/andy0010
-		frame	data/chars/andy/andy0009
-		frame	data/chars/andy/andy0010
-		frame	data/chars/andy/andy0011
-		frame	data/chars/andy/andy0010
-		frame	data/chars/andy/andy0009
-		frame	data/chars/andy/andy0010
-		frame	data/chars/andy/andy0011
+		frame	data/chars/andy/0_6.png
+		frame	data/chars/andy/0_7.png
+		frame	data/chars/andy/0_8.png
+		frame	data/chars/andy/0_9.png
+		frame	data/chars/andy/0_10.png
+		frame	data/chars/andy/0_9.png
+		frame	data/chars/andy/0_8.png
+		frame	data/chars/andy/0_9.png
+		frame	data/chars/andy/0_10.png
+		frame	data/chars/andy/0_9.png
+		frame	data/chars/andy/0_8.png
+		frame	data/chars/andy/0_9.png
+		frame	data/chars/andy/0_10.png
+		frame	data/chars/andy/0_9.png
+		frame	data/chars/andy/0_8.png
+		frame	data/chars/andy/0_9.png
+		frame	data/chars/andy/0_10.png
 	delay	15
-		frame	data/chars/andy/andy0012
-		frame	data/chars/andy/andy0013
-		frame	data/chars/andy/andy0014
-		frame	data/chars/andy/andy0015
-		frame	data/chars/andy/andy0016
-		frame	data/chars/andy/andy0017
-		frame	data/chars/andy/andy0018
+		frame	data/chars/andy/0_11.png
+		frame	data/chars/andy/0_12.png
+		frame	data/chars/andy/0_13.png
+		frame	data/chars/andy/0_14.png
+		frame	data/chars/andy/0_15.png
+		frame	data/chars/andy/0_16.png
+		frame	data/chars/andy/0_17.png
 	delay	50
-		frame	data/chars/andy/andy0019
+		frame	data/chars/andy/0_18.png
 	delay	15
-		frame	data/chars/andy/andy0020
-		frame	data/chars/andy/andy0016
-		frame	data/chars/andy/andy0015
-		frame	data/chars/andy/andy0014
-		frame	data/chars/andy/andy0007
+		frame	data/chars/andy/0_19.png
+		frame	data/chars/andy/0_15.png
+		frame	data/chars/andy/0_14.png
+		frame	data/chars/andy/0_13.png
+		frame	data/chars/andy/0_6.png
 	delay	8
-		frame 	data/chars/andy/andy0006		
+		frame 	data/chars/andy/0_5.png		
 
 #anim sleep
 	
@@ -830,15 +830,15 @@ anim cant
 	offset 100 200
 	bbox	75 110 35 90
 	@cmd 	soun0001 "vand0004.wav"
-		frame	data/chars/andy/andy0008
-		frame	data/chars/andy/andy0009
+		frame	data/chars/andy/0_7.png
+		frame	data/chars/andy/0_8.png
 		frame	data/chars/andy/andy0058
 	delay	40
 		frame	data/chars/andy/andy0059
 	delay	10
 		frame	data/chars/andy/andy0058
-		frame	data/chars/andy/andy0009
-		frame	data/chars/andy/andy0008
+		frame	data/chars/andy/0_8.png
+		frame	data/chars/andy/0_7.png
 
 #anim jumpcant 
 
@@ -1518,7 +1518,7 @@ anim freespecial18
 	offset	100 200
 	bbox	0
 	@cmd	ani0003 openborconstant("ANI_FOLLOW4")
-		frame	data/chars/andy/andy0002
+		frame	data/chars/andy/0_1.png
 	delay	6
 	@cmd	bind0008 "paus0001" "visual" 12 1 -10 80 1 1 openborconstant("ANI_FOLLOW3") 0 1
 		frame	data/chars/andy/andy0024
@@ -1737,7 +1737,7 @@ anim freespecial41
 		frame	data/chars/andy/andy0448
 	@cmd	velo0001 0 0 0		
 		frame	data/chars/andy/andy0449
-		frame	data/chars/andy/andy0007		
+		frame	data/chars/andy/0_6.png		
 
 anim freespecial42
 
@@ -2096,7 +2096,7 @@ anim follow5
 	delay	30
 		frame	data/chars/andy/andy0492
 	delay	10
-		frame	data/chars/andy/andy0007
+		frame	data/chars/andy/0_6.png
 
 anim follow6
 
@@ -2434,11 +2434,11 @@ anim follow70
 		frame	data/chars/andy/andy0104
 	delay	12
 	move	10
-	frame	data/chars/andy/andy0009
+	frame	data/chars/andy/0_8.png
 	move	-5
-		frame	data/chars/andy/andy0008
-		frame	data/chars/andy/andy0007
-		frame	data/chars/andy/andy0002
+		frame	data/chars/andy/0_7.png
+		frame	data/chars/andy/0_6.png
+		frame	data/chars/andy/0_1.png
 
 anim follow71
 
@@ -2673,7 +2673,7 @@ anim follow88
 	delay	6
 	offset 100 200
 	bbox	0 0 0 0	
-		frame	data/chars/andy/andy0007
+		frame	data/chars/andy/0_6.png
 		frame	data/chars/andy/andy0212
 		frame	data/chars/andy/andy0391
 		frame	data/chars/andy/andy0392
@@ -2686,7 +2686,7 @@ anim follow88
 	delay	10
 	bbox	75 110 35 90
 		frame	data/chars/andy/andy0021
-		frame	data/chars/andy/andy0007
+		frame	data/chars/andy/0_6.png
 
 anim follow89
 
@@ -2825,8 +2825,8 @@ anim grabattack2
 		frame	data/chars/andy/andy0532
 	delay	10
 		frame	data/chars/andy/andy0435
-		frame	data/chars/andy/andy0008
-		frame	data/chars/andy/andy0007		
+		frame	data/chars/andy/0_7.png
+		frame	data/chars/andy/0_6.png		
 
 anim grabforward
 
@@ -2929,7 +2929,7 @@ anim grabbackward
 		frame	data/chars/andy/andy0528
 		frame	data/chars/andy/andy0529
 	bbox	75 110 35 90		
-		frame	data/chars/andy/andy0008		
+		frame	data/chars/andy/0_7.png		
 		
 anim grabup
 
@@ -2976,10 +2976,10 @@ anim grabup
 		frame	data/chars/andy/andy0448
 		frame	data/chars/andy/andy0449
 	delay	5
-		frame	data/chars/andy/andy0010
-		frame	data/chars/andy/andy0009
-		frame	data/chars/andy/andy0008
-		frame	data/chars/andy/andy0007
+		frame	data/chars/andy/0_9.png
+		frame	data/chars/andy/0_8.png
+		frame	data/chars/andy/0_7.png
+		frame	data/chars/andy/0_6.png
 		
 anim grabdown
 
@@ -3341,15 +3341,15 @@ anim land
 	offset	100 200
 	bbox	0
 	
-		frame	data/chars/andy/andy0020
+		frame	data/chars/andy/0_19.png
 		frame	data/chars/andy/andy0022
 		frame	data/chars/andy/andy0023
 	delay	-1
 		frame	data/chars/andy/andy0024
 	delay	8
-		frame	data/chars/andy/andy0016
-		frame	data/chars/andy/andy0007
-		frame	data/chars/andy/andy0016
+		frame	data/chars/andy/0_15.png
+		frame	data/chars/andy/0_6.png
+		frame	data/chars/andy/0_15.png
 
 anim rise
 	

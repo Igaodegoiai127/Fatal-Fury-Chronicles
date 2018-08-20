@@ -223,19 +223,16 @@ anim attackdown
 
 anim cant
 
-	delay	6
+	delay	8
 	offset 	120 190
 	bbox	75 110 35 90
-	sound	data/sounds/vand0004.wav
-		frame	data/chars/andy/andy0008
-		frame	data/chars/andy/andy0009
-		frame	data/chars/andy/andy0058
+		frame	data/chars/raiden/raid0302.png
+		frame	data/chars/raiden/raid0301.png
 	delay	40
-		frame	data/chars/andy/andy0059
+		frame	data/chars/raiden/raid0300.png
 	delay	10
-		frame	data/chars/andy/andy0058
-		frame	data/chars/andy/andy0009
-		frame	data/chars/andy/andy0008
+		frame	data/chars/raiden/raid0301.png
+		frame	data/chars/raiden/raid0302.png
 
 #anim jumpcant 
 #anim special		
