@@ -3343,7 +3343,7 @@ anim land
 	
 		frame	data/chars/andy/0_19.png
 		frame	data/chars/andy/1_1.png
-		frame	data/chars/andy/andy0023
+		frame	data/chars/andy/2_0.png
 	delay	-1
 		frame	data/chars/andy/andy0024
 	delay	8
