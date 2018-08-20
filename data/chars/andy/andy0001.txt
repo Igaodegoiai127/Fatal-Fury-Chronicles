@@ -278,7 +278,7 @@ anim idle3
 		frame	data/chars/andy/andy0091
 		frame	data/chars/andy/andy0092
 	delay	15		
-		frame	data/chars/andy/andy0021	
+		frame	data/chars/andy/1_0.png	
 		frame	data/chars/andy/andy0537	
 		frame	data/chars/andy/andy0538
 		frame	data/chars/andy/andy0537
@@ -402,7 +402,7 @@ anim backwalk
 	delay	12
 	offset	100 200
 	bbox	75 110 35 90
-		frame	data/chars/andy/andy0021	
+		frame	data/chars/andy/1_0.png	
 
 #anim up 
 #anim down	
@@ -469,8 +469,8 @@ anim turn
 	delay	10
 	offset	100 200
 	bbox	75 110 35 90
-		#frame	data/chars/andy/andy0021
-		frame	data/chars/andy/andy0022
+		#frame	data/chars/andy/1_0.png
+		frame	data/chars/andy/1_1.png
 
 anim slide
 	
@@ -2455,7 +2455,7 @@ anim follow71
 	delay	50
 		frame	data/chars/andy/andy0064
 	delay	10		
-		frame	data/chars/andy/andy0021
+		frame	data/chars/andy/1_0.png
 		frame	data/chars/andy/andy0112
 
 anim follow72
@@ -2465,7 +2465,7 @@ anim follow72
 	delay	10
 	offset	100 200
 	bbox	75 135 30 65
-		frame	data/chars/andy/andy0021
+		frame	data/chars/andy/1_0.png
 	@cmd 	soun0001 "vand0018.wav"			#Voice effect.
 		frame	data/chars/andy/andy0065
 		frame	data/chars/andy/andy0066
@@ -2477,7 +2477,7 @@ anim follow72
 	delay	10
 		frame	data/chars/andy/andy0068
 		frame	data/chars/andy/andy0067
-		frame	data/chars/andy/andy0021
+		frame	data/chars/andy/1_0.png
 
 anim follow80
 
@@ -2685,7 +2685,7 @@ anim follow88
 		frame	data/chars/andy/andy0392
 	delay	10
 	bbox	75 110 35 90
-		frame	data/chars/andy/andy0021
+		frame	data/chars/andy/1_0.png
 		frame	data/chars/andy/0_6.png
 
 anim follow89
@@ -3342,7 +3342,7 @@ anim land
 	bbox	0
 	
 		frame	data/chars/andy/0_19.png
-		frame	data/chars/andy/andy0022
+		frame	data/chars/andy/1_1.png
 		frame	data/chars/andy/andy0023
 	delay	-1
 		frame	data/chars/andy/andy0024
