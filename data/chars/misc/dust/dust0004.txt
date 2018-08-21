@@ -8,19 +8,19 @@ shadow	0
 onspawnscript 	data/scripts/spaw0008.c
 onkillscript	data/scripts/kill0001.c
 
-palette		data/chars/misc/dust/dust0001
+palette		data/chars/misc/dust/0_0.png
 
-anim idle	
-	
+anim idle
+
 	#Normal dust.
 
 	delay	8
-	offset	75 40		
-		frame	data/chars/misc/dust/dust0001
-		frame	data/chars/misc/dust/dust0002
-		frame	data/chars/misc/dust/dust0003
-		frame	data/chars/misc/dust/dust0004
-		frame	data/chars/misc/dust/dust0005
-		frame	data/chars/misc/dust/dust0006
-		frame	data/chars/misc/dust/dust0007
+	offset	75 40
+		frame	data/chars/misc/dust/0_0.png
+		frame	data/chars/misc/dust/0_1.png
+		frame	data/chars/misc/dust/0_2.png
+		frame	data/chars/misc/dust/0_3.png
+		frame	data/chars/misc/dust/0_4.png
+		frame	data/chars/misc/dust/0_5.png
+		frame	data/chars/misc/dust/0_6.png
 
