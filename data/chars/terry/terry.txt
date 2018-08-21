@@ -3,38 +3,38 @@
 
 #*****icons*****
 
-#icon         	data/chars/terry/aaic0001		#Normal. 					
-#icondie	data/chars/terry/aaic0002 		#KO.		
-#iconpain     	data/chars/terry/aaic0003 		#Pain.		
+#icon         	data/chars/terry/aaic0001		#Normal.
+#icondie	data/chars/terry/aaic0002 		#KO.
+#iconpain     	data/chars/terry/aaic0003 		#Pain.
 
 #*****General*****
 
-name	     	Terry								
-type	     	player     							
+name	     	Terry
+type	     	player
 bounce	     	2
-health	     	200								
-speed	     	12									
-Throwdamage  	26	        							
-holdblock    	1         								
-nodieblink   	2									
-falldie      	2	     								
-risetime     	90								
-running      	30 4 2 0 0 							
+health	     	200
+speed	     	12
+Throwdamage  	26
+holdblock    	1
+nodieblink   	2
+falldie      	2
+risetime     	90
+running      	30 4 2 0 0
 #turndelay    	15
-makeinv      	3									
+makeinv      	3
 projectilehit 	player obstacle
 candamage     	enemy obstacle
 hostile		enemy
 hmap         	1 5
 gfxshadow    	1
-blockpain    	1 
+blockpain    	1
 sleepwait       1000
 combostyle	1
 atchain      	1 2 3 4 0 5 6 7
 height 		95
 height 		100
 komap		1 0
-dust		dust0001 dust0003 dust0002
+dust		land_flash_normal dust0003 dust0002
 mpset 		100 3 50 1 2 2
 
 #*****Scripts*****
@@ -43,19 +43,19 @@ keyscript 		data/chars/terry/scripts/key.c
 #script			data/chars/terry/scripts/update.c
 animationscript 	data/chars/terry/scripts/ani_p.c
 didblockscript  	data/scripts/bloc0001.c
-takedamagescript	data/scripts/dama0001.c 
+takedamagescript	data/scripts/dama0001.c
 didhitscript		data/scripts/hit0001.c
 onmovezscript		data/scripts/movz0001.c
-onspawnscript		data/scripts/movz0001.c 
+onspawnscript		data/scripts/movz0001.c
 
 #*****MP Specific*****
 
-mpset 100 3 50 1 2 2									
+mpset 100 3 50 1 2 2
 
 #*****NPC/Enemy Specific*****
 #*****Inert Specfic*****
 #*****Sub Entites*****
-#*****Alternates*******							
+#*****Alternates*******
 
 palette	       data/chars/terry/aapa0000		#Default.
 #alternatepal   data/chars/terry/aapa0001 	#KO.
@@ -129,20 +129,20 @@ anim waiting
 		frame	data/chars/terry/aawa0001
 	offset	100 262
 		frame	data/chars/terry/aawa0001
-	offset	100 272	
+	offset	100 272
 	sound	data/sounds/vter0007.wav
-		frame	data/chars/terry/aawa0002					
+		frame	data/chars/terry/aawa0002
 
 #anim select
 
 anim idle
 
-	#Ready stance.	
+	#Ready stance.
 
-	loop 	1	
+	loop 	1
 	delay	12
 	offset	70 158
-	bbox 	50 60 45 105		
+	bbox 	50 60 45 105
 		frame	data/chars/terry/terr0001
 		frame	data/chars/terry/terr0002
 		frame	data/chars/terry/terr0003
@@ -152,19 +152,19 @@ anim idle
 
 anim idle2
 
-	#Strafe Idle (opponent behind on z)	
+	#Strafe Idle (opponent behind on z)
 
 	range  -250 250
 	rangez -250 -15
-	
-	loop 	1	
+
+	loop 	1
 	delay	12
 	offset	70 158
-	bbox 	50 60 45 105		
+	bbox 	50 60 45 105
 		frame	data/chars/terry/terr0579
 		frame	data/chars/terry/terr0580
 		frame	data/chars/terry/terr0581
-		frame	data/chars/terry/terr0580		
+		frame	data/chars/terry/terr0580
 
 anim idle3
 
@@ -172,54 +172,54 @@ anim idle3
 
 	range   -250 250
 	rangez  15 250
-	
-	loop 	1	
+
+	loop 	1
 	delay	12
 	offset	70 158
-	bbox 	50 60 45 105		
+	bbox 	50 60 45 105
 		frame	data/chars/terry/terr0512
 		frame	data/chars/terry/terr0513
 		frame	data/chars/terry/terr0514
-		frame	data/chars/terry/terr0513		
+		frame	data/chars/terry/terr0513
 
 #anim sleep
 
 anim faint
 
-	#Heavy fatigue.	
+	#Heavy fatigue.
 
-	loop 	1	
+	loop 	1
 	delay	15
 	offset	70 158
-	bbox 	50 60 45 105		
+	bbox 	50 60 45 105
 		frame	data/chars/terry/terr0284
 		frame	data/chars/terry/terr0285
 		frame	data/chars/terry/terr0286
 		frame	data/chars/terry/terr0285
-	
+
 anim walk
 
 	loop 	1
 	delay	12
-	offset	70 158	
-	bbox 	50 60 45 105	
+	offset	70 158
+	bbox 	50 60 45 105
 		frame	data/chars/terry/terr0007
 		frame	data/chars/terry/terr0008
 		frame	data/chars/terry/terr0009
 		frame	data/chars/terry/terr0005
-		frame	data/chars/terry/terr0006	
+		frame	data/chars/terry/terr0006
 
 anim walk2
 
-	#Strafe walk (opponent behind on z)	
+	#Strafe walk (opponent behind on z)
 
 	range  -250 250
 	rangez -250 -15
 
 	loop 	1
 	delay	12
-	offset	70 158	
-	bbox 	50 60 45 105	
+	offset	70 158
+	bbox 	50 60 45 105
 		frame	data/chars/terry/terr0545
 		frame	data/chars/terry/terr0546
 		frame	data/chars/terry/terr0547
@@ -235,8 +235,8 @@ anim walk3
 
 	loop 	1
 	delay	12
-	offset	70 158	
-	bbox 	50 60 45 105	
+	offset	70 158
+	bbox 	50 60 45 105
 		frame	data/chars/terry/terr0550
 		frame	data/chars/terry/terr0551
 		frame	data/chars/terry/terr0552
@@ -259,11 +259,11 @@ anim run
 anim turn
 
 	delay	12
-	offset	70 158	
-	bbox 	50 60 45 105	
+	offset	70 158
+	bbox 	50 60 45 105
 		frame	data/chars/terry/terr0010
 	offset	80 158
-		frame	data/chars/terry/terr0011			
+		frame	data/chars/terry/terr0011
 
 anim get
 
@@ -276,7 +276,7 @@ anim get
 		frame	data/chars/terry/terr0220
 		frame	data/chars/terry/terr0221
 	bbox 	50 60 45 105
-		frame	data/chars/terry/terr0222		
+		frame	data/chars/terry/terr0222
 		frame	data/chars/terry/terr0233
 
 #*****Attack*******************************************************************************
@@ -284,12 +284,12 @@ anim get
 anim attack1
 
 	#Long jab
-	
+
 	fastattack 1
 
 	delay	4
 	offset	70 158
-	bbox 	50 60 45 105	
+	bbox 	50 60 45 105
 	@cmd	ani0010 openborconstant("ANI_FOLLOW1") 0
 		frame	data/chars/terry/terr0040
 		frame	data/chars/terry/terr0055
@@ -305,17 +305,17 @@ anim attack2
 
 	range 	-10 50
 	fastattack 1
-	
+
 	delay	5
 	offset	70 158
-	bbox 	50 60 45 105	
+	bbox 	50 60 45 105
 		frame	data/chars/terry/terr0596
 		frame	data/chars/terry/terr0597
 	attack	60 75 70 30 6 0 0 0 10
 		frame	data/chars/terry/terr0598
 	attack	0
 		frame	data/chars/terry/terr0597
-		frame	data/chars/terry/terr0596	
+		frame	data/chars/terry/terr0596
 
 anim attack3
 
@@ -326,7 +326,7 @@ anim attack3
 
 	delay	6
 	offset	70 158
-	bbox 	50 60 45 105	
+	bbox 	50 60 45 105
 		frame	data/chars/terry/terr0585
 	delay	5
 	attack	75 100 35 20 6 0 0 0 15
@@ -350,9 +350,9 @@ anim attack4
 
 	delay	4
 	offset	70 158
-	bbox 	50 60 45 105	
+	bbox 	50 60 45 105
 		frame	data/chars/terry/terr0057
-		frame	data/chars/terry/terr0590	
+		frame	data/chars/terry/terr0590
 		frame	data/chars/terry/terr0591
 		frame	data/chars/terry/terr0592
 	attack	75 40 100 70 20 2 0 0 15
@@ -373,7 +373,7 @@ anim attack5
 
 	delay	6
 	offset	70 158
-	bbox 	50 60 45 105		
+	bbox 	50 60 45 105
 		frame	data/chars/terry/terr0320
 		frame	data/chars/terry/terr0321
 	attack	80 75 66 15 8 0 0 0 10
@@ -389,7 +389,7 @@ anim attack6
 
 	delay	6
 	offset	70 158
-	bbox 	50 60 45 105		
+	bbox 	50 60 45 105
 		frame	data/chars/terry/terr0057
 		frame	data/chars/terry/terr0058
 		frame	data/chars/terry/terr0059
@@ -409,7 +409,7 @@ anim attack7
 
 	delay	6
 	offset	70 158
-	bbox 	50 60 45 105		
+	bbox 	50 60 45 105
 		frame	data/chars/terry/terr0057
 		frame	data/chars/terry/terr0058
 		frame	data/chars/terry/terr0084
@@ -424,14 +424,14 @@ anim attack7
 		frame	data/chars/terry/terr0556
 		frame	data/chars/terry/terr0557
 		frame	data/chars/terry/terr0558
-		
+
 anim runattack
 
 	jumpframe 0 0 1.2 0 0
 
 	delay	10
 	offset	70 158
-	bbox 	50 60 45 105		
+	bbox 	50 60 45 105
 		frame	data/chars/terry/terr0226
 		frame	data/chars/terry/terr0227
 	@cmd ai0001 "blocking" 1 0 0
@@ -454,9 +454,9 @@ anim chargeattack
 
 	delay	6
 	offset	70 158
-	bbox 	50 60 45 105	
+	bbox 	50 60 45 105
 		frame	data/chars/terry/terr0046
-		frame	data/chars/terry/terr0047	
+		frame	data/chars/terry/terr0047
 		frame	data/chars/terry/terr0048
 	delay	5
 	attack	110 45 35 45 10 0 0 0 15
@@ -477,7 +477,7 @@ anim chargeattack
 anim freespecial6
 
 	#Rising tackle
-	
+
 	energycost 20
 	mponly	   1
 	loop	   1 5 8
@@ -489,9 +489,9 @@ anim freespecial6
 
 	delay	6
 	offset	70 158
-	bbox 	50 60 45 105	
+	bbox 	50 60 45 105
 		frame	data/chars/terry/terr0599
-	@cmd	soun0001 "vter0011.wav"	
+	@cmd	soun0001 "vter0011.wav"
 		frame	data/chars/terry/terr0600
 	delay	3
 	@cmd	soun0001 "sand0003.wav"
@@ -499,12 +499,12 @@ anim freespecial6
 	@cmd    hit0001 8 1 -1 -0.5 4 0 1 1 10 5 0 2 0
 	attack	70 55 35 45 0 0 0 0 15
 		frame	data/chars/terry/terr0601	#Jumpframe
-	move	0	
+	move	0
 		frame	data/chars/terry/terr0602
 	@cmd    hit0001 8 1 -1 0.2 2 0 1 1 15 -10 0 2 0
 		frame	data/chars/terry/terr0603
 	delay	4
-	attack	0	
+	attack	0
 		frame	data/chars/terry/terr0604 	#Spin start
 	attack	20 120 115 20 0 0 0 0 6
 		frame	data/chars/terry/terr0605
@@ -513,7 +513,7 @@ anim freespecial6
 	attack	20 120 115 20 0 0 0 0 6
 		frame	data/chars/terry/terr0607 	#Spin end
 	delay	6
-	attack	0	 
+	attack	0
 	attack	20 120 115 20 1 1 0 0 6
 		frame	data/chars/terry/terr0608	#Dropframe
 	attack	0
@@ -533,17 +533,17 @@ anim freespecial6
 anim follow1
 
 	#Short jab
-	
+
 	range -10 50
 	fastattack 1
 
 	delay	6
 	offset	70 158
-	bbox 	50 60 45 105	
-		frame	data/chars/terry/terr0040		
+	bbox 	50 60 45 105
+		frame	data/chars/terry/terr0040
 	attack	75 75 60 15 8 0 0 0 10
 		frame	data/chars/terry/terr0041
-	attack	0		
+	attack	0
 		frame	data/chars/terry/terr0040
 
 anim follow82
@@ -555,7 +555,7 @@ anim follow82
 
 	delay	6
 	offset	70 158
-	bbox 	50 60 45 105		
+	bbox 	50 60 45 105
 		frame	data/chars/terry/terr0114
 		frame	data/chars/terry/terr0115
 	attack9	90 125 60 30 15 0 0 0 10
@@ -569,7 +569,7 @@ anim follow82
 		frame	data/chars/terry/terr0057
 
 anim follow51
-	
+
 	#Defense poses
 
 	loop	1
@@ -595,11 +595,11 @@ anim follow51
 #*****Grappling****************************************************************************
 #*****Jumping******************************************************************************
 
-anim jumpdelay	
+anim jumpdelay
 
 	offset	70 158
 	delay	18
-	bbox 	50 60 45 105		
+	bbox 	50 60 45 105
 		frame data/chars/terry/terr0558
 
 anim jumpland
@@ -609,7 +609,7 @@ anim jumpland
 	bbox 	50 60 45 105
 		frame data/chars/terry/terr0556
 		frame data/chars/terry/terr0557
-		frame data/chars/terry/terr0558	
+		frame data/chars/terry/terr0558
 
 anim jump
 
@@ -625,12 +625,12 @@ anim jump
 		frame data/chars/terry/terr0562
 		frame data/chars/terry/terr0563
 
-anim forwardjump	
+anim forwardjump
 
 	delay	12
 	offset	70 158
 	bbox 	50 60 45 105
-		frame data/chars/terry/terr0559	
+		frame data/chars/terry/terr0559
 		frame data/chars/terry/terr0564
 	delay	8
 		frame data/chars/terry/terr0565
@@ -639,13 +639,13 @@ anim forwardjump
 		frame data/chars/terry/terr0568
 		frame data/chars/terry/terr0562
 		frame data/chars/terry/terr0563
-		
+
 #*****Injury and Defence*******************************************************************
 
 anim block
 
 	#Defence.
-		
+
 	delay	6
 	offset	70 158
 	bbox 	50 60 45 105
@@ -655,7 +655,7 @@ anim block
 anim blockpain
 
 	#Normal block.
-		
+
 	delay	3
 	offset	70 158
 	bbox 	50 60 45 105
@@ -674,7 +674,7 @@ anim blockpain
 anim blockpain2
 
 	#Middle block.
-		
+
 	delay	3
 	offset	70 158
 	bbox 	50 60 45 105
@@ -694,7 +694,7 @@ anim blockpain2
 anim blockpain3
 
 	#Low block.
-		
+
 	delay	3
 	offset	70 158
 	bbox 	50 85 50 75
@@ -716,7 +716,7 @@ anim blockpain3
 anim blockpain2
 
 	#High block.
-		
+
 	delay	3
 	offset	70 158
 	bbox 	50 60 45 105
@@ -741,10 +741,10 @@ anim rise
 		frame	data/chars/terry/terr0282
 		frame	data/chars/terry/terr0283
 		frame	data/chars/terry/terr0557
-		frame	data/chars/terry/terr0558			
+		frame	data/chars/terry/terr0558
 
 anim pain
-	
+
 	jumpframe 0 0 -0.1 0
 
 	delay	11
@@ -758,7 +758,7 @@ anim pain
 anim pain2
 
 	#Middle pain.
-	
+
 	jumpframe 0 0 -0.1 0
 
 	delay	11
@@ -768,13 +768,13 @@ anim pain2
 		frame	data/chars/terry/terr0354
 		frame	data/chars/terry/terr0355
 		frame	data/chars/terry/terr0353
-		frame	data/chars/terry/terr0354		
-		
+		frame	data/chars/terry/terr0354
+
 anim fall
-	
+
 	dropframe 1
 	landframe 3
-		
+
 	delay	-1
 	offset	70 158
 	bbox 	50 60 45 105
@@ -783,7 +783,7 @@ anim fall
 	delay	15
 		frame	data/chars/terry/terr0359
 	delay	-1
-		frame	data/chars/terry/terr0360	
+		frame	data/chars/terry/terr0360
 	delay	20
 	attack	0
 	bbox	0

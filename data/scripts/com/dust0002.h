@@ -28,7 +28,7 @@ void dust0002(void vType, float fAX, float fAY, int iAZ, int A, int B, int C, in
     int   iZ		= getentityproperty(vSelf, "z");							//Caller Z location.
     int   iY		= getentityproperty(vSelf, "a");							//Caller Y location.
 	int	  iDir		= getentityproperty(vSelf, "direction");					//Caller direction.
-	void  vModel    = "dust0001";											    //Dust model.
+	void  vModel    = "land_flash_normal";											    //Dust model.
 
     if (fAX){ fAX = draw0002(fRatio, fAX); }                                //If X adjust, apply scaling to fX.
     if (fAY){ fAY = draw0002(fRatio, fAY); }                                //If Y adjust, apply scaling to fY.

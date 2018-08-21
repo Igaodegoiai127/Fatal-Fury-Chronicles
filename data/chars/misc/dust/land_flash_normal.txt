@@ -1,6 +1,6 @@
 #Land effect
 
-name	dust0001
+name	land_flash_normal
 type	none
 lifespan 2
 shadow	0
