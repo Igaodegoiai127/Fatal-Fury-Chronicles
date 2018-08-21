@@ -49,7 +49,7 @@ void main(){
     {
         soun0001(SNDFALL);
         setentityvar(vSelf, ADBLEND, 1);
-        draw0001(vSelf);
+        dc_draw_z_position_autoscale(vSelf);
     }        
         
 }

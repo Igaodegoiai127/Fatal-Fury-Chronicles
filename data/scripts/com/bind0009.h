@@ -26,7 +26,7 @@ void bind0009(void vModel, void vAlias, int iMap, int iBlend, float fAX, float f
     
     draw0005(vSpawn, iScaleX, iScaleY, iFlipX, iFlipY, iShiftX, iBlend, iMap, iFill, iRotate, iARotat); //Apply draw values.
 
-    draw0001(vSpawn);																				    //Update draw for spawn.    
+    dc_draw_z_position_autoscale(vSpawn);																				    //Update draw for spawn.    
 
     if (iAni){        
         changeentityproperty(vSpawn, "animation", iAni);

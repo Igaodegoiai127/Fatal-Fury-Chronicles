@@ -5,7 +5,7 @@ void main(){
     void vSelf      = getlocalvar("self");    
     void other      = getlocalvar("obstacle");    
 
-    draw0001(vSelf);                          //Run draw function.    
+    dc_draw_z_position_autoscale(vSelf);                          //Run draw function.    
     
 }
 

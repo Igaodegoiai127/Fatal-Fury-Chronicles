@@ -24,7 +24,7 @@ void fall0001(){
     {        
         effe0001(MAPBURN);                                                          //Set effect.
         setentityvar(vSelf, ADREMAP, MAPBURN);                                      //Set burn effect map.
-        draw0001(vSelf);                                                            //Update draw   
+        dc_draw_z_position_autoscale(vSelf);                                                            //Update draw   
     }
     else if (iType == openborconstant("ATK_SHOCK"))                                 //Shock attack?
     {              

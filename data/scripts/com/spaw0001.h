@@ -6,6 +6,6 @@ void spaw0001()
     void vSelf      = getlocalvar("self");                                  //Caller.
 
     spaw0002();         //Run spawn function.
-    //draw0001(vSelf);    //Apply draw settings.
+    //dc_draw_z_position_autoscale(vSelf);    //Apply draw settings.
 
 }

@@ -30,7 +30,7 @@ void bind0010(void vTar, int iX, int iY, int iZ, int iDir, int iFrame){
         bindentity(vTarget, vSelf, iX, iZ, iY, iDir, 0);                    //Execute bind.
         setentityvar(vSelf, BIND, vTarget);                                 //Make record of binding.
 
-        draw0001(vTarget);
+        dc_draw_z_position_autoscale(vTarget);
 
         performattack(vTarget, DEFPOSE, 1);
         changeentityproperty(vTarget, "animpos", iFrame);

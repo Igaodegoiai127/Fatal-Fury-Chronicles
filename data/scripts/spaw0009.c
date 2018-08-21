@@ -28,7 +28,7 @@ void main(){
     changeentityproperty(vSelf, "autokill", 1);																//Make sure autokill property is on.
 	vSpawn = bind0008("effe0001", "effe0001", 0, 1, 0, 0, 0, 0, openborconstant("ANI_FOLLOW1"), 0, 1);		//Spawn impact effect.
 	draw0005(vSpawn, 1.5, 1.5, 0, 0, 0, 1, 0, 0, 0, 0);
-    draw0001(vSpawn);
+    dc_draw_z_position_autoscale(vSpawn);
     
 	//if (vAlias == "0")														//Stage check
     //{
@@ -40,7 +40,7 @@ void main(){
     //}
 	            
     draw0005(vSelf, fScaleX, fScaleY, 0, 0, 0, iBlend, iMap, 0, 0, 0);
-    draw0001(vSelf);    
+    dc_draw_z_position_autoscale(vSelf);    
 }
 
 

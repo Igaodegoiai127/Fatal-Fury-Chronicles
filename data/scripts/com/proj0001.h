@@ -15,7 +15,7 @@ void proj0001(void vName, float fX, float fZ, float fY, float iXSpeed, float iYS
     iType:         Unknown.
     iPType:        Projectile launch type. 0 = knife, 1 = bomb.
 
-    See draw0001() for following:
+    See dc_draw_z_position_autoscale() for following:
     iScaleX adjustment.
     iScaleY adjustment.
     Flip X.

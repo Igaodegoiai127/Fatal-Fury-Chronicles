@@ -29,5 +29,5 @@ void bind0006(void vName, void vAlias, void vMap, int iBlend, int iX, int iY, in
     setentityvar(vTarget, ADFILL,     iFill);     //Fill color.
     setentityvar(vTarget, ADROTATE,   iRotate);   //Rotate.
 
-    draw0001(vTarget);                            //Run draw to imediatly apply adjustments.        
+    dc_draw_z_position_autoscale(vTarget);                            //Run draw to imediatly apply adjustments.        
 }

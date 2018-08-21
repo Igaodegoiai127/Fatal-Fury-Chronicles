@@ -49,7 +49,7 @@ void bind0008(void vModel, void vAlias, int iMap, int iBlend, float fAX, float f
 
     setentityvar(vSpawn, ADBLEND, iBlend);                                  //Set transparency.
 
-    draw0001(vSpawn);                                                       //Update draw for spawn.
+    dc_draw_z_position_autoscale(vSpawn);                                                       //Update draw for spawn.
 
     if (iAni)
 	{

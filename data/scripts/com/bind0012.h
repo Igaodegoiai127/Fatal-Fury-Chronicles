@@ -45,7 +45,7 @@ void bind0012(void vTarget){
 
             changeentityproperty(vTarget, "position", fX, fZ, fY);      //Set target postion.
 
-            draw0001(vTarget);                                          //Refresh target's draw values.
+            dc_draw_z_position_autoscale(vTarget);                                          //Refresh target's draw values.
         }
     }
 }

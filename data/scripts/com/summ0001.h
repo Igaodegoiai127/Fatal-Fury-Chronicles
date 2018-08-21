@@ -40,7 +40,7 @@ void summ0001(void vModel, void vAlias, int iMap, int iBlend, int iX, int iY, in
 	
     setentityvar(vSpawn, ADBLEND, iBlend);                                  //Set transparency.        
     
-    //draw0001(vSpawn);                                                     //Update draw for spawn.    
+    //dc_draw_z_position_autoscale(vSpawn);                                                     //Update draw for spawn.    
 
     if (iAni)
 	{        

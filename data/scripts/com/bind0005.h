@@ -38,7 +38,7 @@ void bind0005(void vTarget, int iCond){
         fZ += getentityproperty(vTarget, "z");                          //Apply requested Z offset.
 
         changeentityproperty(vSelf, "position", fX, fZ, fY);            //Set callers's postion.
-        draw0001(vSelf);                                                //Refresh callers's draw values.
+        dc_draw_z_position_autoscale(vSelf);                                                //Refresh callers's draw values.
     }
 
     setentityvar(vSelf, WARPX, NULL());

@@ -36,7 +36,7 @@ void main(){
     //}
 	            
     draw0005(vSelf, fScaleX, fScaleY, 0, 0, 0, iBlend, iMap, 0, 0, 0);
-    draw0001(vSelf);    
+    dc_draw_z_position_autoscale(vSelf);    
 }
 
 

@@ -36,7 +36,7 @@ void kill0001()
             //Quick and dirty fix for burn fatality; default image size is too large.
             setentityvar(vSpawn, ADSCALEX, 0.75);               //Draw scale X adjustment.
             setentityvar(vSpawn, ADSCALEY, 0.75);               //Draw scale Y adjustment.
-            draw0001(vSpawn);                                   //Apply draw settings.
+            dc_draw_z_position_autoscale(vSpawn);                                   //Apply draw settings.
         }
     }
     else if (iAni == openborconstant("ANI_SHOCKDIE"))
@@ -50,7 +50,7 @@ void kill0001()
          {
             setentityvar(vParent, BINDHE, NULL());              //Clear parent's bound effect variant.
             setentityvar(vParent, ADREMAP, NULL());             //Clear parent's remap.
-            draw0001(vParent);                                  //Update parent's draw.
+            dc_draw_z_position_autoscale(vParent);                                  //Update parent's draw.
          }         
     }    
 

@@ -60,7 +60,7 @@ void bind0003(void vModel, int vAlias, int iMap, int iBlend, float fX, float fY,
 
     bindentity(vSpawn, vSelf, fX, fZ, fY, iDir, iAniFlag);                  //Execute bind.
 
-    draw0001(vSpawn);                                                       //Update draw for spawn.
+    dc_draw_z_position_autoscale(vSpawn);                                                       //Update draw for spawn.
 
     return vSpawn;                                                          //Return spawned entity.
 }

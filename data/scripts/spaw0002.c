@@ -32,7 +32,7 @@ void main(){
     setentityvar(vSelf, ADSCALEY, 0.5);											//Set half Y size.
     setentityvar(vSelf, ADBLEND, 1);                                            //Set alpha transparency.
     setentityvar(vSelf, ADROTATE, rnd0001(0, 359,0,0,0,0));                    //Set rotation (rando 0-359).
-    draw0001(vSelf);                                                            //Apply draw settings.    
+    dc_draw_z_position_autoscale(vSelf);                                                            //Apply draw settings.    
     
 	soun0001(SNDHIT1);
 }

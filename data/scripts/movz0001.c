@@ -9,7 +9,7 @@ void main()
         changeentityproperty(vSelf, "setlayer", -9);                //Layer behind floor panels and obstacles.
         changeentityproperty(getlocalvar("self"), "gfxshadow", 0);  //No shadow.
 
-        draw0001(vSelf);                                                //Run draw function for Z zooming.
+        dc_draw_z_position_autoscale(vSelf);                                                //Run draw function for Z zooming.
     }
 	else
 	{
@@ -19,9 +19,9 @@ void main()
 
 	if (iZ > openborvariant("PLAYER_MAX_Z"))
     {
-        draw0001(vSelf);
+        dc_draw_z_position_autoscale(vSelf);
     }
 
-    //draw0001(vSelf);                                                //Run draw function for Z zooming.
+    //dc_draw_z_position_autoscale(vSelf);                                                //Run draw function for Z zooming.
 }
 
