@@ -71,9 +71,6 @@ load	Andy		data/chars/andy/andy0001.txt				#PC Andy.
 
 #*****Joe Higashi*****
 
-#*****Mika*****
-
-load    mika0001	data/chars/mika/mika0001.txt
 
 #*****Raiden*****
 
