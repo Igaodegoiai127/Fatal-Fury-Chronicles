@@ -5,3 +5,5 @@ Logs/ScriptLog.txt
 *.hi
 *.s00
 *.sav
+*.opendb
+*.opensdf
