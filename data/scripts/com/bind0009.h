@@ -1,6 +1,6 @@
 #include "data/scripts/vars/entity.h"
 #include "data/scripts/com/bind0008.h"
-#include "data/scripts/com/draw0001.h"
+#include "data/scripts/dc_draw/main.c"
 #include "data/scripts/com/draw0005.h"
 
 void bind0009(void vModel, void vAlias, int iMap, int iBlend, float fAX, float fAY, int iAZ, int iDir, int iAni, int iFrame, int iKill, float iScaleX, float iScaleY, int iFlipX, int iFlipY, int iShiftX, int iFill, int iRotate, int iARotat)

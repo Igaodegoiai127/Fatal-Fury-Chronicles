@@ -14,8 +14,9 @@ iType:
      8 = Fall.
 */
 
+#include "data/scripts/vars/entity.h"
 #include "data/scripts/vars/sounds.h"
-#include "data/scripts/com/draw0001.h"
+#include "data/scripts/dc_draw/main.c"
 #include "data/scripts/com/soun0001.h"
 
 void main(){

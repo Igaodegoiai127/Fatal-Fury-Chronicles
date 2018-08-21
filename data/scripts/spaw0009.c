@@ -5,7 +5,7 @@ Heavy slam dust spawn.
 */
 
 #include "data/scripts/com/bind0008.h"
-#include "data/scripts/com/draw0001.h"
+#include "data/scripts/dc_draw/main.c"
 #include "data/scripts/com/draw0005.h"
 #include "data/scripts/com/soun0001.h"
 

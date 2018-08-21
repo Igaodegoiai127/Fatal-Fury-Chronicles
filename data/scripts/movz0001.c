@@ -1,4 +1,4 @@
-#include "data/scripts/com/draw0001.h"
+#include "data/scripts/dc_draw/main.c"
 
 void main()
 {

@@ -1,7 +1,7 @@
 #include "data/scripts/vars/colors.h"
 #include "data/scripts/vars/entity.h"
 #include "data/scripts/com/bind0008.h"
-#include "data/scripts/com/draw0001.h"
+#include "data/scripts/dc_draw/main.c"
 
 void kill0001()
 {

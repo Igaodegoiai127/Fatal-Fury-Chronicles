@@ -1,6 +1,7 @@
 //flash spawn.
 
-#include "data/scripts/com/draw0001.h"
+#include "data/scripts/vars/entity.h"
+#include "data/scripts/dc_draw/main.c"
 #include "data/scripts/com/soun0001.h"	        //Sound functions.
 #include "data/scripts/com/rnd0001.h"
 

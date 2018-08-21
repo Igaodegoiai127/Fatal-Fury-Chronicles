@@ -1,5 +1,5 @@
 #include "data/scripts/com/spaw0002.h"
-#include "data/scripts/com/draw0001.h"
+#include "data/scripts/dc_draw/main.c"
 
 void spaw0001()
 {

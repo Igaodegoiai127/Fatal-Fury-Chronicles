@@ -1,5 +1,5 @@
 #include "data/scripts/vars/entity.h"
-#include "data/scripts/com/draw0001.h"
+#include "data/scripts/dc_draw/main.c"
 #include "data/scripts/com/draw0002.h"
 
 void bind0003(void vModel, int vAlias, int iMap, int iBlend, float fX, float fY, float fZ, int iDir, int iAniFlag){

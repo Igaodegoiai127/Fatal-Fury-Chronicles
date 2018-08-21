@@ -1,5 +1,5 @@
 #include "data/scripts/vars/entity.h"
-#include "data/scripts/com/draw0001.h"
+#include "data/scripts/dc_draw/main.c"
 
 void effe0001(int iMap){
 

@@ -1,6 +1,6 @@
 #include "data/scripts/vars/anims.h"
 #include "data/scripts/vars/entity.h"
-#include "data/scripts/com/draw0001.h"
+#include "data/scripts/dc_draw/main.c"
 #include "data/scripts/vars/frames.h"
 
 void bind0010(void vTar, int iX, int iY, int iZ, int iDir, int iFrame){

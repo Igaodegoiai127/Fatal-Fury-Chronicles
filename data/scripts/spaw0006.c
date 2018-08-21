@@ -5,7 +5,7 @@ Manipulate jumpstart/jumpframe "dust" entity to produce appropriate visual and s
 */
 
 #include "data/scripts/vars/sounds.h"
-#include "data/scripts/com/draw0001.h"
+#include "data/scripts/dc_draw/main.c"
 #include "data/scripts/com/draw0005.h"
 #include "data/scripts/com/soun0001.h"
 
