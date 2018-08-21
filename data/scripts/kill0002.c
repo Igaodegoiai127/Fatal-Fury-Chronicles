@@ -4,7 +4,7 @@
 
 void main()
 {
-	dust0001("land_flash_normal");
+	dust0001("flash_fall_land");
 	void vSelf = getlocalvar("self");
 	void vBinde = getentityvar(vSelf, BINDE);		   //Get any bound effect.
 

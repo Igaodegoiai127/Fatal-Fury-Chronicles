@@ -1,6 +1,6 @@
 #Land effect
 
-name	land_flash_normal
+name	flash_fall_land
 type	none
 lifespan 2
 shadow	0

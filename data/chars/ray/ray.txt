@@ -30,7 +30,7 @@ candamage	player npc panel
 hmap		1 5
 mp		1
 height		95
-dust		land_flash_normal dust0003 dust0002
+dust		flash_fall_land dust0003 dust0002
 #riseattacktype 	3
 komap 		1 1
 nopassiveblock 	1

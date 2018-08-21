@@ -26,7 +26,7 @@ void dust0001(void vType){
     int   iZ		= getentityproperty(vSelf, "z");							//Caller Z location.
     int   iY		= getentityproperty(vSelf, "a");							//Caller Y location.
 	int	  iDir		= getentityproperty(vSelf, "direction");					//Caller direction.
-	void  vModel    = "land_flash_normal";											    //Dust model.
+	void  vModel    = "flash_fall_land";											    //Dust model.
 
     clearspawnentry();															//Clear current spawn entry.
     setspawnentry("name",   vModel);											//Aquire spawn entity by name.

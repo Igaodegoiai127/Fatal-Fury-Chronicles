@@ -22,7 +22,7 @@ turndelay    	10
 risetime        50
 falldie		2
 nodieblink      3
-dust		land_flash_normal dust0003 dust0002
+dust		flash_fall_land dust0003 dust0002
 
 #*****Scripts*****
 
