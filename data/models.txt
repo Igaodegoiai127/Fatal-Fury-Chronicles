@@ -75,7 +75,7 @@ load	Andy		data/chars/andy/andy0001.txt				#PC Andy.
 #*****Raiden*****
 
 know	raid0001	data/chars/raiden/raiden.txt
-load	Raiden		data/chars/raiden/raid0001.txt
+#load	Raiden		data/chars/raiden/raid0001.txt
 #*****Ray*****
 
 know	Ray		data/chars/ray/ray.txt
