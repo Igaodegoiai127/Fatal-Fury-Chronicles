@@ -180,6 +180,12 @@
     <ClCompile Include="data\scripts\dc_afterimage\trai0002.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="data\scripts\dc_draw\z_position_autoscale.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="data\scripts\dc_draw\main.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="data\scripts\com\ai0001.h">
@@ -444,6 +450,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="data\scripts\vars\sounds.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="data\scripts\dc_draw\config.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
