@@ -11,6 +11,7 @@ onkillscript	data/scripts/kill0001.c
 palette		data/chars/misc/dust/0_0.png
 alternatepal	data/chars/misc/effects/wate0001
 
+
 anim idle
 
 	#Normal dust.
