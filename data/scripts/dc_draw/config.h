@@ -2,10 +2,10 @@
 
 #define DC_DRAW 1
 
-#define DC_AUTOSCALE_ADJUSTMENT		1.1
-#define MIN_Z_SIZE					0.9		// Size adjustment when at MIN_Z position.
+#define DC_DRAW_MIN_Z_ADJUST		1.1		// Adjustment from actual min Z position before calculations.
+#define DC_DRAW_MIN_Z_SIZE			0.9		// Scale ratio when target is at MIN_Z position.
 
-#define DC_DRAW_AUTOSCALE_SCALE_X	256
-#define DC_DRAW_AUTOSCALE_SCALE_Y	256
+#define DC_DRAW_AUTOSCALE_SCALE_X	256		// Starting scale of target.
+#define DC_DRAW_AUTOSCALE_SCALE_Y	256		// "
 
 #endif // !DC_AUTOSCALE

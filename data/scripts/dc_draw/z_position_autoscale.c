@@ -23,16 +23,16 @@ void dc_draw_check_z_position_autoscale_params()
 
 	if (type == openborconstant("VT_EMPTY"))
 	{
-		setlocalvar("autoscale_adjustment", DC_AUTOSCALE_ADJUSTMENT);
+		setlocalvar("autoscale_adjustment", DC_DRAW_MIN_Z_ADJUST);
 	}
 
 	//
-	min_z_size	= getlocalvar("min_z_size");
+	min_z_size  = getlocalvar("min_z_size");
 	type		= typeof(min_z_size);
 
 	if (type == openborconstant("VT_EMPTY"))
 	{
-		setlocalvar("min_z_size", MIN_Z_SIZE);
+		setlocalvar("min_z_size", DC_DRAW_MIN_Z_SIZE);
 	}
 
 	//
@@ -78,7 +78,7 @@ void dc_draw_z_position_autoscale(void target){
 	float	pos_z;				// Z position.
 
 	float	min_z_distance;		// Distance from minimum Z.
-	float	min_z_adjusted;		// Min Z after DC_AUTOSCALE_ADJUSTMENT is applied.
+	float	min_z_adjusted;		// Min Z after DC_DRAW_MIN_Z_ADJUST is applied.
 	float	median_z;			// Midpoint between min (adjusted) and max Z.
 
 	float	range_percentage;	// % of z pos to min_z range vs min_z to max_z range. 

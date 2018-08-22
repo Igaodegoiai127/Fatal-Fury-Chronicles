@@ -1,4 +1,9 @@
 
+int dc_draw_get_scale_ratio(void target)
+{
+
+}
+
 int draw0002(float fRatio, float fVector){    
 
     /*
