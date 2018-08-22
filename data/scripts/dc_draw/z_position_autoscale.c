@@ -138,4 +138,38 @@ void dc_draw_z_position_autoscale(void target){
 	changedrawmethod(target, "enabled", 1);
 	changedrawmethod(target, "scalex", scale_x);
 	changedrawmethod(target, "scaley", scale_y);
+
+	log("\n test: " + dc_draw_get_scale_x_ratio(target));
+
+}
+
+// Caskey, Damon V.
+// 2018-08-22
+//
+// Get a decimal value of target's current
+// scale vs. default (presumably full size)
+// scale. NULL target means global drawmethod.
+float dc_draw_get_scale_x_ratio(void target)
+{
+	float	scale_current;
+	float	scale_default;
+	float	result = 0.0;
+
+	scale_current = getdrawmethod(target, "scalex") + 0.0;
+	scale_default = DC_DRAW_DEFAULT_SCALE + 0.0;
+
+	log("\n scale_current: " + scale_current);
+	log("\n scale_default: " + scale_default);
+
+	// If either is 0, then result must be 0.
+	if (!scale_current || !scale_default)
+	{
+		return result;
+	}
+
+	result = scale_current / scale_default;
+
+	log("\n result: " + result);
+
+	return result;
 }
