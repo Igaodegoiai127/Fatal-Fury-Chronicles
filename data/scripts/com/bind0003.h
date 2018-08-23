@@ -1,7 +1,5 @@
 #include "data/scripts/vars/entity.h"
 #include "data/scripts/dc_draw/main.c"
-#include "data/scripts/com/draw0002.h"
-
 void bind0003(void vModel, int vAlias, int iMap, int iBlend, float fX, float fY, float fZ, int iDir, int iAniFlag){
 
     /*
@@ -55,8 +53,13 @@ void bind0003(void vModel, int vAlias, int iMap, int iBlend, float fX, float fY,
 
     setentityvar(vSpawn, ADBLEND, iBlend);                                  //Set transparency.
 
-    if (fX){ fX = draw0002(fRatio, fX); }                               //If X bind, apply scaling to fX.
-    if (fY){ fY = draw0002(fRatio, fY); }                               //If Y bind, apply scaling to fY.
+	// If caller's drawmethod is on, then
+	// adjust offsets to caller's current scale.
+	if (getdrawmethod(vSelf, "enabled") == 1)
+	{
+		fX = dc_draw_adjust_to_scale_x(vSelf, fX);
+		fY = dc_draw_adjust_to_scale_y(vSelf, fY);
+	}
 
     bindentity(vSpawn, vSelf, fX, fZ, fY, iDir, iAniFlag);                  //Execute bind.
 
