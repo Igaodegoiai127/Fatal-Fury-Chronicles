@@ -122,6 +122,9 @@
     <ClCompile Include="data\scripts\dc_draw\main.c" />
     <ClCompile Include="data\scripts\dc_draw\scale_ratio.c" />
     <ClCompile Include="data\scripts\dc_draw\z_position_autoscale.c" />
+    <ClCompile Include="data\scripts\dc_math\main.c" />
+    <ClCompile Include="data\scripts\dc_math\percentage.c" />
+    <ClCompile Include="data\scripts\dc_math\ratio_to_int.c" />
     <ClCompile Include="data\scripts\deat0001.c" />
     <ClCompile Include="data\scripts\deat0002.c" />
     <ClCompile Include="data\scripts\fall0001.c" />
@@ -239,6 +242,7 @@
     <ClInclude Include="data\scripts\com\wall0001.h" />
     <ClInclude Include="data\scripts\dc_afterimage\config.h" />
     <ClInclude Include="data\scripts\dc_draw\config.h" />
+    <ClInclude Include="data\scripts\dc_math\config.h" />
     <ClInclude Include="data\scripts\vars\anims.h" />
     <ClInclude Include="data\scripts\vars\colors.h" />
     <ClInclude Include="data\scripts\vars\entity.h" />
