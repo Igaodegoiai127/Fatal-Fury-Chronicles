@@ -61,9 +61,31 @@ void bind0003(void vModel, int vAlias, int iMap, int iBlend, float fX, float fY,
 		fY = dc_draw_adjust_to_scale_y(vSelf, fY);
 	}
 
-    bindentity(vSpawn, vSelf, fX, fZ, fY, iDir, iAniFlag);                  //Execute bind.
+	// Get binding property for spawn.
+	void binding = get_entity_property(vSpawn, "binding");
+
+	// Get binding toggle and enable flags.
+	void binding_enable = get_binding_property(binding, "enable");
+	void binding_axis = get_binding_property(binding, "offset");
+
+	// Enable binding on each axis.
+	set_axis_principal_int_property(binding_enable, "x", 1);
+	set_axis_principal_int_property(binding_enable, "y", 1);
+	set_axis_principal_int_property(binding_enable, "z", 1);
+
+	// Set the binding offset.
+	set_axis_principal_int_property(binding_axis, "x", fX);
+	set_axis_principal_int_property(binding_axis, "y", fY);
+	set_axis_principal_int_property(binding_axis, "z", fZ);
+
+	// Set other binding properties.
+	set_binding_property(binding, "animation", iAniFlag);
+	set_binding_property(binding, "direction", iDir);
+	set_binding_property(binding, "target", vSelf);
+	set_binding_property(binding, "sort_id", 1);
 
     dc_draw_z_position_autoscale(vSpawn);                                                       //Update draw for spawn.
 
     return vSpawn;                                                          //Return spawned entity.
 }
+
