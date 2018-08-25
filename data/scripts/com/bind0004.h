@@ -78,7 +78,6 @@ void bind0004(void vTar, int iX, int iY, int iZ, int iDir, int iAniFlag){
 		set_binding_property(binding, "direction", iDir);
 		set_binding_property(binding, "target", vSelf);
 
-        bindentity(vTarget, vSelf, iX, iZ, iY, iDir, iAniFlag);                 //Execute bind.
         setentityvar(vSelf, BIND, vTarget);                                     //Make record of binding.
     }
 }
