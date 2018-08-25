@@ -1,6 +1,5 @@
 #include "data/scripts/vars/entity.h"
 #include "data/scripts/dc_draw/main.c"
-#include "data/scripts/com/draw0002.h"
 #include "data/scripts/com/bind0003.h"
 #include "data/scripts/com/bind0008.h"
 #include "data/scripts/com/hit0001.h"
