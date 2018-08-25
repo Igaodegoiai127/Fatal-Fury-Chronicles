@@ -58,6 +58,13 @@ void bind0008(void vModel, void vAlias, int iMap, int iBlend, float offset_x, fl
 
     setentityvar(vSpawn, ADBLEND, iBlend);                                  //Set transparency.
 
+	// If blend is any enabled value, apply to drawmethod.
+	if (iBlend)
+	{
+		changedrawmethod(vSpawn, "enabled", 1);
+		changedrawmethod(vSpawn, "alpha", iBlend);
+	}
+
     dc_draw_z_position_autoscale(vSpawn);                                                       //Update draw for spawn.
 
     if (iAni)
