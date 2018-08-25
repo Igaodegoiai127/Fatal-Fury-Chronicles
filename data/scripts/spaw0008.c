@@ -5,7 +5,6 @@ Light slam dust spawn.
 
 #include "data/scripts/com/bind0008.h"
 #include "data/scripts/dc_draw/main.c"
-#include "data/scripts/com/draw0005.h"
 #include "data/scripts/com/soun0001.h"
 
 void main(){
@@ -36,7 +35,12 @@ void main(){
 	    fScaleY = 1;															//Y scale.            
     //}
 	            
-    draw0005(vSelf, fScaleX, fScaleY, 0, 0, 0, iBlend, iMap, 0, 0, 0);
+		changedrawmethod(vSelf, "enabled", 1);
+		changedrawmethod(vSelf, "scalex", fScaleX);
+		changedrawmethod(vSelf, "scaley", fScaleY);
+		changedrawmethod(vSelf, "alpha", iBlend);
+		changedrawmethod(vSelf, "remap", iMap);
+
     dc_draw_z_position_autoscale(vSelf);    
 }
 
