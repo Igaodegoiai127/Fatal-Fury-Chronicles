@@ -28,7 +28,12 @@ void bind0008(void vModel, void vAlias, int iMap, int iBlend, float fAX, float f
 
 	if (fAX){ fAX = draw0002(fRatio, fAX); }                            //If X adjust, apply scaling to fX.
     if (fAY){ fAY = draw0002(fRatio, fAY); }                            //If Y adjust, apply scaling to fY.
-    if (!iDir){ fAX = -fAX;   }                                             //Reverse horizontal adjustment if facing left.
+    
+	// Reverse horizontal adjustment if facing left.
+	if (iDir == openborconstant("DIRECTION_LEFT"))
+	{ 
+		fAX = -fAX;   
+	}                                             
 
     if (iMap == -1)                                                         //Map "-1"?
     {
