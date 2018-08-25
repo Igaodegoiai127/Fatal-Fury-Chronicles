@@ -287,9 +287,6 @@
     <ClInclude Include="data\scripts\com\dir0001.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="data\scripts\com\draw0005.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="data\scripts\com\dust0001.h">
       <Filter>Header Files</Filter>
     </ClInclude>
