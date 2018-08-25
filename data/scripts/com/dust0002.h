@@ -34,8 +34,8 @@ void dust0002(void vType, float offset_x, float offset_y, int offset_z, int A, i
 	// adjust offsets to caller's current scale.
 	if (getdrawmethod(vSelf, "enabled") == 1)
 	{
-		fX = dc_draw_adjust_to_scale_x(vSelf, fX);
-		fY = dc_draw_adjust_to_scale_y(vSelf, fY);
+		offset_x = dc_draw_adjust_to_scale_x(vSelf, offset_x);
+		offset_y = dc_draw_adjust_to_scale_y(vSelf, offset_y);
 	}
 
     if (!iDir){ offset_x = -offset_x;   }                                                 //Reverse horizontal adjustment if facing left.
