@@ -1,7 +1,7 @@
 #include "data/scripts/vars/entity.h"
-#include "data/scripts/com/draw0002.h"
+#include "data/scripts/dc_draw/main.c"
 
-void dust0002(void vType, float fAX, float fAY, int iAZ, int A, int B, int C, int D, int E, int F){
+void dust0002(void vType, float offset_x, float offset_y, int offset_z, int A, int B, int C, int D, int E, int F){
 
     /*
      dust0002
@@ -26,18 +26,24 @@ void dust0002(void vType, float fAX, float fAY, int iAZ, int A, int B, int C, in
     float fRatio	= getentityvar(vSelf, ADSCALER);							//Caller's current scale ratio.
     int   iX		= getentityproperty(vSelf, "x") - openborvariant("xpos");	//Caller X location.
     int   iZ		= getentityproperty(vSelf, "z");							//Caller Z location.
-    int   iY		= getentityproperty(vSelf, "a");							//Caller Y location.
+    int   iY		= getentityproperty(vSelf, "y");							//Caller Y location.
 	int	  iDir		= getentityproperty(vSelf, "direction");					//Caller direction.
 	void  vModel    = "flash_fall_land";											    //Dust model.
 
-    if (fAX){ fAX = draw0002(fRatio, fAX); }                                //If X adjust, apply scaling to fX.
-    if (fAY){ fAY = draw0002(fRatio, fAY); }                                //If Y adjust, apply scaling to fY.
-    if (!iDir){ fAX = -fAX;   }                                                 //Reverse horizontal adjustment if facing left.
+	// If caller's drawmethod is on, then
+	// adjust offsets to caller's current scale.
+	if (getdrawmethod(vSelf, "enabled") == 1)
+	{
+		fX = dc_draw_adjust_to_scale_x(vSelf, fX);
+		fY = dc_draw_adjust_to_scale_y(vSelf, fY);
+	}
+
+    if (!iDir){ offset_x = -offset_x;   }                                                 //Reverse horizontal adjustment if facing left.
 
     clearspawnentry();															//Clear current spawn entry.
     setspawnentry("name",   vModel);											//Aquire spawn entity by name.
     setspawnentry("alias",  "" + vType + "");                                   //Set alias (this will be used to set type of "dust").
-	setspawnentry("coords", iX + fAX, iZ + iAZ, iY + fAY);						//Spawn location.
+	setspawnentry("coords", iX + offset_x, iZ + offset_z, iY + offset_y);						//Spawn location.
     vSpawn = spawn();															//Spawn entity.
     clearspawnentry();															//Clear current spawn entry.
 
