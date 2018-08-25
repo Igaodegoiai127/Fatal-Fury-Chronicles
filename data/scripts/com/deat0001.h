@@ -1,6 +1,5 @@
 #include "data/scripts/vars/anims.h"
 #include "data/scripts/vars/entity.h"
-#include "data/scripts/com/draw0004.h"
 #include "data/scripts/com/soun0003.h"
 
 void deat0001(){
@@ -65,7 +64,8 @@ if (iDType == openborconstant("ATK_BURN"))
                 setentityvar(vSelf, TOSSY, 15);
                 setentityvar(vSelf, TOSSZ, 8);
 				changeentityproperty(vSelf, "projectile", 1);			//Turn on projectile property.
-                draw0004(0, 0, 0, 0, 0, 0, 0, 0, 0, 5);
+                
+				// Set autorotation here.
             }
         }
     }

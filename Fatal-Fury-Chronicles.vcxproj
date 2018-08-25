@@ -190,8 +190,6 @@
     <ClInclude Include="data\scripts\com\dama0003.h" />
     <ClInclude Include="data\scripts\com\deat0001.h" />
     <ClInclude Include="data\scripts\com\dir0001.h" />
-    <ClInclude Include="data\scripts\com\draw0003.h" />
-    <ClInclude Include="data\scripts\com\draw0004.h" />
     <ClInclude Include="data\scripts\com\draw0005.h" />
     <ClInclude Include="data\scripts\com\dust0001.h" />
     <ClInclude Include="data\scripts\com\dust0002.h" />
