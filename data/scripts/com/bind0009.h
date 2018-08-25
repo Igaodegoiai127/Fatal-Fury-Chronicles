@@ -1,7 +1,6 @@
 #include "data/scripts/vars/entity.h"
 #include "data/scripts/com/bind0008.h"
 #include "data/scripts/dc_draw/main.c"
-#include "data/scripts/com/draw0005.h"
 
 void bind0009(void vModel, void vAlias, int iMap, int iBlend, float fAX, float fAY, int iAZ, int iDir, int iAni, int iFrame, int iKill, float iScaleX, float iScaleY, int iFlipX, int iFlipY, int iShiftX, int iFill, int iRotate, int iARotat)
 {
@@ -24,7 +23,18 @@ void bind0009(void vModel, void vAlias, int iMap, int iBlend, float fAX, float f
     
 	vSpawn = bind0008(vModel, vAlias, iMap, iBlend, fAX, fAY, iAZ, iDir, iAni, iFrame, iKill);
     
-    draw0005(vSpawn, iScaleX, iScaleY, iFlipX, iFlipY, iShiftX, iBlend, iMap, iFill, iRotate, iARotat); //Apply draw values.
+    changedrawmethod(vSpawn, "scalex", iScaleX);
+	changedrawmethod(vSpawn, "scaley", iScaleY);
+	changedrawmethod(vSpawn, "flipx", iFlipX);
+	changedrawmethod(vSpawn, "flipy", iFlipY);
+	changedrawmethod(vSpawn, "shiftx", iShiftX);
+	changedrawmethod(vSpawn, "alpha", iBlend);
+	changedrawmethod(vSpawn, "remap", iMap);
+	changedrawmethod(vSpawn, "fillcolor", iFill);
+	changedrawmethod(vSpawn, "rotate", iRotate);
+
+	//  Set autoratate here.
+
 
     dc_draw_z_position_autoscale(vSpawn);																				    //Update draw for spawn.    
 
