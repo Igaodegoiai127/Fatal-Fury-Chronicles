@@ -1,8 +1,7 @@
 #include "data/scripts/vars/entity.h"
 #include "data/scripts/dc_draw/main.c"
-#include "data/scripts/com/draw0002.h"
 
-void bind0008(void vModel, void vAlias, int iMap, int iBlend, float fAX, float fAY, int iAZ, int iDir, int iAni, int iFrame, int iKill){
+void bind0008(void vModel, void vAlias, int iMap, int iBlend, float offset_x, float offset_y, int iAZ, int iDir, int iAni, int iFrame, int iKill){
 
     /*
      bind0008
@@ -26,13 +25,18 @@ void bind0008(void vModel, void vAlias, int iMap, int iBlend, float fAX, float f
     int	  iY     = getentityproperty(vSelf, "a");                           //Caller Y location.
 	int	  iDir	 = getentityproperty(vSelf, "direction");					//Caller direction.
 
-	if (fAX){ fAX = draw0002(fRatio, fAX); }                            //If X adjust, apply scaling to fX.
-    if (fAY){ fAY = draw0002(fRatio, fAY); }                            //If Y adjust, apply scaling to fY.
+	// If caller's drawmethod is on, then
+	// adjust offsets to caller's current scale.
+	if (getdrawmethod(vSelf, "enabled") == 1)
+	{
+		offset_x = dc_draw_adjust_to_scale_x(vSelf, offset_x);
+		offset_x = dc_draw_adjust_to_scale_y(vSelf, offset_y);
+	}
     
 	// Reverse horizontal adjustment if facing left.
 	if (iDir == openborconstant("DIRECTION_LEFT"))
 	{ 
-		fAX = -fAX;   
+		offset_x = -offset_x;   
 	}                                             
 
     if (iMap == -1)                                                         //Map "-1"?
@@ -44,7 +48,7 @@ void bind0008(void vModel, void vAlias, int iMap, int iBlend, float fAX, float f
     setspawnentry("name",   vModel);                                        //Aquire spawn entity by name.
     setspawnentry("alias",  vAlias);                                        //Set alias.
     setspawnentry("map",    iMap);                                          //Set color remap.
-	setspawnentry("coords", iX + fAX, iZ + iAZ, iY + fAY);                  //Spawn location.
+	setspawnentry("coords", iX + offset_x, iZ + iAZ, iY + offset_y);                  //Spawn location.
     vSpawn = spawn();                                                       //Spawn entity.
     clearspawnentry();                                                      //Clear current spawn entry.
 
