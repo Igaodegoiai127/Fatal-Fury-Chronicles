@@ -1,7 +1,7 @@
 #include "data/scripts/vars/entity.h"
 #include "data/scripts/dc_draw/main.c"
 
-void bind0008(void vModel, void vAlias, int iMap, int iBlend, float offset_x, float offset_y, int iAZ, int iDir, int iAni, int iFrame, int iKill){
+void bind0008(void vModel, void vAlias, int iMap, int iBlend, float offset_x, float offset_y, int offset_z, int iDir, int iAni, int iFrame, int iKill){
 
     /*
      bind0008
@@ -48,7 +48,7 @@ void bind0008(void vModel, void vAlias, int iMap, int iBlend, float offset_x, fl
     setspawnentry("name",   vModel);                                        //Aquire spawn entity by name.
     setspawnentry("alias",  vAlias);                                        //Set alias.
     setspawnentry("map",    iMap);                                          //Set color remap.
-	setspawnentry("coords", iX + offset_x, iZ + iAZ, iY + offset_y);                  //Spawn location.
+	setspawnentry("coords", iX + offset_x, iZ + offset_z, iY + offset_y);                  //Spawn location.
     vSpawn = spawn();                                                       //Spawn entity.
     clearspawnentry();                                                      //Clear current spawn entry.
 
