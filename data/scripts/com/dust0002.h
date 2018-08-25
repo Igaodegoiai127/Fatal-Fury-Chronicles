@@ -51,7 +51,6 @@ void dust0002(void vType, float offset_x, float offset_y, int offset_z, int A, i
     vSpawn = spawn();															//Spawn entity.
     clearspawnentry();															//Clear current spawn entry.
 
-    setentityvar(vSelf, SPAWN, vSpawn);											//Store spawn into last spawn variant.
     changeentityproperty(vSpawn, "direction", iDir);							//Set spawn direction.
 
     return vSpawn;
