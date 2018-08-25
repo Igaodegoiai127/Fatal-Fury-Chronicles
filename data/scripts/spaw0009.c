@@ -6,7 +6,6 @@ Heavy slam dust spawn.
 
 #include "data/scripts/com/bind0008.h"
 #include "data/scripts/dc_draw/main.c"
-#include "data/scripts/com/draw0005.h"
 #include "data/scripts/com/soun0001.h"
 
 void main(){
@@ -27,20 +26,31 @@ void main(){
      
     changeentityproperty(vSelf, "autokill", 1);																//Make sure autokill property is on.
 	vSpawn = bind0008("effe0001", "effe0001", 0, 1, 0, 0, 0, 0, openborconstant("ANI_FOLLOW1"), 0, 1);		//Spawn impact effect.
-	draw0005(vSpawn, 1.5, 1.5, 0, 0, 0, 1, 0, 0, 0, 0);
-    dc_draw_z_position_autoscale(vSpawn);
+	
+	changedrawmethod(vSpawn, "enabled", 1);
+	changedrawmethod(vSpawn, "scalex", 384);
+	changedrawmethod(vSpawn, "scaley", 384);
+	changedrawmethod(vSpawn, "alpha", 1);
+	changedrawmethod(vSpawn, "remap", 0);
+	
+	dc_draw_z_position_autoscale(vSpawn);
     
 	//if (vAlias == "0")														//Stage check
     //{
         iBlend  = 1;                                                            //Set blend.
 	    iMap	= 0;															//Set map.		    
 	    soun0001(SNDIMPH);												        //Set sound.
-	    fScaleX = 1;															//X scale.
-	    fScaleY = 1;															//Y scale.            
+	    fScaleX = 256;															//X scale.
+	    fScaleY = 256;															//Y scale.            
     //}
-	            
-    draw0005(vSelf, fScaleX, fScaleY, 0, 0, 0, iBlend, iMap, 0, 0, 0);
-    dc_draw_z_position_autoscale(vSelf);    
+    
+	changedrawmethod(vSelf, "enabled", 1);
+	changedrawmethod(vSelf, "scalex", fScaleX);
+	changedrawmethod(vSelf, "scaley", fScaleY);
+	changedrawmethod(vSelf, "alpha", iBlend);
+	changedrawmethod(vSelf, "remap", iMap);
+	
+	dc_draw_z_position_autoscale(vSelf);    
 }
 
 
