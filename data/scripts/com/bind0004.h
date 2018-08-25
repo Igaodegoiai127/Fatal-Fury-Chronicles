@@ -1,5 +1,5 @@
 #include "data/scripts/vars/entity.h"
-#include "data/scripts/com/draw0002.h"
+#include "data/scripts/dc_draw/main.c"
 
 void bind0004(void vTar, int iX, int iY, int iZ, int iDir, int iAniFlag){
 
@@ -48,10 +48,35 @@ void bind0004(void vTar, int iX, int iY, int iZ, int iDir, int iAniFlag){
     }
     else
     {
-        fRatio      = getentityvar(vSelf, ADSCALER);                            //Get caller's current scale ratio.
+		// If caller's drawmethod is on, then
+		// adjust offsets to caller's current scale.
+		if (getdrawmethod(vSelf, "enabled") == 1)
+		{
+			iX = dc_draw_adjust_to_scale_x(vSelf, iX);
+			iY = dc_draw_adjust_to_scale_y(vSelf, iY);
+		}
 
-        if (iX){ iX = draw0002(fRatio, iX); }                               //If X bind, apply scaling to fX.
-        if (iY){ iY = draw0002(fRatio, iY); }                               //If Y bind, apply scaling to fY.
+		// Get binding property.
+		void binding = get_entity_property(vTarget, "binding");
+
+		// Get binding toggle and enable flags.
+		void binding_enable = get_binding_property(binding, "enable");
+		void binding_axis = get_binding_property(binding, "offset");
+
+		// Enable binding on each axis.
+		set_axis_principal_int_property(binding_enable, "x", 1);
+		set_axis_principal_int_property(binding_enable, "y", 1);
+		set_axis_principal_int_property(binding_enable, "z", 1);
+
+		// Set the binding offset.
+		set_axis_principal_int_property(binding_axis, "x", iX);
+		set_axis_principal_int_property(binding_axis, "y", iY);
+		set_axis_principal_int_property(binding_axis, "z", iZ);
+
+		// Set other binding properties.
+		set_binding_property(binding, "animation", iAniFlag);
+		set_binding_property(binding, "direction", iDir);
+		set_binding_property(binding, "target", vSelf);
 
         bindentity(vTarget, vSelf, iX, iZ, iY, iDir, iAniFlag);                 //Execute bind.
         setentityvar(vSelf, BIND, vTarget);                                     //Make record of binding.
