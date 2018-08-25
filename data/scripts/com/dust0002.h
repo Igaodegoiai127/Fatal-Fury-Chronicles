@@ -38,7 +38,11 @@ void dust0002(void vType, float offset_x, float offset_y, int offset_z, int A, i
 		offset_y = dc_draw_adjust_to_scale_y(vSelf, offset_y);
 	}
 
-    if (!iDir){ offset_x = -offset_x;   }                                                 //Reverse horizontal adjustment if facing left.
+	// Reverse horizontal adjustment if facing left.
+    if (iDir == openborconstant("DIRECTION_LEFT"))
+	{ 
+		offset_x = -offset_x;   
+	}                                                 
 
     clearspawnentry();															//Clear current spawn entry.
     setspawnentry("name",   vModel);											//Aquire spawn entity by name.
