@@ -29,22 +29,27 @@ void bind0004(void vTar, int iX, int iY, int iZ, int iDir, int iAniFlag){
     void  vTarget = targ0001(vTar, vSelf);          //Target entity.
     float fRatio;                                  //Caller's current scale ratio.
 
+	// Get binding property.
+	void binding = get_entity_property(vTarget, "binding");
+
     //Check direction flag to apply any special behaviors.
     if (iDir == 11)
     {
-        bindentity(vTarget, NULL());                                            //Release bind.
-        setentityvar(vSelf, BIND, NULL());                                      //Remove bind record.
+		// Remove self as a bind. This effectivly releases the binding.
+		set_binding_property(binding, "target", NULL());
     }
     else if (iDir == 12)
     {
-        bindentity(vTarget, NULL());                                            //Release bind.
-        setentityvar(vSelf, BIND, vTarget);                                     //Record bind target. May seem counter productive, but has uses for grappling. Mainly for applying an animation and knockdown effect to formerly bound entity after release.
+		// Remove self as a bind. This effectivly releases the binding.
+		set_binding_property(binding, "target", NULL());
     }
     else if (iDir == 13)
     {
-        bindentity(vTarget, NULL());                                            //Release bind.
-        damageentity(vTarget, vSelf, 0, 100, openborconstant("ATK_NORMAL"));    //Knock bound entity down to reset it.
-        setentityvar(vSelf, BIND, NULL());                                      //Remove bind target.
+		// Remove self as a bind. This effectivly releases the binding.
+		set_binding_property(binding, "target", NULL());
+
+		// Knock bound entity down to reset it.
+        damageentity(vTarget, vSelf, 0, 100, openborconstant("ATK_NORMAL"));    
     }
     else
     {
@@ -55,9 +60,6 @@ void bind0004(void vTar, int iX, int iY, int iZ, int iDir, int iAniFlag){
 			iX = dc_draw_adjust_to_scale_x(vSelf, iX);
 			iY = dc_draw_adjust_to_scale_y(vSelf, iY);
 		}
-
-		// Get binding property.
-		void binding = get_entity_property(vTarget, "binding");
 
 		// Get binding toggle and enable flags.
 		void binding_enable = get_binding_property(binding, "enable");
@@ -77,7 +79,5 @@ void bind0004(void vTar, int iX, int iY, int iZ, int iDir, int iAniFlag){
 		set_binding_property(binding, "animation", iAniFlag);
 		set_binding_property(binding, "direction", iDir);
 		set_binding_property(binding, "target", vSelf);
-
-        setentityvar(vSelf, BIND, vTarget);                                     //Make record of binding.
     }
 }
