@@ -3,7 +3,6 @@
 void draw0004(float iScaleX, float iScaleY, int iFlipX, int iFlipY, int iShiftX, int iBlend, int iRemap, int iFill, int iRotate, int iARotat){
 
      /*
-     draw0002
      Damon Vaughn Caskey
      01/25/2008
      Sets passed drawmethod parameters to caller.
