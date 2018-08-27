@@ -1,5 +1,5 @@
 #include "data/scripts/vars/entity.h" 
-#include "data/scripts/com/dama0001.h"
+#include "data/scripts/dc_grapple/main.c"
 #include "data/scripts/com/hit0001.h"
 #include "data/scripts/com/parr0001.h"
 
@@ -31,12 +31,8 @@ void dama0002(){
 
     if (parr0001(vAttacker, iDam)) { return; }                              //Parry for unblockable attack. See parr0001 for details.    
 
-    if (vBound)                                                             //Self has another in grapple bind?
-    {
-        bindentity(vBound, NULL());                                         //Release bind.
-        dama0001(vBound, 0, 100, "ATK_NORMAL", 0, 2, -1, 0, 0, 0, 0);       //Knock bound entity down to reset it.
-        setentityvar(vSelf, BIND, NULL());                                  //Remove bind record.
-    }    
+    // Release any grappled entities.
+	dc_grapple_release_all(vSelf);
 
     if (iDrop > 0)
     {
