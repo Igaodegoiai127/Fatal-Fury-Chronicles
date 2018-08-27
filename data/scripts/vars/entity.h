@@ -16,7 +16,7 @@
 #define VITSTR       10									//Strength.
 #define VITDEX       11									//Dexterity.
 #define VITCON       12									//Constitution.
-#define VIT#define       13									//#defineellegence.
+#define VITINT		 13									//#defineellegence.
 #define VITWIS       14									//Wisdom.
 #define VITCHR       15									//Charisma.
 #define VITCLAS      16									//Class (Barbarian, Cleric, Fighter, etc.).
