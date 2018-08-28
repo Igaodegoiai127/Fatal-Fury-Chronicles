@@ -245,9 +245,6 @@
     <ClInclude Include="data\scripts\com\ani0011.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="data\scripts\com\bind0001.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="data\scripts\com\bind0002.h">
       <Filter>Header Files</Filter>
     </ClInclude>

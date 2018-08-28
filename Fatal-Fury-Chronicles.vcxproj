@@ -176,7 +176,6 @@
     <ClInclude Include="data\scripts\com\ani0009.h" />
     <ClInclude Include="data\scripts\com\ani0010.h" />
     <ClInclude Include="data\scripts\com\ani0011.h" />
-    <ClInclude Include="data\scripts\com\bind0001.h" />
     <ClInclude Include="data\scripts\com\bind0002.h" />
     <ClInclude Include="data\scripts\com\bind0003.h" />
     <ClInclude Include="data\scripts\com\bind0004.h" />
