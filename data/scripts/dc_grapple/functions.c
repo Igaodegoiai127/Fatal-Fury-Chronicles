@@ -14,6 +14,130 @@ void grapple_target(void vTarget, void vSelf)
 	else { return vTarget; }   //Target was passed directly, return variable.
 }
 
+void bbbbind0002(float fX, float fY, float fZ) {
+
+	/*
+	bind0002
+	Damon Vaughn Caskey
+	06/20/2007
+	Syncronizes target with caller's location without binding.
+
+	iSync:      Sync target setting (see targ0001 function).
+	fX, fY, fZ: Distance adjustment (from caller).
+	iDirection: Direction adjustment (see loc001 function).
+	*/
+
+	void  vSelf = getlocalvar("self");                     //Calling entity.
+	void  vTarget = getentityproperty(vSelf, "opponent");    //Current opponent.
+	int   iDir = getentityproperty(vTarget, "direction"); //Current direction.
+	float fRatio = getentityvar(vSelf, ADSCALER);         //Caller's current scale ratio.
+
+	//If any incoming values are NULL(), set to 0.
+	if (!fX) fX = 0;
+	if (!fY) fY = 0;
+	if (!fZ) fZ = 0;
+
+	if (iDir == 1) { fX = -fX; }   //Reverse horizontal adjustment if facing left.
+
+	fX = (fX * fRatio) + getentityproperty(vSelf, "x"); //Apply requested X offset to X location and apply zoom scale.
+	fY = (fY * fRatio) + getentityproperty(vSelf, "a"); //Apply requested Y offset to Y location and apply zoom scale.
+	fZ = fZ + getentityproperty(vSelf, "z");            //Apply requested Z offset.
+
+	changeentityproperty(vTarget, "position", fX, fZ, fY);
+}
+
+// Caskey, Damon V.
+// 2018-08-28
+//
+// If localvars are not defined, insert defaults.
+void dc_grapple_set_defaults()
+{
+	void base;
+	void target;
+
+	int offset_x;
+	int offset_y;
+	int offset_z;
+
+	// Base.
+	base = dc_grapple_get_base();
+
+	if (base)
+	{
+		base = getlocalvar("self");
+	}
+
+	// Target.
+	target = dc_grapple_get_target();
+
+	if (!target)
+	{
+		target = get_entity_property(base, "opponent");
+
+		// Still no target? Better exit.
+		if (!target)
+		{
+			shutdown(0, "dc_grapple_set_defaults: Target is empty, unable to find opponent. Make sure you set up a target.");
+		}
+
+		dc_grapple_set_target(target);
+	}
+
+	// Offsets.
+	offset_x = dc_grapple_get_offset_x();
+
+	if (!offset_x)
+	{
+		dc_grapple_set_offset_x(0);
+	}
+
+	offset_y = dc_grapple_get_offset_y();
+
+	if (!offset_y)
+	{
+		dc_grapple_set_offset_y(0);
+	}
+
+	offset_z = dc_grapple_get_offset_z();
+
+	if (!offset_z)
+	{
+		dc_grapple_set_offset_z(0);
+	}
+}
+
+void old_bind0002(float fX, float fY, float fZ) {
+	   
+	/*
+	bind0002
+	Damon Vaughn Caskey
+	06/20/2007
+	Syncronizes target with caller's location without binding.
+
+	iSync:      Sync target setting (see targ0001 function).
+	fX, fY, fZ: Distance adjustment (from caller).
+	iDirection: Direction adjustment (see loc001 function).
+	*/
+
+	void  vSelf = getlocalvar("self");                     //Calling entity.
+	void  vTarget = getentityproperty(vSelf, "opponent");    //Current opponent.
+	int   iDir = getentityproperty(vTarget, "direction"); //Current direction.
+	float fRatio = getentityvar(vSelf, ADSCALER);         //Caller's current scale ratio.
+
+	//If any incoming values are NULL(), set to 0.
+	if (!fX) fX = 0;
+	if (!fY) fY = 0;
+	if (!fZ) fZ = 0;
+
+	if (iDir == 1) { fX = -fX; }   //Reverse horizontal adjustment if facing left.
+
+	fX = (fX * fRatio) + getentityproperty(vSelf, "x"); //Apply requested X offset to X location and apply zoom scale.
+	fY = (fY * fRatio) + getentityproperty(vSelf, "a"); //Apply requested Y offset to Y location and apply zoom scale.
+	fZ = fZ + getentityproperty(vSelf, "z");            //Apply requested Z offset.
+
+	changeentityproperty(vTarget, "position", fX, fZ, fY);
+}
+
 void bind0010(void vTar, int offset_x, int offset_y, int offset_z, int iDir, int iFrame) {
 
 	/*
