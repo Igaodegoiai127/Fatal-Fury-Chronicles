@@ -1,3 +1,15 @@
+
+// Dependencies - If you don't have these libraries, grab
+// them from https://github.com/DCurrent.
+
+#include "data/scripts/dc_draw/main.c"
+
+// From old bind0010
+#include "data/scripts/vars/anims.h"
+#include "data/scripts/vars/entity.h"
+#include "data/scripts/vars/frames.h"
+// -From old bind0010
+
 #ifndef DC_GRAPPLE
 
 #define DC_GRAPPLE 1
@@ -29,9 +41,4 @@
 #endif // !DC_GRAPPLE
 
 
-// From old bind0010
-#include "data/scripts/vars/anims.h"
-#include "data/scripts/vars/entity.h"
-#include "data/scripts/dc_draw/main.c"
-#include "data/scripts/vars/frames.h"
-// -From old bind0010
+
