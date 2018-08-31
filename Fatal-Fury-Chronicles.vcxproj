@@ -103,6 +103,7 @@
     <ClCompile Include="data\chars\andy\scripts\fall0001.c" />
     <ClCompile Include="data\chars\andy\scripts\hit0001.c" />
     <ClCompile Include="data\chars\andy\scripts\key.c" />
+    <ClCompile Include="data\chars\andy\scripts\on_bind_other_to_self.c" />
     <ClCompile Include="data\chars\andy\scripts\update.c" />
     <ClCompile Include="data\chars\raiden\scripts\ani_a.c" />
     <ClCompile Include="data\chars\raiden\scripts\ani_p.c" />
