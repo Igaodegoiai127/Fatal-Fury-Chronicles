@@ -79,7 +79,7 @@ void bind0003(void vModel, int vAlias, int iMap, int iBlend, float fX, float fY,
 	set_axis_principal_int_property(binding_axis, "z", fZ);
 
 	// Set other binding properties.
-	set_binding_property(binding, "animation", iAniFlag);
+	set_binding_property(binding, "animation_matching", iAniFlag);
 	set_binding_property(binding, "direction", iDir);
 	set_binding_property(binding, "target", vSelf);
 	set_binding_property(binding, "sort_id", 1);

@@ -76,7 +76,7 @@ void bind0004(void vTar, int iX, int iY, int iZ, int iDir, int iAniFlag){
 		set_axis_principal_int_property(binding_axis, "z", iZ);
 
 		// Set other binding properties.
-		set_binding_property(binding, "animation", iAniFlag);
+		set_binding_property(binding, "animation_matching", iAniFlag);
 		set_binding_property(binding, "direction", iDir);
 		set_binding_property(binding, "target", vSelf);
     }

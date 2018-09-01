@@ -25,7 +25,7 @@ void main()
 
     binding = getlocalvar("binding");
 
-    animation   = get_binding_property(binding, "animation");
+    animation   = get_binding_property(binding, "animation_matching");
     enable      = get_binding_property(binding, "enable");
         enable_x = get_axis_principal_int_property(enable, "x");
         enable_y = get_axis_principal_int_property(enable, "y");
