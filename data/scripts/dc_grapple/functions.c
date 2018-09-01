@@ -187,6 +187,8 @@ void bind0010(void vTar, int offset_x, int offset_y, int offset_z, int iDir, int
 		set_binding_property(binding, "direction", iDir);
 		set_binding_property(binding, "target", vSelf);
 
+		set_binding_property(binding,"tag", 24);
+
 		// Update bound entity's auto scaling.
 		dc_draw_z_position_autoscale(vTarget);
 

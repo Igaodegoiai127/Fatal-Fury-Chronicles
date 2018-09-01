@@ -14,6 +14,7 @@ void main()
     int offset_z;
     int direction;
     int sort_id;
+	int tag;
     void target;
     char target_name;
     char self_name;
@@ -35,7 +36,8 @@ void main()
         offset_z = get_axis_principal_int_property(offset, "z");
     direction   = get_binding_property(binding, "direction");
     sort_id     = get_binding_property(binding, "sort_id");
-    target      = get_binding_property(binding, "target");
+	tag			= get_binding_property(binding, "tag");
+	target      = get_binding_property(binding, "target");
 
     self_name   = getentityproperty(self, "name");
     other_name = getentityproperty(other, "name");
@@ -53,7 +55,8 @@ void main()
     log("\n offset_z: " + offset_x);
     log("\n direction: " + direction);
     log("\n sort_id: " + sort_id);
-    log("\n target: " + target);
+	log("\n tag: " + tag);
+	log("\n target: " + target);
     log("\n self_name: " + self_name);
     log("\n other_name: " + other_name);
     log("\n target_name: " + target_name);
