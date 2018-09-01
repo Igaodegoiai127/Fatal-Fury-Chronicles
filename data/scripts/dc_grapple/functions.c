@@ -183,7 +183,7 @@ void bind0010(void vTar, int offset_x, int offset_y, int offset_z, int iDir, int
 		set_axis_principal_int_property(binding_axis, "z", offset_z);
 
 		// Set other binding properties.
-		set_binding_property(binding, "animation_matching", openborconstant("BINDING_ANIMATION_MATCHING_NONE"));
+		set_binding_property(binding, "matching", openborconstant("BINDING_MATCHING_NONE"));
 		set_binding_property(binding, "direction", iDir);
 		set_binding_property(binding, "target", vSelf);
 
