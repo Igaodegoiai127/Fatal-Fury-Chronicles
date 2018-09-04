@@ -1099,7 +1099,7 @@ anim freespecial7
 	@cmd 	soun0001 "sand0001.wav"					#Sound effect.
 		frame	data/chars/andy/andy0221
 		frame	data/chars/andy/andy0222
-	@cmd	proj0002 "andybe" 3 1 85 30 1 1 5 0 0 1 1 0 1000 15 -1 -1 0 0 0 1 4 0 -1 0 2 3 0 1 0 0 0 0
+	@cmd	proj0002 "andybe" 3 1 85 30 1 1 openborconstant("BINDING_MATCHING_ANIMATION_DIE") 0 0 1 1 0 1000 15 -1 -1 0 0 0 1 4 0 -1 0 2 3 0 1 0 0 0 0
 		frame	data/chars/andy/andy0223
 		frame	data/chars/andy/andy0224
 
