@@ -721,23 +721,6 @@ anim freespecial6
 		frame	data/chars/ray/ray0012
 
 
-anim freespecial7
-
-	#Big Tornado
-
-	offset	100 200
-	bbox	85 100 30 100
-	delay	10
-		frame	data/chars/ray/ray0172
-		frame	data/chars/ray/ray0173
-		frame	data/chars/ray/ray0174
-		frame	data/chars/ray/ray0175
-	attack	0
-	delay	40
-	@cmd	proj0002 "wind0001" 90 1 0 1 0 0 1 0 1 0 0 1
-		frame	data/chars/ray/ray0176
-	delay	12
-		frame	data/chars/ray/ray0052
 
 #*****Followups****************************************************************************
 
