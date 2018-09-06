@@ -1079,10 +1079,7 @@ anim jumpattack
 	delay	8
 		frame	data/chars/ray/ray0081
 	attack	100 100 60 50 15 1 0 0 20
-	#	proj0002 "wind0001" 90 1 0 1 1 0 1 0 0 0 0 1
-	#	proj0002 "wind0001" 90 1 0 1 0 0 1 0 0 0 0 1
-	@cmd	proj0002 "wind0001" 90 1 0 1 -1 0 1 0 1 0 0 1
-		frame	data/chars/ray/ray0082
+	frame	data/chars/ray/ray0082
 	attack	100 100 60 50 8 0 0 0 10
 		frame	data/chars/ray/ray0082			#Extended hit is weaker.
 
