@@ -66,7 +66,7 @@ chargerate   2
 #nopassiveblock 1
 blockodds      1
 #score
-aggression   -120
+#aggression   -120
 
 #*****Inert Specfic*****
 #*****Sub Entites*****
@@ -576,7 +576,7 @@ anim freespecial2
 
 	jumpframe 3 2 4 0 dust0002
 	landframe 7 dust0003
-	range     0 200
+	range     180 200
 
 	offset	100 200
 	bbox	85 100 30 100
