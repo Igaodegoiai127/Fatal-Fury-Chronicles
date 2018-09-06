@@ -3,6 +3,11 @@ music		data/music/Sound_B.bor
 background	data/bgs/BEACH/back0001
 frontpanel	data/bgs/BEACH/fore0002
 
+# fglayer	filepath								Zpos 	xratio	zratio	xoffset	zoffset	xspace	zspace	xrepeat	zrepeat	trans	alpha	w-mode	amp	wl	ws	move	quake	neon
+
+fglayer		data/bgs/beach/grass_0.png				-40		-0.1 	-0.1 	0 		247 	0		0  		-1 		1 		1       
+		
+
 panel		data/bgs/BEACH/pane0001 none none
 panel		data/bgs/BEACH/pane0002 none none
 panel		data/bgs/BEACH/pane0003 none none
