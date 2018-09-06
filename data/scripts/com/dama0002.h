@@ -27,9 +27,9 @@ void dama0002(){
     }
     
 
-    hit0001(0, 0, -2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);                        //Erase hit flags.                                                                //Remove special hit flags. This is in case caller is hit out of an attack with flags.
+    //hit0001(0, 0, -2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);                        //Erase hit flags.                                                                //Remove special hit flags. This is in case caller is hit out of an attack with flags.
 
-    if (parr0001(vAttacker, iDam)) { return; }                              //Parry for unblockable attack. See parr0001 for details.    
+    //if (parr0001(vAttacker, iDam)) { return; }                              //Parry for unblockable attack. See parr0001 for details.    
 
     // Release any grappled entities.
 	dc_grapple_release_all(vSelf);
