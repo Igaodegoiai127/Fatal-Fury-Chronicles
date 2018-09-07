@@ -270,9 +270,9 @@ anim idle3
 		frame	data/chars/andy/andy0092
 	delay	15
 		frame	data/chars/andy/1_0.png
-		frame	data/chars/andy/andy0537
-		frame	data/chars/andy/andy0538
-		frame	data/chars/andy/andy0537
+		frame	data/chars/andy/1_1.png
+		frame	data/chars/andy/1_2.png
+		frame	data/chars/andy/1_1.png
 
 anim idle4
 
@@ -461,7 +461,7 @@ anim turn
 	offset	100 200
 	bbox	75 110 35 90
 		#frame	data/chars/andy/1_0.png
-		frame	data/chars/andy/1_1.png
+		frame	data/chars/andy/1_3.png
 
 anim slide
 
@@ -3333,7 +3333,7 @@ anim land
 	bbox	0
 
 		frame	data/chars/andy/0_19.png
-		frame	data/chars/andy/1_1.png
+		frame	data/chars/andy/1_3.png
 		frame	data/chars/andy/2_0.png
 	delay	-1
 		frame	data/chars/andy/3_0.png
