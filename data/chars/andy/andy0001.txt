@@ -404,12 +404,12 @@ anim run
 	delay	10
 	offset	100 200
 	bbox	75 110 35 90
-		frame	data/chars/andy/andy0036
-		frame	data/chars/andy/andy0037
-		frame	data/chars/andy/andy0038
-		frame	data/chars/andy/andy0039
-		frame	data/chars/andy/andy0040
-		frame	data/chars/andy/andy0041
+		frame	data/chars/andy/6_0.png
+		frame	data/chars/andy/6_1.png
+		frame	data/chars/andy/6_2.png
+		frame	data/chars/andy/6_3.png
+		frame	data/chars/andy/6_4.png
+		frame	data/chars/andy/6_5.png
 
 anim get
 
@@ -1605,7 +1605,7 @@ anim freespecial19
 		frame	data/chars/andy/andy0252
 		frame	data/chars/andy/andy0253
 	@cmd	soun0001 "vand0046.wav"
-		frame	data/chars/andy/andy0036
+		frame	data/chars/andy/6_0.png
 	offset	100 180
 		frame	data/chars/andy/andy0047
 	delay	-1000
