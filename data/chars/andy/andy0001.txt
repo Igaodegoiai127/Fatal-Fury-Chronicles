@@ -262,13 +262,10 @@ anim idle3
 	range   -250 250
 	rangez  15 250
 
-	loop 	1 2
-	delay	3
+	loop 	1
+	delay	15
 	offset	100 200
 	bbox	75 110 35 90
-		frame	data/chars/andy/andy0091
-		frame	data/chars/andy/andy0092
-	delay	15
 		frame	data/chars/andy/1_0.png
 		frame	data/chars/andy/1_1.png
 		frame	data/chars/andy/1_2.png
