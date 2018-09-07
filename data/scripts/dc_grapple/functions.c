@@ -169,13 +169,13 @@ void bind0010(void vTar, int offset_x, int offset_y, int offset_z, int iDir, int
 		void binding = get_entity_property(vTarget, "binding");
 
 		// Get binding toggle and enable flags.
-		void binding_enable = get_binding_property(binding, "enable");
+		void binding_enable = get_binding_property(binding, "positioning");
 		void binding_axis = get_binding_property(binding, "offset");
 
 		// Enable binding on each axis.
-		set_axis_principal_int_property(binding_enable, "x", 1);
-		set_axis_principal_int_property(binding_enable, "y", 1);
-		set_axis_principal_int_property(binding_enable, "z", 1);
+		set_axis_principal_int_property(binding_enable, "x", openborconstant("BINDING_POSITIONING_TARGET"));
+		set_axis_principal_int_property(binding_enable, "y", openborconstant("BINDING_POSITIONING_TARGET"));
+		set_axis_principal_int_property(binding_enable, "z", openborconstant("BINDING_POSITIONING_TARGET"));
 
 		// Set the binding offset.
 		set_axis_principal_int_property(binding_axis, "x", offset_x);

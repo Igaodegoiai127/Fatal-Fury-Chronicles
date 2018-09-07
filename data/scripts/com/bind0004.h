@@ -62,7 +62,7 @@ void bind0004(void vTar, int iX, int iY, int iZ, int iDir, int iAniFlag){
 		}
 
 		// Get binding toggle and enable flags.
-		void binding_enable = get_binding_property(binding, "enable");
+		void binding_enable = get_binding_property(binding, "positioning");
 		void binding_axis = get_binding_property(binding, "offset");
 
 		// Enable binding on each axis.

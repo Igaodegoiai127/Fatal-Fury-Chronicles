@@ -65,7 +65,7 @@ void bind0003(void vModel, int vAlias, int iMap, int iBlend, float fX, float fY,
 	void binding = get_entity_property(vSpawn, "binding");
 
 	// Get binding toggle and enable flags.
-	void binding_enable = get_binding_property(binding, "enable");
+	void binding_enable = get_binding_property(binding, "positioning");
 	void binding_axis = get_binding_property(binding, "offset");
 
 	// Enable binding on each axis.

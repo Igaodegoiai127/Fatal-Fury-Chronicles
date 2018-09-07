@@ -90,25 +90,14 @@ com	     d f d f a 		freespecial18		#Cho Reppaa Dan.
 
 anim spawn
 
-	jumpframe 0 8 0 0 0
-	dropframe 1
-	landframe 2 dust0003
-
-	delay	-1000
 	offset	100 200
-	bbox	75 110 35 90
-		frame	data/chars/misc/blan0001
-		frame	data/chars/andy/andy0046
-	delay	8
-		frame	data/chars/andy/3_0.png
-		frame	data/chars/andy/3_1.png
-		frame	data/chars/andy/3_0.png
+	bbox	0
 	delay	10
 		frame	data/chars/andy/andy0091
 		frame	data/chars/andy/andy0092
 		frame	data/chars/andy/andy0093
 		frame	data/chars/andy/andy0094
-	@cmd 	soun0001 "vand0016.wav"
+	#@cmd 	soun0001 "vand0016.wav"
 		frame	data/chars/andy/andy0095
 		frame	data/chars/andy/andy0096
 		frame	data/chars/andy/andy0097
