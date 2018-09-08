@@ -496,7 +496,7 @@ anim runslide
 		frame	data/chars/andy/andy0049
 		frame	data/chars/andy/andy0050
 	offset	100 200
-		frame	data/chars/andy/andy0162
+		frame	data/chars/andy/19_0.png
 		frame	data/chars/andy/3_0.png
 
 #*****Attack*******************************************************************************
@@ -732,18 +732,18 @@ anim attackbackward
 	@cmd 	soun0001 "vand0002.wav"
 		frame	data/chars/andy/3_1.png
 	move	-20
-		frame	data/chars/andy/andy0162
+		frame	data/chars/andy/19_0.png
 	move	0
-		frame	data/chars/andy/andy0163
+		frame	data/chars/andy/19_1.png
 	delay	12
 	attack  90 165 75 35 15 1
 	dropv	3 0.2 0
-		frame	data/chars/andy/andy0164
-		frame	data/chars/andy/andy0165
+		frame	data/chars/andy/19_2.png
+		frame	data/chars/andy/19_3.png
 	attack  0
 	delay	8
-		frame	data/chars/andy/andy0163
-		frame	data/chars/andy/andy0162
+		frame	data/chars/andy/19_1.png
+		frame	data/chars/andy/19_0.png
 		frame	data/chars/andy/3_1.png
 		frame	data/chars/andy/3_0.png
 
