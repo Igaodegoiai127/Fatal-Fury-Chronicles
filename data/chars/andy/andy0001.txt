@@ -687,10 +687,10 @@ anim chargeattack
 		frame	data/chars/andy/15_4.png
 		frame	data/chars/andy/15_5.png
 	attack	0
-	delay   15
 		frame	data/chars/andy/15_6.png
 		frame	data/chars/andy/15_7.png
 		frame	data/chars/andy/15_8.png
+		frame	data/chars/andy/7_0.png
 
 anim runattack
 
