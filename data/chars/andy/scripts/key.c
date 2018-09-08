@@ -28,31 +28,6 @@ void main(){
     int  iMP;                                                                           //Current MP.
     int  iSeal;                                                                         //Current seal flag.
 
-    if (iAttackR && iFlIdle && !iFlJump)                                                //Release attack while idle and not jumping?
-    {
-        if (key0003(vSelf, iLeftH, iRightH))                                              //Holding forward?
-        {
-            iETime  = openborvariant("Elapsed_time");                                   //Get elapsed time.
-            iKey1AT = getentityvar(vSelf, KEY1AT) + 500;                                //Get last Attack press.
-
-            if (iKey1AT < iETime)                                                       //Enough time passed?
-            {
-                iAni    = openborconstant("ANI_FREESPECIAL12");                         //Set ani to Zaneiken.
-                iCost   = getentityproperty(vSelf, "energycost", iAni);                 //Get energy cost.
-                iMP     = getentityproperty(vSelf, "mp");                               //Get current mp.
-                iSeal   = getentityproperty(vSelf, "seal");                             //Get seal flag.
-                
-                if (iCost <= iMP && (!iSeal || iCost < iSeal))                          //Have enough MP and not sealed?
-                {
-                    performattack(vSelf, iAni, 0);                                      //Perform Zaneiken.                    
-                    changeentityproperty(vSelf, "mp", iMP - iCost);                     //Apply energycost.
-                    changeplayerproperty(vSelf, "playkeys", 0);                         //Clear key event.
-                    return;                                                             //Exit.
-                }
-            }
-        }
-    }
-
     if (iAni == openborconstant("ANI_FREESPECIAL14"))									//Gen'ei Shiranui. 
 	{                                
         iXDir	= getentityproperty(vSelf, "xdir");

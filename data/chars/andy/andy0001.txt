@@ -37,8 +37,8 @@ mpset 		100 3 50 1 2 2
 
 #*****Scripts*****
 
-script			data/chars/andy/scripts/update.c
-keyscript 		data/chars/andy/scripts/key.c
+script				data/chars/andy/scripts/update.c
+keyscript 			data/chars/andy/scripts/key.c
 animationscript 	data/chars/andy/scripts/ani_p.c
 didblockscript  	data/scripts/bloc0001.c
 takedamagescript	data/chars/andy/scripts/dama0001.c
@@ -70,18 +70,19 @@ alternatepal   data/chars/andy/aapa0016 	#Red, blue trim.
 
 #*****Commands*****************************************************************************
 
-com          a2       		freespecial  		#Back dash
-com          f u a    		freespecial2  		#Force plane up.
-com          f d a    		freespecial3  		#Froce plane down.
-com	     d u a    		freespecial4		#Plane attack up.
-com	     u d a    		freespecial5		#Plane attack down.
-com	     d b a    		freespecial6		#Hishoken.
-com	     d b s    		freespecial7		#Geki Hishoken.
-com	     d f a    		freespecial8		#Ku Ha dan (short).
-com	     d b f s		freespecial9		#Zanei Ryuusei Ken.
-com          f d f a  		freespecial10		#Shoryudan.
-com          d u s    		freespecial17		#Yami Abise Geri.
-com	     d f d f a 		freespecial18		#Cho Reppaa Dan.
+com a2       	freespecial  		# Back dash
+com f u a    	freespecial2  		# Force plane up.
+com f d a    	freespecial3  		# Force plane down.
+com	d u a    	freespecial4		# Plane attack up.
+com	u d a    	freespecial5		# Plane attack down.
+com	d b a    	freespecial6		# Hishoken.
+com	d b s    	freespecial7		# Geki Hishoken.
+com	d f a    	freespecial12		# Zaneiken.
+com	d f j    	freespecial8		# Ku Ha dan (short).
+com	d b f s		freespecial9		# Zanei Ryuusei Ken.
+com	f d f a  	freespecial10		# Shoryudan.
+com d u s    	freespecial17		# Yami Abise Geri.
+com	d f d f a 	freespecial18		# Cho Reppaa Dan.
 
 
 #*****Basic********************************************************************************
