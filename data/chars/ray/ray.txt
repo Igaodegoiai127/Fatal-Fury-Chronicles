@@ -51,10 +51,6 @@ onkillscript		data/scripts/kill0001.c
 onblockoscript		data/scripts/onbo0001.c
 onblockwscript		data/scripts/onbw0001.c
 
-on_bind_update_other_to_self_script data/chars/ray/scripts/on_bind_other_to_self.c
-on_bind_update_self_to_other_script data/chars/ray/scripts/on_bind_self_to_other.c
-
-
 #*****MP Specific*****
 
 mp	     100
