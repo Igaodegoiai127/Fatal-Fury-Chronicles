@@ -530,11 +530,11 @@ anim attack2
 	offset	100 200
 	bbox	75 110 35 90
 	@cmd 	soun0001 "vand0003.wav"
-		frame	data/chars/andy/andy0131
+		frame	data/chars/andy/12_0.png
 	attack  100 120 55 20 8 0 0 0 10
-		frame	data/chars/andy/andy0132
+		frame	data/chars/andy/12_1.png
 	attack	0
-		frame	data/chars/andy/andy0131
+		frame	data/chars/andy/12_0.png
 
 anim attack3
 
