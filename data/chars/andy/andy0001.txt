@@ -48,8 +48,6 @@ onspawnscript		data/scripts/spaw0001.c
 onfallscript		data/chars/andy/scripts/fall0001.c
 onpainscript		data/scripts/pain0001.c
 
-on_bind_update_other_to_self_script data/chars/andy/scripts/on_bind_other_to_self.c
-
 #*****Sub Entites*****
 
 load	andybe		#Bound visuals
