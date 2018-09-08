@@ -1752,20 +1752,21 @@ anim freespecial43
 	#Slide attack (combo).
 	#Palm strike.
 
+	range 0 0
 	fastattack 1
 
 	delay	8
 	offset	100 200
 	bbox	75 135 30 65
 	@cmd	soun0001 "vand0002.wav"
-		frame	data/chars/andy/andy0156
-		frame	data/chars/andy/andy0157
+		frame	data/chars/andy/17_0.png
+		frame	data/chars/andy/17_1.png
 	attack	100 135 60 25 6 1 0 0 10
-		frame	data/chars/andy/andy0158
+		frame	data/chars/andy/17_2.png
 	attack	0
 	delay	12
-		frame	data/chars/andy/andy0159
-		frame	data/chars/andy/andy0157
+		frame	data/chars/andy/17_3.png
+		frame	data/chars/andy/17_1.png
 		frame	data/chars/andy/3_1.png
 		frame	data/chars/andy/3_0.png
 
