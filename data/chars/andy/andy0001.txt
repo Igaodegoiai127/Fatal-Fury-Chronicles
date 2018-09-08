@@ -1691,12 +1691,12 @@ anim freespecial40
 	delay	6
 	offset	100 200
 	bbox	75 135 30 65
-		frame	data/chars/andy/andy0154
+		frame	data/chars/andy/16_0.png
 	@cmd	soun0001 "vand0003.wav"
 	attack	100 135 50 25 3 0 0 0 10
-		frame	data/chars/andy/andy0155
+		frame	data/chars/andy/16_1.png
 	attack	0
-		frame	data/chars/andy/andy0154
+		frame	data/chars/andy/16_0.png
 	delay	12
 		frame	data/chars/andy/3_1.png
 		frame	data/chars/andy/3_0.png
