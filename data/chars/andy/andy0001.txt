@@ -645,21 +645,21 @@ anim attack7
 	move	0
 		frame	data/chars/andy/andy0103
 	move	20
-		frame	data/chars/andy/andy0133
+		frame	data/chars/andy/13_0.png
 	move	0
 	delay	10
-		frame	data/chars/andy/andy0134
+		frame	data/chars/andy/13_1.png
 	delay	8
-		frame	data/chars/andy/andy0135
+		frame	data/chars/andy/13_2.png
 	attack2	75 100 70 40 15 1
 	staydown 500 1000
-		frame	data/chars/andy/andy0136
-		frame	data/chars/andy/andy0137
+		frame	data/chars/andy/13_3.png
+		frame	data/chars/andy/13_4.png
 	attack	0
-		frame	data/chars/andy/andy0138
-		frame	data/chars/andy/andy0139
-		frame	data/chars/andy/andy0140
-		frame	data/chars/andy/andy0141
+		frame	data/chars/andy/13_5.png
+		frame	data/chars/andy/13_6.png
+		frame	data/chars/andy/13_7.png
+		frame	data/chars/andy/13_8.png
 
 anim chargeattack
 
