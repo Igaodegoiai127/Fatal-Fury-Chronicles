@@ -675,20 +675,20 @@ anim chargeattack
 	delay	10
 	offset	100 200
 	bbox	75 110 35 90
-		frame	data/chars/andy/andy0145
+		frame	data/chars/andy/15_0.png
 	@cmd 	soun0001 "vand0002.wav"
-		frame	data/chars/andy/andy0146
-		frame	data/chars/andy/andy0147
-		frame	data/chars/andy/andy0148
+		frame	data/chars/andy/15_1.png
+		frame	data/chars/andy/15_2.png
+		frame	data/chars/andy/15_3.png
 	attack	100 130 70 70 20 2 0 0 20
 	dropv   4.5 1 0
-		frame	data/chars/andy/andy0149
-		frame	data/chars/andy/andy0150
+		frame	data/chars/andy/15_4.png
+		frame	data/chars/andy/15_5.png
 	attack	0
 	delay   15
-		frame	data/chars/andy/andy0151
-		frame	data/chars/andy/andy0152
-		frame	data/chars/andy/andy0153
+		frame	data/chars/andy/15_6.png
+		frame	data/chars/andy/15_7.png
+		frame	data/chars/andy/15_8.png
 
 anim runattack
 
@@ -1344,7 +1344,7 @@ anim freespecial13
 		frame	data/chars/andy/andy0283
 	delay	12
 		frame	data/chars/andy/andy0284
-		frame	data/chars/andy/andy0153
+		frame	data/chars/andy/15_8.png
 
 anim freespecial14
 
