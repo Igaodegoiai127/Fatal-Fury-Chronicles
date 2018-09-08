@@ -924,22 +924,22 @@ anim freespecial2
 	offset	100 200
 	bbox	75 110 35 90
 	@cmd 	soun0001 "vand0001.wav"
-		frame	data/chars/andy/andy0194
-		frame	data/chars/andy/andy0195
+		frame	data/chars/andy/20_0.png
+		frame	data/chars/andy/20_1.png
 	delay	6
-		frame	data/chars/andy/andy0196
+		frame	data/chars/andy/20_2.png
 	attack6	90 130 55 70 10 1 0 0 20
-		frame	data/chars/andy/andy0197
+		frame	data/chars/andy/20_3.png
 	attack	0
-		frame	data/chars/andy/andy0198
-		frame	data/chars/andy/andy0199
+		frame	data/chars/andy/20_4.png
+		frame	data/chars/andy/20_5.png
 	delay	12
 	attack6	130 90 55 60 10 1 0 0 20
 	damageonlanding 0 1
 	dropv   4 0.5 -0.5
-		frame	data/chars/andy/andy0200
+		frame	data/chars/andy/20_6.png
 	attack	0
-		frame	data/chars/andy/andy0201
+		frame	data/chars/andy/20_7.png
 
 anim freespecial3
 
@@ -952,9 +952,9 @@ anim freespecial3
 	delay	6
 	offset	100 200
 	bbox	75 110 35 90
-		frame	data/chars/andy/andy0194
+		frame	data/chars/andy/20_0.png
 	bbox	95 95 35 60
-		frame	data/chars/andy/andy0195
+		frame	data/chars/andy/20_1.png
 	delay	10
 	@cmd 	soun0001 "vand0008.wav"
 	move	10
