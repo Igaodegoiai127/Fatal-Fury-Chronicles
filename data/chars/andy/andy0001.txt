@@ -282,7 +282,7 @@ anim idle4
 	offset	100 200
 	bbox    75 110 35 90
 	idle	1						#So we can set this with performattack().
-		frame	data/chars/andy/andy0112
+		frame	data/chars/andy/7_0.png
 	delay	55
 
 		frame	data/chars/andy/0_1.png
@@ -511,13 +511,13 @@ anim attack1
 	offset	100 200
 	bbox	75 110 35 90
 	@cmd 	soun0001 "vand0008.wav"
-		frame	data/chars/andy/andy0112
+		frame	data/chars/andy/7_0.png
 	attack  100 120 55 20 5
-		frame	data/chars/andy/andy0113
+		frame	data/chars/andy/7_1.png
 	delay	3
 	attack	0
-		frame	data/chars/andy/andy0114
-		frame	data/chars/andy/andy0112
+		frame	data/chars/andy/7_2.png
+		frame	data/chars/andy/7_0.png
 
 anim attack2
 
@@ -1214,7 +1214,7 @@ anim freespecial9
 	@cmd	velo0001 2 0 0
 		frame	data/chars/andy/andy0275
 	@cmd	velo0001 0 0 0
-		frame	data/chars/andy/andy0114
+		frame	data/chars/andy/7_2.png
 
 anim freespecial10
 
@@ -1320,7 +1320,7 @@ anim freespecial12
 	@cmd	velo0001 2 0 0
 		frame	data/chars/andy/andy0275
 	@cmd	velo0001 0 0 0
-		frame	data/chars/andy/andy0114
+		frame	data/chars/andy/7_2.png
 
 
 anim freespecial13
@@ -1423,7 +1423,7 @@ anim freespecial15
 	move	25
 		frame	data/chars/andy/andy0308
 	move	0
-		frame	data/chars/andy/andy0112
+		frame	data/chars/andy/7_0.png
 
 anim freespecial16
 
@@ -1456,7 +1456,7 @@ anim freespecial16
 		frame	data/chars/andy/andy0321
 		frame	data/chars/andy/andy0322
 		frame	data/chars/andy/andy0323
-		frame	data/chars/andy/andy0112
+		frame	data/chars/andy/7_0.png
 
 anim freespecial17
 
@@ -2248,7 +2248,7 @@ anim follow8
 	@cmd	velo0001 2 0 0
 		frame	data/chars/andy/andy0275
 	@cmd	velo0001 0 0 0
-		frame	data/chars/andy/andy0114
+		frame	data/chars/andy/7_2.png
 
 anim follow9
 
@@ -2443,7 +2443,7 @@ anim follow71
 		frame	data/chars/andy/andy0064
 	delay	10
 		frame	data/chars/andy/1_0.png
-		frame	data/chars/andy/andy0112
+		frame	data/chars/andy/7_0.png
 
 anim follow72
 
