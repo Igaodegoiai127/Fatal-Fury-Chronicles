@@ -243,16 +243,16 @@ anim idle2
 	range  -250 250
 	rangez -250 -15
 
-	loop 	1 2
+	loop 	1 1
 	delay	6
 	offset	100 200
 	bbox	75 110 35 90
 		frame	data/chars/andy/0_7.png
 	delay	15
-		frame	data/chars/andy/andy0533
-		frame	data/chars/andy/andy0534
-		frame	data/chars/andy/andy0535
-		frame	data/chars/andy/andy0536
+		frame	data/chars/andy/0_8.png
+		frame	data/chars/andy/0_9.png
+		frame	data/chars/andy/0_10.png
+		frame	data/chars/andy/0_9.png
 
 anim idle3
 
