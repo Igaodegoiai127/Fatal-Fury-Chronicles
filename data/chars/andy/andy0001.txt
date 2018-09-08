@@ -575,10 +575,10 @@ anim attack4
 	bbox	75 110 35 90
 	@cmd 	soun0001 "vand0008.wav"
 		frame	data/chars/andy/andy0057
-		frame	data/chars/andy/andy0143
+		frame	data/chars/andy/14_1.png
 	attack	100 55 65 55 12 1 0 0 10
 	dropv   5 1 0
-		frame	data/chars/andy/andy0144
+		frame	data/chars/andy/14_2.png
 	move	-5
 		frame	data/chars/andy/11_3.png
 	move	0
@@ -1830,7 +1830,7 @@ anim follow3
 	move	50
 	offset  100 220
 	@cmd	bind0010 1 -25 0 0 -1 HELD
-		frame	data/chars/andy/andy0142
+		frame	data/chars/andy/14_0.png
 	move	-15
 	offset	100 230
 	@cmd	bind0010 1 10 0 0 1 HELD
@@ -2990,7 +2990,7 @@ anim grabdown
 		frame	data/chars/andy/9_1.png
 	move	50
 	@cmd	bind0010 1 -25 0 0 -1 HELD
-		frame	data/chars/andy/andy0142
+		frame	data/chars/andy/14_0.png
 	move	-15
 	offset	100 200
 	@cmd	bind0010 1 10 0 0 1 HELD
