@@ -616,7 +616,7 @@ anim attack6
 
 	fastattack 1
 
-	delay	6
+	delay	5
 	offset	100 200
 	bbox	75 110 35 90
 	@cmd 	soun0001 "vand0008.wav"
@@ -630,6 +630,7 @@ anim attack6
 	attack	0
 		frame	data/chars/andy/11_2.png
 		frame	data/chars/andy/11_0.png
+		frame	data/chars/andy/0_5.png
 
 anim attack7
 
