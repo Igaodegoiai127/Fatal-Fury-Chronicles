@@ -32,7 +32,6 @@ mp		1
 height		95
 dust		flash_fall_land dust0003 dust0002
 #riseattacktype 	3
-komap 		1 1
 nopassiveblock 	1
 grabfinish	1
 
