@@ -232,77 +232,78 @@ anim attack3
 		sound	data/chars/ray/at1.wav
 
 	frame	data/chars/ray/10_0.png
-     		delay   9
-     	frame	data/chars/ray/11_0.png
-     		sound	data/sounds/air5.wav
-     	frame	data/chars/ray/11_1.png
-		delay 5
-     		attack  85 95 75 30 5 1 0 0 18
-     	frame	data/chars/ray/11_2.png
-     	frame	data/chars/ray/11_3.png
-     		delay   8
-     		attack 0
-     	frame	data/chars/ray/11_3.png
-     	frame	data/chars/ray/11_4.png
-     	frame	data/chars/ray/10_4.png
+    	delay   9
+    frame	data/chars/ray/11_0.png
+    	sound	data/sounds/air5.wav
+    frame	data/chars/ray/11_1.png
+		delay	5
+     	attack  85 95 75 30 5 1 0 0 18
+    frame	data/chars/ray/11_2.png
+    frame	data/chars/ray/11_3.png
+    	delay   8
+    	attack 0
+    frame	data/chars/ray/11_3.png
+    frame	data/chars/ray/11_4.png
+    frame	data/chars/ray/10_4.png
 
 
 # Roundhouse kick.
 anim follow5
 
-		offset	75 170
-     		bbox	55 78 50 80
-     		range 160 170
+	range 160 170
 
-     		delay   8
-     	frame	data/chars/ray/13_0.png
-     	frame	data/chars/ray/13_1.png
-     		sound	data/sounds/air5.wav
-     	frame	data/chars/ray/13_2.png
-     		attack  85 65 69 35 5 1 0 0 18
-     	frame	data/chars/ray/13_3.png
-     		delay   8
-     		attack 0
-     	frame	data/chars/ray/13_4.png
-     	frame	data/chars/ray/13_5.png
-     	frame	data/chars/ray/13_0.png
+		offset	75 170
+    	bbox	55 78 50 80
+		delay   8
+    frame	data/chars/ray/13_0.png
+    frame	data/chars/ray/13_1.png
+		sound	data/sounds/air5.wav
+    frame	data/chars/ray/13_2.png
+     	attack  85 65 69 35 5 1 0 0 18
+    frame	data/chars/ray/13_3.png
+    	delay   8
+    	attack 0
+    frame	data/chars/ray/13_4.png
+    frame	data/chars/ray/13_5.png
+    frame	data/chars/ray/13_0.png
 
 anim death
 	jumpframe 10 1 -0.2 0
 	dropframe 11
 	landframe 12
-	delay	50
-	offset	83 125
-      	frame data/chars/ray/R_LAYING_UP_0.png
-	delay	12
-	offset	75 170
-		frame	data/chars/ray/39_0.png
-		frame	data/chars/ray/39_1.png
-		frame	data/chars/ray/39_2.png
-	delay	3
-	move	-3
-		frame	data/chars/ray/39_3.png
-	move	3
-		frame	data/chars/ray/39_3.png
-	move	-3
-		frame	data/chars/ray/39_3.png
-	move	3
-		frame	data/chars/ray/39_3.png
-	move	0
-	delay	50
-		frame	data/chars/ray/R_PAIN_MID_0.png
-		frame	data/chars/ray/R_PAIN_MID_1.png
-	delay   -1000
-	offset	83 150
-	bbox 50 73 57 58
-      	frame	data/chars/ray/R_TILT_UP_0.png
-	offset	83 150
-	bbox 40 95 60 35
-      	frame	data/chars/ray/R_FALLING_UP_0.png
-	delay	20
-	offset	83 125
-      	frame data/chars/ray/R_LAYING_UP_PAIN_0.png
-	bbox 27 97 104 27
-      	frame data/chars/ray/R_LAYING_UP_0.png
+	
+		delay	50
+		offset	83 125
+    frame data/chars/ray/R_LAYING_UP_0.png
+		delay	12
+		offset	75 170
+	frame	data/chars/ray/39_0.png
+	frame	data/chars/ray/39_1.png
+	frame	data/chars/ray/39_2.png
+		delay	3
+		move	-3
+	frame	data/chars/ray/39_3.png
+		move	3
+	frame	data/chars/ray/39_3.png
+		move	-3
+	frame	data/chars/ray/39_3.png
+		move	3
+	frame	data/chars/ray/39_3.png
+		move	0
+		delay	50
+	frame	data/chars/ray/R_PAIN_MID_0.png
+	frame	data/chars/ray/R_PAIN_MID_1.png
+		delay   -1000
+		offset	83 150
+		bbox	50 73 57 58
+    frame	data/chars/ray/R_TILT_UP_0.png
+		offset	83 150
+		bbox	40 95 60 35
+    frame	data/chars/ray/R_FALLING_UP_0.png
+		delay	20
+		offset	83 125
+    frame	data/chars/ray/R_LAYING_UP_PAIN_0.png
+		bbox	27 97 104 27
+    frame	data/chars/ray/R_LAYING_UP_0.png
 
 
