@@ -178,6 +178,7 @@ anim rise
 
 #Jab
 anim attack1
+
 	range 10 70
 	
 		delay   10
@@ -199,7 +200,7 @@ anim attack1
 #Cross
 anim attack2
 		
-		range 10 50
+	range 10 50
 
 		offset	75 170
      	bbox	55 78 50 80
