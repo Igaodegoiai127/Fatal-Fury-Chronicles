@@ -21,7 +21,7 @@ candamage		player obstacle
 combostyle		1
 atchain			1 1 2 0 3
 
-animationscript data/scripts/ani0020.h
+animationscript data/chars/ray/scripts/animation.h
 
 palette   		data/chars/ray/pal_0.png	# Light blue jeans, white shirt, red bolt
 alternatepal 	data/chars/ray/pal_1.png	# Dark blue jeans, white shirt, dark red bolt
@@ -30,140 +30,145 @@ alternatepal 	data/chars/ray/pal_3.png	# Black jeans, yellow shirt, black bolt
 alternatepal 	data/chars/ray/pal_4.png	# Light blue jeans, white shirt, red bolt, brown hair
 
 anim idle
+		
 	loop	1
-	delay	14
-      offset	75 170
-      bbox	55 78 47 80
-   
-      frame	data/chars/ray/0_0.png
 
-      frame	data/chars/ray/0_1.png
-      frame	data/chars/ray/0_2.png
-      frame	data/chars/ray/0_3.png
-      frame	data/chars/ray/0_2.png
-      frame	data/chars/ray/0_1.png
+		delay	14
+		offset	75 170
+		bbox	55 78 47 80
+    frame	data/chars/ray/0_0.png
+    frame	data/chars/ray/0_1.png
+    frame	data/chars/ray/0_2.png
+    frame	data/chars/ray/0_3.png
+    frame	data/chars/ray/0_2.png
+    frame	data/chars/ray/0_1.png
 
 anim walk
+		
 	loop	1
-      delay   10
-	offset	75 170
-	bbox	55 78 50 80
+
+		delay   10
+		offset	75 170
+		bbox	55 78 50 80
 	frame	data/chars/ray/3_0.png
 	frame	data/chars/ray/3_1.png
 	frame	data/chars/ray/3_2.png
 	frame	data/chars/ray/3_3.png
 	frame	data/chars/ray/3_4.png
-      	frame	data/chars/ray/3_5.png
+    frame	data/chars/ray/3_5.png
 
 anim backwalk
+		
 	loop	1
-      delay   10
-	offset	75 170
-	bbox	55 78 50 80
+
+		delay   10
+		offset	75 170
+		bbox	55 78 50 80
 	frame	data/chars/ray/4_0.png
 	frame	data/chars/ray/4_1.png
 	frame	data/chars/ray/4_2.png
 	frame	data/chars/ray/4_3.png
 	frame	data/chars/ray/4_4.png
-      	frame	data/chars/ray/4_5.png
+    frame	data/chars/ray/4_5.png
 
 anim turn
 
-	delay   10
-	offset	75 170
-	bbox	55 78 50 80
+		delay   10
+		offset	75 170
+		bbox	55 78 50 80
 	frame	data/chars/ray/1_0.png
 	frame	data/chars/ray/1_1.png
 	frame	data/chars/ray/1_2.png
 
 anim grabbed
-      loop	0
-	delay	5
-	offset	75 170
-      frame	data/chars/ray/R_PAIN_MID_0.png
+	
+		delay	5
+		offset	75 170
+	frame	data/chars/ray/R_PAIN_MID_0.png
 
 anim GRABBEDWALK
-      loop	0
-	delay	5
-	offset	66 191
-      frame	data/chars/ray/R_PAIN_0.png
+		
+		delay	5
+		offset	66 191
+	frame	data/chars/ray/R_PAIN_0.png
 
 anim pain
-	loop	0
-	delay	8
-	offset	75 170
-      bbox	49 80 50 70
-
+	
+		delay	8
+		offset	75 170
+		bbox	49 80 50 70
 	frame	data/chars/ray/R_PAIN_0.png
 	frame	data/chars/ray/R_PAIN_1.png
 	frame	data/chars/ray/R_PAIN_0.png
 
 anim pain2
-	loop	0
-	delay	8
-	offset	75 170
-      bbox	49 80 50 70
-
+		
+		delay	8
+		offset	75 170
+		bbox	49 80 50 70
 	frame	data/chars/ray/R_PAIN_0.png
 	frame	data/chars/ray/R_PAIN_1.png
-	delay	12
+		delay	12
 	frame	data/chars/ray/R_PAIN_2.png
 	frame	data/chars/ray/R_PAIN_1.png
 	frame	data/chars/ray/R_PAIN_0.png
 
 anim bpain
+
         delay	7
         offset	75 170
         bbox	49 80 50 70
-
 	frame	data/chars/ray/R_PAIN_0.png
         delay   15
 	frame	data/chars/ray/R_PAIN_1.png
 	frame	data/chars/ray/R_PAIN_0.png
 
 anim fall
+
     dropframe 1
     landframe 2
 
-    delay   -1000
-	offset	83 150
-	bbox 50 73 57 58
-	attack 50 73 57 58 10 1 0 0 10 0
-      frame	data/chars/ray/R_TILT_UP_0.png
-    offset	83 150
-	bbox 40 95 60 35
-	attack 40 95 60 35 10 1 0 0 10 0
-      frame	data/chars/ray/R_FALLING_UP_0.png
-    delay	20
-    offset	83 125
-	attack 0 0 0 0
-      frame data/chars/ray/R_LAYING_UP_PAIN_0.png
-	bbox 27 97 104 27
-      frame data/chars/ray/R_LAYING_UP_0.png
+		delay   -1000
+		offset	83 150
+		bbox	50 73 57 58
+		attack	50 73 57 58 10 1 0 0 10 0
+	frame	data/chars/ray/R_TILT_UP_0.png
+		offset	83 150
+		bbox	40 95 60 35
+		attack	40 95 60 35 10 1 0 0 10 0
+	frame	data/chars/ray/R_FALLING_UP_0.png
+		delay	20
+		offset	83 125
+		attack	0
+	frame	data/chars/ray/R_LAYING_UP_PAIN_0.png
+		bbox	27 97 104 27
+	frame	data/chars/ray/R_LAYING_UP_0.png
 
 anim burn
+
     dropframe 1
     landframe 2
 
-    delay   -1000
-	offset	83 150
-	bbox 50 73 57 58
-	attack 50 73 57 58 10 1 0 0 10 0
-      frame	data/chars/ray/R_TILT_UP_0.png
-    offset	83 150
-	bbox 40 95 60 35
-	attack 40 95 60 35 10 1 0 0 10 0
-      frame	data/chars/ray/R_FALLING_UP_0.png
-    delay	20
-    offset	83 125
-	attack 0 0 0 0
-      frame data/chars/ray/R_LAYING_UP_PAIN_0.png
-	bbox 27 97 104 27
-      frame data/chars/ray/R_LAYING_UP_0.png
+		delay   -1000
+		offset	83 150
+		bbox	50 73 57 58
+		attack	50 73 57 58 10 1 0 0 10 0
+    frame	data/chars/ray/R_TILT_UP_0.png
+		offset	83 150
+		bbox	40 95 60 35
+		attack	40 95 60 35 10 1 0 0 10 0
+    frame	data/chars/ray/R_FALLING_UP_0.png
+		delay	20
+		offset	83 125
+		attack	0
+	frame	data/chars/ray/R_LAYING_UP_PAIN_0.png
+		bbox	27 97 104 27
+    frame	data/chars/ray/R_LAYING_UP_0.png
 
 anim rise
-	delay	10
-	offset	75 170
+
+		delay	10
+		offset	75 170
 	frame	data/chars/ray/39_0.png
 	frame	data/chars/ray/39_1.png
 	frame	data/chars/ray/39_2.png
@@ -173,69 +178,57 @@ anim rise
 
 #Jab
 anim attack1
-		range 10 70
+	range 10 70
+	
 		delay   10
 		offset	75 170
-     		bbox	55 78 50 80
-	@script
-	void ent = getlocalvar("self");
-
-    if(frame == 0)
-    {
-      int combostep = getentityproperty(ent, "combostep");
-      int r = rand()%30;
-
-      if( r > 0 && combostep > 1){
-        changeentityproperty(ent, "animation", openborconstant("ANI_FOLLOW5"));
-      }
-    }
-
-	@end_script
-     		sound	data/sounds/air6.wav
+     	bbox	55 78 50 80
+		# Alternate combo finish.
+		@cmd	dc_combo_alt 0.3 openborconstant("ANI_FOLLOW5")
 	frame	data/chars/ray/10_0.png
-     		delay 5
+     	delay	5
 		attack  85 80 57 30 5 0 0 0 18
      frame	data/chars/ray/10_1.png
-     		attack 	0
+     	attack 	0
 		delay   4
      frame	data/chars/ray/10_2.png
      frame	data/chars/ray/10_3.png
-     		delay   8
+     	delay   8
      frame	data/chars/ray/10_4.png
 
 #Cross
 anim attack2
-		10 35
-		offset	75 170
-     		bbox	55 78 50 80
+		
 		range 10 50
 
-     		delay   8
+		offset	75 170
+     	bbox	55 78 50 80
+		delay   8
 		sound	data/chars/ray/at1.wav
-
 	frame	data/chars/ray/10_0.png
-     		delay   9
-     	frame	data/chars/ray/30_0.png
-     		sound	data/sounds/air5.wav
-     	frame	data/chars/ray/32_0.png
-		delay 5
-     		attack  85 95 75 30 5 1 0 0 18
-     	frame	data/chars/ray/32_1.png
-     	frame	data/chars/ray/32_2.png
-     		delay   8
-     		attack 0
-     	frame	data/chars/ray/32_3.png
-     	frame	data/chars/ray/32_0.png
-     	frame	data/chars/ray/10_4.png
+     	delay   9
+    frame	data/chars/ray/30_0.png
+     	sound	data/sounds/air5.wav
+    frame	data/chars/ray/32_0.png
+		delay	5
+     	attack  85 95 75 30 5 1 0 0 18
+	frame	data/chars/ray/32_1.png
+    frame	data/chars/ray/32_2.png
+    	delay   8
+    	attack	0
+	frame	data/chars/ray/32_3.png
+    frame	data/chars/ray/32_0.png
+    frame	data/chars/ray/10_4.png
 
 #Straight
 anim attack3
+	
+	range 10 70
+
 		delay   17
 		offset	75 170
-     		bbox	55 78 50 80
-		range 10 70
-
-     		delay   8
+     	bbox	55 78 50 80
+		delay   8
 		sound	data/chars/ray/at1.wav
 
 	frame	data/chars/ray/10_0.png
