@@ -305,3 +305,25 @@ anim death
     frame	data/chars/ray/R_LAYING_UP_0.png
 
 
+anim follow51
+
+	#Defending poses.
+
+		delay	-1
+		offset	75 170
+		bbox	0
+	frame	data/chars/ray/R_HELD_0.png					#0	Grabbed.
+	frame	data/chars/ray/R_PAIN_1.png					#1	Grabbed Pain.
+	frame	data/chars/ray/R_HORIZONTAL_UP_0.png		#2	Horizontal Up.
+	frame	data/chars/ray/R_HORIZONTAL_DOWN_0.png		#3	Horizontal Down.
+	frame	data/chars/ray/R_VERTICAL_UP_0.png			#4	Vertical Up.
+	frame	data/chars/ray/R_VERTICAL_DOWN_0.png		#5	Vertical Down.
+	frame	data/chars/ray/R_TILT_UP_0.png				#6	Tilt Up.
+	frame	data/chars/ray/R_TILT_DOWN_0.png			#7	Tilt Down.
+	frame	data/chars/ray/R_VERTICAL_DOWN_PAIN_0.png	#8	Vertical Down pain.
+	frame	data/chars/ray/R_LAYING_UP_0.png			#9	Down Up.
+	frame	data/chars/ray/R_LAYING_UP_PAIN_0.png		#10	Down Up Pain.
+	frame	data/chars/ray/R_FALLING_UP_0.png			#11	Falling Up.
+	frame	data/chars/ray/R_FALLING_UP_TILT_0.png		#12	Falling Up tilted.
+	frame	data/chars/ray/R_HORIZONTAL_UP_0.png		#13	Horizontal Up pain.
+	frame	data/chars/ray/R_PAIN_MID_1.png				#14	Middle pain.
