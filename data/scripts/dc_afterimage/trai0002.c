@@ -26,9 +26,17 @@ void trai0002(void target)
 
     elapsed_time = openborvariant("elapsed_time");
 
+	log("\n elapsed_time: " + elapsed_time);
+	log("\n elapsed_time / DC_AFTERIMAGE_DELAY: " + (elapsed_time / DC_AFTERIMAGE_DELAY));
+	log("\n elapsed_time % DC_AFTERIMAGE_DELAY: " + (elapsed_time % DC_AFTERIMAGE_DELAY));
+
+
     // Modulo of elapsed time and trailer expire time 0?
-	if(elapsed_time%DC_AFTERIMAGE_DELAY==0)
+	if(elapsed_time % DC_AFTERIMAGE_DELAY==0)
 	{
+
+		log("\n elapsed_time % DC_AFTERIMAGE_DELAY==0 verified");
+
         // Loop through trailer slots.
         for(i=1; i<=DC_AFTERIMAGE_GLOBAL_MAX; i++)
 		{
@@ -43,7 +51,7 @@ void trai0002(void target)
 			    draw_scale_x    = getdrawmethod(target, "scalex");
 			    draw_scale_y    = getdrawmethod(target, "scaley");
 			    draw_table      = getdrawmethod(target, "table");
-			    time_remaining  = DC_AFTERIMAGE_ENTITY_MAX * DC_AFTERIMAGE_DELAY;
+			    time_remaining  = DC_AFTERIMAGE_ENTITY_MAX * DC_AFTERIMAGE_LIFESPAN;
 			    pos_x           = getentityproperty(target, "x");
                 pos_z           = getentityproperty(target, "z");
                 pos_y           = getentityproperty(target, "y");

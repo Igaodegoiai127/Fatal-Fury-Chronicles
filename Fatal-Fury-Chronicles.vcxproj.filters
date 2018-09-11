@@ -39,12 +39,6 @@
     <ClCompile Include="data\chars\raiden\scripts\ani_p.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="data\chars\ray\scripts\ani_a.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="data\chars\ray\scripts\ani_p.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="data\chars\terry\scripts\ani_p.c">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -205,6 +199,15 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="data\scripts\dc_grapple\release.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="data\scripts\dc_draw\tint.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="data\scripts\updated.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="data\chars\ray\scripts\animation.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

@@ -84,7 +84,7 @@ void trai0001()
 
             // Position adjustments.
             pos_X -= openborvariant("xpos");
-            pos_Y = pos_Z-pos_Y-openborvariant("ypos");
+            pos_Y = (pos_Z-pos_Y-openborvariant("ypos")) + DC_AFTERIMAGE_CORRECTION_Y;
             pos_Z -= i;
 
             // Set global drawmethods.

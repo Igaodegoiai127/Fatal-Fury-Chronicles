@@ -78,7 +78,7 @@ know	raid0001	data/chars/raiden/raiden.txt
 #load	Raiden		data/chars/raiden/raid0001.txt
 #*****Ray*****
 
-know	Ray		data/chars/ray/ray.txt
+load	Ray		data/chars/ray/ray.txt
 #load    Ray_		data/chars/ray/rayp.txt
 
 
