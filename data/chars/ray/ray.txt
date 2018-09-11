@@ -126,16 +126,16 @@ anim fall
     landframe 2
 
 		delay   -1000
-		offset	83 150
+		offset	75 150
 		bbox	50 73 57 58
 		attack	50 73 57 58 10 1 0 0 10 0
 	frame	data/chars/ray/R_TILT_UP_0.png
-		offset	83 150
+		offset	75 120
 		bbox	40 95 60 35
 		attack	40 95 60 35 10 1 0 0 10 0
 	frame	data/chars/ray/R_FALLING_UP_0.png
+		offset	75 115
 		delay	20
-		offset	83 125
 		attack	0
 	frame	data/chars/ray/R_LAYING_UP_PAIN_0.png
 		bbox	27 97 104 27
@@ -271,7 +271,7 @@ anim death
 	landframe 12
 	
 		delay	50
-		offset	83 125
+		offset	75 115
     frame data/chars/ray/R_LAYING_UP_0.png
 		delay	12
 		offset	75 170
@@ -292,14 +292,14 @@ anim death
 	frame	data/chars/ray/R_PAIN_MID_0.png
 	frame	data/chars/ray/R_PAIN_MID_1.png
 		delay   -1000
-		offset	83 150
+		offset	75 150
 		bbox	50 73 57 58
     frame	data/chars/ray/R_TILT_UP_0.png
-		offset	83 150
+		offset	75 120
 		bbox	40 95 60 35
     frame	data/chars/ray/R_FALLING_UP_0.png
 		delay	20
-		offset	83 125
+		offset	75 115
     frame	data/chars/ray/R_LAYING_UP_PAIN_0.png
 		bbox	27 97 104 27
     frame	data/chars/ray/R_LAYING_UP_0.png
@@ -310,7 +310,7 @@ anim follow51
 	#Defending poses.
 
 		delay	-1
-		offset	75 170
+		offset	75 115
 		bbox	0
 	frame	data/chars/ray/R_HELD_0.png					#0	Grabbed.
 	frame	data/chars/ray/R_PAIN_1.png					#1	Grabbed Pain.
