@@ -20,11 +20,11 @@ atchain			1 1 2 0 3
 
 animationscript data/chars/ray/scripts/animation.c
 
-palette   		data/chars/ray/pal_0.png	# Light blue jeans, white shirt, red bolt
-alternatepal 	data/chars/ray/pal_1.png	# Dark blue jeans, white shirt, dark red bolt
-alternatepal 	data/chars/ray/pal_2.png	# Black jeans, yellow shirt, red bolt
-alternatepal 	data/chars/ray/pal_3.png	# Black jeans, yellow shirt, black bolt
-#alternatepal 	data/chars/ray/pal_4.png	# Light blue jeans, white shirt, red bolt, brown hair
+palette   		data/chars/ray/pal_0.act	# Light blue jeans, white shirt, red bolt
+alternatepal 	data/chars/ray/pal_1.act	# Dark blue jeans, white shirt, dark red bolt
+alternatepal 	data/chars/ray/pal_2.act	# Black jeans, yellow shirt, red bolt
+alternatepal 	data/chars/ray/pal_3.act	# Black jeans, yellow shirt, black bolt
+alternatepal 	data/chars/ray/pal_4.act	# Light blue jeans, white shirt, red bolt, brown hair
 
 anim idle
 		
