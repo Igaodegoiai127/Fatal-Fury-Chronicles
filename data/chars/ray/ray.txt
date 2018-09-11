@@ -3,31 +3,28 @@ health			150
 speed			10
 type			enemy
 shadow			0
-nolife			1
 throw			5 2
 grabback		1
 grabdistance	40
 gfxshadow		1
 falldie			2
 nodieblink      3
-dust			du
+dust			flash_fall_land dust0003 dust0002
 aggression      20
-diesound		data/chars/ray/die.wav
 projectilehit   enemy obstacle trap
 subject_to_wall	0
 hostile			player
 candamage		player obstacle
-
 combostyle		1
 atchain			1 1 2 0 3
 
-animationscript data/chars/ray/scripts/animation.h
+animationscript data/chars/ray/scripts/animation.c
 
 palette   		data/chars/ray/pal_0.png	# Light blue jeans, white shirt, red bolt
 alternatepal 	data/chars/ray/pal_1.png	# Dark blue jeans, white shirt, dark red bolt
 alternatepal 	data/chars/ray/pal_2.png	# Black jeans, yellow shirt, red bolt
 alternatepal 	data/chars/ray/pal_3.png	# Black jeans, yellow shirt, black bolt
-alternatepal 	data/chars/ray/pal_4.png	# Light blue jeans, white shirt, red bolt, brown hair
+#alternatepal 	data/chars/ray/pal_4.png	# Light blue jeans, white shirt, red bolt, brown hair
 
 anim idle
 		
@@ -185,7 +182,7 @@ anim attack1
 		offset	75 170
      	bbox	55 78 50 80
 		# Alternate combo finish.
-		@cmd	dc_combo_alt 0.3 openborconstant("ANI_FOLLOW5")
+		@cmd	dc_combo_alt openborconstant("ANI_FOLLOW5")
 	frame	data/chars/ray/10_0.png
      	delay	5
 		attack  85 80 57 30 5 0 0 0 18
