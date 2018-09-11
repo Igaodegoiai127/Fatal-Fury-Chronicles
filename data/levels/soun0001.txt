@@ -27,6 +27,12 @@ palette data/bgs/beach/beac0007.act 1
 palette data/bgs/beach/beac0008.act 1	
 palette data/bgs/beach/beac0009.act 1	#Darkest variation.
 
+# Initial spawn location for players.
+spawn1 50 0
+spawn2 50 15
+spawn3 50 30
+spawn4 50 45
+
 #---------------------
 
 #*****Stage*****
