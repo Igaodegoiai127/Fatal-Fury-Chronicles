@@ -171,13 +171,11 @@ anim select
 	
 anim idle
 
-	#Relaxed idle
-
 	loop 	1
 	
-	delay	12
-	offset	155 210
-	bbox	130 120 45 90
+		delay	10
+		offset	155 210
+		bbox	130 120 45 90
 	
 	frame	data/chars/galford/0_0_0.png
 	frame	data/chars/galford/0_1_0.png
@@ -207,15 +205,21 @@ anim faint
 
 anim walk
 
-	loop	1
-	delay	12
-	offset	100 200
-	bbox	75 110 35 90
-		frame	data/chars/andy/4_0.png
-		frame	data/chars/andy/4_1.png
-		frame	data/chars/andy/4_2.png
-		frame	data/chars/andy/4_3.png
-		frame	data/chars/andy/4_4.png
+		loop	1
+
+		delay	10
+		offset	155 210
+		bbox	130 120 45 90
+	
+	frame	data/chars/galford/12_0_0.png
+	frame	data/chars/galford/12_1_0.png
+	frame	data/chars/galford/12_3_0.png
+	frame	data/chars/galford/12_4_0.png
+	frame	data/chars/galford/12_5_0.png
+	frame	data/chars/galford/12_6_0.png
+	frame	data/chars/galford/12_7_0.png
+	frame	data/chars/galford/12_8_0.png
+	frame	data/chars/galford/12_9_0.png
 
 anim backwalk
 
