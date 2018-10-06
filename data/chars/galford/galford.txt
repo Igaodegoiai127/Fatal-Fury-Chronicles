@@ -179,6 +179,7 @@ anim idle
 	
 	frame	data/chars/galford/0_0_0.png
 	frame	data/chars/galford/0_1_0.png
+	frame	data/chars/galford/0_2_0.png
 	frame	data/chars/galford/0_3_0.png
 	frame	data/chars/galford/0_4_0.png
 	frame	data/chars/galford/0_5_0.png
@@ -213,6 +214,7 @@ anim walk
 	
 	frame	data/chars/galford/12_0_0.png
 	frame	data/chars/galford/12_1_0.png
+	frame	data/chars/galford/12_2_0.png
 	frame	data/chars/galford/12_3_0.png
 	frame	data/chars/galford/12_4_0.png
 	frame	data/chars/galford/12_5_0.png
@@ -235,15 +237,15 @@ anim backwalk
 anim run
 
 	loop	1
-	delay	10
-	offset	100 200
-	bbox	75 110 35 90
-		frame	data/chars/andy/6_0.png
-		frame	data/chars/andy/6_1.png
-		frame	data/chars/andy/6_2.png
-		frame	data/chars/andy/6_3.png
-		frame	data/chars/andy/6_4.png
-		frame	data/chars/andy/6_5.png
+
+		delay	8
+		offset	155 210
+		bbox	130 120 45 90
+	
+	frame	data/chars/galford/53_0_0.png
+	frame	data/chars/galford/53_2_0.png
+	frame	data/chars/galford/53_3_0.png
+	frame	data/chars/galford/53_4_0.png
 
 anim get
 
