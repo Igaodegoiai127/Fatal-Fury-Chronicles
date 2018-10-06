@@ -10,13 +10,16 @@ gfxshadow		1
 falldie			2
 nodieblink      3
 dust			flash_fall_land dust0003 dust0002
-aggression      20
+aggression      -1020
 projectilehit   enemy obstacle trap
 subject_to_wall	0
 hostile			player
 candamage		player obstacle
 combostyle		1
-atchain			1 1 2 0 3
+atchain			1 1 2 0 
+nopassiveblock	1
+holdblock		2
+blockodds		1
 
 animationscript data/chars/ray/scripts/animation.c
 
@@ -25,6 +28,28 @@ alternatepal 	data/chars/ray/pal_1.act	# Dark blue jeans, white shirt, dark red 
 alternatepal 	data/chars/ray/pal_2.act	# Black jeans, yellow shirt, red bolt
 alternatepal 	data/chars/ray/pal_3.act	# Black jeans, yellow shirt, black bolt
 alternatepal 	data/chars/ray/pal_4.act	# Light blue jeans, white shirt, red bolt, brown hair
+
+anim block
+
+	#Normal block
+
+		delay	3
+		offset	75 170
+		bbox	55 78 47 80
+		move	-2
+	frame	data/chars/ray/6_1
+		move	0
+		offset	78 170
+	frame	data/chars/ray/6_1
+		offset	75 170
+	frame	data/chars/ray/6_1
+		offset	78 170
+	frame	data/chars/ray/6_1
+		delay	30
+		offset	75 170
+	frame	data/chars/ray/6_1
+		delay	12
+	frame	data/chars/ray/6_0
 
 anim idle
 		
