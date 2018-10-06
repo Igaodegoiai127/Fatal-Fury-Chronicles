@@ -57,28 +57,22 @@ know	deck0002	data/bgs/deck/deck0002.txt				#Sound beach deck elec pole.
 
 #*****Characters************************************************************
 
-#*****Terry Bogard*****
+
 
 load    Terry		data/chars/terry/terry.txt
-
-#*****Andy Bogard*****
-
 know	andybe		data/chars/andy/andybe.txt				#Bound visuals.
 know	andypa		data/chars/andy/andypa.txt				#Pause visuals.
 load	Andy		data/chars/andy/andy0001.txt				#PC Andy.
 
-#*****Duck King*****
-
-#*****Joe Higashi*****
-
-
-#*****Raiden*****
 
 know	raid0001	data/chars/raiden/raiden.txt
 #load	Raiden		data/chars/raiden/raid0001.txt
+load 	Galford		data/chars/galford/galford.txt
+
+
 #*****Ray*****
 
-load	Ray		data/chars/ray/ray.txt
+know	Ray		data/chars/ray/ray.txt
 #load    Ray_		data/chars/ray/rayp.txt
 
 
