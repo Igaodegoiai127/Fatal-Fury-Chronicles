@@ -14,7 +14,8 @@ type	     	player
 bounce	     	2
 health	     	200
 speed	     	12
-holdblock    	1
+holdblock    	2
+nopassiveblock  1
 nodieblink   	2
 falldie      	2
 risetime     	150
@@ -22,7 +23,7 @@ running      	30 4 2 1 1
 makeinv      	3
 projectilehit 	player
 candamage     	enemy obstacle
-hostile		enemy
+hostile			enemy
 hmap         	1 5
 gfxshadow    	1
 blockpain    	1
@@ -178,7 +179,7 @@ anim select
 		frame	data/chars/andy/aase0011
 		frame	data/chars/andy/aase0012
 		frame	data/chars/andy/aase0013
-
+	
 anim idle
 
 	#Relaxed idle
