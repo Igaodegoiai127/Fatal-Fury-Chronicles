@@ -3087,97 +3087,42 @@ anim runjumpattack
 
 anim block
 
-	#Defence.
-
-	delay	6
-	offset	100 199
-	bbox	85 100 30 40
-		frame	data/chars/andy/andy0052
-		frame	data/chars/andy/andy0053
+		delay	6
+		offset	155 210
+		bbox	130 120 45 90
+	
+	frame	data/chars/galford/800_0_0.png
+	frame	data/chars/galford/800_1_0.png
 
 anim blockpain
 
 	#Normal block
 
-	delay	3
-	offset	100 200
-	bbox	85 100 30 40
-	move	-2
-		frame	data/chars/andy/andy0053
-	move	0
-	offset	103 200
-		frame	data/chars/andy/andy0053
-	offset	100 200
-		frame	data/chars/andy/andy0053
-	offset	103 200
-		frame	data/chars/andy/andy0053
-	delay	30
-	offset	100 200
-		frame	data/chars/andy/andy0053
+		delay	3
+		offset	155 210
+		bbox	130 120 45 90
 
-anim blockpain2
-
-	#Middle block.
-
-	delay	3
-	offset	103 200
-	bbox	85 100 30 40
-		frame	data/chars/andy/andy0057
-	offset	100 200
-		frame	data/chars/andy/andy0057
-	offset	103 200
-		frame	data/chars/andy/andy0057
-	offset	100 200
-		frame	data/chars/andy/andy0057
-	delay	30
-	offset	103 200
-		frame	data/chars/andy/andy0057
-	delay	10
-	offset	100 200
-		frame	data/chars/andy/andy0056
-
-anim blockpain3
-
-	#Low block.
-
-	delay	3
-	offset	103 200
-	bbox	85 100 30 40
-		frame	data/chars/andy/andy0055
-	offset	100 200
-		frame	data/chars/andy/andy0055
-	offset	103 200
-		frame	data/chars/andy/andy0055
-	offset	100 200
-		frame	data/chars/andy/andy0055
-	delay	30
-	offset	103 200
-		frame	data/chars/andy/andy0055
-	delay	20
-	offset	100 200
-		frame	data/chars/andy/andy0054
-		frame	data/chars/andy/3_0.png
-
-anim blockpain4
-
-	#High block.
-
-	delay	3
-	offset	103 200
-	bbox	85 100 30 40
-		frame	data/chars/andy/andy0057
-	offset	100 200
-		frame	data/chars/andy/andy0057
-	offset	103 200
-		frame	data/chars/andy/andy0057
-	offset	100 200
-		frame	data/chars/andy/andy0057
-	delay	30
-	offset	103 200
-		frame	data/chars/andy/andy0057
-	delay	10
-	offset	100 200
-		frame	data/chars/andy/andy0056
+		move	-2
+	
+	frame	data/chars/galford/802_0_0.png
+	
+		move	0
+		offset	153 210
+	
+	frame	data/chars/galford/802_0_0.png
+	
+		offset	155 210
+	
+	frame	data/chars/galford/802_0_0.png
+	
+		offset	153 210
+	
+	frame	data/chars/galford/802_0_0.png
+	
+		delay	30
+		offset	150 210
+	
+	frame	data/chars/galford/801_0_0.png
 
 anim land
 
