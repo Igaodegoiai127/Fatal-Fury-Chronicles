@@ -1,0 +1,93 @@
+
+#*****Settings***************************************************************************
+
+#*****icons*****
+
+#*****General*****
+
+name	     	Poppy
+type	     	npc
+subtype			follow
+bounce	     	2
+health	     	200
+speed	     	12
+running      	30 4 2 0 0
+#turndelay    	15
+makeinv      	3
+projectilehit 	player obstacle
+candamage     	enemy obstacle
+hostile			none
+gfxshadow    	1
+dust		flash_fall_land dust0003 dust0002
+
+
+#*****Scripts*****
+
+palette	       data/chars/galford/pal_0.act
+
+
+#anim select
+
+anim idle
+
+	#Ready stance.
+
+		loop 	1
+		delay	4
+		offset	135 192
+		bbox 	0
+		range	75 500
+		rangez	15 500
+		
+
+	frame	data/chars/poppy/0_0.png
+	frame	data/chars/poppy/0_1.png
+
+anim walk
+
+		loop 	1
+		delay	6
+		offset	135 192
+		bbox 	0
+
+	frame	data/chars/poppy/1_0.png
+	frame	data/chars/poppy/1_1.png
+	frame	data/chars/poppy/1_2.png
+	frame	data/chars/poppy/1_3.png
+	frame	data/chars/poppy/1_4.png
+	frame	data/chars/poppy/1_5.png
+	frame	data/chars/poppy/1_6.png
+	frame	data/chars/poppy/1_7.png
+
+anim run
+
+		loop 	1
+		delay	3
+		offset	135 192
+		bbox 	0
+
+	frame	data/chars/poppy/1_0.png
+	frame	data/chars/poppy/1_1.png
+	frame	data/chars/poppy/1_2.png
+	frame	data/chars/poppy/1_3.png
+	frame	data/chars/poppy/1_4.png
+	frame	data/chars/poppy/1_5.png
+	frame	data/chars/poppy/1_6.png
+	frame	data/chars/poppy/1_7.png
+
+anim turn
+
+	delay	10
+		offset	135 192
+		bbox 	0
+
+	frame	data/chars/poppy/14_1.png
+	frame	data/chars/poppy/14_2.png
+
+
+#*****Attack*******************************************************************************
+
+
+#*****Footer********************************************************************************
+
+#Always make sure to include a single blank line at bottom of file.

@@ -67,6 +67,7 @@ load	Andy		data/chars/andy/andy0001.txt				#PC Andy.
 
 know	raid0001	data/chars/raiden/raiden.txt
 #load	Raiden		data/chars/raiden/raid0001.txt
+load 	Poppy		data/chars/poppy/poppy.txt
 load 	Galford		data/chars/galford/galford.txt
 
 

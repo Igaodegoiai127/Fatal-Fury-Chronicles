@@ -51,8 +51,7 @@ onpainscript		data/scripts/pain0001.c
 
 #*****Sub Entites*****
 
-load	andybe		#Bound visuals
-load	andypa		#Pause visuals
+load	Poppy
 
 #*****Alternates*******
 
@@ -80,32 +79,16 @@ com	d f d f a 	freespecial18		# Cho Reppaa Dan.
 
 anim spawn
 
-	offset	100 200
-	bbox	0
-	delay	10
-		frame	data/chars/andy/andy0091
-		frame	data/chars/andy/andy0092
-		frame	data/chars/andy/andy0093
-		frame	data/chars/andy/andy0094
-	#@cmd 	soun0001 "vand0016.wav"
-		frame	data/chars/andy/andy0095
-		frame	data/chars/andy/andy0096
-		frame	data/chars/andy/andy0097
-		frame	data/chars/andy/andy0098
-		frame	data/chars/andy/andy0099
-		frame	data/chars/andy/andy0100
-		frame	data/chars/andy/andy0101
-		frame	data/chars/andy/andy0100
-		frame	data/chars/andy/andy0101
-		frame	data/chars/andy/andy0102
-		frame	data/chars/andy/andy0103
-		frame	data/chars/andy/andy0104
-	delay	12
-	move	10
-	frame	data/chars/andy/0_8.png
-	move	-5
-		frame	data/chars/andy/0_7.png
-		frame	data/chars/andy/0_6.png
+		
+
+		delay	1
+		offset	155 210
+		bbox	130 120 45 90
+		subentity Poppy  
+		summonframe 1 -20 15 0 0  
+
+	frame	data/chars/galford/0_0_0.png
+	frame	data/chars/galford/0_0_0.png
 
 #anim respawn
 
@@ -146,30 +129,14 @@ anim waiting
 	offset	160 262
 		frame	data/chars/galford/select_0.png
 	offset	160 272
-	sound	data/sounds/vand0016.wav
 		frame	data/chars/galford/select_1.png
 
 anim select
 
-	loop	1 6
-	delay	8
-	offset	100 272
-	fshadow 0
-		frame	data/chars/andy/aase0001
-		frame	data/chars/andy/aase0002
-		frame	data/chars/andy/aase0003
-		frame	data/chars/andy/aase0004
-		frame	data/chars/andy/aase0005
-	sound	data/sounds/vand0018.wav
-		frame	data/chars/andy/aase0006
-	delay	12
-		frame	data/chars/andy/aase0007
-		frame	data/chars/andy/aase0008
-		frame	data/chars/andy/aase0009
-		frame	data/chars/andy/aase0010
-		frame	data/chars/andy/aase0011
-		frame	data/chars/andy/aase0012
-		frame	data/chars/andy/aase0013
+		delay	8
+		fshadow 0
+		offset	160 272
+	frame	data/chars/galford/select_1.png
 	
 anim idle
 
