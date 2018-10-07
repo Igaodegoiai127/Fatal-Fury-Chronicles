@@ -56,7 +56,8 @@ load	andypa		#Pause visuals
 
 #*****Alternates*******
 
-palette	       data/chars/galford/select_0.png
+palette	       data/chars/galford/pal_0.act
+alternatepal   data/chars/galford/pal_1.act
 
 #*****Commands*****************************************************************************
 
@@ -335,21 +336,23 @@ anim runslide
 
 anim attack1
 
-	#Jab
+		delay	6
+		offset	155 210
+		bbox	130 120 45 90
+	
+	#frame	data/chars/galford/800_0_0.png
+	frame	data/chars/galford/83_3_0.png
+	
+		delay	6
+		attack  140 130 73 20 5
+	
+	frame	data/chars/galford/83_4_0.png
+	
+		delay	6
+		attack	0
 
-	fastattack 1
-
-	delay	6
-	offset	100 200
-	bbox	75 110 35 90
-	@cmd 	soun0001 "vand0008.wav"
-		frame	data/chars/andy/7_0.png
-	attack  100 120 55 20 5
-		frame	data/chars/andy/7_1.png
-	delay	3
-	attack	0
-		frame	data/chars/andy/7_2.png
-		frame	data/chars/andy/7_0.png
+	frame	data/chars/galford/83_5_0.png
+	#frame	data/chars/galford/800_0_0.png
 
 anim attack2
 
