@@ -23,17 +23,18 @@ running      	30 4 2 1 1
 makeinv      	3
 projectilehit 	player
 candamage     	enemy obstacle
-hostile		enemy
+hostile			enemy
 hmap         	1 5
 gfxshadow    	1
 blockpain    	1
 sleepwait       1000
-combostyle	1
+combostyle		1
 atchain      	1 2 3 4 0 5 6 7
-height 		95
-komap		1 0
-dust		flash_fall_land dust0003 dust0002
-mpset 		100 3 50 1 2 2
+height 			95
+komap			1 0
+dust			flash_fall_land dust0003 dust0002
+mpset 			100 3 50 1 2 2
+jumpheight		4.5
 
 #*****Scripts*****
 
@@ -2889,7 +2890,7 @@ anim jumpdelay
 
 	delay	8
 		offset	155 210
-		bbox	130 120 45 90
+		bbox	115 124 50 85
 	
 	frame	data/chars/galford/6_0_0.png
 
@@ -2897,7 +2898,7 @@ anim jumpland
 
 		delay	8
 		offset	155 210
-		bbox	130 120 45 90
+		bbox	115 124 50 85
 	
 	frame	data/chars/galford/6_0_0.png
 	frame	data/chars/galford/6_1_0.png
@@ -2909,35 +2910,54 @@ anim jump
 
 		delay	-1
 		offset	155 210
-		bbox	130 120 45 90	
+		bbox	115 100 50 85	
 
 	frame	data/chars/galford/16_0_0.png
 
 		delay	8
-	
+		bbox	115 100 50 80	
+
 	frame	data/chars/galford/16_2_0.png
 	frame	data/chars/galford/16_3_0.png
 	frame	data/chars/galford/18_0_0.png
 	frame	data/chars/galford/18_1_0.png
 	frame	data/chars/galford/18_3_0.png
+		
+		bbox	115 100 50 85
+	
 	frame	data/chars/galford/18_4_0.png
 
 anim forwardjump
 
-	cancel 	  0 3 0 d f a freespecial14					#Geni Shiranui
+		delay	12
+		offset	155 210
+		bbox	125 104 50 80	
 
-	delay	8
-	offset	100 200
-	bbox	95 95 35 60
-		frame	data/chars/andy/andy0042
-		frame	data/chars/andy/andy0043
-		frame	data/chars/andy/andy0047
-		frame	data/chars/andy/andy0048
-		frame	data/chars/andy/andy0049
-		frame	data/chars/andy/andy0050
-		frame	data/chars/andy/andy0044
-		frame	data/chars/andy/andy0045
-		frame	data/chars/andy/andy0046
+	frame	data/chars/galford/21_0_0.png
+	
+		bbox	85 104 100 55	
+
+	frame	data/chars/galford/21_2_0.png
+
+		bbox	110 100 55 95
+
+	frame	data/chars/galford/21_3_0.png
+
+		bbox	120 100 45 95
+
+	frame	data/chars/galford/23_0_0.png
+
+		bbox	120 140 80 50
+
+	frame	data/chars/galford/23_1_0.png
+
+		bbox	105 130 80 65
+
+	frame	data/chars/galford/23_2_0.png
+
+		bbox	110 115 50 80
+
+	frame	data/chars/galford/23_3_0.png
 
 anim runjump
 
