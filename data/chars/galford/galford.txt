@@ -2905,18 +2905,22 @@ anim jumpland
 
 anim jump
 
-	dropframe 1
-	cancel 	  0 3 0 d f a freespecial14					#Geni Shiranui
+		dropframe 1
 
-	delay	-1
-	offset	100 200
-	bbox	95 95 35 60
-		frame	data/chars/andy/andy0042
-	delay	10
-		frame	data/chars/andy/andy0043
-		frame	data/chars/andy/andy0044
-		frame	data/chars/andy/andy0045
-		frame	data/chars/andy/andy0046
+		delay	-1
+		offset	155 210
+		bbox	130 120 45 90	
+
+	frame	data/chars/galford/16_0_0.png
+
+		delay	8
+	
+	frame	data/chars/galford/16_2_0.png
+	frame	data/chars/galford/16_3_0.png
+	frame	data/chars/galford/18_0_0.png
+	frame	data/chars/galford/18_1_0.png
+	frame	data/chars/galford/18_3_0.png
+	frame	data/chars/galford/18_4_0.png
 
 anim forwardjump
 
