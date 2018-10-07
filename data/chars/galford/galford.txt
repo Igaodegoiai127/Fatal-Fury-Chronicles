@@ -2888,18 +2888,20 @@ anim grabdown
 anim jumpdelay
 
 	delay	8
-	offset	100 200
-	bbox	75 135 30 65
-		frame	data/chars/andy/3_0.png
+		offset	155 210
+		bbox	130 120 45 90
+	
+	frame	data/chars/galford/6_0_0.png
 
 anim jumpland
 
-	delay	8
-	offset	100 200
-	bbox	75 135 30 65
-		frame	data/chars/andy/3_0.png
-		frame	data/chars/andy/3_1.png
-		frame	data/chars/andy/3_0.png
+		delay	8
+		offset	155 210
+		bbox	130 120 45 90
+	
+	frame	data/chars/galford/6_0_0.png
+	frame	data/chars/galford/6_1_0.png
+	frame	data/chars/galford/6_0_0.png
 
 anim jump
 
