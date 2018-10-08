@@ -36,8 +36,8 @@ jumpheight		4.5
 
 #*****Scripts*****
 
-script			data/chars/andy/scripts/update.c
-keyscript 		data/chars/andy/scripts/key.c
+script				data/chars/andy/scripts/update.c
+keyscript 			data/chars/andy/scripts/key.c
 animationscript 	data/chars/andy/scripts/ani_p.c
 didblockscript  	data/scripts/bloc0001.c
 takedamagescript	data/chars/andy/scripts/dama0001.c
@@ -297,9 +297,10 @@ anim attack1
 	
 	frame	data/chars/galford/83_3_0.png
 	
-		delay	6
-		attack  140 130 73 20 5
+		delay	3
+		attack  140 130 73 24 5
 	
+	frame	data/chars/galford/83_6_0.png
 	frame	data/chars/galford/83_4_0.png
 	
 		delay	6
@@ -458,32 +459,33 @@ anim attack7
 
 anim chargeattack
 
-	#Ram
+		chargetime    	1
+		counterattack 	1
 
-	fastattack	1
-	chargetime    	1
-	counterattack 	1
-	quakeframe    	4 3 -2
-	custentity    	flash_fall_land
-	spawnframe    	4 0 0 0 0
+		delay	6
+		offset	155 210
+		bbox	130 120 45 90
+	
+	frame	data/chars/galford/97_2_0.png
+	frame	data/chars/galford/164_0_0.png
+	frame	data/chars/galford/164_1_0.png
+	frame	data/chars/galford/164_0_0.png
+	frame	data/chars/galford/165_2_0.png
+	frame	data/chars/galford/165_3_0.png
+	frame	data/chars/galford/165_5_1.png
+	frame	data/chars/galford/165_6_0.png
+	frame	data/chars/galford/165_7_0.png
+		
+		delay	16
 
-	delay	10
-	offset	100 200
-	bbox	75 110 35 90
-		frame	data/chars/andy/15_0.png
-	@cmd 	soun0001 "vand0002.wav"
-		frame	data/chars/andy/15_1.png
-		frame	data/chars/andy/15_2.png
-		frame	data/chars/andy/15_3.png
-	attack	100 130 70 70 20 2 0 0 20
-	dropv   4.5 1 0
-		frame	data/chars/andy/15_4.png
-		frame	data/chars/andy/15_5.png
-	attack	0
-		frame	data/chars/andy/15_6.png
-		frame	data/chars/andy/15_7.png
-		frame	data/chars/andy/15_8.png
-		frame	data/chars/andy/7_0.png
+	frame	data/chars/galford/165_8_0.png
+
+		delay	10
+
+	frame	data/chars/galford/163_8_0.png
+	frame	data/chars/galford/163_9_0.png
+	frame	data/chars/galford/164_12_0.png
+
 
 anim runattack
 
