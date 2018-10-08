@@ -37,7 +37,7 @@ anim idle
 		offset	135 192
 		bbox 	0
 		range	75 500
-		rangez	15 500
+		rangez	5 500
 		
 
 	frame	data/chars/poppy/0_0.png
@@ -77,12 +77,14 @@ anim run
 
 anim turn
 
-	delay	10
+	delay	8
 		offset	135 192
 		bbox 	0
 
-	frame	data/chars/poppy/14_1.png
+	frame	data/chars/poppy/14_3.png
 	frame	data/chars/poppy/14_2.png
+	frame	data/chars/poppy/14_1.png
+	frame	data/chars/poppy/14_0.png
 
 
 #*****Attack*******************************************************************************
