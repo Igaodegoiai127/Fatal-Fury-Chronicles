@@ -37,7 +37,7 @@ anim idle
 		offset	135 192
 		bbox 	0
 		range	75 500
-		rangez	5 500
+		rangez	0 500
 		
 
 	frame	data/chars/poppy/0_0.png
