@@ -291,6 +291,8 @@ anim runslide
 
 anim attack1
 
+	# Palm strike.
+
 		delay	6
 		offset	155 210
 		bbox	130 120 45 90
@@ -310,72 +312,87 @@ anim attack1
 
 anim attack2
 
-	#Front kick
+	# V-cut slash.
 
 	fastattack 1
-	range   -40 50
+		range   -40 50
 
-	delay	7
-	offset	100 200
-	bbox	75 110 35 90
-	@cmd 	soun0001 "vand0003.wav"
-		frame	data/chars/andy/12_0.png
-	attack  100 120 55 20 8 0 0 0 10
-		frame	data/chars/andy/12_1.png
-	attack	0
-		frame	data/chars/andy/12_0.png
+		delay	6
+		offset	155 210
+		bbox	130 120 45 90
+	
+	frame	data/chars/galford/164_12_0.png
+	
+		attack2  125 115 100 50 12
+	
+	frame	data/chars/galford/160_1_1.png
+
+		attack2  145 150 80 35 12
+
+	frame	data/chars/galford/160_2_1.png
+	
+		delay	6
+		attack	0
+
+	frame	data/chars/galford/160_3_0.png
+
+		delay	12
+
+	frame	data/chars/galford/160_4_0.png
+
+		delay	6
+
+	frame	data/chars/galford/160_6_0.png
+	frame	data/chars/galford/164_12_0.png
 
 anim attack3
 
-	#Palm/elbow
+	# Palm strike (filler until real attack complete)
 
-	range      -40 50
-	fastattack 1
+		range	-40 50
 
-	delay	6
-	offset	100 200
-	bbox	75 110 35 90
-	@cmd 	soun0001 "vand0001.wav"
-		frame	data/chars/andy/10_0.png
-		frame	data/chars/andy/10_1.png
-	delay	3
-	attack  100 105 60 20 8 0 0 0 20
-		frame	data/chars/andy/10_2.png
-	delay	2
-	attack	0
-		frame	data/chars/andy/10_2.png
-	delay	5
-	attack  100 105 60 20 8 0 0 0 20
-		frame	data/chars/andy/10_3.png
-	attack	0
-		frame	data/chars/andy/10_4.png
-		frame	data/chars/andy/10_5.png
-		frame	data/chars/andy/10_6.png
+		delay	6
+		offset	155 210
+		bbox	130 120 45 90
+	
+	frame	data/chars/galford/83_3_0.png
+	
+		delay	3
+		attack  140 130 73 24 5
+	
+	frame	data/chars/galford/83_6_0.png
+	frame	data/chars/galford/83_4_0.png
+	
+		delay	6
+		attack	0
+
+	frame	data/chars/galford/83_5_0.png
 
 anim attack4
 
-	#Spin Kick.
+	# High side kick
 
-	fastattack 1
-	range      -40 50
+		range	-40 50
+		delay	8
+		offset	155 210
+		bbox	130 120 45 90
+	
+	frame	data/chars/galford/172_0_0.png
+	frame	data/chars/galford/172_1_0.png
+	frame	data/chars/galford/172_2_0.png
 
-	delay	7
-	offset	100 200
-	bbox	75 110 35 90
-	@cmd 	soun0001 "vand0008.wav"
-		frame	data/chars/andy/andy0057
-		frame	data/chars/andy/14_1.png
-	attack	100 55 65 55 12 1 0 0 10
-	dropv   5 1 0
-		frame	data/chars/andy/14_2.png
-	move	-5
-		frame	data/chars/andy/11_3.png
-	move	0
-	attack	0
-		frame	data/chars/andy/11_2.png
-		frame	data/chars/andy/11_1.png
-		frame	data/chars/andy/11_0.png
-		frame	data/chars/andy/andy0239
+		attack  140 85 70 60 14 1 0 0 10
+		dropv   5 1 0
+
+	frame	data/chars/galford/172_3_0.png
+	frame	data/chars/galford/172_4_0.png
+
+		attack	0
+
+	frame	data/chars/galford/172_3_0.png
+	frame	data/chars/galford/172_2_0.png
+	frame	data/chars/galford/172_1_0.png
+	frame	data/chars/galford/172_0_0.png
 
 anim attack5
 
