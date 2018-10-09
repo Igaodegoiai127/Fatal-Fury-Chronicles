@@ -1263,25 +1263,21 @@ anim jumpforward
 
 	#Side kick
 
-	cancel	  	0 3 1 d f s freespecial21			#Ku Bakushin
-	fastattack 	1
+	delay	6
+		offset	155 210
+		bbox	130 120 45 90
+	
+	frame	data/chars/galford/361_8_0.png
+	
+		delay	20
+		attack  120 160 92 46 16 1
+	
+	frame	data/chars/galford/361_9_0.png
+	
+		delay	-1000
+		attack	0
 
-	delay	10
-	offset	100 200
-	bbox	95 95 35 60
-	@cmd 	soun0001 "vand0002.wav"					#Voice effect.
-		frame	data/chars/andy/andy0176
-		frame	data/chars/andy/andy0177
-	delay	20
-	attack  90 120 70 30 15 1
-		frame	data/chars/andy/andy0181
-	delay	8
-	attack	0
-		frame	data/chars/andy/andy0177
-		frame	data/chars/andy/andy0175
-		frame	data/chars/andy/andy0044
-		frame	data/chars/andy/andy0045
-		frame	data/chars/andy/andy0046
+	frame	data/chars/galford/361_8_0.png
 
 anim runjumpattack
 
