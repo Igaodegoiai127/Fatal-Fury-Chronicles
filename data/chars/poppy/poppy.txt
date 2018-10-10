@@ -20,11 +20,9 @@ hostile			none
 gfxshadow    	1
 dust		flash_fall_land dust0003 dust0002
 
-
 #*****Scripts*****
 
 palette	       data/chars/galford/pal_0.act
-
 
 #anim select
 
@@ -39,7 +37,6 @@ anim idle
 		range	75 500
 		rangez	0 500
 		
-
 	frame	data/chars/poppy/0_0.png
 	frame	data/chars/poppy/0_1.png
 

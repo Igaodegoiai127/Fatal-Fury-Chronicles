@@ -1,0 +1,83 @@
+#Bound effects; spawned in synch with main enitity to produce transparent blur effect.
+
+name	     galford_trail	
+type	     none
+health	     100
+#speed	     10		
+alpha	     1
+
+palette	 	data/chars/galford/806_3_0_trail_0.png
+
+anim idle
+
+		delay	-1000
+		offset	75 150
+	frame	data/chars/galford/806_3_0_trail_0.png
+
+anim attack1
+
+		delay	-1000
+		offset	156 209
+
+	frame	data/chars/misc/blan0002.png
+
+anim attack2
+
+		delay	-1000
+		offset	156 209
+
+	frame	data/chars/misc/blan0002.png
+
+anim attack3
+
+	# Reverse V-cut slash.
+
+		delay	-1000
+		offset	156 209
+
+	frame	data/chars/misc/blan0002.png
+	frame	data/chars/misc/blan0002.png
+	frame	data/chars/galford/806_2_0_trail_0.png
+	frame	data/chars/galford/806_3_0_trail_0.png
+	frame	data/chars/galford/806_4_0_trail_0.png
+
+		@cmd	killentity getlocalvar("self")
+
+	frame	data/chars/misc/blan0002.png
+
+anim attack5
+
+	# Cross slash
+
+		delay	-1000
+		offset	156 209
+	
+	frame	data/chars/misc/blan0002.png
+	frame	data/chars/misc/blan0002.png
+	frame	data/chars/misc/blan0002.png
+	frame	data/chars/galford/804_1_0_trail_0.png
+	frame	data/chars/galford/804_3_0_trail_0.png
+	frame	data/chars/misc/blan0002.png
+	frame	data/chars/misc/blan0002.png
+	frame	data/chars/misc/blan0002.png
+
+		@cmd	killentity getlocalvar("self")
+
+	frame	data/chars/misc/blan0002.png
+
+anim attack6
+
+	# Backhand slash
+
+		delay	-1000
+		offset	156 209
+		bbox	130 120 45 90
+	
+	frame	data/chars/misc/blan0002.png
+	frame	data/chars/galford/805_1_0_trail_0.png
+	frame	data/chars/galford/805_3_0_trail_0.png
+	frame	data/chars/misc/blan0002.png
+
+		@cmd	killentity getlocalvar("self")
+
+	frame	data/chars/misc/blan0002.png

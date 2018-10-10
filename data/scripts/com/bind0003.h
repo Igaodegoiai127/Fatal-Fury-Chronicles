@@ -1,6 +1,9 @@
 #include "data/scripts/vars/entity.h"
 #include "data/scripts/dc_draw/main.c"
-void bind0003(void vModel, int vAlias, int iMap, int iBlend, float fX, float fY, float fZ, int iDir, int iAniFlag){
+
+void bind0003(void vModel, int vAlias, int iMap, int iBlend, int fX, int fY, int fZ, int iDir, int iAniFlag)
+{
+	
 
     /*
     bind0003
@@ -21,9 +24,9 @@ void bind0003(void vModel, int vAlias, int iMap, int iBlend, float fX, float fY,
     void  vSelf  = getlocalvar("self");                                     //Caller.
     void  vBinde = getentityvar(vSelf, BINDE);                              //Previous bound entity.
     float fRatio = getentityvar(vSelf, ADSCALER);                           //Caller's current scale ratio.
-    int   iX     = getentityproperty(vSelf, "x") - openborvariant("xpos");  //Caller X location.
-    int   iZ     = getentityproperty(vSelf, "z");                           //Caller Z location.
-    int   iY     = getentityproperty(vSelf, "a");                           //Caller Y location.
+    float   iX     = getentityproperty(vSelf, "x") - openborvariant("xpos");  //Caller X location.
+	float   iZ     = getentityproperty(vSelf, "z");                           //Caller Z location.
+	float   iY     = getentityproperty(vSelf, "y");                           //Caller Y location.
 
     if (vBinde && getentityproperty(vBinde, "exists"))                      //Previously bound entity in place?
     {
@@ -61,6 +64,7 @@ void bind0003(void vModel, int vAlias, int iMap, int iBlend, float fX, float fY,
 		fY = dc_draw_adjust_to_scale_y(vSelf, fY);
 	}
 
+
 	// Get binding property for spawn.
 	void binding = get_entity_property(vSpawn, "binding");
 
@@ -84,8 +88,9 @@ void bind0003(void vModel, int vAlias, int iMap, int iBlend, float fX, float fY,
 	set_binding_property(binding, "target", vSelf);
 	set_binding_property(binding, "sort_id", 1);
 
-    dc_draw_z_position_autoscale(vSpawn);                                                       //Update draw for spawn.
-
-    return vSpawn;                                                          //Return spawned entity.
+	// Update draw for spawn.
+    //dc_draw_z_position_autoscale(vSpawn); 
+	
+	return vSpawn;                                                          //Return spawned entity.
 }
 
