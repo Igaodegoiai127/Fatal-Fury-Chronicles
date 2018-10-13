@@ -23,9 +23,20 @@ anim attack1
 
 anim attack2
 
+	# V-cut slash.
+
 		delay	-1000
 		offset	156 209
+	
+	frame	data/chars/misc/blan0002.png
+	frame	data/chars/galford/160_1_1_trail_0.png
+	frame	data/chars/galford/160_2_1_trail_0.png
+	frame	data/chars/galford/160_3_0_trail_0.png
 
+		@cmd	killentity getlocalvar("self")
+
+	frame	data/chars/misc/blan0002.png
+	frame	data/chars/misc/blan0002.png
 	frame	data/chars/misc/blan0002.png
 
 anim attack3

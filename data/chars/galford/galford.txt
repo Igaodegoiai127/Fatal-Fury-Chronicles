@@ -293,7 +293,7 @@ anim attack1
 
 	# Palm strike.
 
-		delay	4
+		delay	5
 		offset	155 210
 		bbox	130 120 45 90
 	
@@ -329,6 +329,7 @@ anim attack2
 	frame	data/chars/galford/164_12_0.png
 	
 		attack2  125 115 100 50 12
+		@cmd bind0003 "galford_trail" "galford_trail" 1 1 0 0 0 openborconstant("DIRECTION_ADJUST_SAME") openborconstant("BINDING_MATCHING_ANIMATION_TARGET")+openborconstant("BINDING_MATCHING_ANIMATION_REMOVE")+openborconstant("BINDING_MATCHING_FRAME_TARGET")
 	
 	frame	data/chars/galford/160_1_1.png
 

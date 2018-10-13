@@ -27,9 +27,7 @@ void bind0003(void vModel, int vAlias, int iMap, int iBlend, int fX, int fY, int
 	float   iZ     = getentityproperty(vSelf, "z");                           //Caller Z location.
 	float   iY     = getentityproperty(vSelf, "y");                           //Caller Y location.
 
-	settextobj(2, 50, 80, 0, -1, "called: " + openborvariant("elapsed_time"));
-
-    if (vBinde && getentityproperty(vBinde, "exists"))                      //Previously bound entity in place?
+	if (vBinde && getentityproperty(vBinde, "exists"))                      //Previously bound entity in place?
     {
 		if (getentityproperty(vBinde, "name") == vAlias)                    //Alias of previous same as new?
         {
