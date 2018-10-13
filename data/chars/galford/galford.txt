@@ -59,12 +59,11 @@ alternatepal   data/chars/galford/pal_1.act
 
 #*****Commands*****************************************************************************
 
-com a2       	freespecial  		# Back dash
+#com a2       	freespecial  		# Back dash
 com f u a    	freespecial2  		# Force plane up.
 com f d a    	freespecial3  		# Force plane down.
 com	d u a    	freespecial4		# Plane attack up.
 com	u d a    	freespecial5		# Plane attack down.
-
 
 #*****Basic********************************************************************************
 
@@ -294,7 +293,7 @@ anim attack1
 
 	# Palm strike.
 
-		delay	6
+		delay	4
 		offset	155 210
 		bbox	130 120 45 90
 	
@@ -306,10 +305,15 @@ anim attack1
 	frame	data/chars/galford/83_6_0.png
 	frame	data/chars/galford/83_4_0.png
 	
-		delay	6
+		delay	4
 		attack	0
 
 	frame	data/chars/galford/83_5_0.png
+
+############
+
+############
+
 
 anim attack2
 

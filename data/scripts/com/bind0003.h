@@ -23,16 +23,17 @@ void bind0003(void vModel, int vAlias, int iMap, int iBlend, int fX, int fY, int
     void  vSpawn;
     void  vSelf  = getlocalvar("self");                                     //Caller.
     void  vBinde = getentityvar(vSelf, BINDE);                              //Previous bound entity.
-    float fRatio = getentityvar(vSelf, ADSCALER);                           //Caller's current scale ratio.
     float   iX     = getentityproperty(vSelf, "x") - openborvariant("xpos");  //Caller X location.
 	float   iZ     = getentityproperty(vSelf, "z");                           //Caller Z location.
 	float   iY     = getentityproperty(vSelf, "y");                           //Caller Y location.
 
+	settextobj(2, 50, 80, 0, -1, "called: " + openborvariant("elapsed_time"));
+
     if (vBinde && getentityproperty(vBinde, "exists"))                      //Previously bound entity in place?
     {
-        if (getentityproperty(vBinde, "name") == vAlias)                    //Alias of previous same as new?
+		if (getentityproperty(vBinde, "name") == vAlias)                    //Alias of previous same as new?
         {
-            killentity(vBinde);                                             //Kill previous.
+			killentity(vBinde);                                             //Kill previous.
         }
     }
 
@@ -63,11 +64,11 @@ void bind0003(void vModel, int vAlias, int iMap, int iBlend, int fX, int fY, int
 		fX = dc_draw_adjust_to_scale_x(vSelf, fX);
 		fY = dc_draw_adjust_to_scale_y(vSelf, fY);
 	}
-
-
+	
 	// Get binding property for spawn.
 	void binding = get_entity_property(vSpawn, "binding");
 
+	
 	// Get binding toggle and enable flags.
 	void binding_enable = get_binding_property(binding, "positioning");
 	void binding_axis = get_binding_property(binding, "offset");
@@ -86,11 +87,14 @@ void bind0003(void vModel, int vAlias, int iMap, int iBlend, int fX, int fY, int
 	set_binding_property(binding, "matching", iAniFlag);
 	set_binding_property(binding, "direction", iDir);
 	set_binding_property(binding, "target", vSelf);
+	
 	set_binding_property(binding, "sort_id", 1);
 
 	// Update draw for spawn.
     //dc_draw_z_position_autoscale(vSpawn); 
-	
-	return vSpawn;                                                          //Return spawned entity.
+
+	//update_binding(vSpawn);
+
+	return vSpawn;
 }
 

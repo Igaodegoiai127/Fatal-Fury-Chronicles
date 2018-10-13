@@ -71,7 +71,6 @@ anim attack6
 
 		delay	-1000
 		offset	156 209
-		bbox	130 120 45 90
 	
 	frame	data/chars/misc/blan0002.png
 	frame	data/chars/galford/805_1_0_trail_0.png

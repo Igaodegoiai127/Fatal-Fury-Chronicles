@@ -19,14 +19,21 @@ void main() {
 
 		// Execute tint effect on entity.
 		dc_draw_auto_tint(ent);
-				
+
+		char model = getentityproperty(ent, "model");
+		
+		if (model == "galford_trail")
+		{
+			dc_draw_position(ent, 1, 69, i);
+		}
+
 	}
 
 	// Draw after images
 	trai0001();
 }
 
-void dc_draw_position(void ent, int box, int box_y)
+void dc_draw_position(void ent, int box, int box_y, int i)
 {
 	void position = get_entity_property(ent, "position_coordinates");
 
@@ -34,5 +41,5 @@ void dc_draw_position(void ent, int box, int box_y)
 	float y = get_axis_principal_float_property(position, "y");
 	float z = get_axis_principal_float_property(position, "z");
 
-	settextobj(box, 50, box_y, 0, -1, "X: " + x + ", Y: " + y + ", Z: " + z, openborvariant("elapsed_time") + 200);
+	settextobj(box, 50, box_y, 0, -1, "ent: " + ent + ", X: " + x + ", Y: " + y + ", Z: " + z, openborvariant("elapsed_time") + 200);
 }
