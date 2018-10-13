@@ -1,9 +1,9 @@
 colourselect 	1
-ajspecial 	1
+ajspecial 		1
 spdirection 	1 1 1 1
-maxfollows	120
-maxidles	4
-maxwalks	4
+maxfollows		120
+maxidles		4
+maxwalks		4
 maxattacks      10
 maxfreespecials 100
 maxattacktypes  20
@@ -11,28 +11,28 @@ noaircancel     2
 
 #*****Flash/Hit sparks*****
 load	Flash		data/chars/misc/flash/flash.txt
-load    flash_fall_land	data/chars/misc/dust/flash_fall_land.txt			#Manual dust effect.
-load    dust0002	data/chars/misc/dust/dust0002.txt			#Takeoff dust effect.
-load    dust0003	data/chars/misc/dust/dust0003.txt			#Land dust effect.
-load    dust0004	data/chars/misc/dust/dust0004.txt			#Light impact dust effect.
-load    dust0005	data/chars/misc/dust/dust0005.txt			#Heavy impact dust effect.
-load	paus0001	data/chars/misc/effects/paus0001.txt			#Text entity effects.
-load	effe0001	data/chars/misc/effects/effe0001.txt			#General one shot effects.
+load    flash_fall_land	data/chars/misc/dust/flash_fall_land.txt	# Manual dust effect.
+load    dust0002	data/chars/misc/dust/dust0002.txt				# Takeoff dust effect.
+load    dust0003	data/chars/misc/dust/dust0003.txt				# Land dust effect.
+load    dust0004	data/chars/misc/dust/dust0004.txt				# Light impact dust effect.
+load    dust0005	data/chars/misc/dust/dust0005.txt				# Heavy impact dust effect.
+load	paus0001	data/chars/misc/effects/paus0001.txt			# Text entity effects.
+load	effe0001	data/chars/misc/effects/effe0001.txt			# General one shot effects.
 
 #*****Items*****
-load	scro0001	data/chars/misc/pickups/scro0001.txt			#Power up scroll.
-know	appl0001	data/chars/misc/pickups/appl0001.txt			#Apple.
+load	scro0001	data/chars/misc/pickups/scro0001.txt			# Power up scroll.
+know	appl0001	data/chars/misc/pickups/appl0001.txt			# Apple.
 know	Meat		data/chars/misc/pickups/meat.txt
 know	Money		data/chars/misc/pickups/money.txt
 know	Gold		data/chars/misc/pickups/gold.txt
-know    musi0001        data/chars/misc/pickups/musi0001.txt			#Music changer.
+know    musi0001        data/chars/misc/pickups/musi0001.txt			# Music changer.
 
 #*****Obstacle*****
 know	crat0001	data/chars/misc/crat0001/crat0001.txt
 know	crat0002	data/chars/misc/crat0001/crat0002.txt
 
 #*****Generic Sub entities*****
-know	proj0001	data/chars/misc/effects/proj0001.txt			#Small tornado projectile.
+know	proj0001	data/chars/misc/effects/proj0001.txt			# Small tornado projectile.
 
 #*****Backdrops/weather*****************************************************
 
@@ -40,29 +40,29 @@ know	proj0001	data/chars/misc/effects/proj0001.txt			#Small tornado projectile.
 
 #*****Sound Beach*****
 
-know	beac0001	data/bgs/beach/beac0001.txt				#Sound beach background layer 0a.
-know	beac0002	data/bgs/beach/beac0002.txt				#Sound beach background layer 0b.
-know	beac0003	data/bgs/beach/beac0003.txt				#Sound beach background layer 1a.
-know	beac0004	data/bgs/beach/beac0004.txt				#Sound beach background layer 1b.
-know	beac0005	data/bgs/beach/beac0005.txt				#Sound beach background layer 1c.
-know	beac0006	data/bgs/beach/beac0006.txt				#Sound beach background layer 2a.
-know	beac0007	data/bgs/beach/beac0007.txt				#Sound beach foreground layer 0a.
-know	beac0008	data/bgs/beach/beac0008.txt				#Sound beach foreground layer 0b.
-know	beac0009	data/bgs/beach/beac0009.txt				#Boat for Sound Beach.
+know	beac0001	data/bgs/beach/beac0001.txt				# Sound beach background layer 0a.
+know	beac0002	data/bgs/beach/beac0002.txt				# Sound beach background layer 0b.
+know	beac0003	data/bgs/beach/beac0003.txt				# Sound beach background layer 1a.
+know	beac0004	data/bgs/beach/beac0004.txt				# Sound beach background layer 1b.
+know	beac0005	data/bgs/beach/beac0005.txt				# Sound beach background layer 1c.
+know	beac0006	data/bgs/beach/beac0006.txt				# Sound beach background layer 2a.
+know	beac0007	data/bgs/beach/beac0007.txt				# Sound beach foreground layer 0a.
+know	beac0008	data/bgs/beach/beac0008.txt				# Sound beach foreground layer 0b.
+know	beac0009	data/bgs/beach/beac0009.txt				# Boat for Sound Beach.
 
 #*****Sound Beach Deck*****
 
-know	deck0001	data/bgs/deck/deck0001.txt				#Sound beach deck background layer 0a.
-know	deck0002	data/bgs/deck/deck0002.txt				#Sound beach deck elec pole.
+know	deck0001	data/bgs/deck/deck0001.txt				# Sound beach deck background layer 0a.
+know	deck0002	data/bgs/deck/deck0002.txt				# Sound beach deck elec pole.
 
 #*****Characters************************************************************
 
 
 
 load    Terry			data/chars/terry/terry.txt
-know	andybe			data/chars/andy/andybe.txt				#Bound visuals.
-know	andypa			data/chars/andy/andypa.txt				#Pause visuals.
-load	Andy			data/chars/andy/andy0001.txt				#PC Andy.
+know	andybe			data/chars/andy/andybe.txt				# Bound visuals.
+know	andypa			data/chars/andy/andypa.txt				# Pause visuals.
+load	Andy			data/chars/andy/andy0001.txt			# PC Andy.
 
 
 know	raid0001		data/chars/raiden/raiden.txt

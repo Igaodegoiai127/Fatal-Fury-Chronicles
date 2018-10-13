@@ -4825,42 +4825,6 @@
     <Image Include="data\chars\misc\flash\fire0066.png">
       <Filter>Resource Files</Filter>
     </Image>
-    <Image Include="data\chars\misc\flash\flas0001.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="data\chars\misc\flash\flas0002.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="data\chars\misc\flash\flas0003.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="data\chars\misc\flash\flas0004.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="data\chars\misc\flash\flas0005.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="data\chars\misc\flash\flas0006.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="data\chars\misc\flash\flas0007.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="data\chars\misc\flash\flas0008.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="data\chars\misc\flash\flas0009.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="data\chars\misc\flash\flas0010.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="data\chars\misc\flash\flas0011.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="data\chars\misc\flash\flas0012.png">
-      <Filter>Resource Files</Filter>
-    </Image>
     <Image Include="data\chars\misc\pickups\aapa0000.png">
       <Filter>Resource Files</Filter>
     </Image>
@@ -8591,6 +8555,42 @@
       <Filter>Resource Files</Filter>
     </Image>
     <Image Include="data\extras\ffchonicals_0001.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\flash\flash\0_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\flash\flash\0_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\flash\flash\0_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\flash\flash\0_3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\flash\flash\0_4.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\flash\flash\0_5.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\flash\flash\0_6.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\flash\flash\0_7.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\flash\flash\0_8.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\flash\flash\0_9.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\flash\flash\0_10.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\flash\flash\0_11.png">
       <Filter>Resource Files</Filter>
     </Image>
   </ItemGroup>

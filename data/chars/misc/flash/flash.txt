@@ -13,15 +13,15 @@ anim idle
 	
 	delay	2
 	offset	130 215
-		frame	data/chars/misc/flash/flas0001
-		frame	data/chars/misc/flash/flas0002
-		frame	data/chars/misc/flash/flas0003
-		frame	data/chars/misc/flash/flas0004
-		frame	data/chars/misc/flash/flas0005
-		frame	data/chars/misc/flash/flas0006
-		frame	data/chars/misc/flash/flas0007
-		frame	data/chars/misc/flash/flas0008
-		frame	data/chars/misc/flash/flas0009
-		frame	data/chars/misc/flash/flas0010
-		frame	data/chars/misc/flash/flas0011
-		frame	data/chars/misc/flash/flas0012
+		frame	data/chars/misc/flash/flash/0_0.png
+		frame	data/chars/misc/flash/flash/0_1.png
+		frame	data/chars/misc/flash/flash/0_2.png
+		frame	data/chars/misc/flash/flash/0_3.png
+		frame	data/chars/misc/flash/flash/0_4.png
+		frame	data/chars/misc/flash/flash/0_5.png
+		frame	data/chars/misc/flash/flash/0_6.png
+		frame	data/chars/misc/flash/flash/0_7.png
+		frame	data/chars/misc/flash/flash/0_8.png
+		frame	data/chars/misc/flash/flash/0_9.png
+		frame	data/chars/misc/flash/flash/0_10.png
+		frame	data/chars/misc/flash/flash/0_11.png
