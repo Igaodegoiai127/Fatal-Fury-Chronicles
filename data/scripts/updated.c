@@ -22,9 +22,9 @@ void main() {
 
 		char model = getentityproperty(ent, "model");
 		
-		if (model == "galford_trail")
+		if (model == "Galford")
 		{
-			dc_draw_position(ent, 1, 69, i);
+			
 		}
 
 	}
@@ -32,6 +32,8 @@ void main() {
 	// Draw after images
 	trai0001();
 }
+
+
 
 void dc_draw_position(void ent, int box, int box_y, int i)
 {
@@ -43,3 +45,4 @@ void dc_draw_position(void ent, int box, int box_y, int i)
 
 	settextobj(box, 50, box_y, 0, -1, "ent: " + ent + ", X: " + x + ", Y: " + y + ", Z: " + z, openborvariant("elapsed_time") + 200);
 }
+

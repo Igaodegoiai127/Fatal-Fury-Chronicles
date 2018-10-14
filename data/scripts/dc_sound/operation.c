@@ -55,62 +55,72 @@ int dc_sound_get_volume_right()
 // Caskey, Damon V. 
 // 2018-10-13
 //
-// Return an adjustment factor from horizontal position
-// that can be applied to volume channels for a 
-// location stereo effect.
-void dc_sound_horizontal_factor(float position)
+// Return an adjusted volume based on position in screen. 
+int dc_sound_volume_adjusted_horizontal(float position, int volume)
 {
 	float	center;
 	float	result;
+	float	factor;
 
 	// Positions are absolute, so we need to subtract
 	// the level scroll position to get where we 
 	// are on the screen.
+
 	position -= openborvariant("xpos");
 
 	// Get median of the screen resolution.
 	center = openborvariant("hResolution") * 0.5;
 
-	// Devide position by center. This gives us a factor we
-	// can apply to channel volume.
-	result = position / center;
+	// Divide position by center. This gives us a mutiplication
+	// factor based on X posiition on screen:
+	//
+	// Far left, approaching 0.
+	// Center, 1. 
+	// Far right, approaching 2.  
+	factor = position / center;
 
+	// Divide the orginal volume in half. We then mutiply by
+	// our factor to produce an adjusted volume from left to
+	// right:
+	//
+	// Far left, approaching 0.
+	// Center, half volume.
+	// Far right, approaching original volume.
+	result = (volume / 2) * factor;
+
+	// Return the result. 
+	// -- Right channel: Use as is.
+	// -- Left channel: Subtract from orginal channel volume.
 	return result;
 }
 
-// Apply factor to volumes. At a dead center
-	// position, both volumes are original value.
-//volume_left -= (volume_left / 2) * fX;
-//volume_right = (volume_right / 2) * fX;
-
-//setlocalvar("dc_sound_volume_left_temp", volume_left);
-//setlocalvar("dc_sound_volume_right_temp", volume_right);
-
-void dc_sound_quick_play_entity(char sample_path)
+void dc_sound_quick_play_entity(int sample_id)
 {
 	void	entity;
 	void	axis;
-	float	factor;
 	float	pos_x;
 	int		volume_left;
 	int		volume_right;
-	int		sample_id;
 
-	sample_id = loadsample(sample_path, DC_SOUND_FAILURE_LOG);
+	// If the sound didn't load, just exit.
+	if (sample_id == DC_SOUND_SAMPLE_INVALID)
+	{
+		return;
+	}
 
+	// Get set volumes.
 	volume_left = dc_sound_get_volume_left();
 	volume_right = dc_sound_get_volume_right();
 
+	// Get entity X position.
 	entity = dc_sound_get_entity();
 	axis = get_entity_property(entity, "position_coordinates");
-
 	pos_x = get_axis_principal_float_property(axis, "x");
 
-	factor = dc_sound_horizontal_factor(pos_x);
+	// Get adjusted volumes.
+	volume_left -= dc_sound_volume_adjusted_horizontal(pos_x, volume_left);
+	volume_right = dc_sound_volume_adjusted_horizontal(pos_x, volume_right);
 
-
-	volume_left -= (volume_left / 2) * factor;
-	volume_right = (volume_right / 2) * factor;
-
+	// Play the sample.
 	playsample(sample_id, DC_SOUND_DEFAULT_PRIORITY, volume_left, volume_right, DC_SOUND_DEFAULT_SPEED, DC_SOUND_DEFAULT_LOOP);
 }
