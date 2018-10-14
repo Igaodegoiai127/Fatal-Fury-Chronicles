@@ -86,7 +86,7 @@ void dc_sound_horizontal_factor(float position)
 //setlocalvar("dc_sound_volume_left_temp", volume_left);
 //setlocalvar("dc_sound_volume_right_temp", volume_right);
 
-void dc_sound_quick_play_entity(char sample)
+void dc_sound_quick_play_entity(char sample_path)
 {
 	void	entity;
 	void	axis;
@@ -94,6 +94,9 @@ void dc_sound_quick_play_entity(char sample)
 	float	pos_x;
 	int		volume_left;
 	int		volume_right;
+	int		sample_id;
+
+	sample_id = loadsample(sample_path, DC_SOUND_FAILURE_LOG);
 
 	entity	= dc_sound_get_entity();
 	axis	= get_entity_property(entity, "position_coordinates");
