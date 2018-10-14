@@ -104,6 +104,7 @@
     <ClCompile Include="data\chars\andy\scripts\hit0001.c" />
     <ClCompile Include="data\chars\andy\scripts\key.c" />
     <ClCompile Include="data\chars\andy\scripts\update.c" />
+    <ClCompile Include="data\chars\galford\scripts\animation.c" />
     <ClCompile Include="data\chars\raiden\scripts\ani_a.c" />
     <ClCompile Include="data\chars\raiden\scripts\ani_p.c" />
     <ClCompile Include="data\chars\ray\scripts\animation.c" />
@@ -129,6 +130,7 @@
     <ClCompile Include="data\scripts\dc_math\percentage.c" />
     <ClCompile Include="data\scripts\dc_math\ratio_to_int.c" />
     <ClCompile Include="data\scripts\dc_sound\main.c" />
+    <ClCompile Include="data\scripts\dc_sound\operation.c" />
     <ClCompile Include="data\scripts\deat0001.c" />
     <ClCompile Include="data\scripts\deat0002.c" />
     <ClCompile Include="data\scripts\fall0001.c" />
