@@ -98,6 +98,9 @@ void dc_sound_quick_play_entity(char sample_path)
 
 	sample_id = loadsample(sample_path, DC_SOUND_FAILURE_LOG);
 
+	volume_left = dc_sound_get_volume_left();
+	volume_right = dc_sound_get_volume_right();
+
 	entity = dc_sound_get_entity();
 	axis = get_entity_property(entity, "position_coordinates");
 
@@ -105,8 +108,9 @@ void dc_sound_quick_play_entity(char sample_path)
 
 	factor = dc_sound_horizontal_factor(pos_x);
 
+
 	volume_left -= (volume_left / 2) * factor;
-	volume_right -= (volume_right / 2) * factor;
+	volume_right = (volume_right / 2) * factor;
 
 	playsample(sample_id, DC_SOUND_DEFAULT_PRIORITY, volume_left, volume_right, DC_SOUND_DEFAULT_SPEED, DC_SOUND_DEFAULT_LOOP);
 }
