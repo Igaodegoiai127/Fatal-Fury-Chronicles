@@ -94,6 +94,10 @@ int dc_sound_volume_adjusted_horizontal(float position, int volume)
 	return result;
 }
 
+// Caskey, Damon V.
+// 2018-10-14
+//
+// Play requested sample with X axis based stereo.
 void dc_sound_quick_play_entity(int sample_id)
 {
 	void	entity;
@@ -124,3 +128,4 @@ void dc_sound_quick_play_entity(int sample_id)
 	// Play the sample.
 	playsample(sample_id, DC_SOUND_DEFAULT_PRIORITY, volume_left, volume_right, DC_SOUND_DEFAULT_SPEED, DC_SOUND_DEFAULT_LOOP);
 }
+

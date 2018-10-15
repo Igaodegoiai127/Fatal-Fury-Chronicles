@@ -12,6 +12,10 @@
 #define DC_SOUND_DEFAULT_LOOP			0
 #define DC_SOUND_DEFAULT_SPEED			100
 
+// Sound categories.
+#define DC_SOUND_CATEGORY_WHIFF_HEAVY	"dc_snd_0"
+#define DC_SOUND_CATEGORY_WHIFF_LIGHT	"dc_snd_1"
+#define DC_SOUND_CATEGORY_WHIFF_MEDIUM	"dc_snd_2"
 
 #endif // !DC_SOUND_CONFIG
 

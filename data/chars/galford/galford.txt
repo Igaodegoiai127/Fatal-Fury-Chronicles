@@ -298,6 +298,7 @@ anim attack1
 		bbox	130 120 45 90
 	
 		@cmd dc_sound_quick_play_entity loadsample("data/sounds/whiff_light_0.wav")
+		@cmd dc_sounds_load_array_manual
 	
 	frame	data/chars/galford/83_3_0.png
 	
