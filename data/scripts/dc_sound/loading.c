@@ -2,19 +2,62 @@
 
 void dc_sounds_populate_database(char category, int sample)
 {
-	void array_category;
+	void array_categories;
+	void array_samples;
 
 	// Array is kept as a localvar
 	// Get the array of sounds.
-	array_category = getglobalvar(category);
+	array_categories = getglobalvar("categories_global");
 
-	if (!array_category)
+	// Can't do anything else if we didn't get 
+	// an array of categories.
+	if (!array_categories)
 	{
 		return;
 	}
 
+	// Get pointer for samples array stored in this
+	// category element.
+	array_samples = dc_sounds_get_samples_array(array_categories, category);
+
 	// Reset row cursor.
 	reset(array_rows);
+}
+
+// Caskey, Damon  V.
+// 2018-10-15
+//
+// Get samples array pointer from category element
+// in categories array. If the category element does
+// not contain a sample array, it will be populated
+// with a new samples array.
+//
+// Returns the samples array pointer
+void dc_sounds_get_samples_array(void categories, char category)
+{
+	void array_samples;
+
+	// Get pointer for samples array stored in this
+	// category element.
+	array_samples = get(array_categories, category);
+
+	// If there is no samples array in this category, 
+	// then we need to create and use it to populate
+	// this category element.
+	if (!array_samples)
+	{
+		// Create a samples array.  We'll start
+		// with minimal size.
+		array_samples = array(1);
+
+		// Place the pointer for our sample array
+		// into the categories array element for
+		// current category.
+		set(categories, category, array_samples);
+	}
+
+	// Return the samples array pointer.
+	return array_samples;
 }
 
 void dc_sounds_load_array_manual()
