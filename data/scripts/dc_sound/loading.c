@@ -19,9 +19,27 @@ void dc_sounds_populate_database(char category, int sample)
 	// Get pointer for samples array stored in this
 	// category element.
 	array_samples = dc_sounds_get_samples_array(array_categories, category);
+}
 
-	// Reset row cursor.
-	reset(array_rows);
+void dc_sounds_get_categories_array(char identifier)
+{
+	void array_categories;
+
+	// Array is kept as a localvar
+	// Get the array of sounds.
+	array_categories = getglobalvar("categories_global");
+
+	// If there is no category array, then
+	// let's create one and get the pointer.
+	if (!array_categories)
+	{
+		// Create categories array of minimal size.
+		array_categories = array(1);
+	}
+
+
+
+
 }
 
 // Caskey, Damon  V.
@@ -39,7 +57,7 @@ void dc_sounds_get_samples_array(void categories, char category)
 
 	// Get pointer for samples array stored in this
 	// category element.
-	array_samples = get(array_categories, category);
+	array_samples = get(categories, category);
 
 	// If there is no samples array in this category, 
 	// then we need to create and use it to populate
