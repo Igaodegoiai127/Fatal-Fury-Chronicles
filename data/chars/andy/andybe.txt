@@ -27,7 +27,7 @@ defense burn   0 1000 0 1000 1000 0 0
 defense shock  0 1000 0 1000 1000 0 0
 defense freeze 0 1000 0 1000 1000 0 0
 
-onspawnscript		data/scripts/spaw0011.c
+onspawnscript		data/scripts/common/spawnscript_for_level_items.c
 onkillscript		data/scripts/kill0001.c
 didhitscript		data/scripts/hit0003.c
 takedamagescript	data/scripts/dama0003.c
