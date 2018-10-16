@@ -120,6 +120,8 @@
     <ClCompile Include="data\scripts\dc_afterimage\main.c" />
     <ClCompile Include="data\scripts\dc_afterimage\trai0001.c" />
     <ClCompile Include="data\scripts\dc_afterimage\trai0002.c" />
+    <ClCompile Include="data\scripts\dc_d20\main.c" />
+    <ClCompile Include="data\scripts\dc_d20\operation.c" />
     <ClCompile Include="data\scripts\dc_draw\main.c" />
     <ClCompile Include="data\scripts\dc_draw\scale_ratio.c" />
     <ClCompile Include="data\scripts\dc_draw\tint.c" />
@@ -127,6 +129,9 @@
     <ClCompile Include="data\scripts\dc_grapple\functions.c" />
     <ClCompile Include="data\scripts\dc_grapple\main.c" />
     <ClCompile Include="data\scripts\dc_grapple\release.c" />
+    <ClCompile Include="data\scripts\dc_initialize\colors.c" />
+    <ClCompile Include="data\scripts\dc_initialize\main.c" />
+    <ClCompile Include="data\scripts\dc_initialize\alias.c" />
     <ClCompile Include="data\scripts\dc_math\main.c" />
     <ClCompile Include="data\scripts\dc_math\percentage.c" />
     <ClCompile Include="data\scripts\dc_math\ratio_to_int.c" />
@@ -153,7 +158,6 @@
     <ClCompile Include="data\scripts\score4.c" />
     <ClCompile Include="data\scripts\scorec.c" />
     <ClCompile Include="data\scripts\scre0001.c" />
-    <ClCompile Include="data\scripts\spaw0001.c" />
     <ClCompile Include="data\scripts\spaw0002.c" />
     <ClCompile Include="data\scripts\spaw0003.c" />
     <ClCompile Include="data\scripts\spaw0004.c" />
@@ -162,8 +166,6 @@
     <ClCompile Include="data\scripts\spaw0007.c" />
     <ClCompile Include="data\scripts\spaw0008.c" />
     <ClCompile Include="data\scripts\spaw0009.c" />
-    <ClCompile Include="data\scripts\spaw0010.c" />
-    <ClCompile Include="data\scripts\spaw0011.c" />
     <ClCompile Include="data\scripts\timetick.c" />
     <ClCompile Include="data\scripts\update.c" />
     <ClCompile Include="data\scripts\updated.c" />
@@ -228,8 +230,6 @@
     <ClInclude Include="data\scripts\com\run0001.h" />
     <ClInclude Include="data\scripts\com\soun0001.h" />
     <ClInclude Include="data\scripts\com\soun0003.h" />
-    <ClInclude Include="data\scripts\com\spaw0001.h" />
-    <ClInclude Include="data\scripts\com\spaw0002.h" />
     <ClInclude Include="data\scripts\com\stat0001.h" />
     <ClInclude Include="data\scripts\com\stun0001.h" />
     <ClInclude Include="data\scripts\com\stun0002.h" />
@@ -244,8 +244,10 @@
     <ClInclude Include="data\scripts\com\velo0001.h" />
     <ClInclude Include="data\scripts\com\wall0001.h" />
     <ClInclude Include="data\scripts\dc_afterimage\config.h" />
+    <ClInclude Include="data\scripts\dc_d20\config.h" />
     <ClInclude Include="data\scripts\dc_draw\config.h" />
     <ClInclude Include="data\scripts\dc_grapple\config.h" />
+    <ClInclude Include="data\scripts\dc_initialize\config.h" />
     <ClInclude Include="data\scripts\dc_math\config.h" />
     <ClInclude Include="data\scripts\dc_sound\config.h" />
     <ClInclude Include="data\scripts\vars\anims.h" />
