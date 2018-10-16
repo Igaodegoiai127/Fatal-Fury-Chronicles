@@ -21,7 +21,6 @@ facing	     1
 #*****Sub Entites*****
 #*****Scripts*****
 
-#onspawnscript		data/scripts/spaw0010.c
 onkillscript		data/scripts/kill0001.c
 
 #*****Alternates*******
