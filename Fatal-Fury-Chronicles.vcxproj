@@ -98,6 +98,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\personal\openbor\modules\rocketviper\OpenBOR\Paks\data\scripts\loading.c" />
     <ClCompile Include="data\chars\andy\scripts\ani_p.c" />
     <ClCompile Include="data\chars\andy\scripts\dama0001.c" />
     <ClCompile Include="data\chars\andy\scripts\fall0001.c" />
@@ -141,6 +142,7 @@
     <ClCompile Include="data\scripts\keyall.c" />
     <ClCompile Include="data\scripts\kill0001.c" />
     <ClCompile Include="data\scripts\kill0002.c" />
+    <ClCompile Include="data\scripts\loading.c" />
     <ClCompile Include="data\scripts\movz0001.c" />
     <ClCompile Include="data\scripts\onbo0001.c" />
     <ClCompile Include="data\scripts\onbw0001.c" />
