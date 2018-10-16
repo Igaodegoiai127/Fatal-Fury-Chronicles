@@ -19,9 +19,9 @@ void initialize_level_spawn(void ent)
 	// regular maps here.
 	map = getentityproperty(ent, "map");
 
-    if (map == getentityproperty(ent, "komap"))
+    if (map == 1)
     {   
-		//map = dc_random_color_set(ent);
+		map = dc_random_color_set(ent);
 
 		changeentityproperty(ent, "map", map);
     }

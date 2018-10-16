@@ -106,6 +106,7 @@
     <ClCompile Include="data\chars\andy\scripts\key.c" />
     <ClCompile Include="data\chars\andy\scripts\update.c" />
     <ClCompile Include="data\chars\galford\scripts\animation.c" />
+    <ClCompile Include="data\chars\galford\scripts\onspawn.c" />
     <ClCompile Include="data\chars\raiden\scripts\ani_a.c" />
     <ClCompile Include="data\chars\raiden\scripts\ani_p.c" />
     <ClCompile Include="data\chars\ray\scripts\animation.c" />
