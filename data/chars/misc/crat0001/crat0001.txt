@@ -28,7 +28,7 @@ alternatepal   data/chars/misc/crat0001/aapa0011	#Burnished.
 alternatepal   data/chars/misc/crat0001/aapa0012	#Black.
 alternatepal   data/chars/misc/crat0001/aapa0012	#Blue.
 
-onspawnscript		data/scripts/spaw0001.c
+onspawnscript		data/scripts/common/spawnscript_for_level_items.c
 onkillscript		data/scripts/kill0001.c
 	
 anim idle

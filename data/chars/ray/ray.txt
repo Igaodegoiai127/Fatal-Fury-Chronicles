@@ -1,4 +1,4 @@
-name			ray
+name			Ray
 health			150
 speed			10
 type			enemy
@@ -21,6 +21,7 @@ nopassiveblock	1
 holdblock		2
 blockodds		1
 
+onspawnscript	data/scripts/common/spawnscript_for_level_items.c
 animationscript data/chars/ray/scripts/animation.c
 
 palette   		data/chars/ray/pal_0.act	# Light blue jeans, white shirt, red bolt

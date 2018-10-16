@@ -26,7 +26,7 @@ takedamagescript	data/scripts/dama0001.c
 onfallscript	        data/scripts/fall0001.c
 ondeathscript		data/scripts/deat0001.c
 onmovezscript		data/scripts/movz0001.c
-onspawnscript		data/scripts/spaw0001.c
+onspawnscript		data/scripts/common/spawnscript_for_level_items.c
 
 palette data/chars/raiden/raid0001
 
