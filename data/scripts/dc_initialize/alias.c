@@ -1,6 +1,90 @@
 #include "data/scripts/dc_initialize/config.h"
 
+// Caskey, Damon V.
+// 2018-10-17
+//
+// Add an entry to list of possible name choices from array.
+void dc_alias_quick_add(char name)
+{
+	void alias_list;
+
+	alias_list = getlocalvar(DC_INITIALIZE_VAR_KEY_ALIAS_LIST);
+
+	if (!alias_list)
+	{
+		alias_list = array(0);
+
+		setlocalvar(DC_INITIALIZE_VAR_KEY_ALIAS_LIST, alias_list);
+	}
+
+	add(alias_list, 0, name);
+}
+
+// Attempt to return a random alias from array first,
+// then from bin file.
 char dc_random_alias(void ent)
+{
+	char result;
+
+	result = dc_alias_from_array();
+
+	if (!result)
+	{
+		log("dc_text");
+		result = dc_alias_from_text(ent);
+	}
+
+	return result;
+}
+
+// Caskey, Damon V.
+// 2018-10-17
+//
+// Get a random alias from list of names.
+char dc_alias_from_array()
+{
+	char result;
+	void list;
+	int size;
+	int random_index;
+
+	list = getlocalvar(DC_INITIALIZE_VAR_KEY_ALIAS_LIST);
+
+	// Do we have a valid list of alias names?
+	if(list)
+	{
+		// Get array size and decrement for 0 indexing.
+		size = size(list);
+		size--;
+
+		// Use last index as upper bound for random 
+		// number generator.
+		setlocalvar(DC_D20_KEY_UPPER, size);
+
+		// Generate random number.
+		random_index = dc_d20_random_int();
+
+		// Use random number to select array
+		// index and get the value.
+		result = get(list, random_index);
+	}
+
+	return result;
+}
+
+// Caskey, Damon V.
+// 2010-12-19
+//
+// Get a random alias from text list. Text format is
+// as follows:
+// 
+// model_1_name alias_1 alias_2 alias_2 ...
+// model_2_name alias_1 alias_2 alias_3 ...
+//
+// Model name is the model's name (duh), and
+// alias choices list left to right. Each model
+// may have as many alias names as desisred.
+char dc_alias_from_text(void ent)
 {
 	char model;
 	int names;
@@ -41,7 +125,7 @@ char dc_random_alias(void ent)
 	if (match)
 	{
 		// Get number of columns with a name value.
-		column_count = dc_filestream_column_index_count(names);
+		column_count = dc_filestream_enumerate_column(names);
 
 		// Set maximum random number to column count.
 		setlocalvar(DC_D20_KEY_UPPER, column_count);
@@ -66,11 +150,11 @@ char dc_random_alias(void ent)
 // Caskey, Damon V.
 // 2018-10-16
 //
-// Count the number of columns in a filestream
-// line for indexed referencing.
-int dc_filestream_column_index_count(int filestream)
+// Get a count of columns in current row of filestream for
+// reference. Ex: If there are 16 columns, function will 
+// return 15 (0-15 zero indexed).
+int dc_filestream_enumerate_column(int filestream)
 {
-
 	int count;
 	char value;
 
