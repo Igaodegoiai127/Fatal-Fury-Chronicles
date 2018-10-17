@@ -29,6 +29,13 @@ alternatepal 	data/chars/ray/pal_1.act	# Dark blue jeans, white shirt, dark red 
 alternatepal 	data/chars/ray/pal_2.act	# Black jeans, yellow shirt, red bolt
 alternatepal 	data/chars/ray/pal_3.act	# Black jeans, yellow shirt, black bolt
 alternatepal 	data/chars/ray/pal_4.act	# Light blue jeans, white shirt, red bolt, brown hair
+alternatepal 	data/chars/ray/pal_5.act
+alternatepal 	data/chars/ray/pal_6.act
+alternatepal 	data/chars/ray/pal_7.act
+alternatepal 	data/chars/ray/pal_8.act
+alternatepal 	data/chars/ray/pal_9.act
+alternatepal 	data/chars/ray/pal_10.act
+alternatepal 	data/chars/ray/pal_11.act
 
 anim block
 
