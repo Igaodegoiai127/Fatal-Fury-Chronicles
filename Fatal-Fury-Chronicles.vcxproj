@@ -98,7 +98,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\personal\openbor\modules\rocketviper\OpenBOR\Paks\data\scripts\loading.c" />
     <ClCompile Include="data\chars\andy\scripts\ani_p.c" />
     <ClCompile Include="data\chars\andy\scripts\dama0001.c" />
     <ClCompile Include="data\chars\andy\scripts\fall0001.c" />
@@ -110,12 +109,13 @@
     <ClCompile Include="data\chars\raiden\scripts\ani_a.c" />
     <ClCompile Include="data\chars\raiden\scripts\ani_p.c" />
     <ClCompile Include="data\chars\ray\scripts\animation.c" />
+    <ClCompile Include="data\chars\ray\scripts\onspawn.c" />
     <ClCompile Include="data\chars\terry\scripts\ani_p.c" />
     <ClCompile Include="data\chars\terry\scripts\key.c" />
     <ClCompile Include="data\chars\terry\scripts\update.c" />
     <ClCompile Include="data\scripts\blan0001.c" />
     <ClCompile Include="data\scripts\bloc0001.c" />
-    <ClCompile Include="data\scripts\common\initialize_level_spawn.c" />
+    <ClCompile Include="data\scripts\dc_initialize\initialize_level_spawn.c" />
     <ClCompile Include="data\scripts\dama0001.c" />
     <ClCompile Include="data\scripts\dama0002.c" />
     <ClCompile Include="data\scripts\dama0003.c" />

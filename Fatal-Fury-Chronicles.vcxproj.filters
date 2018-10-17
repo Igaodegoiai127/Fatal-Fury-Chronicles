@@ -210,9 +210,6 @@
     <ClCompile Include="data\chars\galford\scripts\animation.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\personal\openbor\modules\rocketviper\OpenBOR\Paks\data\scripts\loading.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="data\scripts\dc_sound\loading.c">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -237,7 +234,10 @@
     <ClCompile Include="data\chars\galford\scripts\onspawn.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="data\scripts\common\initialize_level_spawn.c">
+    <ClCompile Include="data\chars\ray\scripts\onspawn.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="data\scripts\dc_initialize\initialize_level_spawn.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
