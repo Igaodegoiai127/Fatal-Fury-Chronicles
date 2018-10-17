@@ -237,6 +237,9 @@
     <ClCompile Include="data\chars\galford\scripts\onspawn.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="data\scripts\common\initialize_level_spawn.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="data\scripts\com\ai0001.h">

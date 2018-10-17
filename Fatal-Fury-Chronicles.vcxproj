@@ -115,6 +115,7 @@
     <ClCompile Include="data\chars\terry\scripts\update.c" />
     <ClCompile Include="data\scripts\blan0001.c" />
     <ClCompile Include="data\scripts\bloc0001.c" />
+    <ClCompile Include="data\scripts\common\initialize_level_spawn.c" />
     <ClCompile Include="data\scripts\dama0001.c" />
     <ClCompile Include="data\scripts\dama0002.c" />
     <ClCompile Include="data\scripts\dama0003.c" />
