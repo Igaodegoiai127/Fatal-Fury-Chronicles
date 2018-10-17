@@ -22,10 +22,6 @@ char dc_random_color_set(void ent)
 		// Generate random number.
 		random_index = dc_d20_random_int();
 
-		log("\n random_index: " + random_index);
-		log("\n hidden_map_lower: " + hidden_map_lower);
-		log("\n hidden_map_upper: " + hidden_map_upper);
-
 	} while (hidden_map_lower && (random_index >= hidden_map_lower && random_index <= hidden_map_upper));
 
 	// Return th random color.
