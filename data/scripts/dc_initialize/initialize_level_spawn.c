@@ -1,5 +1,11 @@
-#include "data/scripts/dc_initialize/main.c"
+#include "data/scripts/dc_initialize/config.h"
 
+#import "data/scripts/dc_initialize/colors.c"
+#import "data/scripts/dc_initialize/alias.c"
+
+
+// THis is really just a shortcut for function calls that
+// almost every level spawn will need to make.
 void initialize_level_spawn(void ent)
 {
 	void alias; // Caller's alias.

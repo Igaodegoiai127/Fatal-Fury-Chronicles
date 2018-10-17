@@ -1,7 +1,5 @@
 #include "data/scripts/dc_initialize/main.c" 
 
-#import "data/scripts/common/initialize_level_spawn.c" 
-
 void main()
 {
 	void ent;
