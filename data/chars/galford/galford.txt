@@ -501,7 +501,7 @@ anim attack7
 	frame	data/chars/galford/803_0_0.png
 	frame	data/chars/galford/803_1_0.png
 
-		attack	130 130 95 45 14 1 0 0 10
+		attack	130 130 95 25 14 1 0 0 10
 
 	frame	data/chars/galford/803_2_0.png
 
