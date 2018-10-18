@@ -299,7 +299,7 @@ anim attack1
 	
 		@cmd dc_sound_quick_play_entity loadsample("data/sounds/whiff_light_0.wav")
 		@cmd dc_sounds_load_array_manual
-	
+
 	frame	data/chars/galford/83_3_0.png
 	
 		delay	3
@@ -946,21 +946,30 @@ anim follow51
 
 anim grab
 
-	loop	1
-	delay	3
-	offset	94 200
-	bbox	75 105 40 95
-	@cmd	bind0002 40 0 0
-		frame	data/chars/andy/andy0429
-	offset	96 200
-		frame	data/chars/andy/andy0429
-	offset	94 200
-		frame	data/chars/andy/andy0429
-	offset	96 200
-		frame	data/chars/andy/andy0429
-	delay	50
-	offset	94 200
-		frame	data/chars/andy/andy0429
+		loop	1
+		delay	3
+		offset	155 210
+		bbox	130 120 45 90
+		@cmd	bind0002 40 0 0
+	
+	frame	data/chars/galford/807_0_0.png
+		
+		offset 157 210
+	
+	frame	data/chars/galford/807_0_0.png
+
+		offset 155 210
+	
+	frame	data/chars/galford/807_0_0.png
+
+		offset 157 210
+	
+	frame	data/chars/galford/807_0_0.png
+
+		delay	50
+		offset 155 210
+	
+	frame	data/chars/galford/807_0_0.png
 
 anim grabattack
 
