@@ -112,8 +112,27 @@ anim turn
 
 anim grabbed
 	
-		delay	5
+		loop	1
+		delay	3
 		offset	75 170
+
+	frame	data/chars/ray/R_PAIN_MID_0.png
+
+		offset	77 170
+
+	frame	data/chars/ray/R_PAIN_MID_0.png
+
+		offset	75 170
+
+	frame	data/chars/ray/R_PAIN_MID_0.png
+
+		offset	77 170
+
+	frame	data/chars/ray/R_PAIN_MID_0.png
+		
+		delay	50
+		offset 75 170
+
 	frame	data/chars/ray/R_PAIN_MID_0.png
 
 anim GRABBEDWALK
