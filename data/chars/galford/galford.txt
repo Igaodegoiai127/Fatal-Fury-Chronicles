@@ -24,7 +24,7 @@ makeinv      	3
 projectilehit 	player
 candamage     	enemy obstacle
 hostile			enemy
-fxshadow    	1
+gfxshadow    	1
 blockpain    	1
 sleepwait       1000
 combostyle		1
