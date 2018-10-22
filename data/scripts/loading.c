@@ -52,8 +52,9 @@ void main()
 		list_models_cached();
 
 		dc_sounds_setup_ip("Galford", DC_SOUND_CATEGORY_WHIFF_MEDIUM, "data/sounds/whiff_medium_0.wav");
+		dc_sounds_setup_ip("Galford", DC_SOUND_CATEGORY_WHIFF_MEDIUM, "data/sounds/whiff_heavy_0.wav");
 
-		dc_sounds_loaded_test("Galford", DC_SOUND_CATEGORY_WHIFF_MEDIUM, 0);
+		dc_sounds_loaded_test("Galford", DC_SOUND_CATEGORY_WHIFF_MEDIUM, 1);
 	}
 
 }
@@ -82,7 +83,7 @@ void list_models_cached()
 	{
 		path = getmodelproperty(i, 3);
 
-		path = dc_string_crop_right(path, "/");
+		//path = dc_string_crop_right(path, "/");
 
 		log("\t");
 		log("Index: " + i);
