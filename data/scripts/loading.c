@@ -51,10 +51,10 @@ void main()
 	{
 		list_models_cached();
 
-		dc_sounds_setup_ip("Galford", DC_SOUND_CATEGORY_WHIFF_MEDIUM_A, "data/sounds/whiff_medium_0.wav");
-		dc_sounds_setup_ip("Galford", DC_SOUND_CATEGORY_WHIFF_LIGHT_A, "data/sounds/whiff_light_0.wav");
+		dc_sounds_setup_ip("Galford", DC_SOUND_TYPE_WHIFF_MEDIUM_A, "data/sounds/whiff_medium_0.wav");
+		dc_sounds_setup_ip("Galford", DC_SOUND_TYPE_WHIFF_LIGHT_A, "data/sounds/whiff_light_0.wav");
 
-		dc_sounds_loaded_test("Galford", DC_SOUND_CATEGORY_WHIFF_LIGHT_A, 0);
+		dc_sounds_loaded_test("Galford", DC_SOUND_TYPE_WHIFF_LIGHT_A, 0);
 	}
 
 }
