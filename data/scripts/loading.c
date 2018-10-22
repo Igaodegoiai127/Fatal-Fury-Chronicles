@@ -1,5 +1,23 @@
 #include "data/scripts/dc_d20/main.c"
 
+void oncreate()
+{
+	log("\n");
+	log("loaded.c");
+	log("\t");
+	log("- oncreate().");
+	log("\n");
+}
+
+void ondestroy()
+{
+	log("\n");
+	log("loaded.c");
+	log("\t");
+	log("- ondestroy().");
+	log("\n");
+}
+
 void main()
 {
 	void	s;
@@ -109,11 +127,7 @@ char dc_string_crop_right(char haystack, char needle)
 		// from index.
 		temp_string	= strright(haystack, index);
 		
-		log("\n index: " + index + ", temp_string: " + temp_string);
-
 	} while (strinfirst(temp_string, needle) == -1);
-
-	log("\n");
 
 	// Now that we have our index pointing to the last
 	// occurence of needle in haystack, we can use strleft 

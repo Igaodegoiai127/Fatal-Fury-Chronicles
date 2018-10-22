@@ -1,11 +1,19 @@
 void oncreate()
 {
-	log("\n\n Update.c Create \n");
+	log("\n");
+	log("update.c");
+	log("\t");
+	log("- oncreate().");
+	log("\n");
 }
 
 void ondestroy()
 {
-	log("\n\n Update.c Destroy \n");
+	log("\n");
+	log("update.c");
+	log("\t");
+	log("- ondestroy().");
+	log("\n");
 }
 
 void main()

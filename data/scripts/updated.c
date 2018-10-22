@@ -2,6 +2,24 @@
 #include "data/scripts/dc_afterimage/main.c"
 #include "data/scripts/dc_draw/main.c"
 
+void oncreate()
+{
+	log("\n");
+	log("updated.c");
+	log("\t");
+	log("- oncreate().");
+	log("\n");
+}
+
+void ondestroy()
+{
+	log("\n");
+	log("update.c");
+	log("\t");
+	log("- ondestroy().");
+	log("\n");
+}
+
 void main() {
 
 	void    ent = NULL();   // Target entity pointer.
