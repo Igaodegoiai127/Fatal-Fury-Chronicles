@@ -88,7 +88,7 @@ void dc_sounds_setup_ip(char model, int type, char file)
 	// Get the model's list array.
 	models = getglobalvar(DC_SOUND_VAR_KEY_MODELS);
 
-	// Initialize array if it doesn't exisit.
+	// Initialize array if it doesn't exist.
 	if (!models)
 	{
 		// Create the array.
@@ -102,7 +102,7 @@ void dc_sounds_setup_ip(char model, int type, char file)
 	// Get array of sound types for a model.
 	types = get(models, model);
 
-	// Initialize array if it doesn't exisit.
+	// Initialize array if it doesn't exist.
 	if (!types)
 	{
 		// Create the array.
@@ -116,7 +116,7 @@ void dc_sounds_setup_ip(char model, int type, char file)
 	// Get array of sound indexes for a sound type.
 	indexes = get(types, type);
 
-	// Initialize array if it doesn't exisit.
+	// Initialize array if it doesn't exist.
 	if (!indexes)
 	{
 		// Create the array.
