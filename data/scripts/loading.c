@@ -1,4 +1,5 @@
 #include "data/scripts/dc_d20/main.c"
+#include "data/scripts/dc_sound/main.c"
 
 void oncreate()
 {
@@ -49,6 +50,10 @@ void main()
 	if (value == max)
 	{
 		list_models_cached();
+
+		dc_sounds_setup_ip("Galford", DC_SOUND_CATEGORY_WHIFF_MEDIUM, "data/sounds/whiff_medium_0.wav");
+
+		dc_sounds_loaded_test("Galford", DC_SOUND_CATEGORY_WHIFF_MEDIUM, 0);
 	}
 
 }

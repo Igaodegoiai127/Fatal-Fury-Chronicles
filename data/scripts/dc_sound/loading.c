@@ -37,9 +37,6 @@ void dc_sounds_get_categories_array(char identifier)
 		array_categories = array(1);
 	}
 
-
-
-
 }
 
 // Caskey, Damon  V.
@@ -76,6 +73,106 @@ void dc_sounds_get_samples_array(void categories, char category)
 
 	// Return the samples array pointer.
 	return array_samples;
+}
+
+void dc_sounds_setup_ip(char model, int type, char file)
+{
+	void models;	// Key - model, Value - Sound types array.
+	void types;		// Key - Sound Type, Value - Sound index array.
+	void indexes;	// Key - Numeric, Value - Sound file index.
+	void index;		// Sound file index.
+
+	int size;	// Array size.
+	int i;		// Loop index.
+
+	// Get the model's list array.
+	models = getglobalvar(DC_SOUND_VAR_KEY_MODELS);
+
+	// Initialize array if it doesn't exisit.
+	if (!models)
+	{
+		// Create the array.
+		models = array(0);
+
+		// Store pointer to array in a globalvar for
+		// future access.
+		setglobalvar(DC_SOUND_VAR_KEY_MODELS, models);
+	}
+
+	// Get array of sound types for a model.
+	types = get(models, model);
+
+	// Initialize array if it doesn't exisit.
+	if (!types)
+	{
+		// Create the array.
+		types = array(0);
+
+		// Store pointer to array in an element of
+		// the parent array.
+		set(models, model, types);
+	}
+
+	// Get array of sound indexes for a sound type.
+	indexes = get(types, type);
+
+	// Initialize array if it doesn't exisit.
+	if (!indexes)
+	{
+		// Create the array.
+		indexes = array(0);
+
+		// Store pointer to array in an element of
+		// the parent array.
+		set(types, type, indexes);
+	}
+
+	// Now we need to locate an empty slot
+	// in the indexes array and load a sound.
+	size = size(indexes);
+
+	add(indexes, size, loadsample(file));
+}
+
+void dc_sounds_loaded_test(char model, int type, int index)
+{
+	void models;	// Key - model, Value - Sound types array.
+	void types;		// Key - Sound Type, Value - Sound index array.
+	void indexes;	// Key - Numeric, Value - Sound file index.
+
+	// Get the model's list array.
+	models = getglobalvar(DC_SOUND_VAR_KEY_MODELS);
+
+	// Get array of sound types for a model.
+	types = get(models, model);
+
+	// Get array of sound indexes for a sound type.
+	indexes = get(types, type);
+
+	// Get array of sound indexes for a sound type.
+	index = get(indexes, index);
+
+	log("\n\n dc_sounds_loaded_test");
+	log("\n");
+	
+	log("\t");
+	log("Models Array: " + models);
+	log("\n");
+
+	log("\t");
+	log("Types Array: " + types);
+	log("\n");
+
+	log("\t");
+	log("Indexes Array: " + indexes);
+	log("\n");
+
+	log("\t");
+	log("Sound index: " + index);
+	log("\n");
+
+	playsample(index, DC_SOUND_DEFAULT_PRIORITY, DC_SOUND_DEFAULT_VOLUME_LEFT, DC_SOUND_DEFAULT_VOLUME_RIGHT, DC_SOUND_DEFAULT_SPEED, DC_SOUND_DEFAULT_LOOP);
+
 }
 
 void dc_sounds_load_array_manual()
