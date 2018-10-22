@@ -13,9 +13,9 @@
 #define DC_SOUND_DEFAULT_SPEED			100
 
 // Sound categories.
-#define DC_SOUND_CATEGORY_WHIFF_HEAVY	0
-#define DC_SOUND_CATEGORY_WHIFF_LIGHT	1
-#define DC_SOUND_CATEGORY_WHIFF_MEDIUM	2
+#define DC_SOUND_CATEGORY_WHIFF_HEAVY_A		0	// "Air" sound, heavy attacks.
+#define DC_SOUND_CATEGORY_WHIFF_LIGHT_A		1	// "Air" sound, light attacks.
+#define DC_SOUND_CATEGORY_WHIFF_MEDIUM_A	2	// "Air" sound, medium attacks.
 
 #define DC_SOUND_VAR_KEY_MODELS			"dcsnd_0"
 
