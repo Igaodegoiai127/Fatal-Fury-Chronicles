@@ -10,7 +10,28 @@
 // have a user value will fall back to its default 
 // as defined in config.h
 
+// Chance determines likelihood of sound function actually
+// playing anything.
+//
+// 0.0 = Never
+// 0.5 = 50%
+// 1.0 = Always.
+void dc_sound_set_chance(float value)
+{
+	setlocalvar(DC_SOUND_VAR_KEY_CHANCE, value);
+}
 
+void dc_sound_get_chance()
+{
+	void result = getlocalvar(DC_SOUND_VAR_KEY_CHANCE);
+
+	if (!result)
+	{
+		result = DC_SOUND_DEFAULT_CHANCE;
+	}
+
+	return result;
+}
 
 // Entity is the target entity when searching for
 // a model to play sounds, an on screen location

@@ -28,6 +28,38 @@ int dc_sound_get_entity_sound(int type)
 // Caskey, Damon V.
 // 2018-10-23
 //
+// Calculate chance to perform action against current
+// chance setting and return result. 
+//
+// 0 Fail (no).
+// 1 Pass (yes).
+int dc_sound_chance()
+{
+	float chance;
+	int percentage;
+	int random;
+
+	chance = dc_sound_get_chance();
+
+	// Conver chance to whole number percentage.
+	percentage = chance * 100;
+
+	// Get random 0-100.
+	setlocalvar(DC_D20_KEY_UPPER, 100);
+	random = dc_d20_random_int();
+
+	if (percentage >= random)
+	{
+		return 1;
+	}
+
+	return 0;
+}
+
+
+// Caskey, Damon V.
+// 2018-10-23
+//
 // Get a sample ID from sound type and a known model.
 int dc_sound_get_model_sound(char model, int type)
 {
@@ -93,7 +125,7 @@ int dc_sound_select_sample_id(void indexes)
 // 2018-10-14
 //
 // Play requested sample with X axis based stereo.
-void dc_sound_play_entity(int type)
+void dc_sound_quick_play(int type)
 {
 	void	ent;
 	int		sample_id;		// Sample ID to play.
@@ -102,8 +134,8 @@ void dc_sound_play_entity(int type)
 	int		volume_left;
 	int		volume_right;
 
-	// If the sound didn't load, just exit.
-	if (sample_id == DC_SOUND_SAMPLE_INVALID)
+	// If random chance doesn't pass, exit now.
+	if (!dc_sound_chance())
 	{
 		return;
 	}
