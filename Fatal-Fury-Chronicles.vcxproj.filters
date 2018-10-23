@@ -204,9 +204,6 @@
     <ClCompile Include="data\scripts\dc_sound\main.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="data\scripts\dc_sound\operation.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="data\chars\galford\scripts\animation.c">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -238,6 +235,15 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="data\scripts\dc_initialize\initialize_level_spawn.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="data\scripts\dc_sound\adjustments.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="data\scripts\dc_sound\play.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="data\scripts\dc_sound\config.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

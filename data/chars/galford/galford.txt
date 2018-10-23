@@ -297,7 +297,7 @@ anim attack1
 		offset	155 210
 		bbox	130 120 45 90
 	
-		@cmd dc_sound_play_entity DC_SOUND_TYPE_WHIFF_LIGHT_A 1
+		@cmd dc_sound_play_entity DC_SOUND_TYPE_WHIFF_LIGHT_A
 
 	frame	data/chars/galford/83_3_0.png
 	

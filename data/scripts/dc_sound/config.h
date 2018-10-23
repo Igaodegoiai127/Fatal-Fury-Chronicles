@@ -1,4 +1,4 @@
-#ifndef DC_SOUND_CONFIG
+#ifndef DC_SOUND_CONFIG1
 
 #include "data/scripts/dc_d20/main.c"
 
@@ -21,7 +21,15 @@
 // Indexes.
 #define DC_SOUND_INDEX_RANDOM			-1	// Seek a random sound index from sound type.
 
-#define DC_SOUND_VAR_KEY_MODELS			"dcsnd_0"
+// Variable keys.
+#define DC_SOUND_VAR_KEY_ELEMENT		"dcsnd_0"
+#define DC_SOUND_VAR_KEY_ENTITY			"dcsnd_1"
+#define DC_SOUND_VAR_KEY_LOOP			"dcsnd_2"
+#define DC_SOUND_VAR_KEY_MODELS			"dcsnd_3"	// Global var used to store list of models -> types ->indexes.
+#define DC_SOUND_VAR_KEY_PRIORITY		"dcsnd_4"
+#define DC_SOUND_VAR_KEY_SPEED			"dcsnd_5"
+#define DC_SOUND_VAR_KEY_VOLUME_LEFT	"dcsnd_6"
+#define DC_SOUND_VAR_KEY_VOLUME_RIGHT	"dcsnd_7"
 
 #endif // !DC_SOUND_CONFIG
 
