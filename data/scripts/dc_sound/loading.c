@@ -1,5 +1,7 @@
 #include "data/scripts/dc_sound/config.h"
 
+#import "data/scripts/dc_sound/config.c"
+
 void dc_sounds_populate_database(char category, int sample)
 {
 	void array_categories;
