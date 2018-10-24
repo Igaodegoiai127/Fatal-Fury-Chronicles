@@ -26,10 +26,13 @@ void oncreate()
 
 	dc_sounds_setup_ip("Galford", DC_SOUND_TYPE_WHIFF_LIGHT_A, "data/sounds/custom/golden_axe_whiff_light_0.wav");
 
+	dc_sounds_setup_ip("Galford", DC_SOUND_TYPE_WHIFF_LIGHT_A, "data/sounds/custom/samurai_shodown_whiff_light_0.wav");
+	dc_sounds_setup_ip("Galford", DC_SOUND_TYPE_WHIFF_LIGHT_A, "data/sounds/custom/samurai_shodown_whiff_light_1.wav");
+
 	dc_sounds_setup_ip("Galford", DC_SOUND_TYPE_WHIFF_MEDIUM_B, "data/sounds/custom/samurai_shodown_whiff_light_0.wav");
 	dc_sounds_setup_ip("Galford", DC_SOUND_TYPE_WHIFF_MEDIUM_B, "data/sounds/custom/samurai_shodown_whiff_light_1.wav");
 
-	dc_sounds_setup_ip("Galford", DC_SOUND_TYPE_WHIFF_HEAVY_B, "data/sounds/custom/samurai_shodown_whiff_heavy_0-b.wav");
+	dc_sounds_setup_ip("Galford", DC_SOUND_TYPE_WHIFF_HEAVY_B, "data/sounds/custom/samurai_shodown_whiff_heavy_0.wav");
 }
 
 void ondestroy()

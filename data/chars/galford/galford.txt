@@ -300,7 +300,7 @@ anim attack1
 		@cmd dc_sound_set_chance 0.5
 		@cmd dc_sound_quick_play DC_SOUND_TYPE_VOICE_LIGHT_A
 		@cmd dc_sound_set_chance DC_SOUND_DEFAULT_CHANCE
-		@cmd dc_sound_quick_play DC_SOUND_TYPE_WHIFF_LIGHT_A
+		@cmd dc_sound_quick_play DC_SOUND_TYPE_WHIFF_MEDIUM_B
 
 	frame	data/chars/galford/83_3_0.png
 	
@@ -335,7 +335,7 @@ anim attack2
 	
 		attack2  125 115 100 50 12
 
-		# dc_sound_quick_play DC_SOUND_TYPE_VOICE_MEDIUM_A
+		@cmd dc_sound_quick_play DC_SOUND_TYPE_VOICE_MEDIUM_A
 		@cmd bind0003 "galford_trail" "galford_trail" 1 1 0 0 0 openborconstant("DIRECTION_ADJUST_SAME") openborconstant("BINDING_MATCHING_ANIMATION_TARGET")+openborconstant("BINDING_MATCHING_ANIMATION_REMOVE")+openborconstant("BINDING_MATCHING_FRAME_TARGET")
 	
 	frame	data/chars/galford/160_1_1.png
@@ -372,7 +372,7 @@ anim attack3
 
 	frame	data/chars/galford/806_0_0.png
 
-		# dc_sound_quick_play DC_SOUND_TYPE_VOICE_MEDIUM_A
+		@cmd dc_sound_quick_play DC_SOUND_TYPE_VOICE_MEDIUM_A
 		@cmd bind0003 "galford_trail" "galford_trail" 1 1 0 0 0 openborconstant("DIRECTION_ADJUST_SAME") openborconstant("BINDING_MATCHING_ANIMATION_TARGET")+openborconstant("BINDING_MATCHING_ANIMATION_REMOVE")+openborconstant("BINDING_MATCHING_FRAME_TARGET")
 
 	frame	data/chars/galford/806_1_0.png
@@ -440,7 +440,7 @@ anim attack5
 	frame	data/chars/galford/97_2_0.png
 	frame	data/chars/galford/325_21_0.png
 
-		# dc_sound_quick_play DC_SOUND_TYPE_VOICE_MEDIUM_A
+		@cmd dc_sound_quick_play DC_SOUND_TYPE_VOICE_MEDIUM_A
 		@cmd dc_sound_quick_play DC_SOUND_TYPE_WHIFF_MEDIUM_B
 		@cmd bind0003 "galford_trail" "galford_trail" 1 1 0 0 0 openborconstant("DIRECTION_ADJUST_SAME") openborconstant("BINDING_MATCHING_ANIMATION_TARGET")+openborconstant("BINDING_MATCHING_ANIMATION_REMOVE")+openborconstant("BINDING_MATCHING_FRAME_TARGET")
 
@@ -481,7 +481,7 @@ anim attack6
 
 		attack2  135 130 95 18 14
 		
-		# dc_sound_quick_play DC_SOUND_TYPE_VOICE_MEDIUM_A
+		@cmd dc_sound_quick_play DC_SOUND_TYPE_VOICE_MEDIUM_A
 		@cmd bind0003 "galford_trail" "galford_trail" 1 1 0 0 0 openborconstant("DIRECTION_ADJUST_SAME") openborconstant("BINDING_MATCHING_ANIMATION_TARGET")+openborconstant("BINDING_MATCHING_ANIMATION_REMOVE")+openborconstant("BINDING_MATCHING_FRAME_TARGET")
 
 	frame	data/chars/galford/805_1_0.png
