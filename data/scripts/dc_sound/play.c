@@ -150,8 +150,11 @@ void dc_sound_quick_play(int type)
 	pos_x = get_axis_principal_float_property(axis, "x");
 
 	// Get adjusted volumes.
-	volume_left -= dc_sound_volume_adjusted_horizontal(pos_x, volume_left);
-	volume_right = dc_sound_volume_adjusted_horizontal(pos_x, volume_right);
+	if (dc_sound_get_sound_location_balance())
+	{
+		volume_left -= dc_sound_volume_adjusted_horizontal(pos_x, volume_left);
+		volume_right = dc_sound_volume_adjusted_horizontal(pos_x, volume_right);
+	}
 
 	// Get a sample ID.
 	sample_id = dc_sound_get_entity_sound(type);
