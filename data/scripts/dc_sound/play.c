@@ -33,13 +33,13 @@ int dc_sound_get_entity_sound(int type)
 //
 // 0 Fail (no).
 // 1 Pass (yes).
-int dc_sound_chance()
+int dc_sound_sound_chance()
 {
 	float chance;
 	int percentage;
 	int random;
 
-	chance = dc_sound_get_chance();
+	chance = dc_sound_get_sound_chance();
 
 	// Conver chance to whole number percentage.
 	percentage = chance * 100;
@@ -135,7 +135,7 @@ void dc_sound_quick_play(int type)
 	int		volume_right;
 
 	// If random chance doesn't pass, exit now.
-	if (!dc_sound_chance())
+	if (!dc_sound_sound_chance())
 	{
 		return;
 	}

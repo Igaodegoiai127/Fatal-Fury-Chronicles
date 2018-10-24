@@ -16,12 +16,12 @@
 // 0.0 = Never
 // 0.5 = 50%
 // 1.0 = Always.
-void dc_sound_set_chance(float value)
+void dc_sound_set_sound_chance(float value)
 {
 	setlocalvar(DC_SOUND_VAR_KEY_SOUND_CHANCE, value);
 }
 
-void dc_sound_get_chance()
+void dc_sound_get_sound_chance()
 {
 	void result = getlocalvar(DC_SOUND_VAR_KEY_SOUND_CHANCE);
 
