@@ -26,9 +26,6 @@ void oncreate()
 
 	dc_sounds_setup_ip("Galford", DC_SOUND_TYPE_WHIFF_LIGHT_A, "data/sounds/custom/golden_axe_whiff_light_0.wav");
 
-	dc_sounds_setup_ip("Galford", DC_SOUND_TYPE_WHIFF_LIGHT_A, "data/sounds/custom/samurai_shodown_whiff_light_0.wav");
-	dc_sounds_setup_ip("Galford", DC_SOUND_TYPE_WHIFF_LIGHT_A, "data/sounds/custom/samurai_shodown_whiff_light_1.wav");
-
 	dc_sounds_setup_ip("Galford", DC_SOUND_TYPE_WHIFF_MEDIUM_B, "data/sounds/custom/samurai_shodown_whiff_light_0.wav");
 	dc_sounds_setup_ip("Galford", DC_SOUND_TYPE_WHIFF_MEDIUM_B, "data/sounds/custom/samurai_shodown_whiff_light_1.wav");
 
@@ -74,95 +71,11 @@ void main()
 
 	if (value == max)
 	{
-		list_models_cached();
-
-		
-
 		dc_sounds_loaded_test("Galford", DC_SOUND_TYPE_WHIFF_LIGHT_A, 0);
 	}
 
 }
 
-// Caskey, Damon V.
-// 2018-10-12
-//
-// Experimental function. Just seeing if we
-// can get the path of all models that
-// are known/loaded.
-void list_models_cached()
-{
-	int i;
-	int max;
-	char path;
-	int loaded;
 
-	max = openborvariant("models_cached");
-
-	log("\n\n");
-	log("Models List: ");
-	log(max + " found.");
-	log("\n");
-
-	for (i = 0; i < max; i++)
-	{
-		path = getmodelproperty(i, 3);
-
-		//path = dc_string_crop_right(path, "/");
-
-		log("\t");
-		log("Index: " + i);
-		log(", ");
-		log("path: " + path);
-		log("\n");
-	}
-
-	log("\n\n");
-}
-
-// Caskey, Damon V.
-// 2010-06-18
-//
-// Crop the right side of a string (haystack) 
-// starting with last occurence of needle.
-
-// Example: 
-// - haystack:	"data/scripts/hello.c"
-// - needle:	"/"
-// - output:	"data/scripts"
-char dc_string_crop_right(char haystack, char needle)
-{
-	char    temp_string;
-	int     index;
-		
-	// Get string length, minus 1
-	// to account for zero indexing.
-	index = strlength(haystack);
-	
-	// The strinlast function doesn't work, so we'll just build
-	// our own naive search algorithm here. 
-	//
-	// We create a temporary string from haystack, starting
-	// at the far right character. We then use stringinfirst 
-	// to see if our needle is in the temp_string, and if it
-	// is we now have an index to use for strleft. 
-	//
-	// If the result is invalid (-1), then we build the
-	// tempstring from haystack, now one character back, and
-	// continue until our strinfirst gets a good result.
-	do
-	{
-		index--;
-
-		// Get the right end of haystack, starting
-		// from index.
-		temp_string	= strright(haystack, index);
-		
-	} while (strinfirst(temp_string, needle) == -1);
-
-	// Now that we have our index pointing to the last
-	// occurence of needle in haystack, we can use strleft 
-	// to return the preceeding characters.
-	return strleft(haystack, index);
-}
 
 
