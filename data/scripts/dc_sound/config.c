@@ -27,7 +27,7 @@ void dc_sound_get_chance()
 
 	if (!result)
 	{
-		result = DC_SOUND_DEFAULT_CHANCE;
+		result = DC_SOUND_DEFAULT_SOUND_CHANCE;
 	}
 
 	return result;
@@ -88,7 +88,7 @@ int dc_sound_get_loop()
 
 	if (typeof(result) != openborconstant("VT_INTEGER"))
 	{
-		result = DC_SOUND_DEFAULT_LOOP;
+		result = DC_SOUND_DEFAULT_SOUND_LOOP;
 	}
 
 	return result;
@@ -106,7 +106,7 @@ int dc_sound_get_priority()
 
 	if (typeof(result) != openborconstant("VT_INTEGER"))
 	{
-		result = DC_SOUND_DEFAULT_PRIORITY;
+		result = DC_SOUND_DEFAULT_SOUND_PRIORITY;
 	}
 
 	return result;
@@ -129,7 +129,7 @@ int dc_sound_get_speed()
 
 	if (typeof(result) != openborconstant("VT_INTEGER"))
 	{
-		result = DC_SOUND_DEFAULT_SPEED;
+		result = DC_SOUND_DEFAULT_SOUND_SPEED;
 	}
 
 	return result;
@@ -149,7 +149,7 @@ int dc_sound_get_volume_left()
 
 	if (typeof(result) != openborconstant("VT_INTEGER"))
 	{
-		result = DC_SOUND_DEFAULT_VOLUME_LEFT;
+		result = DC_SOUND_DEFAULT_SOUND_VOLUME_LEFT;
 	}
 
 	return result;
@@ -166,7 +166,7 @@ int dc_sound_get_volume_right()
 
 	if (typeof(result) != openborconstant("VT_INTEGER"))
 	{
-		result = DC_SOUND_DEFAULT_VOLUME_RIGHT;
+		result = DC_SOUND_DEFAULT_SOUND_VOLUME_RIGHT;
 	}
 
 	return result;
