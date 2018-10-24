@@ -141,8 +141,8 @@ void dc_sound_quick_play(int type)
 	}
 
 	// Get set volumes.
-	volume_left = dc_sound_get_volume_left();
-	volume_right = dc_sound_get_volume_right();
+	volume_left = dc_sound_get_sound_volume_main_left();
+	volume_right = dc_sound_get_sound_volume_main_right();
 
 	// Get entity X position.
 	ent = dc_sound_get_entity();
@@ -188,9 +188,9 @@ int dc_playsample(int sample_id, int volume_left, int volume_right)
 		return 0;
 	}
 
-	loop = dc_sound_get_loop();
-	priority = dc_sound_get_priority();
-	speed = dc_sound_get_speed();
+	loop = dc_sound_get_sound_loop();
+	priority = dc_sound_get_sound_priority();
+	speed = dc_sound_get_sound_speed();
 
 	// Play the sample.
 	playsample(sample_id, priority, volume_left, volume_right, speed, loop);

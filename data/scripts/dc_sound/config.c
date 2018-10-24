@@ -77,12 +77,12 @@ int dc_sound_get_sound_element()
 }
 
 // Sound looping on playback.
-void dc_sound_set_loop(int value)
+void dc_sound_set_sound_loop(int value)
 {
 	setlocalvar(DC_SOUND_VAR_KEY_SOUND_LOOP, value);
 }
 
-int dc_sound_get_loop()
+int dc_sound_get_sound_loop()
 {
 	int result = getlocalvar(DC_SOUND_VAR_KEY_SOUND_LOOP);
 
@@ -95,12 +95,12 @@ int dc_sound_get_loop()
 }
 
 // Priority of sound when played on same channel.
-void dc_sound_set_priority(int value)
+void dc_sound_set_sound_priority(int value)
 {
 	setlocalvar(DC_SOUND_VAR_KEY_SOUND_PRIORITY, value);
 }
 
-int dc_sound_get_priority()
+int dc_sound_get_sound_priority()
 {
 	int result = getlocalvar(DC_SOUND_VAR_KEY_SOUND_PRIORITY);
 
@@ -117,13 +117,13 @@ int dc_sound_get_priority()
 // result in a lower pitch. As an example of this effect, 
 // OpenBOR’s native sound effect system plays hit impact 
 // sounds at lower speeds as greater damage is inflicted. 
-void dc_sound_set_speed(int value)
+void dc_sound_set_sound_speed(int value)
 {
 	setlocalvar(DC_SOUND_VAR_KEY_SOUND_SPEED, value);
 }
 
 // Get specified speed, or default if not available.
-int dc_sound_get_speed()
+int dc_sound_get_sound_speed()
 {
 	int result = getlocalvar(DC_SOUND_VAR_KEY_SOUND_SPEED);
 
@@ -138,12 +138,12 @@ int dc_sound_get_speed()
 // Volume is the intitial left and right channel 
 // playback volume before any auto adjustments
 // are made. 
-void dc_sound_set_volume_left(int value)
+void dc_sound_set_sound_volume_main_left(int value)
 {
 	setlocalvar(DC_SOUND_VAR_KEY_SOUND_VOLUME_MAIN_LEFT, value);
 }
 
-int dc_sound_get_volume_left()
+int dc_sound_get_sound_volume_main_left()
 {
 	int result = getlocalvar(DC_SOUND_VAR_KEY_SOUND_VOLUME_MAIN_LEFT);
 
@@ -155,12 +155,12 @@ int dc_sound_get_volume_left()
 	return result;
 }
 
-void dc_sound_set_volume_right(int value)
+void dc_sound_set_sound_volume_main_right(int value)
 {
 	setlocalvar(DC_SOUND_VAR_KEY_SOUND_VOLUME_MAIN_RIGHT, value);
 }
 
-int dc_sound_get_volume_right()
+int dc_sound_get_sound_volume_main_right()
 {
 	int result = getlocalvar(DC_SOUND_VAR_KEY_SOUND_VOLUME_MAIN_RIGHT);
 

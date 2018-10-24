@@ -301,7 +301,7 @@ anim attack1
 		# any subsequent sound play calls.
 		@cmd dc_sound_set_sound_chance 0.5
 		@cmd dc_sound_quick_play DC_SOUND_TYPE_VOICE_LIGHT_A
-		@cmd dc_sound_set_chance NULL()
+		@cmd dc_sound_set_sound_chance NULL()
 		
 		@cmd dc_sound_quick_play DC_SOUND_TYPE_WHIFF_LIGHT_A
 
