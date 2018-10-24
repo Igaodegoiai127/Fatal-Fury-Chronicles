@@ -140,12 +140,12 @@ int dc_sound_get_speed()
 // are made. 
 void dc_sound_set_volume_left(int value)
 {
-	setlocalvar(DC_SOUND_VAR_KEY_SOUND_VOLUME_LEFT, value);
+	setlocalvar(DC_SOUND_VAR_KEY_SOUND_VOLUME_MAIN_LEFT, value);
 }
 
 int dc_sound_get_volume_left()
 {
-	int result = getlocalvar(DC_SOUND_VAR_KEY_SOUND_VOLUME_LEFT);
+	int result = getlocalvar(DC_SOUND_VAR_KEY_SOUND_VOLUME_MAIN_LEFT);
 
 	if (typeof(result) != openborconstant("VT_INTEGER"))
 	{
@@ -157,12 +157,12 @@ int dc_sound_get_volume_left()
 
 void dc_sound_set_volume_right(int value)
 {
-	setlocalvar(DC_SOUND_VAR_KEY_SOUND_VOLUME_RIGHT, value);
+	setlocalvar(DC_SOUND_VAR_KEY_SOUND_VOLUME_MAIN_RIGHT, value);
 }
 
 int dc_sound_get_volume_right()
 {
-	int result = getlocalvar(DC_SOUND_VAR_KEY_SOUND_VOLUME_RIGHT);
+	int result = getlocalvar(DC_SOUND_VAR_KEY_SOUND_VOLUME_MAIN_RIGHT);
 
 	if (typeof(result) != openborconstant("VT_INTEGER"))
 	{
