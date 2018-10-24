@@ -9,27 +9,28 @@ void oncreate()
 	log("- oncreate().");
 	log("\n");
 
-	dc_sounds_setup_ip("Galford", DC_SOUND_TYPE_VOICE_LIGHT_A, "data/chars/galford/sounds/voice-atk-0.wav");
-	dc_sounds_setup_ip("Galford", DC_SOUND_TYPE_VOICE_LIGHT_A, "data/chars/galford/sounds/voice-atk-1.wav");
-	dc_sounds_setup_ip("Galford", DC_SOUND_TYPE_VOICE_LIGHT_A, "data/chars/galford/sounds/voice-atk-8.wav");
+	dc_sounds_setup("Galford", DC_SOUND_TYPE_VOICE_HEAVY_A, "data/chars/galford/sounds/voice-atk-2.wav");
+	dc_sounds_setup("Galford", DC_SOUND_TYPE_VOICE_HEAVY_A, "data/chars/galford/sounds/voice-atk-3.wav");
+	dc_sounds_setup("Galford", DC_SOUND_TYPE_VOICE_HEAVY_A, "data/chars/galford/sounds/voice-atk-4.wav");
+	dc_sounds_setup("Galford", DC_SOUND_TYPE_VOICE_HEAVY_A, "data/chars/galford/sounds/voice-atk-5.wav");
+	dc_sounds_setup("Galford", DC_SOUND_TYPE_VOICE_HEAVY_A, "data/chars/galford/sounds/voice-atk-6.wav");
+	dc_sounds_setup("Galford", DC_SOUND_TYPE_VOICE_HEAVY_A, "data/chars/galford/sounds/voice-atk-7.wav");
 
-	dc_sounds_setup_ip("Galford", DC_SOUND_TYPE_VOICE_MEDIUM_A, "data/chars/galford/sounds/voice-atk-0.wav");
-	dc_sounds_setup_ip("Galford", DC_SOUND_TYPE_VOICE_MEDIUM_A, "data/chars/galford/sounds/voice-atk-1.wav");
-	dc_sounds_setup_ip("Galford", DC_SOUND_TYPE_VOICE_MEDIUM_A, "data/chars/galford/sounds/voice-atk-2.wav");
+	dc_sounds_setup("Galford", DC_SOUND_TYPE_VOICE_LIGHT_A, "data/chars/galford/sounds/voice-atk-0.wav");
+	dc_sounds_setup("Galford", DC_SOUND_TYPE_VOICE_LIGHT_A, "data/chars/galford/sounds/voice-atk-1.wav");
+	dc_sounds_setup("Galford", DC_SOUND_TYPE_VOICE_LIGHT_A, "data/chars/galford/sounds/voice-atk-8.wav");
 
-	dc_sounds_setup_ip("Galford", DC_SOUND_TYPE_VOICE_HEAVY_A, "data/chars/galford/sounds/voice-atk-2.wav");
-	dc_sounds_setup_ip("Galford", DC_SOUND_TYPE_VOICE_HEAVY_A, "data/chars/galford/sounds/voice-atk-3.wav");
-	dc_sounds_setup_ip("Galford", DC_SOUND_TYPE_VOICE_HEAVY_A, "data/chars/galford/sounds/voice-atk-4.wav");
-	dc_sounds_setup_ip("Galford", DC_SOUND_TYPE_VOICE_HEAVY_A, "data/chars/galford/sounds/voice-atk-5.wav");
-	dc_sounds_setup_ip("Galford", DC_SOUND_TYPE_VOICE_HEAVY_A, "data/chars/galford/sounds/voice-atk-6.wav");
-	dc_sounds_setup_ip("Galford", DC_SOUND_TYPE_VOICE_HEAVY_A, "data/chars/galford/sounds/voice-atk-7.wav");
+	dc_sounds_setup("Galford", DC_SOUND_TYPE_VOICE_MEDIUM_A, "data/chars/galford/sounds/voice-atk-0.wav");
+	dc_sounds_setup("Galford", DC_SOUND_TYPE_VOICE_MEDIUM_A, "data/chars/galford/sounds/voice-atk-1.wav");
+	dc_sounds_setup("Galford", DC_SOUND_TYPE_VOICE_MEDIUM_A, "data/chars/galford/sounds/voice-atk-2.wav");
 
-	dc_sounds_setup_ip("Galford", DC_SOUND_TYPE_WHIFF_LIGHT_A, "data/sounds/custom/golden_axe_whiff_light_0.wav");
+	dc_sounds_setup("Galford", DC_SOUND_TYPE_WHIFF_HEAVY_B, "data/sounds/custom/samurai_shodown_whiff_heavy_0.wav");
 
-	dc_sounds_setup_ip("Galford", DC_SOUND_TYPE_WHIFF_MEDIUM_B, "data/sounds/custom/samurai_shodown_whiff_light_0.wav");
-	dc_sounds_setup_ip("Galford", DC_SOUND_TYPE_WHIFF_MEDIUM_B, "data/sounds/custom/samurai_shodown_whiff_light_1.wav");
+	dc_sounds_setup("Galford", DC_SOUND_TYPE_WHIFF_LIGHT_A, "data/sounds/custom/golden_axe_whiff_light_0.wav");
 
-	dc_sounds_setup_ip("Galford", DC_SOUND_TYPE_WHIFF_HEAVY_B, "data/sounds/custom/samurai_shodown_whiff_heavy_0.wav");
+	dc_sounds_setup("Galford", DC_SOUND_TYPE_WHIFF_MEDIUM_B, "data/sounds/custom/samurai_shodown_whiff_light_0.wav");
+	dc_sounds_setup("Galford", DC_SOUND_TYPE_WHIFF_MEDIUM_B, "data/sounds/custom/samurai_shodown_whiff_light_1.wav");
+
 }
 
 void ondestroy()
@@ -71,7 +72,6 @@ void main()
 
 	if (value == max)
 	{
-		dc_sounds_loaded_test("Galford", DC_SOUND_TYPE_WHIFF_LIGHT_A, 0);
 	}
 
 }
