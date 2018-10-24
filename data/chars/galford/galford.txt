@@ -297,9 +297,12 @@ anim attack1
 		offset	155 210
 		bbox	130 120 45 90
 	
+		# Play voice 50% of the time and clear chance so default is used for 
+		# any subsequent sound play calls.
 		@cmd dc_sound_set_chance 0.5
 		@cmd dc_sound_quick_play DC_SOUND_TYPE_VOICE_LIGHT_A
-		@cmd dc_sound_set_chance DC_SOUND_DEFAULT_CHANCE
+		@cmd dc_sound_set_chance NULL()
+		
 		@cmd dc_sound_quick_play DC_SOUND_TYPE_WHIFF_LIGHT_A
 
 	frame	data/chars/galford/83_3_0.png
