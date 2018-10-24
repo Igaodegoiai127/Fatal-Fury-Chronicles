@@ -71,7 +71,7 @@ int dc_sound_get_model_sound(char model, int type)
 	int size;		// Size of array.
 
 	// Get the model's list array.
-	models = getglobalvar(DC_SOUND_VAR_KEY_MODELS);
+	models = getglobalvar(DC_SOUND_VAR_KEY_SOUND_MODELS);
 
 	// Get array of sound types for a model.
 	types = get(models, model);

@@ -88,7 +88,7 @@ void dc_sounds_setup_ip(char model, int type, char file)
 	int i;		// Loop index.
 
 	// Get the model's list array.
-	models = getglobalvar(DC_SOUND_VAR_KEY_MODELS);
+	models = getglobalvar(DC_SOUND_VAR_KEY_SOUND_MODELS);
 
 	// Initialize array if it doesn't exist.
 	if (!models)
@@ -98,7 +98,7 @@ void dc_sounds_setup_ip(char model, int type, char file)
 
 		// Store pointer to array in a globalvar for
 		// future access.
-		setglobalvar(DC_SOUND_VAR_KEY_MODELS, models);
+		setglobalvar(DC_SOUND_VAR_KEY_SOUND_MODELS, models);
 	}
 
 	// Get array of sound types for a model.
@@ -151,7 +151,7 @@ void dc_sounds_loaded_test(char model, int type, int index)
 	void indexes;	// Key - Numeric, Value - Sound file index.
 
 	// Get the model's list array.
-	models = getglobalvar(DC_SOUND_VAR_KEY_MODELS);
+	models = getglobalvar(DC_SOUND_VAR_KEY_SOUND_MODELS);
 
 	// Get array of sound types for a model.
 	types = get(models, model);

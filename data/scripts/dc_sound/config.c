@@ -18,12 +18,12 @@
 // 1.0 = Always.
 void dc_sound_set_chance(float value)
 {
-	setlocalvar(DC_SOUND_VAR_KEY_CHANCE, value);
+	setlocalvar(DC_SOUND_VAR_KEY_SOUND_CHANCE, value);
 }
 
 void dc_sound_get_chance()
 {
-	void result = getlocalvar(DC_SOUND_VAR_KEY_CHANCE);
+	void result = getlocalvar(DC_SOUND_VAR_KEY_SOUND_CHANCE);
 
 	if (!result)
 	{
@@ -40,12 +40,12 @@ void dc_sound_get_chance()
 // to the calling entity.
 void dc_sound_set_entity(void value)
 {
-	setlocalvar(DC_SOUND_VAR_KEY_ENTITY, value);
+	setlocalvar(DC_SOUND_VAR_KEY_SOUND_ENTITY, value);
 }
 
 void dc_sound_get_entity()
 {
-	void result = getlocalvar(DC_SOUND_VAR_KEY_ENTITY);
+	void result = getlocalvar(DC_SOUND_VAR_KEY_SOUND_ENTITY);
 
 	if (!result)
 	{
@@ -61,12 +61,12 @@ void dc_sound_get_entity()
 // a selected sound type.
 void dc_sound_set_sound_element(int value)
 {
-	setlocalvar(DC_SOUND_VAR_KEY_SPEED, value);
+	setlocalvar(DC_SOUND_VAR_KEY_SOUND_SPEED, value);
 }
 
 int dc_sound_get_sound_element()
 {
-	int result = getlocalvar(DC_SOUND_VAR_KEY_ELEMENT);
+	int result = getlocalvar(DC_SOUND_VAR_KEY_SOUND_ELEMENT);
 
 	if (typeof(result) != openborconstant("VT_INTEGER"))
 	{
@@ -79,12 +79,12 @@ int dc_sound_get_sound_element()
 // Sound looping on playback.
 void dc_sound_set_loop(int value)
 {
-	setlocalvar(DC_SOUND_VAR_KEY_LOOP, value);
+	setlocalvar(DC_SOUND_VAR_KEY_SOUND_LOOP, value);
 }
 
 int dc_sound_get_loop()
 {
-	int result = getlocalvar(DC_SOUND_VAR_KEY_LOOP);
+	int result = getlocalvar(DC_SOUND_VAR_KEY_SOUND_LOOP);
 
 	if (typeof(result) != openborconstant("VT_INTEGER"))
 	{
@@ -97,12 +97,12 @@ int dc_sound_get_loop()
 // Priority of sound when played on same channel.
 void dc_sound_set_priority(int value)
 {
-	setlocalvar(DC_SOUND_VAR_KEY_PRIORITY, value);
+	setlocalvar(DC_SOUND_VAR_KEY_SOUND_PRIORITY, value);
 }
 
 int dc_sound_get_priority()
 {
-	int result = getlocalvar(DC_SOUND_VAR_KEY_PRIORITY);
+	int result = getlocalvar(DC_SOUND_VAR_KEY_SOUND_PRIORITY);
 
 	if (typeof(result) != openborconstant("VT_INTEGER"))
 	{
@@ -119,13 +119,13 @@ int dc_sound_get_priority()
 // sounds at lower speeds as greater damage is inflicted. 
 void dc_sound_set_speed(int value)
 {
-	setlocalvar(DC_SOUND_VAR_KEY_SPEED, value);
+	setlocalvar(DC_SOUND_VAR_KEY_SOUND_SPEED, value);
 }
 
 // Get specified speed, or default if not available.
 int dc_sound_get_speed()
 {
-	int result = getlocalvar(DC_SOUND_VAR_KEY_SPEED);
+	int result = getlocalvar(DC_SOUND_VAR_KEY_SOUND_SPEED);
 
 	if (typeof(result) != openborconstant("VT_INTEGER"))
 	{
@@ -140,12 +140,12 @@ int dc_sound_get_speed()
 // are made. 
 void dc_sound_set_volume_left(int value)
 {
-	setlocalvar(DC_SOUND_VAR_KEY_VOLUME_LEFT, value);
+	setlocalvar(DC_SOUND_VAR_KEY_SOUND_VOLUME_LEFT, value);
 }
 
 int dc_sound_get_volume_left()
 {
-	int result = getlocalvar(DC_SOUND_VAR_KEY_VOLUME_LEFT);
+	int result = getlocalvar(DC_SOUND_VAR_KEY_SOUND_VOLUME_LEFT);
 
 	if (typeof(result) != openborconstant("VT_INTEGER"))
 	{
@@ -157,12 +157,12 @@ int dc_sound_get_volume_left()
 
 void dc_sound_set_volume_right(int value)
 {
-	setlocalvar(DC_SOUND_VAR_KEY_VOLUME_RIGHT, value);
+	setlocalvar(DC_SOUND_VAR_KEY_SOUND_VOLUME_RIGHT, value);
 }
 
 int dc_sound_get_volume_right()
 {
-	int result = getlocalvar(DC_SOUND_VAR_KEY_VOLUME_RIGHT);
+	int result = getlocalvar(DC_SOUND_VAR_KEY_SOUND_VOLUME_RIGHT);
 
 	if (typeof(result) != openborconstant("VT_INTEGER"))
 	{

@@ -46,15 +46,15 @@
 #define DC_SOUND_INDEX_RANDOM			-1	// Seek a random sound index from sound type.
 
 // Variable keys.
-#define DC_SOUND_VAR_KEY_CHANCE			"dcsnd_0"
-#define DC_SOUND_VAR_KEY_ELEMENT		"dcsnd_1"
-#define DC_SOUND_VAR_KEY_ENTITY			"dcsnd_2"
-#define DC_SOUND_VAR_KEY_LOOP			"dcsnd_3"
-#define DC_SOUND_VAR_KEY_MODELS			"dcsnd_4"	// Global var used to store list of models -> types ->indexes.
-#define DC_SOUND_VAR_KEY_PRIORITY		"dcsnd_5"
-#define DC_SOUND_VAR_KEY_SPEED			"dcsnd_6"
-#define DC_SOUND_VAR_KEY_VOLUME_LEFT	"dcsnd_7"
-#define DC_SOUND_VAR_KEY_VOLUME_RIGHT	"dcsnd_8"
+#define DC_SOUND_VAR_KEY_SOUND_CHANCE		"dcsnd_0"
+#define DC_SOUND_VAR_KEY_SOUND_ELEMENT		"dcsnd_1"
+#define DC_SOUND_VAR_KEY_SOUND_ENTITY		"dcsnd_2"
+#define DC_SOUND_VAR_KEY_SOUND_LOOP			"dcsnd_3"
+#define DC_SOUND_VAR_KEY_SOUND_MODELS		"dcsnd_4"	// Global var used to store list of models -> types ->indexes.
+#define DC_SOUND_VAR_KEY_SOUND_PRIORITY		"dcsnd_5"
+#define DC_SOUND_VAR_KEY_SOUND_SPEED		"dcsnd_6"
+#define DC_SOUND_VAR_KEY_SOUND_VOLUME_LEFT	"dcsnd_7"
+#define DC_SOUND_VAR_KEY_SOUND_VOLUME_RIGHT	"dcsnd_8"
 
 #endif // !DC_SOUND_CONFIG
 
