@@ -508,7 +508,7 @@ anim attack7
 	# Jump spinning kick
 
 		jumpframe 2 2.2 0 0 dust0002
-		landframe 7 dust0003
+		landframe 8 dust0003
 
 		delay	6
 		offset	155 210
@@ -525,13 +525,14 @@ anim attack7
 	frame	data/chars/galford/803_0_0.png
 	frame	data/chars/galford/803_1_0.png
 
-		attack	130 130 95 25 14 1 0 0 10
+		attack	130 130 95 25 14 1 0 0 15
 
 	frame	data/chars/galford/803_2_0.png
 
 		attack	0
 
 	frame	data/chars/galford/803_3_0.png
+	frame	data/chars/galford/421_23_0.png
 
 		delay	-1000
 
