@@ -10,7 +10,7 @@
 
 // Default values.
 #define DC_SOUND_DEFAULT_SOUND_CHANCE			1.0
-#define DC_SOUND_DEFAULT_SOUND_LOCATION_BALANCE	1		// Adjust volume based on a given X position in relation to screen.
+#define DC_SOUND_DEFAULT_SOUND_LOCATION_BALANCE	0		// Adjust volume based on a given X position in relation to screen.
 #define DC_SOUND_DEFAULT_SOUND_LOCATION_FADE	0		// Adjust volume based on a given Z position in relation to screen.
 #define DC_SOUND_DEFAULT_SOUND_LOOP				0
 #define DC_SOUND_DEFAULT_SOUND_PRIORITY			1
@@ -30,18 +30,18 @@
 // and numbers consecutive, even if it means 
 // re-numbering the whole list when I add something.
 
-#define DC_SOUND_TYPE_WHIFF_HEAVY_A		0	// "Air" sound, heavy attacks.
-#define DC_SOUND_TYPE_WHIFF_HEAVY_B		1	// "Air" sound, heavy attacks (blade).
+#define DC_SOUND_TYPE_VOICE_HEAVY_A		0	// Yalp, heavy attacks.
+#define DC_SOUND_TYPE_VOICE_LIGHT_A		1	// Yalp, light attacks.
+#define DC_SOUND_TYPE_VOICE_MEDIUM_A	2	// Yalp, medium attacks.
 
-#define DC_SOUND_TYPE_WHIFF_LIGHT_A		2	// "Air" sound, light attacks.
-#define DC_SOUND_TYPE_WHIFF_LIGHT_B		3	// "Air" sound, light attacks (blade).
+#define DC_SOUND_TYPE_WHIFF_HEAVY_A		3	// "Air" sound, heavy attacks.
+#define DC_SOUND_TYPE_WHIFF_HEAVY_B		4	// "Air" sound, heavy attacks (blade).
 
-#define DC_SOUND_TYPE_WHIFF_MEDIUM_A	4	// "Air" sound, medium attacks.
-#define DC_SOUND_TYPE_WHIFF_MEDIUM_B	5	// "Air" sound, medium attacks (blade).
+#define DC_SOUND_TYPE_WHIFF_LIGHT_A		5	// "Air" sound, light attacks.
+#define DC_SOUND_TYPE_WHIFF_LIGHT_B		6	// "Air" sound, light attacks (blade).
 
-#define DC_SOUND_TYPE_VOICE_HEAVY_A		6	// Yalp, heavy attacks.
-#define DC_SOUND_TYPE_VOICE_LIGHT_A		7	// Yalp, light attacks.
-#define DC_SOUND_TYPE_VOICE_MEDIUM_A	8	// Yalp, medium attacks.
+#define DC_SOUND_TYPE_WHIFF_MEDIUM_A	7	// "Air" sound, medium attacks.
+#define DC_SOUND_TYPE_WHIFF_MEDIUM_B	8	// "Air" sound, medium attacks (blade).
 
 // Indexes.
 #define DC_SOUND_INDEX_RANDOM			-1	// Seek a random sound index from sound type.
