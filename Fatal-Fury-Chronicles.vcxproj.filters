@@ -246,6 +246,12 @@
     <ClCompile Include="data\scripts\dc_sound\config.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="data\scripts\dc_string\main.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="data\scripts\dc_string\crop.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="data\scripts\com\ai0001.h">
@@ -498,6 +504,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="data\scripts\dc_initialize\config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="data\scripts\dc_string\config.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
