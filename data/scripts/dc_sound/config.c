@@ -76,6 +76,47 @@ int dc_sound_get_sound_element()
 	return result;
 }
 
+// Enables auto balance. As a location moves horizontaly
+// in relation to screen position, volume balance is 
+// adjusted to create a true location based stereo
+// effect.
+void dc_sound_set_sound_location_balance(int value)
+{
+	setlocalvar(DC_SOUND_VAR_KEY_SOUND_LOCATION_BALANCE, value);
+}
+
+int dc_sound_get_sound_location_balance()
+{
+	int result = getlocalvar(DC_SOUND_VAR_KEY_SOUND_LOCATION_BALANCE);
+
+	if (typeof(result) != openborconstant("VT_INTEGER"))
+	{
+		result = DC_SOUND_DEFAULT_SOUND_LOCATION_BALANCE;
+	}
+
+	return result;
+}
+
+// Enables auto fade. As a location moves lateraly
+// in relation to screen position, volume is adjusted
+// to create a distance based fade effect.
+void dc_sound_set_sound_location_fade(int value)
+{
+	setlocalvar(DC_SOUND_VAR_KEY_SOUND_LOCATION_FADE, value);
+}
+
+int dc_sound_get_sound_location_fade()
+{
+	int result = getlocalvar(DC_SOUND_VAR_KEY_SOUND_LOCATION_FADE);
+
+	if (typeof(result) != openborconstant("VT_INTEGER"))
+	{
+		result = DC_SOUND_DEFAULT_SOUND_LOCATION_FADE;
+	}
+
+	return result;
+}
+
 // Sound looping on playback.
 void dc_sound_set_sound_loop(int value)
 {

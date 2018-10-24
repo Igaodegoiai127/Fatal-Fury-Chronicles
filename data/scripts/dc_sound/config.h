@@ -10,7 +10,8 @@
 
 // Default values.
 #define DC_SOUND_DEFAULT_SOUND_CHANCE			1.0
-#define DC_SOUND_DEFAULT_SOUND_CHANCE_RESET		1
+#define DC_SOUND_DEFAULT_SOUND_LOCATION_BALANCE	1		// Adjust volume based on a given X position in relation to screen.
+#define DC_SOUND_DEFAULT_SOUND_LOCATION_FADE	0		// Adjust volume based on a given Z position in relation to screen.
 #define DC_SOUND_DEFAULT_SOUND_LOOP				0
 #define DC_SOUND_DEFAULT_SOUND_PRIORITY			1
 #define DC_SOUND_DEFAULT_SOUND_SPEED			100
@@ -49,12 +50,14 @@
 #define DC_SOUND_VAR_KEY_SOUND_CHANCE				"dcsnd_0"
 #define DC_SOUND_VAR_KEY_SOUND_ELEMENT				"dcsnd_1"
 #define DC_SOUND_VAR_KEY_SOUND_ENTITY				"dcsnd_2"
-#define DC_SOUND_VAR_KEY_SOUND_LOOP					"dcsnd_3"
-#define DC_SOUND_VAR_KEY_SOUND_MODELS				"dcsnd_4"	// Global var used to store list of models -> types ->indexes.
-#define DC_SOUND_VAR_KEY_SOUND_PRIORITY				"dcsnd_5"
-#define DC_SOUND_VAR_KEY_SOUND_SPEED				"dcsnd_6"
-#define DC_SOUND_VAR_KEY_SOUND_VOLUME_MAIN_LEFT		"dcsnd_7"	// Left channel volume before any adjustments are made.
-#define DC_SOUND_VAR_KEY_SOUND_VOLUME_MAIN_RIGHT	"dcsnd_8"	// Right channel volume before any adjustments are made.
+#define DC_SOUND_VAR_KEY_SOUND_LOCATION_BALANCE		"dcsnd_3"
+#define DC_SOUND_VAR_KEY_SOUND_LOCATION_FADE		"dcsnd_4"
+#define DC_SOUND_VAR_KEY_SOUND_LOOP					"dcsnd_5"
+#define DC_SOUND_VAR_KEY_SOUND_MODELS				"dcsnd_6"	// Global var used to store list of models -> types ->indexes.
+#define DC_SOUND_VAR_KEY_SOUND_PRIORITY				"dcsnd_7"
+#define DC_SOUND_VAR_KEY_SOUND_SPEED				"dcsnd_8"
+#define DC_SOUND_VAR_KEY_SOUND_VOLUME_MAIN_LEFT		"dcsnd_9"	// Left channel volume before any adjustments are made.
+#define DC_SOUND_VAR_KEY_SOUND_VOLUME_MAIN_RIGHT	"dcsnd_10"	// Right channel volume before any adjustments are made.
 
 #endif // !DC_SOUND_CONFIG
 
