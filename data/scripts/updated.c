@@ -26,6 +26,7 @@ void main() {
 	int     ent_count = 0;        // Entity count.
 	int     i = 0;        // Loop counter.
 
+	
 	// Get entity count.
 	ent_count = openborvariant("count_entities");
 
@@ -38,14 +39,13 @@ void main() {
 		// Execute tint effect on entity.
 		dc_draw_auto_tint(ent);
 
-		char model = getentityproperty(ent, "model");
+		//char model = getentityproperty(ent, "model");
 		
-		if (model == "Galford")
-		{
-			
-		}
-
+		//if (model == "Galford")
+		//{			
+		//}
 	}
+	
 
 	// Draw after images
 	trai0001();
@@ -56,11 +56,13 @@ void main() {
 void dc_draw_position(void ent, int box, int box_y, int i)
 {
 	void position = get_entity_property(ent, "position_coordinates");
+	int animation = getentityproperty(ent, "animationid");
+	int frame = getentityproperty(ent, "animpos");
 
 	float x = get_axis_principal_float_property(position, "x");
 	float y = get_axis_principal_float_property(position, "y");
 	float z = get_axis_principal_float_property(position, "z");
 
-	settextobj(box, 50, box_y, 0, -1, "ent: " + ent + ", X: " + x + ", Y: " + y + ", Z: " + z, openborvariant("elapsed_time") + 200);
+	settextobj(box, 50, box_y, 0, -1, "ent: " + i + ", Ani: " + animation + "(" + frame + "), X: " + x + ", Y: " + y + ", Z: " + z, openborvariant("elapsed_time") + 200);
 }
 
