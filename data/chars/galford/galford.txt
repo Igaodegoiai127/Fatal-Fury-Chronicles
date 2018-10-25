@@ -295,7 +295,11 @@ anim attack1
 
 		delay	5
 		offset	155 210
-		bbox	130 120 45 90
+		
+		bbox.position.x			130
+		bbox.position.y			120
+		bbox.size.x				45
+		bbox.size.y				90
 	
 		# Play voice 50% of the time and clear chance so default is used for 
 		# any subsequent sound play calls.
@@ -308,8 +312,17 @@ anim attack1
 	frame	data/chars/galford/83_3_0.png
 	
 		delay	3
-		attack  140 130 73 24 5
-
+		
+		attack.position.x				140
+		attack.position.y				130
+		attack.size.x					73
+		attack.size.y					24
+		attack.damage.force				5
+		attack.reaction.fall.velocity.x	1
+		attack.reaction.fall.velocity.y	1
+		attack.reaction.fall.velocity.z	0
+		attack.reaction.pause.time		6
+	
 	frame	data/chars/galford/83_6_0.png
 	frame	data/chars/galford/83_4_0.png
 	
@@ -321,7 +334,6 @@ anim attack1
 ############
 
 ############
-
 
 anim attack2
 
@@ -336,15 +348,33 @@ anim attack2
 	
 		@cmd dc_sound_quick_play DC_SOUND_TYPE_WHIFF_MEDIUM_B
 	frame	data/chars/galford/164_12_0.png
-	
-		attack2  125 115 100 50 12
+
+		attack.position.x				125
+		attack.position.y				115
+		attack.size.x					100
+		attack.size.y					50
+		attack.damage.force				12
+		attack.damage.type				2	
+		attack.reaction.fall.velocity.x	1.2
+		attack.reaction.fall.velocity.y	3
+		attack.reaction.fall.velocity.z	0
+		attack.reaction.pause.time		8
 
 		@cmd dc_sound_quick_play DC_SOUND_TYPE_VOICE_MEDIUM_A
 		@cmd bind0003 "galford_trail" "galford_trail" 1 1 0 0 0 openborconstant("DIRECTION_ADJUST_SAME") openborconstant("BINDING_MATCHING_ANIMATION_TARGET")+openborconstant("BINDING_MATCHING_ANIMATION_REMOVE")+openborconstant("BINDING_MATCHING_FRAME_TARGET")
 	
 	frame	data/chars/galford/160_1_1.png
 
-		attack2  145 150 80 35 12
+		attack.position.x				145
+		attack.position.y				150
+		attack.size.x					80
+		attack.size.y					35
+		attack.damage.force				12
+		attack.damage.type				2
+		attack.reaction.fall.velocity.x	1.2
+		attack.reaction.fall.velocity.y	3
+		attack.reaction.fall.velocity.z	0
+		attack.reaction.pause.time		8
 		
 	frame	data/chars/galford/160_2_1.png
 	
@@ -382,11 +412,19 @@ anim attack3
 	frame	data/chars/galford/806_1_0.png
 
 		delay	8
-		attack2  145 170 65 25 12
 		
 	frame	data/chars/galford/806_2_0.png
 
-		attack2  125 60 95 105 12
+		attack.position.x				125
+		attack.position.y				60
+		attack.size.x					95
+		attack.size.y					105
+		attack.damage.force				12
+		attack.damage.type				2
+		attack.reaction.fall.velocity.x	1.2
+		attack.reaction.fall.velocity.y	3
+		attack.reaction.fall.velocity.z	0
+		attack.reaction.pause.time		8
 
 	frame	data/chars/galford/806_3_0.png
 	
@@ -416,8 +454,16 @@ anim attack4
 	frame	data/chars/galford/172_1_0.png
 	frame	data/chars/galford/172_2_0.png
 
-		attack  140 85 70 60 14 1 0 0 10
-		dropv   5 1 0
+		attack.position.x				140
+		attack.position.y				85
+		attack.size.x					70
+		attack.size.y					60
+		attack.damage.force				14
+		attack.reaction.fall.force		1
+		attack.reaction.fall.velocity.x	1
+		attack.reaction.fall.velocity.y 5
+		attack.reaction.fall.velocity.z 0
+		attack.reaction.pause.time		12
 
 	frame	data/chars/galford/172_3_0.png
 
@@ -451,7 +497,16 @@ anim attack5
 
 	frame	data/chars/galford/804_0_0.png
 
-		attack2  135 130 95 18 14
+		attack.position.x				135
+		attack.position.y				130
+		attack.size.x					95
+		attack.size.y					18
+		attack.damage.force				14
+		attack.damage.type				2
+		attack.reaction.fall.velocity.x	1.2
+		attack.reaction.fall.velocity.y	3
+		attack.reaction.fall.velocity.z	0
+		attack.reaction.pause.time		10
 
 	frame	data/chars/galford/804_1_0.png
 
@@ -487,7 +542,16 @@ anim attack6
 
 	frame	data/chars/galford/805_0_0.png	
 
-		attack2  135 130 95 18 14
+		attack.position.x				135
+		attack.position.y				130
+		attack.size.x					95
+		attack.size.y					18
+		attack.damage.force				14
+		attack.reaction.fall.velocity.x	1.2
+		attack.reaction.fall.velocity.y	3
+		attack.reaction.fall.velocity.z	0
+		attack.damage.type				2
+		attack.reaction.pause.time		10
 
 		@cmd bind0003 "galford_trail" "galford_trail" 1 1 0 0 0 openborconstant("DIRECTION_ADJUST_SAME") openborconstant("BINDING_MATCHING_ANIMATION_TARGET")+openborconstant("BINDING_MATCHING_ANIMATION_REMOVE")+openborconstant("BINDING_MATCHING_FRAME_TARGET")
 
@@ -525,7 +589,16 @@ anim attack7
 	frame	data/chars/galford/803_0_0.png
 	frame	data/chars/galford/803_1_0.png
 
-		attack	130 130 95 25 14 1 0 0 15
+		attack.position.x				130
+		attack.position.y				130
+		attack.size.x					95
+		attack.size.y					25
+		attack.damage.force				14
+		attack.reaction.fall.force		1
+		attack.reaction.fall.velocity.x	1.2
+		attack.reaction.fall.velocity.y	3
+		attack.reaction.fall.velocity.z	0
+		attack.reaction.pause.time		12
 
 	frame	data/chars/galford/803_2_0.png
 
