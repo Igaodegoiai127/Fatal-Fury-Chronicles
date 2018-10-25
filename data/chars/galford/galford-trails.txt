@@ -12,7 +12,7 @@ anim idle
 
 		delay	-1000
 		offset	75 150
-	frame	data/chars/galford/806_3_0_trail_0.png
+	frame	data/chars/misc/blan0002.png
 
 anim attack1
 
