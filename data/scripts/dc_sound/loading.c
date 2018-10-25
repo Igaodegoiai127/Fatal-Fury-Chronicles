@@ -41,6 +41,13 @@ void dc_sounds_setup(char model, int type, char file)
 		set(models, model, types);
 	}
 
+	//void type_elements
+
+	//if (type_elements)
+	//{
+
+	//}
+
 	// Get array of sound indexes for a sound type.
 	indexes = get(types, type);
 

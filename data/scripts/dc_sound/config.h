@@ -59,6 +59,10 @@
 #define DC_SOUND_VAR_KEY_SOUND_VOLUME_MAIN_LEFT		"dcsnd_9"	// Left channel volume before any adjustments are made.
 #define DC_SOUND_VAR_KEY_SOUND_VOLUME_MAIN_RIGHT	"dcsnd_10"	// Right channel volume before any adjustments are made.
 
+// Array element indexes.
+#define DC_SOUND_ELEMENT_SAMPLES	0
+#define DC_SOUND_ELEMENT_OVERRIDES	1
+
 #endif // !DC_SOUND_CONFIG
 
 
