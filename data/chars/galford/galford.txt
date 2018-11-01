@@ -856,11 +856,15 @@ anim follow93
 		offset	155 210
 		bbox	130 120 45 90
 
+		move	0
+
 	frame	data/chars/galford/110_2_0.png
+	
+	
 	frame	data/chars/galford/110_3_0.png
 		
 		delay	12
-		move	-20
+		move	-30
 	
 	frame	data/chars/galford/110_4_0.png	
 	
