@@ -14,8 +14,7 @@ void bloc0001(){
     int  iBase;                                                                             //Attacker base Y.
     int  iBlockAni;                                                                         //Final block animation.
     int  iTime = openborvariant("elapsed_time");                                            //Elapsed game time.
-    int  iKeylst = getentityvar(vSelf, KEY1SP);        
-
+   
     if (parr0001(vAttacker, 0)) { return; }
 
     //Fatal Fury style proximity blocking. If entity is blocking (not an attack with autoblock), 

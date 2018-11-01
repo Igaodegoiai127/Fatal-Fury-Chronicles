@@ -24,7 +24,7 @@ void main(){
         if (iUp)																		//Holding up?
         {
             iETime  = openborvariant("Elapsed_time");                                   //Get elapsed time.
-            iKey1AT = getentityvar(vSelf, KEY1AT) + 500;                                //Get last Attack press.
+			iKey1AT = 0; // getentityvar(vSelf, KEY1AT) + 500;                          //Get last Attack press.
 
             if (iKey1AT < iETime)                                                       //Enough time passed?
             {

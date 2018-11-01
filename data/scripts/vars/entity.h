@@ -82,8 +82,6 @@
 #define HITFLS       76									//Extra damage hitflash.
 #define BINDHE       77									//Bound hit effect entity.
 #define BINDE        78									//Bound special effect.
-#define KEY1SP       79                                   //Last time special key was pressed.
-#define KEY1AT       80                                   //Last time attack key was pressed.
 #define STATUS       81                                   //Special states (power up, etc.).
 
 #endif // ENTITY_DEF

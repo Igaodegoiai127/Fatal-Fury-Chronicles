@@ -23,7 +23,6 @@ void main(){
     int	 iXDir;
 	int	 iTossV;
     int  iETime;                                                                        //Elpased time.
-    int  iKey1AT;                                                                       //Time of last key 1 press.
     int  iCost;                                                                         //Energycost.
     int  iMP;                                                                           //Current MP.
     int  iSeal;                                                                         //Current seal flag.

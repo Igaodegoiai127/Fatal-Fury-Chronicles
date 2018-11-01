@@ -20,12 +20,11 @@ int parr0001(void vOpp, int iDam){
     int  fAY;                                                                               //Attacker Y location.
     int  iABase;                                                                            //Attacker base Y.
     int  iTime = openborvariant("elapsed_time");                                            //Elapsed game time.
-    int  iKeylst = getentityvar(vSelf, KEY1SP);        
     int  iHP;                                                                               //Current health.
     int  iNAni;
 	int  iPause;
 
-    if ((iTime - iKeylst) <= 500)                                                           //Block press within .05 seconds?
+    if ((iTime) <= 500)                                                           //Block press within .05 seconds?
     {
         if (getentityproperty(vSelf, "animvalid", PARRY))                                   //Have parry animation?
         {            
