@@ -32,9 +32,9 @@ void main(){
 
 	int     player_index;   // Player index.
 	void    ent;			// Player entity.
-    int     iFlIdle     = getentityproperty(ent, "aiflag", "idling");             //Self idling?
-    int     iFlAttack   = getentityproperty(ent, "aiflag", "attacking");          //Self attacking (freespecial, jumpattack, follow, or attack)?
-    int     iFlJump     = getentityproperty(ent, "aiflag", "jumping");            //Self jumping?
+	int     idle;	
+	int		attacking;
+	int		jumping;
     int     iUpH        = playerkeys(player_index, 0, "moveup");                        //Hold  "Up".
     int     iDownH      = playerkeys(player_index, 0, "movedown");                      //Hold  "Down".
     int     iLeftH      = playerkeys(player_index, 0, "moveleft");                      //Hold  "Left".
@@ -48,10 +48,10 @@ void main(){
     int     iAttack3    = playerkeys(player_index, 1, "attack3");                       //Press "Attack3". 
     int     iAttack4    = playerkeys(player_index, 1, "attack4");                       //Press "Attack4".    
 	int     iXDir       = getentityproperty(ent, "xdir");                         //X velocity.
-    int     iTime       = openborvariant("elapsed_time");                           //Current time.
     int     iAni;                                                                   //Current animation.
     int     iFrame;                                                                 //Current animation frame.
-    void    vTarget;                                                                //Opponent.    
+    void    target;                                                                // Target entity.    
+
 
 	int		player_key_hold;	// Keys currently held.
 	int		player_key_press;	// Key press (triggers the key event).
@@ -63,57 +63,21 @@ void main(){
 	player_key_hold		= getplayerproperty(player_index, "keys");
 	player_key_press	= getplayerproperty(player_index, "newkeys");
 
-    if (iFlIdle)                                                                    //Idle?
-    {
-        if (iAttack)                                                                //New attack press?
-        {
-            if (iDownH && getentityproperty(ent, "animvalid", ATKDOWN))           //Holding down and have a Down Attack?
-            {
-                vTarget = findtarget(ent, ATKDOWN);                               //Look for opponent within range of Down Attack.
-                
-                if (vTarget && !getentityproperty(vTarget, "aiflag", "animating"))  //Target found and is not animating (finished with fall)?
-                {
-                    if (getentityproperty(vTarget, "health") > 0)                   //Target still alive?
-                    {                        
-                        if (ani0009(ent, ATKDOWN, 1))                             //Set downattack.
-                        {
-                            changeentityproperty(ent, "velocity", 0,0,0);         //If downattack was valid and set, stop moving.                                 //Set Downattack.                                        
-                        }
-                    }
-                }
-            }
-        }
-        ////Poses////
-        else if (iAttack3)                                                          //New attack3 press?
-        {
-			
-            changeentityproperty(ent, "velocity", 0, 0, 0);                       //Stop moving.
-            changeplayerproperty(ent, "playkeys", 0);                             //Clear key event.
+	// Get AI status flags.
+	idle		= getentityproperty(ent, "aiflag", "idling");    
+	attacking	= getentityproperty(ent, "aiflag", "attacking");
+	jumping		= getentityproperty(ent, "aiflag", "jumping");    
 
-            if (iUpH)                                                               //Holding up?
-            {                
-                ani0009(ent, openborconstant("ANI_FOLLOW71"), 0);                 //Set pose 2.                                        
-            }
-            else if (iDownH)                                                        //Holding down?
-            {                                
-                ani0009(ent, openborconstant("ANI_FOLLOW72"), 0);                 //Set pose 3.                              
-            }
-            else if (iLeftH)                                                        //Holding left?
-            {
-                ani0009(ent, openborconstant("ANI_FOLLOW73"), 0);                 //Set pose 4.
-            }
-            else if (iRightH)                                                       //Holding right?
-            {
-                ani0009(ent, openborconstant("ANI_FOLLOW74"), 0);                 //Set pose 5.
-            }
-            else                                                                    //No direction?
-            {
-                ani0009(ent, openborconstant("ANI_FOLLOW70"), 0);                 //Set pose 1.
-            }
-			performattack(ent, POWUP, 0);
-        }
-    }    
-    else if (iFlJump)                                                               //Jumping?
+
+    if (idle)                                                                    //Idle?
+    {
+		// Hitting downed enemies.
+		if (dc_try_down_attack(player_index))
+		{
+			return;
+		}
+	}    
+    else if (jumping)                                                               //Jumping?
     {
         /*
         //Mario style jumpheight control.
@@ -130,7 +94,7 @@ void main(){
         }
         */
             
-        if (!iFlAttack)                                                             //Not attacking?
+        if (!attacking)                                                             //Not attacking?
         {
             if (iSpecial)                                                           //New Special press?
             {               
@@ -152,7 +116,7 @@ void main(){
             }
         }
     }
-    else if (iFlAttack)                                                             //Attacking?
+    else if (attacking)                                                             //Attacking?
     {        
         iAni    = getentityproperty(ent, "animationid");                          //Get current animation.
         iFrame  = getentityproperty(ent, "animpos");                              //Get current frame.
@@ -219,4 +183,111 @@ void main(){
             }
         }        
     }
+}
+
+
+// Caskey, Damon V.
+// 2018-11-01
+//
+// Verify conditions for down attack and execute if possible.
+int dc_try_down_attack(int player_index)
+{
+	void ent;		// Base entity.
+	int key_press;	// Key pressed.
+	int key_hold;	// Key(s) hold.
+	void target;	// Target entity.
+
+
+	// Get base entity.
+	ent = getplayerproperty(player_index, "entity");
+
+	// Key press must be attack 1.
+	key_press = getplayerproperty(player_index, "newkeys");
+		
+	if (!(key_press & openborconstant("FLAG_ATTACK")))
+	{
+		return 0;
+	}
+
+	// Key hold must be Down.
+	key_hold = getplayerproperty(player_index, "keys");
+
+	if (!(key_hold & openborconstant("FLAG_MOVEDOWN")))
+	{
+		return 0;
+	}
+
+	// Must have a down attack.
+	if (!getentityproperty(ent, "animvalid", ATKDOWN))
+	{
+		return 0;
+	}
+
+	// Must have a target within range of Down attack.
+	// Any target in range of down attack?
+	target = findtarget(ent, ATKDOWN);
+
+	if (!target)
+	{
+		return 0;
+	}
+
+	// Target cannot be animating. This is how we
+	// know it has completed a fall.
+	if (getentityproperty(target, "aiflag", "animating"))
+	{
+		return 0;
+	}
+
+	// Target cannot be dead.
+	if (getentityproperty(target, "dead"))
+	{
+		return 0;
+	}
+
+	// If we got this far then we can set a down attack.
+	dc_set_attack(ent, ATKDOWN);
+
+	// Stop moving in case we were walking.
+	changeentityproperty(ent, "velocity", 0, 0, 0); 
+
+	// Clear attack flag from key press.
+	key_press -= openborconstant("FLAG_ATTACK");
+	changeplayerproperty(player_index, "newkeys", key_press);
+
+	// Return true.
+	return 1;
+}
+
+// Caskey, Damon V.
+// 2016-09-13
+//
+// Verify animation and entity, then instruct entity
+// to perform animation as an attack.
+int dc_set_attack(void ent, int animation)
+{
+	int is_valid;
+	int vartype;
+	int result;
+
+	// Get entity vartype.
+	vartype = typeof(ent);
+
+	// If the entity is not a valid pointer, use self as default.
+	if (vartype != openborconstant("VT_PTR"))
+	{
+		ent = getlocalvar("self");
+	}
+	
+	// Get animation valid status.
+	is_valid = getentityproperty(ent, "animvalid", animation);
+
+	// Animation is valid?
+	if (is_valid == 1)
+	{
+		// Switch using perform attack.
+		result = performattack(ent, animation);
+	}
+
+	return result;
 }
