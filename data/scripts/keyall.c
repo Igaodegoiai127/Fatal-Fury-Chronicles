@@ -4,6 +4,24 @@
 #include "data/scripts/com/key0002.h"
 #include "data/scripts/com/key0004.h"
 
+void oncreate()
+{
+	log("\n");
+	log("keyall.c");
+	log("\t");
+	log("- oncreate().");
+	log("\n");
+}
+
+void ondestroy()
+{
+	log("\n");
+	log("keyall.c");
+	log("\t");
+	log("- oncreate().");
+	log("\n");
+}
+
 void main(){
     
 	/*
