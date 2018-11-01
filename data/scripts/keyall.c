@@ -1,6 +1,5 @@
 #include "data/scripts/vars/anims.h"
 #include "data/scripts/vars/entity.h"
-#include "data/scripts/com/ani0009.h"
 #include "data/scripts/com/key0002.h"
 #include "data/scripts/com/key0004.h"
 
@@ -93,24 +92,31 @@ void main(){
             }
         }
         */
-            
-        if (!attacking)                                                             //Not attacking?
+           
+		// Not attacking?
+        if (!attacking)                                                             
         {
-            if (iSpecial)                                                           //New Special press?
-            {               
-                ani0009(ent, AIRBLOCK, -1);                                       //Set Airblock.                               
+
+			// Check keys.
+            if (iSpecial)                                                           
+            {
+				dc_set_animation(ent, AIRBLOCK);
             }
-            else if (iAttack)                                                       //New Attack press?
+            else if (iAttack)                                                       
             { 
-                if (key0002(ent, iLeftH, iRightH))                                //Holding Back?
+				// Holding Back?
+                if (key0002(ent, iLeftH, iRightH))                               
                 {   
-                    ani0009(ent, AIRBACK, -1);                                    //Set Air back attack.                                           
+					// Set Air back attack. 
+					dc_set_attack(ent, AIRBACK);                                                                              
                 }
-                else if (iDownH)                                                    //Holding Down?
+                else if (iDownH)                                                    
                 {
-                    if (!iXDir)                                                     //Not moving horizontally?
+					// Not moving horizontally?
+                    if (!iXDir)                  
                     {
-                        ani0009(ent, AIRJ2AL, -1);                                //Set Jumpattack 2 alt.                        
+						// Set Jumpattack 2 alt.
+						dc_set_attack(ent, AIRJ2AL);
                     }
                 }
             }
@@ -126,19 +132,20 @@ void main(){
             if (iAttack)
             {
                 key0004(ent, iLeftH, iRightH);                                    //Change direction?
-                ani0009(ent, DODATK, -1);                                         //Set Dodge Attack.                
+				dc_set_attack(ent, DODATK);                                         //Set Dodge Attack.                
                 changeplayerproperty(ent, "playkeys", 0);                         //Clear key event.                
             }
             else if (iUp)
             {
                 key0004(ent, iLeftH, iRightH);                                    //Change direction?
-                ani0009(ent, openborconstant("ANI_ATTACKUP"), -1);                //Set Dodge Up.
+				dc_set_attack(ent, ent, openborconstant("ANI_ATTACKUP"));         //Set Dodge Up.
                 changeplayerproperty(ent, "playkeys", 0);                         //Clear key event.
             }
             else if (iDown)
             {
                 key0004(ent, iLeftH, iRightH);                                    //Change direction?
-                ani0009(ent, openborconstant("ANI_ATTACKDOWN"), -1);              //Set Dodge Down.
+				dc_set_attack(ent, openborconstant("ANI_ATTACKDOWN"));              //Set Dodge Down.
+				changeplayerproperty(ent, "playkeys", 0);                         //Clear key event.
                 
             }
         }
@@ -150,15 +157,15 @@ void main(){
                 
                 if (iUpH)
                 {
-                    ani0009(ent, DODATKSU, -1);                                   //Set Short Side Attack Down.                    
+					dc_set_attack(ent, DODATKSU);                                   //Set Short Side Attack Down.                    
                 }
                 else if (iDownH)
                 {
-                    ani0009(ent, DODATKSD, -1);                                   //Set Short Side Attack Up.
+					dc_set_attack(ent, DODATKSD);                                   //Set Short Side Attack Up.
                 }
                 else
                 {
-                    ani0009(ent, DODATKU, -1);                                    //Set Side Dodge Up Attack.                                
+					dc_set_attack(ent, DODATKU);                                    //Set Side Dodge Up Attack.                                
                 }               
             }
         }
@@ -170,15 +177,15 @@ void main(){
 
                 if (iUpH)
                 {
-                    ani0009(ent, DODATKSU, -1);                                   //Set Short Side Attack Down.                    
+					dc_set_attack(ent, DODATKSU);                                   //Set Short Side Attack Down.                    
                 }
                 else if (iDownH)
                 {
-                    ani0009(ent, DODATKSD, -1);                                   //Set Short Side Attack Up.
+					dc_set_attack(ent, DODATKSD);                                   //Set Short Side Attack Up.
                 }
                 else
                 {
-                    ani0009(ent, DODATKD, -1);                                    //Set Side Dodge Down Attack.                                
+					dc_set_attack(ent, DODATKD);                                    //Set Side Dodge Down Attack.                                
                 }                
             }
         }        
@@ -288,6 +295,39 @@ int dc_set_attack(void ent, int animation)
 		// Switch using perform attack.
 		result = performattack(ent, animation);
 	}
+
+	return result;
+}
+
+// Caskey, Damon V.
+// 2016-09-13
+//
+// Verify animation and entity, then switch
+// entity to new animation.
+int dc_set_animation(void ent, int animation)
+{
+	int is_valid;
+	int vartype;
+	int result;
+
+	// Get entity vartype.
+	vartype = typeof(ent);
+
+	// If the entity is not a valid pointer, use self as default.
+	if (vartype != openborconstant("VT_PTR"))
+	{
+		ent = getlocalvar("self");
+	}
+	
+	// Get animation valid status.
+	is_valid = getentityproperty(ent, "animvalid", animation);
+
+	// Animation is valid?
+	if (is_valid == 1)
+	{
+		// Switch to animation.
+		changeentityproperty(ent, "animation", animation);
+	}	
 
 	return result;
 }
