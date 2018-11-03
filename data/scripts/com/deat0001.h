@@ -1,6 +1,6 @@
 #include "data/scripts/vars/anims.h"
 #include "data/scripts/vars/entity.h"
-#include "data/scripts/com/soun0003.h"
+#include "data/scripts/dc_sound/main.c"
 
 void deat0001(){
 
@@ -32,7 +32,7 @@ if (iDType == openborconstant("ATK_BURN"))
     }
     else
     {
-        soun0003();                                                     //Death sound.
+		// stero_death_sound_call_here.
 
         if (vModel == "Ray"      ||
             vModel == "Ray_"     ||
