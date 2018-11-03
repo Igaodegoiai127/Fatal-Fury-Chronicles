@@ -252,7 +252,7 @@ anim run
 	delay	5
 		frame	data/chars/terry/terr0556
 		frame	data/chars/terry/terr0578
-	@cmd run0001
+	@cmd dc_disney_dash_stop
 		frame	data/chars/terry/terr0578
 
 anim turn

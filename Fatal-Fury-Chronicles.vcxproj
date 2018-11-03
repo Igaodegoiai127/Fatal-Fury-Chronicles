@@ -117,6 +117,7 @@
     <ClCompile Include="data\scripts\bloc0001.c" />
     <ClCompile Include="data\scripts\dc_disney\alternate_on_health.c" />
     <ClCompile Include="data\scripts\dc_disney\alternate_on_range.c" />
+    <ClCompile Include="data\scripts\dc_disney\dash_stop.c" />
     <ClCompile Include="data\scripts\dc_disney\main.c" />
     <ClCompile Include="data\scripts\dc_initialize\initialize_level_spawn.c" />
     <ClCompile Include="data\scripts\dama0001.c" />
@@ -221,7 +222,6 @@
     <ClInclude Include="data\scripts\com\rema0002.h" />
     <ClInclude Include="data\scripts\com\rema0003.h" />
     <ClInclude Include="data\scripts\com\rnd0001.h" />
-    <ClInclude Include="data\scripts\com\run0001.h" />
     <ClInclude Include="data\scripts\com\stat0001.h" />
     <ClInclude Include="data\scripts\com\summ0001.h" />
     <ClInclude Include="data\scripts\com\targ0001.h" />
