@@ -220,8 +220,6 @@ int dc_command_back_dash(int player_index)
 	void ent;		// Base entity.
 	int key_press;	// Key pressed.
 	int key_hold;	// Key(s) hold.
-	void target;	// Target entity.
-	int idle;
 	int time_current;
 	int time_set;
 
