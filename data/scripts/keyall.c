@@ -54,15 +54,15 @@ void main(){
 	jumping		= getentityproperty(ent, "aiflag", "jumping");    
 
 
-    if (idle)                                                                    //Idle?
-    {
+	if (idle)
+    {	
 		// Hitting downed enemies.
 		if (dc_try_down_attack(player_index))
 		{
 			return;
 		}
 	}    
-    else if (jumping)                                                               //Jumping?
+    else if (jumping)
     {
         /*
         //Mario style jumpheight control.
@@ -78,17 +78,17 @@ void main(){
             }
         }
         */
+
+		if (dc_command_airblock(player_index))
+		{
+			return;
+		}
            
 		// Not attacking?
         if (!attacking)                                                             
         {
 
-			// Check keys.
-            if (player_key_press & openborconstant("FLAG_SPECIAL"))
-            {
-				dc_set_animation(ent, AIRBLOCK);
-            }
-            else if (player_key_press & openborconstant("FLAG_ATTACK"))                                                       
+			if (player_key_press & openborconstant("FLAG_ATTACK"))                                                       
             { 
 				// Holding Back?
                 if (dc_check_key_back(player_index))
@@ -257,6 +257,62 @@ int dc_check_key_back(int player_index)
 	return 0;
 }
 
+// Caskey, Damon  V.
+// 2018-11-03
+//
+// Perform airblock on command if possible. Return true on success.
+int dc_command_airblock(int player_index)
+{
+	void ent;
+	int key_press;
+	int attacking;
+	//int jumping;
+
+	// Get base entity.
+	ent = getplayerproperty(player_index, "entity");
+
+	// Verify key press.
+	key_press = getplayerproperty(player_index, "newkeys");
+
+	if (!(key_press & openborconstant("FLAG_SPECIAL")))
+	{
+		return 0;
+	}
+
+	// Must be jumping.
+	//jumping = getentityproperty(ent, "aiflag", "jumping");
+
+	//if (!jumping)
+	//{
+	//	return 0;
+	//}
+
+	// Can't be attacking.
+	attacking = getentityproperty(ent, "aiflag", "attacking");
+
+	if (attacking)
+	{
+		return 0;
+	}
+
+	// Must have an air block.
+	if (!getentityproperty(ent, "animvalid", AIRBLOCK))
+	{
+		return 0;
+	}
+
+	// Set the animation.
+	dc_set_animation(ent, AIRBLOCK);
+
+	// Clear key flag from key press.
+	key_press -= openborconstant("FLAG_SPECIAL");
+	changeplayerproperty(player_index, "newkeys", key_press);
+
+	// Return true.
+	return 1;
+
+}
+
 // Caskey, Damon V.
 // 2018-11-01
 //
@@ -267,6 +323,7 @@ int dc_try_down_attack(int player_index)
 	int key_press;	// Key pressed.
 	int key_hold;	// Key(s) hold.
 	void target;	// Target entity.
+	int idle;
 
 
 	// Get base entity.
