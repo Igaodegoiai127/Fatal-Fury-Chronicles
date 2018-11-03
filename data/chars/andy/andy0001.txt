@@ -1806,82 +1806,6 @@ anim follow2
 	move	0
 		frame	data/chars/andy/andy0056
 
-anim follow3
-
-	#Shiranui Spider Clutch (tall opponent alt.)
-
-	flipframe 3
-	jumpframe 12 4 -2 0
-	landframe 20 dust0003
-
-	offset  100 200
-	delay	8
-	@cmd	bind0010 1 25 0 0 -1 HELD
-	move	0
-		frame	data/chars/andy/9_0.png
-		frame	data/chars/andy/9_1.png
-	move	50
-	offset  100 220
-	@cmd	bind0010 1 -25 0 0 -1 HELD
-		frame	data/chars/andy/14_0.png
-	move	-15
-	offset	100 230
-	@cmd	bind0010 1 10 0 0 1 HELD
-		frame	data/chars/andy/andy0457
-	delay	15
-	move	0
-	offset	100 230
-	@cmd	soun0001 "soun0011.wav"
-		frame	data/chars/andy/andy0453
-	delay	5
-	offset	101 230
-	move	0
-		frame	data/chars/andy/andy0453
-	offset	100 230
-		frame	data/chars/andy/andy0453
-	offset	101 230
-		frame	data/chars/andy/andy0453
-	delay	12
-	offset	100 230
-	@cmd	soun0001 "soun0012.wav"
-		frame	data/chars/andy/andy0453
-	delay	30
-	@cmd	bind0010 1 10 0 -1 0 HELDP
-	@cmd    stat0001  1 0 -40 0 0 0 0 0
-		frame	data/chars/andy/andy0454
-	delay	15
-	offset	115 230
-		frame	data/chars/andy/andy0167
-	@cmd 	soun0001 "vand0003.wav"
-		frame	data/chars/andy/andy0171
-	delay	12
-	offset	100 270
-	move	-20
-	@cmd	bind0008 "flash" "flash" 0 1 20 75 0 0 0 0 1
-	@cmd	bind0004 1 20 0 0 11 0						#Release bind.
-	@cmd	dama0001 1 20 10 "ATK_NORMAL" -1 2 2 0 0 0 0
-		frame	data/chars/andy/21_6.png
-	delay	10
-	move	0
-	offset	100 260
-		frame	data/chars/andy/andy0263
-	offset	100 250
-		frame	data/chars/andy/andy0262
-	offset	100 220
-		frame	data/chars/andy/andy0049
-	offset	100 200
-		frame	data/chars/andy/andy0048
-		frame	data/chars/andy/andy0044
-		frame	data/chars/andy/andy0045
-	delay	-1
-		frame	data/chars/andy/andy0046
-	delay	8
-	offset	100 200
-	bbox	75 135 30 65
-		frame	data/chars/andy/3_0.png
-		frame	data/chars/andy/3_1.png
-		frame	data/chars/andy/3_0.png
-
 anim follow4
 
 	#Shin Cho Reppa Dan. Cho Reppa dan switches here if <= 20% health.
@@ -2974,7 +2898,6 @@ anim grabdown
 	offset	100 200
 	bbox	75 110 35 90
 	move	15
-	@cmd	ani0007 1 "height" 115 500 "ANI_FOLLOW3"
 		frame	data/chars/andy/9_0.png
 	delay	8
 	@cmd	bind0010 1 25 0 0 -1 HELD
