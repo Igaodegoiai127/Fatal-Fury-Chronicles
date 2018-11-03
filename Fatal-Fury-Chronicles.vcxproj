@@ -180,7 +180,6 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="data\scripts\com\ai0001.h" />
-    <ClInclude Include="data\scripts\com\ani0001.h" />
     <ClInclude Include="data\scripts\com\ani0002.h" />
     <ClInclude Include="data\scripts\com\ani0003.h" />
     <ClInclude Include="data\scripts\com\ani0004.h" />
@@ -215,7 +214,6 @@
     <ClInclude Include="data\scripts\com\host0001.h" />
     <ClInclude Include="data\scripts\com\jump0001.h" />
     <ClInclude Include="data\scripts\com\jump0002.h" />
-    <ClInclude Include="data\scripts\com\keyd0001.h" />
     <ClInclude Include="data\scripts\com\kill0001.h" />
     <ClInclude Include="data\scripts\com\kill0002.h" />
     <ClInclude Include="data\scripts\com\loc0001.h" />
