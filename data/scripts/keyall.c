@@ -32,8 +32,6 @@ void main(){
 	int     idle;	
 	int		attacking;
 	int		jumping;
-    int     iUpH        = playerkeys(player_index, 0, "moveup");                        //Hold  "Up".
-    int     iDownH      = playerkeys(player_index, 0, "movedown");                      //Hold  "Down".
     int     iAttack     = playerkeys(player_index, 1, "attack");                        //Press "Attack".
     int     iAttack3    = playerkeys(player_index, 1, "attack3");                       //Press "Attack3". 
     int     iAttack4    = playerkeys(player_index, 1, "attack4");                       //Press "Attack4".    
@@ -101,7 +99,7 @@ void main(){
 					// Set Air back attack. 
 					dc_set_attack(ent, AIRBACK);                                                                              
                 }
-                else if (iDownH)                                                    
+                else if (player_key_hold = openborconstant("FLAG_MOVEDOWN"))                                                    
                 {
 					// Not moving horizontally?
                     if (!iXDir)                  
@@ -147,11 +145,11 @@ void main(){
             {
 				dc_player_direction_switch(player_index);
                 
-                if (iUpH)
+                if (player_key_hold & openborconstant("FLAG_MOVEUP"))
                 {
 					dc_set_attack(ent, DODATKSU);                                   //Set Short Side Attack Down.                    
                 }
-                else if (iDownH)
+                else if (player_key_hold & openborconstant("FLAG_MOVEDOWN"))
                 {
 					dc_set_attack(ent, DODATKSD);                                   //Set Short Side Attack Up.
                 }
@@ -167,11 +165,11 @@ void main(){
             {
 				dc_player_direction_switch(player_index);
 
-                if (iUpH)
+                if (player_key_hold & openborconstant("FLAG_MOVEUP"))
                 {
 					dc_set_attack(ent, DODATKSU);                                   //Set Short Side Attack Down.                    
                 }
-                else if (iDownH)
+                else if (player_key_hold & openborconstant("FLAG_MOVEDOWN"))
                 {
 					dc_set_attack(ent, DODATKSD);                                   //Set Short Side Attack Up.
                 }
