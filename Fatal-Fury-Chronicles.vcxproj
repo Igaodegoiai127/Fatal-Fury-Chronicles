@@ -181,7 +181,6 @@
   <ItemGroup>
     <ClInclude Include="data\scripts\com\ai0001.h" />
     <ClInclude Include="data\scripts\com\ani0003.h" />
-    <ClInclude Include="data\scripts\com\ani0007.h" />
     <ClInclude Include="data\scripts\com\ani0008.h" />
     <ClInclude Include="data\scripts\com\ani0009.h" />
     <ClInclude Include="data\scripts\com\ani0010.h" />
