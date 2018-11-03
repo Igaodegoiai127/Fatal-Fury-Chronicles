@@ -260,9 +260,6 @@
     <ClInclude Include="data\scripts\com\ani0003.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="data\scripts\com\ani0006.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="data\scripts\com\ani0007.h">
       <Filter>Header Files</Filter>
     </ClInclude>
