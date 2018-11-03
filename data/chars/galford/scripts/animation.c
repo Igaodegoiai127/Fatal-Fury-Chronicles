@@ -1,14 +1,12 @@
 /*
 Animation script: 
-
-Andy Bogard
+Galford
 */
 
 #include "data/scripts/vars/entity.h"
 
 #include "data/scripts/com/ai0001.h"
 #include "data/scripts/com/ani0003.h"
-#include "data/scripts/com/ani0008.h"
 #include "data/scripts/com/bind0002.h"
 #include "data/scripts/com/bind0003.h"
 #include "data/scripts/com/bind0004.h"

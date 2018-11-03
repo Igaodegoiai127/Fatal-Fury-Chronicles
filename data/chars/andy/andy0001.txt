@@ -1988,7 +1988,9 @@ anim follow5
 	delay	3
 	@cmd 	soun0001 "soun0017.wav"									#Sound effect.
 	@cmd 	soun0001 "soun0015.wav"									#Sound effect.
-	@cmd	ani0008 SPAWN 2 openborconstant("ANI_FOLLOW10") 0 1 0 0 0 0 0				#Set "C4 in UR face" to explode animation and self kill.
+	
+	##Set "C4 in UR face" to explode animation and self kill. Note, ani0008 removed - needs replacement.
+				
 	@cmd	bind0004 1 0 0 0 11 0									#Release bind and clear bind record.
 	@cmd	dama0001 1 90 10 "ATK_NORMAL" 1 2 -2 0 0 0 0
 		frame	data/chars/andy/andy0493							#Quakeframe
