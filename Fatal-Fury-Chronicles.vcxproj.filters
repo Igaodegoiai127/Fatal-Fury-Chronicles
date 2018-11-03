@@ -257,16 +257,7 @@
     <ClInclude Include="data\scripts\com\ai0001.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="data\scripts\com\ani0002.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="data\scripts\com\ani0003.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="data\scripts\com\ani0004.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="data\scripts\com\ani0005.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="data\scripts\com\ani0006.h">

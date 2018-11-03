@@ -180,10 +180,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="data\scripts\com\ai0001.h" />
-    <ClInclude Include="data\scripts\com\ani0002.h" />
     <ClInclude Include="data\scripts\com\ani0003.h" />
-    <ClInclude Include="data\scripts\com\ani0004.h" />
-    <ClInclude Include="data\scripts\com\ani0005.h" />
     <ClInclude Include="data\scripts\com\ani0006.h" />
     <ClInclude Include="data\scripts\com\ani0007.h" />
     <ClInclude Include="data\scripts\com\ani0008.h" />

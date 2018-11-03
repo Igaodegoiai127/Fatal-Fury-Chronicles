@@ -1,7 +1,6 @@
 #include "data/scripts/vars/colors.h"
 #include "data/scripts/vars/entity.h"
 #include "data/scripts/com/effe0001.h"
-#include "data/scripts/com/ani0005.h"
 #include "data/scripts/com/bind0005.h"
 #include "data/scripts/dc_draw/main.c"
 
@@ -13,8 +12,6 @@ void pain0001(){
     int     iHeight;                                                                //Caller height.
     int     iHitY;                                                                  //Hit Y.
     int     iNAni       = getentityvar(vSelf, NEXTANI);                             //Next animation request.
-
-    if (ani0005()){ return; }                                                       //Parry animation was set; perform parry animation and exit. See parr0001 for details.
 
     if (iAni == openborconstant("ANI_BURNPAIN"))                                    //Burn attack?
     {
