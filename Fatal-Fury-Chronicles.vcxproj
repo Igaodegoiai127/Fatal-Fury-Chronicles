@@ -215,9 +215,7 @@
     <ClInclude Include="data\scripts\com\host0001.h" />
     <ClInclude Include="data\scripts\com\jump0001.h" />
     <ClInclude Include="data\scripts\com\jump0002.h" />
-    <ClInclude Include="data\scripts\com\key0002.h" />
     <ClInclude Include="data\scripts\com\key0003.h" />
-    <ClInclude Include="data\scripts\com\key0004.h" />
     <ClInclude Include="data\scripts\com\keyd0001.h" />
     <ClInclude Include="data\scripts\com\kill0001.h" />
     <ClInclude Include="data\scripts\com\kill0002.h" />
