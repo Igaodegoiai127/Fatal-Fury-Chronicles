@@ -1,6 +1,5 @@
 #include "data/scripts/vars/anims.h"
 #include "data/scripts/vars/entity.h"
-#include "data/scripts/com/key0002.h"
 #include "data/scripts/com/key0004.h"
 
 void oncreate()
@@ -105,7 +104,7 @@ void main(){
             else if (iAttack)                                                       
             { 
 				// Holding Back?
-                if (key0002(ent, iLeftH, iRightH))                               
+                if (dc_check_key_back(player_index))
                 {   
 					// Set Air back attack. 
 					dc_set_attack(ent, AIRBACK);                                                                              
@@ -192,6 +191,43 @@ void main(){
     }
 }
 
+// Caskey, Damon V.
+// 2018-11-03
+//
+// Return true if current directional key is "back" in relation to entity direction.
+int dc_check_key_back(int player_index)
+{
+
+	void ent;		// Base entity
+	int key_hold;	// Key(s) hold.
+	int direction;	// Current facing.
+
+	// Get base entity.
+	ent = getplayerproperty(player_index, "entity");
+
+	// Get key hold and direction.
+	key_hold	= getplayerproperty(player_index, "keys");
+	direction	= getentityproperty(ent, "direction");
+
+	// Direction and key opposing? Then we return true.
+	if (direction == openborconstant("DIRECTION_LEFT"))
+	{
+		if (key_hold &  openborconstant("FLAG_MOVERIGHT"))
+		{
+			return 1;
+		}
+	}
+	else if (direction == openborconstant("DIRECTION_RIGHT"))
+	{
+		if (key_hold &  openborconstant("FLAG_MOVELEFT"))
+		{
+			return 1;
+		}
+	}
+	
+	// No checks passed, return false.
+	return 0;
+}
 
 // Caskey, Damon V.
 // 2018-11-01
