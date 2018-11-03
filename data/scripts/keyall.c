@@ -64,22 +64,14 @@ void main(){
 	}    
     else if (jumping)
     {
-        /*
-        //Mario style jumpheight control.
-        if (playerkeys(player_index, 2, "jump"))                                        //Jump key release?
-        {
-            iTossV  = getentityproperty(ent, "tossv");                            //Get Y velocity.
-            iXDir   = getentityproperty(ent, "xdir");                             //Get X velocity.
-            iZDir   = getentityproperty(ent, "zdir");                             //Get Z velocity.
-            if (iTossV > 0)                                                         //Not falling already?
-            {			
-                iTossV /= 4;                                                        //Cut Y velcoity to 25%.
-                changeentityproperty(ent, "velocity", iXDir, iZDir, iTossV);      //Apply velocity.
-            }
-        }
-        */
-
+		// Air block.
 		if (dc_command_airblock(player_index))
+		{
+			return;
+		}
+
+		// Air back attack.
+		if(dc_command_air_back_attack(player_index);
 		{
 			return;
 		}
@@ -87,16 +79,9 @@ void main(){
 		// Not attacking?
         if (!attacking)                                                             
         {
-
 			if (player_key_press & openborconstant("FLAG_ATTACK"))                                                       
             { 
-				// Holding Back?
-                if (dc_check_key_back(player_index))
-                {   
-					// Set Air back attack. 
-					dc_set_attack(ent, AIRBACK);                                                                              
-                }
-                else if (player_key_hold = openborconstant("FLAG_MOVEDOWN"))                                                    
+				if (player_key_hold & openborconstant("FLAG_MOVEDOWN"))                                                    
                 {
 					// Not moving horizontally?
                     if (!iXDir)                  
@@ -306,6 +291,59 @@ int dc_command_airblock(int player_index)
 
 	// Clear key flag from key press.
 	key_press -= openborconstant("FLAG_SPECIAL");
+	changeplayerproperty(player_index, "newkeys", key_press);
+
+	// Return true.
+	return 1;
+
+}
+
+// Caskey, Damon  V.
+// 2018-11-03
+//
+// Perform air back attack on command if possible. Return true on success.
+int dc_command_air_back_attack(int player_index)
+{
+	void ent;
+	int key_press;
+	int attacking;
+	
+	// Get base entity.
+	ent = getplayerproperty(player_index, "entity");
+
+	// Verify key press.
+	key_press = getplayerproperty(player_index, "newkeys");
+
+	if (!(key_press & openborconstant("FLAG_ATTACK")))
+	{
+		return 0;
+	}
+
+	// Verify key back.
+	if (!dc_check_key_back(player_index))
+	{
+		return 0;
+	}
+
+	// Can't be attacking.
+	attacking = getentityproperty(ent, "aiflag", "attacking");
+
+	if (attacking)
+	{
+		return 0;
+	}
+
+	// Must have the animation.
+	if (!getentityproperty(ent, "animvalid", AIRBACK))
+	{
+		return 0;
+	}
+
+	// Set the animation.
+	dc_set_animation(ent, AIRBACK);
+
+	// Clear key flag from key press.
+	key_press -= openborconstant("FLAG_ATTACK");
 	changeplayerproperty(player_index, "newkeys", key_press);
 
 	// Return true.
