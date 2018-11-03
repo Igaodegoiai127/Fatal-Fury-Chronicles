@@ -82,7 +82,7 @@ void main(){
 			return;
 		}
     }
-    else if (attacking)                                                             //Attacking?
+    else if (attacking)
     {                
 		// Dodge counter attack.
 		if (dc_command_dodge_attack(player_index))
@@ -90,50 +90,126 @@ void main(){
 			return;
 		}
 
-		iAni = getentityproperty(ent, "animationid");                          //Get current animation.
-		iFrame = getentityproperty(ent, "animpos");                              //Get current frame.
-		
-		if (iAni == openborconstant("ANI_ATTACKUP"))                           //Sidestep up?             
-        {
-            if (player_key_press & openborconstant("FLAG_ATTACK") && !getentityproperty(ent, "zdir") && iFrame > 0)         //Attack press, have stopped moving and not at begining of animation?
-            {
-				dc_player_direction_switch(player_index);
-                
-                if (player_key_hold & openborconstant("FLAG_MOVEUP"))
-                {
-					dc_set_attack(ent, DODATKSU);                                   //Set Short Side Attack Down.                    
-                }
-                else if (player_key_hold & openborconstant("FLAG_MOVEDOWN"))
-                {
-					dc_set_attack(ent, DODATKSD);                                   //Set Short Side Attack Up.
-                }
-                else
-                {
-					dc_set_attack(ent, DODATKU);                                    //Set Side Dodge Up Attack.                                
-                }               
-            }
-        }
-        else if (iAni == openborconstant("ANI_ATTACKDOWN"))                         //Sidestep down?                   
-        {
-            if (player_key_press & openborconstant("FLAG_ATTACK") && !getentityproperty(ent, "zdir") && iFrame > 0)         //Attack press, have stopped moving and not at begining of animation?
-            {
-				dc_player_direction_switch(player_index);
-
-                if (player_key_hold & openborconstant("FLAG_MOVEUP"))
-                {
-					dc_set_attack(ent, DODATKSU);                                   //Set Short Side Attack Down.                    
-                }
-                else if (player_key_hold & openborconstant("FLAG_MOVEDOWN"))
-                {
-					dc_set_attack(ent, DODATKSD);                                   //Set Short Side Attack Up.
-                }
-                else
-                {
-					dc_set_attack(ent, DODATKD);                                    //Set Side Dodge Down Attack.                                
-                }                
-            }
-        }        
+		//  Side step follow up attacks.
+		if (dc_command_sidestep_follow_up(player_index))
+		{
+			return;
+		}
     }
+}
+
+// Caskey, Damon V.
+// 2018-11-03
+//
+// Return true if entity is in last from of a side dodge.
+int dc_check_sidestep_complete(void ent)
+{
+	int animation;
+	int frame;
+	float velocity_z;
+
+	// Must be playing at least one of the side
+	// dodge animations.
+	animation = getentityproperty(ent, "animationid");
+
+	if (animation == openborconstant("ANI_ATTACKDOWN")	||	
+		animation == openborconstant("ANI_ATTACKUP"))
+	{
+		// Nothing, just continue.
+	}
+	else
+	{
+		return 0;
+	}
+
+	// Not on the first frame.
+	frame = getentityproperty(ent, "animpos");
+
+	if (!frame)
+	{
+		return 0;
+	}
+
+	// Not moving along Z axis.
+	velocity_z = getentityproperty(ent, "zdir");
+
+	if (velocity_z)
+	{
+		return 0;
+	}
+
+	// Got this far - we can return true.
+	return 1;
+}
+
+// Caskey, Damon V.
+// 2018-11-03
+//
+// Perform sidestep attacks if available.
+int dc_command_sidestep_follow_up(int player_index)
+{
+	void ent;
+	int key_press;
+	int key_hold;
+	int success; 
+
+	// Get base entity.
+	ent = getplayerproperty(player_index, "entity");
+
+	// Have to be finished with sidestep.
+	if (!dc_check_sidestep_complete(ent))
+	{
+		return 0;
+	}
+
+	// Verify key press.
+	key_press = getplayerproperty(player_index, "newkeys");
+
+	if (!(key_press & openborconstant("FLAG_ATTACK")))
+	{
+		return 0;
+	}
+
+	// Must have the animation.
+	if (!getentityproperty(ent, "animvalid", DODATK))
+	{
+		return 0;
+	}
+
+	// Set the direction.
+	dc_player_direction_switch(player_index);
+
+	//  Perform action based on direction key.
+	key_hold = getplayerproperty(player_index, "keys");
+
+	if (key_hold & openborconstant("FLAG_MOVEUP"))
+	{
+		success = dc_set_attack(ent, DODATKSU);
+	}
+	else if (key_hold & openborconstant("FLAG_MOVEDOWN"))
+	{
+		success = dc_set_attack(ent, DODATKSD);
+	}
+	else
+	{
+		success = dc_set_attack(ent, DODATKD);
+	}
+
+	// If animation set function returned true, then
+	// animation was available and played. Return 
+	// true.
+	if (success)
+	{
+		// Clear key flag from key press.
+		key_press -= openborconstant("FLAG_ATTACK");
+		changeplayerproperty(player_index, "newkeys", key_press);
+
+		// Return true.
+		return 1;
+	}
+
+	return 0;
+	
 }
 
 // Caskey, Damon V.
