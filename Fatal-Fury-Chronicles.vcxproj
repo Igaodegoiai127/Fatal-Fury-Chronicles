@@ -115,6 +115,7 @@
     <ClCompile Include="data\chars\terry\scripts\update.c" />
     <ClCompile Include="data\scripts\blan0001.c" />
     <ClCompile Include="data\scripts\bloc0001.c" />
+    <ClCompile Include="data\scripts\dc_disney\alternate_on_health.c" />
     <ClCompile Include="data\scripts\dc_disney\alternate_on_range.c" />
     <ClCompile Include="data\scripts\dc_disney\main.c" />
     <ClCompile Include="data\scripts\dc_initialize\initialize_level_spawn.c" />
@@ -182,8 +183,6 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="data\scripts\com\ai0001.h" />
-    <ClInclude Include="data\scripts\com\ani0003.h" />
-    <ClInclude Include="data\scripts\com\ani0011.h" />
     <ClInclude Include="data\scripts\com\bind0002.h" />
     <ClInclude Include="data\scripts\com\bind0003.h" />
     <ClInclude Include="data\scripts\com\bind0004.h" />

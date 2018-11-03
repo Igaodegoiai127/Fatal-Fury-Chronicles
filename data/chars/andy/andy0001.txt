@@ -1189,7 +1189,7 @@ anim freespecial9
 	delay	1
 	offset	100 200
 	bbox	75 135 30 65
-	@cmd	ani0003 openborconstant("ANI_FOLLOW8")
+	@cmd	dc_disney_alternate_on_health getlocalvar("self") openborconstant("ANI_FOLLOW8")
 		frame	data/chars/andy/andy0271
 	delay	4
 	@cmd	bind0008 "paus0001" "visual" 12 1 -25 90 -1 1 openborconstant("ANI_FOLLOW3") 0 1
@@ -1496,7 +1496,7 @@ anim freespecial18
 	delay	1
 	offset	100 200
 	bbox	0
-	@cmd	ani0003 openborconstant("ANI_FOLLOW4")
+	@cmd	dc_disney_alternate_on_health getlocalvar("self") openborconstant("ANI_FOLLOW4")
 		frame	data/chars/andy/0_1.png
 	delay	6
 	@cmd	bind0008 "paus0001" "visual" 12 1 -10 80 1 1 openborconstant("ANI_FOLLOW3") 0 1

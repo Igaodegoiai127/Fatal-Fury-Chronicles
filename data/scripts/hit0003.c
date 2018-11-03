@@ -1,5 +1,4 @@
 #include "data/scripts/vars/entity.h"
-#include "data/scripts/com/ani0011.h"
 #include "data/scripts/com/hit0002.h"
 #include "data/scripts/com/host0001.h"
 #include "data/scripts/com/summ0001.h"
