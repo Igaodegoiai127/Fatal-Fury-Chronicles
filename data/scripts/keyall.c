@@ -76,22 +76,11 @@ void main(){
 			return;
 		}
            
-		// Not attacking?
-        if (!attacking)                                                             
-        {
-			if (player_key_press & openborconstant("FLAG_ATTACK"))                                                       
-            { 
-				if (player_key_hold & openborconstant("FLAG_MOVEDOWN"))                                                    
-                {
-					// Not moving horizontally?
-                    if (!iXDir)                  
-                    {
-						// Set Jumpattack 2 alt.
-						dc_set_attack(ent, AIRJ2AL);
-                    }
-                }
-            }
-        }
+		// Alternate drop attack (Attack + down, not moving).
+		if (dc_command_air_alternate_drop_attack(player_index))
+		{
+			return;
+		}
     }
     else if (attacking)                                                             //Attacking?
     {        
@@ -341,6 +330,73 @@ int dc_command_air_back_attack(int player_index)
 
 	// Set the animation.
 	dc_set_animation(ent, AIRBACK);
+
+	// Clear key flag from key press.
+	key_press -= openborconstant("FLAG_ATTACK");
+	changeplayerproperty(player_index, "newkeys", key_press);
+
+	// Return true.
+	return 1;
+
+}
+
+// Caskey, Damon  V.
+// 2018-11-03
+//
+// Perform air alternate drop attack (hold down + attack, when
+// not moving along X axis) on command if possible. 
+// Return true on success.
+int dc_command_air_alternate_drop_attack(int player_index)
+{
+	void ent;
+	int key_press;
+	int key_hold;
+	int attacking;
+	float velocity_x;
+	
+	// Get base entity.
+	ent = getplayerproperty(player_index, "entity");
+
+	// Verify key press.
+	key_press = getplayerproperty(player_index, "newkeys");
+
+	if (!(key_press & openborconstant("FLAG_ATTACK")))
+	{
+		return 0;
+	}
+
+	// Verify key hold.
+	key_hold = getplayerproperty(player_index, "keys");
+
+	if (!(key_hold & openborconstant("FLAG_MOVEDOWN")))
+	{
+		return 0;
+	}
+
+	// Can't be attacking.
+	attacking = getentityproperty(ent, "aiflag", "attacking");
+
+	if (attacking)
+	{
+		return 0;
+	}
+
+	// Can't be moving along X axis.
+	velocity_x = getentityproperty(ent, "xdir");
+
+	if (velocity_x)
+	{
+		return 0;
+	}
+
+	// Must have the animation.
+	if (!getentityproperty(ent, "animvalid", AIRJ2AL))
+	{
+		return 0;
+	}
+
+	// Set the animation.
+	dc_set_animation(ent, AIRJ2AL);
 
 	// Clear key flag from key press.
 	key_press -= openborconstant("FLAG_ATTACK");
