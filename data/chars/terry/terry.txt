@@ -72,7 +72,6 @@ palette	       data/chars/terry/aapa0000		#Default.
 
 #*****Commands*****************************************************************************
 
-com          a2       	freespecial  		#Back dash
 com          f u a    	freespecial2  		#Force plane up.
 com          f d a    	freespecial3  		#Froce plane down.
 com	     d u a    	freespecial4		#Plane attack up.

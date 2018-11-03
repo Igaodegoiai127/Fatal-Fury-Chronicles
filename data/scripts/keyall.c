@@ -27,25 +27,17 @@ void main(){
     Capture keystrokes and perform actions accordingly.
     */
 
-	int     player_index;   // Player index.
-	void    ent;			// Player entity.
-	int     idle;	
-	int		attacking;
-	int		jumping;
-    int     iXDir       = getentityproperty(ent, "xdir");                         //X velocity.
-    int     iAni;                                                                   //Current animation.
-    int     iFrame;                                                                 //Current animation frame.
-    void    target;                                                                // Target entity.    
-
-
-	int		player_key_hold;	// Keys currently held.
+	int     player_index;		// Player index.
+	void    ent;				// Player entity.
+	int     idle;				// AI flag.
+	int		attacking;			// AI flag.
+	int		jumping;			// AI flag.
 	int		player_key_press;	// Key press (triggers the key event).
 
 	// Populate the variables.
 	ent = getplayerproperty(player_index, "entity");                    
 
 	player_index		= getlocalvar("player");
-	player_key_hold		= getplayerproperty(player_index, "keys");
 	player_key_press	= getplayerproperty(player_index, "newkeys");
 
 	// Get AI status flags.
@@ -56,6 +48,13 @@ void main(){
 
 	if (idle)
     {	
+
+		// Backward dash (2x Special)
+		if (dc_command_back_dash(player_index))
+		{
+			return;
+		}
+
 		// Hitting downed enemies.
 		if (dc_try_down_attack(player_index))
 		{
@@ -210,6 +209,68 @@ int dc_command_sidestep_follow_up(int player_index)
 
 	return 0;
 	
+}
+
+// Caskey, Damon V.
+// 2018-11-01
+//
+// Perform backward dash if possible. Return true on success.
+int dc_command_back_dash(int player_index)
+{
+	void ent;		// Base entity.
+	int key_press;	// Key pressed.
+	int key_hold;	// Key(s) hold.
+	void target;	// Target entity.
+	int idle;
+	int time_current;
+	int time_set;
+
+
+	// Get base entity.
+	ent = getplayerproperty(player_index, "entity");
+
+	// Key press must be attack 1.
+	key_press = getplayerproperty(player_index, "newkeys");
+
+	if (!(key_press & openborconstant("FLAG_SPECIAL")))
+	{
+		return 0;
+	}
+
+	// Get time.
+	time_set = getlocalvar(player_index + "_sp");
+
+	//  Get current time.
+	time_current = openborvariant("elapsed_time");
+
+	//  Set tracking var for next cycle.
+	setlocalvar(player_index + "_sp", time_current + 50);
+
+	// Fail on first cycle.
+	if (!time_set)
+	{
+		return;
+	}
+
+	// Last attempt has to be within time of current
+	// attempt.
+	if (time_current > time_set)
+	{
+		return;
+	}
+
+	// If we got this far then we can set a down attack.
+	dc_set_attack(ent, openborconstant("ANI_FREESPECIAL"));
+
+	// Stop moving in case we were walking.
+	changeentityproperty(ent, "velocity", 0, 0, 0);
+
+	// Clear attack flag from key press.
+	key_press -= openborconstant("FLAG_SPECIAL");
+	changeplayerproperty(player_index, "newkeys", key_press);
+
+	// Return true.
+	return 1;
 }
 
 // Caskey, Damon V.
