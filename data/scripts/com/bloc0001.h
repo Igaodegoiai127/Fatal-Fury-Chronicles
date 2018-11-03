@@ -1,7 +1,5 @@
 #include "data/scripts/vars/anims.h"
 #include "data/scripts/vars/entity.h"
-#include "data/scripts/com/ani0009.h"
-#include "data/scripts/com/parr0001.h"
 
 void bloc0001(){
     
@@ -14,8 +12,6 @@ void bloc0001(){
     int  iBase;                                                                             //Attacker base Y.
     int  iBlockAni;                                                                         //Final block animation.
     int  iTime = openborvariant("elapsed_time");                                            //Elapsed game time.
-   
-    if (parr0001(vAttacker, 0)) { return; }
 
     //Fatal Fury style proximity blocking. If entity is blocking (not an attack with autoblock), 
     //switch to the appropriate block animation based on height of incomming attack.
@@ -51,6 +47,9 @@ void bloc0001(){
             }
         }
         
-        ani0009(vSelf, iBlockAni, -1);                                                      //Apply block animation.
+		if (getentityproperty(vSelf, "animvalid", iBlockAni))
+		{
+			changeentityproperty(vSelf, "animation", iBlockAni);
+		}
     }        
 }

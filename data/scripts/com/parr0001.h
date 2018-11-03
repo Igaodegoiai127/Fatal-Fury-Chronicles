@@ -1,6 +1,5 @@
 #include "data/scripts/vars/anims.h"
 #include "data/scripts/vars/entity.h"
-#include "data/scripts/com/ani0009.h"
 
 int parr0001(void vOpp, int iDam){
 

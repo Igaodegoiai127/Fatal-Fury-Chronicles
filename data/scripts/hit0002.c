@@ -1,6 +1,5 @@
 #include "data/scripts/vars/entity.h"
 #include "data/scripts/vars/anims.h"
-#include "data/scripts/com/ani0009.h"
 
 void main(){
     
@@ -44,8 +43,11 @@ void main(){
 	else if (vModel == "scro0001")											//Power up scroll.
 	{
         if (getentityvar(vDefender, STATUS) != 1)
-        {            
-		    ani0009(vDefender, POWUP, 1);									//Set power up animation.
+        {
+			if (getentityproperty(vDefender, "animvalid", POWUP))
+			{
+				changeentityproperty(vDefender, "animation", POWUP);
+			}
         }
 	}
 }
