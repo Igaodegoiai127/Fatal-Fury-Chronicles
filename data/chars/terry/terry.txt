@@ -289,7 +289,7 @@ anim attack1
 	delay	4
 	offset	70 158
 	bbox 	50 60 45 105
-	@cmd	ani0010 openborconstant("ANI_FOLLOW1") 0
+	@cmd	dc_disney_alternate_on_range getlocalvar("self") openborconstant("ANI_FOLLOW1")
 		frame	data/chars/terry/terr0040
 		frame	data/chars/terry/terr0055
 	attack	95 70 60 20 6 0 0 0 10
