@@ -1,5 +1,4 @@
 #include "data/scripts/vars/entity.h"
-#include "data/scripts/com/key0003.h"
 
 //Andy Bogard key key capture.
 
