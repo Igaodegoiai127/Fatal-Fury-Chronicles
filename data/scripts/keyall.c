@@ -83,34 +83,17 @@ void main(){
 		}
     }
     else if (attacking)                                                             //Attacking?
-    {        
-        iAni    = getentityproperty(ent, "animationid");                          //Get current animation.
-        iFrame  = getentityproperty(ent, "animpos");                              //Get current frame.
-        
-        if (iAni == openborconstant("ANI_SPECIAL"))                                 //Special (dodge) animation?             
-        {
-            if (player_key_press & openborconstant("FLAG_ATTACK"))
-            {
-				
-				dc_player_direction_switch(player_index);
-				dc_set_attack(ent, DODATK);                                         //Set Dodge Attack.                
-                changeplayerproperty(ent, "playkeys", 0);                         //Clear key event.                
-            }
-            else if (player_key_press & openborconstant("FLAG_MOVEUP"))
-            {
-				dc_player_direction_switch(player_index);
-				dc_set_attack(ent, ent, openborconstant("ANI_ATTACKUP"));         //Set Dodge Up.
-                changeplayerproperty(ent, "playkeys", 0);                         //Clear key event.
-            }
-            else if (player_key_press & openborconstant("FLAG_MOVEDOWN"))
-            {
-				dc_player_direction_switch(player_index);
-				dc_set_attack(ent, openborconstant("ANI_ATTACKDOWN"));              //Set Dodge Down.
-				changeplayerproperty(ent, "playkeys", 0);                         //Clear key event.
-                
-            }
-        }
-        else if (iAni == openborconstant("ANI_ATTACKUP"))                           //Sidestep up?             
+    {                
+		// Dodge counter attack.
+		if (dc_command_dodge_attack(player_index))
+		{
+			return;
+		}
+
+		iAni = getentityproperty(ent, "animationid");                          //Get current animation.
+		iFrame = getentityproperty(ent, "animpos");                              //Get current frame.
+		
+		if (iAni == openborconstant("ANI_ATTACKUP"))                           //Sidestep up?             
         {
             if (player_key_press & openborconstant("FLAG_ATTACK") && !getentityproperty(ent, "zdir") && iFrame > 0)         //Attack press, have stopped moving and not at begining of animation?
             {
@@ -345,7 +328,7 @@ int dc_command_air_back_attack(int player_index)
 //
 // Perform air alternate drop attack (hold down + attack, when
 // not moving along X axis) on command if possible. 
-// Return true on success.
+// Return true on c.
 int dc_command_air_alternate_drop_attack(int player_index)
 {
 	void ent;
@@ -397,6 +380,54 @@ int dc_command_air_alternate_drop_attack(int player_index)
 
 	// Set the animation.
 	dc_set_animation(ent, AIRJ2AL);
+
+	// Clear key flag from key press.
+	key_press -= openborconstant("FLAG_ATTACK");
+	changeplayerproperty(player_index, "newkeys", key_press);
+
+	// Return true.
+	return 1;
+
+}
+
+// Caskey, Damon  V.
+// 2018-11-03
+//
+// Perform attack out of dodge while changing direction
+// accoring to player command. Return true on success.
+int dc_command_dodge_attack(int player_index)
+{
+	void ent;
+	int key_press;
+	int animation;
+
+	// Get base entity.
+	ent = getplayerproperty(player_index, "entity");
+
+	animation = getentityproperty(ent, "animationid");
+
+	if (animation != openborconstant("ANI_SPECIAL"))
+	{
+		return 0;
+	}
+
+	// Verify key press.
+	key_press = getplayerproperty(player_index, "newkeys");
+
+	if (!(key_press & openborconstant("FLAG_ATTACK")))
+	{
+		return 0;
+	}
+
+	// Must have the animation.
+	if (!getentityproperty(ent, "animvalid", DODATK))
+	{
+		return 0;
+	}
+
+	// Set the direction and animation.
+	dc_player_direction_switch(player_index);
+	dc_set_attack(ent, DODATK);
 
 	// Clear key flag from key press.
 	key_press -= openborconstant("FLAG_ATTACK");
