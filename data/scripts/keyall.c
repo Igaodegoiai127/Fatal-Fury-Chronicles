@@ -35,13 +35,6 @@ void main(){
 	int		jumping;
     int     iUpH        = playerkeys(player_index, 0, "moveup");                        //Hold  "Up".
     int     iDownH      = playerkeys(player_index, 0, "movedown");                      //Hold  "Down".
-    int     iLeftH      = playerkeys(player_index, 0, "moveleft");                      //Hold  "Left".
-    int     iRightH     = playerkeys(player_index, 0, "moveright");                     //Hold  "Right".
-    int     iRight      = playerkeys(player_index, 1, "moveright");                     //Press "Right".
-    int     iRightR     = playerkeys(player_index, 2, "moveright");                     //Release "Right".
-    int     iUp         = playerkeys(player_index, 1, "moveup");                        //Press "Up".
-    int     iDown       = playerkeys(player_index, 1, "movedown");                      //Press "Down".
-    int     iSpecial    = playerkeys(player_index, 1, "Special");                       //Press "Special".
     int     iAttack     = playerkeys(player_index, 1, "attack");                        //Press "Attack".
     int     iAttack3    = playerkeys(player_index, 1, "attack3");                       //Press "Attack3". 
     int     iAttack4    = playerkeys(player_index, 1, "attack4");                       //Press "Attack4".    
@@ -97,7 +90,7 @@ void main(){
         {
 
 			// Check keys.
-            if (iSpecial)                                                           
+            if (player_key_press & openborconstant("FLAG_SPECIAL"))
             {
 				dc_set_animation(ent, AIRBLOCK);
             }
@@ -130,19 +123,20 @@ void main(){
         {
             if (iAttack)
             {
-                key0004(ent, iLeftH, iRightH);                                    //Change direction?
+				
+				dc_player_direction_switch(player_index);
 				dc_set_attack(ent, DODATK);                                         //Set Dodge Attack.                
                 changeplayerproperty(ent, "playkeys", 0);                         //Clear key event.                
             }
-            else if (iUp)
+            else if (player_key_press & openborconstant("FLAG_MOVEUP"))
             {
-                key0004(ent, iLeftH, iRightH);                                    //Change direction?
+				dc_player_direction_switch(player_index);
 				dc_set_attack(ent, ent, openborconstant("ANI_ATTACKUP"));         //Set Dodge Up.
                 changeplayerproperty(ent, "playkeys", 0);                         //Clear key event.
             }
-            else if (iDown)
+            else if (player_key_press & openborconstant("FLAG_MOVEDOWN"))
             {
-                key0004(ent, iLeftH, iRightH);                                    //Change direction?
+				dc_player_direction_switch(player_index);
 				dc_set_attack(ent, openborconstant("ANI_ATTACKDOWN"));              //Set Dodge Down.
 				changeplayerproperty(ent, "playkeys", 0);                         //Clear key event.
                 
@@ -152,7 +146,7 @@ void main(){
         {
             if (iAttack && !getentityproperty(ent, "zdir") && iFrame > 0)         //Attack press, have stopped moving and not at begining of animation?
             {
-                key0004(ent, iLeftH, iRightH);                                    //Change direction?
+				dc_player_direction_switch(player_index);
                 
                 if (iUpH)
                 {
@@ -172,7 +166,7 @@ void main(){
         {
             if (iAttack && !getentityproperty(ent, "zdir") && iFrame > 0)         //Attack press, have stopped moving and not at begining of animation?
             {
-                key0004(ent, iLeftH, iRightH);                                    //Change direction?
+				dc_player_direction_switch(player_index);
 
                 if (iUpH)
                 {
@@ -189,6 +183,46 @@ void main(){
             }
         }        
     }
+}
+
+// Caskey, Damon V.
+// 2018-11-03
+//
+// Turn player entity around if player holds opposite direction key
+// to entity's facing.
+void dc_player_direction_switch(int player_index)
+{
+	void ent;			// Base entity
+	int direction;		// Entity direction.
+	int opposite_key;	// Player key command vs. entity direction.
+
+	// If player isn't holding opposite key, then we don't 
+	// care about anything else.
+	opposite_key = dc_check_key_back(player_index);
+	
+	if (!opposite_key)
+	{
+		return;
+	}
+
+	// We got this far, so let's turn the entity around.
+
+	// Get base entity and direction.
+	ent			= getplayerproperty(player_index, "entity");
+	direction	= getentityproperty(ent, "direction");
+
+	// Update direction variable as nessesaary.
+	if (direction == openborconstant("DIRECTION_LEFT"))
+	{
+		direction = openborconstant("DIRECTION_RIGHT");
+	}
+	else if (direction == openborconstant("DIRECTION_RIGHT"))
+	{
+		direction = openborconstant("DIRECTION_LEFT");
+	}
+
+	// Apply updated direction to entity.
+	changeentityproperty(ent, "direction", direction);
 }
 
 // Caskey, Damon V.
