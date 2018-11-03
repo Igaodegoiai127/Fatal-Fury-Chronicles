@@ -1,6 +1,5 @@
 #include "data/scripts/vars/anims.h"
 #include "data/scripts/vars/entity.h"
-#include "data/scripts/com/key0004.h"
 
 void oncreate()
 {
