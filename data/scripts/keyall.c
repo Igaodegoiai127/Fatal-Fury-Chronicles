@@ -32,10 +32,7 @@ void main(){
 	int     idle;	
 	int		attacking;
 	int		jumping;
-    int     iAttack     = playerkeys(player_index, 1, "attack");                        //Press "Attack".
-    int     iAttack3    = playerkeys(player_index, 1, "attack3");                       //Press "Attack3". 
-    int     iAttack4    = playerkeys(player_index, 1, "attack4");                       //Press "Attack4".    
-	int     iXDir       = getentityproperty(ent, "xdir");                         //X velocity.
+    int     iXDir       = getentityproperty(ent, "xdir");                         //X velocity.
     int     iAni;                                                                   //Current animation.
     int     iFrame;                                                                 //Current animation frame.
     void    target;                                                                // Target entity.    
@@ -91,7 +88,7 @@ void main(){
             {
 				dc_set_animation(ent, AIRBLOCK);
             }
-            else if (iAttack)                                                       
+            else if (player_key_press & openborconstant("FLAG_ATTACK"))                                                       
             { 
 				// Holding Back?
                 if (dc_check_key_back(player_index))
@@ -118,7 +115,7 @@ void main(){
         
         if (iAni == openborconstant("ANI_SPECIAL"))                                 //Special (dodge) animation?             
         {
-            if (iAttack)
+            if (player_key_press & openborconstant("FLAG_ATTACK"))
             {
 				
 				dc_player_direction_switch(player_index);
@@ -141,7 +138,7 @@ void main(){
         }
         else if (iAni == openborconstant("ANI_ATTACKUP"))                           //Sidestep up?             
         {
-            if (iAttack && !getentityproperty(ent, "zdir") && iFrame > 0)         //Attack press, have stopped moving and not at begining of animation?
+            if (player_key_press & openborconstant("FLAG_ATTACK") && !getentityproperty(ent, "zdir") && iFrame > 0)         //Attack press, have stopped moving and not at begining of animation?
             {
 				dc_player_direction_switch(player_index);
                 
@@ -161,7 +158,7 @@ void main(){
         }
         else if (iAni == openborconstant("ANI_ATTACKDOWN"))                         //Sidestep down?                   
         {
-            if (iAttack && !getentityproperty(ent, "zdir") && iFrame > 0)         //Attack press, have stopped moving and not at begining of animation?
+            if (player_key_press & openborconstant("FLAG_ATTACK") && !getentityproperty(ent, "zdir") && iFrame > 0)         //Attack press, have stopped moving and not at begining of animation?
             {
 				dc_player_direction_switch(player_index);
 
