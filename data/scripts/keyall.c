@@ -32,14 +32,12 @@ void main(){
 	int     idle;				// AI flag.
 	int		attacking;			// AI flag.
 	int		jumping;			// AI flag.
-	int		player_key_press;	// Key press (triggers the key event).
-
+	
 	// Populate the variables.
 	ent = getplayerproperty(player_index, "entity");                    
 
 	player_index		= getlocalvar("player");
-	player_key_press	= getplayerproperty(player_index, "newkeys");
-
+	
 	// Get AI status flags.
 	idle		= getentityproperty(ent, "aiflag", "idling");    
 	attacking	= getentityproperty(ent, "aiflag", "attacking");
