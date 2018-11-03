@@ -21,12 +21,6 @@ void ondestroy()
 
 void main(){
     
-	/*
-    Damon Vaughn Caskey
-    06/25/2007
-    Capture keystrokes and perform actions accordingly.
-    */
-
 	int     player_index;		// Player index.
 	void    ent;				// Player entity.
 	int     idle;				// AI flag.
@@ -44,9 +38,9 @@ void main(){
 	jumping		= getentityproperty(ent, "aiflag", "jumping");    
 
 
+	// Run different action attempts based on basic entity state.
 	if (idle)
-    {	
-
+    {
 		// Backward dash (2x Special)
 		if (dc_command_back_dash(player_index))
 		{
