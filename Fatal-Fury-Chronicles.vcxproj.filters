@@ -8680,6 +8680,7 @@
     <Text Include="logs\OpenBorLog.txt" />
     <Text Include="logs\ScriptLog.txt" />
     <Text Include="data\chars\misc\dust\flash_fall_land.txt" />
+    <Text Include="data\menu.txt" />
   </ItemGroup>
   <ItemGroup>
     <None Include="data\chars\andy\wild-ambition-front-throw.psd" />

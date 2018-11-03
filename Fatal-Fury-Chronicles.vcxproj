@@ -3020,6 +3020,7 @@
     <Text Include="data\levels\subw0001.txt" />
     <Text Include="data\levels\void0001.txt" />
     <Text Include="data\lifebar.txt" />
+    <Text Include="data\menu.txt" />
     <Text Include="data\models.txt" />
     <Text Include="data\script.txt" />
     <Text Include="data\video.txt" />
