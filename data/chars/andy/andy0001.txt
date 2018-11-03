@@ -95,7 +95,7 @@ anim spawn
 		frame	data/chars/andy/andy0092
 		frame	data/chars/andy/andy0093
 		frame	data/chars/andy/andy0094
-	#@cmd 	soun0001 "vand0016.wav"
+	##cmd stereo_sound_command_here "vand0016.wav"
 		frame	data/chars/andy/andy0095
 		frame	data/chars/andy/andy0096
 		frame	data/chars/andy/andy0097
@@ -435,7 +435,7 @@ anim charge
 	offset	100 200
 	bbox	75 110 35 90
 		frame	data/chars/andy/andy0339
-	@cmd	soun0001 "vand0018.wav"
+	#cmd stereo_sound_command_here "vand 0018.wav"
 		frame	data/chars/andy/andy0060
 		frame	data/chars/andy/andy0081
 		frame	data/chars/andy/andy0082
@@ -500,7 +500,7 @@ anim attack1
 	delay	6
 	offset	100 200
 	bbox	75 110 35 90
-	@cmd 	soun0001 "vand0008.wav"
+	#cmd stereo_sound_command_here "vand0008.wav"
 		frame	data/chars/andy/7_0.png
 	attack  100 120 55 20 5
 		frame	data/chars/andy/7_1.png
@@ -519,7 +519,7 @@ anim attack2
 	delay	7
 	offset	100 200
 	bbox	75 110 35 90
-	@cmd 	soun0001 "vand0003.wav"
+	#cmd stereo_sound_command_here "vand0003.wav"
 		frame	data/chars/andy/12_0.png
 	attack  100 120 55 20 8 0 0 0 10
 		frame	data/chars/andy/12_1.png
@@ -536,7 +536,7 @@ anim attack3
 	delay	6
 	offset	100 200
 	bbox	75 110 35 90
-	@cmd 	soun0001 "vand0001.wav"
+	#cmd stereo_sound_command_here "vand0001.wav"
 		frame	data/chars/andy/10_0.png
 		frame	data/chars/andy/10_1.png
 	delay	3
@@ -563,7 +563,7 @@ anim attack4
 	delay	7
 	offset	100 200
 	bbox	75 110 35 90
-	@cmd 	soun0001 "vand0008.wav"
+	#cmd stereo_sound_command_here "vand0008.wav"
 		frame	data/chars/andy/andy0057
 		frame	data/chars/andy/14_1.png
 	attack	100 55 65 55 12 1 0 0 10
@@ -587,7 +587,7 @@ anim attack5
 	delay	4
 	offset	100 200
 	bbox	75 110 35 90
-	@cmd 	soun0001 "vand0001.wav"
+	#cmd stereo_sound_command_here "vand0001.wav"
 		frame	data/chars/andy/8_0.png
 		frame	data/chars/andy/8_1.png
 		frame	data/chars/andy/8_2.png
@@ -609,7 +609,7 @@ anim attack6
 	delay	5
 	offset	100 200
 	bbox	75 110 35 90
-	@cmd 	soun0001 "vand0008.wav"
+	#cmd stereo_sound_command_here "vand0008.wav"
 	move	-5
 		frame	data/chars/andy/11_0.png
 	move	0
@@ -631,7 +631,7 @@ anim attack7
 	delay	7
 	offset	100 200
 	bbox	75 110 35 90
-	@cmd 	soun0001 "vand0001.wav"
+	#cmd stereo_sound_command_here "vand0001.wav"
 	move	10
 		frame	data/chars/andy/andy0104
 	move	0
@@ -668,7 +668,7 @@ anim chargeattack
 	offset	100 200
 	bbox	75 110 35 90
 		frame	data/chars/andy/15_0.png
-	@cmd 	soun0001 "vand0002.wav"
+	#cmd stereo_sound_command_here "vand0002.wav"
 		frame	data/chars/andy/15_1.png
 		frame	data/chars/andy/15_2.png
 		frame	data/chars/andy/15_3.png
@@ -692,7 +692,7 @@ anim runattack
 	delay	8
 	offset	100 200
 	bbox	75 110 35 90
-	@cmd 	soun0001 "vand0001.wav"
+	#cmd stereo_sound_command_here "vand0001.wav"
 		frame	data/chars/andy/9_0.png
 		frame	data/chars/andy/9_1.png
 	attack  140 125 60 20 12 1 0 0 15
@@ -721,7 +721,7 @@ anim attackbackward
 	offset	100 200
 	bbox	75 135 30 65
 		frame	data/chars/andy/3_0.png
-	@cmd 	soun0001 "vand0002.wav"
+	#cmd stereo_sound_command_here "vand0002.wav"
 		frame	data/chars/andy/3_1.png
 	move	-20
 		frame	data/chars/andy/19_0.png
@@ -754,7 +754,7 @@ anim attackup
 		frame	data/chars/andy/3_0.png
 	delay	-1
 	bbox	75 135 30 65
-	@cmd 	soun0001 "vand0008.wav"
+	#cmd stereo_sound_command_here "vand0008.wav"
 		frame	data/chars/andy/andy0051
 	delay	10
 		frame	data/chars/andy/3_0.png
@@ -772,7 +772,7 @@ anim attackdown
 		frame	data/chars/andy/3_0.png
 	delay	-1
 	bbox	75 135 30 65
-	@cmd 	soun0001 "vand0008.wav"
+	#cmd stereo_sound_command_here "vand0008.wav"
 		frame	data/chars/andy/andy0051
 	delay	10
 		frame	data/chars/andy/3_0.png
@@ -788,7 +788,7 @@ anim riseattack
 	bbox	0
 		frame	data/chars/andy/andy0251
 	move	-25
-	@cmd 	soun0001 "vand0008.wav"
+	#cmd stereo_sound_command_here "vand0008.wav"
 		frame	data/chars/andy/andy0241
 	move	-20
 		frame	data/chars/andy/21_1.png
@@ -808,7 +808,7 @@ anim cant
 	delay	6
 	offset 100 200
 	bbox	75 110 35 90
-	@cmd 	soun0001 "vand0004.wav"
+	#cmd stereo_sound_command_here "vand0004.wav"
 		frame	data/chars/andy/0_7.png
 		frame	data/chars/andy/0_8.png
 		frame	data/chars/andy/andy0058
@@ -855,7 +855,7 @@ anim special2
 	move	20
 		frame	data/chars/andy/21_1.png
 	move	0
-	@cmd 	soun0001 "vand0008.wav"
+	#cmd stereo_sound_command_here "vand0008.wav"
 		frame	data/chars/andy/21_1.png
 	move	20
 		frame	data/chars/andy/21_2.png
@@ -915,7 +915,7 @@ anim freespecial2
 	delay	8
 	offset	100 200
 	bbox	75 110 35 90
-	@cmd 	soun0001 "vand0001.wav"
+	#cmd stereo_sound_command_here "vand0001.wav"
 		frame	data/chars/andy/20_0.png
 		frame	data/chars/andy/20_1.png
 	delay	6
@@ -948,7 +948,7 @@ anim freespecial3
 	bbox	95 95 35 60
 		frame	data/chars/andy/20_1.png
 	delay	10
-	@cmd 	soun0001 "vand0008.wav"
+	#cmd stereo_sound_command_here "vand0008.wav"
 	move	10
 		frame	data/chars/andy/andy0170
 	move	-10
@@ -984,7 +984,7 @@ anim freespecial4
 		frame	data/chars/andy/3_0.png
 		frame	data/chars/andy/andy0501
 	bbox	95 95 35 60
-	@cmd 	soun0001 "vand0001.wav"
+	#cmd stereo_sound_command_here "vand0001.wav"
 		frame	data/chars/andy/andy0502
 		frame	data/chars/andy/andy0503
 	delay	-100
@@ -1013,7 +1013,7 @@ anim freespecial5
 		frame	data/chars/andy/3_0.png
 		frame 	data/chars/andy/andy0494
 	bbox	95 95 35 60
-	@cmd 	soun0001 "vand0001.wav"
+	#cmd stereo_sound_command_here "vand0001.wav"
 		frame	data/chars/andy/andy0042
 		frame	data/chars/andy/andy0495
 		frame	data/chars/andy/andy0496
@@ -1038,12 +1038,12 @@ anim freespecial6
 	delay	4
 	offset  100 200
 	bbox	75 135 30 65
-	@cmd 	soun0001 "vand0009.wav"					#Voice effect.
+	#cmd stereo_sound_command_here "vand0009.wav"					#Voice effect.
 		frame	data/chars/andy/andy0212
 	delay	10
 		frame	data/chars/andy/andy0213
 	delay	3
-	@cmd 	soun0001 "sand0001.wav"					#Sound effect.
+	#cmd stereo_sound_command_here "sand0001.wav"					#Sound effect.
 		frame	data/chars/andy/andy0214
 	@cmd	proj0002 "proj0001" 11 1 70 50 1 1 4 4 4 1 1 0 1000 15 -1 -1 0 0 0 0 25 0 -1 1 3.8 1.8 0 1 0 0 0 0
 	delay	8
@@ -1071,9 +1071,9 @@ anim freespecial7
 	offset  100 200
 	bbox	75 135 30 65
 		frame	data/chars/andy/andy0212
-	@cmd 	soun0001 "vand0010.wav"					#Voice effect.
+	#cmd stereo_sound_command_here "vand0010.wav"					#Voice effect.
 		frame	data/chars/andy/andy0213
-	@cmd 	soun0001 "sand0001.wav"					#Sound effect.
+	#cmd stereo_sound_command_here "sand0001.wav"					#Sound effect.
 		frame	data/chars/andy/andy0221
 		frame	data/chars/andy/andy0222
 	@cmd	proj0002 "andybe" 3 1 85 30 1 1 openborconstant("BINDING_MATCHING_ANIMATION_REMOVE") 0 0 1 1 0 1000 15 -1 -1 0 0 0 1 4 0 -1 0 2 3 0 1 0 0 0 0
@@ -1085,9 +1085,9 @@ anim freespecial7
 		frame	data/chars/andy/andy0227
 		frame	data/chars/andy/andy0228
 		frame	data/chars/andy/andy0229
-	@cmd 	soun0001 "sand0002.wav"					#Sound effect.
+	#cmd stereo_sound_command_here "sand0002.wav"					#Sound effect.
 		frame	data/chars/andy/andy0230
-	@cmd 	soun0001 "vand0011.wav"					#Voice effect.
+	#cmd stereo_sound_command_here "vand0011.wav"					#Voice effect.
 		frame	data/chars/andy/andy0231
 		frame	data/chars/andy/andy0232
 		frame	data/chars/andy/andy0233
@@ -1131,10 +1131,10 @@ anim freespecial8
 	bbox	75 110 35 90
 		frame	data/chars/andy/andy0202
 	move	-10
-	@cmd 	soun0001 "vand0012.wav"					#Voice effect.
+	#cmd stereo_sound_command_here "vand0012.wav"					#Voice effect.
 		frame	data/chars/andy/andy0203
 	move	20
-	@cmd	soun0001 "sand0003.wav"
+	#cmd stereo_sound_command_here "sand0003.wav"
 		frame	data/chars/andy/andy0241
 	move	0
 	delay	7
@@ -1195,7 +1195,7 @@ anim freespecial9
 	@cmd	bind0008 "paus0001" "visual" 12 1 -25 90 -1 1 openborconstant("ANI_FOLLOW3") 0 1
 		frame	data/chars/andy/andy0271
 		frame	data/chars/andy/andy0272
-	@cmd	soun0001 "sand0003.wav"
+	#cmd stereo_sound_command_here "sand0003.wav"
 		frame	data/chars/andy/andy0273
 	attack	75 135 30 65 0
 	grabin	1 25
@@ -1225,7 +1225,7 @@ anim freespecial10
 	offset	100 200
 	bbox	0
 		frame	data/chars/andy/3_0.png
-	@cmd 	soun0001 "vand0013.wav"
+	#cmd stereo_sound_command_here "vand0013.wav"
 		frame	data/chars/andy/andy0252
 		frame	data/chars/andy/andy0253
 	@cmd    hit0001 10 1 -1 -0.5 4 0 1 1 35 25 0 2 0
@@ -1234,7 +1234,7 @@ anim freespecial10
 	attack	0
 		frame	data/chars/andy/andy0255
 	delay	4
-	@cmd	soun0001 "sand0003.wav"
+	#cmd stereo_sound_command_here "sand0003.wav"
 	attack	65 100 95 35 0 0 0 0 15
 	@cmd    hit0001 5 1 -1 -0.5 3 0 1 1 35 25 0 2 0
 	@cmd	bind0003 "andybe" "andybe" 2 1 15 60 1 1 5
@@ -1300,9 +1300,9 @@ anim freespecial12
 	offset	100 200
 	bbox	75 135 30 65
 		frame	data/chars/andy/andy0271
-	@cmd 	soun0001 "vand0014.wav"
+	#cmd stereo_sound_command_here "vand0014.wav"
 		frame	data/chars/andy/andy0272
-	@cmd	soun0001 "sand0003.wav"
+	#cmd stereo_sound_command_here "sand0003.wav"
 		frame	data/chars/andy/andy0273
 	attack	75 135 30 65 25
 	delay	20
@@ -1324,7 +1324,7 @@ anim freespecial13
 	delay	5
 	offset	100 200
 	bbox	75 110 35 90
-	@cmd 	soun0001 "vand0002.wav"					#Voice effect.
+	#cmd stereo_sound_command_here "vand0002.wav"					#Voice effect.
 		frame	data/chars/andy/andy0278
 		frame	data/chars/andy/andy0279
 		frame	data/chars/andy/andy0280
@@ -1359,12 +1359,12 @@ anim freespecial14
 	#end_script
 		frame	data/chars/andy/andy0285
 		frame	data/chars/andy/andy0286
-	@cmd 	soun0001 "vand0008.wav"										#Voice effect.
+	#cmd stereo_sound_command_here "vand0008.wav"										#Voice effect.
 		frame	data/chars/andy/andy0287
 	attack  75 180 75 30 10
 	delay	-100
 	attack	100 100 35 50 20 0 0 0 20
-	@cmd	soun0001 "sand0003.wav"
+	#cmd stereo_sound_command_here "sand0003.wav"
 	@cmd	velo0001 4 0 -4											#Dive.
 		frame	data/chars/andy/andy0288
 	delay	6
@@ -1390,7 +1390,7 @@ anim freespecial15
 	delay	3
 	offset	100 200
 	bbox	75 110 35 90
-	@cmd 	soun0001 "vand0002.wav"
+	#cmd stereo_sound_command_here "vand0002.wav"
 		frame	data/chars/andy/andy0293
 		frame	data/chars/andy/andy0294
 		frame	data/chars/andy/andy0295
@@ -1428,7 +1428,7 @@ anim freespecial16
 	delay	6
 	offset	100 200
 	bbox	75 110 35 90
-	@cmd 	soun0001 "vand0002.wav"
+	#cmd stereo_sound_command_here "vand0002.wav"
 		frame	data/chars/andy/andy0310
 		frame	data/chars/andy/andy0311
 		frame	data/chars/andy/andy0312
@@ -1462,9 +1462,9 @@ anim freespecial17
 	bbox	75 135 30 65
 		frame	data/chars/andy/andy0449
 		frame	data/chars/andy/andy0450
-	@cmd	soun0001 "vand0015.wav"
+	#cmd stereo_sound_command_here "vand 0015.wav"
 		frame	data/chars/andy/andy0211
-	@cmd	soun0001 "sand0007.wav"
+	#cmd stereo_sound_command_here "sand0007.wav"
 	burn	95 95 60 85 20 2 0 0 10
 	dropv   5 -1 0
 	@cmd	bind0009 "effe0001" "effe0001" 2 1 30 135 1 1 openborconstant("ANI_FOLLOW8") 0 1 1 1 0 0 0 0 -180 0
@@ -1501,12 +1501,12 @@ anim freespecial18
 	delay	6
 	@cmd	bind0008 "paus0001" "visual" 12 1 -10 80 1 1 openborconstant("ANI_FOLLOW3") 0 1
 		frame	data/chars/andy/3_0.png
-	@cmd 	soun0001 "vand0020.wav"					#Voice effect.
+	#cmd stereo_sound_command_here "vand0020.wav"					#Voice effect.
 		frame	data/chars/andy/andy0202
 	move	-10
 		frame	data/chars/andy/andy0203
 	move	20
-	@cmd	soun0001 "sand0003.wav"					#Sound effect.
+	#cmd stereo_sound_command_here "sand0003.wav"					#Sound effect.
 		frame	data/chars/andy/andy0241
 	move	0
 	delay	7
@@ -1519,12 +1519,12 @@ anim freespecial18
 		frame	data/chars/andy/andy0242
 	delay	6
 	attack	90 100 80 85 9 0 0 0 15
-	@cmd	soun0001 "sand0007.wav"
+	#cmd stereo_sound_command_here "sand0007.wav"
 	@cmd	bind0009 "effe0001" "visual" 13 1 15 50 0 1 openborconstant("ANI_FOLLOW11") 0 1 1 1 0 0 0 0 -90 0
 		frame	data/chars/andy/andy0243
 	delay	1
 	attack	0
-	@cmd	soun0001 "sand0008.wav"
+	#cmd stereo_sound_command_here "sand0008.wav"
 	@cmd	bind0003 "andybe" "visual2" 3 1 1 1 1 1 6
 		frame	data/chars/andy/andy0243
 	delay	3
@@ -1589,10 +1589,10 @@ anim freespecial19
 	delay	12
 	offset	100 200
 	bbox	75 135 30 65
-	@cmd	soun0001 "vand0003.wav"
+	#cmd stereo_sound_command_here "vand 0003.wav"
 		frame	data/chars/andy/andy0252
 		frame	data/chars/andy/andy0253
-	@cmd	soun0001 "vand0046.wav"
+	#cmd stereo_sound_command_here "vand 0046.wav"
 		frame	data/chars/andy/6_0.png
 	offset	100 180
 		frame	data/chars/andy/andy0047
@@ -1684,7 +1684,7 @@ anim freespecial40
 	offset	100 200
 	bbox	75 135 30 65
 		frame	data/chars/andy/16_0.png
-	@cmd	soun0001 "vand0003.wav"
+	#cmd stereo_sound_command_here "vand 0003.wav"
 	attack	100 135 50 25 3 0 0 0 10
 		frame	data/chars/andy/16_1.png
 	attack	0
@@ -1705,7 +1705,7 @@ anim freespecial41
 	delay	10
 	offset	100 200
 	bbox	75 135 30 65
-	@cmd	soun0001 "vand0002.wav"
+	#cmd stereo_sound_command_here "vand 0002.wav"
 		frame	data/chars/andy/andy0498
 	attack	100 140 85 15 20 2 0 0 15
 		frame	data/chars/andy/andy0499
@@ -1729,7 +1729,7 @@ anim freespecial42
 	delay	6
 	offset	100 200
 	bbox	75 135 30 65
-	@cmd	soun0001 "vand0001.wav"
+	#cmd stereo_sound_command_here "vand 0001.wav"
 		frame	data/chars/andy/18_0.png
 	attack	85 175 70 20 3 0 0 0 10
 		frame	data/chars/andy/18_1.png
@@ -1750,7 +1750,7 @@ anim freespecial43
 	delay	8
 	offset	100 200
 	bbox	75 135 30 65
-	@cmd	soun0001 "vand0002.wav"
+	#cmd stereo_sound_command_here "vand 0002.wav"
 		frame	data/chars/andy/17_0.png
 		frame	data/chars/andy/17_1.png
 	attack	100 135 60 25 6 1 0 0 10
@@ -1824,12 +1824,12 @@ anim follow4
 	bbox	0
 	@cmd	bind0008 "paus0001" "visual" 12 1 -10 80 1 1 openborconstant("ANI_FOLLOW5") 0 1
 		frame	data/chars/andy/3_0.png
-	@cmd 	soun0001 "vand0020.wav"					#Voice effect.
+	#cmd stereo_sound_command_here "vand0020.wav"					#Voice effect.
 		frame	data/chars/andy/andy0202
 	move	-10
 		frame	data/chars/andy/andy0203
 	move	20
-	@cmd	soun0001 "sand0003.wav"					#Sound effect.
+	#cmd stereo_sound_command_here "sand0003.wav"					#Sound effect.
 		frame	data/chars/andy/andy0241
 	move	0
 	delay	7
@@ -1843,12 +1843,12 @@ anim follow4
 		frame	data/chars/andy/andy0242
 	delay	6
 	attack	90 100 80 85 0 1 0 0 5
-	@cmd	soun0001 "sand0007.wav"
+	#cmd stereo_sound_command_here "sand0007.wav"
 	@cmd	bind0009 "effe0001" "visual" 13 1 15 50 0 1 openborconstant("ANI_FOLLOW11") 0 1 1 1 0 0 0 0 -90 0
 		frame	data/chars/andy/andy0243
 	delay	1
 	attack	0
-	@cmd	soun0001 "sand0008.wav"
+	#cmd stereo_sound_command_here "sand0008.wav"
 	@cmd	bind0003 "andybe" "visual2" 3 1 1 1 1 1 6
 		frame	data/chars/andy/andy0243
 	delay	3
@@ -1931,7 +1931,7 @@ anim follow5
 		frame	data/chars/andy/andy0166
 	delay	20
 	@cmd	bind0010 1 15 0 -2 -1 HELD
-	@cmd 	soun0001 "vand0002.wav"					#Voice effect.
+	#cmd stereo_sound_command_here "vand0002.wav"					#Voice effect.
 	move	20
 		frame	data/chars/andy/andy0166
 	delay	6
@@ -1952,8 +1952,8 @@ anim follow5
 		frame	data/chars/andy/andy0171
 	delay	20
 	offset	100 215
-	@cmd 	soun0001 "soun0016.wav"									#Sound effect.
-	@cmd 	soun0001 "vand0039.wav"									#voice effect.
+	#cmd stereo_sound_command_here "soun0016.wav"									#Sound effect.
+	#cmd stereo_sound_command_here "vand0039.wav"									#voice effect.
 	@cmd	bind0010 1 15 0 -2 -1 HELDP
 	@cmd	bind0004 1 0 0 0 12 0									#Release bind, but retain bind record.
 	@cmd	bind0008 "flash" "flash" 0 1 30 100 0 0 0 0 1						#Hit flash
@@ -1977,7 +1977,7 @@ anim follow5
 		frame	data/chars/andy/andy0485
 	delay	6
 		frame	data/chars/andy/andy0486
-	@cmd 	soun0001 "vand0023.wav"									#Voice effect.
+	#cmd stereo_sound_command_here "vand0023.wav"									#Voice effect.
 		frame	data/chars/andy/andy0487
 		frame	data/chars/andy/andy0488
 	delay	2
@@ -1986,8 +1986,8 @@ anim follow5
 		frame	data/chars/andy/andy0491
 		frame	data/chars/andy/andy0492
 	delay	3
-	@cmd 	soun0001 "soun0017.wav"									#Sound effect.
-	@cmd 	soun0001 "soun0015.wav"									#Sound effect.
+	#cmd stereo_sound_command_here "soun0017.wav"									#Sound effect.
+	#cmd stereo_sound_command_here "soun0015.wav"									#Sound effect.
 	
 	##Set "C4 in UR face" to explode animation and self kill. Note, ani0008 removed - needs replacement.
 				
@@ -2036,7 +2036,7 @@ anim follow6
 		frame	data/chars/andy/andy0415
 		frame	data/chars/andy/andy0416
 		delay	6
-	@cmd 	soun0001 "vand0008.wav"					#Voice effect.
+	#cmd stereo_sound_command_here "vand0008.wav"					#Voice effect.
 		frame	data/chars/andy/andy0417
 		frame	data/chars/andy/andy0418
 	@cmd	bind0008 "flash" "flash" 0 1 30 10 0 0 0 0 1
@@ -2081,7 +2081,7 @@ anim follow7
 		frame	data/chars/andy/9_0.png
 	move	-10
 	offset	100 200
-	@cmd 	soun0001 "vand0001.wav"
+	#cmd stereo_sound_command_here "vand0001.wav"
 		frame	data/chars/andy/10_0.png
 	move	0
 		frame	data/chars/andy/10_1.png
@@ -2111,7 +2111,7 @@ anim follow7
 		frame	data/chars/andy/andy0393
 		frame	data/chars/andy/andy0394
 	delay	15
-	@cmd 	soun0001 "vand0018.wav"
+	#cmd stereo_sound_command_here "vand0018.wav"
 		frame	data/chars/andy/andy0395
 	delay	5
 		frame	data/chars/andy/andy0396
@@ -2125,12 +2125,12 @@ anim follow7
 		frame	data/chars/andy/andy0403
 	delay	5
 	@cmd	paus0001 0 0
-	@cmd 	soun0001 "vand0015.wav"
+	#cmd stereo_sound_command_here "vand0015.wav"
 		frame	data/chars/andy/andy0404
 	attack6  115 130 65 20 70 10 0 0 5
 	damageonlanding 0 1
 	dropv	 3 3 0
-	@cmd 	soun0001 "soun0015.wav"
+	#cmd stereo_sound_command_here "soun0015.wav"
 	@cmd 	bind0008 "effe0001" "effe0001" 13 1 65 52 1 1 openborconstant("ANI_FOLLOW7") 0 1
 		frame	data/chars/andy/andy0405
 	delay	50
@@ -2156,7 +2156,7 @@ anim follow8
 	@cmd	bind0008 "paus0001" "visual" 12 1 -25 90 -1 1 openborconstant("ANI_FOLLOW5") 0 1
 		frame	data/chars/andy/andy0271
 		frame	data/chars/andy/andy0272
-	@cmd	soun0001 "sand0003.wav"
+	#cmd stereo_sound_command_here "sand0003.wav"
 		frame	data/chars/andy/andy0273
 	attack	75 135 30 65 0
 	grabin	1 25
@@ -2208,7 +2208,7 @@ anim follow9
 		frame	data/chars/andy/9_0.png
 	move	-10
 	offset	100 200
-	@cmd 	soun0001 "vand0001.wav"
+	#cmd stereo_sound_command_here "vand0001.wav"
 		frame	data/chars/andy/10_0.png
 	move	0
 		frame	data/chars/andy/10_1.png
@@ -2235,7 +2235,7 @@ anim follow9
 		frame	data/chars/andy/andy0273
 	delay	10
 	attack  140 125 60 20 0 0 0 0 10
-	@cmd 	soun0001 "sand0001.wav"
+	#cmd stereo_sound_command_here "sand0001.wav"
 	@cmd	bind0008 "effe0001" "effe0001" 13 1 90 38 1 1 openborconstant("ANI_FOLLOW6") 0 1
 		frame	data/chars/andy/andy0566
 	delay	7
@@ -2246,7 +2246,7 @@ anim follow9
 		frame	data/chars/andy/andy0273
 	delay	10
 	attack  140 125 60 20 0 0 0 0 10
-	@cmd 	soun0001 "sand0001.wav"
+	#cmd stereo_sound_command_here "sand0001.wav"
 	@cmd	bind0008 "effe0001" "effe0001" 13 1 90 38 1 1 openborconstant("ANI_FOLLOW6") 0 1
 		frame	data/chars/andy/andy0566
 	attack	0
@@ -2262,7 +2262,7 @@ anim follow9
 		frame	data/chars/andy/andy0393
 		frame	data/chars/andy/andy0394
 	delay	15
-	@cmd 	soun0001 "vand0018.wav"
+	#cmd stereo_sound_command_here "vand0018.wav"
 		frame	data/chars/andy/andy0395
 	delay	5
 		frame	data/chars/andy/andy0396
@@ -2276,12 +2276,12 @@ anim follow9
 		frame	data/chars/andy/andy0403
 	delay	5
 	@cmd	paus0001 0 0
-	@cmd 	soun0001 "vand0015.wav"
+	#cmd stereo_sound_command_here "vand0015.wav"
 		frame	data/chars/andy/andy0404
 	attack6  115 130 65 20 100 10 0 0 5
 	damageonlanding 0 1
 	dropv	 3 3 0
-	@cmd 	soun0001 "soun0015.wav"
+	#cmd stereo_sound_command_here "soun0015.wav"
 	@cmd 	bind0008 "effe0001" "effe0001" 14 1 65 52 1 1 openborconstant("ANI_FOLLOW7") 0 1
 		frame	data/chars/andy/andy0405
 	delay	50
@@ -2325,7 +2325,7 @@ anim follow70
 		frame	data/chars/andy/andy0092
 		frame	data/chars/andy/andy0093
 		frame	data/chars/andy/andy0094
-	@cmd 	soun0001 "vand0016.wav"			#Voice effect.
+	#cmd stereo_sound_command_here "vand0016.wav"			#Voice effect.
 		frame	data/chars/andy/andy0095
 		frame	data/chars/andy/andy0096
 		frame	data/chars/andy/andy0097
@@ -2355,7 +2355,7 @@ anim follow71
 	bbox	75 135 30 65
 		frame	data/chars/andy/andy0060
 		frame	data/chars/andy/andy0061
-	@cmd 	soun0001 "vand0017.wav"			#Voice effect.
+	#cmd stereo_sound_command_here "vand0017.wav"			#Voice effect.
 		frame	data/chars/andy/andy0062
 		frame	data/chars/andy/andy0063
 	delay	50
@@ -2372,7 +2372,7 @@ anim follow72
 	offset	100 200
 	bbox	75 135 30 65
 		frame	data/chars/andy/1_0.png
-	@cmd 	soun0001 "vand0018.wav"			#Voice effect.
+	#cmd stereo_sound_command_here "vand0018.wav"			#Voice effect.
 		frame	data/chars/andy/andy0065
 		frame	data/chars/andy/andy0066
 		frame	data/chars/andy/andy0067
@@ -2410,7 +2410,7 @@ anim follow81
 	delay	10
 	offset	100 200
 	bbox 95 95 35 60
-	@cmd 	soun0001 "vand0001.wav"					#Voice effect.
+	#cmd stereo_sound_command_here "vand0001.wav"					#Voice effect.
 		frame	data/chars/andy/andy0325
 		frame 	data/chars/andy/andy0326
 	attack8	75 70 70 45 30 2 0 0 15
@@ -2436,7 +2436,7 @@ anim follow82
 	delay	6
 	offset	100 200
 	bbox	75 110 35 90
-	@cmd 	soun0001 "vand0008.wav"				#Voice effect
+	#cmd stereo_sound_command_here "vand0008.wav"				#Voice effect
 		frame	data/chars/andy/andy0524
 		frame	data/chars/andy/andy0525
 	attack9 100 165 45 60 15 0
@@ -2456,7 +2456,7 @@ anim follow83
 	delay	6
 	offset	100 200
 	bbox	75 110 35 90
-	@cmd 	soun0001 "vand0008.wav"				#Voice effect
+	#cmd stereo_sound_command_here "vand0008.wav"				#Voice effect
 		frame	data/chars/andy/andy0425
 	attack	105 90 60 32 15 2 0 0 10
 	dropv	2 3 0
@@ -2476,7 +2476,7 @@ anim follow84
 	delay	6
 	offset	100 200
 	bbox	75 110 35 90
-	@cmd 	soun0001 "vand0008.wav"				#Voice effect
+	#cmd stereo_sound_command_here "vand0008.wav"				#Voice effect
 		frame	data/chars/andy/andy0553
 		frame	data/chars/andy/andy0554
 		frame	data/chars/andy/andy0555
@@ -2498,7 +2498,7 @@ anim follow85
 	delay	6
 	offset	100 200
 	bbox	75 110 35 90
-	@cmd 	soun0001 "vand0008.wav"				#Voice effect
+	#cmd stereo_sound_command_here "vand0008.wav"				#Voice effect
 		frame	data/chars/andy/andy0543
 		frame	data/chars/andy/andy0544
 		frame	data/chars/andy/andy0545
@@ -2527,7 +2527,7 @@ anim follow86
 		frame	data/chars/andy/3_0.png
 		frame 	data/chars/andy/andy0494
 	bbox	95 95 35 60
-	@cmd 	soun0001 "vand0001.wav"
+	#cmd stereo_sound_command_here "vand0001.wav"
 		frame	data/chars/andy/andy0042
 		frame	data/chars/andy/andy0495
 		frame	data/chars/andy/andy0496
@@ -2555,7 +2555,7 @@ anim follow87
 		frame	data/chars/andy/3_0.png
 		frame	data/chars/andy/andy0501
 	bbox	95 95 35 60
-	@cmd 	soun0001 "vand0001.wav"
+	#cmd stereo_sound_command_here "vand0001.wav"
 		frame	data/chars/andy/andy0502
 		frame	data/chars/andy/andy0503
 	delay	-1
@@ -2604,7 +2604,7 @@ anim follow89
 	delay	10
 	offset	100 200
 	bbox	95 95 35 60
-	@cmd 	soun0001 "vand0002.wav"					#Voice effect.
+	#cmd stereo_sound_command_here "vand0002.wav"					#Voice effect.
 		frame	data/chars/andy/andy0176
 		frame	data/chars/andy/andy0177
 	delay	100
@@ -2621,7 +2621,7 @@ anim follow91
 	delay	10
 	offset	100 200
 	bbox	0
-	@cmd 	soun0001 "vand0002.wav"					#Voice effect.
+	#cmd stereo_sound_command_here "vand0002.wav"					#Voice effect.
 		frame	data/chars/andy/andy0569
 	delay	5
 		frame	data/chars/andy/andy0568
@@ -2643,7 +2643,7 @@ anim follow92
 		frame	data/chars/andy/3_0.png
 	@cmd	vars0002 STATUS 1
 		frame	data/chars/andy/andy0339
-	@cmd	soun0001 "vand0003.wav"
+	#cmd stereo_sound_command_here "vand 0003.wav"
 	@cmd	summ0001 "andypa" "andypa" -1 0 240 0 220 1 openborconstant("ANI_FOLLOW1") 0 1
 		frame	data/chars/andy/andy0340
 		frame	data/chars/andy/andy0341
@@ -2684,7 +2684,7 @@ anim grabattack
 	delay	6
 	offset	100 200
 	bbox	75 105 40 95
-	@cmd 	soun0001 "vand0001.wav"				#Voice effect.
+	#cmd stereo_sound_command_here "vand0001.wav"				#Voice effect.
 		frame	data/chars/andy/10_0.png
 		frame	data/chars/andy/10_1.png
 	attack  100 105 60 20 8 0 0 0 20
@@ -2700,7 +2700,7 @@ anim grabattack2
 	delay	4
 	offset	100 200
 	bbox	75 105 40 95
-	@cmd 	soun0001 "vand0008.wav"				#Voice effect.
+	#cmd stereo_sound_command_here "vand0008.wav"				#Voice effect.
 	move	-5
 		frame	data/chars/andy/11_0.png
 	move	0
@@ -2715,7 +2715,7 @@ anim grabattack2
 		frame	data/chars/andy/andy0223
 		frame	data/chars/andy/andy0224
 		frame	data/chars/andy/andy0225
-	@cmd 	soun0001 "vand0002.wav"				#Voice effect.
+	#cmd stereo_sound_command_here "vand0002.wav"				#Voice effect.
 		frame	data/chars/andy/andy0226
 		frame	data/chars/andy/andy0227
 		frame	data/chars/andy/andy0228
@@ -2756,7 +2756,7 @@ anim grabforward
 	@cmd	bind0010 1 25 11 1 -1 7
 		frame	data/chars/andy/andy0410
 	delay	1
-	@cmd 	soun0001 "vand0019.wav"					#Voice effect.
+	#cmd stereo_sound_command_here "vand0019.wav"					#Voice effect.
 		frame	data/chars/andy/andy0410
 	delay	-1
 	@cmd	bind0010 1 10 100 1 1 3
@@ -2783,7 +2783,7 @@ anim grabforward
 		frame	data/chars/andy/andy0415
 		frame	data/chars/andy/andy0416
 		delay	6
-	@cmd 	soun0001 "vand0008.wav"					#Voice effect.
+	#cmd stereo_sound_command_here "vand0008.wav"					#Voice effect.
 		frame	data/chars/andy/andy0417
 		frame	data/chars/andy/andy0418
 	@cmd	bind0008 "flash" "flash" 0 1 30 10 0 0 0 0 1
@@ -2809,7 +2809,7 @@ anim grabbackward
 	bbox	0
 	move	30
 	@cmd	bind0010 1 15 0 -2 -1 HELD
-	@cmd 	soun0001 "vand0002.wav"					#Voice effect.
+	#cmd stereo_sound_command_here "vand0002.wav"					#Voice effect.
 		frame	data/chars/andy/andy0103
 	delay	20
 	move	0
@@ -2823,7 +2823,7 @@ anim grabbackward
 	delay	4
 	move	-40
 	@cmd	bind0010 1 0 40 -2 -1 VERDN
-	@cmd 	soun0001 "vand0019.wav"					#Voice effect.
+	#cmd stereo_sound_command_here "vand0019.wav"					#Voice effect.
 		frame	data/chars/andy/andy0433
 	move	0
 	@cmd	bind0004 1 0 0 0 11 0						#Release bind.
@@ -2872,7 +2872,7 @@ anim grabup
 		frame	data/chars/andy/andy0443
 	attack	0
 		frame	data/chars/andy/andy0444
-	@cmd 	soun0001 "vand0002.wav"
+	#cmd stereo_sound_command_here "vand0002.wav"
 		frame	data/chars/andy/andy0445
 	attack6	115 130 65 20 15 10 0 0 15
 	dropv	5 1 0
@@ -2916,7 +2916,7 @@ anim grabdown
 	delay	15
 	move	0
 	offset	100 200
-	@cmd	soun0001 "soun0011.wav"
+	#cmd stereo_sound_command_here "soun0011.wav"
 		frame	data/chars/andy/andy0453
 	delay	5
 	offset	101 200
@@ -2928,7 +2928,7 @@ anim grabdown
 		frame	data/chars/andy/andy0453
 	delay	12
 	offset	100 200
-	@cmd	soun0001 "soun0012.wav"
+	#cmd stereo_sound_command_here "soun0012.wav"
 		frame	data/chars/andy/andy0453
 	delay	30
 	@cmd	bind0010 1 10 0 -1 0 HELDP
@@ -2937,7 +2937,7 @@ anim grabdown
 	delay	15
 	offset	115 200
 		frame	data/chars/andy/andy0167
-	@cmd 	soun0001 "vand0003.wav"
+	#cmd stereo_sound_command_here "vand0003.wav"
 		frame	data/chars/andy/andy0171
 	delay	12
 	offset	100 240
@@ -3047,7 +3047,7 @@ anim jumpattack
 	delay	6
 	offset	100 200
 	bbox	95 95 35 60
-	@cmd 	soun0001 "vand0001.wav"					#Voice effect.
+	#cmd stereo_sound_command_here "vand0001.wav"					#Voice effect.
 		frame	data/chars/andy/andy0171
 		frame	data/chars/andy/andy0167
 	attack	95 100 46 25 20 1
@@ -3070,7 +3070,7 @@ anim jumpattack2
 	delay	6
 	offset	100 200
 	bbox	95 95 35 60
-	@cmd 	soun0001 "vand0008.wav"					#Voice effect.
+	#cmd stereo_sound_command_here "vand0008.wav"					#Voice effect.
 		frame	data/chars/andy/andy0171
 	attack  100 105 40 35 20
 		frame	data/chars/andy/andy0174
@@ -3088,7 +3088,7 @@ anim jumpattack3
 	delay	8
 	offset	100 200
 	bbox	95 95 35 60
-	@cmd 	soun0001 "vand0008.wav"					#Voice effect.
+	#cmd stereo_sound_command_here "vand0008.wav"					#Voice effect.
 		frame	data/chars/andy/andy0240
 	delay	20
 	attack  70 120 65 35 15 1
@@ -3110,7 +3110,7 @@ anim jumpforward
 	delay	10
 	offset	100 200
 	bbox	95 95 35 60
-	@cmd 	soun0001 "vand0002.wav"					#Voice effect.
+	#cmd stereo_sound_command_here "vand0002.wav"					#Voice effect.
 		frame	data/chars/andy/andy0176
 		frame	data/chars/andy/andy0177
 	delay	20
@@ -3134,7 +3134,7 @@ anim runjumpattack
 	delay	10
 	offset	100 200
 	bbox	95 95 35 60
-	@cmd 	soun0001 "vand0019.wav"					#Voice effect.
+	#cmd stereo_sound_command_here "vand0019.wav"					#Voice effect.
 		frame	data/chars/andy/andy0176
 		frame	data/chars/andy/andy0177
 	attack  90 120 70 30 18 1

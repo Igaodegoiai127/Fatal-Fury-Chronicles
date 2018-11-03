@@ -222,7 +222,6 @@
     <ClInclude Include="data\scripts\com\rema0003.h" />
     <ClInclude Include="data\scripts\com\rnd0001.h" />
     <ClInclude Include="data\scripts\com\run0001.h" />
-    <ClInclude Include="data\scripts\com\soun0001.h" />
     <ClInclude Include="data\scripts\com\soun0003.h" />
     <ClInclude Include="data\scripts\com\stat0001.h" />
     <ClInclude Include="data\scripts\com\stun0001.h" />

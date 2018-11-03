@@ -5,7 +5,7 @@ Light slam dust spawn.
 
 #include "data/scripts/com/bind0008.h"
 #include "data/scripts/dc_draw/main.c"
-#include "data/scripts/com/soun0001.h"
+#include "data/scripts/dc_sound/main.c"
 
 void main(){
 
@@ -30,7 +30,7 @@ void main(){
     //{
         iBlend  = 1;                                                            //Set blend.
 	    iMap	= 0;															//Set map.		    
-	    soun0001(SNDIMPL);												        //Set sound.
+	    // stereo_sound_command_here(SNDIMPL);												        //Set sound.
 	    fScaleX = 1;															//X scale.
 	    fScaleY = 1;															//Y scale.            
     //}

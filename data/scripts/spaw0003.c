@@ -17,7 +17,7 @@ iType:
 #include "data/scripts/vars/entity.h"
 #include "data/scripts/vars/sounds.h"
 #include "data/scripts/dc_draw/main.c"
-#include "data/scripts/com/soun0001.h"
+#include "data/scripts/dc_sound/main.c"
 
 void main(){
 
@@ -37,7 +37,7 @@ void main(){
     
     if (iZ < openborvariant("PLAYER_MIN_Z") - 3)                                //Water fatality?  
     {
-        soun0001(SNDWAT1);
+        // stereo_sound_command_here(SNDWAT1);
         changeentityproperty(vSelf, "setlayer",	-9);
         changeentityproperty(vSelf, "map", 1); 
         changeentityproperty(vSelf, "animation", openborconstant("ANI_FOLLOW1"));
@@ -48,7 +48,7 @@ void main(){
     }
     else
     {
-        soun0001(SNDFALL);
+        // stereo_sound_command_here(SNDFALL);
         setentityvar(vSelf, ADBLEND, 1);
         dc_draw_z_position_autoscale(vSelf);
     }        

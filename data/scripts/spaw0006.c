@@ -6,7 +6,7 @@ Manipulate jumpstart/jumpframe "dust" entity to produce appropriate visual and s
 
 #include "data/scripts/vars/sounds.h"
 #include "data/scripts/dc_draw/main.c"
-#include "data/scripts/com/soun0001.h"
+#include "data/scripts/dc_sound/main.c"
 
 void main(){
 
@@ -24,7 +24,7 @@ void main(){
     //{
         iBlend  = 1;                                                            //Set blend.
 	    iMap	= 0;															//Set map.		    
-	    soun0001(SNDJUMP);												        //Set sound.
+	    // stereo_sound_command_here(SNDJUMP);												        //Set sound.
 	    fScaleX = 128;															//X scale.
 	    fScaleY = 128;															//Y scale.            
     //}

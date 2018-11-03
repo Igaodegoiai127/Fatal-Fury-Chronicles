@@ -490,10 +490,10 @@ anim freespecial6
 	offset	70 158
 	bbox 	50 60 45 105
 		frame	data/chars/terry/terr0599
-	@cmd	soun0001 "vter0011.wav"
+	#cmd stereo_sound_command_here "vter0011.wav"
 		frame	data/chars/terry/terr0600
 	delay	3
-	@cmd	soun0001 "sand0003.wav"
+	#cmd stereo_sound_command_here "sand0003.wav"
 	move	25
 	@cmd    hit0001 8 1 -1 -0.5 4 0 1 1 10 5 0 2 0
 	attack	70 55 35 45 0 0 0 0 15

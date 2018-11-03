@@ -1,6 +1,6 @@
 #include "data/scripts/vars/sounds.h"
 #include "data/scripts/com/rnd0001.h"
-#include "data/scripts/com/soun0001.h"
+#include "data/scripts/dc_sound/main.c"
 
 void soun0003(){
      
@@ -22,5 +22,8 @@ void soun0003(){
     else if (iRnd==12){  vSample = "vray0002.wav";   }	//Ray McDougal KO.
     else if (iRnd==13){  vSample = "voim0017.wav";   }	//MK Pain 1.
     
-    if (vSample){ soun0001(vSample); }   //Load and play sound sample.
+    if (vSample)
+	{ 
+		// stereo_sound_command_here(vSample); 
+	}   //Load and play sound sample.
 }

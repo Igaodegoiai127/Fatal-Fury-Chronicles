@@ -1,4 +1,4 @@
-#ifndef DC_SOUND_CONFIG1
+#ifndef DC_SOUND_CONFIG
 
 #include "data/scripts/dc_d20/main.c"
 

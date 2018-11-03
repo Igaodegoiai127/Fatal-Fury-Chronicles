@@ -19,7 +19,7 @@ Galford
 #include "data/scripts/com/jump0001.h"
 #include "data/scripts/com/paus0001.h"
 #include "data/scripts/com/proj0002.h"
-#include "data/scripts/com/soun0001.h"
+#include "data/scripts/dc_sound/main.c"
 #include "data/scripts/com/stat0001.h"
 #include "data/scripts/com/summ0001.h"
 #include "data/scripts/com/vars0002.h"

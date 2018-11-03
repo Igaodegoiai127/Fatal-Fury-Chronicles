@@ -6,7 +6,7 @@ Manipulate land "dust" entity to produce appropriate visual and sound effects.
 
 #include "data/scripts/vars/sounds.h"
 #include "data/scripts/dc_draw/main.c"
-#include "data/scripts/com/soun0001.h"
+#include "data/scripts/dc_sound/main.c"
 
 void main(){
 
@@ -25,7 +25,7 @@ void main(){
     //{
         iBlend  = 1;                                                            //Set blend.
 	    iMap	= 0;															//Set map.		    
-	    soun0001(SNDLAND);												        //Set sound.
+	    // stereo_sound_command_here(SNDLAND);												        //Set sound.
 	    fScaleX = 0.5;															//X scale.
 	    fScaleY = 0.5;															//Y scale.            
     //}

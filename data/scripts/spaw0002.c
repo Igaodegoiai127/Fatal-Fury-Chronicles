@@ -1,7 +1,7 @@
 //flash spawn.
 
 #include "data/scripts/dc_draw/main.c"
-#include "data/scripts/com/soun0001.h"	        //Sound functions.
+#include "data/scripts/dc_sound/main.c"	        //Sound functions.
 #include "data/scripts/com/rnd0001.h"
 
 void main(){
@@ -16,5 +16,5 @@ void main(){
 	//Apply draw settings.  
     dc_draw_z_position_autoscale(vSelf);                                                              
     
-	soun0001(SNDHIT1);
+	// stereo_sound_command_here(SNDHIT1);
 }
