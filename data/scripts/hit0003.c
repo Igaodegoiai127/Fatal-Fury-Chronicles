@@ -1,6 +1,5 @@
 #include "data/scripts/vars/entity.h"
 #include "data/scripts/com/hit0002.h"
-#include "data/scripts/com/host0001.h"
 #include "data/scripts/com/summ0001.h"
 
 //Projectile didhit script.
@@ -33,10 +32,10 @@ void main()
     
     if (vTParent)                                               //Target has a parent?
     {
-        if(!host0001(vParent, vTParent))                        //Are the target's and caller's parents non hostile?                       
-        {
-            return;                                             //Exit.
-        }
+        //if(!host0001(vParent, vTParent))                        //Are the target's and caller's parents non hostile?                       
+        //{
+        //    return;                                             //Exit.
+        //}
     }
     
     iMP     = getentityproperty(vSelf, "mp");                                               //Get MP.
