@@ -1,7 +1,6 @@
 #include "data/scripts/vars/entity.h" 
 #include "data/scripts/com/bind0012.h"
 #include "data/scripts/com/hit0001.h"
-#include "data/scripts/com/jump0002.h"
 
 void hit0002(){
     

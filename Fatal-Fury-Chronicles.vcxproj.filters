@@ -320,9 +320,6 @@
     <ClInclude Include="data\scripts\com\hit0002.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="data\scripts\com\jump0002.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="data\scripts\com\kill0001.h">
       <Filter>Header Files</Filter>
     </ClInclude>

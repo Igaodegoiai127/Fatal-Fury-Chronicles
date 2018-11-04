@@ -201,7 +201,6 @@
     <ClInclude Include="data\scripts\com\fall0001.h" />
     <ClInclude Include="data\scripts\com\hit0001.h" />
     <ClInclude Include="data\scripts\com\hit0002.h" />
-    <ClInclude Include="data\scripts\com\jump0002.h" />
     <ClInclude Include="data\scripts\com\kill0001.h" />
     <ClInclude Include="data\scripts\com\kill0002.h" />
     <ClInclude Include="data\scripts\com\loc0001.h" />
