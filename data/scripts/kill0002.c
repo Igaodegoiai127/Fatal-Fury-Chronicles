@@ -1,10 +1,8 @@
 #include "data/scripts/vars/entity.h"
-#include "data/scripts/com/dust0001.h"
 #include "data/scripts/com/kill0001.h"
 
 void main()
 {
-	dust0001("flash_fall_land");
 	void vSelf = getlocalvar("self");
 	void vBinde = getentityvar(vSelf, BINDE);		   //Get any bound effect.
 

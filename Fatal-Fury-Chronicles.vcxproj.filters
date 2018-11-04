@@ -308,12 +308,6 @@
     <ClInclude Include="data\scripts\com\deat0001.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="data\scripts\com\dust0001.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="data\scripts\com\dust0002.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="data\scripts\com\effe0001.h">
       <Filter>Header Files</Filter>
     </ClInclude>

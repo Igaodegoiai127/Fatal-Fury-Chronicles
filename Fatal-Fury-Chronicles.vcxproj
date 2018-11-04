@@ -197,8 +197,6 @@
     <ClInclude Include="data\scripts\com\dama0002.h" />
     <ClInclude Include="data\scripts\com\dama0003.h" />
     <ClInclude Include="data\scripts\com\deat0001.h" />
-    <ClInclude Include="data\scripts\com\dust0001.h" />
-    <ClInclude Include="data\scripts\com\dust0002.h" />
     <ClInclude Include="data\scripts\com\effe0001.h" />
     <ClInclude Include="data\scripts\com\fall0001.h" />
     <ClInclude Include="data\scripts\com\hit0001.h" />
