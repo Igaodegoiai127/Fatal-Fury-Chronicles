@@ -339,10 +339,10 @@ anim follow100
 	delay	30
 	offset	120 190
 	bbox	95 95 35 60
-	@cmd	ai0001 "blocking" 1 0 0 
+	@cmd	changeentityproperty getlocalvar("self") "aiflag" "blocking" 1 
 		frame	data/chars/raiden/raid0237
 	delay	12
-	@cmd	ai0001 "blocking" 0 0 0
+	@cmd	changeentityproperty getlocalvar("self") "aiflag" "blocking" 0 0 0
 		delay	10
 		frame	data/chars/raiden/raid0354
 		frame	data/chars/raiden/raid0355

@@ -1792,7 +1792,7 @@ anim follow2
 	delay	3
 	offset	100 200
 	bbox	85 100 30 40
-	@cmd	ai0001 "blocking" 1 0 0						#Turn block flag on.
+	@cmd	changeentityproperty getlocalvar("self") "aiflag" "blocking" 1						#Turn block flag on.
 	move    -5
 		frame	data/chars/andy/andy0057
 	move	3
@@ -2392,10 +2392,10 @@ anim follow80
 	delay	30
 	offset	100 200
 	bbox	95 95 35 60
-	@cmd	ai0001 "blocking" 1 0 0
+	@cmd	changeentityproperty getlocalvar("self") "aiflag" "blocking" 1
 		frame	data/chars/andy/andy0080
 	delay	12
-	@cmd	ai0001 "blocking" 0 0 0
+	@cmd	changeentityproperty getlocalvar("self") "aiflag" "blocking" 0 0 0
 		frame	data/chars/andy/andy0044
 		frame	data/chars/andy/andy0045
 		frame	data/chars/andy/andy0046

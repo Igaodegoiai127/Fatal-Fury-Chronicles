@@ -433,7 +433,7 @@ anim runattack
 	bbox 	50 60 45 105
 		frame	data/chars/terry/terr0226
 		frame	data/chars/terry/terr0227
-	@cmd ai0001 "blocking" 1 0 0
+	@cmd	changeentityproperty getlocalvar("self") "aiflag" "blocking" 1
 		frame	data/chars/terry/terr0228
 	attack	80 80 55 55 15 2 0 0 10
 		frame	data/chars/terry/terr0229
@@ -441,7 +441,7 @@ anim runattack
 		frame	data/chars/terry/terr0230
 	attack	0
 	@cmd	velo0001 0 0 0
-	@cmd ai0001 "blocking" 0 0 0
+	@cmd	changeentityproperty getlocalvar("self") "aiflag" "blocking" 0
 		frame	data/chars/terry/terr0231
 		frame	data/chars/terry/terr0578
 
