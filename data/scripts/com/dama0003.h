@@ -1,6 +1,5 @@
 #include "data/scripts/vars/entity.h" 
 #include "data/scripts/com/dama0001.h"
-#include "data/scripts/com/parr0001.h"
 
 void dama0003(){
     

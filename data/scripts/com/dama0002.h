@@ -1,7 +1,6 @@
 #include "data/scripts/vars/entity.h" 
 #include "data/scripts/dc_grapple/main.c"
 #include "data/scripts/com/hit0001.h"
-#include "data/scripts/com/parr0001.h"
 
 void dama0002(){
     
@@ -29,8 +28,7 @@ void dama0002(){
 
     //hit0001(0, 0, -2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);                        //Erase hit flags.                                                                //Remove special hit flags. This is in case caller is hit out of an attack with flags.
 
-    //if (parr0001(vAttacker, iDam)) { return; }                              //Parry for unblockable attack. See parr0001 for details.    
-
+    
     // Release any grappled entities.
 	dc_grapple_release_all(vSelf);
 

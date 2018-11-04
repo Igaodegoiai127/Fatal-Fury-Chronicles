@@ -214,7 +214,6 @@
     <ClInclude Include="data\scripts\com\obst0001.h" />
     <ClInclude Include="data\scripts\com\pain0001.h" />
     <ClInclude Include="data\scripts\com\pal0001.h" />
-    <ClInclude Include="data\scripts\com\parr0001.h" />
     <ClInclude Include="data\scripts\com\paus0001.h" />
     <ClInclude Include="data\scripts\com\proj0001.h" />
     <ClInclude Include="data\scripts\com\proj0002.h" />
