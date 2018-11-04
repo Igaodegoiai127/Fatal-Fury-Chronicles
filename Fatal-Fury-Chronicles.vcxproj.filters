@@ -380,9 +380,6 @@
     <ClInclude Include="data\scripts\com\rema0003.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="data\scripts\com\rnd0001.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="data\scripts\com\stat0001.h">
       <Filter>Header Files</Filter>
     </ClInclude>
