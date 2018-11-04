@@ -356,9 +356,6 @@
     <ClInclude Include="data\scripts\com\pain0001.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="data\scripts\com\pal0001.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="data\scripts\com\paus0001.h">
       <Filter>Header Files</Filter>
     </ClInclude>
