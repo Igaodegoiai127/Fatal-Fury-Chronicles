@@ -1264,14 +1264,14 @@ anim freespecial10
 		frame	data/chars/andy/andy0260
 	attack	0
 		frame	data/chars/andy/andy0261
-	@cmd	jump0001 0 0.8 0
+	@cmd	tossentity getlocalvar("self") 0 0.8 0
 		frame	data/chars/andy/andy0262
 	delay	8
-	@cmd	jump0001 0 0.7 0
+	@cmd	tossentity getlocalvar("self") 0 0.7 0
 		frame	data/chars/andy/andy0263
-	@cmd	jump0001 0 0.6 0
+	@cmd	tossentity getlocalvar("self") 0 0.6 0
 		frame	data/chars/andy/andy0264
-	@cmd	jump0001 -1 0.5 0					#Stop forward movement.
+	@cmd	tossentity getlocalvar("self") -1 0.5 0
 		frame	data/chars/andy/andy0265
 	delay	4
 		frame	data/chars/andy/andy0266

@@ -4,7 +4,6 @@
 #include "data/scripts/com/bind0005.h"
 #include "data/scripts/dc_draw/main.c"   
 #include "data/scripts/com/effe0001.h"
-#include "data/scripts/com/jump0001.h"
 
 void fall0001(){
     
@@ -67,8 +66,10 @@ void fall0001(){
         if(!fTossY) fTossY = 0;                                                     //If null, set 0.
         if(!fTossZ) fTossZ = 0;                                                     //If null, set 0.      
 
-        jump0001(fTossY, fTossX, fTossZ);                                           //Toss caller.
-        setentityvar(vSelf, TOSSX, NULL());                                        //Clear toss value.
+       // Toss caller.
+		tossentity(vSelf, fTossY, fTossX, fTossZ);
+		
+		setentityvar(vSelf, TOSSX, NULL());                                        //Clear toss value.
         setentityvar(vSelf, TOSSY, NULL());                                        //Clear toss value.     
         setentityvar(vSelf, TOSSZ, NULL());                                        //Clear toss value.
     }    
