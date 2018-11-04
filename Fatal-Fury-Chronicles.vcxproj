@@ -156,7 +156,6 @@
     <ClCompile Include="data\scripts\hit0003.c" />
     <ClCompile Include="data\scripts\keyall.c" />
     <ClCompile Include="data\scripts\kill0001.c" />
-    <ClCompile Include="data\scripts\kill0002.c" />
     <ClCompile Include="data\scripts\loading.c" />
     <ClCompile Include="data\scripts\movz0001.c" />
     <ClCompile Include="data\scripts\onbo0001.c" />
@@ -201,9 +200,6 @@
     <ClInclude Include="data\scripts\com\fall0001.h" />
     <ClInclude Include="data\scripts\com\hit0001.h" />
     <ClInclude Include="data\scripts\com\hit0002.h" />
-    <ClInclude Include="data\scripts\com\kill0001.h" />
-    <ClInclude Include="data\scripts\com\kill0002.h" />
-    <ClInclude Include="data\scripts\com\loc0001.h" />
     <ClInclude Include="data\scripts\com\obst0001.h" />
     <ClInclude Include="data\scripts\com\pain0001.h" />
     <ClInclude Include="data\scripts\com\paus0001.h" />
