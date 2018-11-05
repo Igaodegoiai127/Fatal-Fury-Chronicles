@@ -48,7 +48,7 @@ know	beac0005	data/bgs/beach/beac0005.txt				# Sound beach background layer 1c.
 know	beac0006	data/bgs/beach/beac0006.txt				# Sound beach background layer 2a.
 know	beac0007	data/bgs/beach/beac0007.txt				# Sound beach foreground layer 0a.
 know	beac0008	data/bgs/beach/beac0008.txt				# Sound beach foreground layer 0b.
-know	beac0009	data/bgs/beach/beac0009.txt				# Boat for Sound Beach.
+know	cabin_cruiser	data/bgs/beach/cabin_cruiser/cabin_cruiser.txt				# Boat for Sound Beach.
 
 #*****Sound Beach Deck*****
 

@@ -177,22 +177,23 @@ coords	2500 0
 at	0
 
 #Boat
-spawn 	beac0009
+spawn 	cabin_cruiser
 Alias	Cruiser
 coords  600 195
 at      0
 
 #Boat
 
-spawn 	beac0009
+spawn 	cabin_cruiser
 Alias	Cruiser
 flip    1
-coords  900 195
+#coords  900 195
+coords 100 230
 at      10
 
 #Boat
+spawn 	cabin_cruiser
 Alias	Cruiser
-spawn 	beac0009
 coords  1650 195
 at      0
 

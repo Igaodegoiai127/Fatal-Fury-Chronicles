@@ -1,0 +1,59 @@
+#Boat for sound beach.
+
+name	 	cabin_cruiser
+health	 	20
+type	 	obstacle
+scroll		0.17
+#speedf   	0.17
+setlayer 	-8
+globalmap	1
+offscreenkill	1000000
+height		100
+nomove		1
+falldie		1
+nodieblink	2
+#no_adjust_base	1
+
+animationscript		data/bgs/beach/cabin_cruiser/scripts/event_animation.c
+onspawnscript		data/bgs/beach/cabin_cruiser/scripts/event_spawn.c
+takedamagescript	data/bgs/beach/cabin_cruiser/scripts/event_take_damage.c
+onkillscript		data/bgs/beach/cabin_cruiser/scripts/event_kill.c
+ondeathscript		data/bgs/beach/cabin_cruiser/scripts/event_death.c
+
+anim idle 
+
+		loop	1
+		delay	14
+		offset	55 150
+		bbox	15 60 70 100	
+	
+	frame data/bgs/beach/cabin_cruiser/0_0.png	
+		offset	55 151
+	frame data/bgs/beach/cabin_cruiser/0_1.png		
+		offset	55 152
+	frame data/bgs/beach/cabin_cruiser/0_2.png		
+		offset	55 153
+	frame data/bgs/beach/cabin_cruiser/0_1.png	
+		offset	55 154
+	frame data/bgs/beach/cabin_cruiser/0_0.png	
+		offset	55 153
+	frame data/bgs/beach/cabin_cruiser/0_1.png	
+		offset	55 152
+	frame data/bgs/beach/cabin_cruiser/0_2.png	
+		offset	55 151
+	frame data/bgs/beach/cabin_cruiser/0_1.png
+
+anim death	
+	
+		loop    1
+		delay	3
+		offset	56 150
+		bbox	0
+		
+		@script
+			sink_and_suicide();
+		@end_script
+	frame data/bgs/beach/cabin_cruiser/0_0.png
+		offset	54 150
+	frame data/bgs/beach/cabin_cruiser/0_0.png
+	

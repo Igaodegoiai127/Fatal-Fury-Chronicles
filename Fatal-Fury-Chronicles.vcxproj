@@ -98,6 +98,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="data\bgs\beach\cabin_cruiser\scripts\event_animation.c" />
+    <ClCompile Include="data\bgs\beach\cabin_cruiser\scripts\event_death.c" />
+    <ClCompile Include="data\bgs\beach\cabin_cruiser\scripts\event_kill.c" />
+    <ClCompile Include="data\bgs\beach\cabin_cruiser\scripts\event_spawn.c" />
+    <ClCompile Include="data\bgs\beach\cabin_cruiser\scripts\event_take_damage.c" />
     <ClCompile Include="data\chars\andy\scripts\ani_p.c" />
     <ClCompile Include="data\chars\andy\scripts\dama0001.c" />
     <ClCompile Include="data\chars\andy\scripts\fall0001.c" />
@@ -226,9 +231,9 @@
   </ItemGroup>
   <ItemGroup>
     <Image Include="data\bgs\beach\back0001.png" />
-    <Image Include="data\bgs\beach\boat0001.png" />
-    <Image Include="data\bgs\beach\boat0002.png" />
-    <Image Include="data\bgs\beach\boat0003.png" />
+    <Image Include="data\bgs\beach\cabin_cruiser\0_0.png" />
+    <Image Include="data\bgs\beach\cabin_cruiser\0_1.png" />
+    <Image Include="data\bgs\beach\cabin_cruiser\0_2.png" />
     <Image Include="data\bgs\beach\drop0001.png" />
     <Image Include="data\bgs\beach\drop0002.png" />
     <Image Include="data\bgs\beach\drop0003.png" />
@@ -2945,7 +2950,7 @@
     <Text Include="data\bgs\beach\beac0006.txt" />
     <Text Include="data\bgs\beach\beac0007.txt" />
     <Text Include="data\bgs\beach\beac0008.txt" />
-    <Text Include="data\bgs\beach\beac0009.txt" />
+    <Text Include="data\bgs\beach\cabin_cruiser\cabin_cruiser.txt" />
     <Text Include="data\bin\names.txt" />
     <Text Include="data\chars\andy\andy0001.txt" />
     <Text Include="data\chars\andy\andybe.txt" />
@@ -2993,7 +2998,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include=".gitignore" />
-    <None Include="be0a5fe4603c934ba9fa101cf8744b9425f330fa.exe" />
     <None Include="data\chars\andy\wild-ambition-front-throw.psd" />
     <None Include="data\chars\terry\terr0001.psd" />
     <None Include="data\extras\aawa0002.psd" />
@@ -3006,7 +3010,6 @@
     <None Include="data\extras\title.psd" />
     <None Include="data\extras\waiting.psd" />
     <None Include="devnotes001.docx" />
-    <None Include="OpenBOR.exe" />
     <None Include="README.md" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
