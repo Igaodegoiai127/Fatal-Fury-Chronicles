@@ -20,5 +20,4 @@ Galford
 #include "data/scripts/dc_sound/main.c"
 #include "data/scripts/com/stat0001.h"
 #include "data/scripts/com/summ0001.h"
-#include "data/scripts/com/vars0002.h"
 #include "data/scripts/com/velo0001.h"

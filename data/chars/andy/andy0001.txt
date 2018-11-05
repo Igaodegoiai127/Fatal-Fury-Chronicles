@@ -2641,7 +2641,7 @@ anim follow92
 		frame	data/chars/andy/andy0268
 		frame	data/chars/andy/andy0269
 		frame	data/chars/andy/3_0.png
-	@cmd	vars0002 STATUS 1
+	@cmd	setentityvar getlocalvar("self") STATUS 1
 		frame	data/chars/andy/andy0339
 	#cmd stereo_sound_command_here "vand 0003.wav"
 	@cmd	summ0001 "andypa" "andypa" -1 0 240 0 220 1 openborconstant("ANI_FOLLOW1") 0 1
