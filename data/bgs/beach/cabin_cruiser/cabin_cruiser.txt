@@ -5,7 +5,7 @@ health	 	20
 type	 	obstacle
 scroll		0.17
 #speedf   	0.17
-setlayer 	-8
+#setlayer 	-8
 globalmap	1
 offscreenkill	1000000
 height		100
@@ -14,6 +14,7 @@ falldie		1
 nodieblink	2
 #no_adjust_base	1
 
+thinkscript			data/bgs/beach/cabin_cruiser/scripts/event_think.c
 animationscript		data/bgs/beach/cabin_cruiser/scripts/event_animation.c
 onspawnscript		data/bgs/beach/cabin_cruiser/scripts/event_spawn.c
 takedamagescript	data/bgs/beach/cabin_cruiser/scripts/event_take_damage.c
@@ -28,20 +29,9 @@ anim idle
 		bbox	15 60 70 100	
 	
 	frame data/bgs/beach/cabin_cruiser/0_0.png	
-		offset	55 151
 	frame data/bgs/beach/cabin_cruiser/0_1.png		
-		offset	55 152
 	frame data/bgs/beach/cabin_cruiser/0_2.png		
-		offset	55 153
 	frame data/bgs/beach/cabin_cruiser/0_1.png	
-		offset	55 154
-	frame data/bgs/beach/cabin_cruiser/0_0.png	
-		offset	55 153
-	frame data/bgs/beach/cabin_cruiser/0_1.png	
-		offset	55 152
-	frame data/bgs/beach/cabin_cruiser/0_2.png	
-		offset	55 151
-	frame data/bgs/beach/cabin_cruiser/0_1.png
 
 anim death	
 	

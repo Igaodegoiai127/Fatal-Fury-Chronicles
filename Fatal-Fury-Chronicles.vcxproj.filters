@@ -276,6 +276,9 @@
     <ClCompile Include="data\bgs\beach\cabin_cruiser\scripts\event_take_damage.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="data\bgs\beach\cabin_cruiser\scripts\event_think.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="data\scripts\com\bind0002.h">

@@ -103,6 +103,7 @@
     <ClCompile Include="data\bgs\beach\cabin_cruiser\scripts\event_kill.c" />
     <ClCompile Include="data\bgs\beach\cabin_cruiser\scripts\event_spawn.c" />
     <ClCompile Include="data\bgs\beach\cabin_cruiser\scripts\event_take_damage.c" />
+    <ClCompile Include="data\bgs\beach\cabin_cruiser\scripts\event_think.c" />
     <ClCompile Include="data\chars\andy\scripts\ani_p.c" />
     <ClCompile Include="data\chars\andy\scripts\dama0001.c" />
     <ClCompile Include="data\chars\andy\scripts\fall0001.c" />
