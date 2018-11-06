@@ -2,6 +2,11 @@
 
 void oncreate()
 {
+	void ent;
+
+	ent = getlocalvar("self");
+
+	log("\n create ent: " + ent);
 }
 
 void ondestroy()
@@ -40,6 +45,44 @@ void dc_water_float_initialize(void ent)
 	}	
 }
 
+#ifndef DC_MOVEMENT_CONFIG
+
+#define DC_MOVEMENT_CONFIG
+
+#define DC_MOVEMENT_FLOAT_MAX_FALL_VELOCITY	9
+#define DC_MOVEMENT_FLOAT_MIN_FALL_VELOCITY	4
+#define DC_MOVEMENT_FLOAT_MAX_RISE_VELOCITY	9
+#define DC_MOVEMENT_FLOAT_MIN_RISE_VELOCITY	4
+
+
+#endif // !DC_MOVEMENT_CONFIG
+
+float dc_water_float_fall_velocity()
+{
+	float result;
+
+	dc_d20_set_range_lower(DC_MOVEMENT_FLOAT_MIN_FALL_VELOCITY);
+	dc_d20_set_range_upper(DC_MOVEMENT_FLOAT_MAX_FALL_VELOCITY);
+
+	result = dc_d20_random_int() * 0.01;
+
+	result = -result;
+
+	return result;
+}
+
+float dc_water_float_rise_velocity()
+{
+	float result;
+
+	dc_d20_set_range_lower(DC_MOVEMENT_FLOAT_MIN_RISE_VELOCITY);
+	dc_d20_set_range_upper(DC_MOVEMENT_FLOAT_MAX_RISE_VELOCITY);
+
+	result = dc_d20_random_int() * 0.01;
+
+	return result;
+}
+
 void dc_water_float_bob(void ent)
 {
 	float pos_center_y;
@@ -65,20 +108,20 @@ void dc_water_float_bob(void ent)
 
 	diff = pos_y - pos_center_y;
 
-	log("\n diff: " + diff);
-
 	if (diff < -4)
 	{
-		vel_y = 0.07;
+		vel_y = dc_water_float_rise_velocity();
 	}
 	else if(diff > 4)
 	{
-		vel_y = -0.07;
+		vel_y = dc_water_float_fall_velocity();
 	}
 	else if (!diff)
 	{
-		vel_y = -0.07;
+		vel_y = dc_water_float_fall_velocity();
 	}
+
+	//log("\n vel_y:" + vel_y);
 
 	vel_x = getentityproperty(ent, "xDir");
 	vel_z = getentityproperty(ent, "zdir");
