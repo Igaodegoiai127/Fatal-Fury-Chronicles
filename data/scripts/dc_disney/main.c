@@ -10,3 +10,5 @@
 #import "data/scripts/dc_disney/dash_stop.c"
 #import "data/scripts/dc_disney/alternate_on_health.c"
 #import "data/scripts/dc_disney/alternate_on_range.c"
+#import "data/scripts/dc_disney/set_animation.c"
+#import "data/scripts/dc_disney/set_attack.c"

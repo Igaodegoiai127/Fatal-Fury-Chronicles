@@ -1,6 +1,9 @@
 #include "data/scripts/vars/anims.h"
 #include "data/scripts/vars/entity.h"
 
+#include "data/scripts/dc_disney/main.c"
+
+
 void oncreate()
 {
 	log("\n");
@@ -168,22 +171,22 @@ int dc_command_sidestep_follow_up(int player_index)
 	}
 
 	// Set the direction.
-	dc_player_direction_switch(player_index);
+	dc_command_direction_switch(player_index);
 
 	//  Perform action based on direction key.
 	key_hold = getplayerproperty(player_index, "keys");
 
 	if (key_hold & openborconstant("FLAG_MOVEUP"))
 	{
-		success = dc_set_attack(ent, DODATKSU);
+		success = dc_disney_set_attack(ent, DODATKSU);
 	}
 	else if (key_hold & openborconstant("FLAG_MOVEDOWN"))
 	{
-		success = dc_set_attack(ent, DODATKSD);
+		success = dc_disney_set_attack(ent, DODATKSD);
 	}
 	else
 	{
-		success = dc_set_attack(ent, DODATKD);
+		success = dc_disney_set_attack(ent, DODATKD);
 	}
 
 	// If animation set function returned true, then
@@ -250,7 +253,7 @@ int dc_command_back_dash(int player_index)
 	}
 
 	// If we got this far then we can set a down attack.
-	dc_set_attack(ent, openborconstant("ANI_FREESPECIAL"));
+	dc_disney_set_attack(ent, openborconstant("ANI_FREESPECIAL"));
 
 	// Stop moving in case we were walking.
 	changeentityproperty(ent, "velocity", 0, 0, 0);
@@ -268,7 +271,7 @@ int dc_command_back_dash(int player_index)
 //
 // Turn player entity around if player holds opposite direction key
 // to entity's facing.
-void dc_player_direction_switch(int player_index)
+void dc_command_direction_switch(int player_index)
 {
 	void ent;			// Base entity
 	int direction;		// Entity direction.
@@ -553,8 +556,8 @@ int dc_command_dodge_attack(int player_index)
 	}
 
 	// Set the direction and animation.
-	dc_player_direction_switch(player_index);
-	dc_set_attack(ent, DODATK);
+	dc_command_direction_switch(player_index);
+	dc_disney_set_attack(ent, DODATK);
 
 	// Clear key flag from key press.
 	key_press -= openborconstant("FLAG_ATTACK");
@@ -626,7 +629,7 @@ int dc_try_down_attack(int player_index)
 	}
 
 	// If we got this far then we can set a down attack.
-	dc_set_attack(ent, ATKDOWN);
+	dc_disney_set_attack(ent, ATKDOWN);
 
 	// Stop moving in case we were walking.
 	changeentityproperty(ent, "velocity", 0, 0, 0); 
@@ -637,70 +640,4 @@ int dc_try_down_attack(int player_index)
 
 	// Return true.
 	return 1;
-}
-
-// Caskey, Damon V.
-// 2016-09-13
-//
-// Verify animation and entity, then instruct entity
-// to perform animation as an attack.
-int dc_set_attack(void ent, int animation)
-{
-	int is_valid;
-	int vartype;
-	int result;
-
-	// Get entity vartype.
-	vartype = typeof(ent);
-
-	// If the entity is not a valid pointer, use self as default.
-	if (vartype != openborconstant("VT_PTR"))
-	{
-		ent = getlocalvar("self");
-	}
-	
-	// Get animation valid status.
-	is_valid = getentityproperty(ent, "animvalid", animation);
-
-	// Animation is valid?
-	if (is_valid == 1)
-	{
-		// Switch using perform attack.
-		result = performattack(ent, animation);
-	}
-
-	return result;
-}
-
-// Caskey, Damon V.
-// 2016-09-13
-//
-// Verify animation and entity, then switch
-// entity to new animation.
-int dc_set_animation(void ent, int animation)
-{
-	int is_valid;
-	int vartype;
-	int result;
-
-	// Get entity vartype.
-	vartype = typeof(ent);
-
-	// If the entity is not a valid pointer, use self as default.
-	if (vartype != openborconstant("VT_PTR"))
-	{
-		ent = getlocalvar("self");
-	}
-	
-	// Get animation valid status.
-	is_valid = getentityproperty(ent, "animvalid", animation);
-
-	// Animation is valid?
-	if (is_valid == 1)
-	{
-		// Switch to animation.
-		changeentityproperty(ent, "animation", animation);
-	}	
-
-	return result;
 }
