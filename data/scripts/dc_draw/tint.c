@@ -122,17 +122,25 @@ void dc_draw_auto_tint(void ent)
 		return;
 	}
 
-	// In a death animation?
-	if (animation == openborconstant("ANI_DIE"))
+	// Wash out when entity is KO'd.
+	// We just check to see if entity is
+	// dead and is finished animating, then
+	// give it a KO tint effect.
+
+	//  Dead?
+	if (getentityproperty(ent, "dead"))
 	{
-		// Set transparency mode for tint, and apply tint color.
-		dc_draw_set_tint_mode(ent, DC_DRAW_KO_MODE);
-		dc_draw_set_tint_color(ent, DC_DRAW_KO_RGB_R, DC_DRAW_KO_RGB_G, DC_DRAW_KO_RGB_B);
+		// Finished with animation?
+		if(!getentityproperty(ent, "animating"))
+		{ 
+			// Set transparency mode for tint, and apply tint color.
+			dc_draw_set_tint_mode(ent, DC_DRAW_KO_MODE);
+			dc_draw_set_tint_color(ent, DC_DRAW_KO_RGB_R, DC_DRAW_KO_RGB_G, DC_DRAW_KO_RGB_B);
 
-		// Nothing else to do, so exit the function.
-		return;
+			// Nothing else to do, so exit the function.
+			return;
+		}
 	}
-
 	///////
 
 	// If you want to add other tint effects, like shock, poison,
