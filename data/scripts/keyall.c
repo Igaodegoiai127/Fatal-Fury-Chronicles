@@ -40,6 +40,8 @@ void main(){
 	attacking	= getentityproperty(ent, "aiflag", "attacking");
 	jumping		= getentityproperty(ent, "aiflag", "jumping");    
 
+	// Set base entity for animation control library.
+	dc_disney_set_entity(ent);
 
 	// Run different action attempts based on basic entity state.
 	if (idle)
@@ -178,15 +180,15 @@ int dc_command_sidestep_follow_up(int player_index)
 
 	if (key_hold & openborconstant("FLAG_MOVEUP"))
 	{
-		success = dc_disney_set_attack(ent, DODATKSU);
+		success = dc_disney_set_attack(DODATKSU);
 	}
 	else if (key_hold & openborconstant("FLAG_MOVEDOWN"))
 	{
-		success = dc_disney_set_attack(ent, DODATKSD);
+		success = dc_disney_set_attack(DODATKSD);
 	}
 	else
 	{
-		success = dc_disney_set_attack(ent, DODATKD);
+		success = dc_disney_set_attack(DODATKD);
 	}
 
 	// If animation set function returned true, then
@@ -218,11 +220,10 @@ int dc_command_back_dash(int player_index)
 	int time_current;
 	int time_set;
 
-
 	// Get base entity.
 	ent = getplayerproperty(player_index, "entity");
 
-	// Key press must be attack 1.
+	// Key press.
 	key_press = getplayerproperty(player_index, "newkeys");
 
 	if (!(key_press & openborconstant("FLAG_SPECIAL")))
@@ -253,7 +254,7 @@ int dc_command_back_dash(int player_index)
 	}
 
 	// If we got this far then we can set a down attack.
-	dc_disney_set_attack(ent, openborconstant("ANI_FREESPECIAL"));
+	dc_disney_set_attack(openborconstant("ANI_FREESPECIAL"));
 
 	// Stop moving in case we were walking.
 	changeentityproperty(ent, "velocity", 0, 0, 0);
@@ -389,7 +390,7 @@ int dc_command_airblock(int player_index)
 	}
 
 	// Set the animation.
-	dc_set_animation(ent, AIRBLOCK);
+	dc_set_animation(AIRBLOCK);
 
 	// Clear key flag from key press.
 	key_press -= openborconstant("FLAG_SPECIAL");
@@ -442,7 +443,7 @@ int dc_command_air_back_attack(int player_index)
 	}
 
 	// Set the animation.
-	dc_set_animation(ent, AIRBACK);
+	dc_set_animation(AIRBACK);
 
 	// Clear key flag from key press.
 	key_press -= openborconstant("FLAG_ATTACK");
@@ -509,7 +510,7 @@ int dc_command_air_alternate_drop_attack(int player_index)
 	}
 
 	// Set the animation.
-	dc_set_animation(ent, AIRJ2AL);
+	dc_set_animation(AIRJ2AL);
 
 	// Clear key flag from key press.
 	key_press -= openborconstant("FLAG_ATTACK");
@@ -557,7 +558,7 @@ int dc_command_dodge_attack(int player_index)
 
 	// Set the direction and animation.
 	dc_command_direction_switch(player_index);
-	dc_disney_set_attack(ent, DODATK);
+	dc_disney_set_attack(DODATK);
 
 	// Clear key flag from key press.
 	key_press -= openborconstant("FLAG_ATTACK");
@@ -629,7 +630,7 @@ int dc_try_down_attack(int player_index)
 	}
 
 	// If we got this far then we can set a down attack.
-	dc_disney_set_attack(ent, ATKDOWN);
+	dc_disney_set_attack(ATKDOWN);
 
 	// Stop moving in case we were walking.
 	changeentityproperty(ent, "velocity", 0, 0, 0); 
