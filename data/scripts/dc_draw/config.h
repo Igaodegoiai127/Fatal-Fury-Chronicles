@@ -20,19 +20,6 @@
 #define DC_DRAW_TRANSPARENCY_DODGE      5
 #define DC_DRAW_TRANSPARENCY_AVERAGE    6
 
-// Key flags
-#define DC_DRAW_KEY_STATE_HOLD          0
-#define DC_DRAW_KEY_STATE_PRESS         1
-#define DC_DRAW_KEY_STATE_RELEASE       2
-
-#define DC_DRAW_KEY_ATTACK_1            openborconstant("FLAG_ATTACK")
-#define DC_DRAW_KEY_ATTACK_2            openborconstant("FLAG_ATTACK2")
-#define DC_DRAW_KEY_ATTACK_3            openborconstant("FLAG_ATTACK3")
-#define DC_DRAW_KEY_ATTACK_4            openborconstant("FLAG_ATTACK4")
-#define DC_DRAW_KEY_ESCAPE              openborconstant("FLAG_ESC")
-#define DC_DRAW_KEY_MOVE_DOWN           openborconstant("FLAG_MOVEDOWN")
-#define DC_DRAW_KEY_MOVE_UP             openborconstant("FLAG_MOVEUP")
-
 // Variable types.
 #define DC_DRAW_VARTYPE_INTEGER			openborconstant("VT_INTEGER")
 #define DC_DRAW_VARTYPE_POINTER			openborconstant("VT_PTR")

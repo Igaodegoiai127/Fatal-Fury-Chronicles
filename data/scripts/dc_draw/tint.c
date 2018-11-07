@@ -76,7 +76,7 @@ void dc_draw_auto_tint(void ent)
 		// How much time is left before freeze effect is set to expire?
 		time_remaining = time_effect - time_current;
 
-		// Now let's find out want to know what % of the original
+		// Now let's find what % of the original
 		// freeze time is left. Then we'll multiply that by
 		// maximum intensity of color and apply it to blue
 		// and green color setting.
@@ -175,7 +175,7 @@ void dc_effect_tint_debug_control()
 
 	// if holding escape, then use Up/Down presses
 	// to toggle debugging mode.
-	if (key_hold & DC_DRAW_KEY_ESCAPE)
+	if (key_hold & openborconstant("FLAG_ESC"))
 	{
 		debug = getlocalvar(DC_DRAW_VAR_KEY_DEBUG_FLAG);
 
@@ -192,7 +192,7 @@ void dc_effect_tint_debug_control()
 	if (debug == DC_DRAW_FLAG_ON)
 	{
 		// Tinting transparency mode.
-		if (key_hold & DC_DRAW_KEY_ATTACK_1)
+		if (key_hold & openborconstant("FLAG_ATTACK"))
 		{
 			// Get orginal value.
 			mode = getlocalvar(DC_DRAW_VAR_KEY_DEBUG_TINT_MODE);
@@ -205,7 +205,7 @@ void dc_effect_tint_debug_control()
 		}
 
 		// RGB Red value.
-		if (key_hold & DC_DRAW_KEY_ATTACK_2)
+		if (key_hold & openborconstant("FLAG_ATTACK2"))
 		{
 			// Get orginal value.
 			value = getlocalvar(DC_DRAW_VAR_KEY_DEBUG_RGB_RED);
@@ -218,7 +218,7 @@ void dc_effect_tint_debug_control()
 		}
 
 		// RGB Green value.
-		if (key_hold & DC_DRAW_KEY_ATTACK_3)
+		if (key_hold & openborconstant("FLAG_ATTACK3"))
 		{
 			// Get orginal value.
 			value = getlocalvar(DC_DRAW_VAR_KEY_DEBUG_RGB_GREEN);
@@ -231,7 +231,7 @@ void dc_effect_tint_debug_control()
 		}
 
 		// RGB Blue Value.
-		if (key_hold & DC_DRAW_KEY_ATTACK_4)
+		if (key_hold &  openborconstant("FLAG_ATTACK4"))
 		{
 			// Get orginal value.
 			value = getlocalvar(DC_DRAW_VAR_KEY_DEBUG_RGB_BLUE);
@@ -258,11 +258,11 @@ int dc_effect_tint_spinner(int value, int lower_limit, int upper_limit)
 	// Use a Bitwise AND to find out if the Up or Down key
 	// is pressed and increment or decrement the value
 	// accordingly.
-	if (key_press & DC_DRAW_KEY_MOVE_UP)
+	if (key_press & openborconstant("FLAG_MOVEUP"))
 	{
 		value++;
 	}
-	else if (key_press & DC_DRAW_KEY_MOVE_DOWN)
+	else if (key_press & openborconstant("FLAG_MOVEDOWN"))
 	{
 		value--;
 	}
