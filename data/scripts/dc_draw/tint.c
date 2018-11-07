@@ -6,9 +6,9 @@ void dc_draw_set_tint_color(void ent, int rgb_r, int rgb_g, int rgb_b)
 	int rgb_final = 0;    // Final RGB result.
 
 	// Catch bad arguments here.
-	if (typeof(rgb_r) != DC_DRAW_VARTYPE_INTEGER || rgb_r < DC_DRAW_RGB_MIN || rgb_r > DC_DRAW_RGB_MAX
-		|| typeof(rgb_g) != DC_DRAW_VARTYPE_INTEGER || rgb_g < DC_DRAW_RGB_MIN || rgb_g > DC_DRAW_RGB_MAX
-		|| typeof(rgb_b) != DC_DRAW_VARTYPE_INTEGER || rgb_b < DC_DRAW_RGB_MIN || rgb_b > DC_DRAW_RGB_MAX)
+	if (typeof(rgb_r) != openborconstant("VT_INTEGER") || rgb_r < DC_DRAW_RGB_MIN || rgb_r > DC_DRAW_RGB_MAX
+		|| typeof(rgb_g) != openborconstant("VT_INTEGER") || rgb_g < DC_DRAW_RGB_MIN || rgb_g > DC_DRAW_RGB_MAX
+		|| typeof(rgb_b) != openborconstant("VT_INTEGER") || rgb_b < DC_DRAW_RGB_MIN || rgb_b > DC_DRAW_RGB_MAX)
 	{
 		log("error: dc_draw_set_tint_color(void ent, int rgb_r, int rgb_g, int_rgb_b): One or more {rgb} arguments are invalid.");
 		return;
@@ -45,7 +45,7 @@ void dc_draw_auto_tint(void ent)
 		tint_mode = DC_DRAW_TRANSPARENCY_OFF;
 
 	// Verify entity or exit.
-	if (typeof(ent) != DC_DRAW_VARTYPE_POINTER) return;
+	if (typeof(ent) != openborconstant("VT_PTR")) return;
 	if (!getentityproperty(ent, "exists")) return;
 
 	// First lets turn drawmethod on. If we don't, nothing below will

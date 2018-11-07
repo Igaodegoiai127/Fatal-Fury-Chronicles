@@ -1,5 +1,5 @@
-#ifndef DC_DRAW_DEFINED
-#define DC_DRAW_DEFINED					1
+#ifndef DC_DRAW_CONFIG
+#define DC_DRAW_CONFIG					1
 
 #define DC_DRAW_FLAG_OFF                0
 #define DC_DRAW_FLAG_ON                 1
@@ -19,10 +19,6 @@
 #define DC_DRAW_TRANSPARENCY_HARDLIGHT	4
 #define DC_DRAW_TRANSPARENCY_DODGE      5
 #define DC_DRAW_TRANSPARENCY_AVERAGE    6
-
-// Variable types.
-#define DC_DRAW_VARTYPE_INTEGER			openborconstant("VT_INTEGER")
-#define DC_DRAW_VARTYPE_POINTER			openborconstant("VT_PTR")
 
 // Colors
 #define DC_DRAW_RGB_MIN                 0
@@ -55,4 +51,4 @@
 #define dc_draw_set_tint_mode(entity, value)	changedrawmethod(entity, "tintmode", value)
 #define dc_draw_set_map(entity, value)			changedrawmethod(entity, "remap", value)
 
-#endif // !DC_DRAW_DEFINED
+#endif // !DC_DRAW_CONFIG
