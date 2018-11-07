@@ -1,3 +1,5 @@
+#include "data/scripts/dc_math/config.h"
+
 
 // Caskey, Damon V. 
 // 2018-08-23
