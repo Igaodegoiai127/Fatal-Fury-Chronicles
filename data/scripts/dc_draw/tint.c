@@ -116,6 +116,7 @@ void dc_draw_auto_tint(void ent)
 	{
 		// Set transparency mode for tint, and apply tint color.
 		dc_draw_set_tint_mode(ent, DC_DRAW_BURN_MODE);
+
 		dc_draw_set_tint_color(ent, DC_DRAW_BURN_RGB_R, DC_DRAW_BURN_RGB_G, DC_DRAW_BURN_RGB_B);
 
 		// Nothing else to do, so exit the function.
@@ -133,9 +134,34 @@ void dc_draw_auto_tint(void ent)
 		// Finished with animation?
 		if(!getentityproperty(ent, "animating"))
 		{ 
+			int tint_color;
+			int increment;			
+
+			// If not at final KO tint, increment the tint color.
+			tint_color = getdrawmethod(ent, "tintcolor");
+
+			//rgb_b = tint_color % 256;
+			//rgb_g = tint_color / 256 % 256;
+			rgb_r = tint_color / 256 / 256 % 256;
+			
+			increment = DC_DRAW_KO_RGB_R / DC_DRAW_KO_STEPS;
+
+			// If not at final KO tint, increment the tint color.
+			if (rgb_r < DC_DRAW_KO_RGB_R)
+			{
+				rgb_r += increment;
+			}
+			else if(rgb_r > DC_DRAW_KO_RGB_R)
+			{
+				rgb_r = DC_DRAW_KO_RGB_R;
+			}
+
+			// RGB values to to integer.
+			tint_color = rgbcolor(rgb_r, rgb_r, rgb_r);
+
 			// Set transparency mode for tint, and apply tint color.
 			dc_draw_set_tint_mode(ent, DC_DRAW_KO_MODE);
-			dc_draw_set_tint_color(ent, DC_DRAW_KO_RGB_R, DC_DRAW_KO_RGB_G, DC_DRAW_KO_RGB_B);
+			dc_draw_set_tint_color(ent, rgb_r, rgb_r, rgb_r);
 
 			// Nothing else to do, so exit the function.
 			return;
