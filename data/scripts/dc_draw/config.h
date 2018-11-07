@@ -1,3 +1,5 @@
+#include "data/scripts/dc_math/main.c"
+
 #ifndef DC_DRAW_CONFIG
 #define DC_DRAW_CONFIG					1
 

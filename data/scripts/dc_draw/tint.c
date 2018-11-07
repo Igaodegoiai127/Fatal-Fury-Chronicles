@@ -134,34 +134,38 @@ void dc_draw_auto_tint(void ent)
 		// Finished with animation?
 		if(!getentityproperty(ent, "animating"))
 		{ 
-			int tint_color;
-			int increment;			
+			int tint_color;		
 
-			// If not at final KO tint, increment the tint color.
+			// Get current tint color.
 			tint_color = getdrawmethod(ent, "tintcolor");
 
-			//rgb_b = tint_color % 256;
+			// Now we'll use the spinner library to increment 
+			// RGB blue value. We only use blue because it's 
+			// quickest to extract from current tint_color integer
+			// and for KO map R, G, and B values are all identical.
+
+			// Get the blue value.
+			rgb_b = tint_color % 256;
 			//rgb_g = tint_color / 256 % 256;
-			rgb_r = tint_color / 256 / 256 % 256;
-			
-			increment = DC_DRAW_KO_RGB_R / DC_DRAW_KO_STEPS;
+			//rgb_r = tint_color / 256 / 256 % 256;
 
-			// If not at final KO tint, increment the tint color.
-			if (rgb_r < DC_DRAW_KO_RGB_R)
-			{
-				rgb_r += increment;
-			}
-			else if(rgb_r > DC_DRAW_KO_RGB_R)
-			{
-				rgb_r = DC_DRAW_KO_RGB_R;
-			}
+			// Current value for spinner is current RGB. Upper
+			// is the KO value. We don't care about lower value.
+			dc_math_spinner_set_value(rgb_b);
+			dc_math_spinner_set_range_upper(DC_DRAW_KO_RGB_R);
 
-			// RGB values to to integer.
-			tint_color = rgbcolor(rgb_r, rgb_r, rgb_r);
+			// Cap the value at upper.
+			dc_math_spinner_set_range_bound_upper(DC_MATH_SPINNER_RANGE_BOUND_CAP);
+
+			// Set steps and build increment amount.
+			dc_math_spinner_set_steps(DC_DRAW_KO_STEPS);
+
+			// Run the increment and get resulting value for rgb_b.
+			rgb_b = dc_math_spinner_increment_run();
 
 			// Set transparency mode for tint, and apply tint color.
 			dc_draw_set_tint_mode(ent, DC_DRAW_KO_MODE);
-			dc_draw_set_tint_color(ent, rgb_r, rgb_r, rgb_r);
+			dc_draw_set_tint_color(ent, rgb_b, rgb_b, rgb_b);
 
 			// Nothing else to do, so exit the function.
 			return;
@@ -182,6 +186,9 @@ void dc_draw_auto_tint(void ent)
 
 	setentityvar(ent, DC_DRAW_VAR_KEY_TIME_INITIAL, NULL());
 }
+
+
+
 
 void dc_effect_tint_debug_control()
 {

@@ -129,6 +129,7 @@
     <ClCompile Include="data\scripts\dc_disney\main.c" />
     <ClCompile Include="data\scripts\dc_disney\set_animation.c" />
     <ClCompile Include="data\scripts\dc_disney\set_attack.c" />
+    <ClCompile Include="data\scripts\dc_draw\rgb_increment.c" />
     <ClCompile Include="data\scripts\dc_initialize\initialize_level_spawn.c" />
     <ClCompile Include="data\scripts\dama0001.c" />
     <ClCompile Include="data\scripts\dama0002.c" />
@@ -148,6 +149,8 @@
     <ClCompile Include="data\scripts\dc_initialize\colors.c" />
     <ClCompile Include="data\scripts\dc_initialize\main.c" />
     <ClCompile Include="data\scripts\dc_initialize\alias.c" />
+    <ClCompile Include="data\scripts\dc_math\config.c" />
+    <ClCompile Include="data\scripts\dc_math\spinner.c" />
     <ClCompile Include="data\scripts\dc_math\main.c" />
     <ClCompile Include="data\scripts\dc_math\percentage.c" />
     <ClCompile Include="data\scripts\dc_math\ratio_to_int.c" />
