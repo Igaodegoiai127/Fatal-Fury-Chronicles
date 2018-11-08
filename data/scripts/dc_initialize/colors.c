@@ -14,7 +14,7 @@ char dc_random_color_set(void ent)
 	mapcount = getentityproperty(ent, "mapcount");
 
 	// use the number of color sts available as maximum random number.
-	setlocalvar(DC_D20_KEY_UPPER, mapcount);
+	setlocalvar(DC_D20_VAR_KEY_RANGE_UPPER, mapcount);
 
 	// Generate a random map index that falls outside of hidden map range.
 	do

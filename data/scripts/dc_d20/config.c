@@ -3,16 +3,16 @@
 // Lowest number random generator can return.
 void dc_d20_set_range_lower(int value)
 {
-	setlocalvar(DC_D20_KEY_LOWER, value);
+	setlocalvar(DC_D20_VAR_KEY_RANGE_LOWER, value);
 }
 
 int dc_d20_get_range_lower()
 {
-	void result = getlocalvar(DC_D20_KEY_LOWER);
+	void result = getlocalvar(DC_D20_VAR_KEY_RANGE_LOWER);
 
 	if (!result)
 	{
-		result = DC_D20_DEFAULT_LOWER;
+		result = DC_D20_DEFAULT_RANGE_LOWER;
 	}
 
 	return result;
@@ -21,16 +21,16 @@ int dc_d20_get_range_lower()
 // Highest number random generator can return.
 void dc_d20_set_range_upper(int value)
 {
-	setlocalvar(DC_D20_KEY_UPPER, value);
+	setlocalvar(DC_D20_VAR_KEY_RANGE_UPPER, value);
 }
 
 int dc_d20_get_range_upper()
 {
-	void result = getlocalvar(DC_D20_KEY_UPPER);
+	void result = getlocalvar(DC_D20_VAR_KEY_RANGE_UPPER);
 
 	if (!result)
 	{
-		result = DC_D20_DEFAULT_UPPER;
+		result = DC_D20_DEFAULT_RANGE_UPPER;
 	}
 
 	return result;

@@ -45,7 +45,7 @@ int dc_sound_sound_chance()
 	percentage = chance * 100;
 
 	// Get random 0-100.
-	setlocalvar(DC_D20_KEY_UPPER, 100);
+	setlocalvar(DC_D20_VAR_KEY_RANGE_UPPER, 100);
 	random = dc_d20_random_int();
 
 	if (percentage >= random)
@@ -109,7 +109,7 @@ int dc_sound_select_sample_id(void indexes)
 		size = size(indexes);
 		size--;
 
-		setlocalvar(DC_D20_KEY_UPPER, size);
+		setlocalvar(DC_D20_VAR_KEY_RANGE_UPPER, size);
 
 		element = dc_d20_random_int();
 	}

@@ -14,8 +14,8 @@ void main(){
 
 	int rotate;
 
-	setlocalvar(DC_D20_KEY_LOWER, 0);
-	setlocalvar(DC_D20_KEY_UPPER, 359);
+	setlocalvar(DC_D20_VAR_KEY_RANGE_LOWER, 0);
+	setlocalvar(DC_D20_VAR_KEY_RANGE_UPPER, 359);
 
 	rotate = dc_d20_random_int();
 

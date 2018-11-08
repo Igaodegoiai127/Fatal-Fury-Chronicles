@@ -59,7 +59,7 @@ char dc_alias_from_array()
 
 		// Use last index as upper bound for random 
 		// number generator.
-		setlocalvar(DC_D20_KEY_UPPER, size);
+		setlocalvar(DC_D20_VAR_KEY_RANGE_UPPER, size);
 
 		// Generate random number.
 		random_index = dc_d20_random_int();
@@ -128,7 +128,7 @@ char dc_alias_from_text(void ent)
 		column_count = dc_filestream_enumerate_column(names);
 
 		// Set maximum random number to column count.
-		setlocalvar(DC_D20_KEY_UPPER, column_count);
+		setlocalvar(DC_D20_VAR_KEY_RANGE_UPPER, column_count);
 
 		// Generate random number.
 		random_index = dc_d20_random_int();
