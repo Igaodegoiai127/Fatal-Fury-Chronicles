@@ -13,7 +13,7 @@ int dc_math_get_instance()
 	return result;
 }
 
-void dc_math_set_instance(int value)
+void dc_d20_set_instance(int value)
 {
 	setlocalvar(DC_MATH_VER_KEY_INSTANCE, value);
 }

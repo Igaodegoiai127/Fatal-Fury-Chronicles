@@ -4,6 +4,7 @@
 #define DC_D20_CONFIG  1
 
 // Default values.
+#define DC_D20_DEFAULT_INSTANCE		0
 #define DC_D20_DEFAULT_RANGE_LOWER	0
 #define DC_D20_DEFAULT_RANGE_UPPER	100
 
