@@ -213,9 +213,6 @@
     <ClCompile Include="data\scripts\dc_d20\main.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="data\scripts\dc_d20\operation.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="data\scripts\dc_initialize\main.c">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -298,6 +295,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="data\scripts\dc_math\spinner.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="data\scripts\dc_d20\random.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

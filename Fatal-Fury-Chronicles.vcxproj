@@ -138,7 +138,7 @@
     <ClCompile Include="data\scripts\dc_afterimage\trai0001.c" />
     <ClCompile Include="data\scripts\dc_afterimage\trai0002.c" />
     <ClCompile Include="data\scripts\dc_d20\main.c" />
-    <ClCompile Include="data\scripts\dc_d20\operation.c" />
+    <ClCompile Include="data\scripts\dc_d20\random.c" />
     <ClCompile Include="data\scripts\dc_draw\main.c" />
     <ClCompile Include="data\scripts\dc_draw\scale_ratio.c" />
     <ClCompile Include="data\scripts\dc_draw\tint.c" />
