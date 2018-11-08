@@ -9,6 +9,7 @@ void oncreate()
 	log("- oncreate().");
 	log("\n");
 
+	
 	dc_sounds_setup("Galford", DC_SOUND_TYPE_VOICE_HEAVY_A, "data/chars/galford/sounds/voice-atk-2.wav");
 	dc_sounds_setup("Galford", DC_SOUND_TYPE_VOICE_HEAVY_A, "data/chars/galford/sounds/voice-atk-3.wav");
 	dc_sounds_setup("Galford", DC_SOUND_TYPE_VOICE_HEAVY_A, "data/chars/galford/sounds/voice-atk-4.wav");
@@ -23,6 +24,7 @@ void oncreate()
 	dc_sounds_setup("Galford", DC_SOUND_TYPE_VOICE_MEDIUM_A, "data/chars/galford/sounds/voice-atk-0.wav");
 	dc_sounds_setup("Galford", DC_SOUND_TYPE_VOICE_MEDIUM_A, "data/chars/galford/sounds/voice-atk-1.wav");
 	dc_sounds_setup("Galford", DC_SOUND_TYPE_VOICE_MEDIUM_A, "data/chars/galford/sounds/voice-atk-2.wav");
+	
 
 	dc_sounds_setup("Galford", DC_SOUND_TYPE_WHIFF_HEAVY_B, "data/sounds/custom/samurai_shodown_whiff_heavy_0.wav");
 

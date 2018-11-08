@@ -109,13 +109,15 @@ int dc_sound_select_sample_id(void indexes)
 		size = size(indexes);
 		size--;
 
-		dc_d20_set_range_upper(size);
+		dc_d20_set_range_upper(size);		
 
 		element = dc_d20_random_int();
 	}
 
 	// Get sound index value from indexes array.
 	result = get(indexes, element);
+
+	//log("\n\t result: " + result);
 
 	// Return result.
 	return result;
