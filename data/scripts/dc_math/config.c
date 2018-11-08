@@ -3,7 +3,7 @@
 // Which instance is in use?
 int dc_math_get_instance()
 {
-	void result = getlocalvar(DC_MATH_VER_KEY_INSTANCE);
+	void result = getlocalvar(DC_MATH_VAR_KEY_INSTANCE);
 
 	if (!result)
 	{
@@ -15,5 +15,5 @@ int dc_math_get_instance()
 
 void dc_d20_set_instance(int value)
 {
-	setlocalvar(DC_MATH_VER_KEY_INSTANCE, value);
+	setlocalvar(DC_MATH_VAR_KEY_INSTANCE, value);
 }

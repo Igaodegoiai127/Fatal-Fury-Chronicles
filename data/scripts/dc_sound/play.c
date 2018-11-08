@@ -41,11 +41,11 @@ int dc_sound_sound_chance()
 
 	chance = dc_sound_get_sound_chance();
 
-	// Conver chance to whole number percentage.
+	// Convert chance to whole number percentage.
 	percentage = chance * 100;
 
 	// Get random 0-100.
-	setlocalvar(DC_D20_VAR_KEY_RANGE_UPPER, 100);
+	dc_d20_set_range_upper(100);
 	random = dc_d20_random_int();
 
 	if (percentage >= random)
@@ -109,7 +109,7 @@ int dc_sound_select_sample_id(void indexes)
 		size = size(indexes);
 		size--;
 
-		setlocalvar(DC_D20_VAR_KEY_RANGE_UPPER, size);
+		dc_d20_set_range_upper(size);
 
 		element = dc_d20_random_int();
 	}

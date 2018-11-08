@@ -3,7 +3,7 @@
 // Which instance is in use?
 int dc_d20_get_instance()
 {
-	void result = getlocalvar(DC_D20_VER_KEY_INSTANCE);
+	void result = getlocalvar(DC_D20_VAR_KEY_INSTANCE);
 
 	if (!result)
 	{
@@ -15,7 +15,7 @@ int dc_d20_get_instance()
 
 void dc_d20_set_instance(int value)
 {
-	setlocalvar(DC_D20_VER_KEY_INSTANCE, value);
+	setlocalvar(DC_D20_VAR_KEY_INSTANCE, value);
 }
 
 // Lowest number random generator can return.

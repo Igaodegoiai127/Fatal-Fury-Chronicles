@@ -7,7 +7,7 @@ void dc_math_spinner_set_range_bound_lower(int value)
 	int instance;
 	instance = dc_math_get_instance();
 
-	setlocalvar(instance + DC_MATH_VER_KEY_SPINNER_RANGE_BOUND_LOWER, value);
+	setlocalvar(instance + DC_MATH_VAR_KEY_SPINNER_RANGE_BOUND_LOWER, value);
 }
 
 int dc_math_spinner_get_range_bound_lower()
@@ -15,7 +15,7 @@ int dc_math_spinner_get_range_bound_lower()
 	int instance;
 	instance = dc_math_get_instance();
 
-	void result = getlocalvar(instance + DC_MATH_VER_KEY_SPINNER_RANGE_BOUND_LOWER);
+	void result = getlocalvar(instance + DC_MATH_VAR_KEY_SPINNER_RANGE_BOUND_LOWER);
 
 	if (!result)
 	{
@@ -31,7 +31,7 @@ void dc_math_spinner_set_range_bound_upper(int value)
 	int instance;
 	instance = dc_math_get_instance();
 
-	setlocalvar(instance + DC_MATH_VER_KEY_SPINNER_RANGE_BOUND_UPPER, value);
+	setlocalvar(instance + DC_MATH_VAR_KEY_SPINNER_RANGE_BOUND_UPPER, value);
 }
 
 int dc_math_spinner_get_range_bound_upper()
@@ -39,7 +39,7 @@ int dc_math_spinner_get_range_bound_upper()
 	int instance;
 	instance = dc_math_get_instance();
 
-	void result = getlocalvar(instance + DC_MATH_VER_KEY_SPINNER_RANGE_BOUND_UPPER);
+	void result = getlocalvar(instance + DC_MATH_VAR_KEY_SPINNER_RANGE_BOUND_UPPER);
 
 	if (!result)
 	{
@@ -55,7 +55,7 @@ void dc_math_spinner_set_value(int value)
 	int instance;
 	instance = dc_math_get_instance();
 
-	setlocalvar(instance + DC_MATH_VER_KEY_SPINNER_VALUE, value);
+	setlocalvar(instance + DC_MATH_VAR_KEY_SPINNER_VALUE, value);
 }
 
 int dc_math_spinner_get_value()
@@ -63,7 +63,7 @@ int dc_math_spinner_get_value()
 	int instance;
 	instance = dc_math_get_instance();
 
-	void result = getlocalvar(instance + DC_MATH_VER_KEY_SPINNER_VALUE);
+	void result = getlocalvar(instance + DC_MATH_VAR_KEY_SPINNER_VALUE);
 
 	if (!result)
 	{
@@ -79,7 +79,7 @@ void dc_math_spinner_set_increment(int value)
 	int instance;
 	instance = dc_math_get_instance();
 
-	setlocalvar(instance + DC_MATH_VER_KEY_SPINNER_INCREMENT, value);
+	setlocalvar(instance + DC_MATH_VAR_KEY_SPINNER_INCREMENT, value);
 }
 
 int dc_math_spinner_get_increment()
@@ -87,7 +87,7 @@ int dc_math_spinner_get_increment()
 	int instance;
 	instance = dc_math_get_instance();
 
-	void result = getlocalvar(instance + DC_MATH_VER_KEY_SPINNER_INCREMENT);
+	void result = getlocalvar(instance + DC_MATH_VAR_KEY_SPINNER_INCREMENT);
 
 	if (!result)
 	{
@@ -103,7 +103,7 @@ void dc_math_spinner_set_range_upper(int value)
 	int instance;
 	instance = dc_math_get_instance();
 
-	setlocalvar(instance + DC_MATH_VER_KEY_SPINNER_RANGE_UPPER, value);
+	setlocalvar(instance + DC_MATH_VAR_KEY_SPINNER_RANGE_UPPER, value);
 }
 
 int dc_math_spinner_get_range_upper()
@@ -111,7 +111,7 @@ int dc_math_spinner_get_range_upper()
 	int instance;
 	instance = dc_math_get_instance();
 
-	void result = getlocalvar(instance + DC_MATH_VER_KEY_SPINNER_RANGE_UPPER);
+	void result = getlocalvar(instance + DC_MATH_VAR_KEY_SPINNER_RANGE_UPPER);
 
 	if (!result)
 	{
@@ -128,7 +128,7 @@ void dc_math_spinner_set_range_lower(int value)
 	int instance;
 	instance = dc_math_get_instance();
 
-	setlocalvar(instance + DC_MATH_VER_KEY_SPINNER_RANGE_LOWER, value);
+	setlocalvar(instance + DC_MATH_VAR_KEY_SPINNER_RANGE_LOWER, value);
 }
 
 int dc_math_spinner_get_range_lower()
@@ -136,7 +136,7 @@ int dc_math_spinner_get_range_lower()
 	int instance;
 	instance = dc_math_get_instance();
 
-	void result = getlocalvar(instance + DC_MATH_VER_KEY_SPINNER_RANGE_LOWER);
+	void result = getlocalvar(instance + DC_MATH_VAR_KEY_SPINNER_RANGE_LOWER);
 
 	if (!result)
 	{
