@@ -1,3 +1,6 @@
 [submodule "data/scripts/dc_d20"]
 	path = data/scripts/dc_d20
 	url = https://github.com/DCurrent/openbor-script-D20/
+[submodule "data/scripts/dc_spinner"]
+	path = data/scripts/dc_spinner
+	url = https://github.com/DCurrent/openbor-script-spinner
