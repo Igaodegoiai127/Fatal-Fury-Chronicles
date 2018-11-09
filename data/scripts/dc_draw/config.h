@@ -1,4 +1,5 @@
 #include "data/scripts/dc_math/main.c"
+#include "data/scripts/dc_spinner/main.c"
 
 #ifndef DC_DRAW_CONFIG
 #define DC_DRAW_CONFIG					1

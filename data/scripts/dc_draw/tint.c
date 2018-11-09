@@ -151,17 +151,17 @@ void dc_draw_auto_tint(void ent)
 
 			// Current value for spinner is current RGB. Upper
 			// is the KO value. We don't care about lower value.
-			dc_math_spinner_set_value(rgb_b);
-			dc_math_spinner_set_range_upper(DC_DRAW_KO_RGB_R);
+			dc_spinner_set_value(rgb_b);
+			dc_spinner_set_range_upper(DC_DRAW_KO_RGB_R);
 
 			// Cap the value at upper.
-			dc_math_spinner_set_range_bound_upper(DC_MATH_SPINNER_RANGE_BOUND_CAP);
+			dc_spinner_set_range_bound_upper(DC_MATH_SPINNER_RANGE_BOUND_CAP);
 
 			// Set steps and build increment amount.
-			dc_math_spinner_set_steps(DC_DRAW_KO_STEPS);
+			dc_spinner_set_steps(DC_DRAW_KO_STEPS);
 
 			// Run the increment and get resulting value for rgb_b.
-			rgb_b = dc_math_spinner_increment_run();
+			rgb_b = dc_spinner_increment_run();
 
 			// Set transparency mode for tint, and apply tint color.
 			dc_draw_set_tint_mode(ent, DC_DRAW_KO_MODE);
