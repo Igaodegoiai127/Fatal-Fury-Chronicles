@@ -1,0 +1,3 @@
+[submodule "data/scripts/dc_d20"]
+	path = data/scripts/dc_d20
+	url = https://github.com/DCurrent/openbor-script-D20/
