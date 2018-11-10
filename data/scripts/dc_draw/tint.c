@@ -155,7 +155,7 @@ void dc_draw_auto_tint(void ent)
 			dc_spinner_set_range_upper(DC_DRAW_KO_RGB_R);
 
 			// Cap the value at upper.
-			dc_spinner_set_range_bound_upper(DC_MATH_SPINNER_RANGE_BOUND_CAP);
+			dc_spinner_set_range_bound_upper(DC_SPINNER_RANGE_BOUND_CAP);
 
 			// Set steps and build increment amount.
 			dc_spinner_set_steps(DC_DRAW_KO_STEPS);

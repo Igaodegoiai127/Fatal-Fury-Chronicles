@@ -147,7 +147,6 @@
     <ClCompile Include="data\scripts\dc_initialize\main.c" />
     <ClCompile Include="data\scripts\dc_initialize\alias.c" />
     <ClCompile Include="data\scripts\dc_math\config.c" />
-    <ClCompile Include="data\scripts\dc_math\spinner.c" />
     <ClCompile Include="data\scripts\dc_math\main.c" />
     <ClCompile Include="data\scripts\dc_math\percentage.c" />
     <ClCompile Include="data\scripts\dc_math\ratio_to_int.c" />

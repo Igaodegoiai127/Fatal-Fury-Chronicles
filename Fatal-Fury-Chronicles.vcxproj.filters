@@ -288,9 +288,6 @@
     <ClCompile Include="data\scripts\dc_math\config.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="data\scripts\dc_math\spinner.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="data\scripts\com\bind0002.h">
