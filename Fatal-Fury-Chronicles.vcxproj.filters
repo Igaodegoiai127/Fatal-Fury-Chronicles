@@ -210,22 +210,10 @@
     <ClCompile Include="data\scripts\loading.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="data\scripts\dc_initialize\main.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="data\scripts\dc_initialize\colors.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="data\scripts\dc_initialize\alias.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="data\chars\galford\scripts\onspawn.c">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="data\chars\ray\scripts\onspawn.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="data\scripts\dc_initialize\initialize_level_spawn.c">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="data\scripts\dc_sound\adjustments.c">
@@ -399,9 +387,6 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="data\scripts\dc_sound\config.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="data\scripts\dc_initialize\config.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="data\scripts\dc_string\config.h">

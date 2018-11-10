@@ -2,11 +2,7 @@
 
 void main()
 {
-	void ent;
-
-	ent = getlocalvar("self");
-
-	initialize_level_spawn(ent);
+	initialize_level_spawn();
 }
 
 
