@@ -4,3 +4,6 @@
 [submodule "data/scripts/dc_spinner"]
 	path = data/scripts/dc_spinner
 	url = https://github.com/DCurrent/openbor-script-spinner
+[submodule "data/scripts/dc_initialize"]
+	path = data/scripts/dc_initialize
+	url = https://github.com/DCurrent/openbor-script-initialize
