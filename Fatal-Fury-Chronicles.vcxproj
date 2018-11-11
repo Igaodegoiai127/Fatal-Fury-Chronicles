@@ -170,7 +170,6 @@
     <ClCompile Include="data\scripts\score3.c" />
     <ClCompile Include="data\scripts\score4.c" />
     <ClCompile Include="data\scripts\scorec.c" />
-    <ClCompile Include="data\scripts\scre0001.c" />
     <ClCompile Include="data\scripts\spaw0002.c" />
     <ClCompile Include="data\scripts\spaw0003.c" />
     <ClCompile Include="data\scripts\spaw0004.c" />

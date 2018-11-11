@@ -111,9 +111,6 @@
     <ClCompile Include="data\scripts\scorec.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="data\scripts\scre0001.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="data\scripts\spaw0002.c">
       <Filter>Source Files</Filter>
     </ClCompile>
