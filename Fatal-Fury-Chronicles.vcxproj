@@ -182,7 +182,6 @@
     <ClCompile Include="data\scripts\timetick.c" />
     <ClCompile Include="data\scripts\update.c" />
     <ClCompile Include="data\scripts\updated.c" />
-    <ClCompile Include="data\scripts\Z_debug_0001.c" />
     <ClCompile Include="data\scripts\Z_update_.c" />
   </ItemGroup>
   <ItemGroup>
