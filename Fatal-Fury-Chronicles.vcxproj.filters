@@ -144,9 +144,6 @@
     <ClCompile Include="data\scripts\update.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="data\scripts\Z_update_.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="data\scripts\dc_afterimage\main.c">
       <Filter>Source Files</Filter>
     </ClCompile>
