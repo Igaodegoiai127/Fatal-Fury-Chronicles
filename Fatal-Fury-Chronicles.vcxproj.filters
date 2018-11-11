@@ -111,9 +111,6 @@
     <ClCompile Include="data\scripts\scorec.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="data\scripts\spaw0003.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="data\scripts\spaw0004.c">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -262,6 +259,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="data\chars\misc\flash\flash\scripts\event_spawn.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="data\scripts\common\event_spawn_dust.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -8567,9 +8567,9 @@
     <Text Include="data\levels\void0001.txt" />
     <Text Include="logs\OpenBorLog.txt" />
     <Text Include="logs\ScriptLog.txt" />
-    <Text Include="data\chars\misc\dust\flash_fall_land.txt" />
     <Text Include="data\menu.txt" />
     <Text Include="data\bgs\beach\cabin_cruiser\cabin_cruiser.txt" />
+    <Text Include="data\chars\misc\dust\flash_fall_land.txt" />
   </ItemGroup>
   <ItemGroup>
     <None Include="data\chars\andy\wild-ambition-front-throw.psd" />

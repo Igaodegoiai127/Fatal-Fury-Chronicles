@@ -121,6 +121,7 @@
     <ClCompile Include="data\chars\terry\scripts\key.c" />
     <ClCompile Include="data\chars\terry\scripts\update.c" />
     <ClCompile Include="data\scripts\bloc0001.c" />
+    <ClCompile Include="data\scripts\common\event_spawn_dust.c" />
     <ClCompile Include="data\scripts\dc_disney\alternate_on_health.c" />
     <ClCompile Include="data\scripts\dc_disney\alternate_on_range.c" />
     <ClCompile Include="data\scripts\dc_disney\config.c" />
@@ -171,7 +172,6 @@
     <ClCompile Include="data\scripts\score3.c" />
     <ClCompile Include="data\scripts\score4.c" />
     <ClCompile Include="data\scripts\scorec.c" />
-    <ClCompile Include="data\scripts\spaw0003.c" />
     <ClCompile Include="data\scripts\spaw0004.c" />
     <ClCompile Include="data\scripts\spaw0005.c" />
     <ClCompile Include="data\scripts\spaw0006.c" />
