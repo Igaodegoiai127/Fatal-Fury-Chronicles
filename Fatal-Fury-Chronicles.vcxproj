@@ -119,7 +119,6 @@
     <ClCompile Include="data\chars\terry\scripts\ani_p.c" />
     <ClCompile Include="data\chars\terry\scripts\key.c" />
     <ClCompile Include="data\chars\terry\scripts\update.c" />
-    <ClCompile Include="data\scripts\blan0001.c" />
     <ClCompile Include="data\scripts\bloc0001.c" />
     <ClCompile Include="data\scripts\dc_disney\alternate_on_health.c" />
     <ClCompile Include="data\scripts\dc_disney\alternate_on_range.c" />
