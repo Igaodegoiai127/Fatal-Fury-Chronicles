@@ -172,8 +172,6 @@
     <ClCompile Include="data\scripts\score3.c" />
     <ClCompile Include="data\scripts\score4.c" />
     <ClCompile Include="data\scripts\scorec.c" />
-    <ClCompile Include="data\scripts\spaw0008.c" />
-    <ClCompile Include="data\scripts\spaw0009.c" />
     <ClCompile Include="data\scripts\timetick.c" />
     <ClCompile Include="data\scripts\update.c" />
     <ClCompile Include="data\scripts\updated.c" />

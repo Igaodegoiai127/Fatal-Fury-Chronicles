@@ -5,7 +5,7 @@ type	none
 lifespan 2
 shadow	0
 
-onspawnscript 	data/scripts/spaw0009.c
+onspawnscript 	data/scripts/common/event_spawn_dust.c
 onkillscript	data/scripts/kill0001.c
 
 palette		data/chars/misc/dust/0_0.png
