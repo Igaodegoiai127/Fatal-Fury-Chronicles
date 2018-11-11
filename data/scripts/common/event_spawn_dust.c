@@ -7,6 +7,7 @@ void main() {
 
 	void ent;
 	float pos_z;
+	int aggression;	
 
 	ent = getlocalvar("self");
 	pos_z = getentityproperty(ent, "z");
@@ -29,6 +30,9 @@ void main() {
 	}
 	else
 	{
-		dc_draw_z_position_autoscale(ent);
+		changedrawmethod(ent, "scalex", 128);
+		changedrawmethod(ent, "scaley", 128);
+
+		//dc_draw_z_position_autoscale(ent);
 	}
 }

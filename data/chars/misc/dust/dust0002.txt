@@ -2,10 +2,9 @@
 
 name	dust0002
 type	none
-lifespan 2
 shadow	0
 
-onspawnscript 	data/scripts/spaw0006.c
+onspawnscript 	data/scripts/common/event_spawn_dust.c
 onkillscript	data/scripts/kill0001.c
 
 palette		data/chars/misc/dust/0_0.png
@@ -16,6 +15,7 @@ anim idle
 
 	delay	5
 	offset	75 40
+		
 		frame	data/chars/misc/dust/0_0.png
 		frame	data/chars/misc/dust/0_1.png
 		frame	data/chars/misc/dust/0_2.png
