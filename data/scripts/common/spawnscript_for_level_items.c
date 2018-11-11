@@ -2,7 +2,7 @@
 
 void main()
 {
-	initialize_level_spawn();
+	dc_initialize_level_spawn();
 }
 
 
