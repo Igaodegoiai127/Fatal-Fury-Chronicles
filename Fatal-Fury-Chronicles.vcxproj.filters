@@ -111,9 +111,6 @@
     <ClCompile Include="data\scripts\scorec.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="data\scripts\spaw0002.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="data\scripts\spaw0003.c">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -262,6 +259,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="data\scripts\dc_math\config.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="data\chars\misc\flash\flash\scripts\event_spawn.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

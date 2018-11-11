@@ -112,6 +112,7 @@
     <ClCompile Include="data\chars\andy\scripts\update.c" />
     <ClCompile Include="data\chars\galford\scripts\animation.c" />
     <ClCompile Include="data\chars\galford\scripts\onspawn.c" />
+    <ClCompile Include="data\chars\misc\flash\flash\scripts\event_spawn.c" />
     <ClCompile Include="data\chars\raiden\scripts\ani_a.c" />
     <ClCompile Include="data\chars\raiden\scripts\ani_p.c" />
     <ClCompile Include="data\chars\ray\scripts\animation.c" />
@@ -170,7 +171,6 @@
     <ClCompile Include="data\scripts\score3.c" />
     <ClCompile Include="data\scripts\score4.c" />
     <ClCompile Include="data\scripts\scorec.c" />
-    <ClCompile Include="data\scripts\spaw0002.c" />
     <ClCompile Include="data\scripts\spaw0003.c" />
     <ClCompile Include="data\scripts\spaw0004.c" />
     <ClCompile Include="data\scripts\spaw0005.c" />

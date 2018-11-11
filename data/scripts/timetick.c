@@ -17,6 +17,5 @@ void main(){
 
     setglobalvar("etime", iTime);
     setglobalvar("time1", iTBug);
-    setglobalvar("time2", iTOldBug);    
-
+    setglobalvar("time2", iTOldBug);
 }
