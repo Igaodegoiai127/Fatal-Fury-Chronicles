@@ -169,7 +169,6 @@
     <ClCompile Include="data\scripts\dc_string\main.c" />
     <ClCompile Include="data\scripts\deat0001.c" />
     <ClCompile Include="data\scripts\deat0002.c" />
-    <ClCompile Include="data\scripts\fall0001.c" />
     <ClCompile Include="data\scripts\hit0001.c" />
     <ClCompile Include="data\scripts\hit0002.c" />
     <ClCompile Include="data\scripts\hit0003.c" />

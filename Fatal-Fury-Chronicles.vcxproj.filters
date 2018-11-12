@@ -63,9 +63,6 @@
     <ClCompile Include="data\scripts\deat0002.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="data\scripts\fall0001.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="data\scripts\hit0001.c">
       <Filter>Source Files</Filter>
     </ClCompile>
