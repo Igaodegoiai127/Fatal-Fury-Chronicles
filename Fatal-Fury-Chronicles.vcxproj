@@ -175,7 +175,6 @@
     <ClCompile Include="data\scripts\hit0003.c" />
     <ClCompile Include="data\scripts\keyall.c" />
     <ClCompile Include="data\scripts\loading.c" />
-    <ClCompile Include="data\scripts\movz0001.c" />
     <ClCompile Include="data\scripts\onbo0001.c" />
     <ClCompile Include="data\scripts\onbw0001.c" />
     <ClCompile Include="data\scripts\pain0001.c" />

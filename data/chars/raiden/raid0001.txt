@@ -25,7 +25,7 @@ animationscript 	data/chars/raiden/scripts/ani_p.c
 didblockscript  	data/scripts/common/event_block.c
 takedamagescript	data/scripts/dama0001.c 
 didhitscript		data/scripts/hit0001.c
-onmovezscript		data/scripts/movz0001.c
+onmovezscript		data/scripts/common/event_move_z.c
 onspawnscript		data/scripts/common/event_spawn_level_items.c 
 
 palette 		data/chars/raiden/aapa0000

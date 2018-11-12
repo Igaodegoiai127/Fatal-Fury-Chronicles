@@ -42,7 +42,7 @@ animationscript 	data/chars/galford/scripts/animation.c
 didblockscript  	data/scripts/common/event_block.c
 takedamagescript	data/chars/andy/scripts/dama0001.c
 didhitscript		data/chars/andy/scripts/hit0001.c
-onmovezscript		data/scripts/movz0001.c
+onmovezscript		data/scripts/common/event_move_z.c
 onspawnscript		data/chars/galford/scripts/onspawn.c
 onfallscript		data/chars/andy/scripts/fall0001.c
 onpainscript		data/scripts/pain0001.c
