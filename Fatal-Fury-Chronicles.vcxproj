@@ -124,6 +124,7 @@
     <ClCompile Include="data\scripts\common\event_fall.c" />
     <ClCompile Include="data\scripts\common\event_kill.c" />
     <ClCompile Include="data\scripts\common\event_move_z.c" />
+    <ClCompile Include="data\scripts\common\event_pain.c" />
     <ClCompile Include="data\scripts\common\event_spawn_dust.c" />
     <ClCompile Include="data\scripts\common\event_spawn_level_items.c" />
     <ClCompile Include="data\scripts\dc_d20\config.c" />
@@ -178,7 +179,6 @@
     <ClCompile Include="data\scripts\loading.c" />
     <ClCompile Include="data\scripts\onbo0001.c" />
     <ClCompile Include="data\scripts\onbw0001.c" />
-    <ClCompile Include="data\scripts\pain0001.c" />
     <ClCompile Include="data\scripts\score1.c" />
     <ClCompile Include="data\scripts\score2.c" />
     <ClCompile Include="data\scripts\score3.c" />

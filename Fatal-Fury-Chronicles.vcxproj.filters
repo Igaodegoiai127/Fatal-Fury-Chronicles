@@ -81,9 +81,6 @@
     <ClCompile Include="data\scripts\onbw0001.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="data\scripts\pain0001.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="data\scripts\score1.c">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -280,6 +277,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="data\scripts\common\event_move_z.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="data\scripts\common\event_pain.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

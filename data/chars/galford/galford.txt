@@ -45,7 +45,7 @@ didhitscript		data/chars/andy/scripts/hit0001.c
 onmovezscript		data/scripts/common/event_move_z.c
 onspawnscript		data/chars/galford/scripts/onspawn.c
 onfallscript		data/chars/andy/scripts/fall0001.c
-onpainscript		data/scripts/pain0001.c
+onpainscript		data/scripts/common/event_pain.c
 
 #*****Sub Entites*****
 
