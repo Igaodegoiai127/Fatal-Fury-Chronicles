@@ -122,6 +122,7 @@
     <ClCompile Include="data\chars\terry\scripts\update.c" />
     <ClCompile Include="data\scripts\common\event_block.c" />
     <ClCompile Include="data\scripts\common\event_blocked_obstacle.c" />
+    <ClCompile Include="data\scripts\common\event_blocked_wall.c" />
     <ClCompile Include="data\scripts\common\event_fall.c" />
     <ClCompile Include="data\scripts\common\event_kill.c" />
     <ClCompile Include="data\scripts\common\event_move_z.c" />
@@ -178,7 +179,6 @@
     <ClCompile Include="data\scripts\hit0003.c" />
     <ClCompile Include="data\scripts\keyall.c" />
     <ClCompile Include="data\scripts\loading.c" />
-    <ClCompile Include="data\scripts\onbw0001.c" />
     <ClCompile Include="data\scripts\score1.c" />
     <ClCompile Include="data\scripts\score2.c" />
     <ClCompile Include="data\scripts\score3.c" />
@@ -260,6 +260,7 @@
     <Image Include="data\bgs\beach\fore0003.png" />
     <Image Include="data\bgs\beach\fore0004.png" />
     <Image Include="data\bgs\beach\fore0005.png" />
+    <Image Include="data\bgs\beach\grass_0.png" />
     <Image Include="data\bgs\beach\pane00001.png" />
     <Image Include="data\bgs\beach\pane0001.png" />
     <Image Include="data\bgs\beach\pane0002.png" />
@@ -3125,6 +3126,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include=".gitignore" />
+    <None Include="data\bgs\beach\beac0001.act" />
+    <None Include="data\bgs\beach\beac0002.act" />
+    <None Include="data\bgs\beach\beac0003.act" />
+    <None Include="data\bgs\beach\beac0004.act" />
+    <None Include="data\bgs\beach\beac0005.act" />
+    <None Include="data\bgs\beach\beac0006.act" />
+    <None Include="data\bgs\beach\beac0007.act" />
+    <None Include="data\bgs\beach\beac0008.act" />
+    <None Include="data\bgs\beach\beac0009.act" />
     <None Include="data\chars\andy\wild-ambition-front-throw.psd" />
     <None Include="data\chars\galford\pal_0.act" />
     <None Include="data\chars\galford\pal_1.act" />

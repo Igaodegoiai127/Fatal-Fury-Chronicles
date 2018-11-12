@@ -75,9 +75,6 @@
     <ClCompile Include="data\scripts\keyall.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="data\scripts\onbw0001.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="data\scripts\score1.c">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -280,6 +277,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="data\scripts\common\event_blocked_obstacle.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="data\scripts\common\event_blocked_wall.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -8908,6 +8908,9 @@
     <Image Include="data\chars\galford\working.png">
       <Filter>Resource Files</Filter>
     </Image>
+    <Image Include="data\bgs\beach\grass_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
   </ItemGroup>
   <ItemGroup>
     <Text Include="data\levels.txt" />
@@ -8987,6 +8990,15 @@
     <None Include="data\chars\galford\pal_0.act" />
     <None Include="data\chars\galford\pal_1.act" />
     <None Include="data\chars\galford\working.psd" />
+    <None Include="data\bgs\beach\beac0001.act" />
+    <None Include="data\bgs\beach\beac0002.act" />
+    <None Include="data\bgs\beach\beac0003.act" />
+    <None Include="data\bgs\beach\beac0004.act" />
+    <None Include="data\bgs\beach\beac0005.act" />
+    <None Include="data\bgs\beach\beac0006.act" />
+    <None Include="data\bgs\beach\beac0007.act" />
+    <None Include="data\bgs\beach\beac0008.act" />
+    <None Include="data\bgs\beach\beac0009.act" />
   </ItemGroup>
   <ItemGroup>
     <Media Include="data\chars\galford\sounds\voice-atk-0.wav">
