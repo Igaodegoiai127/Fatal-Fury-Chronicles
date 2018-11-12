@@ -305,9 +305,6 @@
     <ClInclude Include="data\scripts\com\effe0001.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="data\scripts\com\hit0001.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="data\scripts\com\hit0002.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -8893,6 +8890,261 @@
     <Image Include="data\bgs\beach\grass_0.png">
       <Filter>Resource Files</Filter>
     </Image>
+    <Image Include="data\chars\andy\1_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\andy\1_3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\andy\6_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\andy\6_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\andy\6_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\andy\6_3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\andy\6_4.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\andy\6_5.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\andy\7_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\andy\7_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\andy\7_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\andy\8_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\andy\8_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\andy\8_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\andy\8_3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\andy\8_4.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\andy\8_5.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\andy\8_6.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\andy\9_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\andy\9_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\andy\9_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\andy\9_3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\andy\9_4.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\andy\10_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\andy\10_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\andy\10_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\andy\10_3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\andy\10_4.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\andy\10_5.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\andy\10_6.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\andy\11_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\andy\11_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\andy\11_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\andy\11_3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\andy\12_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\andy\12_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\andy\13_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\andy\13_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\andy\13_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\andy\13_3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\andy\13_4.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\andy\13_5.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\andy\13_6.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\andy\13_7.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\andy\13_8.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\andy\14_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\andy\14_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\andy\14_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\andy\15_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\andy\15_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\andy\15_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\andy\15_3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\andy\15_4.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\andy\15_5.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\andy\15_6.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\andy\15_7.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\andy\15_8.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\andy\16_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\andy\16_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\andy\17_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\andy\17_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\andy\17_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\andy\17_3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\andy\18_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\andy\18_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\andy\19_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\andy\19_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\andy\19_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\andy\19_3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\andy\20_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\andy\20_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\andy\20_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\andy\20_3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\andy\20_4.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\andy\20_5.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\andy\20_6.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\andy\20_7.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\andy\21_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\andy\21_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\andy\21_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\andy\21_3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\andy\21_4.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\andy\21_5.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\andy\21_6.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\andy\21_7.png">
+      <Filter>Resource Files</Filter>
+    </Image>
   </ItemGroup>
   <ItemGroup>
     <Text Include="data\levels.txt" />
@@ -8982,6 +9234,7 @@
     <None Include="data\bgs\beach\beac0008.act" />
     <None Include="data\bgs\beach\beac0009.act" />
     <None Include="data\chars\terry\aapa0000.act" />
+    <None Include="data\chars\andy\aapa0000.act" />
   </ItemGroup>
   <ItemGroup>
     <Media Include="data\chars\galford\sounds\voice-atk-0.wav">

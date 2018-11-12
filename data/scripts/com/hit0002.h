@@ -1,6 +1,5 @@
 #include "data/scripts/vars/entity.h" 
 #include "data/scripts/com/bind0012.h"
-#include "data/scripts/com/hit0001.h"
 
 void hit0002(){
     
@@ -23,11 +22,7 @@ void hit0002(){
     int   iKnock;                                               //Defender's kncodkown remaining.
 
     if (getlocalvar("blocked"))                                 //Attack blocked?
-    {     
-        if (iType && !iReset)                                   //Hit flag type present but reset flag not? 
-        {                               
-            hit0001(0, 0, -2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);    //Erase hit flags.
-        }
+    {       
     }
     else                                                        
     {        
@@ -77,11 +72,6 @@ void hit0002(){
             }               
 
             bind0012(vDefender);                                                    //Run hitwarp.             
-        }       
-
-        if (!iReset)                                                                //No reset flag?
-        {
-            hit0001(0, 0, -2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);                        //Erase hit flags.
-        }
+        }         
     }    
 }

@@ -14,7 +14,6 @@ Galford
 #include "data/scripts/dc_sound/main.c"
 
 #include "data/scripts/com/dama0001.h"
-#include "data/scripts/com/hit0001.h"
 #include "data/scripts/com/paus0001.h"
 #include "data/scripts/com/proj0002.h"
 #include "data/scripts/dc_sound/main.c"

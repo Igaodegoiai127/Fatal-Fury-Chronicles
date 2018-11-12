@@ -495,12 +495,10 @@ anim freespecial6
 	delay	3
 	#cmd stereo_sound_command_here "sand0003.wav"
 	move	25
-	@cmd    hit0001 8 1 -1 -0.5 4 0 1 1 10 5 0 2 0
 	attack	70 55 35 45 0 0 0 0 15
 		frame	data/chars/terry/terr0601	#Jumpframe
 	move	0
 		frame	data/chars/terry/terr0602
-	@cmd    hit0001 8 1 -1 0.2 2 0 1 1 15 -10 0 2 0
 		frame	data/chars/terry/terr0603
 	delay	4
 	attack	0
@@ -516,7 +514,6 @@ anim freespecial6
 	attack	20 120 115 20 1 1 0 0 6
 		frame	data/chars/terry/terr0608	#Dropframe
 	attack	0
-	@cmd    hit0001 0 0 -2 0 0 0 0 0 0 0 0 0 0
 		frame	data/chars/terry/terr0609
 		frame	data/chars/terry/terr0610
 		frame	data/chars/terry/terr0562

@@ -1228,7 +1228,6 @@ anim freespecial10
 	#cmd stereo_sound_command_here "vand0013.wav"
 		frame	data/chars/andy/andy0252
 		frame	data/chars/andy/andy0253
-	@cmd    hit0001 10 1 -1 -0.5 4 0 1 1 35 25 0 2 0
 	attack	90 105 40 60 0 0 0 0 15
 		frame	data/chars/andy/andy0254
 	attack	0
@@ -1236,7 +1235,6 @@ anim freespecial10
 	delay	4
 	#cmd stereo_sound_command_here "sand0003.wav"
 	attack	65 100 95 35 0 0 0 0 15
-	@cmd    hit0001 5 1 -1 -0.5 3 0 1 1 35 25 0 2 0
 	@cmd	bind0003 "andybe" "andybe" 2 1 15 60 1 1 5
 		frame	data/chars/andy/andy0256
 	delay	1
@@ -1256,7 +1254,6 @@ anim freespecial10
 	attack	0
 		frame	data/chars/andy/andy0258
 	delay	5
-	@cmd    hit0001 0 0 -2 0 0 0 0 0 0 0 0 0 0
 		frame	data/chars/andy/andy0259
 	attack8	65 95 95 45 10 1 0 0 15
 	damageonlanding 0 1
@@ -1833,7 +1830,6 @@ anim follow4
 		frame	data/chars/andy/andy0241
 	move	0
 	delay	7
-	@cmd    hit0001 13 1 -1 0 2 0 1 1 35 15 0 2 0
 	attack	85 65 115 60 0 1 0 0 15
 	forcedirection  -1
 		frame	data/chars/andy/andy0242
@@ -1867,7 +1863,6 @@ anim follow4
 	attack	70 100 110 85 0 1 0 0 5
 		frame	data/chars/andy/andy0244
 	attack	0
-	@cmd    hit0001 18 1 -1 0 2 0 1 1 35 1 0 2 0
 		frame	data/chars/andy/andy0244
 	attack	70 100 110 85 0 1 0 0 5
 		frame	data/chars/andy/andy0245
@@ -1900,7 +1895,6 @@ anim follow4
 		frame	data/chars/andy/andy0245
 	delay	-100
 	@cmd	bind0008 "effe0001" "visual3" 13 1 -15 15 0 1 openborconstant("ANI_FOLLOW11") 0 1
-	@cmd	hit0001 0 0 -2 0 0 0 0 0 0 0 0 0 0				#Erase hitflags.
 	attack	70 100 110 85 12 1 0 1 15
 	dropv	3 2 0
 		frame	data/chars/andy/andy0246
@@ -2069,7 +2063,6 @@ anim follow7
 	offset	135 200
 		frame	data/chars/andy/9_0.png
 		frame	data/chars/andy/9_1.png
-	@cmd    hit0001 5 1 -1 0 2 0 0 1 0 0 0 0 0
 	attack  140 125 60 20 0 0 0 0 5
 		frame	data/chars/andy/9_2.png
 		frame	data/chars/andy/9_3.png
@@ -2101,7 +2094,6 @@ anim follow7
 		frame	data/chars/andy/10_6.png
 	delay	6
 	move	-15
-	@cmd    hit0001 0 -2 0 0 0 0 0 0 0 0 0 0 0
 		frame	data/chars/andy/andy0212
 	move	0
 	delay	7
@@ -2187,7 +2179,6 @@ anim follow9
 		frame	data/chars/andy/andy0212
 	offset	110 200
 		frame	data/chars/andy/andy0439
-	@cmd    hit0001 10 1 -1 0 2 0 0 1 0 0 0 0 0
 	attack  140 125 60 20 0 0 0 0 5
 	grabin	1 25
 		frame	data/chars/andy/andy0443
@@ -2231,7 +2222,6 @@ anim follow9
 		frame	data/chars/andy/andy0271
 	move	0
 		frame	data/chars/andy/andy0272
-	@cmd    hit0001 20 1 -1 0 2 0 0 1 0 0 0 0 0
 		frame	data/chars/andy/andy0273
 	delay	10
 	attack  140 125 60 20 0 0 0 0 10
@@ -2253,7 +2243,6 @@ anim follow9
 	delay	7
 		frame	data/chars/andy/andy0273
 	move	-5
-	@cmd    hit0001 0 -2 0 0 0 0 0 0 0 0 0 0 0
 		frame	data/chars/andy/andy0212
 	move	0
 		frame	data/chars/andy/andy0391
@@ -2853,7 +2842,6 @@ anim grabup
 	delay	8
 	attack	110 120 35 25 0 0 0 0 15
 	seal	2
-	@cmd 	hit0001 5 1 -1 0 0 0 0 0 50 0 0 0 0
 		frame	data/chars/andy/andy0437
 	attack	0
 		frame	data/chars/andy/andy0438
@@ -2862,13 +2850,11 @@ anim grabup
 		frame	data/chars/andy/9_1.png
 	offset	100 200
 	attack	115 130 60 20 0 0 0 0 15
-	@cmd 	hit0001 5 1 -1 0 0 0 0 0 60 0 0 0 0
 		frame	data/chars/andy/andy0440
 	attack	0
 		frame	data/chars/andy/andy0441
 		frame	data/chars/andy/andy0442
 	attack	115 130 65 20 0 0 0 0 15
-	@cmd 	hit0001 5 1 -1 0 0 0 0 0 60 0 0 0 0
 		frame	data/chars/andy/andy0443
 	attack	0
 		frame	data/chars/andy/andy0444

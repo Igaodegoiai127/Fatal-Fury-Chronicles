@@ -2,7 +2,6 @@
 #include "data/scripts/dc_draw/main.c"
 #include "data/scripts/com/bind0003.h"
 #include "data/scripts/com/bind0008.h"
-#include "data/scripts/com/hit0001.h"
 
 void proj0002(void vModel, int iMap, int iBlend, float fAX, float fAY, int iAZ, int iDir, int iAni, int iAniH, int iAniD, int iKill, int iGrav, int iBase, int iHP, int iMP, int iPen, int iPhys, float fXS, float fYS, float fZS, int iStyle, int iForce, int iFin, int iType, int iDrop, float fTX, float fTY, float fTZ, int iReset, int iWX, int iWY, int iWZ, int iWT){
 /*   
