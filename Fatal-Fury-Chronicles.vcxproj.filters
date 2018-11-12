@@ -51,9 +51,6 @@
     <ClCompile Include="data\scripts\dama0001.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="data\scripts\dama0002.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="data\scripts\dama0003.c">
       <Filter>Source Files</Filter>
     </ClCompile>
