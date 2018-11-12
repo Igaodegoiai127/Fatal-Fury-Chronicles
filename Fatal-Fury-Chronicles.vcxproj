@@ -121,6 +121,7 @@
     <ClCompile Include="data\chars\terry\scripts\key.c" />
     <ClCompile Include="data\chars\terry\scripts\update.c" />
     <ClCompile Include="data\scripts\common\event_block.c" />
+    <ClCompile Include="data\scripts\common\event_blocked_obstacle.c" />
     <ClCompile Include="data\scripts\common\event_fall.c" />
     <ClCompile Include="data\scripts\common\event_kill.c" />
     <ClCompile Include="data\scripts\common\event_move_z.c" />
@@ -177,7 +178,6 @@
     <ClCompile Include="data\scripts\hit0003.c" />
     <ClCompile Include="data\scripts\keyall.c" />
     <ClCompile Include="data\scripts\loading.c" />
-    <ClCompile Include="data\scripts\onbo0001.c" />
     <ClCompile Include="data\scripts\onbw0001.c" />
     <ClCompile Include="data\scripts\score1.c" />
     <ClCompile Include="data\scripts\score2.c" />
