@@ -7,8 +7,6 @@ offscreenkill	1000000
 reactive	0
 remove		0
 
-didhitscript data/scripts/hit0002.c
-
 palette data/chars/misc/pickups/aapa0003
 
 anim idle	

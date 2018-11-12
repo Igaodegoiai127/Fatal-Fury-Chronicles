@@ -13,7 +13,7 @@ hmap		1 9
 gfxshadow	1
 
 onmovezscript	data/scripts/common/event_move_z.c
-didhitscript 	data/scripts/hit0002.c
+didhitscript 	data/chars/misc/pickups/fatal_fury_scroll/scripts/event_hit.c
 
 #*****Alternates*******				
 
@@ -21,9 +21,9 @@ anim idle
 	delay	1000
 	offset	8 20
 	bbox	0 0 15 15
-		frame	data/chars/misc/pickups/scro0001
+		frame	data/chars/misc/pickups/fatal_fury_scroll/0_0.png
 
 anim fall
 	delay	1000
 	offset	8 20
-		frame	data/chars/misc/pickups/scro0001
+		frame	data/chars/misc/pickups/fatal_fury_scroll/0_0.png

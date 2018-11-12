@@ -20,7 +20,7 @@ load	paus0001	data/chars/misc/effects/paus0001.txt		# Text entity effects.
 load	effe0001	data/chars/misc/effects/effe0001.txt		# General one shot effects.
 
 #*****Items*****
-know	scro0001	data/chars/misc/pickups/scro0001.txt		# Power up scroll.
+know	scro0001	data/chars/misc/pickups/fatal_fury_scroll/scro0001.txt		# Power up scroll.
 know	appl0001	data/chars/misc/pickups/appl0001.txt		# Apple.
 know	Meat		data/chars/misc/pickups/meat.txt
 know	Money		data/chars/misc/pickups/money.txt

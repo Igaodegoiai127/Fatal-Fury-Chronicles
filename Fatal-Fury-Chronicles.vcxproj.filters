@@ -51,9 +51,6 @@
     <ClCompile Include="data\scripts\hit0001.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="data\scripts\hit0002.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="data\scripts\keyall.c">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -268,6 +265,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="data\scripts\common\event_damage.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="data\chars\misc\pickups\fatal_fury_scroll\scripts\event_hit.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -4759,9 +4759,6 @@
     <Image Include="data\chars\misc\pickups\neog0001.png">
       <Filter>Resource Files</Filter>
     </Image>
-    <Image Include="data\chars\misc\pickups\scro0001.png">
-      <Filter>Resource Files</Filter>
-    </Image>
     <Image Include="data\chars\misc\pose\DWNUP.png">
       <Filter>Resource Files</Filter>
     </Image>
@@ -9136,6 +9133,9 @@
     <Image Include="data\chars\andy\21_7.png">
       <Filter>Resource Files</Filter>
     </Image>
+    <Image Include="data\chars\misc\pickups\fatal_fury_scroll\0_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
   </ItemGroup>
   <ItemGroup>
     <Text Include="data\levels.txt" />
@@ -9175,7 +9175,6 @@
     <Text Include="data\chars\misc\pickups\money.txt" />
     <Text Include="data\chars\misc\pickups\musi0001.txt" />
     <Text Include="data\chars\misc\pickups\neogeo.txt" />
-    <Text Include="data\chars\misc\pickups\scro0001.txt" />
     <Text Include="data\chars\misc\tras0001\trash.txt" />
     <Text Include="data\chars\raiden\raid0001.txt" />
     <Text Include="data\chars\raiden\raiden.txt" />
@@ -9193,6 +9192,7 @@
     <Text Include="data\chars\misc\dust\flash_fall_land.txt" />
     <Text Include="data\chars\galford\galford.txt" />
     <Text Include="data\chars\galford\galford-trails.txt" />
+    <Text Include="data\chars\misc\pickups\fatal_fury_scroll\scro0001.txt" />
   </ItemGroup>
   <ItemGroup>
     <None Include="data\chars\andy\wild-ambition-front-throw.psd" />

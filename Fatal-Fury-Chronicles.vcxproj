@@ -114,6 +114,7 @@
     <ClCompile Include="data\chars\galford\scripts\animation.c" />
     <ClCompile Include="data\chars\galford\scripts\onspawn.c" />
     <ClCompile Include="data\chars\misc\flash\flash\scripts\event_spawn.c" />
+    <ClCompile Include="data\chars\misc\pickups\fatal_fury_scroll\scripts\event_hit.c" />
     <ClCompile Include="data\chars\raiden\scripts\ani_a.c" />
     <ClCompile Include="data\chars\raiden\scripts\ani_p.c" />
     <ClCompile Include="data\chars\ray\scripts\animation.c" />
@@ -172,7 +173,6 @@
     <ClCompile Include="data\scripts\dc_string\crop.c" />
     <ClCompile Include="data\scripts\dc_string\main.c" />
     <ClCompile Include="data\scripts\hit0001.c" />
-    <ClCompile Include="data\scripts\hit0002.c" />
     <ClCompile Include="data\scripts\keyall.c" />
     <ClCompile Include="data\scripts\loading.c" />
     <ClCompile Include="data\scripts\score1.c" />
@@ -1889,7 +1889,7 @@
     <Image Include="data\chars\misc\pickups\meat.gif" />
     <Image Include="data\chars\misc\pickups\money.gif" />
     <Image Include="data\chars\misc\pickups\neog0001.png" />
-    <Image Include="data\chars\misc\pickups\scro0001.png" />
+    <Image Include="data\chars\misc\pickups\fatal_fury_scroll\0_0.png" />
     <Image Include="data\chars\misc\pose\DWNUP.png" />
     <Image Include="data\chars\misc\pose\DWNUPP.png" />
     <Image Include="data\chars\misc\pose\FALUP.png" />
@@ -3179,7 +3179,7 @@
     <Text Include="data\chars\misc\pickups\money.txt" />
     <Text Include="data\chars\misc\pickups\musi0001.txt" />
     <Text Include="data\chars\misc\pickups\neogeo.txt" />
-    <Text Include="data\chars\misc\pickups\scro0001.txt" />
+    <Text Include="data\chars\misc\pickups\fatal_fury_scroll\scro0001.txt" />
     <Text Include="data\chars\misc\tras0001\trash.txt" />
     <Text Include="data\chars\raiden\raid0001.txt" />
     <Text Include="data\chars\raiden\raiden.txt" />
