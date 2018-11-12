@@ -22,7 +22,7 @@ atchain		1
 grabturn 	1
  
 animationscript 	data/chars/raiden/scripts/ani_p.c
-didblockscript  	data/scripts/bloc0001.c
+didblockscript  	data/scripts/common/event_block.c
 takedamagescript	data/scripts/dama0001.c 
 didhitscript		data/scripts/hit0001.c
 onmovezscript		data/scripts/movz0001.c

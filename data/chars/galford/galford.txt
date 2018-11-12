@@ -39,7 +39,7 @@ jumpheight		4
 script				data/chars/andy/scripts/update.c
 keyscript 			data/chars/andy/scripts/key.c
 animationscript 	data/chars/galford/scripts/animation.c
-didblockscript  	data/scripts/bloc0001.c
+didblockscript  	data/scripts/common/event_block.c
 takedamagescript	data/chars/andy/scripts/dama0001.c
 didhitscript		data/chars/andy/scripts/hit0001.c
 onmovezscript		data/scripts/movz0001.c

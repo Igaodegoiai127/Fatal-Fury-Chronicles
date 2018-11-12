@@ -40,7 +40,7 @@ mpset 		100 3 50 1 2 2
 script				data/chars/andy/scripts/update.c
 keyscript 			data/chars/andy/scripts/key.c
 animationscript 	data/chars/andy/scripts/ani_p.c
-didblockscript  	data/scripts/bloc0001.c
+didblockscript  	data/scripts/common/event_block.c
 takedamagescript	data/chars/andy/scripts/dama0001.c
 didhitscript		data/chars/andy/scripts/hit0001.c
 onmovezscript		data/scripts/movz0001.c

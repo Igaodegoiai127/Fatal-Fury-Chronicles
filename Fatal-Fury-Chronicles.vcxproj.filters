@@ -48,9 +48,6 @@
     <ClCompile Include="data\chars\terry\scripts\update.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="data\scripts\bloc0001.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="data\scripts\dama0001.c">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -280,6 +277,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="data\scripts\common\event_spawn_level_items.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="data\scripts\common\event_block.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -8542,6 +8542,372 @@
     <Image Include="data\bgs\beach\cabin_cruiser\0_2.png">
       <Filter>Resource Files</Filter>
     </Image>
+    <Image Include="data\chars\galford\0_0_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\0_1_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\0_2_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\0_3_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\0_4_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\0_5_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\0_6_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\0_7_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\0_8_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\0_9_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\0_10_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\6_0_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\6_1_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\12_0_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\12_1_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\12_2_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\12_3_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\12_4_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\12_5_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\12_6_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\12_7_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\12_8_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\12_9_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\16_0_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\16_2_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\16_3_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\18_0_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\18_1_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\18_3_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\18_4_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\21_0_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\21_2_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\21_3_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\23_0_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\23_1_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\23_2_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\23_3_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\53_0_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\53_2_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\53_3_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\53_4_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\54_0_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\54_2_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\54_3_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\54_4_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\73_0_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\73_2_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\83_3_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\83_4_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\83_5_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\83_6_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\97_2_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\110_2_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\110_3_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\110_4_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\160_1_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\160_1_1_trail_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\160_2_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\160_2_1_trail_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\160_3_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\160_3_0_trail_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\160_4_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\160_6_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\161_6_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\163_8_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\163_9_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\164_0_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\164_1_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\164_12_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\165_2_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\165_3_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\165_5_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\165_6_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\165_7_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\165_8_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\165_8_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\172_0_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\172_1_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\172_2_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\172_3_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\172_4_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\173_4_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\325_21_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\361_8_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\361_9_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\421_23_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\800_0_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\800_1_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\801_0_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\802_0_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\803_0_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\803_1_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\803_2_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\803_3_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\804_0_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\804_1_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\804_1_0_trail_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\804_2_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\804_3_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\804_3_0_trail_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\804_4_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\805_0_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\805_1_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\805_1_0_trail_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\805_2_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\805_3_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\805_3_0_trail_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\806_0_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\806_1_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\806_2_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\806_2_0_trail_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\806_3_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\806_3_0_trail_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\806_4_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\806_4_0_trail_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\806_5_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\807_0_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\808_0_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\808_1_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\select_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\select_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\working.png">
+      <Filter>Resource Files</Filter>
+    </Image>
   </ItemGroup>
   <ItemGroup>
     <Text Include="data\levels.txt" />
@@ -8597,6 +8963,8 @@
     <Text Include="data\menu.txt" />
     <Text Include="data\bgs\beach\cabin_cruiser\cabin_cruiser.txt" />
     <Text Include="data\chars\misc\dust\flash_fall_land.txt" />
+    <Text Include="data\chars\galford\galford.txt" />
+    <Text Include="data\chars\galford\galford-trails.txt" />
   </ItemGroup>
   <ItemGroup>
     <None Include="data\chars\andy\wild-ambition-front-throw.psd" />
@@ -8616,5 +8984,37 @@
     <None Include="data\scripts\dc_d20\README.md" />
     <None Include="data\scripts\dc_initialize\README.md" />
     <None Include="data\scripts\dc_spinner\README.md" />
+    <None Include="data\chars\galford\pal_0.act" />
+    <None Include="data\chars\galford\pal_1.act" />
+    <None Include="data\chars\galford\working.psd" />
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="data\chars\galford\sounds\voice-atk-0.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="data\chars\galford\sounds\voice-atk-1.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="data\chars\galford\sounds\voice-atk-2.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="data\chars\galford\sounds\voice-atk-3.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="data\chars\galford\sounds\voice-atk-4.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="data\chars\galford\sounds\voice-atk-5.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="data\chars\galford\sounds\voice-atk-6.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="data\chars\galford\sounds\voice-atk-7.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="data\chars\galford\sounds\voice-atk-8.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
   </ItemGroup>
 </Project>

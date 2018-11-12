@@ -42,7 +42,7 @@ mpset 		100 3 50 1 2 2
 keyscript 		data/chars/terry/scripts/key.c
 #script			data/chars/terry/scripts/update.c
 animationscript 	data/chars/terry/scripts/ani_p.c
-didblockscript  	data/scripts/bloc0001.c
+didblockscript  	data/scripts/common/event_block.c
 takedamagescript	data/scripts/dama0001.c
 didhitscript		data/scripts/hit0001.c
 onmovezscript		data/scripts/movz0001.c
