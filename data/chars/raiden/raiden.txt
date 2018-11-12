@@ -20,7 +20,7 @@ height		120
 
 #script 		data/chars/omote/scripts/update.c
 animationscript 	data/chars/raiden/scripts/ani_a.c
-#didhitscript		data/chars/homoura/scripts/hit0001.c
+#didhitscript		data/scripts/common/event_hit.c
 #keyscript	 	data/chars/homoura/scripts/key.c
 takedamagescript	data/scripts/dama0001.c
 onfallscript	        data/scripts/common/event_fall.c

@@ -172,7 +172,6 @@
     <ClCompile Include="data\scripts\dc_spinner\spinner.c" />
     <ClCompile Include="data\scripts\dc_string\crop.c" />
     <ClCompile Include="data\scripts\dc_string\main.c" />
-    <ClCompile Include="data\scripts\hit0001.c" />
     <ClCompile Include="data\scripts\keyall.c" />
     <ClCompile Include="data\scripts\loading.c" />
     <ClCompile Include="data\scripts\score1.c" />
