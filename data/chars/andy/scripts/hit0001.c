@@ -1,5 +1,4 @@
-
-#include "data/scripts/com/hit0002.h"
+#include "data/scripts/vars/entity.h"
 #include "data/scripts/com/trai0004.h"
 
 /*
@@ -51,9 +50,7 @@ void main()
     if (!iBlock && iStatus == 1) //Attack not blocked and in power up mode?
     {
         trai0004();
-    }
-
-    hit0002(); //Run primary did hit function.    
+    } 
 }
 
 
