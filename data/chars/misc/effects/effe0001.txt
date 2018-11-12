@@ -20,7 +20,7 @@ alpha	     1
 #*****Scripts*****
 
 #onspawnscript		data/scripts/common/spawnscript_for_level_items.c
-onkillscript		data/scripts/kill0001.c
+onkillscript		data/scripts/common/event_kill.c
 
 #*****Alternates*******
 

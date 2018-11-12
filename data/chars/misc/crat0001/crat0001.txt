@@ -29,7 +29,7 @@ alternatepal   data/chars/misc/crat0001/aapa0012	#Black.
 alternatepal   data/chars/misc/crat0001/aapa0012	#Blue.
 
 onspawnscript		data/scripts/common/spawnscript_for_level_items.c
-onkillscript		data/scripts/kill0001.c
+onkillscript		data/scripts/common/event_kill.c
 	
 anim idle
 	delay	1000

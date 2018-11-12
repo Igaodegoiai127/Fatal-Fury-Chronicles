@@ -21,7 +21,7 @@ facing	     1
 #*****Sub Entites*****
 #*****Scripts*****
 
-onkillscript		data/scripts/kill0001.c
+onkillscript		data/scripts/common/event_kill.c
 
 #*****Alternates*******
 

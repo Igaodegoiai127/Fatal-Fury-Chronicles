@@ -6,7 +6,7 @@ shadow	0
 alpha	1
 
 onspawnscript 	data/scripts/common/event_spawn_dust.c
-onkillscript	data/scripts/kill0001.c
+onkillscript	data/scripts/common/event_kill.c
 
 palette		data/chars/misc/dust/0_0.png
 
