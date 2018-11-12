@@ -171,7 +171,6 @@
     <ClCompile Include="data\scripts\dc_spinner\spinner.c" />
     <ClCompile Include="data\scripts\dc_string\crop.c" />
     <ClCompile Include="data\scripts\dc_string\main.c" />
-    <ClCompile Include="data\scripts\deat0001.c" />
     <ClCompile Include="data\scripts\deat0002.c" />
     <ClCompile Include="data\scripts\hit0001.c" />
     <ClCompile Include="data\scripts\hit0002.c" />
@@ -197,7 +196,6 @@
     <ClInclude Include="data\scripts\com\bind0012.h" />
     <ClInclude Include="data\scripts\com\bloc0001.h" />
     <ClInclude Include="data\scripts\com\dama0001.h" />
-    <ClInclude Include="data\scripts\com\deat0001.h" />
     <ClInclude Include="data\scripts\com\effe0001.h" />
     <ClInclude Include="data\scripts\com\hit0001.h" />
     <ClInclude Include="data\scripts\com\hit0002.h" />

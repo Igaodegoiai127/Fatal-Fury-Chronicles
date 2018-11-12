@@ -24,7 +24,6 @@ animationscript 	data/chars/raiden/scripts/ani_a.c
 #keyscript	 	data/chars/homoura/scripts/key.c
 takedamagescript	data/scripts/dama0001.c
 onfallscript	        data/scripts/common/event_fall.c
-ondeathscript		data/scripts/deat0001.c
 onmovezscript		data/scripts/common/event_move_z.c
 onspawnscript		data/scripts/common/event_spawn_level_items.c
 
