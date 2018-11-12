@@ -293,9 +293,6 @@
     <ClInclude Include="data\scripts\com\bind0009.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="data\scripts\com\bind0012.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="data\scripts\com\bloc0001.h">
       <Filter>Header Files</Filter>
     </ClInclude>

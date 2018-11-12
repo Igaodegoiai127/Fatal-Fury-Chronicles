@@ -192,7 +192,6 @@
     <ClInclude Include="data\scripts\com\bind0005.h" />
     <ClInclude Include="data\scripts\com\bind0008.h" />
     <ClInclude Include="data\scripts\com\bind0009.h" />
-    <ClInclude Include="data\scripts\com\bind0012.h" />
     <ClInclude Include="data\scripts\com\bloc0001.h" />
     <ClInclude Include="data\scripts\com\dama0001.h" />
     <ClInclude Include="data\scripts\com\effe0001.h" />

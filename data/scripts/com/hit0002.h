@@ -1,5 +1,4 @@
 #include "data/scripts/vars/entity.h" 
-#include "data/scripts/com/bind0012.h"
 
 void hit0002(){
     
@@ -69,9 +68,7 @@ void hit0002(){
                     //setentityvar(vDefender, TOSSY, fTossY);
                     //setentityvar(vDefender, TOSSZ, fTossZ);
                 }
-            }               
-
-            bind0012(vDefender);                                                    //Run hitwarp.             
+            }                         
         }         
     }    
 }
