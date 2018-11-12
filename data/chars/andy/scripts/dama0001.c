@@ -1,4 +1,4 @@
-#include "data/scripts/com/dama0002.h"
+#include "data/scripts/dc_grapple/main.c"  
 
 /*
 Take damage for Andy Bogard.
@@ -48,7 +48,9 @@ void main()
         }    
     }
 
-    dama0002(); //Run primary take damage function.    
+	// Release any grappled entities.
+	dc_grapple_release_all(vSelf);
+  
 }
 
 

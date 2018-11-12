@@ -43,7 +43,7 @@ keyscript 		data/chars/terry/scripts/key.c
 #script			data/chars/terry/scripts/update.c
 animationscript 	data/chars/terry/scripts/ani_p.c
 didblockscript  	data/scripts/common/event_block.c
-takedamagescript	data/scripts/dama0001.c
+takedamagescript	data/scripts/common/event_damage.c
 didhitscript		data/scripts/hit0001.c
 onmovezscript		data/scripts/common/event_move_z.c
 onspawnscript		data/scripts/common/event_move_z.c

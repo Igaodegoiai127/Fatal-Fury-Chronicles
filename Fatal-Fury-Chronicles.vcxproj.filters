@@ -48,9 +48,6 @@
     <ClCompile Include="data\chars\terry\scripts\update.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="data\scripts\dama0001.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="data\scripts\dama0003.c">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -279,6 +276,12 @@
     <ClCompile Include="data\scripts\common\event_blocked_wall.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="data\bgs\beach\cabin_cruiser\scripts\dc_richochet.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="data\scripts\common\event_damage.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="data\scripts\com\bind0002.h">
@@ -306,9 +309,6 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="data\scripts\com\dama0001.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="data\scripts\com\dama0002.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="data\scripts\com\dama0003.h">
@@ -8996,6 +8996,7 @@
     <None Include="data\bgs\beach\beac0007.act" />
     <None Include="data\bgs\beach\beac0008.act" />
     <None Include="data\bgs\beach\beac0009.act" />
+    <None Include="data\chars\terry\aapa0000.act" />
   </ItemGroup>
   <ItemGroup>
     <Media Include="data\chars\galford\sounds\voice-atk-0.wav">

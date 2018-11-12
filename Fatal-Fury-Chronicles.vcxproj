@@ -98,6 +98,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="data\bgs\beach\cabin_cruiser\scripts\dc_richochet.c" />
     <ClCompile Include="data\bgs\beach\cabin_cruiser\scripts\event_animation.c" />
     <ClCompile Include="data\bgs\beach\cabin_cruiser\scripts\event_death.c" />
     <ClCompile Include="data\bgs\beach\cabin_cruiser\scripts\event_kill.c" />
@@ -123,6 +124,7 @@
     <ClCompile Include="data\scripts\common\event_block.c" />
     <ClCompile Include="data\scripts\common\event_blocked_obstacle.c" />
     <ClCompile Include="data\scripts\common\event_blocked_wall.c" />
+    <ClCompile Include="data\scripts\common\event_damage.c" />
     <ClCompile Include="data\scripts\common\event_fall.c" />
     <ClCompile Include="data\scripts\common\event_kill.c" />
     <ClCompile Include="data\scripts\common\event_move_z.c" />
@@ -140,7 +142,6 @@
     <ClCompile Include="data\scripts\dc_disney\set_animation.c" />
     <ClCompile Include="data\scripts\dc_disney\set_attack.c" />
     <ClCompile Include="data\scripts\dc_draw\rgb_increment.c" />
-    <ClCompile Include="data\scripts\dama0001.c" />
     <ClCompile Include="data\scripts\dama0003.c" />
     <ClCompile Include="data\scripts\dc_afterimage\main.c" />
     <ClCompile Include="data\scripts\dc_afterimage\trai0001.c" />
@@ -197,7 +198,6 @@
     <ClInclude Include="data\scripts\com\bind0012.h" />
     <ClInclude Include="data\scripts\com\bloc0001.h" />
     <ClInclude Include="data\scripts\com\dama0001.h" />
-    <ClInclude Include="data\scripts\com\dama0002.h" />
     <ClInclude Include="data\scripts\com\dama0003.h" />
     <ClInclude Include="data\scripts\com\deat0001.h" />
     <ClInclude Include="data\scripts\com\effe0001.h" />
@@ -3138,6 +3138,7 @@
     <None Include="data\chars\galford\pal_0.act" />
     <None Include="data\chars\galford\pal_1.act" />
     <None Include="data\chars\galford\working.psd" />
+    <None Include="data\chars\terry\aapa0000.act" />
     <None Include="data\chars\terry\terr0001.psd" />
     <None Include="data\extras\aawa0002.psd" />
     <None Include="data\extras\dialog.psd" />
