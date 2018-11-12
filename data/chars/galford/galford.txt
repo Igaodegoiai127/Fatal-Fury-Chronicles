@@ -84,7 +84,7 @@ anim waiting
 	delay	1
 	offset	150 272
 	fshadow 0
-		frame	data/chars/misc/blan0001
+		frame	data/chars/misc/blank.png
 	offset	160 122
 		frame	data/chars/galford/select_0.png
 	offset	160 132

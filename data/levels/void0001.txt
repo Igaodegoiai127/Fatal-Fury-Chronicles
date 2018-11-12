@@ -1,7 +1,7 @@
 music		data/music/Sound_B.bor
 
-BACKGROUND	data/chars/misc/blan0002
-panel		data/chars/misc/blan0002 none none
+BACKGROUND	data/chars/misc/blank.png
+panel		data/chars/misc/blank.png none none
 
 order		a
 

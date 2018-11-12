@@ -44,7 +44,7 @@ anim spawn
 	
 	delay	4
 	offset	100 200
-		frame	data/chars/misc/blan0001
+		frame	data/chars/misc/blank.png
 
 #*****Attack*******************************************************************************
 #*****Special******************************************************************************
@@ -80,7 +80,7 @@ anim freespecial7
 	bbox	0
 		frame	data/chars/misc/effects/effe0076
 	delay	20
-		frame	data/chars/misc/blan0001
+		frame	data/chars/misc/blank.png
 	delay	4
 	offset  50 130
 		frame	data/chars/misc/effects/effe0062
@@ -153,7 +153,7 @@ anim freespecial10
 		frame	data/chars/misc/effects/effe0152
 		frame	data/chars/misc/effects/effe0153
 		frame	data/chars/misc/effects/effe0154		
-		frame	data/chars/misc/blan0001
+		frame	data/chars/misc/blank.png
 	
 
 anim freespecial18
@@ -162,15 +162,15 @@ anim freespecial18
 
 	delay	-1000
 	offset	85 160
-		frame	data/chars/misc/blan0001
-		frame	data/chars/misc/blan0001
-		frame	data/chars/misc/blan0001
-		frame	data/chars/misc/blan0001
-		frame	data/chars/misc/blan0001	
-		frame	data/chars/misc/blan0001
-		frame	data/chars/misc/blan0001
-		frame	data/chars/misc/blan0001
-		frame	data/chars/misc/blan0001	
+		frame	data/chars/misc/blank.png
+		frame	data/chars/misc/blank.png
+		frame	data/chars/misc/blank.png
+		frame	data/chars/misc/blank.png
+		frame	data/chars/misc/blank.png	
+		frame	data/chars/misc/blank.png
+		frame	data/chars/misc/blank.png
+		frame	data/chars/misc/blank.png
+		frame	data/chars/misc/blank.png	
 		frame	data/chars/misc/effects/effe0085
 		frame	data/chars/misc/effects/effe0086
 		frame	data/chars/misc/effects/effe0087
@@ -188,11 +188,11 @@ anim freespecial18
 		frame	data/chars/misc/effects/effe0100
 		frame	data/chars/misc/effects/effe0101
 		frame	data/chars/misc/effects/effe0102	
-		frame	data/chars/misc/blan0001		
-		frame	data/chars/misc/blan0001
-		frame	data/chars/misc/blan0001
-		frame	data/chars/misc/blan0001
-		frame	data/chars/misc/blan0001	
+		frame	data/chars/misc/blank.png		
+		frame	data/chars/misc/blank.png
+		frame	data/chars/misc/blank.png
+		frame	data/chars/misc/blank.png
+		frame	data/chars/misc/blank.png	
 
 #*****Followups****************************************************************************
 
@@ -202,14 +202,14 @@ anim follow4
 
 	delay	-1000
 	offset	85 160
-		frame	data/chars/misc/blan0001
-		frame	data/chars/misc/blan0001
-		frame	data/chars/misc/blan0001
-		frame	data/chars/misc/blan0001	
-		frame	data/chars/misc/blan0001
-		frame	data/chars/misc/blan0001
-		frame	data/chars/misc/blan0001
-		frame	data/chars/misc/blan0001	
+		frame	data/chars/misc/blank.png
+		frame	data/chars/misc/blank.png
+		frame	data/chars/misc/blank.png
+		frame	data/chars/misc/blank.png	
+		frame	data/chars/misc/blank.png
+		frame	data/chars/misc/blank.png
+		frame	data/chars/misc/blank.png
+		frame	data/chars/misc/blank.png	
 		frame	data/chars/misc/effects/effe0123
 		frame	data/chars/misc/effects/effe0124
 		frame	data/chars/misc/effects/effe0125
@@ -234,11 +234,11 @@ anim follow4
 		frame	data/chars/misc/effects/effe0135
 		frame	data/chars/misc/effects/effe0136
 		frame	data/chars/misc/effects/effe0137
-		frame	data/chars/misc/blan0001	
-		frame	data/chars/misc/blan0001
-		frame	data/chars/misc/blan0001
-		frame	data/chars/misc/blan0001
-		frame	data/chars/misc/blan0001
+		frame	data/chars/misc/blank.png	
+		frame	data/chars/misc/blank.png
+		frame	data/chars/misc/blank.png
+		frame	data/chars/misc/blank.png
+		frame	data/chars/misc/blank.png
 
 #*****Grappling****************************************************************************
 #*****Jumping******************************************************************************

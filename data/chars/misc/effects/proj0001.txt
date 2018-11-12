@@ -53,7 +53,7 @@ anim idle
 	
 	delay	1
 	offset	0 0
-		frame	data/chars/misc/blan0001
+		frame	data/chars/misc/blank.png
 		
 anim follow1
 

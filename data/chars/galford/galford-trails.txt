@@ -12,14 +12,14 @@ anim idle
 
 		delay	-1000
 		offset	75 150
-	frame	data/chars/misc/blan0002.png
+	frame	data/chars/misc/blank.png
 
 anim attack1
 
 		delay	-1000
 		offset	156 209
 
-	frame	data/chars/misc/blan0002.png
+	frame	data/chars/misc/blank.png
 
 anim attack2
 
@@ -28,16 +28,16 @@ anim attack2
 		delay	-1000
 		offset	156 209
 	
-	frame	data/chars/misc/blan0002.png
+	frame	data/chars/misc/blank.png
 	frame	data/chars/galford/160_1_1_trail_0.png
 	frame	data/chars/galford/160_2_1_trail_0.png
 	frame	data/chars/galford/160_3_0_trail_0.png
 
 		@cmd	killentity getlocalvar("self")
 
-	frame	data/chars/misc/blan0002.png
-	frame	data/chars/misc/blan0002.png
-	frame	data/chars/misc/blan0002.png
+	frame	data/chars/misc/blank.png
+	frame	data/chars/misc/blank.png
+	frame	data/chars/misc/blank.png
 
 anim attack3
 
@@ -46,15 +46,15 @@ anim attack3
 		delay	-1000
 		offset	156 209
 
-	frame	data/chars/misc/blan0002.png
-	frame	data/chars/misc/blan0002.png
+	frame	data/chars/misc/blank.png
+	frame	data/chars/misc/blank.png
 	frame	data/chars/galford/806_2_0_trail_0.png
 	frame	data/chars/galford/806_3_0_trail_0.png
 	frame	data/chars/galford/806_4_0_trail_0.png
 
 		@cmd	killentity getlocalvar("self")
 
-	frame	data/chars/misc/blan0002.png
+	frame	data/chars/misc/blank.png
 
 anim attack5
 
@@ -63,18 +63,18 @@ anim attack5
 		delay	-1000
 		offset	156 209
 	
-	frame	data/chars/misc/blan0002.png
-	frame	data/chars/misc/blan0002.png
-	frame	data/chars/misc/blan0002.png
+	frame	data/chars/misc/blank.png
+	frame	data/chars/misc/blank.png
+	frame	data/chars/misc/blank.png
 	frame	data/chars/galford/804_1_0_trail_0.png
 	frame	data/chars/galford/804_3_0_trail_0.png
-	frame	data/chars/misc/blan0002.png
-	frame	data/chars/misc/blan0002.png
-	frame	data/chars/misc/blan0002.png
+	frame	data/chars/misc/blank.png
+	frame	data/chars/misc/blank.png
+	frame	data/chars/misc/blank.png
 
 		@cmd	killentity getlocalvar("self")
 
-	frame	data/chars/misc/blan0002.png
+	frame	data/chars/misc/blank.png
 
 anim attack6
 
@@ -83,11 +83,11 @@ anim attack6
 		delay	-1000
 		offset	156 209
 	
-	frame	data/chars/misc/blan0002.png
+	frame	data/chars/misc/blank.png
 	frame	data/chars/galford/805_1_0_trail_0.png
 	frame	data/chars/galford/805_3_0_trail_0.png
-	frame	data/chars/misc/blan0002.png
+	frame	data/chars/misc/blank.png
 
 		@cmd	killentity getlocalvar("self")
 
-	frame	data/chars/misc/blan0002.png
+	frame	data/chars/misc/blank.png

@@ -122,7 +122,7 @@ anim waiting
 	delay	1
 	offset	100 272
 	fshadow 0
-		frame	data/chars/misc/blan0001
+		frame	data/chars/misc/blank.png
 	offset	100 122
 		frame	data/chars/andy/aawa0001
 	offset	100 132

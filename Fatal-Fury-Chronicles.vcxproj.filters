@@ -439,9 +439,6 @@
     <Image Include="data\bgs\street\s05.gif">
       <Filter>Resource Files</Filter>
     </Image>
-    <Image Include="data\chars\misc\blan0001.gif">
-      <Filter>Resource Files</Filter>
-    </Image>
     <Image Include="data\chars\misc\fenc0001\fence.gif">
       <Filter>Resource Files</Filter>
     </Image>
@@ -2429,9 +2426,6 @@
       <Filter>Resource Files</Filter>
     </Image>
     <Image Include="data\chars\andy\andy0589.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="data\chars\misc\blan0002.png">
       <Filter>Resource Files</Filter>
     </Image>
     <Image Include="data\chars\misc\crat0001\aapa0011.png">
@@ -9131,6 +9125,9 @@
       <Filter>Resource Files</Filter>
     </Image>
     <Image Include="data\chars\misc\pickups\fatal_fury_scroll\0_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\blank.png">
       <Filter>Resource Files</Filter>
     </Image>
   </ItemGroup>

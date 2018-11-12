@@ -1087,8 +1087,7 @@
     <Image Include="data\chars\galford\select_0.png" />
     <Image Include="data\chars\galford\select_1.png" />
     <Image Include="data\chars\galford\working.png" />
-    <Image Include="data\chars\misc\blan0001.gif" />
-    <Image Include="data\chars\misc\blan0002.png" />
+    <Image Include="data\chars\misc\blank.png" />
     <Image Include="data\chars\misc\crat0001\aapa0011.png" />
     <Image Include="data\chars\misc\crat0001\aapa0012.png" />
     <Image Include="data\chars\misc\crat0001\aapa0013.png" />
