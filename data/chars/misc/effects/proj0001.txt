@@ -30,7 +30,6 @@ defense freeze 0 1000 0 1000 1000 0 0
 onspawnscript		data/scripts/common/event_spawn_level_items.c
 onkillscript		data/scripts/common/event_kill.c
 didhitscript		data/scripts/hit0003.c
-takedamagescript	data/scripts/dama0003.c
 
 #*****Alternates*******
 
