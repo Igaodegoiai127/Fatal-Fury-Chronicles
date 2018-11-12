@@ -26,7 +26,7 @@ didblockscript  	data/scripts/bloc0001.c
 takedamagescript	data/scripts/dama0001.c 
 didhitscript		data/scripts/hit0001.c
 onmovezscript		data/scripts/movz0001.c
-onspawnscript		data/scripts/common/spawnscript_for_level_items.c 
+onspawnscript		data/scripts/common/event_spawn_level_items.c 
 
 palette 		data/chars/raiden/aapa0000
 alternatepal		data/chars/raiden/aapa0011

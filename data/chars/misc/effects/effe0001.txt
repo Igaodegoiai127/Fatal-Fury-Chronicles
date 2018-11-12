@@ -19,7 +19,7 @@ alpha	     1
 #*****Sub Entites*****
 #*****Scripts*****
 
-#onspawnscript		data/scripts/common/spawnscript_for_level_items.c
+#onspawnscript		data/scripts/common/event_spawn_level_items.c
 onkillscript		data/scripts/common/event_kill.c
 
 #*****Alternates*******
