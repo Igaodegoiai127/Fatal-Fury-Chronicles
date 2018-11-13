@@ -137,6 +137,9 @@
     <ClCompile Include="data\scripts\dc_d20\config.c" />
     <ClCompile Include="data\scripts\dc_d20\main.c" />
     <ClCompile Include="data\scripts\dc_d20\random.c" />
+    <ClCompile Include="data\scripts\dc_damage\config.c" />
+    <ClCompile Include="data\scripts\dc_damage\damage.c" />
+    <ClCompile Include="data\scripts\dc_damage\main.c" />
     <ClCompile Include="data\scripts\dc_disney\alternate_on_health.c" />
     <ClCompile Include="data\scripts\dc_disney\alternate_on_range.c" />
     <ClCompile Include="data\scripts\dc_disney\config.c" />
@@ -174,6 +177,9 @@
     <ClCompile Include="data\scripts\dc_spinner\spinner.c" />
     <ClCompile Include="data\scripts\dc_string\crop.c" />
     <ClCompile Include="data\scripts\dc_string\main.c" />
+    <ClCompile Include="data\scripts\dc_velocity\config.c" />
+    <ClCompile Include="data\scripts\dc_velocity\main.c" />
+    <ClCompile Include="data\scripts\dc_velocity\velocity.c" />
     <ClCompile Include="data\scripts\keyall.c" />
     <ClCompile Include="data\scripts\loading.c" />
     <ClCompile Include="data\scripts\score1.c" />
@@ -202,6 +208,7 @@
     <ClInclude Include="data\scripts\com\trai0004.h" />
     <ClInclude Include="data\scripts\dc_afterimage\config.h" />
     <ClInclude Include="data\scripts\dc_d20\config.h" />
+    <ClInclude Include="data\scripts\dc_damage\config.h" />
     <ClInclude Include="data\scripts\dc_disney\config.h" />
     <ClInclude Include="data\scripts\dc_draw\config.h" />
     <ClInclude Include="data\scripts\dc_grapple\config.h" />
@@ -210,6 +217,7 @@
     <ClInclude Include="data\scripts\dc_sound\config.h" />
     <ClInclude Include="data\scripts\dc_spinner\config.h" />
     <ClInclude Include="data\scripts\dc_string\config.h" />
+    <ClInclude Include="data\scripts\dc_velocity\config.h" />
     <ClInclude Include="data\scripts\vars\anims.h" />
     <ClInclude Include="data\scripts\vars\colors.h" />
     <ClInclude Include="data\scripts\vars\entity.h" />
