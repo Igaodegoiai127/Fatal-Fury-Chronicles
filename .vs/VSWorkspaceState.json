@@ -5,8 +5,9 @@
     "\\data\\chars",
     "\\data\\chars\\galford",
     "\\data\\scripts",
-    "\\data\\scripts\\dc_sound"
+    "\\data\\scripts\\dc_sound",
+    "\\data\\scripts\\vars"
   ],
-  "SelectedNode": "\\data\\scripts\\dc_sound\\loading.c",
+  "SelectedNode": "\\data\\scripts\\vars\\anims.h",
   "PreviewInSolutionExplorer": false
 }

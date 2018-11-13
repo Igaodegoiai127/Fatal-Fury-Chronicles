@@ -12,7 +12,6 @@ Ray McDougal (AI)
 #include "data/scripts/com/dama0001.h" 
 #include "data/scripts/com/proj0001.h" 
 #include "data/scripts/dc_sound/main.c" 
-#include "data/scripts/com/stat0001.h" 
 
 // Very simple alternate attack. If first performing an attack
 // and combo has at least one hit in it, then randomly perform

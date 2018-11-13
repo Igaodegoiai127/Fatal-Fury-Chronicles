@@ -2027,7 +2027,6 @@ anim follow6
 		frame	data/chars/andy/andy0413
 	delay	4
 	@cmd	bind0010 1 15 0 1 -1 DWNUPP
-	@cmd    stat0001 1 0 -30 0 0 0 0 0				#Apply non lethal HP loss.
 		frame	data/chars/andy/andy0414
 		frame	data/chars/andy/andy0414
 		frame	data/chars/andy/andy0414
@@ -2771,7 +2770,6 @@ anim grabforward
 		frame	data/chars/andy/andy0413
 	delay	4
 	@cmd	bind0010 1 20 -40 1 1 10
-	@cmd    stat0001 1 0 -20 0 0 0 0 0				#Apply non lethal HP loss.
 		frame	data/chars/andy/andy0414
 		frame	data/chars/andy/andy0414
 		frame	data/chars/andy/andy0414
@@ -2931,7 +2929,6 @@ anim grabdown
 		frame	data/chars/andy/andy0453
 	delay	30
 	@cmd	bind0010 1 10 0 -1 0 HELDP
-	@cmd    stat0001  1 0 -40 0 0 0 0 0
 		frame	data/chars/andy/andy0454
 	delay	15
 	offset	115 200

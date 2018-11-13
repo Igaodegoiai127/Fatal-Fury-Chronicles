@@ -1198,7 +1198,6 @@ anim grabforward
 		frame	data/chars/andy/andy0413
 	delay	4
 	@cmd	bind0010 1 20 -40 1 1 10
-	@cmd    stat0001 1 0 -20 0 0 0 0 0				#Apply non lethal HP loss.
 		frame	data/chars/andy/andy0414
 		frame	data/chars/andy/andy0414
 		frame	data/chars/andy/andy0414
