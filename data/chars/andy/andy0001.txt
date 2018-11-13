@@ -1045,7 +1045,7 @@ anim freespecial6
 	delay	3
 	#cmd stereo_sound_command_here "sand0001.wav"					#Sound effect.
 		frame	data/chars/andy/andy0214
-	@cmd	proj0002 "proj0001" 11 1 70 50 1 1 4 4 4 1 1 0 1000 15 -1 -1 0 0 0 0 25 0 -1 1 3.8 1.8 0 1 0 0 0 0
+	#	proj0002 "proj0001" 11 1 70 50 1 1 4 4 4 1 1 0 1000 15 -1 -1 0 0 0 0 25 0 -1 1 3.8 1.8 0 1 0 0 0 0
 	delay	8
 		frame	data/chars/andy/andy0215
 	delay	2
@@ -1076,7 +1076,7 @@ anim freespecial7
 	#cmd stereo_sound_command_here "sand0001.wav"					#Sound effect.
 		frame	data/chars/andy/andy0221
 		frame	data/chars/andy/andy0222
-	@cmd	proj0002 "andybe" 3 1 85 30 1 1 openborconstant("BINDING_MATCHING_ANIMATION_REMOVE") 0 0 1 1 0 1000 15 -1 -1 0 0 0 1 4 0 -1 0 2 3 0 1 0 0 0 0
+	#	proj0002 "andybe" 3 1 85 30 1 1 openborconstant("BINDING_MATCHING_ANIMATION_REMOVE") 0 0 1 1 0 1000 15 -1 -1 0 0 0 1 4 0 -1 0 2 3 0 1 0 0 0 0
 		frame	data/chars/andy/andy0223
 		frame	data/chars/andy/andy0224
 

@@ -195,8 +195,6 @@
     <ClInclude Include="data\scripts\com\effe0001.h" />
     <ClInclude Include="data\scripts\com\pain0001.h" />
     <ClInclude Include="data\scripts\com\paus0001.h" />
-    <ClInclude Include="data\scripts\com\proj0001.h" />
-    <ClInclude Include="data\scripts\com\proj0002.h" />
     <ClInclude Include="data\scripts\com\summ0001.h" />
     <ClInclude Include="data\scripts\com\targ0001.h" />
     <ClInclude Include="data\scripts\com\trai0003.h" />

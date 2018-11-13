@@ -84,7 +84,6 @@ anim attack1
 	frame	data/chars/raiden/raid0133
 	frame	data/chars/raiden/raid0132
 	attack	145 80 75 35 10 0 10 0 15
-	@cmd	proj0002 "proj0001" 0 1 90 1 0 1 1 2 2 1 1 0 3 3 0 -1 0.5 0 0 0 15 0 -1 0 2 3 0 1 0 0 0 0
 	frame	data/chars/raiden/raid0131
 	frame	data/chars/raiden/raid0130
 	frame	data/chars/raiden/raid0129

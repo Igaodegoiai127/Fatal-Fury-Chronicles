@@ -10,7 +10,6 @@ Ray McDougal (AI)
 #include "data/scripts/com/bind0004.h" 
 #include "data/scripts/dc_grapple/main.c" 
 #include "data/scripts/com/dama0001.h" 
-#include "data/scripts/com/proj0001.h" 
 #include "data/scripts/dc_sound/main.c" 
 
 // Very simple alternate attack. If first performing an attack

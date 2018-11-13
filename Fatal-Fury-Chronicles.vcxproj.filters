@@ -302,12 +302,6 @@
     <ClInclude Include="data\scripts\com\paus0001.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="data\scripts\com\proj0001.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="data\scripts\com\proj0002.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="data\scripts\com\summ0001.h">
       <Filter>Header Files</Filter>
     </ClInclude>
