@@ -7,3 +7,6 @@
 [submodule "data/scripts/dc_initialize"]
 	path = data/scripts/dc_initialize
 	url = https://github.com/DCurrent/openbor-script-initialize
+[submodule "data/scripts/dc_velocity"]
+	path = data/scripts/dc_velocity
+	url = https://github.com/DCurrent/openbor-script-velocity
