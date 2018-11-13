@@ -1,6 +1,12 @@
-#include "data/scripts/com/bloc0001.h"
+#import "data/scripts/common/dc_find_block_height_animation.c"
 
 void main()
 {
-    bloc0001();
+	int animation;
+	void ent;
+
+	ent = getlocalvar("self");
+	animation = dc_find_block_height_animation();
+
+	changeentityproperty(ent, "animation", animation);
 }
