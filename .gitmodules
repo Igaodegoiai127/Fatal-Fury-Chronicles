@@ -10,3 +10,6 @@
 [submodule "data/scripts/dc_velocity"]
 	path = data/scripts/dc_velocity
 	url = https://github.com/DCurrent/openbor-script-velocity
+[submodule "data/scripts/dc_damage"]
+	path = data/scripts/dc_damage
+	url = https://github.com/DCurrent/openbor-script-damage
