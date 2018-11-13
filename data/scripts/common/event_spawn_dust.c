@@ -1,5 +1,4 @@
 #include "data/scripts/vars/entity.h"
-#include "data/scripts/vars/sounds.h"
 #include "data/scripts/dc_draw/main.c"
 #include "data/scripts/dc_sound/main.c"
 

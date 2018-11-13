@@ -338,15 +338,6 @@
     <ClInclude Include="data\scripts\vars\frames.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="data\scripts\vars\index.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="data\scripts\vars\models.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="data\scripts\vars\sounds.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="data\scripts\dc_draw\config.h">
       <Filter>Header Files</Filter>
     </ClInclude>

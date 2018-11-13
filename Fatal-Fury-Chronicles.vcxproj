@@ -216,9 +216,6 @@
     <ClInclude Include="data\scripts\vars\colors.h" />
     <ClInclude Include="data\scripts\vars\entity.h" />
     <ClInclude Include="data\scripts\vars\frames.h" />
-    <ClInclude Include="data\scripts\vars\index.h" />
-    <ClInclude Include="data\scripts\vars\models.h" />
-    <ClInclude Include="data\scripts\vars\sounds.h" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="data\bgs\beach\back0001.png" />
