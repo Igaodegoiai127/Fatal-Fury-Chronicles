@@ -323,9 +323,6 @@
     <ClInclude Include="data\scripts\com\trai0004.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="data\scripts\com\velo0001.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="data\scripts\dc_afterimage\config.h">
       <Filter>Header Files</Filter>
     </ClInclude>

@@ -202,7 +202,6 @@
     <ClInclude Include="data\scripts\com\targ0001.h" />
     <ClInclude Include="data\scripts\com\trai0003.h" />
     <ClInclude Include="data\scripts\com\trai0004.h" />
-    <ClInclude Include="data\scripts\com\velo0001.h" />
     <ClInclude Include="data\scripts\dc_afterimage\config.h" />
     <ClInclude Include="data\scripts\dc_d20\config.h" />
     <ClInclude Include="data\scripts\dc_disney\config.h" />

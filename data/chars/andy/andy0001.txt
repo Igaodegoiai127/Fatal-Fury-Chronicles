@@ -1203,9 +1203,11 @@ anim freespecial9
 		frame	data/chars/andy/andy0274
 	delay	16
 	attack	0
-	@cmd	velo0001 2 0 0
+	@cmd	dc_velocity_set_velocity_x 2.0
+	@cmd	dc_velocity_apply_velocity_x
 		frame	data/chars/andy/andy0275
-	@cmd	velo0001 0 0 0
+	@cmd	dc_velocity_set_velocity_x NULL()
+	@cmd	dc_velocity_apply_velocity_x
 		frame	data/chars/andy/7_2.png
 
 anim freespecial10
@@ -1306,9 +1308,11 @@ anim freespecial12
 		frame	data/chars/andy/andy0274
 	delay	16
 	attack	0
-	@cmd	velo0001 2 0 0
+	@cmd	dc_velocity_set_velocity_x 2.0
+	@cmd	dc_velocity_apply_velocity_x
 		frame	data/chars/andy/andy0275
-	@cmd	velo0001 0 0 0
+	@cmd	dc_velocity_set_velocity_x NULL()
+	@cmd	dc_velocity_apply_velocity_x
 		frame	data/chars/andy/7_2.png
 
 
@@ -1362,13 +1366,19 @@ anim freespecial14
 	delay	-100
 	attack	100 100 35 50 20 0 0 0 20
 	#cmd stereo_sound_command_here "sand0003.wav"
-	@cmd	velo0001 4 0 -4											#Dive.
+	@cmd	dc_velocity_set_velocity_x 4.0
+	@cmd	dc_velocity_set_velocity_y -4.0
+	@cmd	dc_velocity_apply_velocity_x
+	@cmd	dc_velocity_apply_velocity_y
 		frame	data/chars/andy/andy0288
 	delay	6
 	move	15
 		frame	data/chars/andy/andy0289
 	move	0
-	@cmd	velo0001 0 0 0											#Stop motion.
+	@cmd	dc_velocity_set_velocity_x NULL()
+	@cmd	dc_velocity_set_velocity_y NULL()
+	@cmd	dc_velocity_apply_velocity_x
+	@cmd	dc_velocity_apply_velocity_y
 		frame	data/chars/andy/andy0290
 	bbox	75 135 30 65
 		frame	data/chars/andy/andy0291
@@ -1711,7 +1721,8 @@ anim freespecial41
 	delay	12
 	bbox    75 110 35 90
 		frame	data/chars/andy/andy0448
-	@cmd	velo0001 0 0 0
+	@cmd	dc_velocity_set_velocity_x NULL()
+	@cmd	dc_velocity_apply_velocity_x
 		frame	data/chars/andy/andy0449
 		frame	data/chars/andy/0_6.png
 
@@ -2156,9 +2167,11 @@ anim follow8
 		frame	data/chars/andy/andy0274
 	delay	16
 	attack	0
-	@cmd	velo0001 2 0 0
+	@cmd	dc_velocity_set_velocity_x 2.0
+	@cmd	dc_velocity_apply_velocity_x
 		frame	data/chars/andy/andy0275
-	@cmd	velo0001 0 0 0
+	@cmd	dc_velocity_set_velocity_x NULL()
+	@cmd	dc_velocity_apply_velocity_x
 		frame	data/chars/andy/7_2.png
 
 anim follow9

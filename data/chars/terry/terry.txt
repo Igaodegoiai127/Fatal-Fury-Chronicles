@@ -440,7 +440,8 @@ anim runattack
 	delay	12
 		frame	data/chars/terry/terr0230
 	attack	0
-	@cmd	velo0001 0 0 0
+	@cmd	dc_velocity_set_velocity_x NULL()
+	@cmd	dc_velocity_apply_velocity_x
 	@cmd	changeentityproperty getlocalvar("self") "aiflag" "blocking" 0
 		frame	data/chars/terry/terr0231
 		frame	data/chars/terry/terr0578
