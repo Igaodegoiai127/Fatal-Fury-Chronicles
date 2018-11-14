@@ -139,7 +139,9 @@
     <ClCompile Include="data\scripts\dc_d20\random.c" />
     <ClCompile Include="data\scripts\dc_damage\config.c" />
     <ClCompile Include="data\scripts\dc_damage\damage.c" />
+    <ClCompile Include="data\scripts\dc_damage\direction.c" />
     <ClCompile Include="data\scripts\dc_damage\main.c" />
+    <ClCompile Include="data\scripts\dc_damage\toss.c" />
     <ClCompile Include="data\scripts\dc_disney\alternate_on_health.c" />
     <ClCompile Include="data\scripts\dc_disney\alternate_on_range.c" />
     <ClCompile Include="data\scripts\dc_disney\config.c" />
