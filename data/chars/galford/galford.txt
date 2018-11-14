@@ -314,6 +314,7 @@ anim attack1
 		@cmd dc_damage_set_drop_velocity_x 0.01
 		@cmd dc_damage_set_drop_velocity_z 0.01
 		@cmd dc_damage_set_drop_velocity_y 8.0
+		@cmd dc_damage_set_damage_on_landing_force 20
 		@cmd dc_damage_apply_damage
 
 	frame	data/chars/galford/83_3_0.png
