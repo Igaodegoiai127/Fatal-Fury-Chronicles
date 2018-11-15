@@ -307,7 +307,7 @@ anim attack1
 		
 		@cmd dc_sound_quick_play DC_SOUND_TYPE_WHIFF_LIGHT_A
 
-		@cmd dc_damage_set_hp_force 1
+		@cmd dc_damage_set_damage_force 1
 		@cmd dc_damage_set_drop_force 50
 		@cmd dc_damage_set_entity getentityproperty(getlocalvar("self") "opponent")
 		@cmd dc_damage_set_other getlocalvar("self")
@@ -1262,7 +1262,21 @@ anim grabbackward
 		frame	data/chars/andy/andy0433
 	move	0
 	@cmd	bind0004 1 0 0 0 11 0						#Release bind.
-	@cmd	dama0001 1 0 10 "ATK_NORMAL5" 1 3 3 0 30 1 1			#Put into thrown ani and apply damage on landing values.
+
+		@cmd dc_damage_set_entity					getentityproperty(getlocalvar("self") "grabbing")
+		@cmd dc_damage_set_damage_force				0
+		@cmd dc_damage_set_attack_type				openborconstant("ATK_NORMAL5")
+		@cmd dc_damage_set_direction_adjust			openborconstant("DIRECTION_ADJUST_SAME")
+		@cmd dc_damage_set_drop_force				10
+		@cmd dc_damage_set_drop_velocity_x			3.0
+		@cmd dc_damage_set_drop_velocity_y			3.0
+		@cmd dc_damage_set_drop_velocity_z			0.0
+		@cmd dc_damage_set_damage_on_landing_force	30
+		@cmd dc_damage_set_projectile				DC_DAMAGE_PROJECTILE_THROWN
+
+		@cmd dc_damage_apply_damage
+
+	#	dama0001 1 0 10 "ATK_NORMAL5" 1 3 3 0 30 1 1			#Put into thrown ani and apply damage on landing values.
      		frame	data/chars/andy/andy0433
 	delay	10
 	move	0

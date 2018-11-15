@@ -5,7 +5,7 @@ health	 	20
 type	 	obstacle
 scroll		0.17
 #speedf   	0.17
-#setlayer 	-8
+setlayer 	-8
 globalmap	1
 offscreenkill	1000000
 height		100

@@ -188,7 +188,7 @@ spawn 	cabin_cruiser
 Alias	Cruiser
 flip    1
 #coords  900 195
-coords 100 230
+coords 100 195
 at      10
 
 #Boat
