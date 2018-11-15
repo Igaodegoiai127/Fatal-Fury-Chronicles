@@ -1,7 +1,8 @@
 //Blocked by obstacle.
 
 #include "data/scripts/com/bind0008.h"  
-#include "data/scripts/com/dama0001.h"
+
+#include "data/scripts/dc_damage/main.c"
 
 void main()
 {
@@ -63,14 +64,38 @@ void obstacle_block_main()
 
 			bind0008("flash", "flash", 0, 1, 0, 0, 0, 0, 0, 0, 1);										//Spawn flash.
 
-			dama0001(vSelf, iDamage + iDOL, 100, openborconstant("ATK_NORMAL"), iDir, 0, 0, 0, 0, 0, 0);	//Apply damage to self.			
+			// Damage self
+			dc_damage_set_entity(vSelf);
+			dc_damage_set_other(vOpp);
+			dc_damage_set_damage(iDamage + iDOL);
+			dc_damage_set_drop_force(100);
+			dc_damage_set_attack_type(openborconstant("ATK_NORMAL"));
+			dc_damage_set_direction_adjust(openborconstant("DIRECTION_ADJUST_OPPOSITE"));
+			dc_damage_set_drop_velocity_x(0.0);
+			dc_damage_set_drop_velocity_y(0.0);
+			dc_damage_set_drop_velocity_z(0.0);
 
+			dc_damage_apply_damage();
+
+			// If obstacle will survive, bounce off.
 			if (iOHP > iDamage)																			//Will obstacle survive damage?
 			{
 				changeentityproperty(vSelf, "animation", openborconstant("ANI_FALL"));					//Reset fall animation.
 				tossentity(vSelf, 2.5, iXVel, 0);														//Apply toss values.
 			}
-			dama0001(vObstacle, iDamage, 100, openborconstant("ATK_NORMAL"), 0, 0, 0, 0, 0, 0, 0);
+			
+			//  Now damage the obstacle.
+			dc_damage_set_entity(vObstacle);
+			dc_damage_set_other(vOpp);
+			dc_damage_set_damage(iDamage);
+			dc_damage_set_drop_force(100);
+			dc_damage_set_attack_type(openborconstant("ATK_NORMAL"));
+			dc_damage_set_direction_adjust(NULL());
+			dc_damage_set_drop_velocity_x(0.0);
+			dc_damage_set_drop_velocity_y(0.0);
+			dc_damage_set_drop_velocity_z(0.0);
+
+			dc_damage_apply_damage();
 		}
 	}
 }

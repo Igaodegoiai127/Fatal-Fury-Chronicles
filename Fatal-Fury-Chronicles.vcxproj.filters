@@ -317,9 +317,6 @@
     <ClInclude Include="data\scripts\com\bind0009.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="data\scripts\com\dama0001.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="data\scripts\com\effe0001.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -9142,6 +9139,249 @@
     <Image Include="data\chars\misc\blank.png">
       <Filter>Resource Files</Filter>
     </Image>
+    <Image Include="data\chars\ray\0_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ray\0_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ray\0_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ray\0_3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ray\1_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ray\1_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ray\1_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ray\2_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ray\2_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ray\2_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ray\3_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ray\3_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ray\3_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ray\3_3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ray\3_4.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ray\3_5.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ray\4_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ray\4_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ray\4_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ray\4_3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ray\4_4.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ray\4_5.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ray\5_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ray\5_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ray\5_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ray\5_3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ray\6_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ray\6_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ray\10_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ray\10_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ray\10_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ray\10_3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ray\10_4.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ray\11_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ray\11_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ray\11_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ray\11_3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ray\11_4.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ray\13_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ray\13_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ray\13_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ray\13_3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ray\13_4.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ray\13_5.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ray\30_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ray\32_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ray\32_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ray\32_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ray\32_3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ray\39_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ray\39_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ray\39_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ray\39_3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ray\icon_ko.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ray\icon_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ray\icon_pain.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ray\pal_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ray\pal_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ray\pal_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ray\pal_3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ray\R_FALLING_UP_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ray\R_FALLING_UP_TILT_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ray\R_HELD_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ray\R_HORIZONTAL_DOWN_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ray\R_HORIZONTAL_UP_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ray\R_HORIZONTAL_UP_PAIN_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ray\R_LAYING_UP_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ray\R_LAYING_UP_PAIN_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ray\R_PAIN_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ray\R_PAIN_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ray\R_PAIN_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ray\R_PAIN_MID_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ray\R_PAIN_MID_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ray\R_PAIN_MID_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ray\R_TILT_DOWN_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ray\R_TILT_UP_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ray\R_VERTICAL_DOWN_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ray\R_VERTICAL_DOWN_PAIN_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ray\R_VERTICAL_DOWN_PAIN_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ray\R_VERTICAL_UP_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ray\R_VERTICAL_UP_PAIN_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
   </ItemGroup>
   <ItemGroup>
     <Text Include="data\levels.txt" />
@@ -9232,6 +9472,20 @@
     <None Include="data\bgs\beach\beac0009.act" />
     <None Include="data\chars\terry\aapa0000.act" />
     <None Include="data\chars\andy\aapa0000.act" />
+    <None Include="data\chars\ray\dev.psd" />
+    <None Include="data\chars\ray\pal_0.ACT" />
+    <None Include="data\chars\ray\pal_1.act" />
+    <None Include="data\chars\ray\pal_2.ACT" />
+    <None Include="data\chars\ray\pal_3.ACT" />
+    <None Include="data\chars\ray\pal_4.ACT" />
+    <None Include="data\chars\ray\pal_5.ACT" />
+    <None Include="data\chars\ray\pal_6.ACT" />
+    <None Include="data\chars\ray\pal_7.ACT" />
+    <None Include="data\chars\ray\pal_8.ACT" />
+    <None Include="data\chars\ray\pal_9.ACT" />
+    <None Include="data\chars\ray\pal_10.ACT" />
+    <None Include="data\chars\ray\pal_11.ACT" />
+    <None Include="data\chars\ray\pal_dev.ACT" />
   </ItemGroup>
   <ItemGroup>
     <Media Include="data\chars\galford\sounds\voice-atk-0.wav">

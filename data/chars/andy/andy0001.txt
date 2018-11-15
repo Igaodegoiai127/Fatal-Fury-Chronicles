@@ -1997,7 +1997,8 @@ anim follow5
 	##Set "C4 in UR face" to explode animation and self kill. Note, ani0008 removed - needs replacement.
 				
 	@cmd	bind0004 1 0 0 0 11 0									#Release bind and clear bind record.
-	@cmd	dama0001 1 90 10 "ATK_NORMAL" 1 2 -2 0 0 0 0
+
+	#cmd	dama0001 1 90 10 "ATK_NORMAL" 1 2 -2 0 0 0 0
 		frame	data/chars/andy/andy0493							#Quakeframe
 	delay	4
 		frame	data/chars/andy/andy0493
@@ -2022,7 +2023,7 @@ anim follow6
 	bbox	75 105 40 95
 		frame	data/chars/andy/andy0412			#Extra frame to give scripts chance to activate.
 	delay	-1000
-	@cmd	dama0001 2 0 10 "ATK_NORMAL" 0 0 0 0 0 0 0		#Put opponent into fall state.
+	#@cmd	dama0001 2 0 10 "ATK_NORMAL" 0 0 0 0 0 0 0		#Put opponent into fall state.
 	@cmd	bind0010 1 10 20 1 -1 TLTUP
 		frame	data/chars/andy/andy0413
 	delay	4
@@ -2045,7 +2046,7 @@ anim follow6
 		frame	data/chars/andy/andy0418
 	@cmd	bind0008 "flash" "flash" 0 1 30 10 0 0 0 0 1
 	@cmd	bind0004 1 0 0 0 11 0					#Release bind.
-	@cmd	dama0001 1 15 10 "ATK_NORMAL9" -1 2.5 3 0 0 0 0
+	#@cmd	dama0001 1 15 10 "ATK_NORMAL9" -1 2.5 3 0 0 0 0
 		frame	data/chars/andy/andy0419
 		frame	data/chars/andy/andy0420
 		frame	data/chars/andy/andy0421
@@ -2748,7 +2749,7 @@ anim grabforward
 	delay	10
 	offset	100 200
 	bbox	75 105 40 95
-	@cmd	dama0001 2 0 10 "ATK_NORMAL" 0 0 0 0 0 0 0
+	#@cmd	dama0001 2 0 10 "ATK_NORMAL" 0 0 0 0 0 0 0
 	@cmd	bind0010 1 32 0 -2 -1 0
 		frame	data/chars/andy/andy0407
 		frame	data/chars/andy/andy0408
@@ -2788,7 +2789,7 @@ anim grabforward
 		frame	data/chars/andy/andy0418
 	@cmd	bind0008 "flash" "flash" 0 1 30 10 0 0 0 0 1
 	@cmd	bind0004 1 0 0 0 11 0					#Release bind.
-	@cmd	dama0001 1 20 10 "ATK_NORMAL9" 1 2.5 3 0 0 0 0
+	#@cmd	dama0001 1 20 10 "ATK_NORMAL9" 1 2.5 3 0 0 0 0
 		frame	data/chars/andy/andy0419
 		frame	data/chars/andy/andy0420
 		frame	data/chars/andy/andy0421
@@ -2827,7 +2828,7 @@ anim grabbackward
 		frame	data/chars/andy/andy0433
 	move	0
 	@cmd	bind0004 1 0 0 0 11 0						#Release bind.
-	@cmd	dama0001 1 0 10 "ATK_NORMAL5" 1 3 3 0 30 1 1			#Put into thrown ani and apply damage on landing values.
+	#@cmd	dama0001 1 0 10 "ATK_NORMAL5" 1 3 3 0 30 1 1			#Put into thrown ani and apply damage on landing values.
      		frame	data/chars/andy/andy0433
 	delay	10
 	move	0
@@ -2940,7 +2941,7 @@ anim grabdown
 	move	-20
 	@cmd	bind0008 "flash" "flash" 0 1 20 75 0 0 0 0 1
 	@cmd	bind0004 1 20 0 0 11 0						#Release bind.
-	@cmd	dama0001 1 20 10 "ATK_NORMAL" -1 2 2 0 0 0 0
+	#@cmd	dama0001 1 20 10 "ATK_NORMAL" -1 2 2 0 0 0 0
 		frame	data/chars/andy/21_6.png
 	delay	10
 	move	0

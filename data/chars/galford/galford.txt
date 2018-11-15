@@ -1187,7 +1187,7 @@ anim grabforward
 	delay	10
 	offset	100 200
 	bbox	75 105 40 95
-	@cmd	dama0001 2 0 10 "ATK_NORMAL" 0 0 0 0 0 0 0
+	#@cmd	dama0001 2 0 10 "ATK_NORMAL" 0 0 0 0 0 0 0
 	@cmd	bind0010 1 32 0 -2 -1 0
 		frame	data/chars/andy/andy0407
 		frame	data/chars/andy/andy0408
@@ -1225,7 +1225,7 @@ anim grabforward
 		frame	data/chars/andy/andy0418
 	@cmd	bind0008 "flash" "flash" 0 1 30 10 0 0 0 0 1
 	@cmd	bind0004 1 0 0 0 11 0					#Release bind.
-	@cmd	dama0001 1 20 10 "ATK_NORMAL9" 1 2.5 3 0 0 0 0
+	#@cmd	dama0001 1 20 10 "ATK_NORMAL9" 1 2.5 3 0 0 0 0
 		frame	data/chars/andy/andy0419
 		frame	data/chars/andy/andy0420
 		frame	data/chars/andy/andy0421
@@ -1275,9 +1275,7 @@ anim grabbackward
 		@cmd dc_damage_set_projectile				DC_DAMAGE_PROJECTILE_THROWN
 
 		@cmd dc_damage_apply_damage
-
-	#	dama0001 1 0 10 "ATK_NORMAL5" 1 3 3 0 30 1 1			#Put into thrown ani and apply damage on landing values.
-     		frame	data/chars/andy/andy0433
+	frame	data/chars/andy/andy0433
 	delay	10
 	move	0
 		frame	data/chars/andy/andy0434
