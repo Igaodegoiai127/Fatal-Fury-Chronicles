@@ -16,3 +16,6 @@
 [submodule "data/scripts/dc_disney"]
 	path = data/scripts/dc_disney
 	url = https://github.com/DCurrent/openbor-script-disney
+[submodule "data/scripts/dc_kanga"]
+	path = data/scripts/dc_kanga
+	url = https://github.com/DCurrent/openbor-script-kanga
