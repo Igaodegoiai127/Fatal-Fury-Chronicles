@@ -161,8 +161,8 @@ void bind0010(void vTar, int offset_x, int offset_y, int offset_z, int iDir, int
 		// adjust offsets to caller's current scale.
 		if (getdrawmethod(vSelf, "enabled") == 1)
 		{
-			offset_x = dc_draw_adjust_to_scale_x(vSelf, offset_x);
-			offset_y = dc_draw_adjust_to_scale_y(vSelf, offset_y);
+			offset_x = dc_kanga_adjust_to_scale_x(vSelf, offset_x);
+			offset_y = dc_kanga_adjust_to_scale_y(vSelf, offset_y);
 		}
 
 		// Get binding property for spawn.
@@ -190,7 +190,7 @@ void bind0010(void vTar, int offset_x, int offset_y, int offset_z, int iDir, int
 		set_binding_property(binding,"tag", 24);
 
 		// Update bound entity's auto scaling.
-		dc_draw_z_position_autoscale(vTarget);
+		dc_kanga_z_position_autoscale(vTarget);
 
 		performattack(vTarget, DEFPOSE, 1);
 		changeentityproperty(vTarget, "animpos", iFrame);

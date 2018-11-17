@@ -1,5 +1,5 @@
 #include "data/scripts/vars/entity.h"
-#include "data/scripts/dc_draw/main.c"
+#include "data/scripts/dc_kanga/main.c"
 
 void bind0003(void vModel, int vAlias, int iMap, int iBlend, int fX, int fY, int fZ, int iDir, int iAniFlag)
 {
@@ -59,8 +59,8 @@ void bind0003(void vModel, int vAlias, int iMap, int iBlend, int fX, int fY, int
 	// adjust offsets to caller's current scale.
 	if (getdrawmethod(vSelf, "enabled") == 1)
 	{
-		fX = dc_draw_adjust_to_scale_x(vSelf, fX);
-		fY = dc_draw_adjust_to_scale_y(vSelf, fY);
+		fX = dc_kanga_adjust_to_scale_x(vSelf, fX);
+		fY = dc_kanga_adjust_to_scale_y(vSelf, fY);
 	}
 	
 	// Get binding property for spawn.
@@ -89,7 +89,7 @@ void bind0003(void vModel, int vAlias, int iMap, int iBlend, int fX, int fY, int
 	set_binding_property(binding, "sort_id", 1);
 
 	// Update draw for spawn.
-    //dc_draw_z_position_autoscale(vSpawn); 
+    //dc_kanga_z_position_autoscale(vSpawn); 
 
 	//update_binding(vSpawn);
 

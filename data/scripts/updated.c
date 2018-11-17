@@ -1,6 +1,6 @@
 // Import functions.
 #include "data/scripts/dc_afterimage/main.c"
-#include "data/scripts/dc_draw/main.c"
+#include "data/scripts/dc_kanga/main.c"
 
 void oncreate()
 {
@@ -37,7 +37,7 @@ void main() {
 		ent = getentity(i);
 
 		// Execute tint effect on entity.
-		dc_draw_auto_tint(ent);
+		dc_kanga_auto_tint(ent);
 
 		//char model = getentityproperty(ent, "model");
 		
@@ -53,7 +53,7 @@ void main() {
 
 
 
-void dc_draw_position(void ent, int box, int box_y, int i)
+void dc_kanga_position(void ent, int box, int box_y, int i)
 {
 	void position = get_entity_property(ent, "position_coordinates");
 	int animation = getentityproperty(ent, "animationid");

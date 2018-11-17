@@ -1,5 +1,5 @@
 #include "data/scripts/vars/entity.h"
-#include "data/scripts/dc_draw/main.c"
+#include "data/scripts/dc_kanga/main.c"
 
 void bind0008(void vModel, void vAlias, int iMap, int iBlend, float offset_x, float offset_y, int offset_z, int iDir, int iAni, int iFrame, int iKill){
 
@@ -29,8 +29,8 @@ void bind0008(void vModel, void vAlias, int iMap, int iBlend, float offset_x, fl
 	// adjust offsets to caller's current scale.
 	if (getdrawmethod(vSelf, "enabled") == 1)
 	{
-		offset_x = dc_draw_adjust_to_scale_x(vSelf, offset_x);
-		offset_x = dc_draw_adjust_to_scale_y(vSelf, offset_y);
+		offset_x = dc_kanga_adjust_to_scale_x(vSelf, offset_x);
+		offset_x = dc_kanga_adjust_to_scale_y(vSelf, offset_y);
 	}
     
 	// Reverse horizontal adjustment if facing left.
@@ -65,7 +65,7 @@ void bind0008(void vModel, void vAlias, int iMap, int iBlend, float offset_x, fl
 		changedrawmethod(vSpawn, "alpha", iBlend);
 	}
 
-    dc_draw_z_position_autoscale(vSpawn);                                                       //Update draw for spawn.
+    dc_kanga_z_position_autoscale(vSpawn);                                                       //Update draw for spawn.
 
     if (iAni)
 	{

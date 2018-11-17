@@ -1,5 +1,5 @@
 #include "data/scripts/vars/entity.h"
-#include "data/scripts/dc_draw/main.c"
+#include "data/scripts/dc_kanga/main.c"
 
 void bind0005(void vTarget, int iCond){
 
@@ -38,7 +38,7 @@ void bind0005(void vTarget, int iCond){
         fZ += getentityproperty(vTarget, "z");                          //Apply requested Z offset.
 
         changeentityproperty(vSelf, "position", fX, fZ, fY);            //Set callers's postion.
-        dc_draw_z_position_autoscale(vSelf);                                                //Refresh callers's draw values.
+        dc_kanga_z_position_autoscale(vSelf);                                                //Refresh callers's draw values.
     }
 
     setentityvar(vSelf, WARPX, NULL());

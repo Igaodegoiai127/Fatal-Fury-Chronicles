@@ -1,5 +1,5 @@
 #include "data/scripts/vars/entity.h"
-#include "data/scripts/dc_draw/main.c"
+#include "data/scripts/dc_kanga/main.c"
 #include "data/scripts/dc_sound/main.c"
 
 void main() {
@@ -32,6 +32,6 @@ void main() {
 		changedrawmethod(ent, "scalex", 128);
 		changedrawmethod(ent, "scaley", 128);
 
-		//dc_draw_z_position_autoscale(ent);
+		//dc_kanga_z_position_autoscale(ent);
 	}
 }

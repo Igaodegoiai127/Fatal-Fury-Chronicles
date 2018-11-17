@@ -2,7 +2,7 @@
 #include "data/scripts/vars/colors.h"
 #include "data/scripts/vars/entity.h"
 #include "data/scripts/com/bind0005.h"
-#include "data/scripts/dc_draw/main.c"   
+#include "data/scripts/dc_kanga/main.c"   
 #include "data/scripts/com/effe0001.h"
 
 void main()
@@ -34,7 +34,7 @@ void onfall_main()
 	{
 		effe0001(MAPBURN);                                                          //Set effect.
 		setentityvar(vSelf, ADREMAP, MAPBURN);                                      //Set burn effect map.
-		dc_draw_z_position_autoscale(vSelf);                                                            //Update draw   
+		dc_kanga_z_position_autoscale(vSelf);                                                            //Update draw   
 	}
 	else if (iType == openborconstant("ATK_SHOCK"))                                 //Shock attack?
 	{

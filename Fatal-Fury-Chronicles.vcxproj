@@ -153,10 +153,9 @@
     <ClCompile Include="data\scripts\dc_afterimage\main.c" />
     <ClCompile Include="data\scripts\dc_afterimage\trai0001.c" />
     <ClCompile Include="data\scripts\dc_afterimage\trai0002.c" />
-    <ClCompile Include="data\scripts\dc_draw\main.c" />
-    <ClCompile Include="data\scripts\dc_draw\scale_ratio.c" />
-    <ClCompile Include="data\scripts\dc_draw\tint.c" />
-    <ClCompile Include="data\scripts\dc_draw\z_position_autoscale.c" />
+    <ClCompile Include="data\scripts\dc_kanga\scale_ratio.c" />
+    <ClCompile Include="data\scripts\dc_kanga\tint.c" />
+    <ClCompile Include="data\scripts\dc_kanga\z_position_autoscale.c" />
     <ClCompile Include="data\scripts\dc_grapple\functions.c" />
     <ClCompile Include="data\scripts\dc_grapple\main.c" />
     <ClCompile Include="data\scripts\dc_grapple\release.c" />
@@ -215,7 +214,6 @@
     <ClInclude Include="data\scripts\dc_d20\config.h" />
     <ClInclude Include="data\scripts\dc_damage\config.h" />
     <ClInclude Include="data\scripts\dc_disney\config.h" />
-    <ClInclude Include="data\scripts\dc_draw\config.h" />
     <ClInclude Include="data\scripts\dc_grapple\config.h" />
     <ClInclude Include="data\scripts\dc_initialize\config.h" />
     <ClInclude Include="data\scripts\dc_kanga\config.h" />

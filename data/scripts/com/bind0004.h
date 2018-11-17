@@ -1,5 +1,5 @@
 #include "data/scripts/vars/entity.h"
-#include "data/scripts/dc_draw/main.c"
+#include "data/scripts/dc_kanga/main.c"
 
 void bind0004(void vTar, int iX, int iY, int iZ, int iDir, int iAniFlag){
 
@@ -57,8 +57,8 @@ void bind0004(void vTar, int iX, int iY, int iZ, int iDir, int iAniFlag){
 		// adjust offsets to caller's current scale.
 		if (getdrawmethod(vSelf, "enabled") == 1)
 		{
-			iX = dc_draw_adjust_to_scale_x(vSelf, iX);
-			iY = dc_draw_adjust_to_scale_y(vSelf, iY);
+			iX = dc_kanga_adjust_to_scale_x(vSelf, iX);
+			iY = dc_kanga_adjust_to_scale_y(vSelf, iY);
 		}
 
 		// Get binding toggle and enable flags.

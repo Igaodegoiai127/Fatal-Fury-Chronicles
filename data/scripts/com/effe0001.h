@@ -1,5 +1,5 @@
 #include "data/scripts/vars/entity.h"
-#include "data/scripts/dc_draw/main.c"
+#include "data/scripts/dc_kanga/main.c"
 
 void effe0001(int iMap){
 
@@ -55,5 +55,5 @@ void effe0001(int iMap){
     bindentity(vSpawn, vSelf, 0, 1, fHeight * 0.4, 1, 4);   //Execute bind.
     setentityvar(vSelf, BINDHE, vSpawn);                    //Store bind.
     setentityvar(vSpawn, ADBLEND, 1);						//Apply alpha mode 1.
-	dc_draw_z_position_autoscale(vSpawn);                                       //Apply draw.
+	dc_kanga_z_position_autoscale(vSpawn);                                       //Apply draw.
 }

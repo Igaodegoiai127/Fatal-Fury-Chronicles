@@ -1,4 +1,4 @@
-#include "data/scripts/dc_draw/main.c"
+#include "data/scripts/dc_kanga/main.c"
 #include "data/scripts/dc_sound/main.c"
 #include "data/scripts/dc_d20/main.c"
 
@@ -21,7 +21,7 @@ void main() {
 	changedrawmethod(ent, "rotate", rotate);
 
 	// Apply draw settings.
-	dc_draw_z_position_autoscale(ent);
+	dc_kanga_z_position_autoscale(ent);
 
 	// stereo_sound_command_here(SNDHIT1);
 }

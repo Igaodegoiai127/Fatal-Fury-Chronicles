@@ -1,6 +1,6 @@
 #include "data/scripts/vars/entity.h"
 #include "data/scripts/com/bind0008.h"
-#include "data/scripts/dc_draw/main.c"
+#include "data/scripts/dc_kanga/main.c"
 
 void bind0009(void vModel, void vAlias, int iMap, int iBlend, float fAX, float fAY, int iAZ, int iDir, int iAni, int iFrame, int iKill, float iScaleX, float iScaleY, int iFlipX, int iFlipY, int iShiftX, int iFill, int iRotate, int iARotat)
 {
@@ -36,7 +36,7 @@ void bind0009(void vModel, void vAlias, int iMap, int iBlend, float fAX, float f
 	//  Set autoratate here.
 
 
-    dc_draw_z_position_autoscale(vSpawn);																				    //Update draw for spawn.    
+    dc_kanga_z_position_autoscale(vSpawn);																				    //Update draw for spawn.    
 
     if (iAni){        
         changeentityproperty(vSpawn, "animation", iAni);

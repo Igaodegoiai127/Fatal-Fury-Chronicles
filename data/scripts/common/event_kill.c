@@ -1,7 +1,7 @@
 #include "data/scripts/vars/colors.h"
 #include "data/scripts/vars/entity.h"
 #include "data/scripts/com/bind0008.h"
-#include "data/scripts/dc_draw/main.c"
+#include "data/scripts/dc_kanga/main.c"
 
 void main()
 {
@@ -48,7 +48,7 @@ void entity_kill()
 			//Quick and dirty fix for burn fatality; default image size is too large.
 			setentityvar(vSpawn, ADSCALEX, 0.75);               //Draw scale X adjustment.
 			setentityvar(vSpawn, ADSCALEY, 0.75);               //Draw scale Y adjustment.
-			dc_draw_z_position_autoscale(vSpawn);                                   //Apply draw settings.
+			dc_kanga_z_position_autoscale(vSpawn);                                   //Apply draw settings.
 		}
 	}
 	else if (iAni == openborconstant("ANI_SHOCKDIE"))
@@ -75,7 +75,7 @@ void entity_kill()
 		{
 			setentityvar(vParent, BINDHE, NULL());              //Clear parent's bound effect variant.
 			setentityvar(vParent, ADREMAP, NULL());             //Clear parent's remap.
-			dc_draw_z_position_autoscale(vParent);                                  //Update parent's draw.
+			dc_kanga_z_position_autoscale(vParent);                                  //Update parent's draw.
 		}
 	}
 

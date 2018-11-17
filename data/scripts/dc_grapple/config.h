@@ -2,7 +2,7 @@
 // Dependencies - If you don't have these libraries, grab
 // them from https://github.com/DCurrent.
 
-#include "data/scripts/dc_draw/main.c"
+#include "data/scripts/dc_kanga/main.c"
 
 // From old bind0010
 #include "data/scripts/vars/anims.h"

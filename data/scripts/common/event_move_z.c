@@ -1,4 +1,4 @@
-#include "data/scripts/dc_draw/main.c"
+#include "data/scripts/dc_kanga/main.c"
 
 void main()
 {
@@ -9,7 +9,7 @@ void main()
         changeentityproperty(vSelf, "setlayer", -9);                //Layer behind floor panels and obstacles.
         changeentityproperty(getlocalvar("self"), "gfxshadow", 0);  //No shadow.
 
-        dc_draw_z_position_autoscale(vSelf);                                                //Run draw function for Z zooming.
+        dc_kanga_z_position_autoscale(vSelf);                                                //Run draw function for Z zooming.
     }
 	else
 	{
@@ -19,9 +19,9 @@ void main()
 
 	if (iZ > openborvariant("PLAYER_MAX_Z"))
     {
-        dc_draw_z_position_autoscale(vSelf);
+        dc_kanga_z_position_autoscale(vSelf);
     }
 
-    //dc_draw_z_position_autoscale(vSelf);                                                //Run draw function for Z zooming.
+    //dc_kanga_z_position_autoscale(vSelf);                                                //Run draw function for Z zooming.
 }
 
