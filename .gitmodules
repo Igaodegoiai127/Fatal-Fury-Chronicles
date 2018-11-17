@@ -13,3 +13,6 @@
 [submodule "data/scripts/dc_damage"]
 	path = data/scripts/dc_damage
 	url = https://github.com/DCurrent/openbor-script-damage
+[submodule "data/scripts/dc_disney"]
+	path = data/scripts/dc_disney
+	url = https://github.com/DCurrent/openbor-script-disney
