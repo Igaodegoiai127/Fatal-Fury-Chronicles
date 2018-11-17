@@ -150,18 +150,6 @@
     <ClCompile Include="data\scripts\dc_string\crop.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="data\scripts\dc_disney\main.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="data\scripts\dc_disney\alternate_on_range.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="data\scripts\dc_disney\alternate_on_health.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="data\scripts\dc_disney\dash_stop.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="data\bgs\beach\cabin_cruiser\scripts\event_animation.c">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -178,15 +166,6 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="data\bgs\beach\cabin_cruiser\scripts\event_think.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="data\scripts\dc_disney\set_attack.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="data\scripts\dc_disney\set_animation.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="data\scripts\dc_disney\config.c">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="data\scripts\dc_draw\rgb_increment.c">
@@ -366,9 +345,6 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="data\scripts\dc_string\config.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="data\scripts\dc_disney\config.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="data\scripts\dc_d20\config.h">
