@@ -142,6 +142,13 @@
     <ClCompile Include="data\scripts\dc_damage\direction.c" />
     <ClCompile Include="data\scripts\dc_damage\main.c" />
     <ClCompile Include="data\scripts\dc_damage\toss.c" />
+    <ClCompile Include="data\scripts\dc_disney\alternate_on_health.c" />
+    <ClCompile Include="data\scripts\dc_disney\alternate_on_range.c" />
+    <ClCompile Include="data\scripts\dc_disney\config.c" />
+    <ClCompile Include="data\scripts\dc_disney\dash_stop.c" />
+    <ClCompile Include="data\scripts\dc_disney\main.c" />
+    <ClCompile Include="data\scripts\dc_disney\set_animation.c" />
+    <ClCompile Include="data\scripts\dc_disney\set_attack.c" />
     <ClCompile Include="data\scripts\dc_draw\rgb_increment.c" />
     <ClCompile Include="data\scripts\dc_afterimage\main.c" />
     <ClCompile Include="data\scripts\dc_afterimage\trai0001.c" />
@@ -158,6 +165,10 @@
     <ClCompile Include="data\scripts\dc_initialize\config.c" />
     <ClCompile Include="data\scripts\dc_initialize\initialize_level_spawn.c" />
     <ClCompile Include="data\scripts\dc_initialize\main.c" />
+    <ClCompile Include="data\scripts\dc_kanga\increment_global_index.c" />
+    <ClCompile Include="data\scripts\dc_kanga\main.c" />
+    <ClCompile Include="data\scripts\dc_kanga\random_index.c" />
+    <ClCompile Include="data\scripts\dc_kanga\rotate_index.c" />
     <ClCompile Include="data\scripts\dc_math\config.c" />
     <ClCompile Include="data\scripts\dc_math\main.c" />
     <ClCompile Include="data\scripts\dc_math\percentage.c" />
@@ -203,9 +214,11 @@
     <ClInclude Include="data\scripts\dc_afterimage\config.h" />
     <ClInclude Include="data\scripts\dc_d20\config.h" />
     <ClInclude Include="data\scripts\dc_damage\config.h" />
+    <ClInclude Include="data\scripts\dc_disney\config.h" />
     <ClInclude Include="data\scripts\dc_draw\config.h" />
     <ClInclude Include="data\scripts\dc_grapple\config.h" />
     <ClInclude Include="data\scripts\dc_initialize\config.h" />
+    <ClInclude Include="data\scripts\dc_kanga\config.h" />
     <ClInclude Include="data\scripts\dc_math\config.h" />
     <ClInclude Include="data\scripts\dc_sound\config.h" />
     <ClInclude Include="data\scripts\dc_spinner\config.h" />
