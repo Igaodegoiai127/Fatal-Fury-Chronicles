@@ -19,3 +19,6 @@
 [submodule "data/scripts/dc_kanga"]
 	path = data/scripts/dc_kanga
 	url = https://github.com/DCurrent/openbor-script-kanga
+[submodule "data/scripts/dc_string"]
+	path = data/scripts/dc_string
+	url = https://github.com/DCurrent/openbor-script-string
