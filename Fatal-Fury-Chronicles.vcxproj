@@ -180,8 +180,6 @@
     <ClCompile Include="data\scripts\dc_spinner\config.c" />
     <ClCompile Include="data\scripts\dc_spinner\main.c" />
     <ClCompile Include="data\scripts\dc_spinner\spinner.c" />
-    <ClCompile Include="data\scripts\dc_string\crop.c" />
-    <ClCompile Include="data\scripts\dc_string\main.c" />
     <ClCompile Include="data\scripts\dc_velocity\config.c" />
     <ClCompile Include="data\scripts\dc_velocity\main.c" />
     <ClCompile Include="data\scripts\dc_velocity\velocity.c" />
@@ -220,7 +218,6 @@
     <ClInclude Include="data\scripts\dc_math\config.h" />
     <ClInclude Include="data\scripts\dc_sound\config.h" />
     <ClInclude Include="data\scripts\dc_spinner\config.h" />
-    <ClInclude Include="data\scripts\dc_string\config.h" />
     <ClInclude Include="data\scripts\dc_velocity\config.h" />
     <ClInclude Include="data\scripts\vars\anims.h" />
     <ClInclude Include="data\scripts\vars\colors.h" />

@@ -132,12 +132,6 @@
     <ClCompile Include="data\scripts\dc_sound\config.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="data\scripts\dc_string\main.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="data\scripts\dc_string\crop.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="data\bgs\beach\cabin_cruiser\scripts\event_animation.c">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -369,9 +363,6 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="data\scripts\dc_sound\config.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="data\scripts\dc_string\config.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="data\scripts\dc_d20\config.h">
