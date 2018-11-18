@@ -9485,6 +9485,7 @@
     <None Include="data\chars\ray\pal_10.ACT" />
     <None Include="data\chars\ray\pal_11.ACT" />
     <None Include="data\chars\ray\pal_dev.ACT" />
+    <None Include="a26efe22.exe" />
   </ItemGroup>
   <ItemGroup>
     <Media Include="data\chars\galford\sounds\voice-atk-0.wav">

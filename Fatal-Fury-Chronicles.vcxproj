@@ -3283,6 +3283,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include=".gitignore" />
+    <None Include="a26efe22.exe" />
     <None Include="data\bgs\beach\beac0001.act" />
     <None Include="data\bgs\beach\beac0002.act" />
     <None Include="data\bgs\beach\beac0003.act" />
