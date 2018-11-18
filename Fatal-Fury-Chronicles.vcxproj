@@ -3325,7 +3325,6 @@
     <None Include="data\scripts\dc_d20\README.md" />
     <None Include="data\scripts\dc_initialize\README.md" />
     <None Include="data\scripts\dc_spinner\README.md" />
-    <None Include="devnotes001.docx" />
     <None Include="README.md" />
   </ItemGroup>
   <ItemGroup>

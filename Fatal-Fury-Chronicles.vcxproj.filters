@@ -9453,7 +9453,6 @@
     <None Include="data\extras\title.psd" />
     <None Include="data\extras\waiting.psd" />
     <None Include="README.md" />
-    <None Include="devnotes001.docx" />
     <None Include=".gitignore" />
     <None Include="data\scripts\dc_d20\README.md" />
     <None Include="data\scripts\dc_initialize\README.md" />
