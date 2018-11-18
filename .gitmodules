@@ -22,3 +22,6 @@
 [submodule "data/scripts/dc_string"]
 	path = data/scripts/dc_string
 	url = https://github.com/DCurrent/openbor-script-string
+[submodule "data/scripts/dc_fidelity"]
+	path = data/scripts/dc_fidelity
+	url = https://github.com/DCurrent/openbor-script-fidelity
