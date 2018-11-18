@@ -25,3 +25,6 @@
 [submodule "data/scripts/dc_fidelity"]
 	path = data/scripts/dc_fidelity
 	url = https://github.com/DCurrent/openbor-script-fidelity
+[submodule "data/scripts/dc_math"]
+	path = data/scripts/dc_math
+	url = https://github.com/DCurrent/openbor-script-math
