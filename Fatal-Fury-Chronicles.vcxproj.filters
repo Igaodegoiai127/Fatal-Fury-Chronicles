@@ -291,6 +291,15 @@
     <ClCompile Include="data\scripts\dc_math\percentage.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="data\scripts\dc_grapple\functions.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="data\scripts\dc_grapple\main.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="data\scripts\dc_grapple\release.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="data\scripts\com\bind0002.h">
@@ -372,6 +381,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="data\scripts\dc_math\config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="data\scripts\dc_grapple\config.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -28,3 +28,6 @@
 [submodule "data/scripts/dc_math"]
 	path = data/scripts/dc_math
 	url = https://github.com/DCurrent/openbor-script-math
+[submodule "data/scripts/dc_grapple"]
+	path = data/scripts/dc_grapple
+	url = https://github.com/DCurrent/openbor-script-grapple
