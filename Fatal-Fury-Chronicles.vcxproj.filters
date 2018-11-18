@@ -291,6 +291,15 @@
     <ClCompile Include="data\scripts\dc_grapple\release.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="data\scripts\dc_afterimage\main.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="data\scripts\dc_afterimage\trai0001.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="data\scripts\dc_afterimage\trai0002.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="data\scripts\com\bind0002.h">
@@ -372,6 +381,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="data\scripts\dc_grapple\config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="data\scripts\dc_afterimage\config.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
