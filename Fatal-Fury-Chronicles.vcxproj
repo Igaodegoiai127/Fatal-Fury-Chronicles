@@ -153,6 +153,11 @@
     <ClCompile Include="data\scripts\dc_afterimage\main.c" />
     <ClCompile Include="data\scripts\dc_afterimage\trai0001.c" />
     <ClCompile Include="data\scripts\dc_afterimage\trai0002.c" />
+    <ClCompile Include="data\scripts\dc_fidelity\adjustments.c" />
+    <ClCompile Include="data\scripts\dc_fidelity\config.c" />
+    <ClCompile Include="data\scripts\dc_fidelity\loading.c" />
+    <ClCompile Include="data\scripts\dc_fidelity\main.c" />
+    <ClCompile Include="data\scripts\dc_fidelity\play.c" />
     <ClCompile Include="data\scripts\dc_kanga\scale_ratio.c" />
     <ClCompile Include="data\scripts\dc_kanga\tint.c" />
     <ClCompile Include="data\scripts\dc_kanga\z_position_autoscale.c" />
@@ -207,6 +212,7 @@
     <ClInclude Include="data\scripts\dc_d20\config.h" />
     <ClInclude Include="data\scripts\dc_damage\config.h" />
     <ClInclude Include="data\scripts\dc_disney\config.h" />
+    <ClInclude Include="data\scripts\dc_fidelity\config.h" />
     <ClInclude Include="data\scripts\dc_grapple\config.h" />
     <ClInclude Include="data\scripts\dc_initialize\config.h" />
     <ClInclude Include="data\scripts\dc_kanga\config.h" />
