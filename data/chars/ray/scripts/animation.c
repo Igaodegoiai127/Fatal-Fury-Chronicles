@@ -9,7 +9,7 @@ Ray McDougal (AI)
 
 #include "data/scripts/com/bind0004.h" 
 #include "data/scripts/dc_grapple/main.c" 
-#include "data/scripts/dc_sound/main.c" 
+#include "data/scripts/dc_fidelity/main.c" 
 
 #include "data/scripts/com/targ0001.h"
 

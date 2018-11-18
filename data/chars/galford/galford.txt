@@ -301,11 +301,11 @@ anim attack1
 	
 		# Play voice 50% of the time and clear chance so default is used for 
 		# any subsequent sound play calls.
-		@cmd dc_sound_set_sound_chance 0.5
-		@cmd dc_sound_quick_play DC_SOUND_TYPE_VOICE_LIGHT_A
-		@cmd dc_sound_set_sound_chance NULL()
+		@cmd dc_fidelity_set_sound_chance 0.5
+		@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_VOICE_LIGHT_A
+		@cmd dc_fidelity_set_sound_chance NULL()
 		
-		@cmd dc_sound_quick_play DC_SOUND_TYPE_WHIFF_LIGHT_A
+		@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_WHIFF_LIGHT_A
 
 		@cmd dc_damage_set_damage_force 1
 		@cmd dc_damage_set_drop_force 50
@@ -354,7 +354,7 @@ anim attack2
 		offset	155 210
 		bbox	130 120 45 90
 	
-		@cmd dc_sound_quick_play DC_SOUND_TYPE_WHIFF_MEDIUM_B
+		@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_WHIFF_MEDIUM_B
 	frame	data/chars/galford/164_12_0.png
 
 		attack.position.x				125
@@ -368,7 +368,7 @@ anim attack2
 		attack.reaction.fall.velocity.z	0
 		attack.reaction.pause.time		8
 
-		@cmd dc_sound_quick_play DC_SOUND_TYPE_VOICE_MEDIUM_A
+		@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_VOICE_MEDIUM_A
 		@cmd bind0003 "galford_trail" "galford_trail" 1 1 0 0 0 openborconstant("DIRECTION_ADJUST_SAME") openborconstant("BINDING_MATCHING_ANIMATION_TARGET")+openborconstant("BINDING_MATCHING_ANIMATION_REMOVE")+openborconstant("BINDING_MATCHING_FRAME_TARGET")
 	
 	frame	data/chars/galford/160_1_1.png
@@ -411,10 +411,10 @@ anim attack3
 		offset	155 210
 		bbox	130 120 45 90
 
-		@cmd dc_sound_quick_play DC_SOUND_TYPE_WHIFF_MEDIUM_B
+		@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_WHIFF_MEDIUM_B
 	frame	data/chars/galford/806_0_0.png
 
-		@cmd dc_sound_quick_play DC_SOUND_TYPE_VOICE_MEDIUM_A
+		@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_VOICE_MEDIUM_A
 		@cmd bind0003 "galford_trail" "galford_trail" 1 1 0 0 0 openborconstant("DIRECTION_ADJUST_SAME") openborconstant("BINDING_MATCHING_ANIMATION_TARGET")+openborconstant("BINDING_MATCHING_ANIMATION_REMOVE")+openborconstant("BINDING_MATCHING_FRAME_TARGET")
 
 	frame	data/chars/galford/806_1_0.png
@@ -457,7 +457,7 @@ anim attack4
 	
 	frame	data/chars/galford/172_0_0.png
 
-		@cmd dc_sound_quick_play DC_SOUND_TYPE_VOICE_HEAVY_A
+		@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_VOICE_HEAVY_A
 
 	frame	data/chars/galford/172_1_0.png
 	frame	data/chars/galford/172_2_0.png
@@ -496,8 +496,8 @@ anim attack5
 	
 	frame	data/chars/galford/97_2_0.png
 		
-		@cmd dc_sound_quick_play DC_SOUND_TYPE_VOICE_MEDIUM_A
-		@cmd dc_sound_quick_play DC_SOUND_TYPE_WHIFF_MEDIUM_B
+		@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_VOICE_MEDIUM_A
+		@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_WHIFF_MEDIUM_B
 
 	frame	data/chars/galford/325_21_0.png
 
@@ -545,8 +545,8 @@ anim attack6
 		offset	155 210
 		bbox	130 120 45 90
 	
-		@cmd dc_sound_quick_play DC_SOUND_TYPE_VOICE_MEDIUM_A
-		@cmd dc_sound_quick_play DC_SOUND_TYPE_WHIFF_MEDIUM_B
+		@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_VOICE_MEDIUM_A
+		@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_WHIFF_MEDIUM_B
 
 	frame	data/chars/galford/805_0_0.png	
 
@@ -588,7 +588,7 @@ anim attack7
 	
 	frame	data/chars/galford/6_0_0.png
 
-		@cmd dc_sound_quick_play DC_SOUND_TYPE_VOICE_HEAVY_A
+		@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_VOICE_HEAVY_A
 	
 	frame	data/chars/galford/173_4_0.png
 		
@@ -640,8 +640,8 @@ anim chargeattack
 	frame	data/chars/galford/164_1_0.png
 	frame	data/chars/galford/164_0_0.png
 
-		@cmd dc_sound_quick_play DC_SOUND_TYPE_VOICE_HEAVY_A
-		@cmd dc_sound_quick_play DC_SOUND_TYPE_WHIFF_HEAVY_B		
+		@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_VOICE_HEAVY_A
+		@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_WHIFF_HEAVY_B		
 
 	frame	data/chars/galford/165_2_0.png
 	frame	data/chars/galford/165_3_0.png
@@ -825,7 +825,7 @@ anim freespecial
 	frame	data/chars/galford/6_0_0.png
 		
 		bbox	130 120 45 90
-		@cmd dc_sound_quick_play DC_SOUND_TYPE_VOICE_LIGHT_A
+		@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_VOICE_LIGHT_A
 		
 		delay	8
 
@@ -1462,8 +1462,8 @@ anim jumpforward
 		offset	155 210
 		bbox	130 120 45 90
 		
-		@cmd dc_sound_quick_play DC_SOUND_TYPE_VOICE_MEDIUM_A
-		# dc_sound_quick_play DC_SOUND_TYPE_WHIFF_MEDIUM_A
+		@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_VOICE_MEDIUM_A
+		# dc_fidelity_quick_play DC_FIDELITY_TYPE_WHIFF_MEDIUM_A
 
 	frame	data/chars/galford/361_8_0.png
 	

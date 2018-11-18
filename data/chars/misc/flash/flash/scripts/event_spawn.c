@@ -1,5 +1,5 @@
 #include "data/scripts/dc_kanga/main.c"
-#include "data/scripts/dc_sound/main.c"
+#include "data/scripts/dc_fidelity/main.c"
 #include "data/scripts/dc_d20/main.c"
 
 void main() {

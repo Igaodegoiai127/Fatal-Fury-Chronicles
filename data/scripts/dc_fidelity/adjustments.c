@@ -1,10 +1,10 @@
-#include "data/scripts/dc_sound/config.h"
+#include "data/scripts/dc_fidelity/config.h"
 
 // Caskey, Damon V. 
 // 2018-10-13
 //
 // Return an adjusted volume based on position in screen. 
-int dc_sound_volume_adjusted_horizontal(float position, int volume)
+int dc_fidelity_volume_adjusted_horizontal(float position, int volume)
 {
 	float	center;
 	float	result;

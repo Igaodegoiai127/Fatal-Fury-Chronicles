@@ -1,26 +1,26 @@
-#include "data/scripts/dc_sound/config.h"
-#import "data/scripts/dc_sound/config.c"
-#import "data/scripts/dc_sound/adjustments.c"
+#include "data/scripts/dc_fidelity/config.h"
+#import "data/scripts/dc_fidelity/config.c"
+#import "data/scripts/dc_fidelity/adjustments.c"
 
 // Caskey, Damon V.
 // 2018-10-23
 //
 // Get a sample ID from sound type and the current 
 // target entity's model.
-int dc_sound_get_entity_sound(int type)
+int dc_fidelity_get_entity_sound(int type)
 {
 	void ent;
 	char model;
 	int sample_id;
 
 	// Get target entity.
-	ent = dc_sound_get_entity();
+	ent = dc_fidelity_get_entity();
 
 	model = getentityproperty(ent, "model");
 
 	// Now that we have a model, run model sound function 
 	// to get a sample ID.
-	sample_id = dc_sound_get_model_sound(model, type);
+	sample_id = dc_fidelity_get_model_sound(model, type);
 
 	return sample_id;
 }
@@ -33,13 +33,13 @@ int dc_sound_get_entity_sound(int type)
 //
 // 0 Fail (no).
 // 1 Pass (yes).
-int dc_sound_sound_chance()
+int dc_fidelity_sound_chance()
 {
 	float chance;
 	int percentage;
 	int random;
 
-	chance = dc_sound_get_sound_chance();
+	chance = dc_fidelity_get_sound_chance();
 
 	// Convert chance to whole number percentage.
 	percentage = chance * 100;
@@ -61,7 +61,7 @@ int dc_sound_sound_chance()
 // 2018-10-23
 //
 // Get a sample ID from sound type and a known model.
-int dc_sound_get_model_sound(char model, int type)
+int dc_fidelity_get_model_sound(char model, int type)
 {
 	void ent;		// Target entity.
 	int result;		// Sound index.
@@ -71,7 +71,7 @@ int dc_sound_get_model_sound(char model, int type)
 	int size;		// Size of array.
 
 	// Get the model's list array.
-	models = getglobalvar(DC_SOUND_VAR_KEY_SOUND_MODELS);
+	models = getglobalvar(DC_FIDELITY_VAR_KEY_SOUND_MODELS);
 
 	// Get array of sound types for a model.
 	types = get(models, model);
@@ -80,7 +80,7 @@ int dc_sound_get_model_sound(char model, int type)
 	indexes = get(types, type);
 
 	// Get a sound index (sample id) from indexes array.
-	result = dc_sound_select_sample_id(indexes);
+	result = dc_fidelity_select_sample_id(indexes);
 
 	return result;
 }
@@ -89,19 +89,19 @@ int dc_sound_get_model_sound(char model, int type)
 // 2018-10-23
 // 
 // Get a sound index (sample ID) from a sound indexes array. 
-int dc_sound_select_sample_id(void indexes)
+int dc_fidelity_select_sample_id(void indexes)
 {
 	int result;
 	int size;
 	int element;
 
 	// Get element setting.
-	element = dc_sound_get_sound_element();
+	element = dc_fidelity_get_sound_element();
 
 	// If element is set to random, then get a 
 	// random item from the available range of 
 	// array elements.
-	if (element == DC_SOUND_INDEX_RANDOM)
+	if (element == DC_FIDELITY_INDEX_RANDOM)
 	{
 		// Get size, decrement by 1 to compensate
 		// for 0 indexing and use as upper bound
@@ -127,7 +127,7 @@ int dc_sound_select_sample_id(void indexes)
 // 2018-10-14
 //
 // Play requested sample with X axis based stereo.
-void dc_sound_quick_play(int type)
+void dc_fidelity_quick_play(int type)
 {
 	void	ent;
 	int		sample_id;		// Sample ID to play.
@@ -137,29 +137,29 @@ void dc_sound_quick_play(int type)
 	int		volume_right;
 
 	// If random chance doesn't pass, exit now.
-	if (!dc_sound_sound_chance())
+	if (!dc_fidelity_sound_chance())
 	{
 		return;
 	}
 
 	// Get set volumes.
-	volume_left = dc_sound_get_sound_volume_main_left();
-	volume_right = dc_sound_get_sound_volume_main_right();
+	volume_left = dc_fidelity_get_sound_volume_main_left();
+	volume_right = dc_fidelity_get_sound_volume_main_right();
 
 	// Get entity X position.
-	ent = dc_sound_get_entity();
+	ent = dc_fidelity_get_entity();
 	axis = get_entity_property(ent, "position_coordinates");
 	pos_x = get_axis_principal_float_property(axis, "x");
 
 	// Get adjusted volumes.
-	if (dc_sound_get_sound_location_balance())
+	if (dc_fidelity_get_sound_location_balance())
 	{
-		volume_left -= dc_sound_volume_adjusted_horizontal(pos_x, volume_left);
-		volume_right = dc_sound_volume_adjusted_horizontal(pos_x, volume_right);
+		volume_left -= dc_fidelity_volume_adjusted_horizontal(pos_x, volume_left);
+		volume_right = dc_fidelity_volume_adjusted_horizontal(pos_x, volume_right);
 	}
 
 	// Get a sample ID.
-	sample_id = dc_sound_get_entity_sound(type);
+	sample_id = dc_fidelity_get_entity_sound(type);
 
 	// Play the sample.
 	dc_playsample(sample_id, volume_left, volume_right);
@@ -193,9 +193,9 @@ int dc_playsample(int sample_id, int volume_left, int volume_right)
 		return 0;
 	}
 
-	loop = dc_sound_get_sound_loop();
-	priority = dc_sound_get_sound_priority();
-	speed = dc_sound_get_sound_speed();
+	loop = dc_fidelity_get_sound_loop();
+	priority = dc_fidelity_get_sound_priority();
+	speed = dc_fidelity_get_sound_speed();
 
 	// Play the sample.
 	playsample(sample_id, priority, volume_left, volume_right, speed, loop);

@@ -172,11 +172,11 @@
     <ClCompile Include="data\scripts\dc_math\main.c" />
     <ClCompile Include="data\scripts\dc_math\percentage.c" />
     <ClCompile Include="data\scripts\dc_math\ratio_to_int.c" />
-    <ClCompile Include="data\scripts\dc_sound\adjustments.c" />
-    <ClCompile Include="data\scripts\dc_sound\config.c" />
-    <ClCompile Include="data\scripts\dc_sound\loading.c" />
-    <ClCompile Include="data\scripts\dc_sound\main.c" />
-    <ClCompile Include="data\scripts\dc_sound\play.c" />
+    <ClCompile Include="data\scripts\dc_fidelity\adjustments.c" />
+    <ClCompile Include="data\scripts\dc_fidelity\config.c" />
+    <ClCompile Include="data\scripts\dc_fidelity\loading.c" />
+    <ClCompile Include="data\scripts\dc_fidelity\main.c" />
+    <ClCompile Include="data\scripts\dc_fidelity\play.c" />
     <ClCompile Include="data\scripts\dc_spinner\config.c" />
     <ClCompile Include="data\scripts\dc_spinner\main.c" />
     <ClCompile Include="data\scripts\dc_spinner\spinner.c" />
@@ -216,7 +216,7 @@
     <ClInclude Include="data\scripts\dc_initialize\config.h" />
     <ClInclude Include="data\scripts\dc_kanga\config.h" />
     <ClInclude Include="data\scripts\dc_math\config.h" />
-    <ClInclude Include="data\scripts\dc_sound\config.h" />
+    <ClInclude Include="data\scripts\dc_fidelity\config.h" />
     <ClInclude Include="data\scripts\dc_spinner\config.h" />
     <ClInclude Include="data\scripts\dc_velocity\config.h" />
     <ClInclude Include="data\scripts\vars\anims.h" />

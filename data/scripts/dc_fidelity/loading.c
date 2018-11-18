@@ -1,8 +1,8 @@
-#include "data/scripts/dc_sound/config.h"
+#include "data/scripts/dc_fidelity/config.h"
 
-#import "data/scripts/dc_sound/config.c"
+#import "data/scripts/dc_fidelity/config.c"
 
-void dc_sounds_setup(char model, int type, char file)
+void dc_fidelitys_setup(char model, int type, char file)
 {
 	void models;	// Key - model, Value - Sound types array.
 	void types;		// Key - Sound Type, Value - Sound index array.
@@ -14,7 +14,7 @@ void dc_sounds_setup(char model, int type, char file)
 	int i;		// Loop index.
 
 	// Get the model's list array.
-	models = getglobalvar(DC_SOUND_VAR_KEY_SOUND_MODELS);
+	models = getglobalvar(DC_FIDELITY_VAR_KEY_SOUND_MODELS);
 
 	// Initialize array if it doesn't exist.
 	if (!models)
@@ -24,7 +24,7 @@ void dc_sounds_setup(char model, int type, char file)
 
 		// Store pointer to array in a globalvar for
 		// future access.
-		setglobalvar(DC_SOUND_VAR_KEY_SOUND_MODELS, models);
+		setglobalvar(DC_FIDELITY_VAR_KEY_SOUND_MODELS, models);
 	}
 
 	// Get array of sound types for a model.
@@ -94,14 +94,14 @@ void dc_sounds_setup(char model, int type, char file)
 // 2018-10-22
 // 
 // Test if a sound loaded properly.
-void dc_sounds_loaded_test(char model, int type, int index)
+void dc_fidelitys_loaded_test(char model, int type, int index)
 {
 	void models;	// Key - model, Value - Sound types array.
 	void types;		// Key - Sound Type, Value - Sound index array.
 	void indexes;	// Key - Numeric, Value - Sound file index.
 
 	// Get the model's list array.
-	models = getglobalvar(DC_SOUND_VAR_KEY_SOUND_MODELS);
+	models = getglobalvar(DC_FIDELITY_VAR_KEY_SOUND_MODELS);
 
 	// Get array of sound types for a model.
 	types = get(models, model);
@@ -112,7 +112,7 @@ void dc_sounds_loaded_test(char model, int type, int index)
 	// Get array of sound indexes for a sound type.
 	index = get(indexes, index);
 
-	log("\n\n dc_sounds_loaded_test");
+	log("\n\n dc_fidelitys_loaded_test");
 	log("\n");
 	
 	log("\t");
@@ -131,6 +131,6 @@ void dc_sounds_loaded_test(char model, int type, int index)
 	log("Sound index: " + index);
 	log("\n");
 
-	playsample(index, DC_SOUND_DEFAULT_SOUND_PRIORITY, DC_SOUND_DEFAULT_SOUND_VOLUME_LEFT, DC_SOUND_DEFAULT_SOUND_VOLUME_RIGHT, DC_SOUND_DEFAULT_SOUND_SPEED, DC_SOUND_DEFAULT_SOUND_LOOP);
+	playsample(index, DC_FIDELITY_DEFAULT_SOUND_PRIORITY, DC_FIDELITY_DEFAULT_SOUND_VOLUME_LEFT, DC_FIDELITY_DEFAULT_SOUND_VOLUME_RIGHT, DC_FIDELITY_DEFAULT_SOUND_SPEED, DC_FIDELITY_DEFAULT_SOUND_LOOP);
 
 }

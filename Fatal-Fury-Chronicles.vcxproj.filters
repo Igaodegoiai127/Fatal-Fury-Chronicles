@@ -105,13 +105,7 @@
     <ClCompile Include="data\chars\ray\scripts\animation.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="data\scripts\dc_sound\main.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="data\chars\galford\scripts\animation.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="data\scripts\dc_sound\loading.c">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="data\scripts\loading.c">
@@ -121,15 +115,6 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="data\chars\ray\scripts\onspawn.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="data\scripts\dc_sound\adjustments.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="data\scripts\dc_sound\play.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="data\scripts\dc_sound\config.c">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="data\bgs\beach\cabin_cruiser\scripts\event_animation.c">
@@ -300,6 +285,21 @@
     <ClCompile Include="data\scripts\dc_kanga\z_position_autoscale.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="data\scripts\dc_fidelity\adjustments.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="data\scripts\dc_fidelity\config.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="data\scripts\dc_fidelity\loading.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="data\scripts\dc_fidelity\main.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="data\scripts\dc_fidelity\play.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="data\scripts\com\bind0002.h">
@@ -362,9 +362,6 @@
     <ClInclude Include="data\scripts\dc_grapple\config.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="data\scripts\dc_sound\config.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="data\scripts\dc_d20\config.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -384,6 +381,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="data\scripts\dc_kanga\config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="data\scripts\dc_fidelity\config.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
