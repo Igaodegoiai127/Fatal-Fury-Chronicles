@@ -34,3 +34,6 @@
 [submodule "data/scripts/dc_afterimage"]
 	path = data/scripts/dc_afterimage
 	url = https://github.com/DCurrent/openbor-script-afterimage
+[submodule "data/scripts/dc_bind"]
+	path = data/scripts/dc_bind
+	url = https://github.com/DCurrent/openbor-script-bind
