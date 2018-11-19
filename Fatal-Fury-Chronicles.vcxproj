@@ -137,6 +137,10 @@
     <ClCompile Include="data\scripts\dc_afterimage\main.c" />
     <ClCompile Include="data\scripts\dc_afterimage\trai0001.c" />
     <ClCompile Include="data\scripts\dc_afterimage\trai0002.c" />
+    <ClCompile Include="data\scripts\dc_bind\config.c" />
+    <ClCompile Include="data\scripts\dc_bind\main.c" />
+    <ClCompile Include="data\scripts\dc_bind\offsets.c" />
+    <ClCompile Include="data\scripts\dc_bind\position_entity.c" />
     <ClCompile Include="data\scripts\dc_d20\config.c" />
     <ClCompile Include="data\scripts\dc_d20\main.c" />
     <ClCompile Include="data\scripts\dc_d20\random.c" />
@@ -209,6 +213,7 @@
     <ClInclude Include="data\scripts\com\trai0003.h" />
     <ClInclude Include="data\scripts\com\trai0004.h" />
     <ClInclude Include="data\scripts\dc_afterimage\config.h" />
+    <ClInclude Include="data\scripts\dc_bind\config.h" />
     <ClInclude Include="data\scripts\dc_d20\config.h" />
     <ClInclude Include="data\scripts\dc_damage\config.h" />
     <ClInclude Include="data\scripts\dc_disney\config.h" />
