@@ -45,9 +45,6 @@ void entity_kill()
 
 			vSpawn = bind0008("effe0001", "effe0001", MAPBURN, 0, 0, 0, 0, 1, openborconstant("ANI_FOLLOW14"), 0, 0);   //Spawn fatality model.
 
-			//Quick and dirty fix for burn fatality; default image size is too large.
-			setentityvar(vSpawn, ADSCALEX, 0.75);               //Draw scale X adjustment.
-			setentityvar(vSpawn, ADSCALEY, 0.75);               //Draw scale Y adjustment.
 			dc_kanga_z_position_autoscale(vSpawn);                                   //Apply draw settings.
 		}
 	}
@@ -73,14 +70,7 @@ void entity_kill()
 		vBindhe = getentityvar(vParent, BINDHE);               //Get parent's bound effect variant.
 		if (vBindhe == vSelf)                                  //Was bound effect same as self?
 		{
-			setentityvar(vParent, BINDHE, NULL());              //Clear parent's bound effect variant.
-			setentityvar(vParent, ADREMAP, NULL());             //Clear parent's remap.
 			dc_kanga_z_position_autoscale(vParent);                                  //Update parent's draw.
 		}
-	}
-
-	for (iCount = 0; iCount <= iMaxVar; iCount++)               //Loop through all indexed entity vars.
-	{
-		setentityvar(vSelf, iCount, NULL());                   //Clear variant.
 	}
 }

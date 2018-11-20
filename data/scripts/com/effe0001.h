@@ -50,10 +50,7 @@ void effe0001(int iMap){
     vSpawn = spawn();                                       //Spawn entity.
     clearspawnentry();                                      //Clear current spawn entry.
     changeentityproperty(vSpawn, "parent", vSelf);          //Set caller as parent of spawn.
-    setentityvar(vSelf, SPAWN, vSpawn);                     //Store spawn.
-
+    
     bindentity(vSpawn, vSelf, 0, 1, fHeight * 0.4, 1, 4);   //Execute bind.
-    setentityvar(vSelf, BINDHE, vSpawn);                    //Store bind.
-    setentityvar(vSpawn, ADBLEND, 1);						//Apply alpha mode 1.
-	dc_kanga_z_position_autoscale(vSpawn);                                       //Apply draw.
+    dc_kanga_z_position_autoscale(vSpawn);                                       //Apply draw.
 }

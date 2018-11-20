@@ -52,13 +52,10 @@ void bind0008(void vModel, void vAlias, int iMap, int iBlend, float offset_x, fl
     vSpawn = spawn();                                                       //Spawn entity.
     clearspawnentry();                                                      //Clear current spawn entry.
 
-    setentityvar(vSelf, SPAWN, vSpawn);                                     //Store spawn into last spawn variant.
     changeentityproperty(vSpawn, "direction", iDir);
     changeentityproperty(vSpawn, "parent", vSelf);                          //Set caller as parent of spawn.
 
-    setentityvar(vSpawn, ADBLEND, iBlend);                                  //Set transparency.
-
-	// If blend is any enabled value, apply to drawmethod.
+    // If blend is any enabled value, apply to drawmethod.
 	if (iBlend)
 	{
 		changedrawmethod(vSpawn, "enabled", 1);

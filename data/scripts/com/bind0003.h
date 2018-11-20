@@ -48,12 +48,7 @@ void bind0003(void vModel, int vAlias, int iMap, int iBlend, int fX, int fY, int
     vSpawn = spawn();                                                       //Spawn entity.
     clearspawnentry();                                                      //Clear current spawn entry.
 
-    setentityvar(vSelf, SPAWN, vSpawn);                                     //Store spawn into last spawn variant.
-    setentityvar(vSelf, BINDE, vSpawn);                                     //Store into bind variant.
-
     changeentityproperty(vSpawn, "parent", vSelf);                          //Set caller as parent of spawn.
-
-    setentityvar(vSpawn, ADBLEND, iBlend);                                  //Set transparency.
 
 	// If caller's drawmethod is on, then
 	// adjust offsets to caller's current scale.

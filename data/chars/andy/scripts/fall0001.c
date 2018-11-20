@@ -29,7 +29,6 @@ void onfall_main()
 	if (iType == openborconstant("ATK_BURN"))                                       //Burn attack?
 	{
 		effe0001(MAPBURN);                                                          //Set effect.
-		setentityvar(vSelf, ADREMAP, MAPBURN);                                      //Set burn effect map.
 		dc_kanga_z_position_autoscale(vSelf);                                                            //Update draw   
 	}
 	else if (iType == openborconstant("ATK_SHOCK"))                                 //Shock attack?
@@ -60,6 +59,5 @@ void onfall_main()
 	if (iAni)                                                                       //Animation switch request? 
 	{
 		changeentityproperty(vSelf, "animation", iAni);                             //Switch animations.
-		setentityvar(vSelf, NEXTANI, NULL());                                       //Clear animation switch variable.
 	}
 }

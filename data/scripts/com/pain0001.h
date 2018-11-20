@@ -15,7 +15,6 @@ void pain0001(){
     if (iAni == openborconstant("ANI_BURNPAIN"))                                    //Burn attack?
     {
         effe0001(MAPBURN);                                                          //Set effect.
-        setentityvar(vSelf, ADREMAP, MAPBURN);                                      //Set burn effect map.
         dc_kanga_z_position_autoscale(vSelf);                                                            //Update draw
     }
    // else if (iAni == openborconstant("ANI_SPAIN"))                                  //Shock attack?

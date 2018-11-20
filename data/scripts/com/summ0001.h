@@ -34,12 +34,9 @@ void summ0001(void vModel, void vAlias, int iMap, int iBlend, int iX, int iY, in
     vSpawn = spawn();                                                       //Spawn entity.
     clearspawnentry();                                                      //Clear current spawn entry.
         
-    setentityvar(vSelf, SPAWN, vSpawn);                                     //Store spawn into last spawn variant.
     changeentityproperty(vSpawn, "direction", iDir);
     changeentityproperty(vSpawn, "parent", vSelf);                          //Set caller as parent of spawn.
 	
-    setentityvar(vSpawn, ADBLEND, iBlend);                                  //Set transparency.        
-    
     //dc_kanga_z_position_autoscale(vSpawn);                                                     //Update draw for spawn.    
 
     if (iAni)
