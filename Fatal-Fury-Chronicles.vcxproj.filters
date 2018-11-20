@@ -45,9 +45,6 @@
     <ClCompile Include="data\chars\terry\scripts\key.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="data\chars\terry\scripts\update.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="data\scripts\keyall.c">
       <Filter>Source Files</Filter>
     </ClCompile>
