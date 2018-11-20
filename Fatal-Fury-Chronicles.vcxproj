@@ -201,7 +201,6 @@
     <ClInclude Include="data\scripts\com\bind0003.h" />
     <ClInclude Include="data\scripts\com\bind0004.h" />
     <ClInclude Include="data\scripts\com\bind0008.h" />
-    <ClInclude Include="data\scripts\com\effe0001.h" />
     <ClInclude Include="data\scripts\com\paus0001.h" />
     <ClInclude Include="data\scripts\com\summ0001.h" />
     <ClInclude Include="data\scripts\com\targ0001.h" />

@@ -1,8 +1,7 @@
 #include "data/scripts/vars/anims.h"
 #include "data/scripts/vars/colors.h"
 #include "data/scripts/vars/entity.h"
-#include "data/scripts/dc_kanga/main.c"   
-#include "data/scripts/com/effe0001.h"
+#include "data/scripts/dc_kanga/main.c"
 
 void main()
 {
@@ -27,8 +26,6 @@ void onfall_main()
 
 	if (iType == openborconstant("ATK_BURN"))                                       //Burn attack?
 	{
-		effe0001(MAPBURN);                                                          //Set effect.
-		dc_kanga_z_position_autoscale(vSelf);                                                            //Update draw   
 	}
 	else if (iType == openborconstant("ATK_SHOCK"))                                 //Shock attack?
 	{
