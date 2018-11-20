@@ -59,9 +59,6 @@
 #define SHETIME      53									//Shadow, elapsed game time next shadow trail entity will be spawned.
 #define SHREMAP      54									//Shadow, remap applied to shadow trail.
 #define SHBLEND      55									//Shadow, blend mode applied to shadow trail.
-#define TOSSX        56									//X velocity for toss effect on attack.
-#define TOSSY        57									//Y velocity for toss effect on attack.
-#define TOSSZ        58									//Z velocity for toss effect on attack.
 #define DTOSSX       59									//X velocity for toss effect.
 #define DTOSSY       60									//Y velocity for toss effect.
 #define DTOSSZ       61									//Z velocity for toss effect.

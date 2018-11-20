@@ -22,9 +22,6 @@ void onfall_main()
 
 	void    vSelf = getlocalvar("self");                                      //Calling entity.
 	int     iType = getlocalvar("attacktype");                                //Incoming attack type.
-	float   fTossX = getentityvar(vSelf, TOSSX);                              //Toss X 
-	float   fTossY = getentityvar(vSelf, TOSSY);                              //Toss Y
-	float   fTossZ = getentityvar(vSelf, TOSSZ);                              //Toss Z 
 	int     iAni = getentityvar(vSelf, NEXTANI);                             //Animation.
 	int     iHeight = getentityproperty(vSelf, "height");                       //Caller height.     
 	int     iBase = getentityproperty(vSelf, "base");                         //Caller base (platform height).
@@ -65,23 +62,5 @@ void onfall_main()
 	{
 		changeentityproperty(vSelf, "animation", iAni);                             //Switch animations.
 		setentityvar(vSelf, NEXTANI, NULL());                                       //Clear animation switch variable.
-	}
-
-	bind0005(getentityproperty(vSelf, "opponent"), 2);                              //Run bind0005. 
-
-	//////////
-
-	if (fTossX || fTossY || fTossZ)                                                 //Any toss values?
-	{
-		if (!fTossX) fTossX = 0;                                                     //If null, set 0.
-		if (!fTossY) fTossY = 0;                                                     //If null, set 0.
-		if (!fTossZ) fTossZ = 0;                                                     //If null, set 0.      
-
-	   // Toss caller.
-		tossentity(vSelf, fTossY, fTossX, fTossZ);
-
-		setentityvar(vSelf, TOSSX, NULL());                                        //Clear toss value.
-		setentityvar(vSelf, TOSSY, NULL());                                        //Clear toss value.     
-		setentityvar(vSelf, TOSSZ, NULL());                                        //Clear toss value.
 	}
 }
