@@ -71,20 +71,11 @@ palette	       data/chars/terry/aapa0000		#Default.
 
 #*****Commands*****************************************************************************
 
-com          f u a    	freespecial2  		#Force plane up.
-com          f d a    	freespecial3  		#Froce plane down.
-com	     d u a    	freespecial4		#Plane attack up.
-com	     u d a    	freespecial5		#Plane attack down.
-com	     d b a    	freespecial6		#Hishoken.
-com	     d b s    	freespecial7		#Geki Hishoken.
-com	     d f a    	freespecial8		#Ku Ha dan (short).
-com	     d f s    	freespecial9		#Ku Ha dan (long).
-com          f d f a  	freespecial10		#Shoryudan.
-com          b f s    	freespecial12		#Zaneiken.
-com          d u s    	freespecial17		#Yami Abise Geri
-com	     d f d f a 	freespecial18		#Cho Reppaa Dan
-com          a3       	freespecial50		#Taunt.
-com	     a4       	freespecial20		#Victory 1.
+com f u a	freespecial2  	#Force plane up.
+com f d a	freespecial3  	#Froce plane down.
+com	d u a	freespecial4	#Plane attack up.
+com	u d a   freespecial5	#Plane attack down.
+com	d u j	freespecial6	#Rising Tackle.	
 
 #*****Basic********************************************************************************
 
