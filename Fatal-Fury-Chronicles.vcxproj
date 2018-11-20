@@ -199,7 +199,6 @@
     <ClCompile Include="data\scripts\updated.c" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="data\scripts\com\bind0002.h" />
     <ClInclude Include="data\scripts\com\bind0003.h" />
     <ClInclude Include="data\scripts\com\bind0004.h" />
     <ClInclude Include="data\scripts\com\bind0005.h" />

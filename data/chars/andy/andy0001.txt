@@ -2668,7 +2668,6 @@ anim grab
 	@cmd	dc_bind_set_entity getentityproperty(getlocalvar("self") "opponent")
 	@cmd	dc_bind_set_offset_x 40
 	@cmd	dc_bind_apply_position 
-	#cmd	bind0002 40 0 0
 		frame	data/chars/andy/andy0429
 	offset	96 200
 		frame	data/chars/andy/andy0429

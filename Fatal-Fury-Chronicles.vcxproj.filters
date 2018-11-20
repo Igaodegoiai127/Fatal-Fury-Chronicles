@@ -314,9 +314,6 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="data\scripts\com\bind0002.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="data\scripts\com\bind0003.h">
       <Filter>Header Files</Filter>
     </ClInclude>
