@@ -41,7 +41,6 @@ void main()
 
         changeentityproperty(vSelf, "health", iHP);             //Apply HP to health (crude way to do this, but Andy has no defense ratios).
 
-        killentity(getentityvar(vSelf, SPAWN));                 //Kill last spawned entity.
         if (!iDrop)                                             //Not a knockdown?
         {
             tossentity(vSelf, 2, 1, 0);                         //Toss to ensure fall.

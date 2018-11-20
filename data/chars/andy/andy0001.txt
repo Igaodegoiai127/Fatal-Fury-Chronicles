@@ -1474,7 +1474,7 @@ anim freespecial17
 	#cmd stereo_sound_command_here "sand0007.wav"
 	burn	95 95 60 85 20 2 0 0 10
 	dropv   5 -1 0
-	@cmd	bind0009 "effe0001" "effe0001" 2 1 30 135 1 1 openborconstant("ANI_FOLLOW8") 0 1 1 1 0 0 0 0 -180 0
+	@cmd	bind0008 "effe0001" "effe0001" 2 1 30 135 1 1 openborconstant("ANI_FOLLOW8") 0 1
 		frame	data/chars/andy/andy0504
 	burn	55 75 80 90 20 2 0 0 10
 		frame	data/chars/andy/andy0505
@@ -1527,7 +1527,7 @@ anim freespecial18
 	delay	6
 	attack	90 100 80 85 9 0 0 0 15
 	#cmd stereo_sound_command_here "sand0007.wav"
-	@cmd	bind0009 "effe0001" "visual" 13 1 15 50 0 1 openborconstant("ANI_FOLLOW11") 0 1 1 1 0 0 0 0 -90 0
+	@cmd	bind0008 "effe0001" "visual" 13 1 15 50 0 1 openborconstant("ANI_FOLLOW11") 0 1
 		frame	data/chars/andy/andy0243
 	delay	1
 	attack	0
@@ -1851,7 +1851,7 @@ anim follow4
 	delay	6
 	attack	90 100 80 85 0 1 0 0 5
 	#cmd stereo_sound_command_here "sand0007.wav"
-	@cmd	bind0009 "effe0001" "visual" 13 1 15 50 0 1 openborconstant("ANI_FOLLOW11") 0 1 1 1 0 0 0 0 -90 0
+	@cmd	bind0008 "effe0001" "visual" 13 1 15 50 0 1 openborconstant("ANI_FOLLOW11") 0 1
 		frame	data/chars/andy/andy0243
 	delay	1
 	attack	0

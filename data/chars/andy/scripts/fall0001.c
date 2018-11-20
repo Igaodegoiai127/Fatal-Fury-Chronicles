@@ -21,7 +21,6 @@ void onfall_main()
 
 	void    vSelf = getlocalvar("self");                                      //Calling entity.
 	int     iType = getlocalvar("attacktype");                                //Incoming attack type.
-	int     iAni = getentityvar(vSelf, NEXTANI);                             //Animation.
 	int     iHeight = getentityproperty(vSelf, "height");                       //Caller height.     
 	int     iBase = getentityproperty(vSelf, "base");                         //Caller base (platform height).
 	int     iHitY;                                                                  //Last hit height.   
@@ -49,15 +48,9 @@ void onfall_main()
 	{
 		iHitY = openborvariant("lasthita");                                       //Get last hit height.        
 
-		if (iHitY && iHitY < iHeight * 0.3 && iAni != DEFPOSE)                      //Knockdown was from low and and self not being thrown?
+		if (iHitY && iHitY < iHeight * 0.3)                      //Knockdown was from low and and self not being thrown?
 		{
 			changeentityproperty(vSelf, "animation", SWEPT);                        //Put into sweep animation.
 		}
-	}
-
-	///////////
-	if (iAni)                                                                       //Animation switch request? 
-	{
-		changeentityproperty(vSelf, "animation", iAni);                             //Switch animations.
 	}
 }
