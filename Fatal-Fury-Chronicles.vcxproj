@@ -201,7 +201,6 @@
   <ItemGroup>
     <ClInclude Include="data\scripts\com\bind0003.h" />
     <ClInclude Include="data\scripts\com\bind0004.h" />
-    <ClInclude Include="data\scripts\com\bind0005.h" />
     <ClInclude Include="data\scripts\com\bind0008.h" />
     <ClInclude Include="data\scripts\com\bind0009.h" />
     <ClInclude Include="data\scripts\com\effe0001.h" />

@@ -320,9 +320,6 @@
     <ClInclude Include="data\scripts\com\bind0004.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="data\scripts\com\bind0005.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="data\scripts\com\bind0008.h">
       <Filter>Header Files</Filter>
     </ClInclude>

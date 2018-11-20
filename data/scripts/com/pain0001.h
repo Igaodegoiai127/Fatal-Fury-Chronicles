@@ -1,7 +1,6 @@
 #include "data/scripts/vars/colors.h"
 #include "data/scripts/vars/entity.h"
 #include "data/scripts/com/effe0001.h"
-#include "data/scripts/com/bind0005.h"
 #include "data/scripts/dc_kanga/main.c"
 
 
@@ -35,7 +34,4 @@ void pain0001(){
             changeentityproperty(vSelf, "animation", openborconstant("ANI_PAIN2")); //Middle pain
         }
     }
-
-    bind0005(getentityproperty(vSelf, "opponent"), 1);                              //Run hitwarp.
-
 }
