@@ -300,13 +300,16 @@
     <ClCompile Include="data\scripts\dc_bind\config.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="data\scripts\dc_bind\position_entity.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="data\scripts\dc_bind\offsets.c">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="data\scripts\dc_bind\main.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="data\scripts\dc_bind\apply_position.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="data\scripts\dc_bind\positioning.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

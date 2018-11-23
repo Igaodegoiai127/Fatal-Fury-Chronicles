@@ -139,7 +139,8 @@
     <ClCompile Include="data\scripts\dc_bind\config.c" />
     <ClCompile Include="data\scripts\dc_bind\main.c" />
     <ClCompile Include="data\scripts\dc_bind\offsets.c" />
-    <ClCompile Include="data\scripts\dc_bind\position_entity.c" />
+    <ClCompile Include="data\scripts\dc_bind\positioning.c" />
+    <ClCompile Include="data\scripts\dc_bind\apply_position.c" />
     <ClCompile Include="data\scripts\dc_d20\config.c" />
     <ClCompile Include="data\scripts\dc_d20\main.c" />
     <ClCompile Include="data\scripts\dc_d20\random.c" />
