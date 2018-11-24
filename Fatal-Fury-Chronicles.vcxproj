@@ -136,9 +136,10 @@
     <ClCompile Include="data\scripts\dc_afterimage\main.c" />
     <ClCompile Include="data\scripts\dc_afterimage\trai0001.c" />
     <ClCompile Include="data\scripts\dc_afterimage\trai0002.c" />
-    <ClCompile Include="data\scripts\dc_bind\config.c" />
+    <ClCompile Include="data\scripts\dc_bind\entity.c" />
+    <ClCompile Include="data\scripts\dc_bind\instance.c" />
     <ClCompile Include="data\scripts\dc_bind\main.c" />
-    <ClCompile Include="data\scripts\dc_bind\offsets.c" />
+    <ClCompile Include="data\scripts\dc_bind\offset.c" />
     <ClCompile Include="data\scripts\dc_bind\positioning.c" />
     <ClCompile Include="data\scripts\dc_bind\apply_position.c" />
     <ClCompile Include="data\scripts\dc_d20\config.c" />
@@ -178,6 +179,7 @@
     <ClCompile Include="data\scripts\dc_kanga\random_index.c" />
     <ClCompile Include="data\scripts\dc_kanga\rotate_index.c" />
     <ClCompile Include="data\scripts\dc_math\config.c" />
+    <ClCompile Include="data\scripts\dc_math\difference.c" />
     <ClCompile Include="data\scripts\dc_math\main.c" />
     <ClCompile Include="data\scripts\dc_math\percentage.c" />
     <ClCompile Include="data\scripts\dc_math\ratio_to_int.c" />

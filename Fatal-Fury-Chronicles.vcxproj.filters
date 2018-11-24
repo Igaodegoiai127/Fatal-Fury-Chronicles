@@ -297,12 +297,6 @@
     <ClCompile Include="data\scripts\dc_afterimage\trai0002.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="data\scripts\dc_bind\config.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="data\scripts\dc_bind\offsets.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="data\scripts\dc_bind\main.c">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -310,6 +304,18 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="data\scripts\dc_bind\positioning.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="data\scripts\dc_bind\instance.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="data\scripts\dc_bind\entity.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="data\scripts\dc_bind\offset.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="data\scripts\dc_math\difference.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
