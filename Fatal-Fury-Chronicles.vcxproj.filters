@@ -120,9 +120,6 @@
     <ClCompile Include="data\scripts\common\event_kill.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="data\scripts\dc_d20\config.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="data\scripts\dc_d20\main.c">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -319,6 +316,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="data\scripts\dc_math\compare.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="data\scripts\dc_d20\instance.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
