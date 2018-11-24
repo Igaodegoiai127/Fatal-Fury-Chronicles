@@ -178,6 +178,7 @@
     <ClCompile Include="data\scripts\dc_kanga\main.c" />
     <ClCompile Include="data\scripts\dc_kanga\random_index.c" />
     <ClCompile Include="data\scripts\dc_kanga\rotate_index.c" />
+    <ClCompile Include="data\scripts\dc_math\compare.c" />
     <ClCompile Include="data\scripts\dc_math\config.c" />
     <ClCompile Include="data\scripts\dc_math\difference.c" />
     <ClCompile Include="data\scripts\dc_math\main.c" />
