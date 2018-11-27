@@ -180,15 +180,15 @@ int dc_command_sidestep_follow_up(int player_index)
 
 	if (key_hold & openborconstant("FLAG_MOVEUP"))
 	{
-		success = dc_disney_set_attack(DODATKSU);
+		success = dc_disney_perform_attack(DODATKSU);
 	}
 	else if (key_hold & openborconstant("FLAG_MOVEDOWN"))
 	{
-		success = dc_disney_set_attack(DODATKSD);
+		success = dc_disney_perform_attack(DODATKSD);
 	}
 	else
 	{
-		success = dc_disney_set_attack(DODATKD);
+		success = dc_disney_perform_attack(DODATKD);
 	}
 
 	// If animation set function returned true, then
@@ -254,7 +254,7 @@ int dc_command_back_dash(int player_index)
 	}
 
 	// If we got this far then we can set a down attack.
-	dc_disney_set_attack(openborconstant("ANI_FREESPECIAL"));
+	dc_disney_perform_attack(openborconstant("ANI_FREESPECIAL"));
 
 	// Stop moving in case we were walking.
 	changeentityproperty(ent, "velocity", 0, 0, 0);
@@ -390,7 +390,7 @@ int dc_command_airblock(int player_index)
 	}
 
 	// Set the animation.
-	dc_set_animation(AIRBLOCK);
+	dc_disney_play_animation(AIRBLOCK);
 
 	// Clear key flag from key press.
 	key_press -= openborconstant("FLAG_SPECIAL");
@@ -443,7 +443,7 @@ int dc_command_air_back_attack(int player_index)
 	}
 
 	// Set the animation.
-	dc_set_animation(AIRBACK);
+	dc_disney_play_animation(AIRBACK);
 
 	// Clear key flag from key press.
 	key_press -= openborconstant("FLAG_ATTACK");
@@ -510,7 +510,7 @@ int dc_command_air_alternate_drop_attack(int player_index)
 	}
 
 	// Set the animation.
-	dc_set_animation(AIRJ2AL);
+	dc_disney_play_animation(AIRJ2AL);
 
 	// Clear key flag from key press.
 	key_press -= openborconstant("FLAG_ATTACK");
@@ -558,7 +558,7 @@ int dc_command_dodge_attack(int player_index)
 
 	// Set the direction and animation.
 	dc_command_direction_switch(player_index);
-	dc_disney_set_attack(DODATK);
+	dc_disney_perform_attack(DODATK);
 
 	// Clear key flag from key press.
 	key_press -= openborconstant("FLAG_ATTACK");
@@ -630,7 +630,7 @@ int dc_try_down_attack(int player_index)
 	}
 
 	// If we got this far then we can set a down attack.
-	dc_disney_set_attack(ATKDOWN);
+	dc_disney_perform_attack(ATKDOWN);
 
 	// Stop moving in case we were walking.
 	changeentityproperty(ent, "velocity", 0, 0, 0); 

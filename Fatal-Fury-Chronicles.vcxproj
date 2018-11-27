@@ -138,6 +138,7 @@
     <ClCompile Include="data\scripts\dc_afterimage\trai0002.c" />
     <ClCompile Include="data\scripts\dc_bind\entity.c" />
     <ClCompile Include="data\scripts\dc_bind\instance.c" />
+    <ClCompile Include="data\scripts\dc_bind\level.c" />
     <ClCompile Include="data\scripts\dc_bind\main.c" />
     <ClCompile Include="data\scripts\dc_bind\offset.c" />
     <ClCompile Include="data\scripts\dc_bind\positioning.c" />
@@ -152,11 +153,13 @@
     <ClCompile Include="data\scripts\dc_damage\toss.c" />
     <ClCompile Include="data\scripts\dc_disney\alternate_on_health.c" />
     <ClCompile Include="data\scripts\dc_disney\alternate_on_range.c" />
-    <ClCompile Include="data\scripts\dc_disney\config.c" />
+    <ClCompile Include="data\scripts\dc_disney\animation.c" />
+    <ClCompile Include="data\scripts\dc_disney\entity.c" />
     <ClCompile Include="data\scripts\dc_disney\dash_stop.c" />
+    <ClCompile Include="data\scripts\dc_disney\instance.c" />
     <ClCompile Include="data\scripts\dc_disney\main.c" />
-    <ClCompile Include="data\scripts\dc_disney\set_animation.c" />
-    <ClCompile Include="data\scripts\dc_disney\set_attack.c" />
+    <ClCompile Include="data\scripts\dc_disney\play_animation.c" />
+    <ClCompile Include="data\scripts\dc_disney\perform_attack.c" />
     <ClCompile Include="data\scripts\dc_draw\rgb_increment.c" />
     <ClCompile Include="data\scripts\dc_fidelity\adjustments.c" />
     <ClCompile Include="data\scripts\dc_fidelity\config.c" />

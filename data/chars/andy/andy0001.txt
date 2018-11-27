@@ -1461,7 +1461,8 @@ anim freespecial17
 
 	#Yami Abse Geri
 
-	jumpframe 2 0 -0.01 0 dust0003
+	jumpframe 2 1 1 0 dust0003
+	landframe 3
 	fastattack 1
 
 	delay	10
@@ -1470,15 +1471,44 @@ anim freespecial17
 		frame	data/chars/andy/andy0449
 		frame	data/chars/andy/andy0450
 	#cmd stereo_sound_command_here "vand 0015.wav"
+
+		delay -1000
+
 		frame	data/chars/andy/andy0211
-	#cmd stereo_sound_command_here "sand0007.wav"
-	burn	95 95 60 85 20 2 0 0 10
-	dropv   5 -1 0
-	@cmd	bind0008 "effe0001" "effe0001" 2 1 30 135 1 1 openborconstant("ANI_FOLLOW8") 0 1
-		frame	data/chars/andy/andy0504
-	burn	55 75 80 90 20 2 0 0 10
-		frame	data/chars/andy/andy0505
-	move	-20
+	
+		delay	10
+		move	-20
+		#cmd stereo_sound_command_here "sand0007.wav"
+		burn	95 95 60 85 20 2 0 0 10
+		dropv   5 -1 0
+		
+		# Spawn entity and get its pointer.
+		@cmd clearspawnentry
+		@cmd setspawnentry			"name"		"effe0001"
+		@cmd setspawnentry			"map"		2
+		@cmd dc_bind_set_entity		spawn()
+		@cmd clearspawnentry
+
+		# Move entity into position we want.
+		@cmd dc_bind_set_offset_x	30
+		@cmd dc_bind_set_offset_y	100
+		@cmd dc_bind_set_offset_z	0
+		@cmd dc_bind_apply_position
+
+		# Set animation.
+		@cmd dc_disney_set_entity	dc_bind_get_entity()
+		@cmd dc_disney_play_animation		openborconstant("ANI_FOLLOW8")
+
+		@cmd set_entity_property	dc_bind_get_entity() "autokill" 1
+
+		#	bind0008 "effe0001" "effe0001" 2 1 30 135 1 1 openborconstant("ANI_FOLLOW8") 0 1
+	frame	data/chars/andy/andy0504
+		
+		burn	55 75 80 90 20 2 0 0 10
+		move	0
+
+	frame	data/chars/andy/andy0505
+		move	-20
 		frame	data/chars/andy/21_1.png
 	delay	5
 		frame	data/chars/andy/21_0.png
