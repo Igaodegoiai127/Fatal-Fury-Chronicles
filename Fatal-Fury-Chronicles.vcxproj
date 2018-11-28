@@ -112,6 +112,7 @@
     <ClCompile Include="data\chars\andy\scripts\key.c" />
     <ClCompile Include="data\chars\andy\scripts\update.c" />
     <ClCompile Include="data\chars\galford\scripts\animation.c" />
+    <ClCompile Include="data\chars\galford\scripts\event_move_a.c" />
     <ClCompile Include="data\chars\galford\scripts\onspawn.c" />
     <ClCompile Include="data\chars\misc\flash\flash\scripts\event_spawn.c" />
     <ClCompile Include="data\chars\misc\pickups\fatal_fury_scroll\scripts\event_hit.c" />
