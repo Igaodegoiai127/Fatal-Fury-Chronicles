@@ -37,3 +37,9 @@
 [submodule "data/scripts/dc_bind"]
 	path = data/scripts/dc_bind
 	url = https://github.com/DCurrent/openbor-script-bind
+[submodule "data/scripts/dc_hansburg"]
+	path = data/scripts/dc_hansburg
+	url = https://github.com/DCurrent/openbor-script-Hansburg
+[submodule "data/scripts/dc_target"]
+	path = data/scripts/dc_target
+	url = https://github.com/DCurrent/openbor-script-target
