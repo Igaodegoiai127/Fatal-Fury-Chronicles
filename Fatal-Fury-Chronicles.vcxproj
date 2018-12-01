@@ -205,6 +205,7 @@
     <ClCompile Include="data\scripts\dc_target\main.c" />
     <ClCompile Include="data\scripts\dc_target\offset.c" />
     <ClCompile Include="data\scripts\dc_target\range.c" />
+    <ClCompile Include="data\scripts\dc_target\terrain.c" />
     <ClCompile Include="data\scripts\dc_velocity\config.c" />
     <ClCompile Include="data\scripts\dc_velocity\main.c" />
     <ClCompile Include="data\scripts\dc_velocity\velocity.c" />
