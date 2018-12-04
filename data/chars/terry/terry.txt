@@ -139,22 +139,6 @@ anim idle
 		frame	data/chars/terry/terr0003
 		frame	data/chars/terry/terr0002
 
-anim idle2
-
-	#Strafe Idle (opponent behind on z)
-
-	range  -250 250
-	rangez -250 -15
-
-	loop 	1
-	delay	12
-	offset	70 158
-	bbox 	50 60 45 105
-		frame	data/chars/terry/terr0579
-		frame	data/chars/terry/terr0580
-		frame	data/chars/terry/terr0581
-		frame	data/chars/terry/terr0580
-
 anim idle3
 
 	#Strafe Idle (opponent in front on Z)
@@ -197,23 +181,6 @@ anim walk
 		frame	data/chars/terry/terr0009
 		frame	data/chars/terry/terr0005
 		frame	data/chars/terry/terr0006
-
-anim walk2
-
-	#Strafe walk (opponent behind on z)
-
-	range  -250 250
-	rangez -250 -15
-
-	loop 	1
-	delay	12
-	offset	70 158
-	bbox 	50 60 45 105
-		frame	data/chars/terry/terr0545
-		frame	data/chars/terry/terr0546
-		frame	data/chars/terry/terr0547
-		frame	data/chars/terry/terr0548
-		frame	data/chars/terry/terr0549
 
 anim walk3
 
