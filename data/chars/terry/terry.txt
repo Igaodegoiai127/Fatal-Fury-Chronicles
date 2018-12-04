@@ -20,7 +20,7 @@ nodieblink   	2
 falldie      	2
 risetime     	90
 running      	30 4 2 0 0
-#turndelay    	15
+#turn	delay    	15
 makeinv      	3
 projectilehit 	player obstacle
 candamage     	enemy obstacle
@@ -73,8 +73,8 @@ palette	       data/chars/terry/aapa0000		#Default.
 
 com f u a	freespecial2  	#Force plane up.
 com f d a	freespecial3  	#Froce plane down.
-com	d u a	freespecial4	#Plane attack up.
-com	u d a   freespecial5	#Plane attack down.
+com	d u a	freespecial4	#Plane 	attack up.
+com	u d a   freespecial5	#Plane 	attack down.
 com	d u j	freespecial6	#Rising Tackle.	
 
 #*****Basic********************************************************************************
@@ -84,43 +84,43 @@ com	d u j	freespecial6	#Rising Tackle.
 
 anim waiting
 
-	delay	1
-	offset	100 272
-	fshadow 0
-		frame	data/chars/misc/blank.png
-	offset	100 122
-		frame	data/chars/terry/aawa0001
-	offset	100 132
-		frame	data/chars/terry/aawa0001
-	offset	100 142
-		frame	data/chars/terry/aawa0001
-	offset	100 152
-		frame	data/chars/terry/aawa0001
-	offset	100 162
-		frame	data/chars/terry/aawa0001
-	offset	100 172
-		frame	data/chars/terry/aawa0001
-	offset	100 182
-		frame	data/chars/terry/aawa0001
-	offset	100 192
-		frame	data/chars/terry/aawa0001
-	offset	100 202
-		frame	data/chars/terry/aawa0001
-	offset	100 212
-		frame	data/chars/terry/aawa0001
-	offset	100 222
-		frame	data/chars/terry/aawa0001
-	offset	100 232
-		frame	data/chars/terry/aawa0001
-	offset	100 242
-		frame	data/chars/terry/aawa0001
-	offset	100 252
-		frame	data/chars/terry/aawa0001
-	offset	100 262
-		frame	data/chars/terry/aawa0001
-	offset	100 272
+		delay	1
+		offset	100 272
+		fshadow 0
+	frame	data/chars/misc/blank.png
+		offset	100 122
+	frame	data/chars/terry/aawa0001
+		offset	100 132
+	frame	data/chars/terry/aawa0001
+		offset	100 142
+	frame	data/chars/terry/aawa0001
+		offset	100 152
+	frame	data/chars/terry/aawa0001
+		offset	100 162
+	frame	data/chars/terry/aawa0001
+		offset	100 172
+	frame	data/chars/terry/aawa0001
+		offset	100 182
+	frame	data/chars/terry/aawa0001
+		offset	100 192
+	frame	data/chars/terry/aawa0001
+		offset	100 202
+	frame	data/chars/terry/aawa0001
+		offset	100 212
+	frame	data/chars/terry/aawa0001
+		offset	100 222
+	frame	data/chars/terry/aawa0001
+		offset	100 232
+	frame	data/chars/terry/aawa0001
+		offset	100 242
+	frame	data/chars/terry/aawa0001
+		offset	100 252
+	frame	data/chars/terry/aawa0001
+		offset	100 262
+	frame	data/chars/terry/aawa0001
+		offset	100 272
 	sound	data/sounds/vter0007.wav
-		frame	data/chars/terry/aawa0002
+	frame	data/chars/terry/aawa0002
 
 #anim select
 
@@ -128,32 +128,32 @@ anim idle
 
 	#Ready stance.
 
-	loop 	1
-	delay	12
-	offset	70 158
-	bbox 	50 60 45 105
-		frame	data/chars/terry/terr0001
-		frame	data/chars/terry/terr0002
-		frame	data/chars/terry/terr0003
-		frame	data/chars/terry/terr0004
-		frame	data/chars/terry/terr0003
-		frame	data/chars/terry/terr0002
+		loop 	1
+		delay	12
+		offset	70 158
+		bbox 	50 60 45 105
+	frame	data/chars/terry/terr0001
+	frame	data/chars/terry/terr0002
+	frame	data/chars/terry/terr0003
+	frame	data/chars/terry/terr0004
+	frame	data/chars/terry/terr0003
+	frame	data/chars/terry/terr0002
 
 anim idle3
 
 	#Strafe Idle (opponent in front on Z)
 
-	range   -250 250
-	rangez  15 250
+		range   -250 250
+		rangez  15 250
 
-	loop 	1
-	delay	12
-	offset	70 158
-	bbox 	50 60 45 105
-		frame	data/chars/terry/terr0512
-		frame	data/chars/terry/terr0513
-		frame	data/chars/terry/terr0514
-		frame	data/chars/terry/terr0513
+		loop 	1
+		delay	12
+		offset	70 158
+		bbox 	50 60 45 105
+	frame	data/chars/terry/terr0512
+	frame	data/chars/terry/terr0513
+	frame	data/chars/terry/terr0514
+	frame	data/chars/terry/terr0513
 
 #anim sleep
 
@@ -161,273 +161,274 @@ anim faint
 
 	#Heavy fatigue.
 
-	loop 	1
-	delay	15
-	offset	70 158
-	bbox 	50 60 45 105
-		frame	data/chars/terry/terr0284
-		frame	data/chars/terry/terr0285
-		frame	data/chars/terry/terr0286
-		frame	data/chars/terry/terr0285
+		loop 	1
+		delay	15
+		offset	70 158
+		bbox 	50 60 45 105
+	frame	data/chars/terry/terr0284
+	frame	data/chars/terry/terr0285
+	frame	data/chars/terry/terr0286
+	frame	data/chars/terry/terr0285
 
 anim walk
 
-	loop 	1
-	delay	12
-	offset	70 158
-	bbox 	50 60 45 105
-		frame	data/chars/terry/terr0007
-		frame	data/chars/terry/terr0008
-		frame	data/chars/terry/terr0009
-		frame	data/chars/terry/terr0005
-		frame	data/chars/terry/terr0006
+		loop 	1
+		delay	12
+		offset	70 158
+		bbox 	50 60 45 105
+	frame	data/chars/terry/terr0007
+	frame	data/chars/terry/terr0008
+	frame	data/chars/terry/terr0009
+	frame	data/chars/terry/terr0005
+	frame	data/chars/terry/terr0006
 
 anim walk3
 
 	#Strafe walk (opponent in front on Z)
 
-	range   -250 250
-	rangez  15 250
+		range   -250 250
+		rangez  15 250
 
-	loop 	1
-	delay	12
-	offset	70 158
-	bbox 	50 60 45 105
-		frame	data/chars/terry/terr0550
-		frame	data/chars/terry/terr0551
-		frame	data/chars/terry/terr0552
-		frame	data/chars/terry/terr0553
-		frame	data/chars/terry/terr0554
+		loop 	1
+		delay	12
+		offset	70 158
+		bbox 	50 60 45 105
+	frame	data/chars/terry/terr0550
+	frame	data/chars/terry/terr0551
+	frame	data/chars/terry/terr0552
+	frame	data/chars/terry/terr0553
+	frame	data/chars/terry/terr0554
 
 anim run
 
-	delay	12
-	offset	70 158
-	bbox 	50 60 45 105
-		frame	data/chars/terry/terr0020
-		frame	data/chars/terry/terr0021
-	delay	5
-		frame	data/chars/terry/terr0556
-		frame	data/chars/terry/terr0578
-	@cmd dc_disney_dash_stop
-		frame	data/chars/terry/terr0578
+		delay	12
+		offset	70 158
+		bbox 	50 60 45 105
+	frame	data/chars/terry/terr0020
+	frame	data/chars/terry/terr0021
+		delay	5
+	frame	data/chars/terry/terr0556
+	frame	data/chars/terry/terr0578
+		@cmd dc_disney_dash_stop
+	frame	data/chars/terry/terr0578
 
 anim turn
 
-	delay	12
-	offset	70 158
-	bbox 	50 60 45 105
-		frame	data/chars/terry/terr0010
-	offset	80 158
-		frame	data/chars/terry/terr0011
+		delay	12
+		offset	70 158
+		bbox 	50 60 45 105
+	frame	data/chars/terry/terr0010
+		offset	80 158
+	frame	data/chars/terry/terr0011
 
 anim get
 
-	delay	8
-	offset	70 158
-	bbox 	50 60 45 105
-		frame	data/chars/terry/terr0233
-	bbox 	50 85 50 75
-		frame	data/chars/terry/terr0222
-		frame	data/chars/terry/terr0220
-		frame	data/chars/terry/terr0221
-	bbox 	50 60 45 105
-		frame	data/chars/terry/terr0222
-		frame	data/chars/terry/terr0233
+		delay	8
+		offset	70 158
+		bbox 	50 60 45 105
+	frame	data/chars/terry/terr0233
+		bbox 	50 85 50 75
+	frame	data/chars/terry/terr0222
+	frame	data/chars/terry/terr0220
+	frame	data/chars/terry/terr0221
+		bbox 	50 60 45 105
+	frame	data/chars/terry/terr0222
+	frame	data/chars/terry/terr0233
 
-#*****Attack*******************************************************************************
+#*****	attack*******************************************************************************
 
-anim attack1
+anim 	attack1
 
 	#Long jab
 
-	fastattack 1
+		fastattack 1
 
-	delay	4
-	offset	70 158
-	bbox 	50 60 45 105
-	@cmd	dc_disney_alternate_on_range openborconstant("ANI_FOLLOW1")
-		frame	data/chars/terry/terr0040
-		frame	data/chars/terry/terr0055
-	attack	95 70 60 20 6 0 0 0 10
-		frame	data/chars/terry/terr0056
-	attack	0
-		frame	data/chars/terry/terr0029
-		frame	data/chars/terry/terr0040
+			delay	4
+			offset	70 158
+			bbox 	50 60 45 105
+			@cmd	dc_disney_alternate_on_range openborconstant("ANI_FOLLOW1")
+	frame	data/chars/terry/terr0040
+	frame	data/chars/terry/terr0055
+			attack	95 70 60 20 6 0 0 0 10
+	frame	data/chars/terry/terr0056
+			attack	0
+	frame	data/chars/terry/terr0029
+		idle	1
+	frame	data/chars/terry/terr0040
 
-anim attack2
+anim 	attack2
 
 	#front kick
 
-	range 	-10 50
-	fastattack 1
+		range 	-10 50
+		fastattack 1
 
-	delay	5
-	offset	70 158
-	bbox 	50 60 45 105
-		frame	data/chars/terry/terr0596
-		frame	data/chars/terry/terr0597
-	attack	60 75 70 30 6 0 0 0 10
-		frame	data/chars/terry/terr0598
-	attack	0
-		frame	data/chars/terry/terr0597
-		frame	data/chars/terry/terr0596
+			delay	5
+			offset	70 158
+			bbox 	50 60 45 105
+	frame	data/chars/terry/terr0596
+	frame	data/chars/terry/terr0597
+			attack	60 75 70 30 6 0 0 0 10
+	frame	data/chars/terry/terr0598
+			attack	0
+	frame	data/chars/terry/terr0597
+	frame	data/chars/terry/terr0596
 
-anim attack3
+anim 	attack3
 
 	#Gut punch.
 
-	range 	-10 50
-	fastattack 1
+		range 	-10 50
+		fastattack 1
 
-	delay	6
-	offset	70 158
-	bbox 	50 60 45 105
-		frame	data/chars/terry/terr0585
-	delay	5
-	attack	75 100 35 20 6 0 0 0 15
-		frame	data/chars/terry/terr0586
-	delay	1
-	attack	0
-		frame	data/chars/terry/terr0586
-	delay	6
-	attack	75 75 55 30 6 0 0 0 15
-		frame	data/chars/terry/terr0587
-	attack	0
-		frame	data/chars/terry/terr0588
-		frame	data/chars/terry/terr0589
+		delay	6
+		offset	70 158
+		bbox 	50 60 45 105
+	frame	data/chars/terry/terr0585
+		delay	5
+		attack	75 100 35 20 6 0 0 0 15
+	frame	data/chars/terry/terr0586
+		delay	1
+		attack	0
+	frame	data/chars/terry/terr0586
+		delay	6
+		attack	75 75 55 30 6 0 0 0 15
+	frame	data/chars/terry/terr0587
+		attack	0
+	frame	data/chars/terry/terr0588
+	frame	data/chars/terry/terr0589
 
-anim attack4
+anim 	attack4
 
 	#Big boot.
 
-	range 	-10 50
-	fastattack 1
+		range 	-10 50
+		fastattack 1
 
-	delay	4
-	offset	70 158
-	bbox 	50 60 45 105
-		frame	data/chars/terry/terr0057
-		frame	data/chars/terry/terr0590
-		frame	data/chars/terry/terr0591
-		frame	data/chars/terry/terr0592
-	attack	75 40 100 70 20 2 0 0 15
+		delay	4
+		offset	70 158
+		bbox 	50 60 45 105
+	frame	data/chars/terry/terr0057
+	frame	data/chars/terry/terr0590
+	frame	data/chars/terry/terr0591
+	frame	data/chars/terry/terr0592
+		attack	75 40 100 70 20 2 0 0 15
 	damageonlanding 0 1
 	dropv	2.5 3 0
-		frame	data/chars/terry/terr0593
-	delay	15
-	attack	0
-		frame	data/chars/terry/terr0594
-	delay	8
-		frame	data/chars/terry/terr0595
-		frame	data/chars/terry/terr0058
-		frame	data/chars/terry/terr0053
+	frame	data/chars/terry/terr0593
+		delay	15
+		attack	0
+	frame	data/chars/terry/terr0594
+		delay	8
+	frame	data/chars/terry/terr0595
+	frame	data/chars/terry/terr0058
+	frame	data/chars/terry/terr0053
 
-anim attack5
+anim 	attack5
 
 	#Straight.
 
-	delay	6
-	offset	70 158
-	bbox 	50 60 45 105
-		frame	data/chars/terry/terr0320
-		frame	data/chars/terry/terr0321
-	attack	80 75 66 15 8 0 0 0 10
-		frame	data/chars/terry/terr0322
-	attack	0
-		frame	data/chars/terry/terr0323
-		frame	data/chars/terry/terr0321
-		frame	data/chars/terry/terr0320
+		delay	6
+		offset	70 158
+		bbox 	50 60 45 105
+	frame	data/chars/terry/terr0320
+	frame	data/chars/terry/terr0321
+		attack	80 75 66 15 8 0 0 0 10
+	frame	data/chars/terry/terr0322
+		attack	0
+	frame	data/chars/terry/terr0323
+	frame	data/chars/terry/terr0321
+	frame	data/chars/terry/terr0320
 
-anim attack6
+anim 	attack6
 
 	#Round kick.
 
-	delay	6
-	offset	70 158
-	bbox 	50 60 45 105
-		frame	data/chars/terry/terr0057
-		frame	data/chars/terry/terr0058
-		frame	data/chars/terry/terr0059
-	attack	90 85 96 15 8 0 0 0 10
-		frame	data/chars/terry/terr0060
-	attack	0
-		frame	data/chars/terry/terr0059
-		frame	data/chars/terry/terr0058
-		frame	data/chars/terry/terr0053
+		delay	6
+		offset	70 158
+		bbox 	50 60 45 105
+	frame	data/chars/terry/terr0057
+	frame	data/chars/terry/terr0058
+	frame	data/chars/terry/terr0059
+		attack	90 85 96 15 8 0 0 0 10
+	frame	data/chars/terry/terr0060
+		attack	0
+	frame	data/chars/terry/terr0059
+	frame	data/chars/terry/terr0058
+	frame	data/chars/terry/terr0053
 
-anim attack7
+anim 	attack7
 
 	#Jumping spin kick.
 
-	jumpframe 2 2 0 0
-	landframe 7
+	jump	frame 2 2 0 0
+	land	frame 7
 
-	delay	6
-	offset	70 158
-	bbox 	50 60 45 105
-		frame	data/chars/terry/terr0057
-		frame	data/chars/terry/terr0058
-		frame	data/chars/terry/terr0084
-		frame	data/chars/terry/terr0085
-		frame	data/chars/terry/terr0086
-	attack	80 80 80 20 15 2 0 0 10
-		frame	data/chars/terry/terr0088
-	attack	0
-	delay	-1
-		frame	data/chars/terry/terr0089
-	delay	8
-		frame	data/chars/terry/terr0556
-		frame	data/chars/terry/terr0557
-		frame	data/chars/terry/terr0558
+		delay	6
+		offset	70 158
+		bbox 	50 60 45 105
+	frame	data/chars/terry/terr0057
+	frame	data/chars/terry/terr0058
+	frame	data/chars/terry/terr0084
+	frame	data/chars/terry/terr0085
+	frame	data/chars/terry/terr0086
+		attack	80 80 80 20 15 2 0 0 10
+	frame	data/chars/terry/terr0088
+		attack	0
+		delay	-1
+	frame	data/chars/terry/terr0089
+		delay	8
+	frame	data/chars/terry/terr0556
+	frame	data/chars/terry/terr0557
+	frame	data/chars/terry/terr0558
 
-anim runattack
+anim run	attack
 
-	jumpframe 0 0 1.2 0 0
+	jump	frame 0 0 1.2 0 0
 
-	delay	10
-	offset	70 158
-	bbox 	50 60 45 105
-		frame	data/chars/terry/terr0226
-		frame	data/chars/terry/terr0227
-	@cmd	changeentityproperty getlocalvar("self") "aiflag" "blocking" 1
-		frame	data/chars/terry/terr0228
-	attack	80 80 55 55 15 2 0 0 10
-		frame	data/chars/terry/terr0229
-	delay	12
-		frame	data/chars/terry/terr0230
-	attack	0
-	@cmd	dc_velocity_set_velocity_x NULL()
-	@cmd	dc_velocity_apply_velocity_x
-	@cmd	changeentityproperty getlocalvar("self") "aiflag" "blocking" 0
-		frame	data/chars/terry/terr0231
-		frame	data/chars/terry/terr0578
+		delay	10
+		offset	70 158
+		bbox 	50 60 45 105
+	frame	data/chars/terry/terr0226
+	frame	data/chars/terry/terr0227
+		@cmd	changeentityproperty getlocalvar("self") "aiflag" "blocking" 1
+	frame	data/chars/terry/terr0228
+		attack	80 80 55 55 15 2 0 0 10
+	frame	data/chars/terry/terr0229
+		delay	12
+	frame	data/chars/terry/terr0230
+		attack	0
+		@cmd	dc_velocity_set_velocity_x NULL()
+		@cmd	dc_velocity_apply_velocity_x
+		@cmd	changeentityproperty getlocalvar("self") "aiflag" "blocking" 0
+	frame	data/chars/terry/terr0231
+	frame	data/chars/terry/terr0578
 
-anim chargeattack
+anim charge	attack
 
 	#High spin kick.
 
-	fastattack 1
+		fastattack 1
 
-	delay	6
-	offset	70 158
-	bbox 	50 60 45 105
-		frame	data/chars/terry/terr0046
-		frame	data/chars/terry/terr0047
-		frame	data/chars/terry/terr0048
-	delay	5
-	attack	110 45 35 45 10 0 0 0 15
-		frame	data/chars/terry/terr0049
-	delay	1
-	attack	0
-		frame	data/chars/terry/terr0049
-	delay	6
-	attack	110 35 45 55 15 0 0 0 15
-		frame	data/chars/terry/terr0050
-	attack	0
-		frame	data/chars/terry/terr0051
-		frame	data/chars/terry/terr0052
-		frame	data/chars/terry/terr0053
+		delay	6
+		offset	70 158
+		bbox 	50 60 45 105
+	frame	data/chars/terry/terr0046
+	frame	data/chars/terry/terr0047
+	frame	data/chars/terry/terr0048
+		delay	5
+		attack	110 45 35 45 10 0 0 0 15
+	frame	data/chars/terry/terr0049
+		delay	1
+		attack	0
+	frame	data/chars/terry/terr0049
+		delay	6
+		attack	110 35 45 55 15 0 0 0 15
+	frame	data/chars/terry/terr0050
+		attack	0
+	frame	data/chars/terry/terr0051
+	frame	data/chars/terry/terr0052
+	frame	data/chars/terry/terr0053
 
 #*****Special******************************************************************************
 
@@ -437,50 +438,50 @@ anim freespecial6
 
 	energycost 20
 	mponly	   1
-	loop	   1 5 8
-	jumpframe  2 5.5 0.2 0 dust0002
-	dropframe  9
-	landframe  14 dust0003
-	fastattack 1
+		loop	   1 5 8
+	jump	frame  2 5.5 0.2 0 dust0002
+	drop	frame  9
+	land	frame  14 dust0003
+		fastattack 1
 	forcedirection -1
 
-	delay	6
-	offset	70 158
-	bbox 	50 60 45 105
-		frame	data/chars/terry/terr0599
+		delay	6
+		offset	70 158
+		bbox 	50 60 45 105
+	frame	data/chars/terry/terr0599
 	#cmd stereo_sound_command_here "vter0011.wav"
-		frame	data/chars/terry/terr0600
-	delay	3
+	frame	data/chars/terry/terr0600
+		delay	3
 	#cmd stereo_sound_command_here "sand0003.wav"
 	move	25
-	attack	70 55 35 45 0 0 0 0 15
-		frame	data/chars/terry/terr0601	#Jumpframe
+		attack	70 55 35 45 0 0 0 0 15
+	frame	data/chars/terry/terr0601	#Jump	frame
 	move	0
-		frame	data/chars/terry/terr0602
-		frame	data/chars/terry/terr0603
-	delay	4
-	attack	0
-		frame	data/chars/terry/terr0604 	#Spin start
-	attack	20 120 115 20 0 0 0 0 6
-		frame	data/chars/terry/terr0605
-	attack	0
-		frame	data/chars/terry/terr0606
-	attack	20 120 115 20 0 0 0 0 6
-		frame	data/chars/terry/terr0607 	#Spin end
-	delay	6
-	attack	0
-	attack	20 120 115 20 1 1 0 0 6
-		frame	data/chars/terry/terr0608	#Dropframe
-	attack	0
-		frame	data/chars/terry/terr0609
-		frame	data/chars/terry/terr0610
-		frame	data/chars/terry/terr0562
-	delay	-1000
-		frame	data/chars/terry/terr0563
-	delay	8
-		frame 	data/chars/terry/terr0556
-		frame 	data/chars/terry/terr0557
-		frame 	data/chars/terry/terr0558
+	frame	data/chars/terry/terr0602
+	frame	data/chars/terry/terr0603
+		delay	4
+		attack	0
+	frame	data/chars/terry/terr0604 	#Spin start
+		attack	20 120 115 20 0 0 0 0 6
+	frame	data/chars/terry/terr0605
+		attack	0
+	frame	data/chars/terry/terr0606
+		attack	20 120 115 20 0 0 0 0 6
+	frame	data/chars/terry/terr0607 	#Spin end
+		delay	6
+		attack	0
+		attack	20 120 115 20 1 1 0 0 6
+	frame	data/chars/terry/terr0608	#Drop	frame
+		attack	0
+	frame	data/chars/terry/terr0609
+	frame	data/chars/terry/terr0610
+	frame	data/chars/terry/terr0562
+		delay	-1000
+	frame	data/chars/terry/terr0563
+		delay	8
+	frame 	data/chars/terry/terr0556
+	frame 	data/chars/terry/terr0557
+	frame 	data/chars/terry/terr0558
 
 #*****Followups****************************************************************************
 
@@ -488,112 +489,112 @@ anim follow1
 
 	#Short jab
 
-	range -10 50
-	fastattack 1
+		range -10 50
+		fastattack 1
 
-	delay	6
-	offset	70 158
-	bbox 	50 60 45 105
-		frame	data/chars/terry/terr0040
-	attack	75 75 60 15 8 0 0 0 10
-		frame	data/chars/terry/terr0041
-	attack	0
-		frame	data/chars/terry/terr0040
+		delay	6
+		offset	70 158
+		bbox 	50 60 45 105
+	frame	data/chars/terry/terr0040
+		attack	75 75 60 15 8 0 0 0 10
+	frame	data/chars/terry/terr0041
+		attack	0
+	frame	data/chars/terry/terr0040
 
 anim follow82
 
-	#Down attack
+	#Down 	attack
 
 	otg	1
-	range   -75 75
+		range   -75 75
 
-	delay	6
-	offset	70 158
-	bbox 	50 60 45 105
-		frame	data/chars/terry/terr0114
-		frame	data/chars/terry/terr0115
-	attack9	90 125 60 30 15 0 0 0 10
+		delay	6
+		offset	70 158
+		bbox 	50 60 45 105
+	frame	data/chars/terry/terr0114
+	frame	data/chars/terry/terr0115
+		attack9	90 125 60 30 15 0 0 0 10
 	staydown -200 0
-		frame	data/chars/terry/terr0116
-	attack	0
-		frame	data/chars/terry/terr0117
-		frame	data/chars/terry/terr0118
-		frame	data/chars/terry/terr0119
-		frame	data/chars/terry/terr0121
-		frame	data/chars/terry/terr0057
+	frame	data/chars/terry/terr0116
+		attack	0
+	frame	data/chars/terry/terr0117
+	frame	data/chars/terry/terr0118
+	frame	data/chars/terry/terr0119
+	frame	data/chars/terry/terr0121
+	frame	data/chars/terry/terr0057
 
 anim follow51
 
 	#Defense poses
 
-	loop	1
-	delay	-100
-	offset	100 170
-	bbox	0
-		frame	data/chars/terry/terr0611				#0	Grabbed.
-		frame	data/chars/terry/terr0613				#1	Grabbed Pain.
-		frame	data/chars/terry/terr0614				#2	Horizontal Up.
-		frame	data/chars/terry/terr0615				#3	Horizontal Down.
-		frame	data/chars/terry/terr0616				#4	Vertical Up.
-		frame	data/chars/terry/terr0617				#5	Vertical Down.
-		frame	data/chars/terry/terr0618				#6	Tilt Up.
-		frame	data/chars/terry/terr0619				#7	Tilt Down.
-		frame	data/chars/terry/terr0620				#8	Vertical Down pain.
-		frame	data/chars/terry/terr0621				#9	Fall Up.
-		frame	data/chars/terry/terr0622				#10	Fall Up Pain.
-		frame	data/chars/terry/terr0623				#11	Falling Up.
-		frame	data/chars/terry/terr0624				#12	Falling Up tilted.
-		frame	data/chars/terry/terr0625				#13	Horizontal Up Pain.
-		frame	data/chars/terry/terr0612				#14	Middle pain.
+		loop	1
+		delay	-100
+		offset	100 170
+		bbox	0
+	frame	data/chars/terry/terr0611				#0	Grabbed.
+	frame	data/chars/terry/terr0613				#1	Grabbed Pain.
+	frame	data/chars/terry/terr0614				#2	Horizontal Up.
+	frame	data/chars/terry/terr0615				#3	Horizontal Down.
+	frame	data/chars/terry/terr0616				#4	Vertical Up.
+	frame	data/chars/terry/terr0617				#5	Vertical Down.
+	frame	data/chars/terry/terr0618				#6	Tilt Up.
+	frame	data/chars/terry/terr0619				#7	Tilt Down.
+	frame	data/chars/terry/terr0620				#8	Vertical Down pain.
+	frame	data/chars/terry/terr0621				#9	Fall Up.
+	frame	data/chars/terry/terr0622				#10	Fall Up Pain.
+	frame	data/chars/terry/terr0623				#11	Falling Up.
+	frame	data/chars/terry/terr0624				#12	Falling Up tilted.
+	frame	data/chars/terry/terr0625				#13	Horizontal Up Pain.
+	frame	data/chars/terry/terr0612				#14	Middle pain.
 
 #*****Grappling****************************************************************************
 #*****Jumping******************************************************************************
 
-anim jumpdelay
+anim jump	delay
 
-		offset	70 158
-		delay	8
-		bbox 	50 60 45 105
+			offset	70 158
+			delay	8
+			bbox 	50 60 45 105
 	
 	frame data/chars/terry/terr0558
 
 anim jumpland
 
-	delay	8
-	offset	70 158
-	bbox 	50 60 45 105
-		frame data/chars/terry/terr0556
-		frame data/chars/terry/terr0557
-		frame data/chars/terry/terr0558
+		delay	8
+		offset	70 158
+		bbox 	50 60 45 105
+	frame data/chars/terry/terr0556
+	frame data/chars/terry/terr0557
+	frame data/chars/terry/terr0558
 
 anim jump
 
-	dropframe 1
+	drop	frame 1
 
-	delay	-1
-	offset	70 158
-	bbox 	50 60 45 105
-		frame data/chars/terry/terr0559
-	delay	8
-		frame data/chars/terry/terr0560
-		frame data/chars/terry/terr0561
-		frame data/chars/terry/terr0562
-		frame data/chars/terry/terr0563
+		delay	-1
+		offset	70 158
+		bbox 	50 60 45 105
+	frame data/chars/terry/terr0559
+		delay	8
+	frame data/chars/terry/terr0560
+	frame data/chars/terry/terr0561
+	frame data/chars/terry/terr0562
+	frame data/chars/terry/terr0563
 
 anim forwardjump
 
-	delay	12
-	offset	70 158
-	bbox 	50 60 45 105
-		frame data/chars/terry/terr0559
-		frame data/chars/terry/terr0564
-	delay	8
-		frame data/chars/terry/terr0565
-		frame data/chars/terry/terr0566
-		frame data/chars/terry/terr0567
-		frame data/chars/terry/terr0568
-		frame data/chars/terry/terr0562
-		frame data/chars/terry/terr0563
+		delay	12
+		offset	70 158
+		bbox 	50 60 45 105
+	frame data/chars/terry/terr0559
+	frame data/chars/terry/terr0564
+		delay	8
+	frame data/chars/terry/terr0565
+	frame data/chars/terry/terr0566
+	frame data/chars/terry/terr0567
+	frame data/chars/terry/terr0568
+	frame data/chars/terry/terr0562
+	frame data/chars/terry/terr0563
 
 #*****Injury and Defence*******************************************************************
 
@@ -601,149 +602,149 @@ anim block
 
 	#Defence.
 
-	delay	6
-	offset	70 158
-	bbox 	50 60 45 105
-		frame	data/chars/terry/terr0288
-		frame	data/chars/terry/terr0289
+		delay	6
+		offset	70 158
+		bbox 	50 60 45 105
+	frame	data/chars/terry/terr0288
+	frame	data/chars/terry/terr0289
 
 anim blockpain
 
 	#Normal block.
 
-	delay	3
-	offset	70 158
-	bbox 	50 60 45 105
+		delay	3
+		offset	70 158
+		bbox 	50 60 45 105
 	move	-2
-		frame	data/chars/terry/terr0290
-	offset	73 158
-		frame	data/chars/terry/terr0290
-	offset	70 158
-		frame	data/chars/terry/terr0290
-	offset	73 158
-		frame	data/chars/terry/terr0290
-	delay	20
-	offset	70 158
-		frame	data/chars/terry/terr0290
+	frame	data/chars/terry/terr0290
+		offset	73 158
+	frame	data/chars/terry/terr0290
+		offset	70 158
+	frame	data/chars/terry/terr0290
+		offset	73 158
+	frame	data/chars/terry/terr0290
+		delay	20
+		offset	70 158
+	frame	data/chars/terry/terr0290
 
 anim blockpain2
 
 	#Middle block.
 
-	delay	3
-	offset	70 158
-	bbox 	50 60 45 105
+		delay	3
+		offset	70 158
+		bbox 	50 60 45 105
 	move	-2
-		frame	data/chars/terry/terr0293
-	offset	73 158
-		frame	data/chars/terry/terr0293
-	offset	70 158
-		frame	data/chars/terry/terr0293
-	offset	73 158
-		frame	data/chars/terry/terr0293
-	delay	10
-	offset	70 158
-		frame	data/chars/terry/terr0292
-		frame	data/chars/terry/terr0291
+	frame	data/chars/terry/terr0293
+		offset	73 158
+	frame	data/chars/terry/terr0293
+		offset	70 158
+	frame	data/chars/terry/terr0293
+		offset	73 158
+	frame	data/chars/terry/terr0293
+		delay	10
+		offset	70 158
+	frame	data/chars/terry/terr0292
+	frame	data/chars/terry/terr0291
 
 anim blockpain3
 
 	#Low block.
 
-	delay	3
-	offset	70 158
-	bbox 	50 85 50 75
+		delay	3
+		offset	70 158
+		bbox 	50 85 50 75
 	move	-2
-		frame	data/chars/terry/terr0297
-	offset	73 158
-		frame	data/chars/terry/terr0297
-	offset	70 158
-		frame	data/chars/terry/terr0297
-	offset	73 158
-		frame	data/chars/terry/terr0297
-	delay	10
-	offset	70 158
-		frame	data/chars/terry/terr0295
-		frame	data/chars/terry/terr0294
-	bbox 	50 60 45 105
-		frame	data/chars/terry/terr0558
+	frame	data/chars/terry/terr0297
+		offset	73 158
+	frame	data/chars/terry/terr0297
+		offset	70 158
+	frame	data/chars/terry/terr0297
+		offset	73 158
+	frame	data/chars/terry/terr0297
+		delay	10
+		offset	70 158
+	frame	data/chars/terry/terr0295
+	frame	data/chars/terry/terr0294
+		bbox 	50 60 45 105
+	frame	data/chars/terry/terr0558
 
 anim blockpain2
 
 	#High block.
 
-	delay	3
-	offset	70 158
-	bbox 	50 60 45 105
+		delay	3
+		offset	70 158
+		bbox 	50 60 45 105
 	move	-2
-		frame	data/chars/terry/terr0301
-	offset	73 158
-		frame	data/chars/terry/terr0301
-	offset	70 158
-		frame	data/chars/terry/terr0301
-	offset	73 158
-		frame	data/chars/terry/terr0301
-	delay	20
-	offset	70 158
-		frame	data/chars/terry/terr0301
+	frame	data/chars/terry/terr0301
+		offset	73 158
+	frame	data/chars/terry/terr0301
+		offset	70 158
+	frame	data/chars/terry/terr0301
+		offset	73 158
+	frame	data/chars/terry/terr0301
+		delay	20
+		offset	70 158
+	frame	data/chars/terry/terr0301
 
 anim rise
 
-	delay	12
-	offset	70 158
-	bbox 	0
-		frame	data/chars/terry/terr0281
-		frame	data/chars/terry/terr0282
-		frame	data/chars/terry/terr0283
-		frame	data/chars/terry/terr0557
-		frame	data/chars/terry/terr0558
+		delay	12
+		offset	70 158
+		bbox 	0
+	frame	data/chars/terry/terr0281
+	frame	data/chars/terry/terr0282
+	frame	data/chars/terry/terr0283
+	frame	data/chars/terry/terr0557
+	frame	data/chars/terry/terr0558
 
 anim pain
 
-	jumpframe 0 0 -0.1 0
+	jump	frame 0 0 -0.1 0
 
-	delay	11
-	offset	70 158
-	bbox 	50 60 45 105
-		frame	data/chars/terry/terr0349
-		frame	data/chars/terry/terr0350
-		frame	data/chars/terry/terr0352
-		frame	data/chars/terry/terr0350
-		frame	data/chars/terry/terr0349
+		delay	11
+		offset	70 158
+		bbox 	50 60 45 105
+	frame	data/chars/terry/terr0349
+	frame	data/chars/terry/terr0350
+	frame	data/chars/terry/terr0352
+	frame	data/chars/terry/terr0350
+	frame	data/chars/terry/terr0349
 anim pain2
 
 	#Middle pain.
 
-	jumpframe 0 0 -0.1 0
+	jump	frame 0 0 -0.1 0
 
-	delay	11
-	offset	70 158
-	bbox 	50 60 45 105
-		frame	data/chars/terry/terr0353
-		frame	data/chars/terry/terr0354
-		frame	data/chars/terry/terr0355
-		frame	data/chars/terry/terr0353
-		frame	data/chars/terry/terr0354
+		delay	11
+		offset	70 158
+		bbox 	50 60 45 105
+	frame	data/chars/terry/terr0353
+	frame	data/chars/terry/terr0354
+	frame	data/chars/terry/terr0355
+	frame	data/chars/terry/terr0353
+	frame	data/chars/terry/terr0354
 
 anim fall
 
-	dropframe 1
-	landframe 3
+	drop	frame 1
+	land	frame 3
 
-	delay	-1
-	offset	70 158
-	bbox 	50 60 45 105
-	attack  50 60 45 105 8
-		frame	data/chars/terry/terr0358
-	delay	15
-		frame	data/chars/terry/terr0359
-	delay	-1
-		frame	data/chars/terry/terr0360
-	delay	20
-	attack	0
-	bbox	0
-		frame	data/chars/terry/terr0375
-		frame	data/chars/terry/terr0377
+		delay	-1
+		offset	70 158
+		bbox 	50 60 45 105
+		attack  50 60 45 105 8
+	frame	data/chars/terry/terr0358
+		delay	15
+	frame	data/chars/terry/terr0359
+		delay	-1
+	frame	data/chars/terry/terr0360
+		delay	20
+		attack	0
+		bbox	0
+	frame	data/chars/terry/terr0375
+	frame	data/chars/terry/terr0377
 
 #*****Footer********************************************************************************
 
