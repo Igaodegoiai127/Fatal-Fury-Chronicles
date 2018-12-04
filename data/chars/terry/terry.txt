@@ -584,10 +584,11 @@ anim follow51
 
 anim jumpdelay
 
-	offset	70 158
-	delay	18
-	bbox 	50 60 45 105
-		frame data/chars/terry/terr0558
+		offset	70 158
+		delay	8
+		bbox 	50 60 45 105
+	
+	frame data/chars/terry/terr0558
 
 anim jumpland
 
