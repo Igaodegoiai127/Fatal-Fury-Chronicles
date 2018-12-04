@@ -20,7 +20,7 @@ nodieblink   	2
 falldie      	2
 risetime     	90
 running      	30 4 2 0 0
-#turn	delay    	15
+#turndelay    	15
 makeinv      	3
 projectilehit 	player obstacle
 candamage     	enemy obstacle
@@ -212,15 +212,6 @@ anim run
 		@cmd dc_disney_dash_stop
 	frame	data/chars/terry/terr0578
 
-anim turn
-
-		delay	12
-		offset	70 158
-		bbox 	50 60 45 105
-	frame	data/chars/terry/terr0010
-		offset	80 158
-	frame	data/chars/terry/terr0011
-
 anim get
 
 		delay	8
@@ -243,10 +234,10 @@ anim 	attack1
 
 		fastattack 1
 
-		delay	4
-		offset	70 158
-		bbox 	50 60 45 105
-		@cmd	dc_disney_alternate_on_range openborconstant("ANI_FOLLOW1")
+			delay	4
+			offset	70 158
+			bbox 	50 60 45 105
+			@cmd	dc_disney_alternate_on_range openborconstant("ANI_FOLLOW1")
 	frame	data/chars/terry/terr0040
 	frame	data/chars/terry/terr0055
 			attack	95 70 60 20 6 0 0 0 10
@@ -365,8 +356,8 @@ anim 	attack7
 
 	#Jumping spin kick.
 
-	jumpframe 2 2 0 0
-	landframe 7
+	jump	frame 2 2 0 0
+	land	frame 7
 
 		delay	6
 		offset	70 158
@@ -388,7 +379,7 @@ anim 	attack7
 
 anim runattack
 
-	jumpframe 0 0 1.2 0 0
+	jump	frame 0 0 1.2 0 0
 
 		delay	10
 		offset	70 158
@@ -442,11 +433,11 @@ anim freespecial6
 
 	energycost 20
 	mponly	   1
-	loop	   1 5 8
-	jumpframe  2 5.5 0.2 0 dust0002
-	dropframe  9
-	landframe  14 dust0003
-	fastattack 1
+		loop	   1 5 8
+	jump	frame  2 5.5 0.2 0 dust0002
+	drop	frame  9
+	land	frame  14 dust0003
+		fastattack 1
 	forcedirection -1
 
 		delay	6
@@ -475,7 +466,7 @@ anim freespecial6
 		delay	6
 		attack	0
 		attack	20 120 115 20 1 1 0 0 6
-	frame	data/chars/terry/terr0608	#Dropframe
+	frame	data/chars/terry/terr0608	#Drop	frame
 		attack	0
 	frame	data/chars/terry/terr0609
 	frame	data/chars/terry/terr0610
@@ -503,14 +494,13 @@ anim follow1
 		attack	75 75 60 15 8 0 0 0 10
 	frame	data/chars/terry/terr0041
 		attack	0
-		idle 1
 	frame	data/chars/terry/terr0040
 
 anim follow82
 
-	#Down attack
+	#Down 	attack
 
-		otg	1
+	otg	1
 		range   -75 75
 
 		delay	6
@@ -519,7 +509,7 @@ anim follow82
 	frame	data/chars/terry/terr0114
 	frame	data/chars/terry/terr0115
 		attack9	90 125 60 30 15 0 0 0 10
-		staydown -200 0
+	staydown -200 0
 	frame	data/chars/terry/terr0116
 		attack	0
 	frame	data/chars/terry/terr0117
@@ -557,9 +547,9 @@ anim follow51
 
 anim jumpdelay
 
-		offset	70 158
-		delay	8
-		bbox 	50 60 45 105
+			offset	70 158
+			delay	8
+			bbox 	50 60 45 105
 	
 	frame data/chars/terry/terr0558
 
@@ -574,7 +564,7 @@ anim jumpland
 
 anim jump
 
-	dropframe 1
+	drop	frame 1
 
 		delay	-1
 		offset	70 158
@@ -706,7 +696,7 @@ anim rise
 
 anim pain
 
-	jumpframe 0 0 -0.1 0
+	jump	frame 0 0 -0.1 0
 
 		delay	11
 		offset	70 158
@@ -720,7 +710,7 @@ anim pain2
 
 	#Middle pain.
 
-	jumpframe 0 0 -0.1 0
+	jump	frame 0 0 -0.1 0
 
 		delay	11
 		offset	70 158
@@ -733,8 +723,8 @@ anim pain2
 
 anim fall
 
-	dropframe 1
-	landframe 3
+	drop	frame 1
+	land	frame 3
 
 		delay	-1
 		offset	70 158
