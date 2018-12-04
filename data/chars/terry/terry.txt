@@ -356,8 +356,8 @@ anim 	attack7
 
 	#Jumping spin kick.
 
-	jump	frame 2 2 0 0
-	land	frame 7
+	jumpframe 2 2 0 0
+	landframe 7
 
 		delay	6
 		offset	70 158
@@ -379,7 +379,7 @@ anim 	attack7
 
 anim runattack
 
-	jump	frame 0 0 1.2 0 0
+	jumpframe 0 0 1.2 0 0
 
 		delay	10
 		offset	70 158
@@ -434,9 +434,9 @@ anim freespecial6
 	energycost 20
 	mponly	   1
 		loop	   1 5 8
-	jump	frame  2 5.5 0.2 0 dust0002
-	drop	frame  9
-	land	frame  14 dust0003
+	jumpframe  2 5.5 0.2 0 dust0002
+	dropframe  9
+	landframe  14 dust0003
 		fastattack 1
 	forcedirection -1
 
@@ -450,7 +450,7 @@ anim freespecial6
 	#cmd stereo_sound_command_here "sand0003.wav"
 	move	25
 		attack	70 55 35 45 0 0 0 0 15
-	frame	data/chars/terry/terr0601	#Jump	frame
+	frame	data/chars/terry/terr0601	#jumpframe
 	move	0
 	frame	data/chars/terry/terr0602
 	frame	data/chars/terry/terr0603
@@ -466,7 +466,7 @@ anim freespecial6
 		delay	6
 		attack	0
 		attack	20 120 115 20 1 1 0 0 6
-	frame	data/chars/terry/terr0608	#Drop	frame
+	frame	data/chars/terry/terr0608	#dropframe
 		attack	0
 	frame	data/chars/terry/terr0609
 	frame	data/chars/terry/terr0610
@@ -564,7 +564,7 @@ anim jumpland
 
 anim jump
 
-	drop	frame 1
+	dropframe 1
 
 		delay	-1
 		offset	70 158
@@ -696,7 +696,7 @@ anim rise
 
 anim pain
 
-	jump	frame 0 0 -0.1 0
+	jumpframe 0 0 -0.1 0
 
 		delay	11
 		offset	70 158
@@ -710,7 +710,7 @@ anim pain2
 
 	#Middle pain.
 
-	jump	frame 0 0 -0.1 0
+	jumpframe 0 0 -0.1 0
 
 		delay	11
 		offset	70 158
@@ -723,8 +723,8 @@ anim pain2
 
 anim fall
 
-	drop	frame 1
-	land	frame 3
+	dropframe 1
+	landframe 3
 
 		delay	-1
 		offset	70 158
