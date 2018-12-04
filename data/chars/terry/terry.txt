@@ -321,7 +321,7 @@ anim 	attack5
 
 	#Straight.
 
-		delay	6
+		delay	5
 		offset	70 158
 		bbox 	50 60 45 105
 	frame	data/chars/terry/terr0320
@@ -338,7 +338,7 @@ anim 	attack6
 
 	#Round kick.
 
-		delay	6
+		delay	5
 		offset	70 158
 		bbox 	50 60 45 105
 	frame	data/chars/terry/terr0057
@@ -356,15 +356,16 @@ anim 	attack7
 
 	#Jumping spin kick.
 
-	jumpframe 2 2 0 0
-	landframe 7
+	jumpframe 2 2 0 0 dust0002
+	landframe 7 dust0003
 
-		delay	6
+		delay	5
 		offset	70 158
 		bbox 	50 60 45 105
 	frame	data/chars/terry/terr0057
 	frame	data/chars/terry/terr0058
 	frame	data/chars/terry/terr0084
+		delay	6
 	frame	data/chars/terry/terr0085
 	frame	data/chars/terry/terr0086
 		attack	80 80 80 20 15 2 0 0 10
