@@ -272,6 +272,7 @@ anim 	attack2
 	frame	data/chars/terry/terr0598
 			attack	0
 	frame	data/chars/terry/terr0597
+		idle	1
 	frame	data/chars/terry/terr0596
 
 anim 	attack3
@@ -296,6 +297,7 @@ anim 	attack3
 	frame	data/chars/terry/terr0587
 		attack	0
 	frame	data/chars/terry/terr0588
+		idle	1
 	frame	data/chars/terry/terr0589
 
 anim 	attack4
@@ -338,6 +340,7 @@ anim 	attack5
 		attack	0
 	frame	data/chars/terry/terr0323
 	frame	data/chars/terry/terr0321
+		idle	1
 	frame	data/chars/terry/terr0320
 
 anim 	attack6
@@ -355,6 +358,7 @@ anim 	attack6
 		attack	0
 	frame	data/chars/terry/terr0059
 	frame	data/chars/terry/terr0058
+		idle	1
 	frame	data/chars/terry/terr0053
 
 anim 	attack7
@@ -382,7 +386,7 @@ anim 	attack7
 	frame	data/chars/terry/terr0557
 	frame	data/chars/terry/terr0558
 
-anim run	attack
+anim runattack
 
 	jump	frame 0 0 1.2 0 0
 
@@ -404,7 +408,7 @@ anim run	attack
 	frame	data/chars/terry/terr0231
 	frame	data/chars/terry/terr0578
 
-anim charge	attack
+anim chargeattack
 
 	#High spin kick.
 
@@ -550,7 +554,7 @@ anim follow51
 #*****Grappling****************************************************************************
 #*****Jumping******************************************************************************
 
-anim jump	delay
+anim jumpdelay
 
 			offset	70 158
 			delay	8
