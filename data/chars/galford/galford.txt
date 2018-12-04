@@ -1104,6 +1104,7 @@ anim grab
 		offset	155 210
 		bbox	130 120 45 90
 		
+		@cmd	dc_bind_set_invert_x	DC_BIND_INVERT_DIRECTION
 		@cmd	dc_bind_set_entity		getentityproperty(getlocalvar("self") "opponent")
 		@cmd	dc_bind_set_offset_x	40
 		@cmd	dc_bind_apply_position
