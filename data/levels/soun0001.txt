@@ -39,7 +39,6 @@ spawn4 50 45
 
 #wall 1 185 1 1 2800 2800 5 1000
 
-
 # {int} Layer order from panel toward background.
 # {alpha} Model order along {int} layer.
 # {int} Placement along same layer.
