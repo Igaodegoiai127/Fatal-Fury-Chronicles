@@ -39,6 +39,9 @@ spawn4 50 45
 
 #wall 1 185 1 1 2800 2800 5 1000
 
+#wall {xpos} {zpos} {upperleft} {lowerleft} {upperright} {lowerright} {depth} {alt} {type}
+#wall 70 270 0 0 20 20 100 1000 0
+
 # {int} Layer order from panel toward background.
 # {alpha} Model order along {int} layer.
 # {int} Placement along same layer.
