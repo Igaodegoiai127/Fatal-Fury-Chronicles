@@ -43,3 +43,6 @@
 [submodule "data/scripts/dc_target"]
 	path = data/scripts/dc_target
 	url = https://github.com/DCurrent/openbor-script-target
+[submodule "data/scripts/dc_terrain"]
+	path = data/scripts/dc_terrain
+	url = https://github.com/DCurrent/openbor-script-terrain

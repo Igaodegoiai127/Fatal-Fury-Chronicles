@@ -1,6 +1,6 @@
-#include "data/scripts/dc_hansburg/main.c"
+#include "data/scripts/dc_terrain/main.c"
 
 void main()
 {
-	dc_hansburg_execute();
+	//dc_hansburg_execute();
 }
