@@ -1319,6 +1319,8 @@ anim jumpland
 
 anim jump
 
+		range 0 50
+
 		dropframe 1
 
 		delay	-1
