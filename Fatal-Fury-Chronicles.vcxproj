@@ -194,6 +194,7 @@
     <ClCompile Include="data\scripts\dc_math\config.c" />
     <ClCompile Include="data\scripts\dc_math\difference.c" />
     <ClCompile Include="data\scripts\dc_math\main.c" />
+    <ClCompile Include="data\scripts\dc_math\midpoint.c" />
     <ClCompile Include="data\scripts\dc_math\percentage.c" />
     <ClCompile Include="data\scripts\dc_math\ratio_to_int.c" />
     <ClCompile Include="data\scripts\dc_spinner\config.c" />
