@@ -1,12 +1,2 @@
-#*****scriptvars*****
-maxscriptvars   10
-
-#*****entityvars*****
-maxentityvars   120
-
-#*****maxindexedvars*****
-maxindexedvars  10
-
-#*****maxglobalvars*****
-maxglobalvars  2048
+nocmdcompatible 1
 
