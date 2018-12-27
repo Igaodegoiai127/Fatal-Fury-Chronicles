@@ -1,4 +1,6 @@
-music		data/music/Sound_B.bor
+music		data/music/sound_beach_ff1.ogg 282658
+#272658 
+						
 
 background	data/bgs/BEACH/back0001
 frontpanel	data/bgs/BEACH/fore0002
