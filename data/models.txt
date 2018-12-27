@@ -11,6 +11,7 @@ noaircancel     2
 
 #*****Flash/Hit sparks*****
 load	Flash		data/chars/misc/flash/flash.txt
+load	Block		data/chars/misc/flash/block.txt
 load    flash_fall_land	data/chars/misc/dust/flash_fall_land.txt	# Manual dust effect.
 load    dust0002	data/chars/misc/dust/dust0002.txt		# Takeoff dust effect.
 load    dust0003	data/chars/misc/dust/dust0003.txt		# Land dust effect.
