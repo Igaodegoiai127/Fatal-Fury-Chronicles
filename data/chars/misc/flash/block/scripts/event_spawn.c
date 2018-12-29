@@ -8,12 +8,12 @@ void main() {
 
 	ent = getlocalvar("self");
 
-	changedrawmethod(ent, "scalex", 0.5);
-	changedrawmethod(ent, "scaley", 0.5);
+	changedrawmethod(ent, "scalex", 0.125);
+	changedrawmethod(ent, "scaley", 0.125);
 	changedrawmethod(ent, "alpha", 1);
 
 	// Apply draw settings.
-	dc_kanga_z_position_autoscale(ent);
+	//dc_kanga_z_position_autoscale(ent);
 
 	// stereo_sound_command_here(SNDHIT1);
 }

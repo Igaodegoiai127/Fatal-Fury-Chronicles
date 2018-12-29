@@ -114,6 +114,7 @@
     <ClCompile Include="data\chars\galford\scripts\animation.c" />
     <ClCompile Include="data\chars\galford\scripts\event_move_a.c" />
     <ClCompile Include="data\chars\galford\scripts\onspawn.c" />
+    <ClCompile Include="data\chars\misc\flash\block\scripts\event_spawn.c" />
     <ClCompile Include="data\chars\misc\flash\flash\scripts\event_spawn.c" />
     <ClCompile Include="data\chars\misc\pickups\fatal_fury_scroll\scripts\event_hit.c" />
     <ClCompile Include="data\chars\raiden\scripts\ani_a.c" />
@@ -1769,6 +1770,16 @@
     <Image Include="data\chars\misc\effects\wind0015.png" />
     <Image Include="data\chars\misc\fenc0001\fence.gif" />
     <Image Include="data\chars\misc\fenc0001\fence2.gif" />
+    <Image Include="data\chars\misc\flash\block\0_1.png" />
+    <Image Include="data\chars\misc\flash\block\0_10.png" />
+    <Image Include="data\chars\misc\flash\block\0_2.png" />
+    <Image Include="data\chars\misc\flash\block\0_3.png" />
+    <Image Include="data\chars\misc\flash\block\0_4.png" />
+    <Image Include="data\chars\misc\flash\block\0_5.png" />
+    <Image Include="data\chars\misc\flash\block\0_6.png" />
+    <Image Include="data\chars\misc\flash\block\0_7.png" />
+    <Image Include="data\chars\misc\flash\block\0_8.png" />
+    <Image Include="data\chars\misc\flash\block\0_9.png" />
     <Image Include="data\chars\misc\flash\bloo0001.png" />
     <Image Include="data\chars\misc\flash\bloo0002.png" />
     <Image Include="data\chars\misc\flash\bloo0003.png" />

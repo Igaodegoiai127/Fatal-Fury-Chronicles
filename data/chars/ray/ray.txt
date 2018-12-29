@@ -20,6 +20,7 @@ atchain			1 1 2 0
 nopassiveblock	1
 holdblock		2
 blockodds		1
+bflash			Block
 
 onspawnscript	data/chars/ray/scripts/onspawn.c
 animationscript data/chars/ray/scripts/animation.c

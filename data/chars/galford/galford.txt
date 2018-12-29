@@ -33,6 +33,7 @@ height 			95
 dust			flash_fall_land dust0003 dust0002
 mpset 			100 3 50 1 2 2
 jumpheight		4
+bflash			Block
 
 #*****Scripts*****
 
@@ -1541,9 +1542,13 @@ anim blockpain
 	
 	frame	data/chars/galford/802_0_0.png
 	
-		delay	30
+		delay	6
 		offset	150 210
 	
+	frame	data/chars/galford/801_0_0.png
+		
+		offset	155 210
+
 	frame	data/chars/galford/801_0_0.png
 
 anim land

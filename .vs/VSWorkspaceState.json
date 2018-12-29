@@ -2,12 +2,10 @@
   "ExpandedNodes": [
     "",
     "\\data",
-    "\\data\\chars",
-    "\\data\\chars\\galford",
     "\\data\\scripts",
-    "\\data\\scripts\\dc_sound",
+    "\\data\\scripts\\dc_grapple",
     "\\data\\scripts\\vars"
   ],
-  "SelectedNode": "\\data\\bgs",
+  "SelectedNode": "\\data\\scripts\\dc_grapple\\release.c",
   "PreviewInSolutionExplorer": false
 }

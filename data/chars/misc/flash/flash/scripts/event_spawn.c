@@ -9,8 +9,8 @@ void main() {
 
 	ent = getlocalvar("self");
 
-	changedrawmethod(ent, "scalex", 0.5);
-	changedrawmethod(ent, "scaley", 0.5);
+	changedrawmethod(ent, "scalex", 0.25);
+	changedrawmethod(ent, "scaley", 0.25);
 	changedrawmethod(ent, "alpha", 1);
 
 	dc_d20_set_range_lower(0);
