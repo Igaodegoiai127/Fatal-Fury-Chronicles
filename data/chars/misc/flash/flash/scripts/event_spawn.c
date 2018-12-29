@@ -9,9 +9,10 @@ void main() {
 
 	ent = getlocalvar("self");
 
-	changedrawmethod(ent, "scalex", 0.25);
-	changedrawmethod(ent, "scaley", 0.25);
+	changedrawmethod(ent, "scalex", 128);
+	changedrawmethod(ent, "scaley", 128);
 	changedrawmethod(ent, "alpha", 1);
+	changedrawmethod(ent, "enabled", 1);
 
 	dc_d20_set_range_lower(0);
 	dc_d20_set_range_upper(359);
@@ -21,7 +22,7 @@ void main() {
 	changedrawmethod(ent, "rotate", rotate);
 
 	// Apply draw settings.
-	dc_kanga_z_position_autoscale(ent);
+	//dc_kanga_z_position_autoscale(ent);
 
 	// stereo_sound_command_here(SNDHIT1);
 }
