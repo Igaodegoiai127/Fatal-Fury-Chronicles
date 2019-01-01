@@ -594,7 +594,7 @@ anim forwardjump
 
 #*****Injury and Defence*******************************************************************
 
-anim block
+anim blockrelease
 
 	#Defence.
 
@@ -602,6 +602,23 @@ anim block
 		offset	70 158
 		bbox 	50 60 45 105
 	frame	data/chars/terry/terr0288
+
+anim blockstart
+
+	#Defence.
+
+		delay	6
+		offset	70 158
+		bbox 	50 60 45 105
+	frame	data/chars/terry/terr0288
+
+anim block
+
+	#Defence.
+
+		delay	6
+		offset	70 158
+		bbox 	50 60 45 105
 	frame	data/chars/terry/terr0289
 
 anim blockpain
