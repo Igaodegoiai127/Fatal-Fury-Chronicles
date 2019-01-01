@@ -1508,13 +1508,28 @@ anim runjumpattack
 
 #*****Injury and Defence*******************************************************************
 
-anim block
+anim blockrelease
 
 		delay	6
 		offset	155 210
 		bbox	130 120 45 90
 	
 	frame	data/chars/galford/800_0_0.png
+
+anim blockstart
+
+		delay	6
+		offset	155 210
+		bbox	130 120 45 90
+	
+	frame	data/chars/galford/800_0_0.png
+
+anim block
+
+		delay	6
+		offset	155 210
+		bbox	130 120 45 90
+	
 	frame	data/chars/galford/800_1_0.png
 
 anim blockpain
