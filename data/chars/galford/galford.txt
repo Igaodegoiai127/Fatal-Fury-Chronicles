@@ -81,12 +81,10 @@ anim spawn
 
 #anim respawn
 
-anim waiting
+anim selectin
 
 	delay	1
-	offset	150 272
 	fshadow 0
-		frame	data/chars/misc/blank.png
 	offset	160 122
 		frame	data/chars/galford/select_0.png
 	offset	160 132
@@ -117,6 +115,46 @@ anim waiting
 		frame	data/chars/galford/select_0.png
 	offset	160 262
 		frame	data/chars/galford/select_0.png
+
+anim selectout
+
+	delay	1
+	offset	160 262
+	fshadow 0
+		frame	data/chars/galford/select_0.png
+	offset	160 252
+		frame	data/chars/galford/select_0.png
+	offset	160 242
+		frame	data/chars/galford/select_0.png
+	offset	160 232
+		frame	data/chars/galford/select_0.png
+	offset	160 222
+		frame	data/chars/galford/select_0.png
+	offset	160 212
+		frame	data/chars/galford/select_0.png
+	offset	160 202
+		frame	data/chars/galford/select_0.png
+	offset	160 192
+		frame	data/chars/galford/select_0.png
+	offset	160 182
+		frame	data/chars/galford/select_0.png
+	offset	160 172
+		frame	data/chars/galford/select_0.png
+	offset	160 162
+		frame	data/chars/galford/select_0.png
+	offset	160 152
+		frame	data/chars/galford/select_0.png
+	offset	160 142
+		frame	data/chars/galford/select_0.png
+	offset	160 132
+		frame	data/chars/galford/select_0.png
+	offset	160 122
+		frame	data/chars/galford/select_0.png
+
+anim waiting
+
+	fshadow 0
+	delay	1	
 	offset	160 272
 		frame	data/chars/galford/select_1.png
 
