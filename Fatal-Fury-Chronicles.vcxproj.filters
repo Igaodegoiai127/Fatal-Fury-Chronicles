@@ -9174,6 +9174,7 @@
     <Text Include="data\chars\galford\galford.txt" />
     <Text Include="data\chars\galford\galford-trails.txt" />
     <Text Include="data\chars\misc\pickups\fatal_fury_scroll\scro0001.txt" />
+    <Text Include="data\chars\misc\flash\block.txt" />
   </ItemGroup>
   <ItemGroup>
     <None Include="data\chars\andy\wild-ambition-front-throw.psd" />

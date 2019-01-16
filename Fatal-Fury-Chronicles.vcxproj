@@ -3164,6 +3164,7 @@
     <Text Include="data\chars\misc\effects\paus0001.txt" />
     <Text Include="data\chars\misc\effects\proj0001.txt" />
     <Text Include="data\chars\misc\fenc0001\fence.txt" />
+    <Text Include="data\chars\misc\flash\block.txt" />
     <Text Include="data\chars\misc\flash\flash.txt" />
     <Text Include="data\chars\misc\pickups\appl0001.txt" />
     <Text Include="data\chars\misc\pickups\gold.txt" />
