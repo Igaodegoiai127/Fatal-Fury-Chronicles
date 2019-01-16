@@ -60,12 +60,12 @@ e3name       384   37
 
 set	Test_(Sound_Beach)
 lives  2
-nosame 0
+nosame 0 2
 z       210 260 
 file	data/levels/soun0001.txt
 
 set	Test_(Void)
 lives  1
-nosame 0
+nosame 0 2
 z       180 230 
 file	data/levels/void0001.txt
