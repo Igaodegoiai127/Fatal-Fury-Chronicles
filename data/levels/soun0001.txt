@@ -227,17 +227,17 @@ at	0
 spawn	ray
 alias 	Random
 map	1
-health	100
+health	101
 coords	550 210
 #spawnscript data/scripts/spawn.c
 at	0
 
-spawn	ray
-alias 	Random
-map     1
-health	25
-coords	530 230
-at	0
+#spawn	ray
+#alias 	Random
+#map     1
+#health	25
+#coords	530 230
+#at	0
 
 spawn	ray
 alias 	Random
