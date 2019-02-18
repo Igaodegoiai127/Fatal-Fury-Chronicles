@@ -59,34 +59,30 @@ void bind0003(void vModel, int vAlias, int iMap, int iBlend, int fX, int fY, int
 	}
 	
 	// Get binding property for spawn.
-	void binding = get_entity_property(vSpawn, "binding");
+	void bind = get_entity_property(vSpawn, "bind");
 
 	
-	// Get binding toggle and enable flags.
-	void binding_enable = get_binding_property(binding, "positioning");
-	void binding_axis = get_binding_property(binding, "offset");
-
-	// Enable binding on each axis.
-	set_axis_principal_int_property(binding_enable, "x", 1);
-	set_axis_principal_int_property(binding_enable, "y", 1);
-	set_axis_principal_int_property(binding_enable, "z", 1);
+	// Enable binding to target on each axis.
+	set_bind_property(bind, "mode_x", openborconstant("BIND_MODE_TARGET"));
+	set_bind_property(bind, "mode_y", openborconstant("BIND_MODE_TARGET"));
+	set_bind_property(bind, "mode_z", openborconstant("BIND_MODE_TARGET"));
 
 	// Set the binding offset.
-	set_axis_principal_int_property(binding_axis, "x", fX);
-	set_axis_principal_int_property(binding_axis, "y", fY);
-	set_axis_principal_int_property(binding_axis, "z", fZ);
+	set_bind_property(bind, "offset_x", fX);
+	set_bind_property(bind, "offset_y", fY);
+	set_bind_property(bind, "offset_z", fZ);
 
 	// Set other binding properties.
-	set_binding_property(binding, "matching", iAniFlag);
-	set_binding_property(binding, "direction", iDir);
-	set_binding_property(binding, "target", vSelf);
+	set_bind_property(bind, "animation_match", iAniFlag);
+	set_bind_property(bind, "direction", iDir);
+	set_bind_property(bind, "target", vSelf);
 	
-	set_binding_property(binding, "sort_id", 1);
+	set_bind_property(bind, "sort_id", 1);
 
 	// Update draw for spawn.
     //dc_kanga_z_position_autoscale(vSpawn); 
 
-	//update_binding(vSpawn);
+	//update_bind(vSpawn);
 
 	return vSpawn;
 }
