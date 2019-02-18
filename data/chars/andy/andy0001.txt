@@ -1115,7 +1115,7 @@ anim freespecial7
 	#cmd stereo_sound_command_here "sand0001.wav"					#Sound effect.
 		frame	data/chars/andy/andy0221
 		frame	data/chars/andy/andy0222
-	#	proj0002 "andybe" 3 1 85 30 1 1 openborconstant("BINDING_MATCHING_ANIMATION_REMOVE") 0 0 1 1 0 1000 15 -1 -1 0 0 0 1 4 0 -1 0 2 3 0 1 0 0 0 0
+	#	proj0002 "andybe" 3 1 85 30 1 1 openborconstant("BIND_ANIMATION_REMOVE") 0 0 1 1 0 1000 15 -1 -1 0 0 0 1 4 0 -1 0 2 3 0 1 0 0 0 0
 		frame	data/chars/andy/andy0223
 		frame	data/chars/andy/andy0224
 
