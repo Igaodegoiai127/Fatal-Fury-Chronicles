@@ -279,6 +279,22 @@ anim 	attack1
 	frame	data/chars/terry/terr0040
 	frame	data/chars/terry/terr0055
 			attack	95 70 60 20 6 0 0 0 10
+
+			attack.position.x			95
+			attack.position.y			70
+			attack.size.x				60
+			attack.size.y				20
+			attack.damage.force			6
+			attack.reaction.pause.time	10
+
+			attack.damage.recursive.force 1
+			attack.damage.recursive.index 1
+			attack.damage.recursive.mode 1
+			attack.damage.recursive.tag 5
+			attack.damage.recursive.time 10000
+			attack.damage.recursive.rate 10
+
+
 	frame	data/chars/terry/terr0056
 			attack	0
 	frame	data/chars/terry/terr0029
@@ -298,6 +314,7 @@ anim 	attack2
 	frame	data/chars/terry/terr0596
 	frame	data/chars/terry/terr0597
 			attack	60 75 70 30 6 0 0 0 10
+
 	frame	data/chars/terry/terr0598
 			attack	0
 	frame	data/chars/terry/terr0597
@@ -317,6 +334,9 @@ anim 	attack3
 	frame	data/chars/terry/terr0585
 		delay	5
 		attack	75 100 35 20 6 0 0 0 15
+
+
+
 	frame	data/chars/terry/terr0586
 		delay	1
 		attack	0
@@ -365,6 +385,13 @@ anim 	attack5
 	frame	data/chars/terry/terr0320
 	frame	data/chars/terry/terr0321
 		attack	80 75 66 15 8 0 0 0 10
+
+		attack.damage.recursive.force 1
+			attack.damage.recursive.index 2
+			attack.damage.recursive.mode 1
+			attack.damage.recursive.time 100000
+			attack.damage.recursive.rate 10
+
 	frame	data/chars/terry/terr0322
 		attack	0
 	frame	data/chars/terry/terr0323
@@ -383,6 +410,13 @@ anim 	attack6
 	frame	data/chars/terry/terr0058
 	frame	data/chars/terry/terr0059
 		attack	90 85 96 15 8 0 0 0 10
+
+		attack.damage.recursive.force 1
+			attack.damage.recursive.index 3
+			attack.damage.recursive.mode 1
+			attack.damage.recursive.time 100000
+			attack.damage.recursive.rate 10
+
 	frame	data/chars/terry/terr0060
 		attack	0
 	frame	data/chars/terry/terr0059
