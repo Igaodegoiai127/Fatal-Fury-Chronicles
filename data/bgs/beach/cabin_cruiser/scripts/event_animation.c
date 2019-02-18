@@ -16,7 +16,6 @@ void sink_and_suicide()
 
 	void	ent;
 	float	base;
-	void	axis;
 	float	pos_y;
 
 	ent = getlocalvar("self");
@@ -30,8 +29,7 @@ void sink_and_suicide()
 	// Now get vertical position. If we are already at
 	// terminal position then we'll kill ourselves. Otherwise
 	// we move downward to simulate a slow sinking fall.
-	axis = get_entity_property(ent, "position_coordinates");
-	pos_y = get_axis_principal_float_property(axis, "y");
+	pos_y = get_entity_property(ent, "position_y");
 	
 	log("\n pos_y: " + pos_y);
 
