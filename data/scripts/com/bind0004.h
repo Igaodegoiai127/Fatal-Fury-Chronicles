@@ -30,23 +30,23 @@ void bind0004(void vTar, int iX, int iY, int iZ, int iDir, int iAniFlag){
     float fRatio;                                  //Caller's current scale ratio.
 
 	// Get binding property.
-	void binding = get_entity_property(vTarget, "binding");
+	void bind = get_entity_property(vTarget, "bind");
 
     //Check direction flag to apply any special behaviors.
     if (iDir == 11)
     {
 		// Remove self as a bind. This effectivly releases the binding.
-		set_binding_property(binding, "target", NULL());
+		set_bind_property(bind, "target", NULL());
     }
     else if (iDir == 12)
     {
 		// Remove self as a bind. This effectivly releases the binding.
-		set_binding_property(binding, "target", NULL());
+		set_bind_property(bind, "target", NULL());
     }
     else if (iDir == 13)
     {
 		// Remove self as a bind. This effectivly releases the binding.
-		set_binding_property(binding, "target", NULL());
+		set_bind_property(bind, "target", NULL());
 
 		// Knock bound entity down to reset it.
         damageentity(vTarget, vSelf, 0, 100, openborconstant("ATK_NORMAL"));    
@@ -60,24 +60,20 @@ void bind0004(void vTar, int iX, int iY, int iZ, int iDir, int iAniFlag){
 			iX = dc_kanga_adjust_to_scale_x(vSelf, iX);
 			iY = dc_kanga_adjust_to_scale_y(vSelf, iY);
 		}
-
-		// Get binding toggle and enable flags.
-		void binding_enable = get_binding_property(binding, "positioning");
-		void binding_axis = get_binding_property(binding, "offset");
-
-		// Enable binding on each axis.
-		set_axis_principal_int_property(binding_enable, "x", 1);
-		set_axis_principal_int_property(binding_enable, "y", 1);
-		set_axis_principal_int_property(binding_enable, "z", 1);
+		
+		// Enable binding to target on each axis.
+		set_bind_property(bind, "mode_x", openborconstant("BIND_MODE_TARGET"));
+		set_bind_property(bind, "mode_y", openborconstant("BIND_MODE_TARGET"));
+		set_bind_property(bind, "mode_z", openborconstant("BIND_MODE_TARGET"));
 
 		// Set the binding offset.
-		set_axis_principal_int_property(binding_axis, "x", iX);
-		set_axis_principal_int_property(binding_axis, "y", iY);
-		set_axis_principal_int_property(binding_axis, "z", iZ);
+		set_bind_property(bind, "offset_x", iX);
+		set_bind_property(bind, "offset_y", iY);
+		set_bind_property(bind, "offset_z", iZ);
 
 		// Set other binding properties.
-		set_binding_property(binding, "matching", iAniFlag);
-		set_binding_property(binding, "direction", iDir);
-		set_binding_property(binding, "target", vSelf);
+		set_bind_property(bind, "animation_match", iAniFlag);
+		set_bind_property(bind, "direction", iDir);
+		set_bind_property(bind, "target", vSelf);
     }
 }
