@@ -39,11 +39,72 @@ void main() {
 		// Execute tint effect on entity.
 		dc_kanga_auto_tint(ent);
 
-		//char model = getentityproperty(ent, "model");
+		char model = getentityproperty(ent, "model");
 		
-		//if (model == "Galford")
-		//{			
-		//}
+		//if (getentityproperty(ent, "maxhealth") == 101)
+		//{
+		
+		if(model = "Andy")
+		{
+			//void think = get_entity_property(ent, "function_think");
+			//log("\n think: " + think);
+
+			//void take_damage = get_entity_property(ent, "function_take_damage");
+			//log("\n take_damage: " + take_damage);
+
+			void alt_idle = get_entity_property(ent, "alternate_idle");
+			log("\n alternate_idle: " + alt_idle);
+
+			set_entity_property(ent, "alternate_idle", 1);
+
+			//log("\n\n Recursive:");
+
+			void recursive = get_entity_property(ent, "recursive_damage");
+
+			/*
+			if (recursive)
+			{
+				log("\n\t pointer: " + recursive);
+
+				int force;
+				int index;
+				int mode;
+				void next;
+				void owner;
+				int rate;
+				int tag;
+				int tick;
+				int time;
+				int type;				
+
+				force = get_recursive_damage_property(recursive, "force");
+				index = get_recursive_damage_property(recursive, "index");
+				mode = get_recursive_damage_property(recursive, "mode");
+				next = get_recursive_damage_property(recursive, "next");
+				owner = get_recursive_damage_property(recursive, "owner");
+				rate = get_recursive_damage_property(recursive, "rate");
+				tag = get_recursive_damage_property(recursive, "tag");
+				tick = get_recursive_damage_property(recursive, "tick");
+				time = get_recursive_damage_property(recursive, "time");
+				type = get_recursive_damage_property(recursive, "type");
+
+				log("\n\t force: " + force);
+				log("\n\t index: " + index);
+				log("\n\t mode: " + mode);
+				log("\n\t next: " + next);
+				log("\n\t owner: " + owner);
+				log("\n\t rate: " + rate);
+				log("\n\t tag: " + tag);
+				log("\n\t tick: " + tick);
+				log("\n\t time: " + time);
+				log("\n\t type: " + type);
+			}
+			*/
+		}
+
+		if (model == "Ray")
+		{			
+		}
 	}
 	
 
@@ -55,13 +116,12 @@ void main() {
 
 void dc_kanga_position(void ent, int box, int box_y, int i)
 {
-	void position = get_entity_property(ent, "position_coordinates");
 	int animation = getentityproperty(ent, "animationid");
 	int frame = getentityproperty(ent, "animpos");
 
-	float x = get_axis_principal_float_property(position, "x");
-	float y = get_axis_principal_float_property(position, "y");
-	float z = get_axis_principal_float_property(position, "z");
+	float x = get_entity_property(ent, "position_x");
+	float y = get_entity_property(ent, "position_y");
+	float z = get_entity_property(ent, "position_z");
 
 	settextobj(box, 50, box_y, 0, -1, "ent: " + i + ", Ani: " + animation + "(" + frame + "), X: " + x + ", Y: " + y + ", Z: " + z, openborvariant("elapsed_time") + 200);
 }
