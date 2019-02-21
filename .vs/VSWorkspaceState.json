@@ -2,10 +2,18 @@
   "ExpandedNodes": [
     "",
     "\\data",
+    "\\data\\bgs",
+    "\\data\\bgs\\beach",
+    "\\data\\bgs\\beach\\cabin_cruiser",
+    "\\data\\bgs\\beach\\cabin_cruiser\\scripts",
+    "\\data\\chars",
+    "\\data\\chars\\andy",
+    "\\data\\chars\\galford",
+    "\\data\\chars\\terry",
     "\\data\\scripts",
-    "\\data\\scripts\\dc_grapple",
-    "\\data\\scripts\\vars"
+    "\\data\\scripts\\dc_fidelity",
+    "\\data\\scripts\\dc_terrain"
   ],
-  "SelectedNode": "\\data\\scripts\\dc_grapple\\release.c",
+  "SelectedNode": "\\data\\chars\\terry\\terry.txt",
   "PreviewInSolutionExplorer": false
 }

@@ -9121,6 +9121,171 @@
     <Image Include="data\chars\misc\flash\block\0_10.png">
       <Filter>Resource Files</Filter>
     </Image>
+    <Image Include="..\..\personal\resources\CVS2_Ryu_Sprite.7z\export\openbor\select_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\personal\resources\CVS2_Ryu_Sprite.7z\export\openbor\select_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\select_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\select_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\0_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\0_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\0_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\0_3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\0_4.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\0_5.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\0_6.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\3_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\3_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\3_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\3_3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\3_4.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\3_5.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\3_6.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\3_7.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\4_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\4_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\4_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\4_3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\4_4.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\4_5.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\55_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\55_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\55_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\55_3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\7_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\10_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\10_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\10_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\10_3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\10_4.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\10_5.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\10_6.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\10_7.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\10_8.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\11_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\11_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\11_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\11_3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\11_4.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\11_5.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\11_6.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\11_7.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\2_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\2_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\2_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\2_3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\2_4.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\2_5.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\2_6.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\2_7.png">
+      <Filter>Resource Files</Filter>
+    </Image>
   </ItemGroup>
   <ItemGroup>
     <Text Include="data\levels.txt" />
@@ -9175,6 +9340,7 @@
     <Text Include="data\chars\galford\galford-trails.txt" />
     <Text Include="data\chars\misc\pickups\fatal_fury_scroll\scro0001.txt" />
     <Text Include="data\chars\misc\flash\block.txt" />
+    <Text Include="data\chars\ryu\ryu.txt" />
   </ItemGroup>
   <ItemGroup>
     <None Include="data\chars\andy\wild-ambition-front-throw.psd" />
@@ -9222,6 +9388,8 @@
     <None Include="data\chars\ray\pal_11.ACT" />
     <None Include="data\chars\ray\pal_dev.ACT" />
     <None Include="a26efe22.exe" />
+    <None Include="..\..\personal\resources\pal_0.ACT" />
+    <None Include="data\chars\ryu\pal_0.act" />
   </ItemGroup>
   <ItemGroup>
     <Media Include="data\chars\galford\sounds\voice-atk-0.wav">

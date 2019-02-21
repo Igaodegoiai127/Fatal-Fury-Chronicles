@@ -1,0 +1,275 @@
+name	     	Ryu
+type	     	player
+bounce	     	2
+health	     	200
+speed	     	12
+holdblock    	2
+nopassiveblock  1
+nodieblink   	2
+falldie      	2
+risetime     	150
+running      	25 4 2 1 1
+makeinv      	3
+projectilehit 	player
+candamage     	enemy obstacle
+hostile			enemy
+gfxshadow    	1
+blockpain    	1
+sleepwait       1000
+combostyle		1
+atchain      	1 2 3 4 0 5 6 7
+height 			95
+dust			flash_fall_land dust0003 dust0002
+mpset 			100 3 50 1 2 2
+jumpheight		4
+bflash			Block
+
+palette	       data/chars/ryu/pal_0.act
+
+anim selectin
+
+	delay	1
+	fshadow 0
+	offset	100 122
+		frame	data/chars/ryu/select_0.png
+	offset	100 132
+		frame	data/chars/ryu/select_0.png
+	offset	100 142
+		frame	data/chars/ryu/select_0.png
+	offset	100 152
+		frame	data/chars/ryu/select_0.png
+	offset	100 162
+		frame	data/chars/ryu/select_0.png
+	offset	100 172
+		frame	data/chars/ryu/select_0.png
+	offset	100 182
+		frame	data/chars/ryu/select_0.png
+	offset	100 192
+		frame	data/chars/ryu/select_0.png
+	offset	100 202
+		frame	data/chars/ryu/select_0.png
+	offset	100 212
+		frame	data/chars/ryu/select_0.png
+	offset	100 222
+		frame	data/chars/ryu/select_0.png
+	offset	100 232
+		frame	data/chars/ryu/select_0.png
+	offset	100 242
+		frame	data/chars/ryu/select_0.png
+	offset	100 252
+		frame	data/chars/ryu/select_0.png
+	offset	100 262
+		frame	data/chars/ryu/select_0.png
+
+anim selectout
+
+	delay	1
+	offset	100 262
+	fshadow 0
+		frame	data/chars/ryu/select_0.png
+	offset	100 252
+		frame	data/chars/ryu/select_0.png
+	offset	100 242
+		frame	data/chars/ryu/select_0.png
+	offset	100 232
+		frame	data/chars/ryu/select_0.png
+	offset	100 222
+		frame	data/chars/ryu/select_0.png
+	offset	100 212
+		frame	data/chars/ryu/select_0.png
+	offset	100 202
+		frame	data/chars/ryu/select_0.png
+	offset	100 192
+		frame	data/chars/ryu/select_0.png
+	offset	100 182
+		frame	data/chars/ryu/select_0.png
+	offset	100 172
+		frame	data/chars/ryu/select_0.png
+	offset	100 162
+		frame	data/chars/ryu/select_0.png
+	offset	100 152
+		frame	data/chars/ryu/select_0.png
+	offset	100 142
+		frame	data/chars/ryu/select_0.png
+	offset	100 132
+		frame	data/chars/ryu/select_0.png
+	offset	100 122
+		frame	data/chars/ryu/select_0.png
+
+anim waiting
+
+	fshadow 0
+	delay	1	
+	offset	100 272
+		frame	data/chars/ryu/select_1.png
+
+anim idle
+
+	loop 	1
+	
+		delay	10
+		offset	82 147
+	
+		bbox.position.x	130
+		bbox.position.y 120
+		bbox.size.x		45
+		bbox.size.y		90
+
+	frame	data/chars/ryu/0_0.png
+	frame	data/chars/ryu/0_1.png
+	frame	data/chars/ryu/0_2.png
+	frame	data/chars/ryu/0_3.png
+	frame	data/chars/ryu/0_4.png
+	frame	data/chars/ryu/0_5.png
+	frame	data/chars/ryu/0_6.png
+
+anim walk
+
+	loop 	1
+	
+		delay	10
+		offset	82 147
+	
+		bbox.position.x	130
+		bbox.position.y 120
+		bbox.size.x		45
+		bbox.size.y		90
+
+	frame	data/chars/ryu/2_0.png
+	frame	data/chars/ryu/2_1.png
+	frame	data/chars/ryu/2_2.png
+	frame	data/chars/ryu/2_3.png
+	frame	data/chars/ryu/2_4.png
+	frame	data/chars/ryu/2_5.png
+	frame	data/chars/ryu/2_6.png
+	frame	data/chars/ryu/2_7.png
+
+anim backwalk
+
+	loop 	1
+	
+		delay	10
+		offset	82 147
+	
+		bbox.position.x	130
+		bbox.position.y 120
+		bbox.size.x		45
+		bbox.size.y		90
+
+	frame	data/chars/ryu/3_0.png
+	frame	data/chars/ryu/3_1.png
+	frame	data/chars/ryu/3_2.png
+	frame	data/chars/ryu/3_3.png
+	frame	data/chars/ryu/3_4.png
+	frame	data/chars/ryu/3_5.png
+	frame	data/chars/ryu/3_6.png
+	frame	data/chars/ryu/3_7.png
+
+anim run
+
+		loop 	1	
+		delay	10
+		offset	82 147
+	
+		bbox.position.x	130
+		bbox.position.y 120
+		bbox.size.x		45
+		bbox.size.y		90
+
+	frame	data/chars/ryu/4_0.png
+	frame	data/chars/ryu/4_1.png
+	frame	data/chars/ryu/4_2.png
+	frame	data/chars/ryu/4_3.png
+	frame	data/chars/ryu/4_4.png
+	frame	data/chars/ryu/4_5.png
+
+anim charge
+
+		loop	1 2
+		delay	10
+		offset	82 147
+
+		bbox.position.x	130
+		bbox.position.y 120
+		bbox.size.x		45
+		bbox.size.y		90
+
+	frame	data/chars/ryu/55_0.png
+	frame	data/chars/ryu/55_1.png
+		delay	4
+	frame	data/chars/ryu/55_2.png
+	frame	data/chars/ryu/55_3.png
+
+anim jumpdelay
+
+		delay	8
+		offset	82 147
+	
+		bbox.position.x	130
+		bbox.position.y 120
+		bbox.size.x		45
+		bbox.size.y		90
+
+	frame	data/chars/ryu/7_0.png
+
+anim jumpland
+
+		delay	8
+		offset	82 147
+	
+		bbox.position.x	130
+		bbox.position.y 120
+		bbox.size.x		45
+		bbox.size.y		90
+
+	frame	data/chars/ryu/7_0.png
+	frame	data/chars/ryu/7_1.png
+	frame	data/chars/ryu/7_0.png
+
+anim jump
+
+		delay	-1000
+		offset	82 147
+
+		dropframe 1
+	
+		bbox.position.x	130
+		bbox.position.y 120
+		bbox.size.x		45
+		bbox.size.y		90
+
+	frame	data/chars/ryu/10_0.png
+		delay	8
+	frame	data/chars/ryu/10_1.png
+	frame	data/chars/ryu/10_2.png
+	frame	data/chars/ryu/10_3.png
+	frame	data/chars/ryu/10_4.png
+	frame	data/chars/ryu/10_5.png
+	frame	data/chars/ryu/10_6.png
+	frame	data/chars/ryu/10_7.png
+	frame	data/chars/ryu/10_8.png
+
+anim forwardjump
+
+		delay	-1000
+		offset	82 147
+
+		dropframe 1
+	
+		bbox.position.x	130
+		bbox.position.y 120
+		bbox.size.x		45
+		bbox.size.y		90
+
+	frame	data/chars/ryu/11_0.png
+		delay	8
+	frame	data/chars/ryu/11_1.png
+	frame	data/chars/ryu/11_2.png
+	frame	data/chars/ryu/11_3.png
+	frame	data/chars/ryu/11_4.png
+	frame	data/chars/ryu/11_5.png
+	frame	data/chars/ryu/11_6.png
+	frame	data/chars/ryu/11_7.png
+
+
+
