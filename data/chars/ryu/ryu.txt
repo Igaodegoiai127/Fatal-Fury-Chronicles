@@ -110,10 +110,10 @@ anim idle
 		delay	10
 		offset	82 147
 	
-		bbox.position.x	130
-		bbox.position.y 120
-		bbox.size.x		45
-		bbox.size.y		90
+		bbox.position.x	66
+		bbox.position.y 49
+		bbox.size.x		38
+		bbox.size.y		98
 
 	frame	data/chars/ryu/0_0.png
 	frame	data/chars/ryu/0_1.png
