@@ -9,7 +9,7 @@ iconpain     	data/chars/andy/aaic0003 		#Pain.
 
 #*****General*****
 
-name	     	Andy
+name	     	Andy_Bogard
 type	     	player
 bounce	     	2
 health	     	200
@@ -123,70 +123,70 @@ anim selectin
 		offset	100 272
 		fshadow 0
 		offset	100 122
-	frame	data/chars/andy/aawa0001
+	frame	data/chars/andy/select_0.png
 		offset	100 132
-	frame	data/chars/andy/aawa0001
+	frame	data/chars/andy/select_0.png
 		offset	100 142
-	frame	data/chars/andy/aawa0001
+	frame	data/chars/andy/select_0.png
 		offset	100 152
-	frame	data/chars/andy/aawa0001
+	frame	data/chars/andy/select_0.png
 		offset	100 162
-	frame	data/chars/andy/aawa0001
+	frame	data/chars/andy/select_0.png
 		offset	100 172
-	frame	data/chars/andy/aawa0001
+	frame	data/chars/andy/select_0.png
 		offset	100 182
-	frame	data/chars/andy/aawa0001
+	frame	data/chars/andy/select_0.png
 		offset	100 192
-	frame	data/chars/andy/aawa0001
+	frame	data/chars/andy/select_0.png
 		offset	100 202
-	frame	data/chars/andy/aawa0001
+	frame	data/chars/andy/select_0.png
 		offset	100 212
-	frame	data/chars/andy/aawa0001
+	frame	data/chars/andy/select_0.png
 		offset	100 222
-	frame	data/chars/andy/aawa0001
+	frame	data/chars/andy/select_0.png
 		offset	100 232
-	frame	data/chars/andy/aawa0001
+	frame	data/chars/andy/select_0.png
 		offset	100 242
-	frame	data/chars/andy/aawa0001
+	frame	data/chars/andy/select_0.png
 		offset	100 252
-	frame	data/chars/andy/aawa0001
+	frame	data/chars/andy/select_0.png
 		offset	100 262
-	frame	data/chars/andy/aawa0001
+	frame	data/chars/andy/select_0.png
 
 anim selectout
 
 		delay	1
 		offset	100 262
 		fshadow 0
-	frame data/chars/andy/aawa0001
+	frame data/chars/andy/select_0.png
 		offset	100 252
-	frame data/chars/andy/aawa0001
+	frame data/chars/andy/select_0.png
 		offset	100 242
-	frame data/chars/andy/aawa0001
+	frame data/chars/andy/select_0.png
 		offset	100 232
-	frame data/chars/andy/aawa0001
+	frame data/chars/andy/select_0.png
 		offset	100 222
-	frame data/chars/andy/aawa0001
+	frame data/chars/andy/select_0.png
 		offset	100 212
-	frame data/chars/andy/aawa0001
+	frame data/chars/andy/select_0.png
 		offset	100 202
-	frame data/chars/andy/aawa0001
+	frame data/chars/andy/select_0.png
 		offset	100 192
-	frame data/chars/andy/aawa0001
+	frame data/chars/andy/select_0.png
 		offset	100 182
-	frame data/chars/andy/aawa0001
+	frame data/chars/andy/select_0.png
 		offset	100 172
-	frame data/chars/andy/aawa0001
+	frame data/chars/andy/select_0.png
 		offset	100 162
-	frame data/chars/andy/aawa0001
+	frame data/chars/andy/select_0.png
 		offset	100 152
-	frame data/chars/andy/aawa0001
+	frame data/chars/andy/select_0.png
 		offset	100 142
-	frame data/chars/andy/aawa0001
+	frame data/chars/andy/select_0.png
 		offset	100 132
-	frame data/chars/andy/aawa0001
+	frame data/chars/andy/select_0.png
 		offset	100 122
-	frame data/chars/andy/aawa0001
+	frame data/chars/andy/select_0.png
 
 anim waiting
 
@@ -194,7 +194,7 @@ anim waiting
 		offset	100 272
 		fshadow 0
 		offset	100 272
-	frame	data/chars/andy/aawa0002
+	frame data/chars/andy/select_0.png
 
 anim select
 

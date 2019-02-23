@@ -101,7 +101,7 @@ anim waiting
 	fshadow 0
 	delay	1	
 	offset	100 272
-		frame	data/chars/ryu/select_1.png
+		frame	data/chars/ryu/select_0.png
 
 anim idle
 

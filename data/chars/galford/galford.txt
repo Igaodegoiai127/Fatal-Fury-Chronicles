@@ -9,7 +9,7 @@ iconpain     	data/chars/andy/aaic0003 		#Pain.
 
 #*****General*****
 
-name	     	Galford
+name	     	Galford_Weller
 type	     	player
 bounce	     	2
 health	     	200
@@ -156,14 +156,14 @@ anim waiting
 	fshadow 0
 	delay	1	
 	offset	160 272
-		frame	data/chars/galford/select_1.png
+		frame	data/chars/galford/select_0.png
 
 anim select
 
 		delay	8
 		fshadow 0
 		offset	160 272
-	frame	data/chars/galford/select_1.png
+	frame	data/chars/galford/select_0.png
 	
 anim idle
 
