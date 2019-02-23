@@ -46,20 +46,23 @@ void main() {
 		
 		if(model = "Andy")
 		{
+			// ~~ Function Think debug.
 			//void think = get_entity_property(ent, "function_think");
 			//log("\n think: " + think);
 
+			// ~~ Function Take damage debug.
 			//void take_damage = get_entity_property(ent, "function_take_damage");
 			//log("\n take_damage: " + take_damage);
 
-			void alt_idle = get_entity_property(ent, "alternate_idle");
-			log("\n alternate_idle: " + alt_idle);
+			// ~~ Alternate idle debug.
+			//void alt_idle = get_entity_property(ent, "alternate_idle");
+			//log("\n alternate_idle: " + alt_idle);
 
-			set_entity_property(ent, "alternate_idle", 1);
+			//set_entity_property(ent, "alternate_idle", 1);
 
+			// ~~ Recursive damage debug.
 			//log("\n\n Recursive:");
-
-			void recursive = get_entity_property(ent, "recursive_damage");
+			//void recursive = get_entity_property(ent, "recursive_damage");
 
 			/*
 			if (recursive)
