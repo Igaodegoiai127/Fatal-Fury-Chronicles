@@ -24,6 +24,12 @@ void main()
 	//trai0001();
 	//trai0002();
 
+	setdrawmethod(NULL(), 1, 512, 512, 0, 0, 0, 1, -1, 0, 0, 0, 0);
+
+	//changedrawmethod(NULL(), "scalex", 512);
+	//changedrawmethod(NULL(), "scaley", 512);
+	//changedrawmethod(NULL(), "enabled", 1);
+
 	dc_draw_select_names();
 	
 }
@@ -39,6 +45,8 @@ void dc_draw_select_names()
 	#define FONT_Y				18	// Vertical size of font (unavailable as of 2019-02-22). Includes margin.
 	#define SELECT_Y_BASE		105
 	#define SPACE_CHAR			"_"
+	#define	MAX_DRAW_SIZE		256 * 10
+	#define MAX_DRAW_SIZE_TIME	100
 
 	// Don't waste any more cycles if we aren't 
 	// in select screen.
@@ -62,6 +70,11 @@ void dc_draw_select_names()
 	int section_size;
 	int section_half;
 
+	int elapsed_time;
+	int select_time;
+
+	elapsed_time = openborvariant("elapsed_time");
+
 	maxplayers = openborvariant("maxplayers");
 
 	// Divide up the screen into even sections for each player.
@@ -70,6 +83,34 @@ void dc_draw_select_names()
 
 	for (i = 0; i < maxplayers; i++)
 	{
+		// When did player select a character?
+		select_time = getlocalvar("dc_draw_select_p" + i);
+
+		if (getplayerproperty(i, "playkeys") && !select_time)
+		{
+			setlocalvar("dc_draw_select_p" + i, elapsed_time + MAX_DRAW_SIZE_TIME);
+		}
+
+		if (select_time > elapsed_time)
+		{
+			int scale_size;
+			int base_time;
+			int difference;
+
+			// Get time when selection was made.
+			base_time = select_time - MAX_DRAW_SIZE_TIME;
+
+			difference = select_time - base_time;
+
+			float percentage = difference / MAX_DRAW_SIZE_TIME;
+
+			changedrawmethod(NULL(), "scalex", percentage * 256);
+			changedrawmethod(NULL(), "scaley", percentage * 256);
+		}
+
+		
+
+		
 		// Get to start of our section, and add half to find the center.
 		x_base = (dc_player_multiplier(i) * section_size) + section_half;
 
@@ -105,6 +146,10 @@ void dc_draw_select_names()
 
 			drawstring(x_pos, y_pos, WAIT_NAME_FONT, name_last);
 		}
+
+		// Restore drawmethod.
+		//changedrawmethod(NULL(), "scalex", 256);
+		//changedrawmethod(NULL(), "scaley", 256);
 	}
 
 	#undef SELECT_NAME_FONT
