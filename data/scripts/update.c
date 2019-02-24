@@ -5,6 +5,23 @@ void oncreate()
 	log("\t");
 	log("- oncreate().");
 	log("\n");
+
+	int i;
+	int maxplayers;
+	void screen;
+
+	maxplayers = openborvariant("maxplayers");
+	
+	for (i = 0; i < maxplayers; i++)
+	{
+		screen = allocscreen(openborvariant("hResolution"), openborvariant("vResolution"));
+
+		setlocalvar("dc_player_screen_" + i, screen);
+	}
+	
+	
+
+	
 }
 
 void ondestroy()
@@ -14,6 +31,20 @@ void ondestroy()
 	log("\t");
 	log("- ondestroy().");
 	log("\n");
+
+	int i;
+	int maxplayers;
+	void screen;
+
+	maxplayers = openborvariant("maxplayers");
+
+	// Destroy player sreens.
+	for (i = 0; i < maxplayers; i++)
+	{
+		screen = getlocalvar("dc_player_screen_" + i);
+	
+		free(screen);
+	}
 }
 
 
@@ -73,6 +104,8 @@ void dc_draw_select_names()
 	int elapsed_time;
 	int select_time;
 
+	void screen;
+
 	elapsed_time = openborvariant("elapsed_time");
 
 	maxplayers = openborvariant("maxplayers");
@@ -108,9 +141,10 @@ void dc_draw_select_names()
 			changedrawmethod(NULL(), "scaley", percentage * 256);
 		}
 
-		
+		// Get player screen.
+		screen = getlocalvar("dc_player_screen_" + i);
+		clearscreen(screen);
 
-		
 		// Get to start of our section, and add half to find the center.
 		x_base = (dc_player_multiplier(i) * section_size) + section_half;
 
@@ -123,7 +157,8 @@ void dc_draw_select_names()
 			x_pos = dc_center_string_x(x_base, name_full, WAIT_NAME_FONT);
 			y_pos = dc_center_string_y(SELECT_Y_BASE, name_full, FONT_Y);
 
-			drawstring(x_pos, y_pos, WAIT_NAME_FONT, name_full);
+			//drawstring(x_pos, y_pos, WAIT_NAME_FONT, name_full);
+			drawstringtoscreen(screen, x_pos, y_pos, WAIT_NAME_FONT, name_full);
 		}
 		else
 		{
@@ -134,7 +169,8 @@ void dc_draw_select_names()
 			name_first = strleft(name_full, strlength(name_full) - strlength(name_last));
 			x_pos = dc_center_string_x(x_base, name_first, WAIT_NAME_FONT);
 
-			drawstring(x_pos, y_pos, WAIT_NAME_FONT, name_first);
+			//drawstring(x_pos, y_pos, WAIT_NAME_FONT, name_first);
+			drawstringtoscreen(screen, x_pos, y_pos, WAIT_NAME_FONT, name_first);
 
 			// Remove sapce character from last name.
 			name_last = strright(name_last, 1);
@@ -144,8 +180,14 @@ void dc_draw_select_names()
 			// Add vertical font space.
 			y_pos += FONT_Y;
 
-			drawstring(x_pos, y_pos, WAIT_NAME_FONT, name_last);
+			//drawstring(x_pos, y_pos, WAIT_NAME_FONT, name_last);
+			drawstringtoscreen(screen, x_pos, y_pos, WAIT_NAME_FONT, name_last);
 		}
+
+		// draw player screen.
+		changedrawmethod(NULL(), "scalex", 256);
+		changedrawmethod(NULL(), "scaley", 256);
+		drawscreen(screen, 0, 0, openborvariant("PLAYER_MAX_Z") + 1000, 0);
 
 		// Restore drawmethod.
 		//changedrawmethod(NULL(), "scalex", 256);
@@ -204,3 +246,36 @@ int dc_player_multiplier(int player)
 	}
 }
 
+void zoom()
+{
+	void vscreen = openborvariant("vscreen");
+	int maxz = openborvariant("PLAYER_MAX_Z") + 1000;
+	int zoom_value = getglobalvar("zoomvalue");
+	int zoom_x = getglobalvar("zoomx");
+	int zoom_y = getglobalvar("zoomy");
+	void ent = getglobalvar("zoomentity");
+	int px = getentityproperty(ent, "x") + zoom_x - openborvariant("xpos");
+	int py = getentityproperty(ent, "z") + zoom_y - openborvariant("ypos"); //- getentityproperty(ent,"a");
+	void zoom_scr = getglobalvar("zoomscreen");
+	if (!zoom_scr) {
+		zoom_scr = allocscreen(openborvariant("hResolution"), openborvariant("vResolution"));
+		setglobalvar("zoomscreen", zoom_scr);
+	}
+	clearscreen(zoom_scr);
+
+	//draw what we need
+	drawspriteq(zoom_scr, 0, openborconstant("MIN_INT"), maxz, 0, 0);
+	//setup drawMethod
+	changedrawmethod(NULL(), "reset", 1);
+	changedrawmethod(NULL(), "enabled", 1);
+	changedrawmethod(NULL(), "scalex", zoom_value);
+	changedrawmethod(NULL(), "scaley", zoom_value);
+	changedrawmethod(NULL(), "centerx", px);
+	changedrawmethod(NULL(), "centery", py);
+	//Draw the resized customized screen to main screen.
+	drawscreen(zoom_scr, px, py, maxz + 1);
+	changedrawmethod(NULL(), "enabled", 0);
+	drawspriteq(vscreen, 0, maxz + 1, maxz + 1, 0, 0);
+	drawspriteq(vscreen, 0, maxz + 2, openborconstant("MAX_INT"), 0, 0);
+	clearspriteq();
+}
