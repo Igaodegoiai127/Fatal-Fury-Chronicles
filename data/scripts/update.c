@@ -55,13 +55,13 @@ void main()
 	//trai0001();
 	//trai0002();
 
-	setdrawmethod(NULL(), 1, 512, 512, 0, 0, 0, 1, -1, 0, 0, 0, 0);
+	//setdrawmethod(NULL(), 1, 512, 512, 0, 0, 0, 1, -1, 0, 0, 0, 0);
 
 	//changedrawmethod(NULL(), "scalex", 512);
 	//changedrawmethod(NULL(), "scaley", 512);
 	//changedrawmethod(NULL(), "enabled", 1);
 
-	dc_draw_select_names();
+	//dc_draw_select_names();
 	
 }
 
@@ -77,13 +77,13 @@ void dc_draw_select_names()
 	#define SELECT_Y_BASE		105
 	#define SPACE_CHAR			"_"
 	#define	MAX_DRAW_SIZE		256 * 10
-	#define MAX_DRAW_SIZE_TIME	100
+	#define MAX_DRAW_SIZE_TIME	1000
 
 	// Don't waste any more cycles if we aren't 
 	// in select screen.
 	if (!openborvariant("in_selectscreen"))
 	{
-		return;
+		//return;
 	}
 
 	int i;
@@ -124,26 +124,31 @@ void dc_draw_select_names()
 			setlocalvar("dc_draw_select_p" + i, elapsed_time + MAX_DRAW_SIZE_TIME);
 		}
 
+		// Get player screen.
+		screen = getlocalvar("dc_player_screen_" + i);
+		clearscreen(screen);
+
 		if (select_time > elapsed_time)
 		{
 			int scale_size;
 			int base_time;
 			int difference;
 
-			// Get time when selection was made.
 			base_time = select_time - MAX_DRAW_SIZE_TIME;
 
-			difference = select_time - base_time;
-
-			float percentage = difference / MAX_DRAW_SIZE_TIME;
+			float percentage = (((elapsed_time - base_time) * 100) / (select_time - base_time)) * 0.01;
 
 			changedrawmethod(NULL(), "scalex", percentage * 256);
 			changedrawmethod(NULL(), "scaley", percentage * 256);
+
+			drawstring(200, 30 + (i * 10), 1, "s: " + select_time + ", e: " + elapsed_time + ", s-e: " + (select_time - elapsed_time) + " p: " + percentage);
+		}
+		else
+		{
+			changedrawmethod(NULL(), "reset", 1);
 		}
 
-		// Get player screen.
-		screen = getlocalvar("dc_player_screen_" + i);
-		clearscreen(screen);
+		
 
 		// Get to start of our section, and add half to find the center.
 		x_base = (dc_player_multiplier(i) * section_size) + section_half;
@@ -185,9 +190,12 @@ void dc_draw_select_names()
 		}
 
 		// draw player screen.
-		changedrawmethod(NULL(), "scalex", 256);
-		changedrawmethod(NULL(), "scaley", 256);
+		changedrawmethod(NULL(), "enabled", 1);
+		changedrawmethod(NULL(), "scalex", 1.5);
+		changedrawmethod(NULL(), "scaley", 1.5);
+		changedrawmethod(screen, "alpha", 1);
 		drawscreen(screen, 0, 0, openborvariant("PLAYER_MAX_Z") + 1000, 0);
+		changedrawmethod(NULL(), "reset", 1);
 
 		// Restore drawmethod.
 		//changedrawmethod(NULL(), "scalex", 256);
