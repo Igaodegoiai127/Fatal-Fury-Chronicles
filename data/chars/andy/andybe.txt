@@ -33,7 +33,7 @@ onkillscript		data/scripts/common/event_kill.c
 #*****Alternates*******
 
 palette 	data/chars/misc/effects/effe0061	#Geki Hishoken blast.
-alternatepal	data/chars/andy/aapa0000		#KO map.
+alternatepal	data/chars/andy/default.act		#KO map.
 alternatepal   	data/chars/misc/effects/effe0143 	#Shoryudan slash.
 alternatepal	data/chars/misc/effects/effe0085	#Cho Reppa Dan
 

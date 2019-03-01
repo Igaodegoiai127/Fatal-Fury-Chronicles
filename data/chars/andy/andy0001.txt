@@ -3,9 +3,9 @@
 
 #*****icons*****
 
-icon         	data/chars/andy/aaic0001		#Normal.
-icondie	     	data/chars/andy/aaic0002 		#KO.
-iconpain     	data/chars/andy/aaic0003 		#Pain.
+icon         	data/chars/andy/icon_default.png	1
+icondie	     	data/chars/andy/icon_ko.png			1
+iconpain     	data/chars/andy/icon_pain.png		1
 
 #*****General*****
 
@@ -24,27 +24,25 @@ makeinv      	3
 projectilehit 	player
 candamage     	enemy obstacle
 hostile			enemy
-hmap         	1 5
 gfxshadow    	1
 blockpain    	1
 sleepwait       1000
 combostyle	1
 atchain      	1 2 3 4 0 5 6 7
 height 		95
-komap		1 0
 dust		flash_fall_land dust0003 dust0002
 mpset 		100 3 50 1 2 2
 
 #*****Scripts*****
 
-script				data/chars/andy/scripts/update.c
-keyscript 			data/chars/andy/scripts/key.c
+script			data/chars/andy/scripts/update.c
+keyscript 		data/chars/andy/scripts/key.c
 animationscript 	data/chars/andy/scripts/ani_p.c
 didblockscript  	data/scripts/common/event_block.c
 takedamagescript	data/chars/andy/scripts/dama0001.c
 didhitscript		data/scripts/common/event_hit.c
 onmovezscript		data/scripts/common/event_move_z.c
-onspawnscript		data/scripts/common/event_spawn_level_items.c
+#onspawnscript		data/scripts/common/event_spawn_level_items.c
 onfallscript		data/chars/andy/scripts/fall0001.c
 onpainscript		data/scripts/common/event_pain.c
 
@@ -55,18 +53,8 @@ load	andypa		#Pause visuals
 
 #*****Alternates*******
 
-palette	       data/chars/andy/aapa0000		#Default.
-alternatepal   data/chars/andy/aapa0001 	#KO.
-alternatepal   data/chars/andy/aapa0002 	#Burn.
-alternatepal   data/chars/andy/aapa0003 	#Shock.
-alternatepal   data/chars/andy/aapa0004 	#Freeze.
-alternatepal   data/chars/andy/aapa0005 	#Poison.
-alternatepal   data/chars/andy/aapa0011 	#KOF 2001.
-alternatepal   data/chars/andy/aapa0012 	#KOF 2002.
-alternatepal   data/chars/andy/aapa0013 	#FF2 Alt.
-alternatepal   data/chars/andy/aapa0014 	#Navy.
-alternatepal   data/chars/andy/aapa0015 	#Black.
-alternatepal   data/chars/andy/aapa0016 	#Red, blue trim.
+palette	       data/chars/andy/default.act
+alternatepal   data/chars/andy/charcoal.act
 
 #*****Commands*****************************************************************************
 
