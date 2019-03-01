@@ -14,8 +14,8 @@
 #define	MAX_DRAW_SIZE		256 * 10
 #define MAX_DRAW_SIZE_TIME	100
 
-#define OG_SCREEN_BASE_POS_X 0
-#define OG_SCREEN_BASE_POS_Y 0
+#define OG_SCREEN_BASE_POS_X openborvariant("hresolution") / 2
+#define OG_SCREEN_BASE_POS_Y openborvariant("vresolution") / 2
 
 #define OG_SCREEN_SCALE_MAX_X 256
 #define OG_SCREEN_SCALE_MAX_Y 256
@@ -26,20 +26,7 @@ void oncreate()
 	log("updated.c");
 	log("\t");
 	log("- oncreate().");
-	log("\n");
-
-	int i;
-	int maxplayers;
-	void screen;
-
-	maxplayers = openborvariant("maxplayers");
-
-	for (i = 0; i < maxplayers; i++)
-	{
-		screen = allocscreen(openborvariant("hResolution"), openborvariant("vResolution"));
-
-		setlocalvar("dc_player_screen_" + i, screen);
-	}
+	log("\n");	
 }
 
 void ondestroy()
@@ -49,20 +36,6 @@ void ondestroy()
 	log("\t");
 	log("- ondestroy().");
 	log("\n");
-
-	int i;
-	int maxplayers;
-	void screen;
-
-	maxplayers = openborvariant("maxplayers");
-
-	// Destroy player sreens.
-	for (i = 0; i < maxplayers; i++)
-	{
-		screen = getlocalvar("dc_player_screen_" + i);
-
-		free(screen);
-	}
 }
 
 void main() {
@@ -107,15 +80,17 @@ void dc_kanga_position(void ent, int box, int box_y, int i)
 	settextobj(box, 50, box_y, 0, -1, "ent: " + i + ", Ani: " + animation + "(" + frame + "), X: " + x + ", Y: " + y + ", Z: " + z, openborvariant("elapsed_time") + 200);
 }
 
-void dc_get_screen(int index)
+void dc_get_screen(int index, int size_x, int size_y)
 {
 	void screen;
-	char screen_key;
+	char screen_key;	
+	char size_x_key;
+	char size_y_key;
 	
-	screen_key = DC_UPDATED_KEY_SCREEN + index;
-
+	screen_key = DC_UPDATED_KEY_SCREEN + index;	
+	
 	// Get current screen.
-	screen = getlocalvar(screen_key);
+	screen = getlocalvar(screen_key);	
 
 	// If no screen is set up,
 	// initialize it here.
@@ -124,9 +99,9 @@ void dc_get_screen(int index)
 		// Allocate screen and use it to populate
 		// the screen variable, then populate
 		// background variable.
-		screen = allocscreen(OG_SCREEN_SIZE_MAX_X, OG_SCREEN_SIZE_MAX_Y);
-		setlocalvar(screen_key, screen);
-	}
+		screen = allocscreen(size_x, size_y);
+		setlocalvar(screen_key, screen);		
+	}	
 
 	return screen;
 }
@@ -137,13 +112,11 @@ void dc_get_screen(int index)
 // Draws names of characters during select screen.
 void dc_draw_select_names()
 {
-
-
 	// Don't waste any more cycles if we aren't 
 	// in select screen.
 	if (!openborvariant("in_selectscreen"))
 	{
-		//return;
+		return;
 	}
 
 	int i;
@@ -169,9 +142,13 @@ void dc_draw_select_names()
 	int screen_scale_x;
 	int screen_scale_y;
 
+	int scale_add;
+
+	int screen_width;
+	int screen_height;
+
 
 	elapsed_time = openborvariant("elapsed_time");
-
 	maxplayers = openborvariant("maxplayers");
 
 	// Divide up the screen into even sections for each player.
@@ -179,48 +156,7 @@ void dc_draw_select_names()
 	section_half = section_size / 2;
 
 	for (i = 0; i < maxplayers; i++)
-	{
-		// When did player select a character?
-		select_time = getlocalvar("dc_draw_select_p" + i);
-
-		if (getplayerproperty(i, "playkeys") & openborconstant("FLAG_ANYBUTTON") && !select_time)
-		{
-			setlocalvar("dc_draw_select_p" + i, elapsed_time + MAX_DRAW_SIZE_TIME);
-		}
-
-		// Get player screen.
-		screen = dc_get_screen(i);
-
-		clearscreen(screen);
-		//drawspriteq(screen, 0, openborconstant("MIN_INT"), openborvariant("PLAYER_MAX_Z"), 0, 0);
-
-
-		if (select_time > elapsed_time)
-		{
-			int scale_size;
-			int base_time;
-			int difference;
-
-			base_time = select_time - MAX_DRAW_SIZE_TIME;
-
-			float percentage = (((elapsed_time - base_time) * 100) / (select_time - base_time)) * 0.01;
-
-			screen_scale_x = OG_SCREEN_SCALE_MAX_X + trunc(2560 * percentage);
-			screen_scale_y = OG_SCREEN_SCALE_MAX_X + trunc(2560 * percentage);
-
-			log("\n screen_scale_x: " + screen_scale_x);
-			log("\n screen_scale_y: " + screen_scale_x);
-
-			//screen_scale_x = OG_SCREEN_SCALE_MAX_X;
-			//screen_scale_y = OG_SCREEN_SCALE_MAX_Y;
-		}			
-		else
-		{
-			screen_scale_x = OG_SCREEN_SCALE_MAX_X;
-			screen_scale_y = OG_SCREEN_SCALE_MAX_Y;
-		}
-		
-
+	{		
 		// Get to start of our section, and add half to find the center.
 		x_base = (dc_player_multiplier(i) * section_size) + section_half;
 
@@ -233,11 +169,14 @@ void dc_draw_select_names()
 			x_pos = dc_center_string_x(x_base, name_full, WAIT_NAME_FONT);
 			y_pos = dc_center_string_y(SELECT_Y_BASE, name_full, FONT_Y);
 
-			//drawstring(x_pos, y_pos, WAIT_NAME_FONT, name_full);
-			drawstringtoscreen(screen, x_pos, y_pos, WAIT_NAME_FONT, name_full);
+			screen_width = strwidth(name_full, WAIT_NAME_FONT);
+			screen_height = FONT_Y;			
+
+			drawstring(x_pos, y_pos, WAIT_NAME_FONT, name_full);
+			//drawstringtoscreen(screen, x_pos, y_pos, WAIT_NAME_FONT, name_full);			
 		}
 		else
-		{
+		{			
 			// Get a Y center based on two lines (first name, last name).
 			y_pos = dc_center_string_y(SELECT_Y_BASE, name_last, FONT_Y * 2);
 
@@ -245,10 +184,8 @@ void dc_draw_select_names()
 			name_first = strleft(name_full, strlength(name_full) - strlength(name_last));
 			x_pos = dc_center_string_x(x_base, name_first, WAIT_NAME_FONT);
 
-			
-			//drawstring(x_pos, y_pos, WAIT_NAME_FONT, name_first);
-
-			drawstringtoscreen(screen, x_pos, y_pos, WAIT_NAME_FONT, name_first);
+			drawstring(x_pos, y_pos, WAIT_NAME_FONT, name_first);
+			//drawstringtoscreen(screen, x_pos, y_pos, WAIT_NAME_FONT, name_first);
 
 			// Remove sapce character from last name.
 			name_last = strright(name_last, 1);
@@ -258,11 +195,17 @@ void dc_draw_select_names()
 			// Add vertical font space.
 			y_pos += FONT_Y;
 
-			//drawstring(x_pos, y_pos, WAIT_NAME_FONT, name_last);
-			drawstringtoscreen(screen, x_pos, y_pos, WAIT_NAME_FONT, name_last);
+			drawstring(x_pos, y_pos, WAIT_NAME_FONT, name_last);
+			//drawstringtoscreen(screen, x_pos, y_pos, WAIT_NAME_FONT, name_last);
+
+			screen_width = strwidth(name_first, WAIT_NAME_FONT);
+			screen_height = FONT_Y;
 		}
 
-		dc_draw_text_screen(screen, screen_scale_x, screen_scale_y);
+		//string_width = 20;
+		//log("\n str w(" + i +"): +" + screen_width);
+		//screen = dc_get_screen(i, screen_width, screen_height);
+		//dc_draw_text_screen(screen, screen_scale_x, screen_scale_y);
 	}
 
 #undef SELECT_NAME_FONT
@@ -272,50 +215,46 @@ void dc_draw_select_names()
 
 void dc_draw_text_screen(void screen, int scale_x, int scale_y)
 {
-	int screen_pos_x;
-	int screen_pos_y;
+	int pos_x;
+	int pos_y;
+	int pos_z;
 
 	float scale_x_percentage;
 	float scale_y_percentage;
 
-	int screen_center_x_normal;
-	int screen_center_y_normal;
-
-	int screen_center_x_scaled;
-	int screen_center_y_scaled;
-
-	// Find where center of normal size falls.
-	screen_center_x_normal = OG_SCREEN_BASE_POS_X + (OG_SCREEN_SIZE_MAX_X * 0.5);
-	screen_center_y_normal = OG_SCREEN_BASE_POS_Y + (OG_SCREEN_SIZE_MAX_Y * 0.5);	
+	int screen_center_x;
+	int screen_center_y;
 
 	// Find where center of scaled size falls.
-	scale_x_percentage = scale_x / (OG_SCREEN_SCALE_MAX_X + 0.0);
-	scale_y_percentage = scale_y / (OG_SCREEN_SCALE_MAX_Y + 0.0);
+	//scale_x_percentage = scale_x / (OG_SCREEN_SCALE_MAX_X + 0.0);
+	//scale_y_percentage = scale_y / (OG_SCREEN_SCALE_MAX_Y + 0.0);	
 
-	screen_center_x_scaled = OG_SCREEN_BASE_POS_X + ((scale_x_percentage * OG_SCREEN_SIZE_MAX_X) * 0.5);
-	screen_center_y_scaled = OG_SCREEN_BASE_POS_Y + ((scale_y_percentage * OG_SCREEN_SIZE_MAX_Y) * 0.5);
+	//screen_center_x = (scale_x_percentage * size_x) * 0.5;
+	//screen_center_y = (scale_y_percentage * size_y) * 0.5;
 
-	// Use difference between unscaled and scaled center to adjust screen location to 
-	// compensate for new screen size. Y uses a static 75% of the adjustment here just 
-	// to help center the text rather than the screen itself.						                                                             
-	screen_pos_x = OG_SCREEN_BASE_POS_X +(screen_center_x_normal - screen_center_x_scaled);
-	screen_pos_y = OG_SCREEN_BASE_POS_Y +((screen_center_y_normal - screen_center_y_scaled) * 0.75);
+	//screen_center_x = (1 * size_x) * 0.5;
+	//screen_center_y = (1 * size_y) * 0.5;
+			                                                             
+	pos_x = OG_SCREEN_BASE_POS_X;
+	pos_y = OG_SCREEN_BASE_POS_Y;
+	pos_z = openborvariant("PLAYER_MAX_Z") + 1000;	
 
 	// Set the drawmethods.
+	//changedrawmethod(NULL(), "reset", 1);
+	//changedrawmethod(NULL(), "centerx", screen_center_x);
+	//changedrawmethod(NULL(), "centery", screen_center_y);
+	//changedrawmethod(NULL(), "enabled", 1);
+	//changedrawmethod(NULL(), "transbg", 1);
+	//changedrawmethod(NULL(), "scalex", scale_x);
+	//changedrawmethod(NULL(), "rotate", count);
+	//changedrawmethod(NULL(), "scaley", scale_x);
 
-
-
-	changedrawmethod(NULL(), "reset", 1);
-	changedrawmethod(NULL(), "enabled", 1);
-	changedrawmethod(NULL(), "transbg", 1);
-	changedrawmethod(NULL(), "scalex", scale_x);
-	changedrawmethod(NULL(), "scaley", scale_y);
+	
 
 	//Draw the resized customized screen to main screen.
+	drawscreen(screen, pos_x, pos_y, pos_z);
 
-	drawscreen(screen, screen_pos_x, screen_pos_y, openborvariant("PLAYER_MAX_Z") + 1000);
-	changedrawmethod(NULL(), "enabled", 0);
-	
+	//changedrawmethod(NULL(), "enabled", 0);
 }
 
 // Caskey, Damon V.
