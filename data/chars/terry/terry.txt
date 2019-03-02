@@ -277,40 +277,36 @@ anim get
 
 #*****	attack*******************************************************************************
 
-anim 	attack1
-
-	#Long jab
+# Long jab
+anim 	attack1	
 
 		fastattack 1
 
-			delay	4
-			offset	70 158
-			bbox 	50 60 45 105
-			@cmd	dc_disney_alternate_on_range openborconstant("ANI_FOLLOW1")
-	frame	data/chars/terry/terr0040
-	frame	data/chars/terry/terr0055
-			attack	95 70 60 20 6 0 0 0 10
+		delay	4
+		offset	70 158
+			
+		bbox.position.x	50
+		bbox.position.y 60
+		bbox.size.x		45
+		bbox.size.y		105
 
-			attack.position.x			95
-			attack.position.y			70
-			attack.size.x				60
-			attack.size.y				20
-			attack.damage.force			6
-			attack.reaction.pause.time	10
+		@cmd	dc_disney_alternate_on_range openborconstant("ANI_FOLLOW1")
+	
+	frame	data/chars/terry/15_0.png
+	frame	data/chars/terry/15_1.png
+			
+		attack.position.x			95
+		attack.position.y			70
+		attack.size.x				60
+		attack.size.y				20
+		attack.damage.force			6
+		attack.reaction.pause.time	10
 
-			attack.damage.recursive.force 1
-			attack.damage.recursive.index 1
-			attack.damage.recursive.mode 1
-			attack.damage.recursive.tag 5
-			attack.damage.recursive.time 10000
-			attack.damage.recursive.rate 10
-
-
-	frame	data/chars/terry/terr0056
-			attack	0
-	frame	data/chars/terry/terr0029
+	frame	data/chars/terry/15_2.png
+		attack	0
+	frame	data/chars/terry/15_3.png
 		idle	1
-	frame	data/chars/terry/terr0040
+	frame	data/chars/terry/15_0.png
 
 anim 	attack2
 
@@ -398,10 +394,10 @@ anim 	attack5
 		attack	80 75 66 15 8 0 0 0 10
 
 		attack.damage.recursive.force 1
-			attack.damage.recursive.index 2
-			attack.damage.recursive.mode 1
-			attack.damage.recursive.time 100000
-			attack.damage.recursive.rate 10
+		attack.damage.recursive.index 2
+		attack.damage.recursive.mode 1
+		attack.damage.recursive.time 100000
+		attack.damage.recursive.rate 10
 
 	frame	data/chars/terry/terr0322
 		attack	0
@@ -573,12 +569,24 @@ anim follow1
 
 		delay	6
 		offset	70 158
-		bbox 	50 60 45 105
-	frame	data/chars/terry/terr0040
-		attack	75 75 60 15 8 0 0 0 10
-	frame	data/chars/terry/terr0041
+		
+		bbox.position.x	50
+		bbox.position.y 60
+		bbox.size.x		45
+		bbox.size.y		105
+
+	frame	data/chars/terry/15_0.png
+
+		attack.position.x			75
+		attack.position.y			75
+		attack.size.x				60
+		attack.size.y				15
+		attack.damage.force			8
+		attack.reaction.pause.time	10
+
+	frame	data/chars/terry/16_0.png
 		attack	0
-	frame	data/chars/terry/terr0040
+	frame	data/chars/terry/15_0.png
 
 anim follow82
 
