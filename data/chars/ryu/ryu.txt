@@ -155,10 +155,10 @@ anim walk
 		delay	10
 		offset	82 147
 	
-		bbox.position.x	130
-		bbox.position.y 120
-		bbox.size.x		45
-		bbox.size.y		90
+		bbox.position.x	66
+		bbox.position.y 49
+		bbox.size.x		38
+		bbox.size.y		98
 
 	frame	data/chars/ryu/2_0.png
 	frame	data/chars/ryu/2_1.png
@@ -176,10 +176,10 @@ anim backwalk
 		delay	10
 		offset	82 147
 	
-		bbox.position.x	130
-		bbox.position.y 120
-		bbox.size.x		45
-		bbox.size.y		90
+		bbox.position.x	66
+		bbox.position.y 49
+		bbox.size.x		38
+		bbox.size.y		98
 
 	frame	data/chars/ryu/3_0.png
 	frame	data/chars/ryu/3_1.png
@@ -196,10 +196,10 @@ anim run
 		delay	10
 		offset	82 147
 	
-		bbox.position.x	130
-		bbox.position.y 120
-		bbox.size.x		45
-		bbox.size.y		90
+		bbox.position.x	66
+		bbox.position.y 49
+		bbox.size.x		38
+		bbox.size.y		98
 
 	frame	data/chars/ryu/4_0.png
 	frame	data/chars/ryu/4_1.png
@@ -214,10 +214,10 @@ anim charge
 		delay	10
 		offset	82 147
 
-		bbox.position.x	130
-		bbox.position.y 120
-		bbox.size.x		45
-		bbox.size.y		90
+		bbox.position.x	66
+		bbox.position.y 49
+		bbox.size.x		38
+		bbox.size.y		98
 
 	frame	data/chars/ryu/55_0.png
 	frame	data/chars/ryu/55_1.png
@@ -230,10 +230,10 @@ anim jumpdelay
 		delay	8
 		offset	82 147
 	
-		bbox.position.x	130
-		bbox.position.y 120
-		bbox.size.x		45
-		bbox.size.y		90
+		bbox.position.x	66
+		bbox.position.y 49
+		bbox.size.x		38
+		bbox.size.y		98
 
 	frame	data/chars/ryu/7_0.png
 
@@ -242,10 +242,10 @@ anim jumpland
 		delay	8
 		offset	82 147
 	
-		bbox.position.x	130
-		bbox.position.y 120
-		bbox.size.x		45
-		bbox.size.y		90
+		bbox.position.x	66
+		bbox.position.y 49
+		bbox.size.x		38
+		bbox.size.y		98
 
 	frame	data/chars/ryu/7_0.png
 	frame	data/chars/ryu/7_1.png
@@ -258,10 +258,10 @@ anim jump
 
 		dropframe 1
 	
-		bbox.position.x	130
-		bbox.position.y 120
-		bbox.size.x		45
-		bbox.size.y		90
+		bbox.position.x	66
+		bbox.position.y 49
+		bbox.size.x		38
+		bbox.size.y		98
 
 	frame	data/chars/ryu/10_0.png
 		delay	8
@@ -281,10 +281,10 @@ anim forwardjump
 
 		dropframe 1
 	
-		bbox.position.x	130
-		bbox.position.y 120
-		bbox.size.x		45
-		bbox.size.y		90
+		bbox.position.x	66
+		bbox.position.y 49
+		bbox.size.x		38
+		bbox.size.y		98
 
 	frame	data/chars/ryu/11_0.png
 		delay	8
@@ -297,4 +297,95 @@ anim forwardjump
 	frame	data/chars/ryu/11_7.png
 
 
+anim block
 
+		delay	8
+		offset	82 147
+	
+		bbox.position.x	66
+		bbox.position.y 49
+		bbox.size.x		38
+		bbox.size.y		98
+
+	frame	data/chars/ryu/12_0.png
+	frame	data/chars/ryu/12_1.png
+
+anim freespecial
+
+		delay	8
+		offset	82 147
+
+		jumpframe 1 1 -2 0 dust0002
+		landframe 4 dust0003
+	
+		bbox.position.x	66
+		bbox.position.y 49
+		bbox.size.x		38
+		bbox.size.y		98
+	frame	data/chars/ryu/7_0.png		
+		delay	8
+		bbox 0
+	frame	data/chars/ryu/6_0.png
+	frame	data/chars/ryu/6_1.png
+		delay	-1000
+	frame	data/chars/ryu/6_2.png
+		delay	10
+		bbox.position.x	66
+		bbox.position.y 49
+		bbox.size.x		38
+		bbox.size.y		98
+	frame	data/chars/ryu/6_3.png
+
+# Sidestep In
+anim attackdown
+
+		delay	4
+		offset	82 147
+
+		jumpframe 1 1 1 1.5 dust0002
+		landframe 4 dust0003
+	
+		bbox.position.x	66
+		bbox.position.y 49
+		bbox.size.x		38
+		bbox.size.y		98
+	frame	data/chars/ryu/7_0.png		
+		delay	8
+		bbox 0
+	frame	data/chars/ryu/5_0.png
+	frame	data/chars/ryu/5_1.png
+		delay	-1000
+	frame	data/chars/ryu/5_2.png
+		delay	10
+		bbox.position.x	66
+		bbox.position.y 49
+		bbox.size.x		38
+		bbox.size.y		98
+	frame	data/chars/ryu/5_3.png
+
+# Sidestep Out
+anim attackup
+
+		delay	4
+		offset	82 147
+
+		jumpframe 1 1 1 -1.5 dust0002
+		landframe 4 dust0003
+	
+		bbox.position.x	66
+		bbox.position.y 49
+		bbox.size.x		38
+		bbox.size.y		98
+	frame	data/chars/ryu/7_0.png		
+		delay	8
+		bbox 0
+	frame	data/chars/ryu/5_0.png
+	frame	data/chars/ryu/5_1.png
+		delay	-1000
+	frame	data/chars/ryu/5_2.png
+		delay	10
+		bbox.position.x	66
+		bbox.position.y 49
+		bbox.size.x		38
+		bbox.size.y		98
+	frame	data/chars/ryu/5_3.png

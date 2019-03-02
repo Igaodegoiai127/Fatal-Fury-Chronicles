@@ -9383,6 +9383,7 @@
     <Text Include="data\chars\misc\pickups\fatal_fury_scroll\scro0001.txt" />
     <Text Include="data\chars\misc\flash\block.txt" />
     <Text Include="data\chars\ryu\ryu.txt" />
+    <Text Include="data\chars\ken\ken.txt" />
   </ItemGroup>
   <ItemGroup>
     <None Include="data\chars\andy\wild-ambition-front-throw.psd" />

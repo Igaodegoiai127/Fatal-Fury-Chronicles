@@ -3222,6 +3222,7 @@
     <Text Include="data\chars\andy\andypa.txt" />
     <Text Include="data\chars\galford\galford-trails.txt" />
     <Text Include="data\chars\galford\galford.txt" />
+    <Text Include="data\chars\ken\ken.txt" />
     <Text Include="data\chars\misc\crat0001\crat0001.txt" />
     <Text Include="data\chars\misc\crat0001\crat0002.txt" />
     <Text Include="data\chars\misc\dust\dust0002.txt" />
