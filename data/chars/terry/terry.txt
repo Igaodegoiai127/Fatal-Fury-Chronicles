@@ -190,10 +190,10 @@ anim idle3
 		bbox.size.x		45
 		bbox.size.y		105
 
-	frame	data/chars/terry/terr0512
-	frame	data/chars/terry/terr0513
-	frame	data/chars/terry/terr0514
-	frame	data/chars/terry/terr0513
+	frame	data/chars/terry/4_0.png
+	frame	data/chars/terry/4_1.png
+	frame	data/chars/terry/4_2.png
+	frame	data/chars/terry/4_1.png
 
 #anim sleep
 
