@@ -25,7 +25,6 @@ makeinv      	3
 projectilehit 	player obstacle
 candamage     	enemy obstacle
 hostile		enemy
-hmap         	1 5
 gfxshadow    	1
 blockpain    	1
 sleepwait       1000
@@ -33,7 +32,6 @@ combostyle	1
 atchain      	1 2 3 4 0 5 6 7
 height 		95
 height 		100
-komap		1 0
 dust		flash_fall_land dust0003 dust0002
 mpset 		100 3 50 1 2 2
 
@@ -56,18 +54,12 @@ mpset 100 3 50 1 2 2
 #*****Sub Entites*****
 #*****Alternates*******
 
-palette	       data/chars/terry/aapa0000		#Default.
-#alternatepal   data/chars/terry/aapa0001 	#KO.
-#alternatepal   data/chars/terry/aapa0002 	#Burn.
-#alternatepal   data/chars/terry/aapa0003 	#Shock.
-#alternatepal   data/chars/terry/aapa0004 	#Freeze.
-#alternatepal   data/chars/terry/aapa0005 	#Poison.
-#alternatepal   data/chars/terry/aapa0011 	#KOF 2001.
-#alternatepal   data/chars/terry/aapa0012 	#KOF 2002.
-#alternatepal   data/chars/terry/aapa0013 	#FF2 Alt.
-#alternatepal   data/chars/terry/aapa0014 	#Navy.
-#alternatepal   data/chars/terry/aapa0015 	#Black.
-#alternatepal   data/chars/terry/aapa0016 	#Red, blue trim.
+palette	       data/chars/terry/default_0.act
+alternatepal   data/chars/terry/default_1.act
+alternatepal   data/chars/terry/kof_2000_0.act
+alternatepal   data/chars/terry/kof_2000_1.act
+alternatepal   data/chars/terry/motw_0.act
+alternatepal   data/chars/terry/motw_1.act
 
 #*****Commands*****************************************************************************
 
@@ -170,12 +162,12 @@ anim idle
 		delay	12
 		offset	70 158
 		bbox 	50 60 45 105
-	frame	data/chars/terry/terr0001
-	frame	data/chars/terry/terr0002
-	frame	data/chars/terry/terr0003
-	frame	data/chars/terry/terr0004
-	frame	data/chars/terry/terr0003
-	frame	data/chars/terry/terr0002
+	frame	data/chars/terry/0_0.png
+	frame	data/chars/terry/0_1.png
+	frame	data/chars/terry/0_2.png
+	frame	data/chars/terry/0_3.png
+	frame	data/chars/terry/0_2.png
+	frame	data/chars/terry/0_1.png
 
 anim idle3
 
