@@ -3,9 +3,9 @@
 
 #*****icons*****
 
-#icon         	data/chars/terry/aaic0001		#Normal.
-#icondie	data/chars/terry/aaic0002 		#KO.
-#iconpain     	data/chars/terry/aaic0003 		#Pain.
+icon		data/chars/terry/icon_default.png	1
+icondie		data/chars/terry/icon_ko.png		1
+iconpain	data/chars/terry/icon_pain.png		1
 
 #*****General*****
 
