@@ -416,30 +416,52 @@ anim 	attack5
 	frame	data/chars/terry/17_0.png
 	frame	data/chars/terry/15_0.png
 
+# Backhand.
 anim 	attack6
 
-	#Round kick.
-
-		delay	5
+		delay	4
 		offset	70 158
-		bbox 	50 60 45 105
-	frame	data/chars/terry/terr0057
-	frame	data/chars/terry/terr0058
-	frame	data/chars/terry/terr0059
-		attack	90 85 96 15 8 0 0 0 10
+				
+		bbox.position.x	50
+		bbox.position.y 60
+		bbox.size.x		45
+		bbox.size.y		105
 
-		attack.damage.recursive.force 1
-			attack.damage.recursive.index 3
-			attack.damage.recursive.mode 1
-			attack.damage.recursive.time 100000
-			attack.damage.recursive.rate 10
+	frame	data/chars/terry/15_0.png
+		
+		offset	80 153
+	
+	frame	data/chars/terry/18_0.png
 
-	frame	data/chars/terry/terr0060
+		offset	85 153
+
+	frame	data/chars/terry/18_1.png
+	frame	data/chars/terry/18_2.png
+
+		attack.position.x			145
+		attack.position.y			56
+		attack.size.x				33
+		attack.size.y				10
+		attack.damage.force			10
+		attack.reaction.pause.time	12
+
+		delay	6
+	frame	data/chars/terry/18_3.png
+
+		delay	4
 		attack	0
-	frame	data/chars/terry/terr0059
-	frame	data/chars/terry/terr0058
-		idle	1
-	frame	data/chars/terry/terr0053
+	
+	frame	data/chars/terry/18_2.png
+	frame	data/chars/terry/18_1.png
+	
+		offset	80 153
+		idle	1	
+
+	frame	data/chars/terry/18_0.png
+		
+		offset	70 158
+
+	frame	data/chars/terry/15_0.png
 
 anim 	attack7
 
