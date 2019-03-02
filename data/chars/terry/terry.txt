@@ -382,29 +382,39 @@ anim 	attack4
 	frame	data/chars/terry/terr0058
 	frame	data/chars/terry/terr0053
 
+# Straight.
 anim 	attack5
 
-	#Straight.
-
-		delay	5
+		delay	4
 		offset	70 158
-		bbox 	50 60 45 105
-	frame	data/chars/terry/terr0320
-	frame	data/chars/terry/terr0321
-		attack	80 75 66 15 8 0 0 0 10
+				
+		bbox.position.x	50
+		bbox.position.y 60
+		bbox.size.x		45
+		bbox.size.y		105
 
-		attack.damage.recursive.force 1
-		attack.damage.recursive.index 2
-		attack.damage.recursive.mode 1
-		attack.damage.recursive.time 100000
-		attack.damage.recursive.rate 10
+	frame	data/chars/terry/15_0.png
+	frame	data/chars/terry/17_0.png
+	frame	data/chars/terry/17_1.png
 
-	frame	data/chars/terry/terr0322
+		attack.position.x			80
+		attack.position.y			75
+		attack.size.x				66
+		attack.size.y				15
+		attack.damage.force			8
+		attack.reaction.pause.time	10
+
+	frame	data/chars/terry/17_2.png
+
 		attack	0
-	frame	data/chars/terry/terr0323
-	frame	data/chars/terry/terr0321
+	
+	frame	data/chars/terry/17_3.png
+	frame	data/chars/terry/17_1.png
+	
 		idle	1
-	frame	data/chars/terry/terr0320
+	
+	frame	data/chars/terry/17_0.png
+	frame	data/chars/terry/15_0.png
 
 anim 	attack6
 
