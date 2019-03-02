@@ -227,9 +227,8 @@ anim walk
 	frame	data/chars/terry/2_3
 	frame	data/chars/terry/2_4
 
+#Strafe walk (opponent in front on Z)
 anim walk3
-
-	#Strafe walk (opponent in front on Z)
 
 		range   -250 250
 		rangez  15 250
@@ -237,12 +236,17 @@ anim walk3
 		loop 	1
 		delay	12
 		offset	70 158
-		bbox 	50 60 45 105
-	frame	data/chars/terry/terr0550
-	frame	data/chars/terry/terr0551
-	frame	data/chars/terry/terr0552
-	frame	data/chars/terry/terr0553
-	frame	data/chars/terry/terr0554
+		
+		bbox.position.x	50
+		bbox.position.y 60
+		bbox.size.x		45
+		bbox.size.y		105
+
+	frame	data/chars/terry/3_0
+	frame	data/chars/terry/3_1
+	frame	data/chars/terry/3_2
+	frame	data/chars/terry/3_3
+	frame	data/chars/terry/3_4
 
 anim run
 
