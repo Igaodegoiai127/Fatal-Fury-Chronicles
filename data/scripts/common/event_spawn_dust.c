@@ -31,6 +31,7 @@ void main() {
 	{
 		changedrawmethod(ent, "scalex", 128);
 		changedrawmethod(ent, "scaley", 128);
+		changedrawmethod(ent, "alpha", 1);
 
 		//dc_kanga_z_position_autoscale(ent);
 	}
