@@ -161,7 +161,12 @@ anim idle
 		loop 	1
 		delay	12
 		offset	70 158
-		bbox 	50 60 45 105
+		
+		bbox.position.x	50
+		bbox.position.y 60
+		bbox.size.x		45
+		bbox.size.y		105
+
 	frame	data/chars/terry/0_0.png
 	frame	data/chars/terry/0_1.png
 	frame	data/chars/terry/0_2.png
@@ -179,7 +184,12 @@ anim idle3
 		loop 	1
 		delay	12
 		offset	70 158
-		bbox 	50 60 45 105
+		
+		bbox.position.x	50
+		bbox.position.y 60
+		bbox.size.x		45
+		bbox.size.y		105
+
 	frame	data/chars/terry/terr0512
 	frame	data/chars/terry/terr0513
 	frame	data/chars/terry/terr0514
@@ -205,12 +215,17 @@ anim walk
 		loop 	1
 		delay	12
 		offset	70 158
-		bbox 	50 60 45 105
-	frame	data/chars/terry/terr0007
-	frame	data/chars/terry/terr0008
-	frame	data/chars/terry/terr0009
-	frame	data/chars/terry/terr0005
-	frame	data/chars/terry/terr0006
+		
+		bbox.position.x	50
+		bbox.position.y 60
+		bbox.size.x		45
+		bbox.size.y		105
+
+	frame	data/chars/terry/2_0
+	frame	data/chars/terry/2_1
+	frame	data/chars/terry/2_2
+	frame	data/chars/terry/2_3
+	frame	data/chars/terry/2_4
 
 anim walk3
 
@@ -742,7 +757,7 @@ anim blockpain3
 		delay	10
 		offset	70 158
 	frame	data/chars/terry/terr0295
-	frame	data/chars/terry/terr0294
+	frame	data/chars/terry/1_0.png
 		bbox 	50 60 45 105
 	frame	data/chars/terry/terr0558
 
