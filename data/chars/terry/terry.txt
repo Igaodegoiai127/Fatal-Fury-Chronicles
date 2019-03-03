@@ -74,7 +74,7 @@ com	d u j	freespecial6	#Rising Tackle.
 #anim spawn
 #anim respawn
 
-anim selectin
+anim selectin # Highlighted
 
 		delay	1
 		fshadow 0
@@ -109,7 +109,7 @@ anim selectin
 		offset	100 262
 	frame	data/chars/terry/select_0.png
 
-anim selectout
+ anim selectout # Un Highlighted
 
 		delay	1
 		offset	100 262
@@ -144,7 +144,7 @@ anim selectout
 		offset	100 122
 	frame data/chars/terry/select_0.png
 
-anim waiting
+anim waiting # Highlight Wait
 
 		delay	1
 		offset	100 272
@@ -154,18 +154,16 @@ anim waiting
 
 #anim select
 
-anim idle
-
-	#Ready stance.
+anim idle # Ready stance.
 
 		loop 	1
 		delay	12
 		offset	70 158
 		
-		bbox.position.x	50
-		bbox.position.y 60
-		bbox.size.x		45
-		bbox.size.y		105
+	bbox.position.x 56
+	bbox.position.y 60
+	bbox.size.x 37
+	bbox.size.y 105
 
 	frame	data/chars/terry/0_0.png
 	frame	data/chars/terry/0_1.png
@@ -174,9 +172,7 @@ anim idle
 	frame	data/chars/terry/0_2.png
 	frame	data/chars/terry/0_1.png
 
-anim idle3
-
-	#Strafe Idle (opponent in front on Z)
+anim idle3 # Strafe (opponent front Z)
 
 		range   -250 250
 		rangez  15 250
@@ -197,7 +193,7 @@ anim idle3
 
 #anim sleep
 
-anim faint
+anim faint # Faint
 
 	#Heavy fatigue.
 
@@ -210,7 +206,7 @@ anim faint
 	frame	data/chars/terry/terr0286
 	frame	data/chars/terry/terr0285
 
-anim walk
+anim walk # Normal walk
 
 		loop 	1
 		delay	12
@@ -228,7 +224,7 @@ anim walk
 	frame	data/chars/terry/2_4
 
 #Strafe walk (opponent in front on Z)
-anim walk3
+anim walk3 # Strafe Walk
 
 		range   -250 250
 		rangez  15 250
@@ -248,7 +244,7 @@ anim walk3
 	frame	data/chars/terry/3_3
 	frame	data/chars/terry/3_4
 
-anim run
+anim run # Dash
 
 		delay	12
 		offset	70 158
@@ -261,7 +257,7 @@ anim run
 		@cmd dc_disney_dash_stop
 	frame	data/chars/terry/terr0578
 
-anim get
+anim get # Get
 
 		delay	8
 		offset	70 158
@@ -278,59 +274,93 @@ anim get
 #*****	attack*******************************************************************************
 
 # Long jab
-anim 	attack1	
+anim 	attack1 # Long Jab
 
 		fastattack 1
 
 		delay	4
 		offset	70 158
 			
-		bbox.position.x	50
-		bbox.position.y 60
-		bbox.size.x		45
-		bbox.size.y		105
+	bbox.position.x 62
+	bbox.position.y 62
+	bbox.size.x 33
+	bbox.size.y 102
 
 		@cmd	dc_disney_alternate_on_range openborconstant("ANI_FOLLOW1")
 	
 	frame	data/chars/terry/15_0.png
+	
+	bbox.position.x 73
+	bbox.position.y 60
+	bbox.size.x 29
+	bbox.size.y 106
+	
 	frame	data/chars/terry/15_1.png
 			
-		attack.position.x			95
-		attack.position.y			70
-		attack.size.x				60
-		attack.size.y				20
-		attack.damage.force			6
-		attack.reaction.pause.time	10
+	bbox.position.x 76
+	bbox.position.y 60
+	bbox.size.x 36
+	bbox.size.y 106
+				
+	attack.damage.force 6
+	attack.position.x 98
+	attack.position.y 73
+	attack.reaction.pause.time 10
+	attack.size.x 60
+	attack.size.y 13
 
 	frame	data/chars/terry/15_2.png
-		attack	0
+	
+	bbox.position.x 73
+	bbox.position.y 60
+	bbox.size.x 29
+	bbox.size.y 106
+	
+	attack 0
+	
 	frame	data/chars/terry/15_3.png
 		idle	1
+		
+	bbox.position.x 62
+	bbox.position.y 62
+	bbox.size.x 33
+	bbox.size.y 102
+		
 	frame	data/chars/terry/15_0.png
 
-anim 	attack2
-
-	#front kick
+anim 	attack2	# front kick
 
 		range 	-10 50
 		fastattack 1
 
 			delay	5
 			offset	70 158
-			bbox 	50 60 45 105
+	
+	bbox.position.x 50
+	bbox.position.y 60
+	bbox.size.x 45
+	bbox.size.y 105
+	
 	frame	data/chars/terry/terr0596
 	frame	data/chars/terry/terr0597
-			attack	60 75 70 30 6 0 0 0 10
+			
 
+	attack.damage.force 10
+	attack.position.x 55
+	attack.position.y 77
+	attack.reaction.pause.time 10
+	attack.size.x 73
+	attack.size.y 15
+	
 	frame	data/chars/terry/terr0598
-			attack	0
+	
+	attack 0
+	
 	frame	data/chars/terry/terr0597
 		idle	1
 	frame	data/chars/terry/terr0596
 
-anim 	attack3
-
-	#Gut punch.
+anim 	attack3	# Gut punch.
 
 		range 	-10 50
 		fastattack 1
@@ -356,36 +386,76 @@ anim 	attack3
 		idle	1
 	frame	data/chars/terry/terr0589
 
-anim 	attack4
+anim 	attack4	# Big boot.
 
-	#Big boot.
-
-		range 	-10 50
+		range 	-10 60
 		fastattack 1
 
 		delay	4
 		offset	70 158
-		bbox 	50 60 45 105
+	bbox.position.x 50
+	bbox.position.y 60
+	bbox.size.x 45
+	bbox.size.y 105
 	frame	data/chars/terry/terr0057
+	
+		offset	78 158
+	
+	bbox.position.x 59
+	bbox.position.y 60
+	bbox.size.x 39
+	bbox.size.y 105
+	
 	frame	data/chars/terry/terr0590
 	frame	data/chars/terry/terr0591
+	
+	bbox.position.x 78
+	bbox.position.y 60
+	bbox.size.x 39
+	bbox.size.y 105
+	
 	frame	data/chars/terry/terr0592
-		attack	75 40 100 70 20 2 0 0 15
+	attack.block.penetrate 0
+	attack.damage.force 20
+	attack.damage.type 1
+	attack.effect.hit.flash.disable 0
+	attack.position.x 89
+	attack.position.y 44
+	attack.reaction.fall.force 2
+	attack.reaction.fall.velocity.x 3.0
+	attack.reaction.fall.velocity.y 2.5
+	attack.reaction.fall.velocity.z 0.0
+	attack.reaction.pause.time 15
+	attack.size.x 83
+	attack.size.y 55
+	attack.size.z.1 0
 	damageonlanding 0 1
-	dropv	2.5 3 0
 	frame	data/chars/terry/terr0593
 		delay	15
-		attack	0
+	attack.block.penetrate 0
+	attack.damage.force 0
+	attack.damage.type 1
+	attack.effect.hit.flash.disable 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.reaction.pause.time 0
+	attack.size.x 0
+	attack.size.y 0
+	attack.size.z.1 0
 	frame	data/chars/terry/terr0594
 		delay	8
 	frame	data/chars/terry/terr0595
 	frame	data/chars/terry/terr0058
+	
+	offset	78 158
+	
 	frame	data/chars/terry/terr0053
 
 # Straight.
-anim 	attack5
+anim 	attack5 # Straight
 
-		delay	4
+		delay	3
 		offset	70 158
 				
 		bbox.position.x	50
@@ -408,7 +478,9 @@ anim 	attack5
 
 		attack	0
 	
-	frame	data/chars/terry/17_3.png
+	delay 8
+	
+	frame	data/chars/terry/17_3.png	
 	frame	data/chars/terry/17_1.png
 	
 		idle	1
@@ -416,132 +488,359 @@ anim 	attack5
 	frame	data/chars/terry/17_0.png
 	frame	data/chars/terry/15_0.png
 
-# Backhand.
-anim 	attack6
+anim 	attack6 # Backhand
 
 		delay	4
 		offset	70 158
 				
-		bbox.position.x	50
-		bbox.position.y 60
-		bbox.size.x		45
-		bbox.size.y		105
+	bbox.position.x 58
+	bbox.position.y 60
+	bbox.size.x 39
+	bbox.size.y 105
 
 	frame	data/chars/terry/15_0.png
 		
 		offset	80 153
+		
+	bbox.position.x 63
+	bbox.position.y 60
+	bbox.size.x 45
+	bbox.size.y 102
 	
 	frame	data/chars/terry/18_0.png
 
 		offset	85 153
+		
+	bbox.position.x 83
+	bbox.position.y 60
+	bbox.size.x 38
+	bbox.size.y 99
 
 	frame	data/chars/terry/18_1.png
+
+	bbox.position.x 103
+	bbox.position.y 52
+	bbox.size.x 32
+	bbox.size.y 97
+
 	frame	data/chars/terry/18_2.png
 
-		attack.position.x			145
-		attack.position.y			56
-		attack.size.x				33
-		attack.size.y				10
-		attack.damage.force			10
-		attack.reaction.pause.time	12
+		delay	8
 
-		delay	6
+	bbox.position.x 113
+	bbox.position.y 52
+	bbox.size.x 32
+	bbox.size.y 97
+
+	attack.damage.force 10
+	attack.position.x 145
+	attack.position.y 56
+	attack.reaction.pause.time 12
+	attack.size.x 33
+	attack.size.y 10
+
 	frame	data/chars/terry/18_3.png
 
-		delay	4
-		attack	0
+		delay	5
+
+	bbox.position.x 103
+	bbox.position.y 52
+	bbox.size.x 32
+	bbox.size.y 97
+
+	attack.block.penetrate 0
+	attack.damage.force 0
+	attack.damage.type 1
+	attack.effect.hit.flash.disable 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.reaction.pause.time 0
+	attack.size.x 0
+	attack.size.y 0
+	attack.size.z.1 0
 	
-	frame	data/chars/terry/18_2.png
+	frame	data/chars/terry/18_2.png	
+	
+	bbox.position.x 83
+	bbox.position.y 56
+	bbox.size.x 38
+	bbox.size.y 99
+	
 	frame	data/chars/terry/18_1.png
 	
 		offset	80 153
 		idle	1	
 
+	bbox.position.x 70
+	bbox.position.y 56
+	bbox.size.x 40
+	bbox.size.y 105
+
 	frame	data/chars/terry/18_0.png
 		
 		offset	70 158
+		
+	bbox.position.x 55
+	bbox.position.y 60
+	bbox.size.x 45
+	bbox.size.y 105
 
 	frame	data/chars/terry/15_0.png
 
-anim 	attack7
-
-	#Jumping spin kick.
+anim 	attack7	# Jumping spin kick.
 
 	jumpframe 2 2 0 0 dust0002
 	landframe 7 dust0003
 
 		delay	5
 		offset	70 158
-		bbox 	50 60 45 105
+	bbox.position.x 56
+	bbox.position.y 60
+	bbox.size.x 45
+	bbox.size.y 105
 	frame	data/chars/terry/terr0057
+	
+	bbox.position.x 79
+	bbox.position.y 59
+	bbox.size.x 37
+	bbox.size.y 98
+	
 	frame	data/chars/terry/terr0058
+	
+	bbox.position.x 69
+	bbox.position.y 53
+	bbox.size.x 37
+	bbox.size.y 98
+	
 	frame	data/chars/terry/terr0084
 		delay	6
+		
+	bbox.position.x 59
+	bbox.position.y 55
+	bbox.size.x 37
+	bbox.size.y 98
+		
 	frame	data/chars/terry/terr0085
 	frame	data/chars/terry/terr0086
-		attack	80 80 80 20 15 2 0 0 10
+	
+	bbox.position.x 59
+	bbox.position.y 49
+	bbox.size.x 37
+	bbox.size.y 98
+	
+	attack.block.penetrate 0
+	attack.damage.force 15
+	attack.damage.type 1
+	attack.effect.hit.flash.disable 0
+	attack.position.x 80
+	attack.position.y 80
+	attack.reaction.fall.force 2
+	attack.reaction.pause.time 10
+	attack.size.x 80
+	attack.size.y 16
+	attack.size.z.1 0
 	frame	data/chars/terry/terr0088
-		attack	0
+	attack.block.penetrate 0
+	attack.damage.force 0
+	attack.damage.type 1
+	attack.effect.hit.flash.disable 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.reaction.pause.time 0
+	attack.size.x 0
+	attack.size.y 0
+	attack.size.z.1 0
 		delay	-1
 	frame	data/chars/terry/terr0089
 		delay	8
+		
+	bbox.position.x 60
+	bbox.position.y 74
+	bbox.size.x 41
+	bbox.size.y 90
+		
 	frame	data/chars/terry/terr0556
+	
+	bbox.position.x 60
+	bbox.position.y 85
+	bbox.size.x 41
+	bbox.size.y 81
+	
 	frame	data/chars/terry/terr0557
+	
+	bbox.position.x 60
+	bbox.position.y 74
+	bbox.size.x 41
+	bbox.size.y 90
+	
 	frame	data/chars/terry/terr0558
 
-anim runattack
+anim runattack # Power Charge
 
 	jumpframe 0 0 1.2 0 0
 
 		delay	10
 		offset	70 158
-		bbox 	50 60 45 105
-	frame	data/chars/terry/terr0226
+	bbox.position.x 60
+	bbox.position.y 69
+	bbox.size.x 40
+	bbox.size.y 90
+	
+	frame	data/chars/terry/terr0020
+	
+	bbox.position.x 48
+	bbox.position.y 80
+	bbox.size.x 45
+	bbox.size.y 80
+	
 	frame	data/chars/terry/terr0227
+	
+	bbox.position.x 61
+	bbox.position.y 92
+	bbox.size.x 45
+	bbox.size.y 69
+	
 		@cmd	changeentityproperty getlocalvar("self") "aiflag" "blocking" 1
 	frame	data/chars/terry/terr0228
-		attack	80 80 55 55 15 2 0 0 10
+	
+	bbox.position.x 78
+	bbox.position.y 81
+	bbox.size.x 45
+	bbox.size.y 80
+	
+	attack.block.penetrate 0
+	attack.damage.force 15
+	attack.damage.type 1
+	attack.effect.hit.flash.disable 0
+	attack.position.x 80
+	attack.position.y 80
+	attack.reaction.fall.force 2
+	attack.reaction.pause.time 10
+	attack.size.x 55
+	attack.size.y 55
+	attack.size.z.1 0
+	attack.reaction.fall.velocity.x 2
+	attack.reaction.fall.velocity.y 2.5
 	frame	data/chars/terry/terr0229
 		delay	12
+		
+	attack 0
 	frame	data/chars/terry/terr0230
-		attack	0
+	
+	bbox.position.x 61
+	bbox.position.y 71
+	bbox.size.x 45
+	bbox.size.y 90
+	
 		@cmd	dc_velocity_set_velocity_x NULL()
 		@cmd	dc_velocity_apply_velocity_x
 		@cmd	changeentityproperty getlocalvar("self") "aiflag" "blocking" 0
-	frame	data/chars/terry/terr0231
+	frame	data/chars/terry/terr0158
 	frame	data/chars/terry/terr0578
 
-anim chargeattack
-
-	#High spin kick.
+anim chargeattack # High spin kick.
 
 		fastattack 1
 
 		delay	6
 		offset	70 158
-		bbox 	50 60 45 105
+	bbox.position.x 58
+	bbox.position.y 60
+	bbox.size.x 41
+	bbox.size.y 92
+	
 	frame	data/chars/terry/terr0046
+	
+	bbox.position.x 73
+	bbox.position.y 60
+	bbox.size.x 41
+	bbox.size.y 92
+	
 	frame	data/chars/terry/terr0047
+	
+	bbox.position.x 85
+	bbox.position.y 60
+	bbox.size.x 41
+	bbox.size.y 92
+	
 	frame	data/chars/terry/terr0048
 		delay	5
-		attack	110 45 35 45 10 0 0 0 15
+	attack.block.penetrate 0
+	attack.damage.force 10
+	attack.damage.type 1
+	attack.effect.hit.flash.disable 0
+	attack.position.x 119
+	attack.position.y 45
+	attack.reaction.fall.force 0
+	attack.reaction.pause.time 15
+	attack.size.x 29
+	attack.size.y 45
+	attack.size.z.1 0
 	frame	data/chars/terry/terr0049
 		delay	1
-		attack	0
+	attack.block.penetrate 0
+	attack.damage.force 0
+	attack.damage.type 1
+	attack.effect.hit.flash.disable 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.reaction.pause.time 0
+	attack.size.x 0
+	attack.size.y 0
+	attack.size.z.1 0
 	frame	data/chars/terry/terr0049
 		delay	6
-		attack	110 35 45 55 15 0 0 0 15
+	attack.block.penetrate 0
+	attack.damage.force 15
+	attack.damage.type 1
+	attack.effect.hit.flash.disable 0
+	attack.position.x 110
+	attack.position.y 35
+	attack.reaction.fall.force 0
+	attack.reaction.pause.time 15
+	attack.size.x 45
+	attack.size.y 55
+	attack.size.z.1 0
 	frame	data/chars/terry/terr0050
-		attack	0
+	
+	bbox.position.x 75
+	bbox.position.y 60
+	bbox.size.x 41
+	bbox.size.y 92
+	
+	attack.block.penetrate 0
+	attack.damage.force 0
+	attack.damage.type 1
+	attack.effect.hit.flash.disable 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.reaction.pause.time 0
+	attack.size.x 0
+	attack.size.y 0
+	attack.size.z.1 0
 	frame	data/chars/terry/terr0051
+	
+	bbox.position.x 69
+	bbox.position.y 55
+	bbox.size.x 41
+	bbox.size.y 98
+	
 	frame	data/chars/terry/terr0052
+	
+	bbox.position.x 62
+	bbox.position.y 60
+	bbox.size.x 41
+	bbox.size.y 98
+	
 	frame	data/chars/terry/terr0053
 
 #*****Special******************************************************************************
 
-anim freespecial6
-
-	#Rising tackle
+anim freespecial6 # Rising tackle
 
 	energycost 20
 	mponly	   1
@@ -554,47 +853,164 @@ anim freespecial6
 
 		delay	6
 		offset	70 158
-		bbox 	50 60 45 105
+	bbox.position.x 51
+	bbox.position.y 115
+	bbox.size.x 45
+	bbox.size.y 44
 	frame	data/chars/terry/terr0599
 	#cmd stereo_sound_command_here "vter0011.wav"
 	frame	data/chars/terry/terr0600
 		delay	3
 	#cmd stereo_sound_command_here "sand0003.wav"
+	
+	
+	
 	move	25
-		attack	70 55 35 45 0 0 0 0 15
+	
+	bbox.position.x 0
+	bbox.position.y 0
+	bbox.size.x 0
+	bbox.size.y 0
+	
+	attack.block.penetrate 0
+	attack.damage.force 0
+	attack.damage.type 1
+	attack.effect.hit.flash.disable 0
+	attack.position.x 70
+	attack.position.y 55
+	attack.reaction.fall.force 0
+	attack.reaction.pause.time 15
+	attack.size.x 35
+	attack.size.y 45
+	attack.size.z.1 0
+	
 	frame	data/chars/terry/terr0601	#jumpframe
 	move	0
 	frame	data/chars/terry/terr0602
 	frame	data/chars/terry/terr0603
 		delay	4
-		attack	0
+		
+	offset	70 168
+		
+	attack.block.penetrate 0
+	attack.damage.force 0
+	attack.damage.type 1
+	attack.effect.hit.flash.disable 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.reaction.pause.time 0
+	attack.size.x 0
+	attack.size.y 0
+	attack.size.z.1 0
 	frame	data/chars/terry/terr0604 	#Spin start
-		attack	20 120 115 20 0 0 0 0 6
+	attack.block.penetrate 0
+	attack.damage.force 0
+	attack.damage.type 1
+	attack.effect.hit.flash.disable 0
+	attack.position.x 20
+	attack.position.y 120
+	attack.reaction.fall.force 0
+	attack.reaction.pause.time 6
+	attack.size.x 115
+	attack.size.y 20
+	attack.size.z.1 0
 	frame	data/chars/terry/terr0605
-		attack	0
+	attack.block.penetrate 0
+	attack.damage.force 0
+	attack.damage.type 1
+	attack.effect.hit.flash.disable 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.reaction.pause.time 0
+	attack.size.x 0
+	attack.size.y 0
+	attack.size.z.1 0
 	frame	data/chars/terry/terr0606
-		attack	20 120 115 20 0 0 0 0 6
+	attack.block.penetrate 0
+	attack.damage.force 0
+	attack.damage.type 1
+	attack.effect.hit.flash.disable 0
+	attack.position.x 20
+	attack.position.y 120
+	attack.reaction.fall.force 0
+	attack.reaction.pause.time 6
+	attack.size.x 115
+	attack.size.y 20
+	attack.size.z.1 0
 	frame	data/chars/terry/terr0607 	#Spin end
 		delay	6
-		attack	0
-		attack	20 120 115 20 1 1 0 0 6
+	
+	offset	70 158
+	
+	attack.block.penetrate 0
+	attack.damage.force 1
+	attack.damage.type 1
+	attack.effect.hit.flash.disable 0
+	attack.position.x 20
+	attack.position.y 100
+	attack.reaction.fall.force 1
+	attack.reaction.pause.time 6
+	attack.size.x 115
+	attack.size.y 20
+	attack.size.z.1 0
+	
+	bbox.position.x 65
+	bbox.position.y 60
+	bbox.size.x 36
+	bbox.size.y 71
+	
 	frame	data/chars/terry/terr0608	#dropframe
-		attack	0
+	
+	bbox.position.x 65
+	bbox.position.y 60
+	bbox.size.x 36
+	bbox.size.y 57
+	
 	frame	data/chars/terry/terr0609
+	
+	bbox.position.x 65
+	bbox.position.y 46
+	bbox.size.x 40
+	bbox.size.y 75
+	
 	frame	data/chars/terry/terr0610
+	
+	bbox.position.x 66
+	bbox.position.y 51
+	bbox.size.x 36
+	bbox.size.y 76
+	
 	frame	data/chars/terry/terr0562
 		delay	-1000
 	frame	data/chars/terry/terr0563
 		delay	8
+		
+	bbox.position.x 65
+	bbox.position.y 74
+	bbox.size.x 36
+	bbox.size.y 85
+		
 	frame 	data/chars/terry/terr0556
+	
+	bbox.position.x 65
+	bbox.position.y 89
+	bbox.size.x 36
+	bbox.size.y 70
+	
 	frame 	data/chars/terry/terr0557
+	
+	bbox.position.x 65
+	bbox.position.y 74
+	bbox.size.x 36
+	bbox.size.y 85
+	
 	frame 	data/chars/terry/terr0558
 
 #*****Followups****************************************************************************
 
-anim follow1
-
-	#Short jab
+anim follow1 # Short jab
 
 		range -10 50
 		fastattack 1
@@ -602,49 +1018,86 @@ anim follow1
 		delay	6
 		offset	70 158
 		
-		bbox.position.x	50
-		bbox.position.y 60
-		bbox.size.x		45
-		bbox.size.y		105
+	bbox.position.x 60
+	bbox.position.y 60
+	bbox.size.x 37
+	bbox.size.y 105
 
 	frame	data/chars/terry/15_0.png
 
-		attack.position.x			75
-		attack.position.y			75
-		attack.size.x				60
-		attack.size.y				15
-		attack.damage.force			8
-		attack.reaction.pause.time	10
+	attack.damage.force 8
+	attack.position.x 75
+	attack.position.y 75
+	attack.reaction.pause.time 10
+	attack.size.x 60
+	attack.size.y 15
 
 	frame	data/chars/terry/16_0.png
-		attack	0
+	attack.block.penetrate 0
+	attack.damage.force 0
+	attack.damage.type 1
+	attack.effect.hit.flash.disable 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.reaction.pause.time 0
+	attack.size.x 0
+	attack.size.y 0
+	attack.size.z.1 0
 	frame	data/chars/terry/15_0.png
 
-anim follow82
+anim follow82 # Down Ataack
 
 	#Down 	attack
 
 	otg	1
-		range   -75 75
+		range   0 75
 
 		delay	6
 		offset	70 158
-		bbox 	50 60 45 105
+	bbox.position.x 69
+	bbox.position.y 60
+	bbox.size.x 45
+	bbox.size.y 105
 	frame	data/chars/terry/terr0114
 	frame	data/chars/terry/terr0115
-		attack9	90 125 60 30 15 0 0 0 10
+	attack.block.penetrate 0
+	attack.damage.force 15
+	attack.damage.type 9
+	attack.effect.hit.flash.disable 0
+	attack.position.x 90
+	attack.position.y 125
+	attack.reaction.fall.force 0
+	attack.reaction.pause.time 10
+	attack.size.x 60
+	attack.size.y 30
+	attack.size.z.1 0
 	staydown -200 0
 	frame	data/chars/terry/terr0116
-		attack	0
+	attack.block.penetrate 0
+	attack.damage.force 0
+	attack.damage.type 1
+	attack.effect.hit.flash.disable 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.reaction.pause.time 0
+	attack.size.x 0
+	attack.size.y 0
+	attack.size.z.1 0
 	frame	data/chars/terry/terr0117
 	frame	data/chars/terry/terr0118
 	frame	data/chars/terry/terr0119
 	frame	data/chars/terry/terr0121
+	
+	bbox.position.x 59
+	bbox.position.y 60
+	bbox.size.x 45
+	bbox.size.y 105
+	
 	frame	data/chars/terry/terr0057
 
-anim follow51
-
-	#Defense poses
+anim follow51 # Defense poses
 
 		loop	1
 		delay	-100
@@ -669,73 +1122,146 @@ anim follow51
 #*****Grappling****************************************************************************
 #*****Jumping******************************************************************************
 
-anim jumpdelay
+anim jumpdelay # Jumpdelay
 
 			offset	70 158
 			delay	8
-			bbox 	50 60 45 105
+	bbox.position.x 61
+	bbox.position.y 75
+	bbox.size.x 40
+	bbox.size.y 86
 	
 	frame data/chars/terry/terr0558
 
-anim jumpland
+anim jumpland # Jump land
 
 		delay	8
 		offset	70 158
-		bbox 	50 60 45 105
+		
+	bbox.position.x 61
+	bbox.position.y 75
+	bbox.size.x 40
+	bbox.size.y 86
+	
 	frame data/chars/terry/terr0556
 	frame data/chars/terry/terr0557
 	frame data/chars/terry/terr0558
 
-anim jump
+anim jump # Jump
 
 	dropframe 1
 
-		delay	-1
+		delay	-1000
 		offset	70 158
-		bbox 	50 60 45 105
+	
+	bbox.position.x 69
+	bbox.position.y 44
+	bbox.size.x 32
+	bbox.size.y 105
+	
 	frame data/chars/terry/terr0559
 		delay	8
+	
+	bbox.position.x 69
+	bbox.position.y 44
+	bbox.size.x 32
+	bbox.size.y 93
+	
 	frame data/chars/terry/terr0560
+	
+	bbox.position.x 69
+	bbox.position.y 50
+	bbox.size.x 32
+	bbox.size.y 74
+	
 	frame data/chars/terry/terr0561
+	
+	bbox.position.x 69
+	bbox.position.y 49
+	bbox.size.x 32
+	bbox.size.y 93
+	
 	frame data/chars/terry/terr0562
+	
+	bbox.position.x 69
+	bbox.position.y 52
+	bbox.size.x 32
+	bbox.size.y 100
+	
 	frame data/chars/terry/terr0563
 
-anim forwardjump
+anim forwardjump # Jump forward
 
-		delay	12
+		dropframe 1
+		
+		delay  -1000
 		offset	70 158
-		bbox 	50 60 45 105
-	frame data/chars/terry/terr0559
+	
+	bbox.position.x 55
+	bbox.position.y 56
+	bbox.size.x 53
+	bbox.size.y 80
+	
 	frame data/chars/terry/terr0564
+		
 		delay	8
+		
+	bbox.position.x 52
+	bbox.position.y 52
+	bbox.size.x 53
+	bbox.size.y 55
+		
 	frame data/chars/terry/terr0565
 	frame data/chars/terry/terr0566
 	frame data/chars/terry/terr0567
+	
+	bbox.position.x 42
+	bbox.position.y 61
+	bbox.size.x 75
+	bbox.size.y 42
+	
 	frame data/chars/terry/terr0568
+	
+	bbox.position.x 52
+	bbox.position.y 53
+	bbox.size.x 52
+	bbox.size.y 82
+	
+	frame data/chars/terry/terr0569
+	
+	bbox.position.x 64
+	bbox.position.y 50
+	bbox.size.x 39
+	bbox.size.y 82
+	
 	frame data/chars/terry/terr0562
-	frame data/chars/terry/terr0563
 
 #*****Injury and Defence*******************************************************************
 
-anim blockrelease
-
-	#Defence.
+anim blockrelease # Block release
 
 		delay	6
 		offset	70 158
-		bbox 	50 60 45 105
+	bbox.position.x 54
+	bbox.position.y 60
+	bbox.size.x 40
+	bbox.size.y 105
 	frame	data/chars/terry/terr0288
 
-anim blockstart
-
-	#Defence.
+anim blockstart # Block start
 
 		delay	6
 		offset	70 158
-		bbox 	50 60 45 105
+		
+	bbox.position.x 54
+	bbox.position.y 60
+	bbox.size.x 40
+	bbox.size.y 105
+	
+		
 	frame	data/chars/terry/terr0288
 
-anim block
+anim block # Block
 
 	#Defence.
 
@@ -744,13 +1270,14 @@ anim block
 		bbox 	50 60 45 105
 	frame	data/chars/terry/terr0289
 
-anim blockpain
-
-	#Normal block.
+anim blockpain	# Normal block.
 
 		delay	3
 		offset	70 158
-		bbox 	50 60 45 105
+	bbox.position.x 44
+	bbox.position.y 60
+	bbox.size.x 45
+	bbox.size.y 105
 	move	-2
 	frame	data/chars/terry/terr0290
 		offset	73 158
@@ -763,13 +1290,14 @@ anim blockpain
 		offset	70 158
 	frame	data/chars/terry/terr0290
 
-anim blockpain2
-
-	#Middle block.
+anim blockpain2	# Middle block.
 
 		delay	3
 		offset	70 158
-		bbox 	50 60 45 105
+	bbox.position.x 45
+	bbox.position.y 60
+	bbox.size.x 45
+	bbox.size.y 105
 	move	-2
 	frame	data/chars/terry/terr0293
 		offset	73 158
@@ -783,13 +1311,14 @@ anim blockpain2
 	frame	data/chars/terry/terr0292
 	frame	data/chars/terry/terr0291
 
-anim blockpain3
-
-	#Low block.
+anim blockpain3	# Low block.
 
 		delay	3
 		offset	70 158
-		bbox 	50 85 50 75
+	bbox.position.x 43
+	bbox.position.y 85
+	bbox.size.x 50
+	bbox.size.y 75
 	move	-2
 	frame	data/chars/terry/terr0297
 		offset	73 158
@@ -802,29 +1331,15 @@ anim blockpain3
 		offset	70 158
 	frame	data/chars/terry/terr0295
 	frame	data/chars/terry/1_0.png
-		bbox 	50 60 45 105
+	bbox.position.x 50
+	bbox.position.y 60
+	bbox.size.x 45
+	bbox.size.y 105
 	frame	data/chars/terry/terr0558
 
-anim blockpain2
 
-	#High block.
 
-		delay	3
-		offset	70 158
-		bbox 	50 60 45 105
-	move	-2
-	frame	data/chars/terry/terr0301
-		offset	73 158
-	frame	data/chars/terry/terr0301
-		offset	70 158
-	frame	data/chars/terry/terr0301
-		offset	73 158
-	frame	data/chars/terry/terr0301
-		delay	20
-		offset	70 158
-	frame	data/chars/terry/terr0301
-
-anim rise
+anim rise # Rise
 
 		delay	12
 		offset	70 158
@@ -835,7 +1350,7 @@ anim rise
 	frame	data/chars/terry/terr0557
 	frame	data/chars/terry/terr0558
 
-anim pain
+anim pain # Normal pain
 
 	jumpframe 0 0 -0.1 0
 
@@ -847,9 +1362,7 @@ anim pain
 	frame	data/chars/terry/terr0352
 	frame	data/chars/terry/terr0350
 	frame	data/chars/terry/terr0349
-anim pain2
-
-	#Middle pain.
+anim pain2	# Middle pain.
 
 	jumpframe 0 0 -0.1 0
 
@@ -869,17 +1382,89 @@ anim fall
 
 		delay	-1
 		offset	70 158
-		bbox 	50 60 45 105
-		attack  50 60 45 105 8
+	bbox.position.x 64
+	bbox.position.y 53
+	bbox.size.x 45
+	bbox.size.y 81
+	
+	attack.block.penetrate 0
+	attack.damage.force 8
+	attack.damage.type 1
+	attack.effect.hit.flash.disable 0
+	attack.position.x 64
+	attack.position.y 53
+	attack.reaction.fall.force 0
+	attack.reaction.pause.time 0
+	attack.size.x 45
+	attack.size.y 81
+	attack.size.z.1 0
 	frame	data/chars/terry/terr0358
 		delay	15
+		
+	bbox.position.x 51
+	bbox.position.y 77
+	bbox.size.x 73
+	bbox.size.y 46
+	
+	attack.block.penetrate 0
+	attack.damage.force 8
+	attack.damage.type 1
+	attack.effect.hit.flash.disable 0
+	attack.position.x 51
+	attack.position.y 77
+	attack.reaction.fall.force 0
+	attack.reaction.pause.time 0
+	attack.size.x 73
+	attack.size.y 46
+	attack.size.z.1 0
+		
 	frame	data/chars/terry/terr0359
-		delay	-1
+	
+	delay	-1000
+		
+	bbox.position.x 43
+	bbox.position.y 97
+	bbox.size.x 76
+	bbox.size.y 46
+		
+	attack.block.penetrate 0
+	attack.damage.force 8
+	attack.damage.type 1
+	attack.effect.hit.flash.disable 0
+	attack.position.x 43
+	attack.position.y 97
+	attack.reaction.fall.force 0
+	attack.reaction.pause.time 0
+	attack.size.x 76
+	attack.size.y 46
+	attack.size.z.1 0
+		
 	frame	data/chars/terry/terr0360
 		delay	20
-		attack	0
-		bbox	0
+	attack.block.penetrate 0
+	attack.damage.force 0
+	attack.damage.type 1
+	attack.effect.hit.flash.disable 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.reaction.pause.time 0
+	attack.size.x 0
+	attack.size.y 0
+	attack.size.z.1 0
+	
+	bbox.position.x 38
+	bbox.position.y 118
+	bbox.size.x 90
+	bbox.size.y 31
+	
 	frame	data/chars/terry/terr0375
+	
+	bbox.position.x 38
+	bbox.position.y 134
+	bbox.size.x 90
+	bbox.size.y 31
+	
 	frame	data/chars/terry/terr0377
 
 #*****Footer********************************************************************************
