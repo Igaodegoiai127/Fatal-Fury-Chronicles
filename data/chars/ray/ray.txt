@@ -1,3 +1,7 @@
+icon		data/chars/ray/icon_default.png	1
+icondie		data/chars/ray/icon_ko.png		1
+iconpain	data/chars/ray/icon_pain.png	1
+
 name			Ray
 health			150
 speed			10
@@ -25,18 +29,8 @@ bflash			Block
 onspawnscript	data/chars/ray/scripts/onspawn.c
 animationscript data/chars/ray/scripts/animation.c
 
-palette   		data/chars/ray/pal_0.act	# Light blue jeans, white shirt, red bolt
-alternatepal 	data/chars/ray/pal_1.act	# Dark blue jeans, white shirt, dark red bolt
-alternatepal 	data/chars/ray/pal_2.act	# Black jeans, yellow shirt, red bolt
-alternatepal 	data/chars/ray/pal_3.act	# Black jeans, yellow shirt, black bolt
-alternatepal 	data/chars/ray/pal_4.act	# Light blue jeans, white shirt, red bolt, brown hair
-alternatepal 	data/chars/ray/pal_5.act
-alternatepal 	data/chars/ray/pal_6.act
-alternatepal 	data/chars/ray/pal_7.act
-alternatepal 	data/chars/ray/pal_8.act
-alternatepal 	data/chars/ray/pal_9.act
-alternatepal 	data/chars/ray/pal_10.act
-alternatepal 	data/chars/ray/pal_11.act
+palette   		data/chars/ray/default.act			# Light blue jeans, white shirt, red bolt
+alternatepal	data/chars/ray/default_no_bolt.act 
 
 anim block
 
