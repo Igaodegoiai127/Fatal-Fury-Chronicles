@@ -1891,7 +1891,7 @@ anim fall
 
 #Always make sure to include a single blank line at bottom of file.
 
-anim jumpattack # Drop punch
+anim jumpattack
 
 	delay	8
 	offset	70 158
@@ -2067,6 +2067,71 @@ anim jumpforward
 	attack.size.y 0
 	
 	frame data/chars/terry/44_0.png
+	
+	delay 8
+	
+	bbox.position.x 69
+	bbox.position.y 49
+	bbox.size.x 32
+	bbox.size.y 93
+	
+	frame data/chars/terry/30_3.png
+	
+	bbox.position.x 69
+	bbox.position.y 52
+	bbox.size.x 32
+	bbox.size.y 100
+	
+	frame data/chars/terry/30_4.png
+anim jumpattack2
+	
+	delay	8
+	offset	70 158
+	
+	bbox.position.x 66
+	bbox.position.y 57
+	bbox.size.x 35
+	bbox.size.y 60
+	
+	frame data/chars/terry/42_0.png
+	
+	delay  10
+	
+	bbox.position.x 71
+	bbox.position.y 51
+	bbox.size.x 35
+	bbox.size.y 60
+	
+	attack.damage.force 15
+	attack.position.x 99
+	attack.position.y 66
+	attack.reaction.fall.force 0
+	attack.reaction.pause.time 15
+	attack.size.x 29
+	attack.size.y 41
+	
+	frame data/chars/terry/42_1.png
+	
+	delay 140
+	
+	attack.damage.force 10
+	
+	frame data/chars/terry/42_1.png
+	
+	delay 10	
+	
+	bbox.position.x 66
+	bbox.position.y 57
+	bbox.size.x 35
+	bbox.size.y 60
+	
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.size.x 0
+	attack.size.y 0
+	
+	frame data/chars/terry/42_0.png
 	
 	delay 8
 	
