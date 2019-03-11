@@ -1,11 +1,7 @@
 
-#*****Settings***************************************************************************
-
-#*****icons*****
-
-icon         	data/chars/andy/aaic0001		#Normal.
-icondie	     	data/chars/andy/aaic0002 		#KO.
-iconpain     	data/chars/andy/aaic0003 		#Pain.
+icon		data/chars/galford/icon_default.png	1
+icondie		data/chars/galford/icon_ko.png		1
+iconpain	data/chars/galford/icon_pain.png	1
 
 #*****General*****
 
