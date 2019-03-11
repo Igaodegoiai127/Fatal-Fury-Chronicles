@@ -271,8 +271,8 @@ anim run # Dash
 
 anim get # Get
 
-		delay	12
-		offset	70 158
+	delay	20
+	offset	70 158
 		
 	bbox.position.x 63
 	bbox.position.y 98
@@ -280,6 +280,9 @@ anim get # Get
 	bbox.size.y 64
 		
 	frame	data/chars/terry/26_0.png
+	delay 12
+	
+	frame	data/chars/terry/41_2.png
 	
 	bbox.position.x 61
 	bbox.position.y 75
