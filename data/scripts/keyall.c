@@ -29,16 +29,24 @@ void main(){
 	int     idle;				// AI flag.
 	int		attacking;			// AI flag.
 	int		jumping;			// AI flag.
+	int		blocking;
 	
-	// Populate the variables.
-	ent = getplayerproperty(player_index, "entity");                    
+	player_index = getlocalvar("player");
 
-	player_index		= getlocalvar("player");
+	// Populate the variables.
+	ent = getplayerproperty(player_index, "entity");
 	
+	// Don't error out if we aren't in a level with entities.
+	if (!ent)
+	{
+		return;
+	}
+
 	// Get AI status flags.
 	idle		= getentityproperty(ent, "aiflag", "idling");    
 	attacking	= getentityproperty(ent, "aiflag", "attacking");
-	jumping		= getentityproperty(ent, "aiflag", "jumping");    
+	jumping		= getentityproperty(ent, "aiflag", "jumping");
+	blocking	= get_entity_property(ent, "block_state");
 
 	// Set base entity for animation control library.
 	dc_disney_set_entity(ent);
@@ -57,7 +65,15 @@ void main(){
 		{
 			return;
 		}
-	}    
+	}
+	else if (blocking)
+	{
+		// Backward dash (2x Special)
+		if (dc_command_back_dash(player_index))
+		{
+			return;
+		}
+	}
     else if (jumping)
     {
 		// Air block.
@@ -222,15 +238,15 @@ int dc_command_back_dash(int player_index)
 
 	// Get base entity.
 	ent = getplayerproperty(player_index, "entity");
-
+	
 	// Key press.
 	key_press = getplayerproperty(player_index, "newkeys");
-
+	   
 	if (!(key_press & openborconstant("FLAG_SPECIAL")))
 	{
 		return 0;
 	}
-
+	
 	// Get time.
 	time_set = getlocalvar(player_index + "_sp");
 
@@ -239,21 +255,21 @@ int dc_command_back_dash(int player_index)
 
 	//  Set tracking var for next cycle.
 	setlocalvar(player_index + "_sp", time_current + 50);
-
+	
 	// Fail on first cycle.
 	if (!time_set)
 	{
 		return;
 	}
-
+	
 	// Last attempt has to be within time of current
 	// attempt.
 	if (time_current > time_set)
 	{
 		return;
 	}
-
-	// If we got this far then we can set a down attack.
+	
+	// If we got this far then we can backward dash.
 	dc_disney_perform_attack(openborconstant("ANI_FREESPECIAL"));
 
 	// Stop moving in case we were walking.
