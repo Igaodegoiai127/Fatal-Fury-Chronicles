@@ -357,10 +357,10 @@ anim attack1
 		#cmd dc_damage_set_damage_on_landing_force 20
 		#cmd dc_damage_apply_damage
 
-		@cmd dc_bind_set_entity		getentityproperty(getlocalvar("self") "opponent")	
-		@cmd dc_bind_set_invert_x	DC_BIND_INVERT_POSITION
-		@cmd dc_bind_set_offset_x	-5
-		@cmd dc_bind_adjust_position
+		#cmd dc_bind_set_entity		getentityproperty(getlocalvar("self") "opponent")	
+		#cmd dc_bind_set_invert_x	DC_BIND_INVERT_POSITION
+		#cmd dc_bind_set_offset_x	-5
+		#cmd dc_bind_adjust_position
 
 	frame	data/chars/galford/83_3_0.png
 	
