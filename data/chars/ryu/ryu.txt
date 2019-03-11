@@ -1,3 +1,7 @@
+icon		data/chars/ryu/icon_default.png	1
+icondie		data/chars/ryu/icon_ko.png		1
+iconpain	data/chars/ryu/icon_pain.png	1
+
 name	     	Ryu
 type	     	player
 bounce	     	2
