@@ -1422,10 +1422,10 @@ frame	data/chars/terry/R_TILT_DOWN_0.png
 	bbox.size.y 79
 	
 	frame	data/chars/terry/R_PAIN_MID_1.png
-anim jumpdelay # Jumpdelay
+anim jumpdelay
 
-			offset	70 158
-			delay	8
+	offset	70 158
+	delay	8
 			
 	bbox.position.x 61
 	bbox.position.y 75
@@ -2151,3 +2151,39 @@ anim jumpattack2
 	bbox.size.y 100
 	
 	frame data/chars/terry/30_4.png
+anim freespecial # Backward dash
+	
+	jumpframe 1 1.5 -2 0 dust0002
+	dropframe 2
+	landframe 3 dust0003
+	
+	offset	70 158
+	delay	8
+			
+	bbox.position.x 0
+	bbox.position.y 0
+	bbox.size.x 0
+	bbox.size.y 0
+	
+	frame data/chars/terry/24_1.png
+	
+	delay -1000
+	
+	frame data/chars/terry/7_0.png
+	
+	bbox.position.x 52
+	bbox.position.y 59
+	bbox.size.x 34
+	bbox.size.y 73
+	
+	frame data/chars/terry/7_1.png
+	
+	delay 8
+	
+	bbox.position.x 61
+	bbox.position.y 75
+	bbox.size.x 40
+	bbox.size.y 86
+	
+	frame data/chars/terry/24_1.png
+	
