@@ -1955,7 +1955,8 @@ anim jumpattack # Drop punch
 	bbox.size.y 100
 	
 	frame data/chars/terry/30_4.png
-anim jumpforward
+
+anim runjumpattack
 	
 	delay	6
 	offset	70 158
@@ -1968,7 +1969,7 @@ anim jumpforward
 	frame data/chars/terry/43_0.png
 	frame data/chars/terry/43_1.png
 	
-	delay  5
+	delay  45
 	
 	bbox.position.x 55
 	bbox.position.y 46
@@ -1976,20 +1977,16 @@ anim jumpforward
 	bbox.size.y 60
 	
 	attack.damage.force 15
-	attack.position.x 82
-	attack.position.y 86
+	attack.position.x 77
+	attack.position.y 88
 	attack.reaction.fall.force 1
 	attack.reaction.pause.time 10
-	attack.size.x 66
-	attack.size.y 34
+	attack.size.x 60
+	attack.size.y 53
 	
-	frame data/chars/terry/43_2.png
-	
-	delay 10
-	
-	attack.damage.force 10
-	
-	frame data/chars/terry/43_2.png
+	frame data/chars/terry/49_0.png
+
+	delay 10	
 	
 	bbox.position.x 66
 	bbox.position.y 45
@@ -2002,7 +1999,6 @@ anim jumpforward
 	attack.size.x 0
 	attack.size.y 0
 	
-	frame data/chars/terry/43_1.png
 	frame data/chars/terry/43_0.png
 	
 	delay 8
@@ -2021,3 +2017,69 @@ anim jumpforward
 	
 	frame data/chars/terry/30_4.png
 	
+anim jumpforward
+	
+	delay	6
+	offset	70 158
+	
+	bbox.position.x 66
+	bbox.position.y 45
+	bbox.size.x 29
+	bbox.size.y 72
+	
+	frame data/chars/terry/19_4.png
+	frame data/chars/terry/44_0.png
+	
+	delay  8
+	
+	bbox.position.x 55
+	bbox.position.y 46
+	bbox.size.x 53
+	bbox.size.y 60
+	
+	attack.damage.force 18
+	attack.position.x 58
+	attack.position.y 90
+	attack.reaction.fall.force 1
+	attack.reaction.pause.time 10
+	attack.size.x 92
+	attack.size.y 25
+	
+	frame data/chars/terry/44_1.png
+	
+	delay 14
+	
+	attack.damage.force 10
+	
+	frame data/chars/terry/44_1.png
+	
+	delay 8
+	
+	bbox.position.x 66
+	bbox.position.y 45
+	bbox.size.x 29
+	bbox.size.y 72
+	
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.size.x 0
+	attack.size.y 0
+	
+	frame data/chars/terry/44_0.png
+	
+	delay 8
+	
+	bbox.position.x 69
+	bbox.position.y 49
+	bbox.size.x 32
+	bbox.size.y 93
+	
+	frame data/chars/terry/30_3.png
+	
+	bbox.position.x 69
+	bbox.position.y 52
+	bbox.size.x 32
+	bbox.size.y 100
+	
+	frame data/chars/terry/30_4.png
