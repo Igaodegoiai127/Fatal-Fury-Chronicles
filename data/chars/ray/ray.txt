@@ -36,31 +36,49 @@ anim block
 
 	#Normal block
 
-		delay	3
-		offset	75 170
-		bbox	55 78 47 80
-		move	-2
-	frame	data/chars/ray/6_1
+	delay	3
+	offset	75 170
+		
+	bbox.position.x 55
+	bbox.position.y 74
+	bbox.size.x 28
+	bbox.size.y 95
+	
+	move	-2
+		
+	frame	data/chars/ray/6_1.png
 		move	0
 		offset	78 170
-	frame	data/chars/ray/6_1
+	frame	data/chars/ray/6_1.png
 		offset	75 170
-	frame	data/chars/ray/6_1
+	frame	data/chars/ray/6_1.png
 		offset	78 170
-	frame	data/chars/ray/6_1
+	frame	data/chars/ray/6_1.png
 		delay	30
 		offset	75 170
-	frame	data/chars/ray/6_1
-		delay	12
-	frame	data/chars/ray/6_0
+	frame	data/chars/ray/6_1.png
+	
+	delay	12
+		
+	bbox.position.x 59
+	bbox.position.y 74
+	bbox.size.x 28
+	bbox.size.y 95
+		
+	frame	data/chars/ray/6_0.png
 
 anim idle
 		
 	loop	1
 
-		delay	14
-		offset	75 170
-		bbox	55 78 47 80
+	delay	14
+	offset	75 170
+		
+	bbox.position.x 58
+	bbox.position.y 72
+	bbox.size.x 34
+	bbox.size.y 97
+	
     frame	data/chars/ray/0_0.png
     frame	data/chars/ray/0_1.png
     frame	data/chars/ray/0_2.png
@@ -72,9 +90,14 @@ anim walk
 		
 	loop	1
 
-		delay   10
-		offset	75 170
-		bbox	55 78 50 80
+	delay   10
+	offset	75 170
+	
+	bbox.position.x 58
+	bbox.position.y 72
+	bbox.size.x 34
+	bbox.size.y 97
+	
 	frame	data/chars/ray/3_0.png
 	frame	data/chars/ray/3_1.png
 	frame	data/chars/ray/3_2.png
@@ -86,9 +109,14 @@ anim backwalk
 		
 	loop	1
 
-		delay   10
-		offset	75 170
-		bbox	55 78 50 80
+	delay   10
+	offset	75 170
+	
+	bbox.position.x 58
+	bbox.position.y 72
+	bbox.size.x 34
+	bbox.size.y 97
+	
 	frame	data/chars/ray/4_0.png
 	frame	data/chars/ray/4_1.png
 	frame	data/chars/ray/4_2.png
@@ -98,9 +126,15 @@ anim backwalk
 
 anim turn
 
-		delay   10
-		offset	75 170
-		bbox	55 78 50 80
+	delay   10
+	offset	75 170
+		
+	bbox.position.x 58
+	bbox.position.y 72
+	bbox.size.x 34
+	bbox.size.y 97
+		
+		
 	frame	data/chars/ray/1_0.png
 	frame	data/chars/ray/1_1.png
 	frame	data/chars/ray/1_2.png
@@ -110,6 +144,11 @@ anim grabbed
 		loop	1
 		delay	3
 		offset	75 170
+		
+	bbox.position.x 58
+	bbox.position.y 79
+	bbox.size.x 34
+	bbox.size.y 91
 
 	frame	data/chars/ray/R_PAIN_MID_0.png
 
@@ -134,36 +173,100 @@ anim GRABBEDWALK
 		
 		delay	5
 		offset	66 191
+		
+	bbox.position.x 58
+	bbox.position.y 72
+	bbox.size.x 34
+	bbox.size.y 97
+		
 	frame	data/chars/ray/R_PAIN_0.png
 
 anim pain
 	
-		delay	8
-		offset	75 170
-		bbox	49 80 50 70
-	frame	data/chars/ray/R_PAIN_0.png
+	delay	8
+	offset	75 170
+		
+	bbox.position.x 50
+	bbox.position.y 72
+	bbox.size.x 34
+	bbox.size.y 97
+		
+		
+	frame	data/chars/ray/R_PAIN_1.png
+	
+	delay 20
+	
+	bbox.position.x 29
+	bbox.position.y 68
+	bbox.size.x 52
+	bbox.size.y 102
+	
+	frame	data/chars/ray/R_PAIN_2.png
+	
+	bbox.position.x 50
+	bbox.position.y 72
+	bbox.size.x 34
+	bbox.size.y 97
+	
 	frame	data/chars/ray/R_PAIN_1.png
 	frame	data/chars/ray/R_PAIN_0.png
 
 anim pain2
 		
-		delay	8
-		offset	75 170
-		bbox	49 80 50 70
-	frame	data/chars/ray/R_PAIN_0.png
-	frame	data/chars/ray/R_PAIN_1.png
-		delay	12
-	frame	data/chars/ray/R_PAIN_2.png
-	frame	data/chars/ray/R_PAIN_1.png
-	frame	data/chars/ray/R_PAIN_0.png
+	delay	8
+	offset	75 170
+		
+	bbox.position.x 54
+	bbox.position.y 80
+	bbox.size.x 34
+	bbox.size.y 94
+		
+	frame	data/chars/ray/R_PAIN_MID_1.png
+		
+	delay	20
+		
+	bbox.position.x 38
+	bbox.position.y 80
+	bbox.size.x 48
+	bbox.size.y 94
+		
+	frame	data/chars/ray/R_PAIN_MID_2.png
+	
+	bbox.position.x 54
+	bbox.position.y 80
+	bbox.size.x 34
+	bbox.size.y 94
+	
+	frame	data/chars/ray/R_PAIN_MID_1.png
+	frame	data/chars/ray/R_PAIN_MID_0.png
 
 anim bpain
 
-        delay	7
-        offset	75 170
-        bbox	49 80 50 70
-	frame	data/chars/ray/R_PAIN_0.png
-        delay   15
+	delay	8
+	offset	75 170
+		
+	bbox.position.x 50
+	bbox.position.y 72
+	bbox.size.x 34
+	bbox.size.y 97
+		
+		
+	frame	data/chars/ray/R_PAIN_1.png
+	
+	delay 25
+	
+	bbox.position.x 29
+	bbox.position.y 68
+	bbox.size.x 52
+	bbox.size.y 102
+	
+	frame	data/chars/ray/R_PAIN_2.png
+	
+	bbox.position.x 50
+	bbox.position.y 72
+	bbox.size.x 34
+	bbox.size.y 97
+	
 	frame	data/chars/ray/R_PAIN_1.png
 	frame	data/chars/ray/R_PAIN_0.png
 
@@ -174,18 +277,57 @@ anim fall
 
 		delay   -1000
 		offset	75 150
-		bbox	50 73 57 58
-		attack	50 73 57 58 10 1 0 0 10 0
+	bbox.position.x 50
+	bbox.position.y 73
+	bbox.size.x 57
+	bbox.size.y 58
+	attack.block.penetrate 0
+	attack.damage.force 10
+	attack.damage.type 1
+	attack.effect.hit.flash.disable 0
+	attack.position.x 50
+	attack.position.y 73
+	attack.reaction.fall.force 1
+	attack.reaction.pause.time 10
+	attack.size.x 57
+	attack.size.y 58
+	attack.size.z.1 0
 	frame	data/chars/ray/R_TILT_UP_0.png
 		offset	75 120
-		bbox	40 95 60 35
-		attack	40 95 60 35 10 1 0 0 10 0
+	bbox.position.x 40
+	bbox.position.y 95
+	bbox.size.x 74
+	bbox.size.y 35
+	attack.block.penetrate 0
+	attack.damage.force 10
+	attack.damage.type 1
+	attack.effect.hit.flash.disable 0
+	attack.position.x 53
+	attack.position.y 95
+	attack.reaction.fall.force 1
+	attack.reaction.pause.time 10
+	attack.size.x 60
+	attack.size.y 35
+	attack.size.z.1 0
 	frame	data/chars/ray/R_FALLING_UP_0.png
 		offset	75 115
 		delay	20
-		attack	0
+	attack.block.penetrate 0
+	attack.damage.force 0
+	attack.damage.type 1
+	attack.effect.hit.flash.disable 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.reaction.pause.time 0
+	attack.size.x 0
+	attack.size.y 0
+	attack.size.z.1 0
 	frame	data/chars/ray/R_LAYING_UP_PAIN_0.png
-		bbox	27 97 104 27
+	bbox.position.x 27
+	bbox.position.y 97
+	bbox.size.x 104
+	bbox.size.y 27
 	frame	data/chars/ray/R_LAYING_UP_0.png
 
 anim burn
@@ -225,21 +367,67 @@ anim attack1
 
 	range 10 70
 	
-		delay   10
-		offset	75 170
-     	bbox	55 78 50 80
+	delay   10
+	offset	75 170
+     	
+		
+	bbox.position.x 64
+	bbox.position.y 72
+	bbox.size.x 34
+	bbox.size.y 97
+
+     	
 		# Alternate combo finish.
 		@cmd	dc_combo_alt openborconstant("ANI_FOLLOW5")
 	frame	data/chars/ray/10_0.png
+     	
      	delay	5
-		attack  85 80 57 30 5 0 0 0 18
+     	
+	bbox.position.x 68
+	bbox.position.y 72
+	bbox.size.x 34
+	bbox.size.y 97
+     	
+	attack.block.penetrate 0
+	attack.damage.force 5
+	attack.damage.type 1
+	attack.effect.hit.flash.disable 0
+	attack.position.x 85
+	attack.position.y 80
+	attack.reaction.fall.force 0
+	attack.reaction.pause.time 18
+	attack.size.x 57
+	attack.size.y 30
+	attack.size.z.1 0
+     
      frame	data/chars/ray/10_1.png
-     	attack 	0
-		delay   4
-     frame	data/chars/ray/10_2.png
-     frame	data/chars/ray/10_3.png
-     	delay   8
-     frame	data/chars/ray/10_4.png
+	
+	attack.block.penetrate 0
+	attack.damage.force 0
+	attack.damage.type 1
+	attack.effect.hit.flash.disable 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.reaction.pause.time 0
+	attack.size.x 0
+	attack.size.y 0
+	attack.size.z.1 0
+	
+	delay   4
+    
+    frame	data/chars/ray/10_2.png
+    
+    frame	data/chars/ray/10_3.png
+    
+    delay   8
+    
+    bbox.position.x 64
+	bbox.position.y 72
+	bbox.size.x 34
+	bbox.size.y 97
+    
+    frame	data/chars/ray/10_4.png
 
 #Cross
 anim attack2
@@ -247,22 +435,73 @@ anim attack2
 	range 10 50
 
 		offset	75 170
-     	bbox	55 78 50 80
+     	
+	bbox.position.x 64
+	bbox.position.y 72
+	bbox.size.x 34
+	bbox.size.y 97
+     	
+     	
 		delay   8
 		sound	data/chars/ray/at1.wav
 	frame	data/chars/ray/10_0.png
      	delay   9
+     	
+	bbox.position.x 55
+	bbox.position.y 72
+	bbox.size.x 38
+	bbox.size.y 97
+     	
     frame	data/chars/ray/30_0.png
      	sound	data/sounds/air5.wav
     frame	data/chars/ray/32_0.png
 		delay	5
-     	attack  85 95 75 30 5 1 0 0 18
+	attack.block.penetrate 0
+	attack.damage.force 5
+	attack.damage.type 1
+	attack.effect.hit.flash.disable 0
+	attack.position.x 78
+	attack.position.y 82
+	attack.reaction.fall.force 1
+	attack.reaction.pause.time 18
+	attack.size.x 47
+	attack.size.y 19
+	attack.size.z.1 0
 	frame	data/chars/ray/32_1.png
+	
+	bbox.position.x 64
+	bbox.position.y 72
+	bbox.size.x 34
+	bbox.size.y 97
+	
     frame	data/chars/ray/32_2.png
-    	delay   8
-    	attack	0
+    
+    delay   8
+    	
+	bbox.position.x 61
+	bbox.position.y 72
+	bbox.size.x 34
+	bbox.size.y 97
+    	
+	attack.block.penetrate 0
+	attack.damage.force 0
+	attack.damage.type 1
+	attack.effect.hit.flash.disable 0
+	attack.position.x 18
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.reaction.pause.time 0
+	attack.size.x 0
+	attack.size.y 0
+	attack.size.z.1 0
 	frame	data/chars/ray/32_3.png
     frame	data/chars/ray/32_0.png
+    
+	bbox.position.x 64
+	bbox.position.y 72
+	bbox.size.x 34
+	bbox.size.y 97
+    
     frame	data/chars/ray/10_4.png
 
 #Straight
@@ -270,45 +509,133 @@ anim attack3
 	
 	range 10 70
 
-		delay   17
-		offset	75 170
-     	bbox	55 78 50 80
 		delay   8
-		sound	data/chars/ray/at1.wav
+		offset	75 170
+	bbox.position.x 64
+	bbox.position.y 73
+	bbox.size.x 36
+	bbox.size.y 96
+	
 
 	frame	data/chars/ray/10_0.png
     	delay   9
     frame	data/chars/ray/11_0.png
     	sound	data/sounds/air5.wav
+    	
+	bbox.position.x 68
+	bbox.position.y 73
+	bbox.size.x 36
+	bbox.size.y 96
+    	
     frame	data/chars/ray/11_1.png
-		delay	5
-     	attack  85 95 75 30 5 1 0 0 18
+	
+	delay	5
+		
+	bbox.position.x 75
+	bbox.position.y 73
+	bbox.size.x 43
+	bbox.size.y 96
+		
+	attack.block.penetrate 0
+	attack.damage.force 5
+	attack.damage.type 1
+	attack.effect.hit.flash.disable 0
+	attack.position.x 93
+	attack.position.y 87
+	attack.reaction.fall.force 1
+	attack.reaction.pause.time 18
+	attack.size.x 73
+	attack.size.y 16
+	attack.size.z.1 0
     frame	data/chars/ray/11_2.png
     frame	data/chars/ray/11_3.png
     	delay   8
-    	attack 0
+	attack.block.penetrate 0
+	attack.damage.force 0
+	attack.damage.type 1
+	attack.effect.hit.flash.disable 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.reaction.pause.time 0
+	attack.size.x 0
+	attack.size.y 0
+	attack.size.z.1 0
     frame	data/chars/ray/11_3.png
+    
+    bbox.position.x 68
+	bbox.position.y 73
+	bbox.size.x 36
+	bbox.size.y 96
+    
     frame	data/chars/ray/11_4.png
+    
+    bbox.position.x 64
+	bbox.position.y 73
+	bbox.size.x 36
+	bbox.size.y 96
+    
     frame	data/chars/ray/10_4.png
 
 
-# Roundhouse kick.
 anim follow5
 
 	range 160 170
 
-		offset	75 170
-    	bbox	55 78 50 80
-		delay   8
+	offset	75 170
+	delay   8
+    
+	bbox.position.x 64
+	bbox.position.y 73
+	bbox.size.x 36
+	bbox.size.y 96
+    
     frame	data/chars/ray/13_0.png
     frame	data/chars/ray/13_1.png
-		sound	data/sounds/air5.wav
+    
+	bbox.position.x 82
+	bbox.position.y 67
+	bbox.size.x 36
+	bbox.size.y 104
+		
     frame	data/chars/ray/13_2.png
-     	attack  85 65 69 35 5 1 0 0 18
+    
+	bbox.position.x 71
+	bbox.position.y 73
+	bbox.size.x 45
+	bbox.size.y 96
+    
+	attack.block.penetrate 0
+	attack.damage.force 5
+	attack.damage.type 1
+	attack.effect.hit.flash.disable 0
+	attack.position.x 98
+	attack.position.y 65
+	attack.reaction.fall.force 1
+	attack.reaction.pause.time 18
+	attack.size.x 69
+	attack.size.y 35
+	attack.size.z.1 0
     frame	data/chars/ray/13_3.png
     	delay   8
-    	attack 0
+	attack.block.penetrate 0
+	attack.damage.force 0
+	attack.damage.type 1
+	attack.effect.hit.flash.disable 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.reaction.pause.time 0
+	attack.size.x 0
+	attack.size.y 0
+	attack.size.z.1 0
     frame	data/chars/ray/13_4.png
+    
+    bbox.position.x 64
+	bbox.position.y 73
+	bbox.size.x 36
+	bbox.size.y 96
+    
     frame	data/chars/ray/13_5.png
     frame	data/chars/ray/13_0.png
 
@@ -358,19 +685,187 @@ anim follow51
 
 		delay	-1
 		offset	75 115
-		bbox	0
-	frame	data/chars/ray/R_HELD_0.png					#0	Grabbed.
-	frame	data/chars/ray/R_PAIN_1.png					#1	Grabbed Pain.
-	frame	data/chars/ray/R_HORIZONTAL_UP_0.png		#2	Horizontal Up.
-	frame	data/chars/ray/R_HORIZONTAL_DOWN_0.png		#3	Horizontal Down.
-	frame	data/chars/ray/R_VERTICAL_UP_0.png			#4	Vertical Up.
-	frame	data/chars/ray/R_VERTICAL_DOWN_0.png		#5	Vertical Down.
-	frame	data/chars/ray/R_TILT_UP_0.png				#6	Tilt Up.
-	frame	data/chars/ray/R_TILT_DOWN_0.png			#7	Tilt Down.
-	frame	data/chars/ray/R_VERTICAL_DOWN_PAIN_0.png	#8	Vertical Down pain.
-	frame	data/chars/ray/R_LAYING_UP_0.png			#9	Down Up.
-	frame	data/chars/ray/R_LAYING_UP_PAIN_0.png		#10	Down Up Pain.
-	frame	data/chars/ray/R_FALLING_UP_0.png			#11	Falling Up.
-	frame	data/chars/ray/R_FALLING_UP_TILT_0.png		#12	Falling Up tilted.
-	frame	data/chars/ray/R_HORIZONTAL_UP_0.png		#13	Horizontal Up pain.
-	frame	data/chars/ray/R_PAIN_MID_1.png				#14	Middle pain.
+		
+	bbox.position.x 56
+	bbox.position.y 73
+	bbox.size.x 36
+	bbox.size.y 96
+	
+			
+	attack.damage.force 10
+	attack.position.x 36
+	attack.position.y 73
+	attack.reaction.fall.force 1
+	attack.reaction.pause.time 10
+	attack.size.x 36
+	attack.size.y 96
+	
+	frame	data/chars/ray/R_HELD_0.png
+	
+	bbox.position.x 50
+	bbox.position.y 73
+	bbox.size.x 36
+	bbox.size.y 96
+	
+	attack.position.x 50
+	attack.position.y 73
+	attack.size.x 36
+	attack.size.y 96
+	
+	frame	data/chars/ray/R_PAIN_1.png
+	
+	bbox.position.x 29
+	bbox.position.y 90
+	bbox.size.x 96
+	bbox.size.y 40
+	
+	attack.position.x 29
+	attack.position.y 90
+	attack.size.x 96
+	attack.size.y 40
+	
+	frame	data/chars/ray/R_HORIZONTAL_UP_0.png		
+	
+	bbox.position.x 29
+	bbox.position.y 90
+	bbox.size.x 96
+	bbox.size.y 40
+	
+	attack.position.x 29
+	attack.position.y 90
+	attack.size.x 96
+	attack.size.y 40
+	
+	frame	data/chars/ray/R_HORIZONTAL_DOWN_0.png		
+	
+	bbox.position.x 54
+	bbox.position.y 65
+	bbox.size.x 36
+	bbox.size.y 97
+	
+	attack.position.x 54
+	attack.position.y 65
+	attack.size.x 36
+	attack.size.y 97
+	
+	frame	data/chars/ray/R_VERTICAL_UP_0.png			
+	
+	bbox.position.x 65
+	bbox.position.y 57
+	bbox.size.x 36
+	bbox.size.y 97
+	
+	attack.position.x 65
+	attack.position.y 57
+	attack.size.x 36
+	attack.size.y 97
+	
+	frame	data/chars/ray/R_VERTICAL_DOWN_0.png		
+	
+	bbox.position.x 42
+	bbox.position.y 69
+	bbox.size.x 60
+	bbox.size.y 69
+	
+	attack.position.x 42
+	attack.position.y 69
+	attack.size.x 60
+	attack.size.y 69
+	
+	frame	data/chars/ray/R_TILT_UP_0.png				
+	
+	bbox.position.x 56
+	bbox.position.y 85
+	bbox.size.x 59
+	bbox.size.y 74
+	
+	attack.position.x 56
+	attack.position.y 85
+	attack.size.x 59
+	attack.size.y 74
+	
+	frame	data/chars/ray/R_TILT_DOWN_0.png			
+	
+	bbox.position.x 65
+	bbox.position.y 57
+	bbox.size.x 36
+	bbox.size.y 97
+	
+	attack.position.x 65
+	attack.position.y 57
+	attack.size.x 36
+	attack.size.y 97
+	
+	frame	data/chars/ray/R_VERTICAL_DOWN_PAIN_0.png
+	
+	bbox.position.x 29
+	bbox.position.y 96
+	bbox.size.x 106
+	bbox.size.y 27
+	
+	attack.position.x 29
+	attack.position.y 96
+	attack.size.x 106
+	attack.size.y 27
+	
+	frame	data/chars/ray/R_LAYING_UP_0.png
+	
+	bbox.position.x 29
+	bbox.position.y 96
+	bbox.size.x 106
+	bbox.size.y 27
+	
+	attack.position.x 29
+	attack.position.y 96
+	attack.size.x 106
+	attack.size.y 27
+	
+	frame	data/chars/ray/R_LAYING_UP_PAIN_0.png
+	
+	bbox.position.x 29
+	bbox.position.y 89
+	bbox.size.x 96
+	bbox.size.y 34
+	
+	attack.position.x 29
+	attack.position.y 89
+	attack.size.x 96
+	attack.size.y 34
+	
+	frame	data/chars/ray/R_FALLING_UP_0.png
+	
+	bbox.position.x 29
+	bbox.position.y 78
+	bbox.size.x 62
+	bbox.size.y 50
+	
+	attack.position.x 29
+	attack.position.y 78
+	attack.size.x 62
+	attack.size.y 50
+	
+	frame	data/chars/ray/R_FALLING_UP_TILT_0.png
+	
+	bbox.position.x 29
+	bbox.position.y 90
+	bbox.size.x 96
+	bbox.size.y 40
+	
+	attack.position.x 29
+	attack.position.y 90
+	attack.size.x 96
+	attack.size.y 40
+	
+	frame	data/chars/ray/R_HORIZONTAL_UP_0.png
+	
+	bbox.position.x 47
+	bbox.position.y 82
+	bbox.size.x 41
+	bbox.size.y 88
+	
+	attack.position.x 47
+	attack.position.y 82
+	attack.size.x 41
+	attack.size.y 88
+	
+	frame	data/chars/ray/R_PAIN_MID_1.png	
