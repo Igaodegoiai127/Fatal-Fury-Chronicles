@@ -58,10 +58,10 @@ alternatepal   data/chars/andy/charcoal.act
 
 #*****Commands*****************************************************************************
 
-com f u a    	freespecial2  		# Force plane up.
-com f d a    	freespecial3  		# Force plane down.
-com	d u a    	freespecial4		# Plane attack up.
-com	u d a    	freespecial5		# Plane attack down.
+com U -> a    	freespecial2  		# Force plane up.
+com D -> a    	freespecial3  		# Force plane down.
+com	U -> a + j    	freespecial4		# Plane attack up.
+com	D -> a + j    	freespecial5		# Plane attack down.
 com	d b a    	freespecial6		# Hishoken.
 com	d b s    	freespecial7		# Geki Hishoken.
 com	d f a    	freespecial12		# Zaneiken.
@@ -1093,6 +1093,7 @@ anim freespecial7
 	mponly 	   	1
 	fastattack 	1
 	forcedirection -1
+	flipframe 0
 
 	delay	5
 	offset  100 200
