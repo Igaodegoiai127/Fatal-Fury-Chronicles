@@ -60,7 +60,7 @@ anim follow1
 	#Tornado
 
 	loop	  1 0 7
-	landframe 8 dust0002
+	landframe 8 flash_jump_liftoff
 	
 	delay	4
 	offset	43 135

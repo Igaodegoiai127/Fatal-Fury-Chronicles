@@ -32,7 +32,7 @@ combostyle	1
 atchain      	1 2 3 4 0 5 6 7
 height 		95
 height 		100
-dust		flash_fall_land dust0003 dust0002
+dust		flash_fall_land dust0003 flash_jump_liftoff
 mpset 		100 3 50 1 2 2
 
 #*****Scripts*****
@@ -672,7 +672,7 @@ anim 	attack6 # Backhand
 
 anim 	attack7	# Jumping spin kick.
 
-	jumpframe 3 1.5 0 0 dust0002
+	jumpframe 3 1.5 0 0 flash_jump_liftoff
 	landframe 8 dust0003
 
 		delay	6
@@ -937,7 +937,7 @@ anim freespecial6 # Rising tackle
 	energycost 20
 	mponly	   1
 		loop	   1 5 8
-	jumpframe  2 5.5 0.2 0 dust0002
+	jumpframe  2 5.5 0.2 0 flash_jump_liftoff
 	dropframe  9
 	landframe  14 dust0003
 		fastattack 1
@@ -2153,7 +2153,7 @@ anim jumpattack2
 	frame data/chars/terry/30_4.png
 anim freespecial # Backward dash
 	
-	jumpframe 1 1.5 -2 0 dust0002
+	jumpframe 1 1.5 -2 0 flash_jump_liftoff
 	dropframe 2
 	landframe 3 dust0003
 	

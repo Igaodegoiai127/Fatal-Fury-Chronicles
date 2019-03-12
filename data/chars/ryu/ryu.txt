@@ -23,7 +23,7 @@ sleepwait       1000
 combostyle		1
 atchain      	1 2 3 4 0 5 6 7
 height 			95
-dust			flash_fall_land dust0003 dust0002
+dust			flash_fall_land dust0003 flash_jump_liftoff
 mpset 			100 3 50 1 2 2
 jumpheight		4
 bflash			Block
@@ -319,7 +319,7 @@ anim freespecial
 		delay	8
 		offset	82 147
 
-		jumpframe 1 1 -2 0 dust0002
+		jumpframe 1 1 -2 0 flash_jump_liftoff
 		landframe 4 dust0003
 	
 		bbox.position.x	66
@@ -346,7 +346,7 @@ anim attackdown
 		delay	4
 		offset	82 147
 
-		jumpframe 1 1 1 1.5 dust0002
+		jumpframe 1 1 1 1.5 flash_jump_liftoff
 		landframe 4 dust0003
 	
 		bbox.position.x	66
@@ -373,7 +373,7 @@ anim attackup
 		delay	4
 		offset	82 147
 
-		jumpframe 1 1 1 -1.5 dust0002
+		jumpframe 1 1 1 -1.5 flash_jump_liftoff
 		landframe 4 dust0003
 	
 		bbox.position.x	66

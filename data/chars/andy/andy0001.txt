@@ -30,7 +30,7 @@ sleepwait       1000
 combostyle	1
 atchain      	1 2 3 4 0 5 6 7
 height 		95
-dust		flash_fall_land dust0003 dust0002
+dust		flash_fall_land dust0003 flash_jump_liftoff
 mpset 		100 3 50 1 2 2
 
 #*****Scripts*****
@@ -480,7 +480,7 @@ anim slide
 
 	cancel	  3 5 0 a freespecial40		#Backhand
 	cancel	  1 3 0 d f s freespecial19	#Bakushin
-	jumpframe 0 0 2 0 dust0002
+	jumpframe 0 0 2 0 flash_jump_liftoff
 
 	delay	8
 	offset	100 200
@@ -500,7 +500,7 @@ anim runslide
 
 	cancel	  3 5 0 a freespecial41		#Lunge palm strike.
 	cancel	  1 3 0 d f s freespecial19	#Bakushin
-	jumpframe 0 0 3 0 dust0002
+	jumpframe 0 0 3 0 flash_jump_liftoff
 
 	delay	8
 	offset	100 200
@@ -713,7 +713,7 @@ anim runattack
 
 	#Lunge palm.
 
-	jumpframe	0 0 1.2 0 dust0002
+	jumpframe	0 0 1.2 0 flash_jump_liftoff
 	fastattack 	1
 
 	delay	8
@@ -772,7 +772,7 @@ anim attackup
 
 	#Jump out.
 
-	jumpframe 1 1 -1 -1.5 dust0002
+	jumpframe 1 1 -1 -1.5 flash_jump_liftoff
 	landframe 2 dust0003
 
 	delay	10
@@ -790,7 +790,7 @@ anim attackdown
 
 	#Jump in.
 
-	jumpframe 1 1 -1 1.5 dust0002
+	jumpframe 1 1 -1 1.5 flash_jump_liftoff
 	landframe 2 dust0003
 
 	delay	10
@@ -808,7 +808,7 @@ anim riseattack
 
 	#Back roll.
 
-	jumpframe 2 0 -1 0 dust0002
+	jumpframe 2 0 -1 0 flash_jump_liftoff
 
 	delay	6
 	offset	100 200
@@ -870,7 +870,7 @@ anim special2
 
 	#Uwa Agito
 
-	jumpframe  5 2 1 0 dust0002
+	jumpframe  5 2 1 0 flash_jump_liftoff
 	landframe  10 dust0003
 	fastattack 1
 
@@ -912,7 +912,7 @@ anim freespecial
 
 	#Back handspring.
 
-	jumpframe 1 0 -1 0 dust0002
+	jumpframe 1 0 -1 0 flash_jump_liftoff
 
 	delay	6
 	offset  100 200
@@ -964,7 +964,7 @@ anim freespecial3
 
 	#Plane force down (Spin kick)
 
-	jumpframe 2 2 0.1 0 dust0002
+	jumpframe 2 2 0.1 0 flash_jump_liftoff
 	landframe 7 dust0003
 	fastattack 1
 
@@ -999,7 +999,7 @@ anim freespecial4
 
 	#Plane attack up (Palm thrust)
 
-	jumpframe 2 3.1 0.3 -0.9 dust0002
+	jumpframe 2 3.1 0.3 -0.9 flash_jump_liftoff
 	landframe 5 dust0003
 	range     0    100
 	rangez    -100 -25
@@ -1028,7 +1028,7 @@ anim freespecial5
 
 	#Plane attack down (Flip kick)
 
-	jumpframe 2 3.1 0.3 0.9 dust0002
+	jumpframe 2 3.1 0.3 0.9 flash_jump_liftoff
 	landframe 6 dust0003
 	range     0   100
 	rangez    100 25
@@ -1150,7 +1150,7 @@ anim freespecial8
 
 	energycost 	15
 	mponly 	   	1
-	jumpframe  	5 3 2 0 dust0002
+	jumpframe  	5 3 2 0 flash_jump_liftoff
 	landframe  	12 dust0003
 	fastattack 	1
 
@@ -1208,7 +1208,7 @@ anim freespecial9
 
 	energycost 	75
 	mponly 	1
-	jumpframe  	4 0 7 0 dust0002
+	jumpframe  	4 0 7 0 flash_jump_liftoff
 	followanim 	7
 	followcond 	2
 	attackone	1
@@ -1245,7 +1245,7 @@ anim freespecial10
 	loop		1 18 20
 	energycost 	10
 	mponly 	   	1
-	jumpframe  	4 4.2 1 0 dust0002
+	jumpframe  	4 4.2 1 0 flash_jump_liftoff
 	landframe  	21 dust0003
 	fastattack 	1
 	counterattack 	1
@@ -1318,7 +1318,7 @@ anim freespecial12
 
 	energycost 	15
 	mponly 	   	1
-	jumpframe  	3 0 7 0 dust0002
+	jumpframe  	3 0 7 0 flash_jump_liftoff
 	followanim 	1
 	followcond 	2
 	fastattack 	1
@@ -1456,7 +1456,7 @@ anim freespecial16
 
 	#Gen'ei Shiranui - Uwa Agito.
 
-	jumpframe 3 2 2 0 dust0002
+	jumpframe 3 2 2 0 flash_jump_liftoff
 	landframe 8 dust0003
 	fastattack 1
 
@@ -1554,7 +1554,7 @@ anim freespecial18
 
 	energycost 	75
 	mponly 	   	1
-	jumpframe  	7 3.6 2 0 dust0002
+	jumpframe  	7 3.6 2 0 flash_jump_liftoff
 	landframe  	26 dust0003
 	fastattack 	1
 
@@ -1645,7 +1645,7 @@ anim freespecial19
 
 	#Bakushin.
 
-	jumpframe 	2 2.5 4 0 dust0002
+	jumpframe 	2 2.5 4 0 flash_jump_liftoff
 	landframe 	5 dust0003
 	energycost	25
 	mponly		1
@@ -1881,7 +1881,7 @@ anim follow4
 	#Invinsible start up.
 	#Counterattack property
 
-	jumpframe  	6 4.5 2.5 0 dust0002
+	jumpframe  	6 4.5 2.5 0 flash_jump_liftoff
 	landframe  	32 dust0003
 	fastattack 	1
 
@@ -2204,7 +2204,7 @@ anim follow8
 
 	#SDM Zan'ei Ryuusei Ken
 
-	jumpframe  	3 0 9 0 dust0002
+	jumpframe  	3 0 9 0 flash_jump_liftoff
 	followanim 	9
 	followcond 	2
 	attackone	1
@@ -2577,7 +2577,7 @@ anim follow86
 
 	#Side Dodge (up) step in attack.
 
-	jumpframe 2 1.5 0.6 0.9 dust0002
+	jumpframe 2 1.5 0.6 0.9 flash_jump_liftoff
 	landframe 6 dust0003
 	fastattack 1
 
@@ -2605,7 +2605,7 @@ anim follow87
 
 	#Side dodge (down) step in attack.
 
-	jumpframe 2 1.5 0.6 -0.9 dust0002
+	jumpframe 2 1.5 0.6 -0.9 flash_jump_liftoff
 	landframe 5 dust0003
 	fastattack 1
 
@@ -2801,7 +2801,7 @@ anim grabforward
 	#Gourin Kai
 
 	quakeframe 8 5 -2
-	jumpframe  5 3 0 0 dust0002
+	jumpframe  5 3 0 0 flash_jump_liftoff
 	dropframe  6
 	landframe  8 dust0004
 	fastattack 1
@@ -3297,7 +3297,7 @@ anim blockpain4
 anim land
 
 	landframe 4 dust0003
-	jumpframe 1 1 1 0 dust0002
+	jumpframe 1 1 1 0 flash_jump_liftoff
 
 	delay	8
 	offset	100 200
@@ -3315,7 +3315,7 @@ anim land
 
 anim rise
 
-	jumpframe 3 1.2 0.2 0 dust0002
+	jumpframe 3 1.2 0.2 0 flash_jump_liftoff
 	landframe 5 dust0003
 
 	delay	8
@@ -3339,7 +3339,7 @@ anim rise
 
 anim rise3
 
-	jumpframe 5 1.2 -0.2 0 dust0002
+	jumpframe 5 1.2 -0.2 0 flash_jump_liftoff
 	landframe 8 dust0003
 
 	delay	6
@@ -3365,7 +3365,7 @@ anim rise3
 
 anim rise6
 
-	jumpframe 5 1.2 -0.2 0 dust0002
+	jumpframe 5 1.2 -0.2 0 flash_jump_liftoff
 	landframe 8 dust0003
 
 	delay	6
@@ -3391,7 +3391,7 @@ anim rise6
 
 anim rise7
 
-	jumpframe 5 1.2 -0.2 0 dust0002
+	jumpframe 5 1.2 -0.2 0 flash_jump_liftoff
 	landframe 8 dust0003
 
 	delay	6
@@ -3417,7 +3417,7 @@ anim rise7
 
 anim rise8
 
-	jumpframe 5 1.2 -0.2 0 dust0002
+	jumpframe 5 1.2 -0.2 0 flash_jump_liftoff
 	landframe 8 dust0003
 
 	delay	6
@@ -3443,7 +3443,7 @@ anim rise8
 
 anim rise11
 
-	jumpframe 5 1.2 -0.2 0 dust0002
+	jumpframe 5 1.2 -0.2 0 flash_jump_liftoff
 	landframe 8 dust0003
 
 	delay	6
@@ -3669,7 +3669,7 @@ anim fall9
 
 anim death
 
-	jumpframe 3 1.2 0.2 0 dust0002
+	jumpframe 3 1.2 0.2 0 flash_jump_liftoff
 	landframe 5 dust0003
 
 	delay	8
@@ -3707,7 +3707,7 @@ anim death
 
 anim death6
 
-	jumpframe 5 1.2 -0.2 0 dust0002
+	jumpframe 5 1.2 -0.2 0 flash_jump_liftoff
 	landframe 8 dust0003
 
 	delay	6
@@ -3747,7 +3747,7 @@ anim death6
 
 anim death7
 
-	jumpframe 5 1.2 -0.2 0 dust0002
+	jumpframe 5 1.2 -0.2 0 flash_jump_liftoff
 	landframe 8 dust0003
 
 	delay	6
@@ -3787,7 +3787,7 @@ anim death7
 
 anim death8
 
-	jumpframe 5 1.2 -0.2 0 dust0002
+	jumpframe 5 1.2 -0.2 0 flash_jump_liftoff
 	landframe 8 dust0003
 
 	delay	6
@@ -3827,7 +3827,7 @@ anim death8
 
 anim death11
 
-	jumpframe 5 1.2 -0.2 0 dust0002
+	jumpframe 5 1.2 -0.2 0 flash_jump_liftoff
 	landframe 8 dust0003
 
 	delay	6

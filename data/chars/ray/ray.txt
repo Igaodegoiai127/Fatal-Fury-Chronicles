@@ -13,7 +13,7 @@ grabdistance	40
 gfxshadow		1
 falldie			2
 nodieblink      3
-dust			flash_fall_land dust0003 dust0002
+dust			flash_fall_land dust0003 flash_jump_liftoff
 aggression      -1020
 projectilehit   enemy obstacle trap
 subject_to_wall	0

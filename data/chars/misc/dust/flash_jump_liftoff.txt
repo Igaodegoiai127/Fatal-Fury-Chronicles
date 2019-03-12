@@ -1,6 +1,6 @@
 #Jump liftoff effect
 
-name	dust0002
+name	flash_jump_liftoff
 type	none
 shadow	0
 
