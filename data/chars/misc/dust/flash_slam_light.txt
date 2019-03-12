@@ -1,6 +1,6 @@
 #Light slam.
 
-name	dust0004
+name	flash_slam_light
 type	none
 lifespan 2
 shadow	0

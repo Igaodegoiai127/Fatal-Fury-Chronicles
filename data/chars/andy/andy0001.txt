@@ -2073,7 +2073,7 @@ anim follow6
 	#Bakushin air finish.
 
 	quakeframe 2 5 -2
-	landframe  2 dust0004
+	landframe  2 flash_slam_light
 	fastattack 1
 
 	delay	1
@@ -2803,7 +2803,7 @@ anim grabforward
 	quakeframe 8 5 -2
 	jumpframe  5 3 0 0 flash_jump_liftoff
 	dropframe  6
-	landframe  8 dust0004
+	landframe  8 flash_slam_light
 	fastattack 1
 
 	delay	10
