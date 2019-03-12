@@ -1,7 +1,6 @@
 {
   "ExpandedNodes": [
     "",
-    "\\data",
     "\\data\\bgs",
     "\\data\\bgs\\beach",
     "\\data\\bgs\\beach\\cabin_cruiser",
@@ -9,11 +8,8 @@
     "\\data\\chars",
     "\\data\\chars\\andy",
     "\\data\\chars\\galford",
-    "\\data\\chars\\terry",
-    "\\data\\scripts",
-    "\\data\\scripts\\dc_fidelity",
-    "\\data\\scripts\\dc_terrain"
+    "\\data\\chars\\terry"
   ],
-  "SelectedNode": "\\data\\chars\\terry\\terry.txt",
+  "SelectedNode": "\\data",
   "PreviewInSolutionExplorer": false
 }

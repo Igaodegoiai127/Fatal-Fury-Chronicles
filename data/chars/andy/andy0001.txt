@@ -46,7 +46,9 @@ onmovezscript		data/scripts/common/event_move_z.c
 onfallscript		data/chars/andy/scripts/fall0001.c
 onpainscript		data/scripts/common/event_pain.c
 
-#*****Sub Entites*****
+# Sub Entites
+
+load spiral_in
 
 load	andybe		#Bound visuals
 load	andypa		#Pause visuals
@@ -58,18 +60,18 @@ alternatepal   data/chars/andy/charcoal.act
 
 #*****Commands*****************************************************************************
 
-com U -> a    	freespecial2  		# Force plane up.
-com D -> a    	freespecial3  		# Force plane down.
-com	U -> a + j    	freespecial4		# Plane attack up.
-com	D -> a + j    	freespecial5		# Plane attack down.
-com	d b a    	freespecial6		# Hishoken.
-com	d b s    	freespecial7		# Geki Hishoken.
-com	d f a    	freespecial12		# Zaneiken.
-com	d f j    	freespecial8		# Ku Ha dan (short).
-com	d b f s		freespecial9		# Zanei Ryuusei Ken.
-com	f d f a  	freespecial10		# Shoryudan.
-com d u s    	freespecial17		# Yami Abise Geri.
-com	d f d f a 	freespecial18		# Cho Reppaa Dan.
+com U -> a    				freespecial2  		# Force plane up.
+com D -> a    				freespecial3  		# Force plane down.
+com	U -> a + j    			freespecial4		# Plane attack up.
+com	D -> a + j    			freespecial5		# Plane attack down.
+com	d b a    				freespecial6		# Hishoken.
+com	d b s    				freespecial7		# Geki Hishoken.
+com	d f a    				freespecial12		# Zaneiken.
+com	d f j    				freespecial8		# Ku Ha dan (short).
+com	d -> f -> d -> f -> a	freespecial9		# Zanei Ryuusei Ken.
+com	f d f a  				freespecial10		# Shoryudan.
+com d u s    				freespecial17		# Yami Abise Geri.
+com	d -> f -> d -> f -> j 	freespecial18		# Cho Reppaa Dan.
 
 
 #*****Basic********************************************************************************
@@ -1220,7 +1222,11 @@ anim freespecial9
 	@cmd	dc_disney_alternate_on_health getlocalvar("self") openborconstant("ANI_FOLLOW8")
 		frame	data/chars/andy/andy0271
 	delay	4
-	@cmd	bind0008 "paus0001" "visual" 12 1 -25 90 -1 1 openborconstant("ANI_FOLLOW3") 0 1
+	@cmd	bind0008 "spiral_in" "visual" 0 1 -25 90 -1 1 openborconstant("ANI_IDLE") 0 1
+
+	
+
+
 		frame	data/chars/andy/andy0271
 		frame	data/chars/andy/andy0272
 	#cmd stereo_sound_command_here "sand0003.wav"
@@ -1564,7 +1570,11 @@ anim freespecial18
 	@cmd	dc_disney_alternate_on_health getlocalvar("self") openborconstant("ANI_FOLLOW4")
 		frame	data/chars/andy/0_1.png
 	delay	6
+	
+	
 	@cmd	bind0008 "paus0001" "visual" 12 1 -10 80 1 1 openborconstant("ANI_FOLLOW3") 0 1
+
+
 		frame	data/chars/andy/3_0.png
 	#cmd stereo_sound_command_here "vand0020.wav"					#Voice effect.
 		frame	data/chars/andy/andy0202

@@ -9349,10 +9349,10 @@
     <Text Include="data\chars\andy\andypa.txt" />
     <Text Include="data\chars\misc\crat0001\crat0001.txt" />
     <Text Include="data\chars\misc\crat0001\crat0002.txt" />
-    <Text Include="data\chars\misc\dust\dust0002.txt" />
-    <Text Include="data\chars\misc\dust\dust0003.txt" />
-    <Text Include="data\chars\misc\dust\dust0004.txt" />
-    <Text Include="data\chars\misc\dust\dust0005.txt" />
+    <Text Include="data\chars\misc\dust\flash_jump_liftoff.txt" />
+    <Text Include="data\chars\misc\dust\flash_jump_land.txt" />
+    <Text Include="data\chars\misc\dust\flash_slam_light.txt" />
+    <Text Include="data\chars\misc\dust\flash_slam_heavy.txt" />
     <Text Include="data\chars\misc\effects\effe0001.txt" />
     <Text Include="data\chars\misc\effects\paus0001.txt" />
     <Text Include="data\chars\misc\effects\proj0001.txt" />
