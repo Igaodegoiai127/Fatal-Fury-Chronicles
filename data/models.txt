@@ -9,7 +9,7 @@ maxfreespecials 100
 maxattacktypes  20
 noaircancel     2
 
-#*****Flash/Hit sparks*****
+# Flash/Hit sparks.
 load	Flash				data/chars/misc/flash/flash.txt
 load	Block				data/chars/misc/flash/block.txt
 load    flash_fall_land		data/chars/misc/dust/flash_fall_land.txt
@@ -17,6 +17,11 @@ load    flash_jump_liftoff	data/chars/misc/dust/flash_jump_liftoff.txt
 load    flash_jump_land		data/chars/misc/dust/flash_jump_land.txt
 load    flash_slam_light	data/chars/misc/dust/flash_slam_light.txt
 load    flash_slam_heavy	data/chars/misc/dust/flash_slam_heavy.txt
+
+# Miscellaneous special effects.
+
+know	spiral_in	data/chars/misc/effects/spiral_in/spiral_in.txt
+
 load	paus0001	data/chars/misc/effects/paus0001.txt		# Text entity effects.
 load	effe0001	data/chars/misc/effects/effe0001.txt		# General one shot effects.
 

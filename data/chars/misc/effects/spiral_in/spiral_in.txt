@@ -1,0 +1,42 @@
+name         spiral_in    					
+type	     text
+subtype	     noskip   						
+health	     100						
+alpha	     1
+
+palette	data/chars/misc/effects/spiral_in/0_0.png
+
+anim idle
+
+	delay	3
+	offset	96 89	
+
+	frame	data/chars/misc/effects/spiral_in/0_0.png
+	frame	data/chars/misc/effects/spiral_in/0_1.png
+	frame	data/chars/misc/effects/spiral_in/0_2.png
+	frame	data/chars/misc/effects/spiral_in/0_3.png
+	frame	data/chars/misc/effects/spiral_in/0_4.png
+	frame	data/chars/misc/effects/spiral_in/0_5.png
+	frame	data/chars/misc/effects/spiral_in/0_6.png
+	frame	data/chars/misc/effects/spiral_in/0_7.png
+	frame	data/chars/misc/effects/spiral_in/0_8.png
+	frame	data/chars/misc/effects/spiral_in/0_9.png
+	frame	data/chars/misc/effects/spiral_in/0_10.png
+	frame	data/chars/misc/effects/spiral_in/0_11.png
+	frame	data/chars/misc/effects/spiral_in/0_12.png
+	frame	data/chars/misc/effects/spiral_in/0_13.png
+	frame	data/chars/misc/effects/spiral_in/0_14.png
+	frame	data/chars/misc/effects/spiral_in/0_15.png
+	frame	data/chars/misc/effects/spiral_in/0_16.png
+	frame	data/chars/misc/effects/spiral_in/0_17.png
+	frame	data/chars/misc/effects/spiral_in/0_18.png
+	frame	data/chars/misc/effects/spiral_in/0_19.png
+	frame	data/chars/misc/effects/spiral_in/0_20.png
+	frame	data/chars/misc/effects/spiral_in/0_21.png
+	frame	data/chars/misc/effects/spiral_in/0_22.png
+	frame	data/chars/misc/effects/spiral_in/0_23.png
+	frame	data/chars/misc/effects/spiral_in/0_24.png
+	frame	data/chars/misc/effects/spiral_in/0_25.png
+	frame	data/chars/misc/effects/spiral_in/0_26.png
+	frame	data/chars/misc/effects/spiral_in/0_27.png
+	frame	data/chars/misc/effects/spiral_in/0_28.png
