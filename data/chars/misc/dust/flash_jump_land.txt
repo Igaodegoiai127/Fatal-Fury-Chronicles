@@ -1,6 +1,6 @@
 #Jump land effect
 
-name	dust0003
+name	flash_jump_land
 type	none
 lifespan 2
 shadow	0

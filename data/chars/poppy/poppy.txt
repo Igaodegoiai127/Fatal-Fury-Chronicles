@@ -18,7 +18,7 @@ projectilehit 	player obstacle
 candamage     	enemy obstacle
 hostile			none
 gfxshadow    	1
-dust		flash_fall_land dust0003 flash_jump_liftoff
+dust		flash_fall_land flash_jump_land flash_jump_liftoff
 
 #*****Scripts*****
 
