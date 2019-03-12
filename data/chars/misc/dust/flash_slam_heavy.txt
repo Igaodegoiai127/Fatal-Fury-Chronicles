@@ -1,6 +1,6 @@
 #Heavy slam.
 
-name	dust0005
+name	flash_slam_heavy
 type	none
 lifespan 2
 shadow	0
