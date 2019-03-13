@@ -1222,17 +1222,18 @@ anim freespecial9
 	@cmd	dc_disney_alternate_on_health getlocalvar("self") openborconstant("ANI_FOLLOW8")
 		frame	data/chars/andy/andy0271
 	delay	4
-	@cmd	bind0008 "spiral_in" "visual" 0 1 -25 90 -1 1 openborconstant("ANI_IDLE") 0 1
-
+	
 	# Spawn sub entity and set it as entity for binding.
 	@cmd dc_gauntlet_clear_spawn_entry
 	@cmd dc_gauntlet_set_spawn_entry "name" "spiral_in"	
-	@cmd dc_bind_set_entity dc_gauntlet_spawn()
+	@cmd dc_elmers_set_entity dc_gauntlet_spawn()
 	@cmd dc_gauntlet_clear_spawn_entry
 
 	# Set self as target of bind, adjust offset and apply bind.
-	@cmd dc_bind_set_target getlocalvar("self")
-	@cmd dc_bind_apply_position
+	@cmd dc_elmers_set_target getlocalvar("self")
+	@cmd dc_elmers_set_offset_x -25
+	@cmd dc_elmers_set_offset_y 65
+	@cmd dc_elmers_quick_bind
 
 		frame	data/chars/andy/andy0271
 		frame	data/chars/andy/andy0272
@@ -1527,20 +1528,20 @@ anim freespecial17
 		@cmd clearspawnentry
 		@cmd setspawnentry			"name"		"effe0001"
 		@cmd setspawnentry			"map"		2
-		@cmd dc_bind_set_entity		spawn()
+		@cmd dc_elmers_set_entity		spawn()
 		@cmd clearspawnentry
 
 		# Move entity into position we want.
-		@cmd dc_bind_set_offset_x	30
-		@cmd dc_bind_set_offset_y	100
-		@cmd dc_bind_set_offset_z	0
-		@cmd dc_bind_apply_position
+		@cmd dc_elmers_set_offset_x	30
+		@cmd dc_elmers_set_offset_y	100
+		@cmd dc_elmers_set_offset_z	0
+		@cmd dc_elmers_apply_position
 
 		# Set animation.
-		@cmd dc_disney_set_entity	dc_bind_get_entity()
+		@cmd dc_disney_set_entity	dc_elmers_get_entity()
 		@cmd dc_disney_play_animation		openborconstant("ANI_FOLLOW8")
 
-		@cmd set_entity_property	dc_bind_get_entity() "autokill" 1
+		@cmd set_entity_property	dc_elmers_get_entity() "autokill" 1
 
 		#	bind0008 "effe0001" "effe0001" 2 1 30 135 1 1 openborconstant("ANI_FOLLOW8") 0 1
 	frame	data/chars/andy/andy0504
@@ -2740,9 +2741,9 @@ anim grab
 	delay	3
 	offset	94 200
 	bbox	75 105 40 95
-	@cmd	dc_bind_set_entity getentityproperty(getlocalvar("self") "opponent")
-	@cmd	dc_bind_set_offset_x 40
-	@cmd	dc_bind_apply_position 
+	@cmd	dc_elmers_set_entity getentityproperty(getlocalvar("self") "opponent")
+	@cmd	dc_elmers_set_offset_x 40
+	@cmd	dc_elmers_apply_position 
 		frame	data/chars/andy/andy0429
 	offset	96 200
 		frame	data/chars/andy/andy0429

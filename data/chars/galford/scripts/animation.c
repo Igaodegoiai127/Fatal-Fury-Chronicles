@@ -17,4 +17,4 @@ Galford
 #include "data/scripts/com/summ0001.h"
 #include "data/scripts/dc_velocity/main.c"
 #include "data/scripts/dc_damage/main.c"
-#include "data/scripts/dc_bind/main.c"
+#include "data/scripts/dc_elmers/main.c"

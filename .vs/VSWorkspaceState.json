@@ -2,14 +2,12 @@
   "ExpandedNodes": [
     "",
     "\\data",
-    "\\data\\bgs\\beach\\cabin_cruiser",
-    "\\data\\bgs\\beach\\cabin_cruiser\\scripts",
     "\\data\\chars\\andy",
     "\\data\\chars\\andy\\scripts",
     "\\data\\chars\\misc\\effects",
     "\\data\\chars\\misc\\effects\\spiral_in",
-    "\\data\\scripts\\dc_gauntlet"
+    "\\data\\scripts\\dc_bind"
   ],
-  "SelectedNode": "\\data\\scripts",
+  "SelectedNode": "\\data\\chars",
   "PreviewInSolutionExplorer": false
 }
