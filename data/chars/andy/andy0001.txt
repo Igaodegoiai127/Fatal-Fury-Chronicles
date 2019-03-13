@@ -1224,8 +1224,15 @@ anim freespecial9
 	delay	4
 	@cmd	bind0008 "spiral_in" "visual" 0 1 -25 90 -1 1 openborconstant("ANI_IDLE") 0 1
 
-	
+	# Spawn sub entity and set it as entity for binding.
+	@cmd dc_gauntlet_clear_spawn_entry
+	@cmd dc_gauntlet_set_spawn_entry "name" "spiral_in"	
+	@cmd dc_bind_set_entity dc_gauntlet_spawn()
+	@cmd dc_gauntlet_clear_spawn_entry
 
+	# Set self as target of bind, adjust offset and apply bind.
+	@cmd dc_bind_set_target getlocalvar("self")
+	@cmd dc_bind_apply_position
 
 		frame	data/chars/andy/andy0271
 		frame	data/chars/andy/andy0272

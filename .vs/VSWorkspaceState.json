@@ -1,15 +1,15 @@
 {
   "ExpandedNodes": [
     "",
-    "\\data\\bgs",
-    "\\data\\bgs\\beach",
+    "\\data",
     "\\data\\bgs\\beach\\cabin_cruiser",
     "\\data\\bgs\\beach\\cabin_cruiser\\scripts",
-    "\\data\\chars",
     "\\data\\chars\\andy",
-    "\\data\\chars\\galford",
-    "\\data\\chars\\terry"
+    "\\data\\chars\\andy\\scripts",
+    "\\data\\chars\\misc\\effects",
+    "\\data\\chars\\misc\\effects\\spiral_in",
+    "\\data\\scripts\\dc_gauntlet"
   ],
-  "SelectedNode": "\\data",
+  "SelectedNode": "\\data\\scripts",
   "PreviewInSolutionExplorer": false
 }
