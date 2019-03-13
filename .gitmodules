@@ -71,3 +71,6 @@
 	path = data/scripts/dc_terrain
 	
 	url = https://github.com/DCurrent/openbor-script-terrain
+[submodule "data/scripts/dc_elmers"]
+	path = data/scripts/dc_elmers
+	url = https://github.com/DCurrent/openbor-script-elmers
