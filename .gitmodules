@@ -14,35 +14,60 @@
 	path = data/scripts/dc_damage
 	url = https://github.com/DCurrent/openbor-script-damage
 [submodule "data/scripts/dc_disney"]
+	
 	path = data/scripts/dc_disney
+	
 	url = https://github.com/DCurrent/openbor-script-disney
+
 [submodule "data/scripts/dc_kanga"]
+	
 	path = data/scripts/dc_kanga
+	
 	url = https://github.com/DCurrent/openbor-script-kanga
+
 [submodule "data/scripts/dc_string"]
+	
 	path = data/scripts/dc_string
+	
 	url = https://github.com/DCurrent/openbor-script-string
+
 [submodule "data/scripts/dc_fidelity"]
+	
 	path = data/scripts/dc_fidelity
+	
 	url = https://github.com/DCurrent/openbor-script-fidelity
+
 [submodule "data/scripts/dc_math"]
+	
 	path = data/scripts/dc_math
+	
 	url = https://github.com/DCurrent/openbor-script-math
+
 [submodule "data/scripts/dc_grapple"]
+	
 	path = data/scripts/dc_grapple
+	
 	url = https://github.com/DCurrent/openbor-script-grapple
+
 [submodule "data/scripts/dc_afterimage"]
+	
 	path = data/scripts/dc_afterimage
+	
 	url = https://github.com/DCurrent/openbor-script-afterimage
-[submodule "data/scripts/dc_bind"]
-	path = data/scripts/dc_bind
-	url = https://github.com/DCurrent/openbor-script-bind
 [submodule "data/scripts/dc_hansburg"]
+	
 	path = data/scripts/dc_hansburg
+	
 	url = https://github.com/DCurrent/openbor-script-Hansburg
+
 [submodule "data/scripts/dc_target"]
+	
 	path = data/scripts/dc_target
+	
 	url = https://github.com/DCurrent/openbor-script-target
+
 [submodule "data/scripts/dc_terrain"]
+	
 	path = data/scripts/dc_terrain
+	
 	url = https://github.com/DCurrent/openbor-script-terrain
