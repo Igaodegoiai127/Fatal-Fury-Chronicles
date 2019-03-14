@@ -384,30 +384,6 @@
     <ClCompile Include="data\chars\misc\flash\block\scripts\event_spawn.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="data\scripts\dc_bind\apply_position.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="data\scripts\dc_bind\bind.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="data\scripts\dc_bind\entity.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="data\scripts\dc_bind\instance.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="data\scripts\dc_bind\level.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="data\scripts\dc_bind\main.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="data\scripts\dc_bind\offset.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="data\scripts\dc_bind\positioning.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="data\scripts\com\bind0003.h">
@@ -486,9 +462,6 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="data\scripts\dc_terrain\config.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="data\scripts\dc_bind\config.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -9451,6 +9424,216 @@
     <Image Include="data\chars\misc\effects\spiral_in\0_28.png">
       <Filter>Resource Files</Filter>
     </Image>
+    <Image Include="data\chars\misc\effects\kof_ball_explosion\0_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\effects\kof_ball_explosion\0_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\effects\kof_ball_explosion\0_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\effects\kof_ball_explosion\0_3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\effects\kof_ball_explosion\0_4.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\effects\kof_ball_explosion\0_5.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\effects\kof_ball_explosion\0_6.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\effects\kof_ball_explosion\0_7.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\effects\kof_ball_explosion\0_8.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\effects\kof_ball_explosion\0_9.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\effects\kof_ball_explosion\0_10.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\effects\kof_ball_explosion\0_11.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\effects\kof_ball_explosion\0_12.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\effects\kof_ball_explosion\0_13.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\effects\kof_ball_explosion\0_14.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\effects\kof_ball_explosion\0_15.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\effects\kof_ball_explosion\0_16.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\effects\kof_ball_explosion\0_17.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\effects\kof_ball_explosion\0_18.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\effects\kof_ball_explosion\0_19.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\effects\kof_ball_explosion\0_20.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\effects\kof_ball_explosion\0_21.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\effects\kof_ball_explosion\0_22.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\effects\kof_ball_explosion\0_23.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\effects\kof_smokey_ground_explosion\fire0019.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\effects\kof_smokey_ground_explosion\fire0020.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\effects\kof_smokey_ground_explosion\fire0021.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\effects\kof_smokey_ground_explosion\fire0022.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\effects\kof_smokey_ground_explosion\fire0023.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\effects\kof_smokey_ground_explosion\fire0024.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\effects\kof_smokey_ground_explosion\fire0025.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\effects\kof_smokey_ground_explosion\fire0026.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\effects\kof_smokey_ground_explosion\fire0027.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\effects\kof_smokey_ground_explosion\fire0028.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\effects\kof_smokey_ground_explosion\fire0029.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\effects\kof_smokey_ground_explosion\fire0030.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\effects\kof_smokey_ground_explosion\fire0031.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\effects\kof_smokey_ground_explosion\fire0032.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\effects\kof_smokey_ground_explosion\fire0033.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\effects\kof_smokey_ground_explosion\fire0034.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\effects\kof_smokey_ground_explosion\fire0035.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\effects\kof_smokey_ground_explosion\fire0036.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\effects\kof_smokey_ground_explosion\fire0037.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\effects\kof_smokey_ground_explosion\fire0038.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\effects\kof_smokey_ground_explosion\fire0039.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\effects\kof_smokey_ground_explosion\fire0040.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\effects\kof_smokey_ground_explosion\fire0041.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\effects\kof_smokey_ground_explosion\0_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\effects\kof_smokey_ground_explosion\0_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\effects\kof_smokey_ground_explosion\0_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\effects\kof_smokey_ground_explosion\0_3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\effects\kof_smokey_ground_explosion\0_4.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\effects\kof_smokey_ground_explosion\0_5.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\effects\kof_smokey_ground_explosion\0_6.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\effects\kof_smokey_ground_explosion\0_7.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\effects\kof_smokey_ground_explosion\0_8.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\effects\kof_smokey_ground_explosion\0_9.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\effects\kof_smokey_ground_explosion\0_10.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\effects\kof_smokey_ground_explosion\0_11.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\effects\kof_smokey_ground_explosion\0_12.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\effects\kof_smokey_ground_explosion\0_13.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\effects\kof_smokey_ground_explosion\0_14.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\effects\kof_smokey_ground_explosion\0_15.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\effects\kof_smokey_ground_explosion\0_16.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\effects\kof_smokey_ground_explosion\0_17.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\effects\kof_smokey_ground_explosion\0_18.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\effects\kof_smokey_ground_explosion\0_19.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\effects\kof_smokey_ground_explosion\0_20.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\effects\kof_smokey_ground_explosion\0_21.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\effects\kof_smokey_ground_explosion\0_22.png">
+      <Filter>Resource Files</Filter>
+    </Image>
   </ItemGroup>
   <ItemGroup>
     <Text Include="data\levels.txt" />
@@ -9510,6 +9693,10 @@
     <Text Include="data\chars\misc\effects\ground_impact_star\ground_impact_star_pause.txt" />
     <Text Include="data\chars\misc\effects\ground_impact_star\ground_impact_star.txt" />
     <Text Include="data\chars\misc\effects\spiral_in\spiral_in.txt" />
+    <Text Include="data\chars\misc\effects\kof_ball_explosion\kof_ball_explosion.txt" />
+    <Text Include="data\chars\misc\effects\kof_ball_explosion\kof_ball_explosion_pause.txt" />
+    <Text Include="data\chars\misc\effects\kof_smokey_ground_explosion\kof_smokey_groud_explosion.txt" />
+    <Text Include="data\chars\misc\effects\kof_smokey_ground_explosion\kof_smokey_groud_explosion_pause.txt" />
   </ItemGroup>
   <ItemGroup>
     <None Include="data\chars\andy\wild-ambition-front-throw.psd" />
