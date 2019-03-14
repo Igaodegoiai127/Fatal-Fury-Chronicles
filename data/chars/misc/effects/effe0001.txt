@@ -55,39 +55,6 @@ anim idle
 #*****Special******************************************************************************
 #*****Followups****************************************************************************
 
-anim follow2
-
-	#Ball explosion.
-
-	quakeframe 1 6 -3
-	
-	delay	3
-	offset	100 100
-		frame	data/chars/misc/effects/fire0076
-		frame	data/chars/misc/effects/fire0077
-		frame	data/chars/misc/effects/fire0078
-		frame	data/chars/misc/effects/fire0079
-		frame	data/chars/misc/effects/fire0080
-		frame	data/chars/misc/effects/fire0081
-		frame	data/chars/misc/effects/fire0082
-		frame	data/chars/misc/effects/fire0083
-		frame	data/chars/misc/effects/fire0084
-		frame	data/chars/misc/effects/fire0085
-		frame	data/chars/misc/effects/fire0086
-		frame	data/chars/misc/effects/fire0087
-		frame	data/chars/misc/effects/fire0088
-		frame	data/chars/misc/effects/fire0089
-		frame	data/chars/misc/effects/fire0090
-		frame	data/chars/misc/effects/fire0091
-		frame	data/chars/misc/effects/fire0092
-		frame	data/chars/misc/effects/fire0093
-		frame	data/chars/misc/effects/fire0094
-		frame	data/chars/misc/effects/fire0095
-		frame	data/chars/misc/effects/fire0096
-		frame	data/chars/misc/effects/fire0097
-		frame	data/chars/misc/effects/fire0098
-		frame	data/chars/misc/effects/fire0099
-
 anim follow4
 
 	#Smokey ground explosion.
