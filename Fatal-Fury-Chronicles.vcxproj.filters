@@ -384,28 +384,28 @@
     <ClCompile Include="data\chars\misc\flash\block\scripts\event_spawn.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="data\scripts\dc_elmers\apply_position.c">
+    <ClCompile Include="data\scripts\dc_bind\apply_position.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="data\scripts\dc_elmers\bind.c">
+    <ClCompile Include="data\scripts\dc_bind\bind.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="data\scripts\dc_elmers\entity.c">
+    <ClCompile Include="data\scripts\dc_bind\entity.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="data\scripts\dc_elmers\instance.c">
+    <ClCompile Include="data\scripts\dc_bind\instance.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="data\scripts\dc_elmers\level.c">
+    <ClCompile Include="data\scripts\dc_bind\level.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="data\scripts\dc_elmers\main.c">
+    <ClCompile Include="data\scripts\dc_bind\main.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="data\scripts\dc_elmers\offset.c">
+    <ClCompile Include="data\scripts\dc_bind\offset.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="data\scripts\dc_elmers\positioning.c">
+    <ClCompile Include="data\scripts\dc_bind\positioning.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -488,7 +488,7 @@
     <ClInclude Include="data\scripts\dc_terrain\config.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="data\scripts\dc_elmers\config.h">
+    <ClInclude Include="data\scripts\dc_bind\config.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -9331,6 +9331,126 @@
     <Image Include="data\chars\ryu\61_13.png">
       <Filter>Resource Files</Filter>
     </Image>
+    <Image Include="data\chars\misc\effects\ground_impact_star\0_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\effects\ground_impact_star\0_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\effects\ground_impact_star\0_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\effects\ground_impact_star\0_3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\effects\ground_impact_star\0_4.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\effects\ground_impact_star\0_5.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\effects\ground_impact_star\0_6.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\effects\ground_impact_star\0_7.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\effects\ground_impact_star\0_8.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\effects\ground_impact_star\0_9.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\effects\ground_impact_star\0_10.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\effects\spiral_in\0_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\effects\spiral_in\0_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\effects\spiral_in\0_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\effects\spiral_in\0_3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\effects\spiral_in\0_4.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\effects\spiral_in\0_5.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\effects\spiral_in\0_6.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\effects\spiral_in\0_7.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\effects\spiral_in\0_8.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\effects\spiral_in\0_9.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\effects\spiral_in\0_10.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\effects\spiral_in\0_11.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\effects\spiral_in\0_12.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\effects\spiral_in\0_13.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\effects\spiral_in\0_14.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\effects\spiral_in\0_15.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\effects\spiral_in\0_16.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\effects\spiral_in\0_17.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\effects\spiral_in\0_18.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\effects\spiral_in\0_19.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\effects\spiral_in\0_20.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\effects\spiral_in\0_21.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\effects\spiral_in\0_22.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\effects\spiral_in\0_23.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\effects\spiral_in\0_24.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\effects\spiral_in\0_25.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\effects\spiral_in\0_26.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\effects\spiral_in\0_27.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\effects\spiral_in\0_28.png">
+      <Filter>Resource Files</Filter>
+    </Image>
   </ItemGroup>
   <ItemGroup>
     <Text Include="data\levels.txt" />
@@ -9387,6 +9507,9 @@
     <Text Include="data\chars\misc\flash\block.txt" />
     <Text Include="data\chars\ryu\ryu.txt" />
     <Text Include="data\chars\ken\ken.txt" />
+    <Text Include="data\chars\misc\effects\ground_impact_star\ground_impact_star_pause.txt" />
+    <Text Include="data\chars\misc\effects\ground_impact_star\ground_impact_star.txt" />
+    <Text Include="data\chars\misc\effects\spiral_in\spiral_in.txt" />
   </ItemGroup>
   <ItemGroup>
     <None Include="data\chars\andy\wild-ambition-front-throw.psd" />

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -138,14 +138,6 @@
     <ClCompile Include="data\scripts\dc_afterimage\main.c" />
     <ClCompile Include="data\scripts\dc_afterimage\trai0001.c" />
     <ClCompile Include="data\scripts\dc_afterimage\trai0002.c" />
-    <ClCompile Include="data\scripts\dc_elmers\bind.c" />
-    <ClCompile Include="data\scripts\dc_elmers\entity.c" />
-    <ClCompile Include="data\scripts\dc_elmers\instance.c" />
-    <ClCompile Include="data\scripts\dc_elmers\level.c" />
-    <ClCompile Include="data\scripts\dc_elmers\main.c" />
-    <ClCompile Include="data\scripts\dc_elmers\offset.c" />
-    <ClCompile Include="data\scripts\dc_elmers\positioning.c" />
-    <ClCompile Include="data\scripts\dc_elmers\apply_position.c" />
     <ClCompile Include="data\scripts\dc_d20\instance.c" />
     <ClCompile Include="data\scripts\dc_d20\main.c" />
     <ClCompile Include="data\scripts\dc_d20\random.c" />
@@ -240,7 +232,6 @@
     <ClInclude Include="data\scripts\com\trai0003.h" />
     <ClInclude Include="data\scripts\com\trai0004.h" />
     <ClInclude Include="data\scripts\dc_afterimage\config.h" />
-    <ClInclude Include="data\scripts\dc_elmers\config.h" />
     <ClInclude Include="data\scripts\dc_d20\config.h" />
     <ClInclude Include="data\scripts\dc_damage\config.h" />
     <ClInclude Include="data\scripts\dc_disney\config.h" />
@@ -1719,6 +1710,17 @@
     <Image Include="data\chars\misc\effects\fire0229.png" />
     <Image Include="data\chars\misc\effects\fire0230.png" />
     <Image Include="data\chars\misc\effects\fire0231.png" />
+    <Image Include="data\chars\misc\effects\ground_impact_star\0_0.png" />
+    <Image Include="data\chars\misc\effects\ground_impact_star\0_1.png" />
+    <Image Include="data\chars\misc\effects\ground_impact_star\0_10.png" />
+    <Image Include="data\chars\misc\effects\ground_impact_star\0_2.png" />
+    <Image Include="data\chars\misc\effects\ground_impact_star\0_3.png" />
+    <Image Include="data\chars\misc\effects\ground_impact_star\0_4.png" />
+    <Image Include="data\chars\misc\effects\ground_impact_star\0_5.png" />
+    <Image Include="data\chars\misc\effects\ground_impact_star\0_6.png" />
+    <Image Include="data\chars\misc\effects\ground_impact_star\0_7.png" />
+    <Image Include="data\chars\misc\effects\ground_impact_star\0_8.png" />
+    <Image Include="data\chars\misc\effects\ground_impact_star\0_9.png" />
     <Image Include="data\chars\misc\effects\impa0001.png" />
     <Image Include="data\chars\misc\effects\impa0002.png" />
     <Image Include="data\chars\misc\effects\impa0003.png" />
@@ -1730,6 +1732,35 @@
     <Image Include="data\chars\misc\effects\impa0009.png" />
     <Image Include="data\chars\misc\effects\impa0010.png" />
     <Image Include="data\chars\misc\effects\impa0011.png" />
+    <Image Include="data\chars\misc\effects\spiral_in\0_0.png" />
+    <Image Include="data\chars\misc\effects\spiral_in\0_1.png" />
+    <Image Include="data\chars\misc\effects\spiral_in\0_10.png" />
+    <Image Include="data\chars\misc\effects\spiral_in\0_11.png" />
+    <Image Include="data\chars\misc\effects\spiral_in\0_12.png" />
+    <Image Include="data\chars\misc\effects\spiral_in\0_13.png" />
+    <Image Include="data\chars\misc\effects\spiral_in\0_14.png" />
+    <Image Include="data\chars\misc\effects\spiral_in\0_15.png" />
+    <Image Include="data\chars\misc\effects\spiral_in\0_16.png" />
+    <Image Include="data\chars\misc\effects\spiral_in\0_17.png" />
+    <Image Include="data\chars\misc\effects\spiral_in\0_18.png" />
+    <Image Include="data\chars\misc\effects\spiral_in\0_19.png" />
+    <Image Include="data\chars\misc\effects\spiral_in\0_2.png" />
+    <Image Include="data\chars\misc\effects\spiral_in\0_20.png" />
+    <Image Include="data\chars\misc\effects\spiral_in\0_21.png" />
+    <Image Include="data\chars\misc\effects\spiral_in\0_22.png" />
+    <Image Include="data\chars\misc\effects\spiral_in\0_23.png" />
+    <Image Include="data\chars\misc\effects\spiral_in\0_24.png" />
+    <Image Include="data\chars\misc\effects\spiral_in\0_25.png" />
+    <Image Include="data\chars\misc\effects\spiral_in\0_26.png" />
+    <Image Include="data\chars\misc\effects\spiral_in\0_27.png" />
+    <Image Include="data\chars\misc\effects\spiral_in\0_28.png" />
+    <Image Include="data\chars\misc\effects\spiral_in\0_3.png" />
+    <Image Include="data\chars\misc\effects\spiral_in\0_4.png" />
+    <Image Include="data\chars\misc\effects\spiral_in\0_5.png" />
+    <Image Include="data\chars\misc\effects\spiral_in\0_6.png" />
+    <Image Include="data\chars\misc\effects\spiral_in\0_7.png" />
+    <Image Include="data\chars\misc\effects\spiral_in\0_8.png" />
+    <Image Include="data\chars\misc\effects\spiral_in\0_9.png" />
     <Image Include="data\chars\misc\effects\star0001.png" />
     <Image Include="data\chars\misc\effects\star0002.png" />
     <Image Include="data\chars\misc\effects\star0003.png" />
@@ -3232,8 +3263,11 @@
     <Text Include="data\chars\misc\dust\flash_slam_heavy.txt" />
     <Text Include="data\chars\misc\dust\flash_fall_land.txt" />
     <Text Include="data\chars\misc\effects\effe0001.txt" />
+    <Text Include="data\chars\misc\effects\ground_impact_star\ground_impact_star.txt" />
+    <Text Include="data\chars\misc\effects\ground_impact_star\ground_impact_star_pause.txt" />
     <Text Include="data\chars\misc\effects\paus0001.txt" />
     <Text Include="data\chars\misc\effects\proj0001.txt" />
+    <Text Include="data\chars\misc\effects\spiral_in\spiral_in.txt" />
     <Text Include="data\chars\misc\fenc0001\fence.txt" />
     <Text Include="data\chars\misc\flash\block.txt" />
     <Text Include="data\chars\misc\flash\flash.txt" />

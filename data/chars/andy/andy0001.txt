@@ -1220,7 +1220,9 @@ anim freespecial9
 	offset	100 200
 	bbox	75 135 30 65
 	@cmd	dc_disney_alternate_on_health getlocalvar("self") openborconstant("ANI_FOLLOW8")
-		frame	data/chars/andy/andy0271
+	
+	frame	data/chars/andy/andy0271
+	
 	delay	4
 	
 	# Spawn sub entity and set it as entity for binding.
@@ -1235,22 +1237,29 @@ anim freespecial9
 	@cmd dc_elmers_set_offset_y 65
 	@cmd dc_elmers_quick_bind
 
-		frame	data/chars/andy/andy0271
-		frame	data/chars/andy/andy0272
+	frame	data/chars/andy/andy0271
+	frame	data/chars/andy/andy0272
+	
 	#cmd stereo_sound_command_here "sand0003.wav"
-		frame	data/chars/andy/andy0273
+	frame	data/chars/andy/andy0273
+	
 	attack	75 135 30 65 0
 	grabin	1 25
 	delay	20
-		frame	data/chars/andy/andy0274
+	
+	frame	data/chars/andy/andy0274
+	
 	delay	16
 	attack	0
 	@cmd	dc_velocity_set_velocity_x 2.0
 	@cmd	dc_velocity_apply_velocity_x
-		frame	data/chars/andy/andy0275
+	
+	frame	data/chars/andy/andy0275
+	
 	@cmd	dc_velocity_set_velocity_x NULL()
 	@cmd	dc_velocity_apply_velocity_x
-		frame	data/chars/andy/7_2.png
+	
+	frame	data/chars/andy/7_2.png
 
 anim freespecial10
 
