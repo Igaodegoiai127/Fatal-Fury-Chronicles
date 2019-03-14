@@ -57,38 +57,6 @@ anim idle
 #*****Special******************************************************************************
 #*****Followups****************************************************************************
 
-anim follow4
-
-	#Smokey ground explosion.
-
-	quakeframe 1 6 -1
-	
-	delay	5
-	offset	100 100
-		frame	data/chars/misc/effects/fire0019
-		frame	data/chars/misc/effects/fire0020
-		frame	data/chars/misc/effects/fire0021
-		frame	data/chars/misc/effects/fire0022
-		frame	data/chars/misc/effects/fire0023
-		frame	data/chars/misc/effects/fire0024
-		frame	data/chars/misc/effects/fire0025
-		frame	data/chars/misc/effects/fire0026
-		frame	data/chars/misc/effects/fire0027
-		frame	data/chars/misc/effects/fire0028
-		frame	data/chars/misc/effects/fire0029
-		frame	data/chars/misc/effects/fire0030
-		frame	data/chars/misc/effects/fire0031
-		frame	data/chars/misc/effects/fire0032
-		frame	data/chars/misc/effects/fire0033
-		frame	data/chars/misc/effects/fire0034
-		frame	data/chars/misc/effects/fire0035
-		frame	data/chars/misc/effects/fire0036
-		frame	data/chars/misc/effects/fire0037
-		frame	data/chars/misc/effects/fire0038
-		frame	data/chars/misc/effects/fire0039
-		frame	data/chars/misc/effects/fire0040
-		frame	data/chars/misc/effects/fire0041
-
 anim follow3
 
 	#CVS lvl1 Hyper Spark
