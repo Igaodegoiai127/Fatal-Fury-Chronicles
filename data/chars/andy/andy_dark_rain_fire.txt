@@ -1,0 +1,78 @@
+name         andy_darK_rain_fire
+type	     none
+health	     100
+alpha	     1
+speedf		 0.0
+nomove		1
+
+palette	data/chars/misc/effects/cvs_mai_kage_no_mai/0_0.png
+
+anim idle
+
+	delay	4
+	offset	55 125
+
+	frame	data/chars/misc/effects/cvs_mai_kage_no_mai/0_0.png
+	
+	attack.damage.force 30
+	attack.damage.type burn
+	attack.position.x 32
+	attack.position.y 44
+	attack.reaction.fall.force 5
+	attack.reaction.fall.velocity.x -0.5
+	attack.reaction.fall.velocity.y 5
+	attack.size.x 47	
+	attack.size.y 82
+
+	frame	data/chars/misc/effects/cvs_mai_kage_no_mai/0_1.png
+	frame	data/chars/misc/effects/cvs_mai_kage_no_mai/0_2.png
+	
+	attack.position.x 42
+	attack.position.y 60
+	attack.size.x 30
+	attack.size.y 65
+
+	frame	data/chars/misc/effects/cvs_mai_kage_no_mai/0_3.png
+	frame	data/chars/misc/effects/cvs_mai_kage_no_mai/0_4.png
+	frame	data/chars/misc/effects/cvs_mai_kage_no_mai/0_5.png
+	frame	data/chars/misc/effects/cvs_mai_kage_no_mai/0_6.png
+	frame	data/chars/misc/effects/cvs_mai_kage_no_mai/0_16.png
+	frame	data/chars/misc/effects/cvs_mai_kage_no_mai/0_17.png
+	
+	attack.damage.force 25
+	attack.position.x 44
+	attack.position.y 42
+	attack.size.x 21
+	attack.size.y 80
+
+	frame	data/chars/misc/effects/cvs_mai_kage_no_mai/0_18.png
+	frame	data/chars/misc/effects/cvs_mai_kage_no_mai/0_19.png
+	
+	attack.damage.force 20
+	attack.position.x 45
+	attack.position.y 40
+	attack.size.x 19
+	attack.size.y 64
+
+	frame	data/chars/misc/effects/cvs_mai_kage_no_mai/0_20.png
+	frame	data/chars/misc/effects/cvs_mai_kage_no_mai/0_21.png
+	
+	attack.damage.force 15
+	attack.position.x 49
+	attack.position.y 41
+	attack.size.x 15
+	attack.size.y 40
+
+	frame	data/chars/misc/effects/cvs_mai_kage_no_mai/0_22.png
+	frame	data/chars/misc/effects/cvs_mai_kage_no_mai/0_23.png
+	frame	data/chars/misc/effects/cvs_mai_kage_no_mai/0_24.png
+	
+	attack.position.x 0
+	attack.position.y 0
+	attack.size.x 0
+	attack.size.y 0
+	
+	frame	data/chars/misc/effects/cvs_mai_kage_no_mai/0_25.png
+	frame	data/chars/misc/effects/cvs_mai_kage_no_mai/0_26.png
+	frame	data/chars/misc/effects/cvs_mai_kage_no_mai/0_27.png
+	frame	data/chars/misc/effects/cvs_mai_kage_no_mai/0_28.png

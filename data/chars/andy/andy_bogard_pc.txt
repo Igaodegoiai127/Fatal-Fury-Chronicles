@@ -50,8 +50,9 @@ onpainscript		data/scripts/common/event_pain.c
 
 load spiral_in
 
-load	andybe		#Bound visuals
-load	andypa		#Pause visuals
+load	andybe				#Bound visuals
+load	andypa				#Pause visuals
+load	andy_dark_rain_fire
 
 #*****Alternates*******
 
@@ -1512,8 +1513,8 @@ anim freespecial17
 
 	#Yami Abse Geri
 
-	jumpframe 2 1 1 0 flash_jump_land
-	landframe 3
+	jumpframe 1 1 1 0 flash_jump_liftoff
+	landframe 3 flash_jump_land
 	fastattack 1
 
 	delay	10
@@ -1524,38 +1525,17 @@ anim freespecial17
 	#cmd stereo_sound_command_here "vand 0015.wav"
 
 		delay -1000
-
 		frame	data/chars/andy/andy0211
 	
 		delay	10
 		move	-20
 		#cmd stereo_sound_command_here "sand0007.wav"
-		burn	95 95 60 85 20 2 0 0 10
-		dropv   5 -1 0
 		
-		# Spawn entity and get its pointer.
-		@cmd clearspawnentry
-		@cmd setspawnentry			"name"		"effe0001"
-		@cmd setspawnentry			"map"		2
-		@cmd dc_elmers_set_entity		spawn()
-		@cmd clearspawnentry
-
-		# Move entity into position we want.
-		@cmd dc_elmers_set_offset_x	30
-		@cmd dc_elmers_set_offset_y	100
-		@cmd dc_elmers_set_offset_z	0
-		@cmd dc_elmers_apply_position
-
-		# Set animation.
-		@cmd dc_disney_set_entity	dc_elmers_get_entity()
-		@cmd dc_disney_play_animation		openborconstant("ANI_FOLLOW8")
-
-		@cmd set_entity_property	dc_elmers_get_entity() "autokill" 1
-
-		#	bind0008 "effe0001" "effe0001" 2 1 30 135 1 1 openborconstant("ANI_FOLLOW8") 0 1
-	frame	data/chars/andy/andy0504
+		# Spawn entity and get its pointer.		
+		@cmd set_entity_property projectile(1,"andy_dark_rain_fire",15,0,0,0,0,0,0) "autokill" 1		
+	
+	frame	data/chars/andy/andy0504		
 		
-		burn	55 75 80 90 20 2 0 0 10
 		move	0
 
 	frame	data/chars/andy/andy0505
