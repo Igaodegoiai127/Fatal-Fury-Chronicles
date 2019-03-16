@@ -324,7 +324,7 @@ anim 	attack1 # Long Jab
 	bbox.size.x 36
 	bbox.size.y 106
 				
-	attack.damage.force 6
+	attack.damage.force 4
 	attack.position.x 98
 	attack.position.y 73
 	attack.reaction.pause.time 10
@@ -369,7 +369,7 @@ anim 	attack2	# front kick
 	frame	data/chars/terry/27_1.png
 			
 
-	attack.damage.force 10
+	attack.damage.force 6
 	attack.position.x 55
 	attack.position.y 77
 	attack.reaction.pause.time 10
@@ -391,21 +391,64 @@ anim 	attack3	# Gut punch.
 
 		delay	6
 		offset	70 158
-		bbox 	50 60 45 105
+	bbox.position.x 50
+	bbox.position.y 60
+	bbox.size.x 45
+	bbox.size.y 105
 	frame	data/chars/terry/28_0.png
 		delay	5
-		attack	75 100 35 20 6 0 0 0 15
+	attack.block.penetrate 0
+	attack.damage.force 5
+	attack.damage.type 1
+	attack.effect.hit.flash.disable 0
+	attack.position.x 75
+	attack.position.y 100
+	attack.reaction.fall.force 0
+	attack.reaction.pause.time 15
+	attack.size.x 35
+	attack.size.y 20
+	attack.size.z.1 0
 
 
 
 	frame	data/chars/terry/28_1.png
 		delay	1
-		attack	0
+	attack.block.penetrate 0
+	attack.damage.force 0
+	attack.damage.type 1
+	attack.effect.hit.flash.disable 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.reaction.pause.time 0
+	attack.size.x 0
+	attack.size.y 0
+	attack.size.z.1 0
 	frame	data/chars/terry/28_1.png
 		delay	6
-		attack	75 75 55 30 6 0 0 0 15
+	attack.block.penetrate 0
+	attack.damage.force 10
+	attack.damage.type 1
+	attack.effect.hit.flash.disable 0
+	attack.position.x 75
+	attack.position.y 75
+	attack.reaction.fall.force 0
+	attack.reaction.pause.time 15
+	attack.size.x 55
+	attack.size.y 30
+	attack.size.z.1 0
 	frame	data/chars/terry/28_3.png
-		attack	0
+	attack.block.penetrate 0
+	attack.damage.force 0
+	attack.damage.type 1
+	attack.effect.hit.flash.disable 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.reaction.pause.time 0
+	attack.size.x 0
+	attack.size.y 0
+	attack.size.z.1 0
 	frame	data/chars/terry/28_4.png
 		idle	1
 	frame	data/chars/terry/28_0.png
@@ -449,7 +492,7 @@ anim 	attack4	# Big boot.
 	
 
 	attack.block.penetrate 0
-	attack.damage.force 20
+	attack.damage.force 15
 	attack.damage.type 1
 	attack.effect.hit.flash.disable 0
 	attack.position.x 89
@@ -532,7 +575,7 @@ anim 	attack5 # Straight
 	bbox.size.x 45
 	bbox.size.y 105
 
-	attack.damage.force 8
+	attack.damage.force 12
 	attack.position.x 80
 	attack.position.y 75
 	attack.reaction.pause.time 10
@@ -618,7 +661,7 @@ anim 	attack6 # Backhand
 	bbox.size.x 32
 	bbox.size.y 97
 
-	attack.damage.force 10
+	attack.damage.force 12
 	attack.position.x 145
 	attack.position.y 56
 	attack.reaction.pause.time 12
@@ -728,7 +771,7 @@ anim 	attack7	# Jumping spin kick.
 	bbox.size.y 98
 	
 	attack.block.penetrate 0
-	attack.damage.force 15
+	attack.damage.force 16
 	attack.damage.type 1
 	attack.effect.hit.flash.disable 0
 	attack.position.x 80
@@ -863,7 +906,7 @@ anim chargeattack # High spin kick.
 		offset	74 158
 		
 	attack.block.penetrate 0
-	attack.damage.force 10
+	attack.damage.force 12
 	attack.damage.type 1
 	attack.effect.hit.flash.disable 0
 	attack.position.x 119
@@ -969,7 +1012,7 @@ anim freespecial6 # Rising tackle
 	bbox.size.y 0
 	
 	attack.block.penetrate 0
-	attack.damage.force 0
+	attack.damage.force 9
 	attack.damage.type 1
 	attack.effect.hit.flash.disable 0
 	attack.position.x 70
@@ -1003,7 +1046,7 @@ anim freespecial6 # Rising tackle
 	frame	data/chars/terry/33_5.png 	#Spin start
 	
 	attack.block.penetrate 0
-	attack.damage.force 0
+	attack.damage.force 2
 	attack.damage.type 1
 	attack.effect.hit.flash.disable 0
 	attack.position.x 20
@@ -1031,7 +1074,7 @@ anim freespecial6 # Rising tackle
 	frame	data/chars/terry/33_7.png
 
 	attack.block.penetrate 0
-	attack.damage.force 0
+	attack.damage.force 2
 	attack.damage.type 1
 	attack.effect.hit.flash.disable 0
 	attack.position.x 20
@@ -1048,7 +1091,7 @@ anim freespecial6 # Rising tackle
 	offset	70 158
 	
 	attack.block.penetrate 0
-	attack.damage.force 1
+	attack.damage.force 2
 	attack.damage.type 1
 	attack.effect.hit.flash.disable 0
 	attack.position.x 20
@@ -1070,6 +1113,11 @@ anim freespecial6 # Rising tackle
 	bbox.position.y 60
 	bbox.size.x 36
 	bbox.size.y 57
+	
+	attack.position.x 0
+	attack.position.y 0	
+	attack.size.x 0
+	attack.size.y 0
 	
 	frame	data/chars/terry/33_10.png
 	
@@ -1097,19 +1145,19 @@ anim freespecial6 # Rising tackle
 		
 	frame 	data/chars/terry/24_0.png
 	
-	bbox.position.x 65
-	bbox.position.y 89
-	bbox.size.x 36
-	bbox.size.y 70
+	bbox.position.x 61
+	bbox.position.y 83
+	bbox.size.x 40
+	bbox.size.y 75
 	
-	frame 	data/chars/terry/24_1.png
+	frame data/chars/terry/1_0.png
 	
 	bbox.position.x 65
 	bbox.position.y 74
 	bbox.size.x 36
 	bbox.size.y 85
 	
-	frame 	data/chars/terry/24_0.png
+	frame 	data/chars/terry/24_1.png
 
 #*****Followups****************************************************************************
 
@@ -1128,7 +1176,7 @@ anim follow1 # Short jab
 
 	frame	data/chars/terry/15_0.png
 
-	attack.damage.force 8
+	attack.damage.force 5
 	attack.position.x 75
 	attack.position.y 75
 	attack.reaction.pause.time 10
@@ -1151,9 +1199,6 @@ anim follow1 # Short jab
 
 anim follow82 # Down Ataack
 
-	#Down 	attack
-
-	otg	1
 		range   0 80
 
 		delay	6
@@ -1173,6 +1218,7 @@ anim follow82 # Down Ataack
 	
 	frame	data/chars/terry/34_0.png
 	frame	data/chars/terry/34_1.png
+	
 	attack.block.penetrate 0
 	attack.damage.force 15
 	attack.damage.type 9
@@ -1184,19 +1230,17 @@ anim follow82 # Down Ataack
 	attack.size.x 60
 	attack.size.y 30
 	attack.size.z.1 0
-	staydown -200 0
+	attack.staydown.rise.time -200
+	attack.ground.mode 2
+
 	frame	data/chars/terry/34_2.png
-	attack.block.penetrate 0
-	attack.damage.force 0
-	attack.damage.type 1
+	
 	attack.effect.hit.flash.disable 0
 	attack.position.x 0
 	attack.position.y 0
-	attack.reaction.fall.force 0
-	attack.reaction.pause.time 0
 	attack.size.x 0
 	attack.size.y 0
-	attack.size.z.1 0
+	
 	frame	data/chars/terry/34_3.png
 	frame	data/chars/terry/34_4.png
 	frame	data/chars/terry/34_5.png
@@ -1898,7 +1942,7 @@ anim fall
 
 #Always make sure to include a single blank line at bottom of file.
 
-anim jumpattack
+anim jumpattack # Heavy air punch
 
 	delay	8
 	offset	70 158
@@ -1930,7 +1974,7 @@ anim jumpattack
 	
 	delay 10
 	
-	attack.damage.force 10
+	attack.damage.force 15
 	
 	frame data/chars/terry/45_2.png
 	
@@ -2044,7 +2088,7 @@ anim jumpforward
 	bbox.size.x 53
 	bbox.size.y 60
 	
-	attack.damage.force 18
+	attack.damage.force 15
 	attack.position.x 58
 	attack.position.y 90
 	attack.reaction.fall.force 1
@@ -2121,7 +2165,7 @@ anim jumpattack2
 	
 	delay 140
 	
-	attack.damage.force 10
+	attack.damage.force 6
 	
 	frame data/chars/terry/42_1.png
 	
