@@ -245,47 +245,6 @@ anim follow7
 		frame	data/chars/misc/effects/effe0016
 		frame	data/chars/misc/effects/effe0017
 
-anim follow8	
-
-	#CVS Kyo super snake flame
-	#Andy: Yami Abise Geri
-	
-	jumpframe 0 0 -0.4 0
-
-	delay	4
-	offset	30 45
-	bbox	0
-		frame	data/chars/misc/effects/fire0202
-		frame	data/chars/misc/effects/fire0203
-		frame	data/chars/misc/effects/fire0204
-		frame	data/chars/misc/effects/fire0205
-		frame	data/chars/misc/effects/fire0206
-		frame	data/chars/misc/effects/fire0207
-		frame	data/chars/misc/effects/fire0208
-		frame	data/chars/misc/effects/fire0209
-		frame	data/chars/misc/effects/fire0210
-		frame	data/chars/misc/effects/fire0211
-		frame	data/chars/misc/effects/fire0212
-		frame	data/chars/misc/effects/fire0213
-		frame	data/chars/misc/effects/fire0214
-		frame	data/chars/misc/effects/fire0215
-		frame	data/chars/misc/effects/fire0216
-		frame	data/chars/misc/effects/fire0217
-		frame	data/chars/misc/effects/fire0218
-		frame	data/chars/misc/effects/fire0219
-		frame	data/chars/misc/effects/fire0220
-		frame	data/chars/misc/effects/fire0221
-		frame	data/chars/misc/effects/fire0222
-		frame	data/chars/misc/effects/fire0223
-		frame	data/chars/misc/effects/fire0224
-		frame	data/chars/misc/effects/fire0225
-		frame	data/chars/misc/effects/fire0226
-		frame	data/chars/misc/effects/fire0227
-		frame	data/chars/misc/effects/fire0228
-		frame	data/chars/misc/effects/fire0229
-		frame	data/chars/misc/effects/fire0230
-		frame	data/chars/misc/effects/fire0231
-
 anim follow9
 
 	#CVS Athena reflector loop.
