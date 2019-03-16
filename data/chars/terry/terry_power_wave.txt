@@ -1,0 +1,40 @@
+name         terry_power_wave
+type	     none
+health	     1
+alpha	     1
+speedf		 2.0
+
+
+palette	data/chars/terry/power_wave/1_0.png
+
+anim spawn
+
+	delay	3
+	offset	110 90
+
+	attack.damage.force 15
+	attack.position.x 85
+	attack.position.y 60
+	attack.size.x 45	
+	attack.size.y 45
+
+	frame	data/chars/terry/power_wave/0_0.png	
+	frame	data/chars/terry/power_wave/0_1.png
+
+anim idle
+
+	loop	1
+	delay	4
+	offset	110 90
+
+	attack.damage.force 15
+	attack.position.x 85
+	attack.position.y 60
+	attack.size.x 45	
+	attack.size.y 45
+
+	frame	data/chars/terry/power_wave/1_0.png	
+	frame	data/chars/terry/power_wave/1_1.png
+	frame	data/chars/terry/power_wave/1_2.png
+	frame	data/chars/terry/power_wave/1_3.png
+	frame	data/chars/terry/power_wave/1_4.png
