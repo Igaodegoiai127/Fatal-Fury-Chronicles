@@ -5,6 +5,7 @@ alpha	     1
 speedf		 2.0
 remove		 0
 
+animationscript data/scripts/dc_disney/main.c
 
 palette	data/chars/terry/power_wave/1_0.png
 
@@ -45,6 +46,25 @@ anim idle
 	attack.staydown.rise.time -200
 	attack.ground.mode 1
 
+
+	# This is a ground projectile, so if it reaches the edge
+	# of a platform or pit, we want it to stop and terminate.
+
+	@script
+	void ent= getlocalvar("self");
+
+	int pos_y = get_entity_property(ent, "position_y");
+	int pos_b = get_entity_property(ent, "position_y");
+
+	if(pos_y > pos_b || checkwall(get_entity_property(ent, "position_x"), get_entity_property(ent, "position_z")) > pos_y)
+	{	
+		dc_disney_play_animation(openborconstant("ANI_FOLLOW1"));
+	}
+
+	log("\n\n base: " + pos_b);
+	log("\n y: " + pos_y);
+
+	@end_script
 	frame	data/chars/terry/power_wave/1_0.png	
 	frame	data/chars/terry/power_wave/1_1.png
 	frame	data/chars/terry/power_wave/1_2.png
