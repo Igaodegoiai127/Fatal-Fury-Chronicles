@@ -33,18 +33,34 @@ void dc_gauntlet_set_entity(void value)
 	setlocalvar(instance + DC_GAUNTLET_VAR_KEY_ENT, value);
 }
 
-void dc_gauntlet_set_spawn_entry(char property, void value)
+// Spawned entity (if any).
+// Get
+void dc_gauntlet_get_spawn()
 {
-	setspawnentry(property, value);
+	int instance;
+	void result;
+
+	// Get instance.
+	instance = dc_gauntlet_get_instance();
+
+	result = getlocalvar(instance + DC_GAUNTLET_VAR_KEY_SPAWN);
+
+	if (typeof(result) != openborconstant("VT_PTR"))
+	{
+		result = DC_GAUNTLET_DEFAULT_TARGET;
+	}
+
+	return result;
 }
 
-void dc_gauntlet_clear_spawn_entry()
+// Set spawn. Most of the time this is populated automatically
+// and you shouldn't be setting it directly.
+void dc_gauntlet_set_spawn(void value)
 {
-	clearspawnentry();
-}
+	int instance;
 
-void dc_gauntlet_spawn()
-{
-	return spawn();
-}
+	// Get instance.
+	instance = dc_gauntlet_get_instance();
 
+	setlocalvar(instance + DC_GAUNTLET_VAR_KEY_SPAWN, value);
+}
