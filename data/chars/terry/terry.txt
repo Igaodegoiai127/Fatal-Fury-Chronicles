@@ -2258,18 +2258,18 @@ anim freespecial10 # Power Wave
 	bbox.size.y 94
 
 	# Spawn sub entity and set it as entity for binding.
-	#cmd dc_gauntlet_clear_spawn_entry
-	#cmd dc_gauntlet_set_spawn_entry "name" "terry_power_wave_fist"	
-	#cmd dc_elmers_set_entity dc_gauntlet_spawn()
-	#cmd dc_gauntlet_clear_spawn_entry
+	@cmd dc_gauntlet_clear_spawn_entry
+	@cmd dc_gauntlet_set_spawn_entry "name" "terry_power_wave_fist"	
+	@cmd dc_elmers_set_entity dc_gauntlet_spawn()
+	@cmd dc_gauntlet_clear_spawn_entry
 	
 	# Set self as target of bind, adjust offset and apply bind.
-	#cmd dc_elmers_set_target getlocalvar("self")
+	@cmd dc_elmers_set_target getlocalvar("self")
 	
-	#cmd dc_elmers_set_bind_property "sort_id" 1
-	#cmd dc_elmers_set_bind_animation_match (openborconstant("BIND_ANIMATION_TARGET")+openborconstant("BIND_ANIMATION_REMOVE")+openborconstant("BIND_ANIMATION_FRAME_TARGET"))
+	@cmd dc_elmers_set_bind_property "sort_id" 1
+	@cmd dc_elmers_set_bind_animation_match (openborconstant("BIND_ANIMATION_TARGET")+openborconstant("BIND_ANIMATION_REMOVE")+openborconstant("BIND_ANIMATION_FRAME_TARGET"))
 	
-	#cmd dc_elmers_quick_bind
+	@cmd dc_elmers_quick_bind
 	
 	frame	data/chars/terry/50_0.png		
 		
@@ -2314,13 +2314,11 @@ anim freespecial10 # Power Wave
 	bbox.size.x 57
 	bbox.size.y 65
 	
-	#cmd dc_elmers_set_instance 1
-	#cmd dc_elmers_set_entity dc_guantlet_spawn_projectile()
-
 	@cmd dc_gauntlet_set_model_name "terry_power_wave"
 	@cmd dc_gauntlet_set_offset_x 45
 	@cmd dc_gauntlet_dump_instance()
 	@cmd dc_guantlet_spawn_projectile()
+	#cmd set_entity_property dc_gauntlet_get_spawn() "position_base" get_entity_property(getlocalvar("self"),"position_base")
 	
 	frame	data/chars/terry/50_5.png
 	
@@ -2330,8 +2328,7 @@ anim freespecial10 # Power Wave
 	# any more, so remove the bind target and set autokill so
 	# the effect will terminate when it finishes up.
 
-	#cmd dc_elmers_set_instance 0
-	#cmd dc_elmers_set_bind_target NULL()	
+	@cmd dc_elmers_set_bind_target NULL()	
 	
 	frame	data/chars/terry/50_6.png
 	

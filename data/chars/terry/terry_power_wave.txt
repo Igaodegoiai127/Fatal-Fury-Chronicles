@@ -5,6 +5,12 @@ alpha	     1
 speedf		 2.0
 remove		 0
 
+#subject_to_platform 1
+subject_to_wall		1
+subject_to_hole		1
+#no_adjust_base		0
+#subject_to_gravity	1
+
 animationscript data/scripts/dc_disney/main.c
 
 palette	data/chars/terry/power_wave/1_0.png

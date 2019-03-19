@@ -384,6 +384,18 @@
     <ClCompile Include="data\chars\misc\flash\block\scripts\event_spawn.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="data\scripts\dc_gauntlet\projectile.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="data\scripts\dc_gauntlet\model.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="data\scripts\dc_gauntlet\direction.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="data\scripts\dc_gauntlet\map.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="data\scripts\com\bind0003.h">
@@ -9634,6 +9646,642 @@
     <Image Include="data\chars\misc\effects\kof_smokey_ground_explosion\0_22.png">
       <Filter>Resource Files</Filter>
     </Image>
+    <Image Include="data\chars\andy\icon_default.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\andy\icon_ko.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\andy\icon_pain.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\andy\select_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\0_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\0_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\0_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\0_3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\1_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\2_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\2_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\2_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\2_3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\2_4.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\3_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\3_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\3_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\3_3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\3_4.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\4_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\4_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\4_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\5_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\7_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\7_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\8_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\8_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\14_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\14_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\15_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\15_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\15_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\15_3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\16_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\17_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\17_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\17_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\17_3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\18_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\18_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\18_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\18_3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\19_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\19_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\19_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\19_3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\19_4.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\20_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\20_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\20_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\20_3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\20_4.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\21_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\21_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\21_4.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\21_5.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\21_6.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\21_7.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\21_8.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\22_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\22_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\22_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\23_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\23_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\23_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\23_3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\23_4.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\23_5.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\23_6.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\23_7.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\24_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\24_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\24_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\25_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\26_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\27_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\27_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\27_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\28_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\28_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\28_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\28_3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\28_4.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\29_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\29_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\29_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\29_3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\29_4.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\29_5.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\30_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\30_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\30_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\30_3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\30_4.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\31_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\31_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\31_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\31_3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\31_4.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\31_5.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\32_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\32_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\33_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\33_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\33_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\33_3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\33_4.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\33_5.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\33_6.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\33_7.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\33_8.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\33_9.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\33_10.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\33_11.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\34_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\34_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\34_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\34_3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\34_4.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\34_5.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\34_6.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\35_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\35_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\35_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\36_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\36_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\36_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\37_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\37_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\38_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\38_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\40_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\40_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\41_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\41_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\41_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\42_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\42_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\43_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\43_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\43_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\44_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\44_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\45_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\45_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\45_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\49_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\icon_default.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\icon_ko.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\icon_pain.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\R_FALLING_UP_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\R_FALLING_UP_TILT_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\R_HELD_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\R_HORIZONTAL_DOWN_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\R_HORIZONTAL_UP_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\R_HORIZONTAL_UP_PAIN_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\R_LAYING_UP_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\R_LAYING_UP_PAIN_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\R_PAIN_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\R_PAIN_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\R_PAIN_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\R_PAIN_MID_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\R_PAIN_MID_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\R_PAIN_MID_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\R_TILT_DOWN_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\R_TILT_UP_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\R_VERTICAL_DOWN_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\R_VERTICAL_DOWN_PAIN_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\R_VERTICAL_DOWN_PAIN_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\R_VERTICAL_UP.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\R_VERTICAL_UP_PAIN_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\select_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\power_wave_fist\0_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\power_wave_fist\0_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\power_wave_fist\0_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\power_wave_fist\0_3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\power_wave_fist\0_4.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\power_wave_fist\0_5.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\power_wave_fist\0_6.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\power_wave_fist\0_7.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\power_wave_fist\0_8.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\power_wave_fist\0_9.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\50_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\50_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\50_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\50_3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\50_4.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\50_5.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\50_6.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\50_7.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\power_wave\0_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\power_wave\0_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\power_wave\1_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\power_wave\1_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\power_wave\1_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\power_wave\1_3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\power_wave\1_4.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\power_wave\2_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\power_wave\2_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\power_wave\2_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\power_wave\2_3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\power_wave\2_4.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\power_wave\2_5.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\power_wave\2_6.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\power_wave\2_7.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\power_wave\2_8.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\power_wave\2_9.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\power_wave\2_10.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\power_wave\2_11.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\power_wave\2_12.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\power_wave\2_13.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\power_wave\2_14.png">
+      <Filter>Resource Files</Filter>
+    </Image>
   </ItemGroup>
   <ItemGroup>
     <Text Include="data\levels.txt" />
@@ -9650,7 +10298,6 @@
     <Text Include="data\bgs\beach\beac0007.txt" />
     <Text Include="data\bgs\beach\beac0008.txt" />
     <Text Include="data\bin\names.txt" />
-    <Text Include="data\chars\andy\andy0001.txt" />
     <Text Include="data\chars\andy\andybe.txt" />
     <Text Include="data\chars\andy\andypa.txt" />
     <Text Include="data\chars\misc\crat0001\crat0001.txt" />
@@ -9697,6 +10344,10 @@
     <Text Include="data\chars\misc\effects\kof_ball_explosion\kof_ball_explosion_pause.txt" />
     <Text Include="data\chars\misc\effects\kof_smokey_ground_explosion\kof_smokey_groud_explosion.txt" />
     <Text Include="data\chars\misc\effects\kof_smokey_ground_explosion\kof_smokey_groud_explosion_pause.txt" />
+    <Text Include="data\chars\andy\andy_bogard_pc.txt" />
+    <Text Include="data\chars\andy\andy_dark_rain_fire.txt" />
+    <Text Include="data\chars\terry\terry_power_wave_fist.txt" />
+    <Text Include="data\chars\terry\terry_power_wave.txt" />
   </ItemGroup>
   <ItemGroup>
     <None Include="data\chars\andy\wild-ambition-front-throw.psd" />
@@ -9746,6 +10397,14 @@
     <None Include="a26efe22.exe" />
     <None Include="..\..\personal\resources\pal_0.ACT" />
     <None Include="data\chars\ryu\pal_0.act" />
+    <None Include="data\chars\andy\charcoal.ACT" />
+    <None Include="data\chars\andy\default.ACT" />
+    <None Include="data\chars\terry\default_0.ACT" />
+    <None Include="data\chars\terry\default_1.ACT" />
+    <None Include="data\chars\terry\kof_2000_0.ACT" />
+    <None Include="data\chars\terry\kof_2000_1.ACT" />
+    <None Include="data\chars\terry\motw_0.ACT" />
+    <None Include="data\chars\terry\motw_1.ACT" />
   </ItemGroup>
   <ItemGroup>
     <Media Include="data\chars\galford\sounds\voice-atk-0.wav">

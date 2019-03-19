@@ -4,6 +4,7 @@ health	     100
 alpha	     1
 speedf		 0.0
 nomove		1
+antigravity	100
 
 palette	data/chars/terry/power_wave_fist/0_0.png
 

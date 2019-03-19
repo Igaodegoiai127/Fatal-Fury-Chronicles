@@ -32,7 +32,7 @@ int dc_gauntlet_set_invert_x(int value)
 
 	// If value is default, make sure the variable
 	// is deleted.
-	if (value == DC_GAUNTLET_DEFAULT_INVERT_X)
+	if (value != DC_GAUNTLET_DEFAULT_INVERT_X)
 	{
 		setlocalvar(id, value);
 	}
