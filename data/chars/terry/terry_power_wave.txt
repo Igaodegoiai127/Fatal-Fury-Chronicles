@@ -5,13 +5,8 @@ alpha	     1
 speedf		 2.0
 remove		 0
 
-#subject_to_platform 1
-subject_to_wall		1
-subject_to_hole		1
-#no_adjust_base		0
-#subject_to_gravity	1
-
-animationscript data/scripts/dc_disney/main.c
+#animationscript data/scripts/dc_disney/main.c
+script data/chars/terry/power_wave/onmovex.c
 
 palette	data/chars/terry/power_wave/1_0.png
 
@@ -39,38 +34,22 @@ anim idle
 
 	loop	1
 	delay	4
-	offset	110 90
+	offset	101 90
 
 	followanim 1
 	followcond 1
 
 	attack.damage.force 12
-	attack.position.x 85
-	attack.position.y 60
-	attack.size.x 45	
-	attack.size.y 45
-	attack.staydown.rise.time -200
-	attack.ground.mode 1
+	attack.position.x 76
+	attack.position.y 44
+	attack.size.x 43
+	attack.size.y 52
 
 
 	# This is a ground projectile, so if it reaches the edge
 	# of a platform or pit, we want it to stop and terminate.
 
-	@script
-	void ent= getlocalvar("self");
-
-	int pos_y = get_entity_property(ent, "position_y");
-	int pos_b = get_entity_property(ent, "position_y");
-
-	if(pos_y > pos_b || checkwall(get_entity_property(ent, "position_x"), get_entity_property(ent, "position_z")) > pos_y)
-	{	
-		dc_disney_play_animation(openborconstant("ANI_FOLLOW1"));
-	}
-
-	log("\n\n base: " + pos_b);
-	log("\n y: " + pos_y);
-
-	@end_script
+	
 	frame	data/chars/terry/power_wave/1_0.png	
 	frame	data/chars/terry/power_wave/1_1.png
 	frame	data/chars/terry/power_wave/1_2.png
@@ -80,7 +59,7 @@ anim idle
 anim follow1
 
 	delay	2
-	offset	90 90
+	offset	107 86
 
 	followanim 1
 	followcond 1

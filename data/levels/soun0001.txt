@@ -42,8 +42,10 @@ spawn4 50 45
 #wall 1 185 1 1 2800 2800 5 1000
 
 #wall {xpos} {zpos} {upperleft} {lowerleft} {upperright} {lowerright} {depth} {alt} {type}
+#wall  200      270    0          0           320            320           100     30  0
 
-wall  200      270    0          0           320            320           100     30  0
+#basemap {xpos} {zpos} {xsize} {zsize} {amin} {amax} 
+basemap 200		270		200		200	  0      100 
 
 # {int} Layer order from panel toward background.
 # {alpha} Model order along {int} layer.

@@ -2316,6 +2316,7 @@ anim freespecial10 # Power Wave
 	
 	@cmd dc_gauntlet_set_model_name "terry_power_wave"
 	@cmd dc_gauntlet_set_offset_x 45
+	@cmd dc_gauntlet_set_offset_y 0
 	@cmd dc_gauntlet_dump_instance()
 	@cmd dc_guantlet_spawn_projectile()
 	#cmd set_entity_property dc_gauntlet_get_spawn() "position_base" get_entity_property(getlocalvar("self"),"position_base")

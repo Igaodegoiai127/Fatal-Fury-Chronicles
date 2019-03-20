@@ -128,7 +128,7 @@ void dc_guantlet_spawn_projectile()
 	int projectile_type;
 	int map;
 	void spawn;
-
+	
 	relative				= 0; //DC_GAUNTLET_DEFAULT_PROJECTILE_RELATIVE;
 	model_name				= dc_gauntlet_get_model_name();  
 	projectile_stationary	= dc_gauntlet_get_projectile_stationary();
@@ -139,7 +139,15 @@ void dc_guantlet_spawn_projectile()
 	pos_y = dc_gauntlet_find_position_with_offset_y();
 	pos_z = dc_gauntlet_find_position_with_offset_z();
 
+	// Adjust launching entity and projectile position
+	// to avoid launching into wall. The projectile should
+	// have wall handling capability, but it's still better 
+	// to launch just in front of a wall instead of inside it.
+	pos_x += dc_terriant_quick_shunt(pos_x, pos_y, pos_z);
+
 	log("\n x,y,z:" + pos_x + ", " + pos_y + ", " + pos_z);
+
+	
 
 	// Spawn the projectile.
 	spawn = projectile(model_name, pos_x, pos_z, pos_y, DC_GAUNTLET_DEFAULT_PROJECTILE_DIRECTION, projectile_stationary, projectile_type, map);
@@ -150,11 +158,42 @@ void dc_guantlet_spawn_projectile()
 	// Adjust spawn's direction as needed.
 	dc_apply_adjusted_direction();
 
-	//changeentityproperty(spawn, "subject_to_gravity", 1);
+	changeentityproperty(spawn, "subject_to_gravity", 1);
 	changeentityproperty(spawn, "no_adjust_base", 0);
+	changeentityproperty(spawn, "subject_to_basemap", 1);
 
 
 	log("\n spawn: " + spawn);
 
 	return spawn;
+}
+
+int dc_terriant_quick_shunt(int pos_x, int pos_y, int pos_z)
+{
+	void ent;
+	int adjustment;
+	int ent_pos_x;
+
+	ent = dc_gauntlet_get_entity();
+	ent_pos_x = get_entity_property(ent, "position_x");
+
+	adjustment = 0;
+
+	while (checkwall(pos_x + adjustment, pos_z) > pos_y)
+	{
+		if (checkwall((pos_x + adjustment) - 1, pos_z))
+		{
+			adjustment -= 2;
+		}
+		else
+		{
+			adjustment -= 2;
+		}
+	}
+	
+	ent_pos_x += adjustment;
+
+	set_entity_property(ent, "position_x", ent_pos_x);	
+
+	return adjustment;
 }
