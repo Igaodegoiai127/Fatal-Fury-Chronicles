@@ -158,7 +158,7 @@ void dc_guantlet_spawn_projectile()
 	// Adjust spawn's direction as needed.
 	dc_apply_adjusted_direction();
 
-	changeentityproperty(spawn, "subject_to_gravity", 1);
+	changeentityproperty(spawn, "subject_to_gravity", 0);
 	changeentityproperty(spawn, "no_adjust_base", 0);
 	changeentityproperty(spawn, "subject_to_basemap", 1);
 
