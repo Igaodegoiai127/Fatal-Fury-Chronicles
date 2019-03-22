@@ -78,6 +78,7 @@ know	raid0001		data/chars/raiden/raiden.txt
 know 	Poppy			data/chars/poppy/poppy.txt
 know 	galford_trail		data/chars/galford/galford-trails.txt
 load 	Galford			data/chars/galford/galford.txt
+know	ryu_hadouken	data/chars/ryu/hadouken/ryu_hadouken.txt
 load 	Ryu				data/chars/ryu/ryu.txt
 
 
