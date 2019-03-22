@@ -33,6 +33,8 @@ void oncreate()
 	dc_fidelitys_setup("Galford_Weller", DC_FIDELITY_TYPE_WHIFF_MEDIUM_B, "data/sounds/custom/samurai_shodown_whiff_light_0.wav");
 	dc_fidelitys_setup("Galford_Weller", DC_FIDELITY_TYPE_WHIFF_MEDIUM_B, "data/sounds/custom/samurai_shodown_whiff_light_1.wav");
 
+	//  Ryu
+	dc_fidelitys_setup("Ryu", "Hadouken", "data/chars/ryu/sounds/voice-hadouken-0c.wav");
 }
 
 void ondestroy()
