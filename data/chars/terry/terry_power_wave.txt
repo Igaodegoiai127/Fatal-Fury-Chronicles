@@ -44,12 +44,9 @@ anim idle
 	attack.position.y 44
 	attack.size.x 43
 	attack.size.y 52
-
-
-	# This is a ground projectile, so if it reaches the edge
-	# of a platform or pit, we want it to stop and terminate.
-
-	
+	attack.staydown.rise.time -200
+	attack.ground.mode 1
+	   	
 	frame	data/chars/terry/power_wave/1_0.png	
 	frame	data/chars/terry/power_wave/1_1.png
 	frame	data/chars/terry/power_wave/1_2.png

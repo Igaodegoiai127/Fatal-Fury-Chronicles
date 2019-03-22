@@ -8,7 +8,6 @@ void oncreate()
 void main()
 {
 	dc_kill_on_base_change();
-
 }
 
 // Caskey, Damon V.
