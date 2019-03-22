@@ -63,16 +63,7 @@
     <ClCompile Include="data\scripts\scorec.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="data\scripts\timetick.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="data\scripts\update.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="data\scripts\dc_math\ratio_to_int.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="data\scripts\updated.c">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="data\chars\ray\scripts\animation.c">
@@ -397,6 +388,18 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="data\chars\terry\power_wave\onmovea.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="data\scripts\update.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="data\scripts\updated.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="data\scripts\timetick.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="data\chars\ryu\script\event_animation_pc.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -10283,6 +10286,147 @@
       <Filter>Resource Files</Filter>
     </Image>
     <Image Include="data\chars\terry\power_wave\2_14.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\1_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\hadouken\0_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\hadouken\0_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\hadouken\0_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\hadouken\0_3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\hadouken\0_4.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\hadouken\0_5.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\hadouken\0_6.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\hadouken\0_7.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\hadouken\0_8.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\hadouken\0_9.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\hadouken\1_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\hadouken\1_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\hadouken\1_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\hadouken\1_3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\hadouken\1_4.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\hadouken\1_5.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\hadouken\1_6.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\hadouken\1_7.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\hadouken\1_8.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\hadouken\1_9.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\hadouken\1_10.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\hadouken\1_11.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\hadouken\1_12.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\hadouken\1_13.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\hadouken\1_14.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\hadouken\1_15.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\5_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\5_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\5_3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\6_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\6_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\6_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\6_3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\7_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\43_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\43_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\43_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\43_3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\43_4.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\43_5.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\43_6.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\43_7.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\43_8.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\43_9.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\43_10.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\43_11.png">
       <Filter>Resource Files</Filter>
     </Image>
   </ItemGroup>
