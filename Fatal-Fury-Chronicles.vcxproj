@@ -160,8 +160,11 @@
     <ClCompile Include="data\scripts\dc_draw\rgb_increment.c" />
     <ClCompile Include="data\scripts\dc_fidelity\adjustments.c" />
     <ClCompile Include="data\scripts\dc_fidelity\config.c" />
+    <ClCompile Include="data\scripts\dc_fidelity\entity.c" />
+    <ClCompile Include="data\scripts\dc_fidelity\instance.c" />
     <ClCompile Include="data\scripts\dc_fidelity\loading.c" />
     <ClCompile Include="data\scripts\dc_fidelity\main.c" />
+    <ClCompile Include="data\scripts\dc_fidelity\model.c" />
     <ClCompile Include="data\scripts\dc_fidelity\play.c" />
     <ClCompile Include="data\scripts\dc_gauntlet\direction.c" />
     <ClCompile Include="data\scripts\dc_gauntlet\map.c" />
