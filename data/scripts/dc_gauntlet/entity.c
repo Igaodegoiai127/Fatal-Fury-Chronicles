@@ -3,16 +3,17 @@
 #import "data/scripts/dc_gauntlet/instance.c"
 
 // Base entity functions will act on.
+// Base entity functions will act on.
 // Get
 void dc_gauntlet_get_entity()
 {
-	int instance;
+	char id;
 	void result;
 
-	// Get instance.
-	instance = dc_gauntlet_get_instance();
+	// Get id key.
+	id = dc_gauntlet_get_instance() + DC_GAUNTLET_VAR_KEY_ENT;
 
-	result = getlocalvar(instance + DC_GAUNTLET_VAR_KEY_ENT);
+	result = getlocalvar(id);
 
 	if (typeof(result) != openborconstant("VT_PTR"))
 	{
@@ -25,14 +26,22 @@ void dc_gauntlet_get_entity()
 // Set
 void dc_gauntlet_set_entity(void value)
 {
-	int instance;
+	char id;
 
-	// Get instance.
-	instance = dc_gauntlet_get_instance();
+	// Get id key.
+	id = dc_gauntlet_get_instance() + DC_GAUNTLET_VAR_KEY_ENT;
 
-	setlocalvar(instance + DC_GAUNTLET_VAR_KEY_ENT, value);
+	// If the value is same as default, then use
+	// make sure variable is deleted instead. We fall
+	// back to default for empty vars, so may as
+	// well save the memory.
+	if (value == DC_GAUNTLET_DEFAULT_ENT)
+	{
+		value = NULL();
+	}
+
+	setlocalvar(id, value);
 }
-
 // Spawned entity (if any).
 // Get
 void dc_gauntlet_get_spawn()
