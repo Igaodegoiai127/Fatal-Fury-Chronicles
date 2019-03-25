@@ -35,6 +35,13 @@ void oncreate()
 
 	//  Ryu
 	dc_fidelity_setup("Ryu", "Hadouken", "data/chars/ryu/sounds/voice-hadouken-0c.wav");
+
+	// Jump and hop liftoff.
+	dc_fidelity_setup("hop_liftoff", DC_FIDELITY_TYPE_SPAWN_A, "data/sounds/custom/fatal_fury_1_jump.wav");
+	dc_fidelity_setup("jump_liftoff", DC_FIDELITY_TYPE_SPAWN_A, "data/sounds/custom/fatal_fury_1_jump.wav");	
+
+	// Jump land.
+	dc_fidelity_setup("jump_land", DC_FIDELITY_TYPE_SPAWN_A, "data/sounds/custom/fatal_fury_1_land.wav");
 }
 
 void ondestroy()

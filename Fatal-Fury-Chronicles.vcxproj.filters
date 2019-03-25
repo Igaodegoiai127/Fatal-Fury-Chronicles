@@ -10710,5 +10710,68 @@
     <Media Include="data\chars\galford\sounds\voice-atk-8.wav">
       <Filter>Resource Files</Filter>
     </Media>
+    <Media Include="data\sounds\1up.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="data\sounds\beat1.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="data\sounds\beep.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="data\sounds\beep2.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="data\sounds\bike.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="data\sounds\block.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="data\sounds\fall.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="data\sounds\get.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="data\sounds\go.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="data\sounds\indirect.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="data\sounds\jump.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="data\sounds\money.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="data\sounds\punch.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="data\sounds\timeover.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="data\sounds\custom\golden_axe_whiff_heavy_0.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="data\sounds\custom\golden_axe_whiff_light_0.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="data\sounds\custom\golden_axe_whiff_medium_0.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="data\sounds\custom\samurai_shodown_whiff_heavy_0.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="data\sounds\custom\samurai_shodown_whiff_light_0.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="data\sounds\custom\samurai_shodown_whiff_light_1.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="data\sounds\custom\fatal_fury_1_jump.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
   </ItemGroup>
 </Project>
