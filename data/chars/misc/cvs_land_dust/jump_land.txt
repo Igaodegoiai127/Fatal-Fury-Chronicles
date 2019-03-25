@@ -2,7 +2,6 @@
 
 name	jump_land
 type	none
-lifespan 2
 shadow	0
 
 onspawnscript 	data/scripts/common/event_spawn_dust.c
@@ -17,12 +16,7 @@ anim idle
 	delay	2
 	offset	85 105
 		
-		movez	-10
-		
 		frame	data/chars/misc/cvs_land_dust/0_0.png
-		
-		movez	0
-		
 		frame	data/chars/misc/cvs_land_dust/0_1.png
 		frame	data/chars/misc/cvs_land_dust/0_2.png
 		frame	data/chars/misc/cvs_land_dust/0_3.png
