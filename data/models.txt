@@ -13,7 +13,8 @@ noaircancel     2
 load	Flash				data/chars/misc/flash/flash.txt
 load	Block				data/chars/misc/flash/block.txt
 load    flash_fall_land		data/chars/misc/dust/flash_fall_land.txt
-load    flash_jump_liftoff	data/chars/misc/dust/flash_jump_liftoff.txt	
+load    jump_liftoff		data/chars/misc/cvs_jump_dust/jump_liftoff.txt
+load    hop_liftoff			data/chars/misc/cvs_jump_dust/hop_liftoff.txt
 load    flash_jump_land		data/chars/misc/dust/flash_jump_land.txt
 load    flash_slam_light	data/chars/misc/dust/flash_slam_light.txt
 load    flash_slam_heavy	data/chars/misc/dust/flash_slam_heavy.txt

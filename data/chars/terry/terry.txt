@@ -32,7 +32,7 @@ combostyle	1
 atchain      	1 2 3 4 0 5 6 7
 height 		95
 height 		100
-dust		flash_fall_land flash_jump_land flash_jump_liftoff
+dust		flash_fall_land flash_jump_land jump_liftoff
 mpset 		100 3 50 1 2 2
 
 load terry_power_wave
@@ -719,7 +719,7 @@ anim 	attack6 # Backhand
 
 anim 	attack7	# Jumping spin kick.
 
-	jumpframe 3 1.5 0 0 flash_jump_liftoff
+	jumpframe 3 1.5 0 0 hop_liftoff
 	landframe 8 flash_jump_land
 
 		delay	6
@@ -984,7 +984,7 @@ anim freespecial6 # Rising tackle
 	energycost 20
 	mponly	   1
 		loop	   1 5 8
-	jumpframe  2 5.5 0.2 0 flash_jump_liftoff
+	jumpframe  2 5.5 0.2 0 jump_liftoff
 	dropframe  9
 	landframe  14 flash_jump_land
 		fastattack 1
@@ -2201,7 +2201,7 @@ anim jumpattack2
 	frame data/chars/terry/30_4.png
 anim freespecial # Backward dash
 	
-	jumpframe 1 1.5 -2 0 flash_jump_liftoff
+	jumpframe 1 1.5 -2 0 hop_liftoff
 	dropframe 2
 	landframe 3 flash_jump_land
 	
