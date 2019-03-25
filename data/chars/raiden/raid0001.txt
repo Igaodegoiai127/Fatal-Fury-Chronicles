@@ -387,7 +387,7 @@ anim jumpdelay
 			
 anim jumpland
 
-	delay	8
+	delay	4
 	offset	120 190
 	bbox	75 135 30 65
 	sound	data/sounds/sound002.wav					#Sound effect.

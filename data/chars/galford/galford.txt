@@ -1344,7 +1344,7 @@ anim jumpdelay
 
 anim jumpland
 
-		delay	8
+		delay	4
 		offset	155 210
 		bbox	115 124 50 85
 	

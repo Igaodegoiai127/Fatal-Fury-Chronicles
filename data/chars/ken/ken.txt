@@ -239,7 +239,7 @@ anim jumpdelay
 
 anim jumpland
 
-		delay	8
+		delay	4
 		offset	82 147
 	
 		bbox.position.x	130
