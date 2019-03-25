@@ -333,9 +333,15 @@ anim freespecial
 		bbox.size.x		38
 		bbox.size.y		98
 	frame	data/chars/ryu/7_0.png		
+		
 		delay	8
 		bbox 0
+		move -10
+
 	frame	data/chars/ryu/6_0.png
+	
+		move	0
+	
 	frame	data/chars/ryu/6_1.png
 		delay	-1000
 	frame	data/chars/ryu/6_2.png
@@ -344,6 +350,9 @@ anim freespecial
 		bbox.position.y 49
 		bbox.size.x		38
 		bbox.size.y		98
+
+		move	-10
+
 	frame	data/chars/ryu/6_3.png
 
 # Sidestep In
