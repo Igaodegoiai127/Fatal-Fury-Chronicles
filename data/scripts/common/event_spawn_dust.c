@@ -14,6 +14,8 @@ void main() {
 	// Make sure autokill is on.
 	changeentityproperty(ent, "autokill", 1);
 
+	set_entity_property(ent, "position_z", pos_z - 1);
+
 	// Water fatality for sound beach. This needs to be moved
 	// elsewhere.
 	if (pos_z < openborvariant("PLAYER_MIN_Z") - 3)  

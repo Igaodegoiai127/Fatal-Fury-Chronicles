@@ -30,7 +30,7 @@ sleepwait       1000
 combostyle	1
 atchain      	1 2 3 4 0 5 6 7
 height 		95
-dust		flash_fall_land flash_jump_land jump_liftoff
+dust		flash_fall_land jump_land jump_liftoff
 mpset 		100 3 50 1 2 2
 
 #*****Scripts*****
@@ -776,7 +776,7 @@ anim attackup
 	#Jump out.
 
 	jumpframe 1 1 -1 -1.5 hop_liftoff
-	landframe 2 flash_jump_land
+	landframe 2 jump_land
 
 	delay	10
 	offset 100 200
@@ -794,7 +794,7 @@ anim attackdown
 	#Jump in.
 
 	jumpframe 1 1 -1 1.5 hop_liftoff
-	landframe 2 flash_jump_land
+	landframe 2 jump_land
 
 	delay	10
 	offset 100 200
@@ -874,7 +874,7 @@ anim special2
 	#Uwa Agito
 
 	jumpframe  5 2 1 0 hop_liftoff
-	landframe  10 flash_jump_land
+	landframe  10 jump_land
 	fastattack 1
 
 	delay	5
@@ -968,7 +968,7 @@ anim freespecial3
 	#Plane force down (Spin kick)
 
 	jumpframe 2 2 0.1 0 hop_liftoff
-	landframe 7 flash_jump_land
+	landframe 7 jump_land
 	fastattack 1
 
 	delay	6
@@ -1003,7 +1003,7 @@ anim freespecial4
 	#Plane attack up (Palm thrust)
 
 	jumpframe 2 3.1 0.3 -0.9 hop_liftoff
-	landframe 5 flash_jump_land
+	landframe 5 jump_land
 	range     0    100
 	rangez    -100 -25
 	fastattack 1
@@ -1032,7 +1032,7 @@ anim freespecial5
 	#Plane attack down (Flip kick)
 
 	jumpframe 2 3.1 0.3 0.9 hop_liftoff
-	landframe 6 flash_jump_land
+	landframe 6 jump_land
 	range     0   100
 	rangez    100 25
 	fastattack 1
@@ -1154,7 +1154,7 @@ anim freespecial8
 	energycost 	15
 	mponly 	   	1
 	jumpframe  	5 3 2 0 hop_liftoff
-	landframe  	12 flash_jump_land
+	landframe  	12 jump_land
 	fastattack 	1
 
 	delay	8
@@ -1270,7 +1270,7 @@ anim freespecial10
 	energycost 	10
 	mponly 	   	1
 	jumpframe  	4 4.2 1 0 jump_liftoff
-	landframe  	21 flash_jump_land
+	landframe  	21 jump_land
 	fastattack 	1
 	counterattack 	1
 	forcedirection  -1
@@ -1481,7 +1481,7 @@ anim freespecial16
 	#Gen'ei Shiranui - Uwa Agito.
 
 	jumpframe 3 2 2 0 hop_liftoff
-	landframe 8 flash_jump_land
+	landframe 8 jump_land
 	fastattack 1
 
 	delay	6
@@ -1514,7 +1514,7 @@ anim freespecial17
 	#Yami Abse Geri
 
 	jumpframe 1 1 1 0 hop_liftoff
-	landframe 3 flash_jump_land
+	landframe 3 jump_land
 	fastattack 1
 
 	delay	10
@@ -1558,7 +1558,7 @@ anim freespecial18
 	energycost 	75
 	mponly 	   	1
 	jumpframe  	7 3.6 2 0 hop_liftoff
-	landframe  	26 flash_jump_land
+	landframe  	26 jump_land
 	fastattack 	1
 
 	delay	1
@@ -1653,7 +1653,7 @@ anim freespecial19
 	#Bakushin.
 
 	jumpframe 	2 2.5 4 0 hop_liftoff
-	landframe 	5 flash_jump_land
+	landframe 	5 jump_land
 	energycost	25
 	mponly		1
 	fastattack 	1
@@ -1749,7 +1749,7 @@ anim freespecial40
 	#Backhand.
 
 	cancel	  	1 3 1 a freespecial42
-	jumpframe 	0 0 0.1 0 flash_jump_land
+	jumpframe 	0 0 0.1 0 jump_land
 	fastattack 	1
 
 	delay	6
@@ -1771,7 +1771,7 @@ anim freespecial41
 	#Lunge palm strike.
 
 	counterattack 	1
-	jumpframe 	0 0 0.5 0 flash_jump_land
+	jumpframe 	0 0 0.5 0 jump_land
 	fastattack 	1
 
 	delay	10
@@ -1841,7 +1841,7 @@ anim follow1
 
 	#Zaneiken Finish
 
-	jumpframe	0 0 0 0 flash_jump_land
+	jumpframe	0 0 0 0 jump_land
 	cancel 		0 2 0 d f a freespecial13
 	fastattack 	1
 
@@ -1889,7 +1889,7 @@ anim follow4
 	#Counterattack property
 
 	jumpframe  	6 4.5 2.5 0 hop_liftoff
-	landframe  	32 flash_jump_land
+	landframe  	32 jump_land
 	fastattack 	1
 
 	delay	6
@@ -2124,7 +2124,7 @@ anim follow7
 
 	#Zan'ei Ryuusei Ken normal finish
 
-	jumpframe  	0 0 0 0 flash_jump_land
+	jumpframe  	0 0 0 0 jump_land
 	fastattack	1
 	attackone	1
 
@@ -2243,7 +2243,7 @@ anim follow9
 
 	#Zan'ei Ryuusei Ken SDM finish
 
-	jumpframe  	0 0 0 0 flash_jump_land
+	jumpframe  	0 0 0 0 jump_land
 	fastattack	1
 	attackone	1
 
@@ -2585,7 +2585,7 @@ anim follow86
 	#Side Dodge (up) step in attack.
 
 	jumpframe 2 1.5 0.6 0.9 hop_liftoff
-	landframe 6 flash_jump_land
+	landframe 6 jump_land
 	fastattack 1
 
 	delay	5
@@ -2613,7 +2613,7 @@ anim follow87
 	#Side dodge (down) step in attack.
 
 	jumpframe 2 1.5 0.6 -0.9 hop_liftoff
-	landframe 5 flash_jump_land
+	landframe 5 jump_land
 	fastattack 1
 
 	delay	4
@@ -2958,7 +2958,7 @@ anim grabdown
 
 	flipframe 4
 	jumpframe 13 4 -2 0
-	landframe 21 flash_jump_land
+	landframe 21 jump_land
 	fastattack 1
 
 	delay	1
@@ -3303,7 +3303,7 @@ anim blockpain4
 
 anim land
 
-	landframe 4 flash_jump_land
+	landframe 4 jump_land
 	jumpframe 1 1 1 0 hop_liftoff
 
 	delay	8
@@ -3323,7 +3323,7 @@ anim land
 anim rise
 
 	jumpframe 3 1.2 0.2 0 hop_liftoff
-	landframe 5 flash_jump_land
+	landframe 5 jump_land
 
 	delay	8
 	offset	100 200
@@ -3347,7 +3347,7 @@ anim rise
 anim rise3
 
 	jumpframe 5 1.2 -0.2 0 hop_liftoff
-	landframe 8 flash_jump_land
+	landframe 8 jump_land
 
 	delay	6
 	offset	100 200
@@ -3373,7 +3373,7 @@ anim rise3
 anim rise6
 
 	jumpframe 5 1.2 -0.2 0 hop_liftoff
-	landframe 8 flash_jump_land
+	landframe 8 jump_land
 
 	delay	6
 	offset	100 200
@@ -3399,7 +3399,7 @@ anim rise6
 anim rise7
 
 	jumpframe 5 1.2 -0.2 0 hop_liftoff
-	landframe 8 flash_jump_land
+	landframe 8 jump_land
 
 	delay	6
 	offset	100 200
@@ -3425,7 +3425,7 @@ anim rise7
 anim rise8
 
 	jumpframe 5 1.2 -0.2 0 hop_liftoff
-	landframe 8 flash_jump_land
+	landframe 8 jump_land
 
 	delay	6
 	offset	100 200
@@ -3451,7 +3451,7 @@ anim rise8
 anim rise11
 
 	jumpframe 5 1.2 -0.2 0 hop_liftoff
-	landframe 8 flash_jump_land
+	landframe 8 jump_land
 
 	delay	6
 	offset	100 200
@@ -3677,7 +3677,7 @@ anim fall9
 anim death
 
 	jumpframe 3 1.2 0.2 0 hop_liftoff
-	landframe 5 flash_jump_land
+	landframe 5 jump_land
 
 	delay	8
 	offset	100 200
@@ -3715,7 +3715,7 @@ anim death
 anim death6
 
 	jumpframe 5 1.2 -0.2 0 hop_liftoff
-	landframe 8 flash_jump_land
+	landframe 8 jump_land
 
 	delay	6
 	offset	100 200
@@ -3755,7 +3755,7 @@ anim death6
 anim death7
 
 	jumpframe 5 1.2 -0.2 0 hop_liftoff
-	landframe 8 flash_jump_land
+	landframe 8 jump_land
 
 	delay	6
 	offset	100 200
@@ -3795,7 +3795,7 @@ anim death7
 anim death8
 
 	jumpframe 5 1.2 -0.2 0 hop_liftoff
-	landframe 8 flash_jump_land
+	landframe 8 jump_land
 
 	delay	6
 	offset	100 200
@@ -3835,7 +3835,7 @@ anim death8
 anim death11
 
 	jumpframe 5 1.2 -0.2 0 hop_liftoff
-	landframe 8 flash_jump_land
+	landframe 8 jump_land
 
 	delay	6
 	offset	100 200

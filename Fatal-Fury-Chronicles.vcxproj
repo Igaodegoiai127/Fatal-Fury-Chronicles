@@ -1165,6 +1165,18 @@
     <Image Include="data\chars\misc\cvs_jump_dust\1_7.png" />
     <Image Include="data\chars\misc\cvs_jump_dust\1_8.png" />
     <Image Include="data\chars\misc\cvs_jump_dust\1_9.png" />
+    <Image Include="data\chars\misc\cvs_land_dust\0_0.png" />
+    <Image Include="data\chars\misc\cvs_land_dust\0_1.png" />
+    <Image Include="data\chars\misc\cvs_land_dust\0_10.png" />
+    <Image Include="data\chars\misc\cvs_land_dust\0_11.png" />
+    <Image Include="data\chars\misc\cvs_land_dust\0_2.png" />
+    <Image Include="data\chars\misc\cvs_land_dust\0_3.png" />
+    <Image Include="data\chars\misc\cvs_land_dust\0_4.png" />
+    <Image Include="data\chars\misc\cvs_land_dust\0_5.png" />
+    <Image Include="data\chars\misc\cvs_land_dust\0_6.png" />
+    <Image Include="data\chars\misc\cvs_land_dust\0_7.png" />
+    <Image Include="data\chars\misc\cvs_land_dust\0_8.png" />
+    <Image Include="data\chars\misc\cvs_land_dust\0_9.png" />
     <Image Include="data\chars\misc\dust\0_0.png" />
     <Image Include="data\chars\misc\dust\0_1.png" />
     <Image Include="data\chars\misc\dust\0_2.png" />
@@ -3625,6 +3637,7 @@
     <Text Include="data\chars\misc\crat0001\crat0002.txt" />
     <Text Include="data\chars\misc\cvs_jump_dust\hop_liftoff.txt" />
     <Text Include="data\chars\misc\cvs_jump_dust\jump_liftoff.txt" />
+    <Text Include="data\chars\misc\cvs_land_dust\jump_land.txt" />
     <Text Include="data\chars\misc\dust\flash_jump_liftoff.txt" />
     <Text Include="data\chars\misc\dust\flash_jump_land.txt" />
     <Text Include="data\chars\misc\dust\flash_slam_light.txt" />

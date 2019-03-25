@@ -26,7 +26,7 @@ sleepwait       1000
 combostyle		1
 atchain      	1 2 3 4 0 5 6 7
 height 			95
-dust			flash_fall_land flash_jump_land jump_liftoff
+dust			flash_fall_land jump_land jump_liftoff
 mpset 			100 3 50 1 2 2
 jumpheight		4
 bflash			Block
@@ -621,7 +621,7 @@ anim attack7
 	# Jump spinning kick
 
 		jumpframe 2 2.2 0 0 hop_liftoff
-		landframe 8 flash_jump_land
+		landframe 8 jump_land
 
 		delay	6
 		offset	155 210
@@ -763,7 +763,7 @@ anim attackup
 	#Jump out.
 
 	jumpframe 1 1 -1 -1.5 hop_liftoff
-	landframe 2 flash_jump_land
+	landframe 2 jump_land
 
 	delay	10
 	offset 100 200
@@ -780,7 +780,7 @@ anim attackdown
 	#Jump in.
 
 	jumpframe 1 1 -1 1.5 hop_liftoff
-	landframe 2 flash_jump_land
+	landframe 2 jump_land
 
 	delay	10
 	offset 100 200
@@ -857,7 +857,7 @@ anim freespecial
 	# Back Handspring
 
 		jumpframe 2 1 -1.3 0 hop_liftoff
-		landframe 4 flash_jump_land
+		landframe 4 jump_land
 
 		delay	6
 		offset	155 210
@@ -893,7 +893,7 @@ anim follow93
 	# Back handspring (part 2).
 
 		jumpframe 2 1 -1.3 0
-		landframe 4 flash_jump_land
+		landframe 4 jump_land
 
 		delay	4
 		offset	155 210
@@ -955,7 +955,7 @@ anim freespecial3
 	#Plane force down (Spin kick)
 
 	jumpframe 2 2 0.1 0 hop_liftoff
-	landframe 7 flash_jump_land
+	landframe 7 jump_land
 	fastattack 1
 
 	delay	6
@@ -989,7 +989,7 @@ anim freespecial4
 	#Plane attack up (Palm thrust)
 
 	jumpframe 2 3.1 0.3 -0.9 hop_liftoff
-	landframe 5 flash_jump_land
+	landframe 5 jump_land
 	range     0    100
 	rangez    -100 -25
 	fastattack 1
@@ -1017,7 +1017,7 @@ anim freespecial5
 	#Plane attack down (Flip kick)
 
 	jumpframe 2 3.1 0.3 0.9 hop_liftoff
-	landframe 6 flash_jump_land
+	landframe 6 jump_land
 	range     0   100
 	rangez    100 25
 	fastattack 1
@@ -1602,7 +1602,7 @@ anim blockpain
 
 anim land
 
-	landframe 4 flash_jump_land
+	landframe 4 jump_land
 	jumpframe 1 1 1 0 hop_liftoff
 
 	delay	8
@@ -1622,7 +1622,7 @@ anim land
 anim rise
 
 	jumpframe 3 1.2 0.2 0 hop_liftoff
-	landframe 5 flash_jump_land
+	landframe 5 jump_land
 
 	delay	8
 	offset	100 200
@@ -1846,7 +1846,7 @@ anim fall9
 anim death
 
 	jumpframe 3 1.2 0.2 0 hop_liftoff
-	landframe 5 flash_jump_land
+	landframe 5 jump_land
 
 	delay	8
 	offset	100 200

@@ -10519,6 +10519,42 @@
     <Image Include="data\chars\misc\cvs_jump_dust\1_11.png">
       <Filter>Resource Files</Filter>
     </Image>
+    <Image Include="data\chars\misc\cvs_land_dust\0_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\cvs_land_dust\0_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\cvs_land_dust\0_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\cvs_land_dust\0_3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\cvs_land_dust\0_4.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\cvs_land_dust\0_5.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\cvs_land_dust\0_6.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\cvs_land_dust\0_7.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\cvs_land_dust\0_8.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\cvs_land_dust\0_9.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\cvs_land_dust\0_10.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\cvs_land_dust\0_11.png">
+      <Filter>Resource Files</Filter>
+    </Image>
   </ItemGroup>
   <ItemGroup>
     <Text Include="data\levels.txt" />
@@ -10587,6 +10623,7 @@
     <Text Include="data\chars\terry\terry_power_wave.txt" />
     <Text Include="data\chars\misc\cvs_jump_dust\jump_liftoff.txt" />
     <Text Include="data\chars\misc\cvs_jump_dust\hop_liftoff.txt" />
+    <Text Include="data\chars\misc\cvs_land_dust\jump_land.txt" />
   </ItemGroup>
   <ItemGroup>
     <None Include="data\chars\andy\wild-ambition-front-throw.psd" />
