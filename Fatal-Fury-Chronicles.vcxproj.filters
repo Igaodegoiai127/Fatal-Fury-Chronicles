@@ -10624,6 +10624,7 @@
     <Text Include="data\chars\misc\cvs_jump_dust\jump_liftoff.txt" />
     <Text Include="data\chars\misc\cvs_jump_dust\hop_liftoff.txt" />
     <Text Include="data\chars\misc\cvs_land_dust\jump_land.txt" />
+    <Text Include="data\chars\misc\cvs_land_dust\fall_land.txt" />
   </ItemGroup>
   <ItemGroup>
     <None Include="data\chars\andy\wild-ambition-front-throw.psd" />
