@@ -1,6 +1,6 @@
 #Land effect
 
-name	flash_fall_land
+name	fall_land
 type	none
 shadow	0
 alpha	1

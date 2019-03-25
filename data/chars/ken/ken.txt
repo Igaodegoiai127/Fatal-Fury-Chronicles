@@ -19,7 +19,7 @@ sleepwait       1000
 combostyle		1
 atchain      	1 2 3 4 0 5 6 7
 height 			95
-dust			flash_fall_land jump_land jump_liftoff
+dust			fall_land jump_land jump_liftoff
 mpset 			100 3 50 1 2 2
 jumpheight		4
 bflash			Block

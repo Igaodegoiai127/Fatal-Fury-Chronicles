@@ -30,7 +30,7 @@ sleepwait       1000
 combostyle	1
 atchain      	1 2 3 4 0 5 6 7
 height 		95
-dust		flash_fall_land jump_land jump_liftoff
+dust		fall_land jump_land jump_liftoff
 mpset 		100 3 50 1 2 2
 
 #*****Scripts*****
@@ -691,7 +691,7 @@ anim chargeattack
 	chargetime    	1
 	counterattack 	1
 	quakeframe    	4 3 -2
-	custentity    	flash_fall_land
+	custentity    	fall_land
 	spawnframe    	4 0 0 0 0
 
 	delay	10
