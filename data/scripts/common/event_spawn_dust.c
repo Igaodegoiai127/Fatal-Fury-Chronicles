@@ -7,14 +7,13 @@ void main() {
 	void ent;
 	float pos_z;
 	int aggression;	
+	int spawn_type;
 
 	ent = getlocalvar("self");
 	pos_z = getentityproperty(ent, "z");
 
 	// Make sure autokill is on.
 	changeentityproperty(ent, "autokill", 1);
-
-	set_entity_property(ent, "position_z", pos_z - 1);
 
 	// Water fatality for sound beach. This needs to be moved
 	// elsewhere.
@@ -29,15 +28,23 @@ void main() {
 	{
 		killentity(ent);
 	}
-	else
+
+
+	spawn_type = get_entity_property(ent, "spawn_type");
+
+	if (spawn_type == openborconstant("SPAWN_TYPE_DUST_LAND") || spawn_type == openborconstant("SPAWN_TYPE_DUST_JUMP"))
 	{
+		changedrawmethod(ent, "enabled", 1);
+		changedrawmethod(ent, "alpha", 1);
 		changedrawmethod(ent, "scalex", 128);
 		changedrawmethod(ent, "scaley", 128);
-		changedrawmethod(ent, "alpha", 1);
-		changedrawmethod(ent, "enabled", 1);
 
 		//dc_kanga_z_position_autoscale(ent);
 	}
+
+	// By default OpenBOR spawns dust effects in front of
+	// parent, but we want them behind.
+	set_entity_property(ent, "position_z", pos_z - 1);
 
 	// Play sound.
 	dc_fidelity_quick_play(DC_FIDELITY_TYPE_SPAWN_A);

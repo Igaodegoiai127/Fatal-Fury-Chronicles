@@ -11,7 +11,7 @@ noaircancel     2
 
 # Flash/Hit sparks.
 load	Flash				data/chars/misc/flash/flash.txt
-load	Block				data/chars/misc/flash/block.txt
+load	Block				data/chars/misc/cvs_block_flash/block.txt
 load    fall_land			data/chars/misc/cvs_land_dust/fall_land.txt
 load    jump_liftoff		data/chars/misc/cvs_jump_dust/jump_liftoff.txt
 load    hop_liftoff			data/chars/misc/cvs_jump_dust/hop_liftoff.txt

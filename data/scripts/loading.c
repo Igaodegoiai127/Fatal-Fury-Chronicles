@@ -43,8 +43,11 @@ void oncreate()
 	// Jump land.
 	dc_fidelity_setup("jump_land", DC_FIDELITY_TYPE_SPAWN_A, "data/sounds/custom/fatal_fury_1_land.wav");
 
-	// Fall Land
+	// Fall Land.
 	dc_fidelity_setup("fall_land", DC_FIDELITY_TYPE_SPAWN_A, "data/sounds/custom/unknown_fall_land.wav");
+
+	// Block flash.
+	dc_fidelity_setup("block", DC_FIDELITY_TYPE_SPAWN_A, "data/sounds/custom/cvs_block.wav");
 }
 
 void ondestroy()
