@@ -74,7 +74,7 @@ com	d -> u -> a	freespecial4	# Plane 	attack up.
 com	u -> d -> a	freespecial5	# Plane 	attack down.
 com	d -> u -> j	freespecial6	# Rising Tackle.	
 com d -> f -> a	freespecial10	# Power wave
-com d -> b -> j	freespecial11	# Crack Shoot
+com f -> d -> j	freespecial11	# Crack Shoot
 
 #*****Basic********************************************************************************
 
@@ -2349,7 +2349,7 @@ anim freespecial10 # Power Wave
 
  anim freespecial11 # Crack Shoot
 	
-	flipframe 0
+	energycost 5
 	jumpframe 2 2 4 0 hop_liftoff
 	landframe 9 jump_land
 	
@@ -2389,7 +2389,7 @@ anim freespecial10 # Power Wave
 	@cmd dc_elmers_set_palette_match DC_ELMERS_PALETTE_MATCH_TABLE
 
 	@cmd dc_elmers_set_bind_property "sort_id" 1
-	@cmd dc_elmers_set_bind_animation_match (openborconstant("BIND_ANIMATION_TARGET")+openborconstant("BIND_ANIMATION_REMOVE")+openborconstant("BIND_ANIMATION_FRAME_TARGET"))
+	@cmd dc_elmers_set_bind_animation_match (openborconstant("BIND_ANIMATION_TARGET")+openborconstant("BIND_ANIMATION_REMOVE")+openborconstant("BIND_ANIMATION_FRAME_TARGET")+openborconstant("BIND_ANIMATION_FRAME_REMOVE"))
 	
 	@cmd dc_elmers_quick_bind
 

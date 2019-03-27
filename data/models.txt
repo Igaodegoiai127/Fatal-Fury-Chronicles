@@ -64,7 +64,7 @@ know	deck0002	data/bgs/deck/deck0002.txt				# Sound beach deck elec pole.
 
 #*****Characters************************************************************
 
-
+know	terry_crack_shoot		data/chars/terry/crack_shoot/terry_crack_shoot.txt
 know	terry_power_wave		data/chars/terry/terry_power_wave.txt
 know	terry_power_wave_fist	data/chars/terry/terry_power_wave_fist.txt
 load    Terry					data/chars/terry/terry.txt
