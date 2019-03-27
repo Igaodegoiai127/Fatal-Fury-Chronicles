@@ -36,6 +36,7 @@ dust			fall_land jump_land jump_liftoff
 mpset 			100 3 50 1 2 2
 bflash			Block
 
+load terry_crack_shoot
 load terry_power_wave
 load terry_power_wave_fist
 
@@ -73,6 +74,7 @@ com	d -> u -> a	freespecial4	# Plane 	attack up.
 com	u -> d -> a	freespecial5	# Plane 	attack down.
 com	d -> u -> j	freespecial6	# Rising Tackle.	
 com d -> f -> a	freespecial10	# Power wave
+com d -> b -> j	freespecial11	# Crack Shoot
 
 #*****Basic********************************************************************************
 
@@ -2320,7 +2322,7 @@ anim freespecial10 # Power Wave
 	@cmd dc_gauntlet_set_offset_y 0
 	@cmd dc_gauntlet_dump_instance()
 	@cmd dc_guantlet_spawn_projectile()
-	#cmd set_entity_property dc_gauntlet_get_spawn() "position_base" get_entity_property(getlocalvar("self"),"position_base")
+	@cmd set_entity_property dc_gauntlet_get_spawn() "position_base" get_entity_property(getlocalvar("self"),"position_base")
 	
 	frame	data/chars/terry/50_5.png
 	
@@ -2337,6 +2339,146 @@ anim freespecial10 # Power Wave
 	delay 12
 	
 	frame	data/chars/terry/50_7.png
+	
+	bbox.position.x 61
+	bbox.position.y 75
+	bbox.size.x 40
+	bbox.size.y 86
+	
+	frame data/chars/terry/24_1.png
+
+ anim freespecial11 # Crack Shoot
+	
+	flipframe 0
+	jumpframe 2 2 4 0 hop_liftoff
+	landframe 9 jump_land
+	
+	offset	70 158
+	delay	8
+			
+	bbox.position.x 57
+	bbox.position.y 72
+	bbox.size.x 33
+	bbox.size.y 85
+	
+	frame data/chars/terry/33_0.png
+	
+	delay 8
+	
+	bbox.position.x 66
+	bbox.position.y 62
+	bbox.size.x 40
+	bbox.size.y 95
+	
+	frame data/chars/terry/33_1.png	
+	
+	bbox.position.x 47
+	bbox.position.y 54
+	bbox.size.x 38
+	bbox.size.y 68
+
+	# Spawn sub entity and set it as entity for binding.
+	@cmd dc_gauntlet_clear_spawn_entry
+	@cmd dc_gauntlet_set_spawn_entry "name" "terry_crack_shoot"	
+	@cmd dc_elmers_set_entity dc_gauntlet_spawn()
+	@cmd dc_gauntlet_clear_spawn_entry
+	
+	# Set self as target of bind, adjust offset and apply bind.
+	@cmd dc_elmers_set_target getlocalvar("self")
+	
+	@cmd dc_elmers_set_palette_match DC_ELMERS_PALETTE_MATCH_TABLE
+
+	@cmd dc_elmers_set_bind_property "sort_id" 1
+	@cmd dc_elmers_set_bind_animation_match (openborconstant("BIND_ANIMATION_TARGET")+openborconstant("BIND_ANIMATION_REMOVE")+openborconstant("BIND_ANIMATION_FRAME_TARGET"))
+	
+	@cmd dc_elmers_quick_bind
+
+	frame data/chars/terry/51_0.png	
+		
+	bbox.position.x 54
+	bbox.position.y 47
+	bbox.size.x 40
+	bbox.size.y 53
+	
+	attack.damage.force 12
+	attack.position.x 40
+	attack.position.y 18
+	attack.reaction.pause.time 15
+	attack.size.x 55
+	attack.size.y 83
+	
+	frame data/chars/terry/51_1.png
+	
+	delay 1
+	
+	attack 0
+	
+	frame data/chars/terry/51_1.png
+	
+	delay 8
+	
+	bbox.position.x 57
+	bbox.position.y 44
+	bbox.size.x 31
+	bbox.size.y 63
+	
+	attack.damage.force 12
+	attack.position.x 73
+	attack.position.y 31
+	attack.reaction.pause.time 15
+	attack.size.x 51
+	attack.size.y 72
+	
+	frame data/chars/terry/51_2.png
+	
+	delay 1
+	
+	attack 0
+	
+	frame data/chars/terry/51_2.png
+	
+	delay 10
+	
+	bbox.position.x 51
+	bbox.position.y 56
+	bbox.size.x 45
+	bbox.size.y 57
+	
+	attack.damage.force 12
+	attack.position.x 50
+	attack.position.y 63
+	attack.reaction.pause.time 15
+	attack.size.x 88
+	attack.size.y 39
+	
+	frame data/chars/terry/51_3.png
+	
+	delay -1000
+	
+	attack 0
+	
+	bbox.position.x 69
+	bbox.position.y 69
+	bbox.size.x 36
+	bbox.size.y 74
+	
+	frame data/chars/terry/52_4.png	
+	
+	delay 8
+	
+	bbox.position.x 61
+	bbox.position.y 75
+	bbox.size.x 40
+	bbox.size.y 86
+	
+	frame data/chars/terry/24_0.png
+	
+	bbox.position.x 64
+	bbox.position.y 87
+	bbox.size.x 40
+	bbox.size.y 71
+	
+	frame data/chars/terry/1_0.png
 	
 	bbox.position.x 61
 	bbox.position.y 75
