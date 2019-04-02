@@ -18,7 +18,7 @@ anim idle
 anim freespecial11 # Crack shoot
 
 	delay	1000
-	offset	70 158
+	offset	76 155
 
 	frame	data/chars/misc/blank.png
 	frame	data/chars/misc/blank.png

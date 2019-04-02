@@ -165,7 +165,7 @@ anim idle # Ready stance.
 
 		loop 	1
 		delay	12
-		offset	70 158
+		offset	76 155
 		
 	bbox.position.x 56
 	bbox.position.y 60
@@ -186,7 +186,7 @@ anim idle3 # Strafe (opponent front Z)
 
 		loop 	1
 		delay	12
-		offset	70 158
+		offset	76 155
 		
 	bbox.position.x 58
 	bbox.position.y 60
@@ -206,7 +206,7 @@ anim faint # Faint
 
 		loop 	1
 		delay	15
-		offset	70 158
+		offset	76 155
 	bbox.position.x 54
 	bbox.position.y 64
 	bbox.size.x 42
@@ -220,7 +220,7 @@ anim walk # Normal walk
 
 		loop 	1
 		delay	12
-		offset	70 158
+		offset	76 155
 		
 	bbox.position.x 58
 	bbox.position.y 60
@@ -241,7 +241,7 @@ anim walk3 # Strafe Walk
 
 		loop 	1
 		delay	12
-		offset	70 158
+		offset	76 155
 		
 		bbox.position.x 58
 	bbox.position.y 60
@@ -257,7 +257,7 @@ anim walk3 # Strafe Walk
 anim run # Dash
 
 		delay	12
-		offset	70 158
+		offset	76 155
 	bbox.position.x 74
 	bbox.position.y 66
 	bbox.size.x 45
@@ -279,7 +279,7 @@ anim run # Dash
 anim get # Get
 
 	delay	20
-	offset	70 158
+	offset	76 155
 		
 	bbox.position.x 63
 	bbox.position.y 98
@@ -304,7 +304,7 @@ anim 	attack1 # Long Jab
 		fastattack 1
 
 		delay	4
-		offset	70 158
+		offset	76 155
 			
 	bbox.position.x 62
 	bbox.position.y 62
@@ -359,7 +359,7 @@ anim 	attack2	# front kick
 		fastattack 1
 
 			delay	5
-			offset	70 158
+			offset	76 155
 	
 	bbox.position.x 50
 	bbox.position.y 60
@@ -393,7 +393,7 @@ anim 	attack3	# Gut punch.
 		fastattack 1
 
 		delay	6
-		offset	70 158
+		offset	76 155
 	bbox.position.x 50
 	bbox.position.y 60
 	bbox.size.x 45
@@ -462,7 +462,7 @@ anim 	attack4	# Big boot.
 		fastattack 1
 
 		delay	4
-		offset	70 158
+		offset	76 155
 		
 	bbox.position.x 50
 	bbox.position.y 60
@@ -550,7 +550,7 @@ anim 	attack4	# Big boot.
 anim 	attack5 # Straight
 
 		delay	3
-		offset	70 158
+		offset	76 155
 				
 	bbox.position.x 58
 	bbox.position.y 60
@@ -622,7 +622,7 @@ anim 	attack5 # Straight
 anim 	attack6 # Backhand
 
 		delay	5
-		offset	70 158
+		offset	76 155
 				
 	bbox.position.x 58
 	bbox.position.y 60
@@ -711,7 +711,7 @@ anim 	attack6 # Backhand
 
 	frame	data/chars/terry/18_0.png
 		
-		offset	70 158
+		offset	76 155
 		
 	bbox.position.x 55
 	bbox.position.y 60
@@ -726,7 +726,7 @@ anim 	attack7	# Jumping spin kick.
 	landframe 8 jump_land
 
 		delay	6
-		offset	70 158
+		offset	76 155
 	bbox.position.x 56
 	bbox.position.y 60
 	bbox.size.x 45
@@ -813,7 +813,7 @@ anim runattack # Power Charge
 	jumpframe 0 0 1.2 0 0
 
 		delay	10
-		offset	70 158
+		offset	76 155
 	bbox.position.x 74
 	bbox.position.y 64
 	bbox.size.x 42
@@ -879,7 +879,7 @@ anim chargeattack # High spin kick.
 		fastattack 1
 
 		delay	6
-		offset	70 158
+		offset	76 155
 	bbox.position.x 58
 	bbox.position.y 60
 	bbox.size.x 41
@@ -935,7 +935,7 @@ anim chargeattack # High spin kick.
 	frame	data/chars/terry/23_3.png
 		delay	6
 		
-		offset	70 158
+		offset	76 155
 		
 	attack.block.penetrate 0
 	attack.damage.force 15
@@ -994,7 +994,7 @@ anim freespecial6 # Rising tackle
 	forcedirection -1
 
 		delay	6
-		offset	70 158
+		offset	76 155
 	bbox.position.x 51
 	bbox.position.y 115
 	bbox.size.x 45
@@ -1091,7 +1091,7 @@ anim freespecial6 # Rising tackle
 	frame	data/chars/terry/33_8.png 	#Spin end
 		delay	6
 	
-	offset	70 158
+	offset	76 155
 	
 	attack.block.penetrate 0
 	attack.damage.force 2
@@ -1170,7 +1170,7 @@ anim follow1 # Short jab
 		fastattack 1
 
 		delay	6
-		offset	70 158
+		offset	76 155
 		
 	bbox.position.x 60
 	bbox.position.y 60
@@ -1205,7 +1205,7 @@ anim follow82 # Down Ataack
 		range   0 80
 
 		delay	6
-		offset	70 158
+		offset	76 155
 		
 	bbox.position.x 59
 	bbox.position.y 60
@@ -1262,7 +1262,7 @@ anim follow51 # Defense poses
 		
 		loop 	1
 		delay	12
-		offset	70 158
+		offset	76 155
 		
 	bbox.position.x 56
 	bbox.position.y 60
@@ -1292,7 +1292,7 @@ anim follow51 # Defense poses
 	
 	frame	data/chars/terry/R_HELD_0.png
 	
-	offset	70 158
+	offset	76 155
 		
 	bbox.position.x 45
 	bbox.position.y 62
@@ -1400,7 +1400,7 @@ frame	data/chars/terry/R_TILT_DOWN_0.png
 	
 	frame	data/chars/terry/R_VERTICAL_DOWN_PAIN_0.png
 	
-	offset	70 158
+	offset	76 155
 	
 	bbox.position.x 38
 	bbox.position.y 134
@@ -1465,7 +1465,7 @@ frame	data/chars/terry/R_TILT_DOWN_0.png
 	
 	frame	data/chars/terry/R_HORIZONTAL_UP_PAIN_0.png
 	
-	offset	70 158
+	offset	76 155
 		
 	bbox.position.x 44
 	bbox.position.y 78
@@ -1475,7 +1475,7 @@ frame	data/chars/terry/R_TILT_DOWN_0.png
 	frame	data/chars/terry/R_PAIN_MID_1.png
 anim jumpdelay
 
-	offset	70 158
+	offset	76 155
 	delay	8
 			
 	bbox.position.x 61
@@ -1488,7 +1488,7 @@ anim jumpdelay
 anim jumpland # Jump land
 
 		delay	4
-		offset	70 158
+		offset	76 155
 		
 	bbox.position.x 61
 	bbox.position.y 75
@@ -1516,7 +1516,7 @@ anim jump # Jump
 	dropframe 1
 
 		delay	-1000
-		offset	70 158
+		offset	76 155
 	
 	bbox.position.x 69
 	bbox.position.y 44
@@ -1560,7 +1560,7 @@ anim forwardjump # Jump forward
 		dropframe 1
 		
 		delay  -1000
-		offset	70 158
+		offset	76 155
 	
 	bbox.position.x 55
 	bbox.position.y 56
@@ -1611,7 +1611,7 @@ anim forwardjump # Jump forward
 anim blockrelease # Block release
 
 		delay	6
-		offset	70 158
+		offset	76 155
 	bbox.position.x 54
 	bbox.position.y 60
 	bbox.size.x 40
@@ -1622,7 +1622,7 @@ anim blockrelease # Block release
 anim blockstart # Block start
 
 		delay	6
-		offset	70 158
+		offset	76 155
 		
 	bbox.position.x 54
 	bbox.position.y 60
@@ -1637,7 +1637,7 @@ anim block # Block
 	#Defence.
 
 		delay	6
-		offset	70 158
+		offset	76 155
 		bbox 	50 60 45 105
 	frame	data/chars/terry/35_1.png
 
@@ -1645,7 +1645,7 @@ anim block # Block
 anim blockpain	# Normal block.
 
 		delay	3
-		offset	70 158
+		offset	76 155
 	bbox.position.x 44
 	bbox.position.y 60
 	bbox.size.x 45
@@ -1654,18 +1654,18 @@ anim blockpain	# Normal block.
 	frame	data/chars/terry/35_2.png
 		offset	73 158
 	frame	data/chars/terry/35_2.png
-		offset	70 158
+		offset	76 155
 	frame	data/chars/terry/35_2.png
 		offset	73 158
 	frame	data/chars/terry/35_2.png
 		delay	20
-		offset	70 158
+		offset	76 155
 	frame	data/chars/terry/35_2.png
 
 anim blockpain2	# Middle block.
 
 		delay	3
-		offset	70 158
+		offset	76 155
 	bbox.position.x 54
 	bbox.position.y 60
 	bbox.size.x 34
@@ -1674,12 +1674,12 @@ anim blockpain2	# Middle block.
 	frame	data/chars/terry/36_1.png
 		offset	73 158
 	frame	data/chars/terry/36_1.png
-		offset	70 158
+		offset	76 155
 	frame	data/chars/terry/36_1.png
 		offset	73 158
 	frame	data/chars/terry/36_1.png
 		delay	10
-		offset	70 158
+		offset	76 155
 		
 	bbox.position.x 58
 	bbox.position.y 60
@@ -1691,7 +1691,7 @@ anim blockpain2	# Middle block.
 anim blockpain3	# Low block.
 
 		delay	3
-		offset	70 158
+		offset	76 155
 	bbox.position.x 43
 	bbox.position.y 85
 	bbox.size.x 50
@@ -1700,12 +1700,12 @@ anim blockpain3	# Low block.
 	frame	data/chars/terry/37_1.png
 		offset	73 158
 	frame	data/chars/terry/37_1.png
-		offset	70 158
+		offset	76 155
 	frame	data/chars/terry/37_1.png
 		offset	73 158
 	frame	data/chars/terry/37_1.png
 		delay	10
-		offset	70 158
+		offset	76 155
 	frame	data/chars/terry/37_0.png
 	
 	bbox.position.x 61
@@ -1725,7 +1725,7 @@ anim blockpain3	# Low block.
 anim rise # Rise
 
 		delay	12
-		offset	70 158
+		offset	76 155
 		bbox 	0
 	frame	data/chars/terry/41_0.png
 	frame	data/chars/terry/41_1.png
@@ -1735,7 +1735,7 @@ anim rise # Rise
 anim pain # Normal pain
 
 	delay	11
-	offset	70 158
+	offset	76 155
 		
 	bbox.position.x 45
 	bbox.position.y 62
@@ -1753,7 +1753,7 @@ anim pain # Normal pain
 	
 	frame	data/chars/terry/R_PAIN_2.png
 	
-	offset	70 158
+	offset	76 155
 	
 	bbox.position.x 45
 	bbox.position.y 62
@@ -1771,7 +1771,7 @@ anim pain # Normal pain
 anim pain2	# Middle pain.
 
 	delay	11
-	offset	70 158
+	offset	76 155
 		
 	bbox.position.x 44
 	bbox.position.y 78
@@ -1789,7 +1789,7 @@ anim pain2	# Middle pain.
 	
 	frame	data/chars/terry/R_PAIN_MID_2.png
 	
-	offset	70 158
+	offset	76 155
 	
 	bbox.position.x 44
 	bbox.position.y 78
@@ -1811,7 +1811,7 @@ anim fall
 	landframe 3
 
 	delay	12
-	offset	70 158
+	offset	76 155
 		
 	bbox.position.x 52
 	bbox.position.y 63
@@ -1932,7 +1932,7 @@ anim fall
 	
 	frame	data/chars/terry/R_LAYING_UP_PAIN_0.png
 	
-	offset	70 158
+	offset	76 155
 	
 	bbox.position.x 38
 	bbox.position.y 134
@@ -1948,7 +1948,7 @@ anim fall
 anim jumpattack # Heavy air punch
 
 	delay	8
-	offset	70 158
+	offset	76 155
 	
 	bbox.position.x 66
 	bbox.position.y 57
@@ -2013,7 +2013,7 @@ anim jumpattack # Heavy air punch
 anim runjumpattack
 	
 	delay	6
-	offset	70 158
+	offset	76 155
 	
 	bbox.position.x 66
 	bbox.position.y 45
@@ -2074,7 +2074,7 @@ anim runjumpattack
 anim jumpforward
 	
 	delay	6
-	offset	70 158
+	offset	76 155
 	
 	bbox.position.x 66
 	bbox.position.y 45
@@ -2140,7 +2140,7 @@ anim jumpforward
 anim jumpattack2
 	
 	delay	8
-	offset	70 158
+	offset	76 155
 	
 	bbox.position.x 66
 	bbox.position.y 57
@@ -2208,7 +2208,7 @@ anim freespecial # Backward dash
 	dropframe 2
 	landframe 3 jump_land
 	
-	offset	70 158
+	offset	76 155
 	delay	8
 			
 	bbox.position.x 0
@@ -2246,7 +2246,7 @@ anim freespecial10 # Power Wave
 	range 	205 600		
 
 	delay	4
-	offset	70 158
+	offset	76 155
 	
 	bbox.position.x 56
 	bbox.position.y 68
@@ -2353,7 +2353,7 @@ anim freespecial10 # Power Wave
 	jumpframe 2 2 4 0 hop_liftoff
 	landframe 9 jump_land
 	
-	offset	70 158
+	offset	76 155
 	delay	8
 			
 	bbox.position.x 57

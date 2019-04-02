@@ -13,7 +13,7 @@ palette	data/chars/terry/power_wave/1_0.png
 anim spawn
 
 	delay	3
-	offset	110 90
+	offset	101 87
 
 	followanim 1
 	followcond 1
@@ -34,7 +34,7 @@ anim idle
 
 	loop	1
 	delay	4
-	offset	101 90
+	offset	101 87
 
 	followanim 1
 	followcond 1

@@ -18,7 +18,7 @@ anim idle
 anim freespecial10 # Power wave
 
 	delay	5
-	offset	70 158
+	offset	76 155
 
 	quakeframe 7 2 1
 
