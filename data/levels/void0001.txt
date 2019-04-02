@@ -28,12 +28,12 @@ at		0
 
 
 
-spawn	raid0001
-map	8
-health	400
-coords	550 170
+#spawn	raid0001
+#map	8
+#health	400
+#coords	550 170
 #spawnscript data/scripts/spawn.c
-at	0
+#at	0
 
 
 
