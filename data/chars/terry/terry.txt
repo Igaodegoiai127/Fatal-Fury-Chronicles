@@ -1515,8 +1515,8 @@ anim jump # Jump
 
 	dropframe 1
 
-		delay	-1000
-		offset	76 155
+	delay	-1000
+	offset	76 155
 	
 	bbox.position.x 69
 	bbox.position.y 44
@@ -1524,7 +1524,8 @@ anim jump # Jump
 	bbox.size.y 105
 	
 	frame data/chars/terry/30_0.png
-		delay	8
+	
+	delay	8
 	
 	bbox.position.x 69
 	bbox.position.y 44
@@ -1532,7 +1533,7 @@ anim jump # Jump
 	bbox.size.y 93
 	
 	frame data/chars/terry/30_1.png
-	
+
 	bbox.position.x 69
 	bbox.position.y 50
 	bbox.size.x 32
@@ -1559,7 +1560,7 @@ anim forwardjump # Jump forward
 
 		dropframe 1
 		
-		delay  -1000
+		delay  20
 		offset	76 155
 	
 	bbox.position.x 55
