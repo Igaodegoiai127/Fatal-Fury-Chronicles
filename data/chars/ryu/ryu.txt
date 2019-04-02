@@ -263,7 +263,7 @@ anim jumpland
 
 anim jump
 
-		delay	-1000
+		delay	15
 		offset	82 147
 
 		dropframe 1
@@ -286,7 +286,7 @@ anim jump
 
 anim forwardjump
 
-		delay	-1000
+		delay	15
 		offset	82 147
 
 		dropframe 1
