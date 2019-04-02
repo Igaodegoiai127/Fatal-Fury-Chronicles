@@ -17,7 +17,7 @@ anim idle
 anim attack1
 
 		delay	-1000
-		offset	156 209
+		offset	141 206
 
 	frame	data/chars/misc/blank.png
 
@@ -26,7 +26,7 @@ anim attack2
 	# V-cut slash.
 
 		delay	-1000
-		offset	156 209
+		offset	141 206
 	
 	frame	data/chars/misc/blank.png
 	frame	data/chars/galford/160_1_1_trail_0.png
@@ -44,7 +44,7 @@ anim attack3
 	# Reverse V-cut slash.
 
 		delay	-1000
-		offset	156 209
+		offset	141 206
 
 	frame	data/chars/misc/blank.png
 	frame	data/chars/misc/blank.png
@@ -61,7 +61,7 @@ anim attack5
 	# Cross slash
 
 		delay	-1000
-		offset	156 209
+		offset	141 206
 	
 	frame	data/chars/misc/blank.png
 	frame	data/chars/misc/blank.png
@@ -81,7 +81,7 @@ anim attack6
 	# Backhand slash
 
 		delay	-1000
-		offset	156 209
+		offset	141 206
 	
 	frame	data/chars/misc/blank.png
 	frame	data/chars/galford/805_1_0_trail_0.png
