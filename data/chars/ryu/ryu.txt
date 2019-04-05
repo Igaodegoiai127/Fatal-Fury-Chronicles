@@ -472,3 +472,78 @@ anim Freespecial10 # Hadouken
 	bbox.size.y 103
 	
 	frame	data/chars/ryu/43_11.png
+anim attack1
+	
+	range 24 70
+	
+	delay	5
+	offset	82 147
+	
+	bbox.position.x 74
+	bbox.position.y 46
+	bbox.size.x 34
+	bbox.size.y 101
+
+	frame	data/chars/ryu/16_0.png
+	
+	attack.damage.force 3
+	attack.position.x 107
+	attack.position.y 56
+	attack.reaction.pause.time 10
+	attack.size.x 47
+	attack.size.y 15
+	
+	frame	data/chars/ryu/16_1.png
+	
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.size.x 0
+	attack.size.y 0
+	
+	frame	data/chars/ryu/16_2.png
+	
+	idle 1
+	
+	frame	data/chars/ryu/16_3.png
+	bbox.position.x 71
+	bbox.position.y 47
+	bbox.size.x 32
+	bbox.size.y 99
+	frame	data/chars/ryu/16_4.png
+anim attack2
+	delay	5
+	offset	82 147
+	
+	bbox.position.x 82
+	bbox.position.y 49
+	bbox.size.x 38
+	bbox.size.y 98
+
+	frame	data/chars/ryu/34_0.png
+	
+	attack.damage.force 10
+	attack.position.x 103
+	attack.position.y 57
+	attack.reaction.pause.time 10
+	attack.size.x 58
+	attack.size.y 17
+	
+	frame	data/chars/ryu/34_1.png
+	
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.size.x 0
+	attack.size.y 0
+	
+	frame	data/chars/ryu/34_2.png
+	frame	data/chars/ryu/34_3.png
+	frame	data/chars/ryu/34_4.png
+	
+	bbox.position.x 68
+	bbox.position.y 49
+	bbox.size.x 38
+	bbox.size.y 98
+	
+	frame	data/chars/ryu/16_4.png
