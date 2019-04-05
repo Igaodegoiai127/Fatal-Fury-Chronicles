@@ -48,6 +48,10 @@ void oncreate()
 
 	// Block flash.
 	dc_fidelity_setup("block", DC_FIDELITY_TYPE_SPAWN_A, "data/sounds/custom/cvs_block.wav");
+
+	//  Hit flash
+	dc_fidelity_setup("Flash", DC_FIDELITY_TYPE_SPAWN_A, "data/sounds/custom/double_dragon_2_hit_0.wav");
+	dc_fidelity_setup("flash_fatal_fury", DC_FIDELITY_TYPE_SPAWN_A, "data/sounds/custom/fatal_fury_1_hit.wav");
 }
 
 void ondestroy()

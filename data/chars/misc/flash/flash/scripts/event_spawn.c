@@ -24,5 +24,5 @@ void main() {
 	// Apply draw settings.
 	//dc_kanga_z_position_autoscale(ent);
 
-	// stereo_sound_command_here(SNDHIT1);
+	dc_fidelity_quick_play(DC_FIDELITY_TYPE_SPAWN_A);
 }

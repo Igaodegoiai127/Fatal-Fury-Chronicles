@@ -59,6 +59,7 @@ mpset 100 3 50 1 2 2
 #*****Sub Entites*****
 #*****Alternates*******
 
+#palette			data/chars/terry/example.act
 palette	       data/chars/terry/default_0.act
 alternatepal   data/chars/terry/default_1.act
 alternatepal   data/chars/terry/kof_2000_0.act
@@ -172,12 +173,13 @@ anim idle # Ready stance.
 	bbox.size.x 37
 	bbox.size.y 105
 
+	#frame	data/chars/terry/example.png
 	frame	data/chars/terry/0_0.png
-	frame	data/chars/terry/0_1.png
-	frame	data/chars/terry/0_2.png
-	frame	data/chars/terry/0_3.png
-	frame	data/chars/terry/0_2.png
-	frame	data/chars/terry/0_1.png
+	#frame	data/chars/terry/0_1.png
+	#frame	data/chars/terry/0_2.png
+	#frame	data/chars/terry/0_3.png
+	#frame	data/chars/terry/0_2.png
+	#frame	data/chars/terry/0_1.png
 
 anim idle3 # Strafe (opponent front Z)
 
@@ -326,7 +328,7 @@ anim 	attack1 # Long Jab
 	bbox.position.y 60
 	bbox.size.x 36
 	bbox.size.y 106
-				
+	
 	attack.damage.force 4
 	attack.position.x 98
 	attack.position.y 73
@@ -378,7 +380,8 @@ anim 	attack2	# front kick
 	attack.reaction.pause.time 10
 	attack.size.x 73
 	attack.size.y 15
-	
+	attack.effect.hit.flash.model flash_fatal_fury
+
 	frame	data/chars/terry/27_2.png
 	
 	attack 0
@@ -508,6 +511,8 @@ anim 	attack4	# Big boot.
 	attack.size.x 83
 	attack.size.y 55
 	attack.size.z.1 0
+	attack.effect.hit.flash.model flash_fatal_fury
+	
 	damageonlanding 0 1
 
 	frame	data/chars/terry/29_3.png
@@ -784,6 +789,8 @@ anim 	attack7	# Jumping spin kick.
 	attack.size.x 80
 	attack.size.y 16
 	attack.size.z.1 0
+	attack.effect.hit.flash.model flash_fatal_fury
+
 	frame	data/chars/terry/19_3.png
 	
 	attack.block.penetrate 0
@@ -808,6 +815,7 @@ anim 	attack7	# Jumping spin kick.
 		
 	frame	data/chars/terry/24_0.png	
 	frame	data/chars/terry/24_1.png
+
 anim runattack # Power Charge
 
 	jumpframe 0 0 1.2 0 0
@@ -856,6 +864,8 @@ anim runattack # Power Charge
 	attack.size.x 55
 	attack.size.y 55
 	attack.size.z.1 0
+	attack.effect.hit.flash.model flash_fatal_fury
+
 	frame	data/chars/terry/21_6.png
 		delay	12
 		
@@ -919,6 +929,8 @@ anim chargeattack # High spin kick.
 	attack.size.x 29
 	attack.size.y 45
 	attack.size.z.1 0
+	attack.effect.hit.flash.model flash_fatal_fury
+
 	frame	data/chars/terry/23_3.png
 		delay	1
 	attack.block.penetrate 0
@@ -948,6 +960,8 @@ anim chargeattack # High spin kick.
 	attack.size.x 45
 	attack.size.y 55
 	attack.size.z.1 0
+	attack.effect.hit.flash.model flash_fatal_fury
+
 	frame	data/chars/terry/23_4.png
 	
 	bbox.position.x 75
@@ -1235,6 +1249,7 @@ anim follow82 # Down Ataack
 	attack.size.z.1 0
 	attack.staydown.rise.time -200
 	attack.ground.mode 2
+	attack.effect.hit.flash.model flash_fatal_fury
 
 	frame	data/chars/terry/34_2.png
 	
@@ -1473,6 +1488,7 @@ frame	data/chars/terry/R_TILT_DOWN_0.png
 	bbox.size.y 79
 	
 	frame	data/chars/terry/R_PAIN_MID_1.png
+
 anim jumpdelay
 
 	offset	76 155
@@ -1769,6 +1785,7 @@ anim pain # Normal pain
 	bbox.size.y 105
 	
 	frame	data/chars/terry/R_PAIN_0.png
+
 anim pain2	# Middle pain.
 
 	delay	11
@@ -2038,6 +2055,7 @@ anim runjumpattack
 	attack.reaction.pause.time 10
 	attack.size.x 60
 	attack.size.y 53
+	attack.effect.hit.flash.model flash_fatal_fury
 	
 	frame data/chars/terry/49_0.png
 
@@ -2099,7 +2117,8 @@ anim jumpforward
 	attack.reaction.pause.time 10
 	attack.size.x 92
 	attack.size.y 25
-	
+	attack.effect.hit.flash.model flash_fatal_fury
+
 	frame data/chars/terry/44_1.png
 	
 	delay 14
@@ -2138,6 +2157,7 @@ anim jumpforward
 	bbox.size.y 100
 	
 	frame data/chars/terry/30_4.png
+
 anim jumpattack2
 	
 	delay	8
@@ -2203,6 +2223,7 @@ anim jumpattack2
 	bbox.size.y 100
 	
 	frame data/chars/terry/30_4.png
+
 anim freespecial # Backward dash
 	
 	jumpframe 1 1.5 -2 0 hop_liftoff
@@ -2407,6 +2428,7 @@ anim freespecial10 # Power Wave
 	attack.reaction.pause.time 15
 	attack.size.x 55
 	attack.size.y 83
+	attack.effect.hit.flash.model flash_fatal_fury
 	
 	frame data/chars/terry/51_1.png
 	
@@ -2429,7 +2451,8 @@ anim freespecial10 # Power Wave
 	attack.reaction.pause.time 15
 	attack.size.x 51
 	attack.size.y 72
-	
+	attack.effect.hit.flash.model flash_fatal_fury
+
 	frame data/chars/terry/51_2.png
 	
 	delay 1
@@ -2445,13 +2468,18 @@ anim freespecial10 # Power Wave
 	bbox.size.x 45
 	bbox.size.y 57
 	
+	hitflash flash_fatal_fury
+
 	attack.damage.force 12
 	attack.position.x 50
 	attack.position.y 63
 	attack.reaction.pause.time 15
 	attack.size.x 88
 	attack.size.y 39
+	attack.effect.hit.flash.model flash_fatal_fury
+
 	
+
 	frame data/chars/terry/51_3.png
 	
 	delay -1000

@@ -59,7 +59,7 @@ void main() {
 		ent = getentity(i);
 
 		// Execute tint effect on entity.
-		dc_kanga_auto_tint(ent);
+		//dc_kanga_auto_tint(ent);
 		
 	}	
 
