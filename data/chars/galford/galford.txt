@@ -1269,7 +1269,6 @@ anim grabforward
 		frame	data/chars/andy/andy0417
 		frame	data/chars/andy/andy0418
 	@cmd	bind0008 "flash" "flash" 0 1 30 10 0 0 0 0 1
-	@cmd	bind0004 1 0 0 0 11 0					#Release bind.
 	#@cmd	dama0001 1 20 10 "ATK_NORMAL9" 1 2.5 3 0 0 0 0
 		frame	data/chars/andy/andy0419
 		frame	data/chars/andy/andy0420
@@ -1306,8 +1305,7 @@ anim grabbackward
 	@cmd	bind0010 1 0 40 -2 -1 VERDN
 		frame	data/chars/andy/andy0433
 	move	0
-	@cmd	bind0004 1 0 0 0 11 0						#Release bind.
-
+	
 		@cmd dc_damage_set_entity					getentityproperty(getlocalvar("self") "grabbing")
 		@cmd dc_damage_set_damage_force				0
 		@cmd dc_damage_set_attack_type				openborconstant("ATK_NORMAL5")

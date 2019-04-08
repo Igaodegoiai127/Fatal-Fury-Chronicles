@@ -6,7 +6,6 @@ Galford
 #include "data/scripts/vars/entity.h"
 
 #include "data/scripts/com/bind0003.h"
-#include "data/scripts/com/bind0004.h"
 #include "data/scripts/com/bind0008.h"
 #include "data/scripts/dc_grapple/main.c"
 #include "data/scripts/dc_fidelity/main.c"
