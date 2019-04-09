@@ -173,13 +173,12 @@ anim idle # Ready stance.
 	bbox.size.x 37
 	bbox.size.y 105
 
-	#frame	data/chars/terry/example.png
 	frame	data/chars/terry/0_0.png
-	#frame	data/chars/terry/0_1.png
-	#frame	data/chars/terry/0_2.png
-	#frame	data/chars/terry/0_3.png
-	#frame	data/chars/terry/0_2.png
-	#frame	data/chars/terry/0_1.png
+	frame	data/chars/terry/0_1.png
+	frame	data/chars/terry/0_2.png
+	frame	data/chars/terry/0_3.png
+	frame	data/chars/terry/0_2.png
+	frame	data/chars/terry/0_1.png
 
 anim idle3 # Strafe (opponent front Z)
 
@@ -313,14 +312,16 @@ anim 	attack1 # Long Jab
 	bbox.size.x 33
 	bbox.size.y 102
 
-		@cmd	dc_disney_alternate_on_range openborconstant("ANI_FOLLOW1")
-	
+	@cmd	dc_disney_alternate_on_range openborconstant("ANI_FOLLOW1")
+
 	frame	data/chars/terry/15_0.png
 	
 	bbox.position.x 73
 	bbox.position.y 60
 	bbox.size.x 29
 	bbox.size.y 106
+
+	@cmd	dc_fidelity_quick_play DC_FIDELITY_TYPE_WHIFF_LIGHT_A
 	
 	frame	data/chars/terry/15_1.png
 			
@@ -368,6 +369,8 @@ anim 	attack2	# front kick
 	bbox.size.x 45
 	bbox.size.y 105
 	
+	@cmd	dc_fidelity_quick_play DC_FIDELITY_TYPE_WHIFF_MEDIUM_A
+		
 	frame	data/chars/terry/27_0.png
 	
 	
@@ -401,6 +404,9 @@ anim 	attack3	# Gut punch.
 	bbox.position.y 60
 	bbox.size.x 45
 	bbox.size.y 105
+	
+	@cmd	dc_fidelity_quick_play DC_FIDELITY_TYPE_WHIFF_MEDIUM_A
+	
 	frame	data/chars/terry/28_0.png
 		delay	5
 	attack.block.penetrate 0
@@ -472,6 +478,8 @@ anim 	attack4	# Big boot.
 	bbox.size.x 45
 	bbox.size.y 105
 	
+	@cmd	dc_fidelity_quick_play DC_FIDELITY_TYPE_WHIFF_HEAVY_A
+
 	frame	data/chars/terry/20_0.png
 	
 		offset	78 158
@@ -562,6 +570,8 @@ anim 	attack5 # Straight
 	bbox.size.x 39
 	bbox.size.y 105
 
+	@cmd	dc_fidelity_quick_play DC_FIDELITY_TYPE_WHIFF_MEDIUM_A
+
 	frame	data/chars/terry/15_0.png
 	
 	bbox.position.x 50
@@ -633,6 +643,8 @@ anim 	attack6 # Backhand
 	bbox.position.y 60
 	bbox.size.x 39
 	bbox.size.y 105
+
+	@cmd	dc_fidelity_quick_play DC_FIDELITY_TYPE_WHIFF_MEDIUM_A
 
 	frame	data/chars/terry/15_0.png
 		
@@ -771,6 +783,8 @@ anim 	attack7	# Jumping spin kick.
 	bbox.size.x 37
 	bbox.size.y 98
 		
+	@cmd	dc_fidelity_quick_play DC_FIDELITY_TYPE_WHIFF_HEAVY_A
+
 	frame	data/chars/terry/19_2.png
 	
 	bbox.position.x 59
@@ -843,6 +857,9 @@ anim runattack # Power Charge
 	bbox.size.y 69
 	
 		@cmd	changeentityproperty getlocalvar("self") "aiflag" "blocking" 1
+
+		@cmd	dc_fidelity_quick_play DC_FIDELITY_TYPE_WHIFF_HEAVY_A
+
 	frame	data/chars/terry/21_5.png
 	
 	
@@ -904,6 +921,8 @@ anim chargeattack # High spin kick.
 	bbox.size.x 41
 	bbox.size.y 92
 	
+	@cmd	dc_fidelity_quick_play DC_FIDELITY_TYPE_WHIFF_HEAVY_A
+
 	frame	data/chars/terry/23_1.png
 	
 	offset	75 158
@@ -1062,6 +1081,8 @@ anim freespecial6 # Rising tackle
 
 	frame	data/chars/terry/33_5.png 	#Spin start
 	
+	@cmd	dc_fidelity_quick_play DC_FIDELITY_TYPE_WHIFF_MEDIUM_A
+
 	attack.block.penetrate 0
 	attack.damage.force 2
 	attack.damage.type 1
@@ -1191,6 +1212,8 @@ anim follow1 # Short jab
 	bbox.size.x 37
 	bbox.size.y 105
 
+	@cmd	dc_fidelity_quick_play DC_FIDELITY_TYPE_WHIFF_LIGHT_A
+
 	frame	data/chars/terry/15_0.png
 
 	attack.damage.force 5
@@ -1233,6 +1256,8 @@ anim follow82 # Down Ataack
 	bbox.size.x 45
 	bbox.size.y 105
 	
+	@cmd	dc_fidelity_quick_play DC_FIDELITY_TYPE_WHIFF_MEDIUM_A
+
 	frame	data/chars/terry/34_0.png
 	frame	data/chars/terry/34_1.png
 	
@@ -1974,6 +1999,9 @@ anim jumpattack # Heavy air punch
 	bbox.size.y 60
 	
 	frame data/chars/terry/45_0.png
+
+	@cmd	dc_fidelity_quick_play DC_FIDELITY_TYPE_WHIFF_MEDIUM_A
+
 	frame data/chars/terry/45_1.png
 	
 	delay  5
@@ -2039,6 +2067,9 @@ anim runjumpattack
 	bbox.size.y 72
 	
 	frame data/chars/terry/43_0.png
+
+	@cmd	dc_fidelity_quick_play DC_FIDELITY_TYPE_WHIFF_MEDIUM_A
+
 	frame data/chars/terry/43_1.png
 	
 	delay  45
@@ -2101,6 +2132,9 @@ anim jumpforward
 	bbox.size.y 72
 	
 	frame data/chars/terry/19_4.png
+
+	@cmd	dc_fidelity_quick_play DC_FIDELITY_TYPE_WHIFF_MEDIUM_A
+
 	frame data/chars/terry/44_0.png
 	
 	delay  8
@@ -2168,6 +2202,8 @@ anim jumpattack2
 	bbox.size.x 35
 	bbox.size.y 60
 	
+	@cmd	dc_fidelity_quick_play DC_FIDELITY_TYPE_WHIFF_MEDIUM_A
+
 	frame data/chars/terry/42_0.png
 	
 	delay  10
@@ -2267,7 +2303,7 @@ anim freespecial10 # Power Wave
 
 	range 	205 600		
 
-	delay	4
+	delay	6
 	offset	76 155
 	
 	bbox.position.x 56
@@ -2275,6 +2311,8 @@ anim freespecial10 # Power Wave
 	bbox.size.x 35
 	bbox.size.y 89
 	
+	@cmd dc_fidelity_quick_play "power_wave"
+
 	frame	data/chars/terry/28_0.png
 
 	bbox.position.x 62
@@ -2303,13 +2341,13 @@ anim freespecial10 # Power Wave
 	bbox.size.x 34
 	bbox.size.y 93
 
-	delay 2
+	delay 4
 
 	# Extra frame controls fist glow bind.
 	frame	data/chars/terry/50_1.png
 	frame	data/chars/terry/50_1.png
 		
-	delay 4
+	delay 6
 
 	bbox.position.x 61
 	bbox.position.y 75

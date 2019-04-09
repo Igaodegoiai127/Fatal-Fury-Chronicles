@@ -10,13 +10,14 @@ void oncreate()
 	log("\n");
 
 	
+	// Galford
 	dc_fidelity_setup("Galford_Weller", DC_FIDELITY_TYPE_VOICE_HEAVY_A, "data/chars/galford/sounds/voice-atk-2.wav");
 	dc_fidelity_setup("Galford_Weller", DC_FIDELITY_TYPE_VOICE_HEAVY_A, "data/chars/galford/sounds/voice-atk-3.wav");
 	dc_fidelity_setup("Galford_Weller", DC_FIDELITY_TYPE_VOICE_HEAVY_A, "data/chars/galford/sounds/voice-atk-4.wav");
 	dc_fidelity_setup("Galford_Weller", DC_FIDELITY_TYPE_VOICE_HEAVY_A, "data/chars/galford/sounds/voice-atk-5.wav");
 	dc_fidelity_setup("Galford_Weller", DC_FIDELITY_TYPE_VOICE_HEAVY_A, "data/chars/galford/sounds/voice-atk-6.wav");
 	dc_fidelity_setup("Galford_Weller", DC_FIDELITY_TYPE_VOICE_HEAVY_A, "data/chars/galford/sounds/voice-atk-7.wav");
-
+	
 	dc_fidelity_setup("Galford_Weller", DC_FIDELITY_TYPE_VOICE_LIGHT_A, "data/chars/galford/sounds/voice-atk-0.wav");
 	dc_fidelity_setup("Galford_Weller", DC_FIDELITY_TYPE_VOICE_LIGHT_A, "data/chars/galford/sounds/voice-atk-1.wav");
 	dc_fidelity_setup("Galford_Weller", DC_FIDELITY_TYPE_VOICE_LIGHT_A, "data/chars/galford/sounds/voice-atk-8.wav");
@@ -25,16 +26,23 @@ void oncreate()
 	dc_fidelity_setup("Galford_Weller", DC_FIDELITY_TYPE_VOICE_MEDIUM_A, "data/chars/galford/sounds/voice-atk-1.wav");
 	dc_fidelity_setup("Galford_Weller", DC_FIDELITY_TYPE_VOICE_MEDIUM_A, "data/chars/galford/sounds/voice-atk-2.wav");
 
-
 	dc_fidelity_setup("Galford_Weller", DC_FIDELITY_TYPE_WHIFF_HEAVY_B, "data/sounds/custom/samurai_shodown_whiff_heavy_0.wav");
-
+	
 	dc_fidelity_setup("Galford_Weller", DC_FIDELITY_TYPE_WHIFF_LIGHT_A, "data/sounds/custom/golden_axe_whiff_light_0.wav");
-
+	
 	dc_fidelity_setup("Galford_Weller", DC_FIDELITY_TYPE_WHIFF_MEDIUM_B, "data/sounds/custom/samurai_shodown_whiff_light_0.wav");
 	dc_fidelity_setup("Galford_Weller", DC_FIDELITY_TYPE_WHIFF_MEDIUM_B, "data/sounds/custom/samurai_shodown_whiff_light_1.wav");
 
 	//  Ryu
 	dc_fidelity_setup("Ryu", "Hadouken", "data/chars/ryu/sounds/voice-hadouken-0c.wav");
+
+	// Terrry
+	dc_fidelity_setup("Terry_Bogard", "power_wave", "data/chars/terry/sounds/rb-terry-power-wave-0.wav");
+	dc_fidelity_setup("Terry_Bogard", DC_FIDELITY_TYPE_WHIFF_LIGHT_A, "data/sounds/custom/rb-whiff-light-0.wav");
+	dc_fidelity_setup("Terry_Bogard", DC_FIDELITY_TYPE_WHIFF_MEDIUM_A, "data/sounds/custom/rb-whiff-med-0.wav");
+	dc_fidelity_setup("Terry_Bogard", DC_FIDELITY_TYPE_WHIFF_HEAVY_A, "data/sounds/custom/rb-whiff-heavy-0.wav");
+	dc_fidelity_setup("Terry_Bogard", DC_FIDELITY_TYPE_WHIFF_HEAVY_A, "data/sounds/custom/rb-whiff-heavy-1.wav");
+
 
 	// Jump and hop liftoff.
 	dc_fidelity_setup("hop_liftoff", DC_FIDELITY_TYPE_SPAWN_A, "data/sounds/custom/fatal_fury_1_jump.wav");

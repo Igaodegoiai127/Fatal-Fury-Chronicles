@@ -213,16 +213,7 @@
     <ClCompile Include="data\scripts\dc_disney\main.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="data\scripts\dc_kanga\increment_global_index.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="data\scripts\dc_kanga\main.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="data\scripts\dc_kanga\random_index.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="data\scripts\dc_kanga\rotate_index.c">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="data\scripts\dc_kanga\scale_ratio.c">
@@ -411,12 +402,51 @@
     <ClCompile Include="data\scripts\dc_fidelity\model.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="data\scripts\dc_gauntlet\entity.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="data\scripts\dc_gauntlet\functions.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="data\scripts\dc_gauntlet\instance.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="data\scripts\dc_gauntlet\main.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="data\scripts\dc_gauntlet\offset.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="data\scripts\dc_kanga\config.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="data\scripts\dc_kanga\instance.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="data\scripts\dc_kanga\increment_global_palette.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="data\scripts\dc_kanga\random_palette.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="data\scripts\dc_kanga\rotate_palette.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="data\scripts\dc_kanga\entity.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="data\scripts\dc_elmers\palette.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="data\scripts\dc_fidelity\speed.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="data\scripts\dc_initialize\initialize_flash_default.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="data\scripts\com\bind0003.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="data\scripts\com\bind0004.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="data\scripts\com\bind0008.h">
@@ -489,6 +519,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="data\scripts\dc_terrain\config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="data\scripts\dc_gauntlet\config.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -10555,6 +10588,48 @@
     <Image Include="data\chars\misc\cvs_land_dust\0_11.png">
       <Filter>Resource Files</Filter>
     </Image>
+    <Image Include="data\chars\terry\crack_shoot\51_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\crack_shoot\51_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\crack_shoot\51_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\crack_shoot\51_3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\51_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\51_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\51_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\51_3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\terry\52_4.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\12_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\12_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\icon_default.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\icon_ko.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\icon_pain.png">
+      <Filter>Resource Files</Filter>
+    </Image>
   </ItemGroup>
   <ItemGroup>
     <Text Include="data\levels.txt" />
@@ -10625,6 +10700,8 @@
     <Text Include="data\chars\misc\cvs_jump_dust\hop_liftoff.txt" />
     <Text Include="data\chars\misc\cvs_land_dust\jump_land.txt" />
     <Text Include="data\chars\misc\cvs_land_dust\fall_land.txt" />
+    <Text Include="data\chars\terry\crack_shoot\terry_crack_shoot.txt" />
+    <Text Include="data\chars\misc\flash\flash_fatal_fury.txt" />
   </ItemGroup>
   <ItemGroup>
     <None Include="data\chars\andy\wild-ambition-front-throw.psd" />

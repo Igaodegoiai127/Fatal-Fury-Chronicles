@@ -7,3 +7,4 @@ Logs/ScriptLog.txt
 *.sav
 *.opendb
 *.opensdf
+/data/Debug
