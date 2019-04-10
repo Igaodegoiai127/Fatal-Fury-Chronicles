@@ -74,3 +74,6 @@
 [submodule "data/scripts/dc_elmers"]
 	path = data/scripts/dc_elmers
 	url = https://github.com/DCurrent/openbor-script-elmers
+[submodule "data/scripts/dc_instance"]
+	path = data/scripts/dc_instance
+	url = https://github.com/DCurrent/openbor-script-instance
