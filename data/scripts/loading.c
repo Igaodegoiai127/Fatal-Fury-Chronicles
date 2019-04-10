@@ -81,8 +81,6 @@ void oncreate()
 	dc_fidelity_setup("Terry_Bogard", DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_MEDIUM, "data/chars/terry/sounds/rb_terry_voice_attack_light_1.wav");
 	dc_fidelity_setup("Terry_Bogard", DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_HEAVY, "data/chars/terry/sounds/rb_terry_voice_attack_heavy_0.wav");
 	dc_fidelity_setup("Terry_Bogard", DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_HEAVY, "data/chars/terry/sounds/rb_terry_voice_attack_heavy_1.wav");
-
-	dc_instance_dump();
 }
 
 void ondestroy()
