@@ -144,9 +144,7 @@ void dc_guantlet_spawn_projectile()
 	// to launch just in front of a wall instead of inside it.
 	pos_x += dc_terriant_quick_shunt(pos_x, pos_y, pos_z);
 
-	log("\n x,y,z:" + pos_x + ", " + pos_y + ", " + pos_z);
-
-	
+	log("\n x,y,z:" + pos_x + ", " + pos_y + ", " + pos_z);	
 
 	// Spawn the projectile.
 	spawn = projectile(model_name, pos_x, pos_z, pos_y, DC_GAUNTLET_DEFAULT_PROJECTILE_DIRECTION, projectile_stationary, projectile_type, map);
@@ -160,7 +158,6 @@ void dc_guantlet_spawn_projectile()
 	changeentityproperty(spawn, "subject_to_gravity", 0);
 	changeentityproperty(spawn, "no_adjust_base", 0);
 	changeentityproperty(spawn, "subject_to_basemap", 1);
-
 
 	log("\n spawn: " + spawn);
 
