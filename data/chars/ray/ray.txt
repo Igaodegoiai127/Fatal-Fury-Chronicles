@@ -26,8 +26,9 @@ holdblock		2
 blockodds		1
 bflash			Block
 
-onspawnscript	data/chars/ray/scripts/onspawn.c
-animationscript data/chars/ray/scripts/animation.c
+onspawnscript		data/chars/ray/scripts/onspawn.c
+animationscript		data/chars/ray/scripts/animation.c
+takedamagescript	data/scripts/common/event_damage.c
 
 palette   		data/chars/ray/default.act			# Light blue jeans, white shirt, red bolt
 alternatepal	data/chars/ray/default_no_bolt.act 

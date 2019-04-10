@@ -47,5 +47,5 @@ void main() {
 	set_entity_property(ent, "position_z", pos_z - 1);
 
 	// Play sound.
-	dc_fidelity_quick_play(DC_FIDELITY_TYPE_SPAWN_A);
+	dc_fidelity_quick_play(DC_FIDELITY_TYPE_SOUND_SPAWN);
 }

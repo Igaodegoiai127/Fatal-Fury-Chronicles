@@ -228,9 +228,6 @@
     <ClCompile Include="data\scripts\dc_fidelity\adjustments.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="data\scripts\dc_fidelity\config.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="data\scripts\dc_fidelity\loading.c">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -399,9 +396,6 @@
     <ClCompile Include="data\scripts\dc_fidelity\instance.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="data\scripts\dc_fidelity\model.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="data\scripts\dc_gauntlet\entity.c">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -438,10 +432,19 @@
     <ClCompile Include="data\scripts\dc_elmers\palette.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="data\scripts\dc_fidelity\speed.c">
+    <ClCompile Include="data\scripts\dc_initialize\initialize_flash_default.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="data\scripts\dc_initialize\initialize_flash_default.c">
+    <ClCompile Include="data\scripts\dc_fidelity\sound_config.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="data\scripts\dc_fidelity\category.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="data\scripts\dc_fidelity\global.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="data\chars\misc\cvs_block_flash\scripts\event_spawn.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -10630,6 +10633,36 @@
     <Image Include="data\chars\ryu\icon_pain.png">
       <Filter>Resource Files</Filter>
     </Image>
+    <Image Include="data\chars\misc\cvs_block_flash\0_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\cvs_block_flash\0_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\cvs_block_flash\0_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\cvs_block_flash\0_3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\cvs_block_flash\0_4.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\cvs_block_flash\0_5.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\cvs_block_flash\0_6.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\cvs_block_flash\0_7.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\cvs_block_flash\0_8.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\cvs_block_flash\0_9.png">
+      <Filter>Resource Files</Filter>
+    </Image>
   </ItemGroup>
   <ItemGroup>
     <Text Include="data\levels.txt" />
@@ -10702,6 +10735,7 @@
     <Text Include="data\chars\misc\cvs_land_dust\fall_land.txt" />
     <Text Include="data\chars\terry\crack_shoot\terry_crack_shoot.txt" />
     <Text Include="data\chars\misc\flash\flash_fatal_fury.txt" />
+    <Text Include="data\chars\misc\cvs_block_flash\block.txt" />
   </ItemGroup>
   <ItemGroup>
     <None Include="data\chars\andy\wild-ambition-front-throw.psd" />
@@ -10849,6 +10883,33 @@
       <Filter>Resource Files</Filter>
     </Media>
     <Media Include="data\sounds\custom\fatal_fury_1_jump.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="data\sounds\custom\cvs_block.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="data\sounds\custom\double_dragon_2_hit_0.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="data\sounds\custom\fatal_fury_1_land.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="data\sounds\custom\fatal_fury_1_hit.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="data\sounds\custom\rb-whiff-heavy-0.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="data\sounds\custom\rb-whiff-heavy-1.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="data\sounds\custom\rb-whiff-light-0.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="data\sounds\custom\rb-whiff-med-0.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="data\sounds\custom\unknown_fall_land.wav">
       <Filter>Resource Files</Filter>
     </Media>
   </ItemGroup>

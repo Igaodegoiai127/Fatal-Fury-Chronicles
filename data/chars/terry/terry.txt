@@ -321,7 +321,11 @@ anim 	attack1 # Long Jab
 	bbox.size.x 29
 	bbox.size.y 106
 
-	@cmd	dc_fidelity_quick_play DC_FIDELITY_TYPE_WHIFF_LIGHT_A
+	@cmd	dc_fidelity_quick_play DC_FIDELITY_TYPE_SOUND_ATTACK_LIGHT
+	
+	@cmd	dc_fidelity_set_sound_chance 0.5
+	@cmd	dc_fidelity_quick_play DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_LIGHT
+	@cmd	dc_fidelity_set_sound_chance NULL()
 	
 	frame	data/chars/terry/15_1.png
 			
@@ -369,8 +373,12 @@ anim 	attack2	# front kick
 	bbox.size.x 45
 	bbox.size.y 105
 	
-	@cmd	dc_fidelity_quick_play DC_FIDELITY_TYPE_WHIFF_MEDIUM_A
-		
+	@cmd	dc_fidelity_quick_play DC_FIDELITY_TYPE_SOUND_ATTACK_MEDIUM
+
+	@cmd	dc_fidelity_set_sound_chance 0.5
+	@cmd	dc_fidelity_quick_play DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_MEDIUM
+	@cmd	dc_fidelity_set_sound_chance NULL()
+
 	frame	data/chars/terry/27_0.png
 	
 	
@@ -405,7 +413,11 @@ anim 	attack3	# Gut punch.
 	bbox.size.x 45
 	bbox.size.y 105
 	
-	@cmd	dc_fidelity_quick_play DC_FIDELITY_TYPE_WHIFF_MEDIUM_A
+	@cmd	dc_fidelity_quick_play DC_FIDELITY_TYPE_SOUND_ATTACK_MEDIUM
+
+	@cmd	dc_fidelity_set_sound_chance 0.5
+	@cmd	dc_fidelity_quick_play DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_MEDIUM
+	@cmd	dc_fidelity_set_sound_chance NULL()
 	
 	frame	data/chars/terry/28_0.png
 		delay	5
@@ -478,7 +490,8 @@ anim 	attack4	# Big boot.
 	bbox.size.x 45
 	bbox.size.y 105
 	
-	@cmd	dc_fidelity_quick_play DC_FIDELITY_TYPE_WHIFF_HEAVY_A
+	@cmd	dc_fidelity_quick_play DC_FIDELITY_TYPE_SOUND_ATTACK_HEAVY
+	@cmd	dc_fidelity_quick_play DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_HEAVY
 
 	frame	data/chars/terry/20_0.png
 	
@@ -570,7 +583,11 @@ anim 	attack5 # Straight
 	bbox.size.x 39
 	bbox.size.y 105
 
-	@cmd	dc_fidelity_quick_play DC_FIDELITY_TYPE_WHIFF_MEDIUM_A
+	@cmd	dc_fidelity_quick_play DC_FIDELITY_TYPE_SOUND_ATTACK_MEDIUM
+
+	@cmd	dc_fidelity_set_sound_chance 0.5
+	@cmd	dc_fidelity_quick_play DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_MEDIUM
+	@cmd	dc_fidelity_set_sound_chance NULL()
 
 	frame	data/chars/terry/15_0.png
 	
@@ -644,7 +661,11 @@ anim 	attack6 # Backhand
 	bbox.size.x 39
 	bbox.size.y 105
 
-	@cmd	dc_fidelity_quick_play DC_FIDELITY_TYPE_WHIFF_MEDIUM_A
+	@cmd	dc_fidelity_quick_play DC_FIDELITY_TYPE_SOUND_ATTACK_MEDIUM
+
+	@cmd	dc_fidelity_set_sound_chance 0.5
+	@cmd	dc_fidelity_quick_play DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_MEDIUM
+	@cmd	dc_fidelity_set_sound_chance NULL()
 
 	frame	data/chars/terry/15_0.png
 		
@@ -783,7 +804,8 @@ anim 	attack7	# Jumping spin kick.
 	bbox.size.x 37
 	bbox.size.y 98
 		
-	@cmd	dc_fidelity_quick_play DC_FIDELITY_TYPE_WHIFF_HEAVY_A
+	@cmd	dc_fidelity_quick_play DC_FIDELITY_TYPE_SOUND_ATTACK_HEAVY
+	@cmd	dc_fidelity_quick_play DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_HEAVY
 
 	frame	data/chars/terry/19_2.png
 	
@@ -858,7 +880,8 @@ anim runattack # Power Charge
 	
 		@cmd	changeentityproperty getlocalvar("self") "aiflag" "blocking" 1
 
-		@cmd	dc_fidelity_quick_play DC_FIDELITY_TYPE_WHIFF_HEAVY_A
+		@cmd	dc_fidelity_quick_play DC_FIDELITY_TYPE_SOUND_ATTACK_HEAVY
+		@cmd	dc_fidelity_quick_play DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_HEAVY
 
 	frame	data/chars/terry/21_5.png
 	
@@ -921,7 +944,8 @@ anim chargeattack # High spin kick.
 	bbox.size.x 41
 	bbox.size.y 92
 	
-	@cmd	dc_fidelity_quick_play DC_FIDELITY_TYPE_WHIFF_HEAVY_A
+	@cmd	dc_fidelity_quick_play DC_FIDELITY_TYPE_SOUND_ATTACK_HEAVY
+	@cmd	dc_fidelity_quick_play DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_HEAVY
 
 	frame	data/chars/terry/23_1.png
 	
@@ -1081,7 +1105,8 @@ anim freespecial6 # Rising tackle
 
 	frame	data/chars/terry/33_5.png 	#Spin start
 	
-	@cmd	dc_fidelity_quick_play DC_FIDELITY_TYPE_WHIFF_MEDIUM_A
+	@cmd	dc_fidelity_quick_play DC_FIDELITY_TYPE_SOUND_ATTACK_MEDIUM
+	@cmd	dc_fidelity_quick_play DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_MEDIUM
 
 	attack.block.penetrate 0
 	attack.damage.force 2
@@ -1212,7 +1237,11 @@ anim follow1 # Short jab
 	bbox.size.x 37
 	bbox.size.y 105
 
-	@cmd	dc_fidelity_quick_play DC_FIDELITY_TYPE_WHIFF_LIGHT_A
+	@cmd	dc_fidelity_quick_play DC_FIDELITY_TYPE_SOUND_ATTACK_LIGHT
+	
+	@cmd	dc_fidelity_set_sound_chance 0.5
+	@cmd	dc_fidelity_quick_play DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_LIGHT
+	@cmd	dc_fidelity_set_sound_chance NULL()
 
 	frame	data/chars/terry/15_0.png
 
@@ -1256,7 +1285,8 @@ anim follow82 # Down Ataack
 	bbox.size.x 45
 	bbox.size.y 105
 	
-	@cmd	dc_fidelity_quick_play DC_FIDELITY_TYPE_WHIFF_MEDIUM_A
+	@cmd	dc_fidelity_quick_play DC_FIDELITY_TYPE_SOUND_ATTACK_MEDIUM
+	@cmd	dc_fidelity_quick_play DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_MEDIUM
 
 	frame	data/chars/terry/34_0.png
 	frame	data/chars/terry/34_1.png
@@ -2000,7 +2030,8 @@ anim jumpattack # Heavy air punch
 	
 	frame data/chars/terry/45_0.png
 
-	@cmd	dc_fidelity_quick_play DC_FIDELITY_TYPE_WHIFF_MEDIUM_A
+	@cmd	dc_fidelity_quick_play DC_FIDELITY_TYPE_SOUND_ATTACK_MEDIUM
+	@cmd	dc_fidelity_quick_play DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_MEDIUM
 
 	frame data/chars/terry/45_1.png
 	
@@ -2068,7 +2099,8 @@ anim runjumpattack
 	
 	frame data/chars/terry/43_0.png
 
-	@cmd	dc_fidelity_quick_play DC_FIDELITY_TYPE_WHIFF_MEDIUM_A
+	@cmd	dc_fidelity_quick_play DC_FIDELITY_TYPE_SOUND_ATTACK_MEDIUM
+	@cmd	dc_fidelity_quick_play DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_MEDIUM
 
 	frame data/chars/terry/43_1.png
 	
@@ -2133,7 +2165,8 @@ anim jumpforward
 	
 	frame data/chars/terry/19_4.png
 
-	@cmd	dc_fidelity_quick_play DC_FIDELITY_TYPE_WHIFF_MEDIUM_A
+	@cmd	dc_fidelity_quick_play DC_FIDELITY_TYPE_SOUND_ATTACK_MEDIUM
+	@cmd	dc_fidelity_quick_play DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_MEDIUM
 
 	frame data/chars/terry/44_0.png
 	
@@ -2202,7 +2235,8 @@ anim jumpattack2
 	bbox.size.x 35
 	bbox.size.y 60
 	
-	@cmd	dc_fidelity_quick_play DC_FIDELITY_TYPE_WHIFF_MEDIUM_A
+	@cmd	dc_fidelity_quick_play DC_FIDELITY_TYPE_SOUND_ATTACK_MEDIUM
+	@cmd	dc_fidelity_quick_play DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_MEDIUM
 
 	frame data/chars/terry/42_0.png
 	
