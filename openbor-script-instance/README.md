@@ -1,1 +1,0 @@
-# openbor-script-instance
