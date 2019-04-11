@@ -2,12 +2,12 @@
   "ExpandedNodes": [
     "",
     "\\data",
-    "\\data\\chars\\andy",
-    "\\data\\chars\\andy\\scripts",
-    "\\data\\chars\\misc\\effects",
-    "\\data\\chars\\misc\\effects\\spiral_in",
-    "\\data\\scripts\\dc_bind"
+    "\\data\\chars",
+    "\\data\\chars\\terry",
+    "\\data\\scripts",
+    "\\data\\scripts\\dc_gauntlet",
+    "\\data\\scripts\\dc_hansburg"
   ],
-  "SelectedNode": "\\data\\chars",
-  "PreviewInSolutionExplorer": false
+  "SelectedNode": "\\data\\scripts\\dc_gauntlet\\config.h",
+  "PreviewInSolutionExplorer": true
 }

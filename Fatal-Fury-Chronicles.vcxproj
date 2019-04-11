@@ -164,7 +164,6 @@
     <ClCompile Include="data\scripts\dc_fidelity\global.c" />
     <ClCompile Include="data\scripts\dc_fidelity\sound_config.c" />
     <ClCompile Include="data\scripts\dc_fidelity\entity.c" />
-    <ClCompile Include="data\scripts\dc_fidelity\instance.c" />
     <ClCompile Include="data\scripts\dc_fidelity\loading.c" />
     <ClCompile Include="data\scripts\dc_fidelity\main.c" />
     <ClCompile Include="data\scripts\dc_fidelity\category.c" />
@@ -190,6 +189,9 @@
     <ClCompile Include="data\scripts\dc_hansburg\operation.c" />
     <ClCompile Include="data\scripts\dc_hansburg\terrain.c" />
     <ClCompile Include="data\scripts\dc_initialize\initialize_flash_default.c" />
+    <ClCompile Include="data\scripts\dc_instance\export.c" />
+    <ClCompile Include="data\scripts\dc_instance\main.c" />
+    <ClCompile Include="data\scripts\dc_instance\operation.c" />
     <ClCompile Include="data\scripts\dc_kanga\config.c" />
     <ClCompile Include="data\scripts\dc_kanga\entity.c" />
     <ClCompile Include="data\scripts\dc_kanga\instance.c" />
@@ -260,6 +262,7 @@
     <ClInclude Include="data\scripts\dc_grapple\config.h" />
     <ClInclude Include="data\scripts\dc_hansburg\config.h" />
     <ClInclude Include="data\scripts\dc_initialize\config.h" />
+    <ClInclude Include="data\scripts\dc_instance\config.h" />
     <ClInclude Include="data\scripts\dc_kanga\config.h" />
     <ClInclude Include="data\scripts\dc_math\config.h" />
     <ClInclude Include="data\scripts\dc_spinner\config.h" />
@@ -3778,6 +3781,8 @@
     <None Include="data\extras\waiting.psd" />
     <None Include="data\scripts\dc_d20\README.md" />
     <None Include="data\scripts\dc_initialize\README.md" />
+    <None Include="data\scripts\dc_instance\.gitattributes" />
+    <None Include="data\scripts\dc_instance\README.md" />
     <None Include="data\scripts\dc_spinner\README.md" />
     <None Include="README.md" />
   </ItemGroup>

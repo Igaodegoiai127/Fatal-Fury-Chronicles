@@ -393,9 +393,6 @@
     <ClCompile Include="data\scripts\dc_fidelity\entity.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="data\scripts\dc_fidelity\instance.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="data\scripts\dc_gauntlet\entity.c">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -445,6 +442,15 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="data\chars\misc\cvs_block_flash\scripts\event_spawn.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="data\scripts\dc_instance\export.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="data\scripts\dc_instance\main.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="data\scripts\dc_instance\operation.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -525,6 +531,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="data\scripts\dc_gauntlet\config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="data\scripts\dc_instance\config.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -10793,6 +10802,8 @@
     <None Include="data\chars\terry\kof_2000_1.ACT" />
     <None Include="data\chars\terry\motw_0.ACT" />
     <None Include="data\chars\terry\motw_1.ACT" />
+    <None Include="data\scripts\dc_instance\.gitattributes" />
+    <None Include="data\scripts\dc_instance\README.md" />
   </ItemGroup>
   <ItemGroup>
     <Media Include="data\chars\galford\sounds\voice-atk-0.wav">
