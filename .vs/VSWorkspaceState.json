@@ -4,10 +4,13 @@
     "\\data",
     "\\data\\chars",
     "\\data\\chars\\terry",
+    "\\data\\chars\\terry\\scripts",
     "\\data\\scripts",
+    "\\data\\scripts\\dc_elmers",
     "\\data\\scripts\\dc_gauntlet",
-    "\\data\\scripts\\dc_hansburg"
+    "\\data\\scripts\\dc_hansburg",
+    "\\data\\scripts\\dc_instance"
   ],
-  "SelectedNode": "\\data\\scripts\\dc_gauntlet\\config.h",
+  "SelectedNode": "\\data\\scripts\\dc_elmers\\palette.c",
   "PreviewInSolutionExplorer": true
 }
