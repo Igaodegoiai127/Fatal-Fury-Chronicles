@@ -10,7 +10,7 @@ void dc_gauntlet_get_entity()
 	void result;
 
 	// Get id key.
-	id = dc_gauntlet_get_instance() + DC_GAUNTLET_VAR_KEY_ENT;
+	id = dc_gauntlet_get_instance() + DC_GAUNTLET_MEMBER_ENT;
 
 	result = getlocalvar(id);
 
@@ -28,7 +28,7 @@ void dc_gauntlet_set_entity(void value)
 	char id;
 
 	// Get id key.
-	id = dc_gauntlet_get_instance() + DC_GAUNTLET_VAR_KEY_ENT;
+	id = dc_gauntlet_get_instance() + DC_GAUNTLET_MEMBER_ENT;
 
 	// If the value is same as default, then use
 	// make sure variable is deleted instead. We fall
@@ -51,7 +51,7 @@ void dc_gauntlet_get_spawn()
 	// Get instance.
 	instance = dc_gauntlet_get_instance();
 
-	result = getlocalvar(instance + DC_GAUNTLET_VAR_KEY_SPAWN);
+	result = getlocalvar(instance + DC_GAUNTLET_MEMBER_SPAWN);
 
 	if (typeof(result) != openborconstant("VT_PTR"))
 	{
@@ -70,5 +70,5 @@ void dc_gauntlet_set_spawn(void value)
 	// Get instance.
 	instance = dc_gauntlet_get_instance();
 
-	setlocalvar(instance + DC_GAUNTLET_VAR_KEY_SPAWN, value);
+	setlocalvar(instance + DC_GAUNTLET_MEMBER_SPAWN, value);
 }

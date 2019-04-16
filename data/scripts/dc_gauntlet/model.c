@@ -9,7 +9,7 @@ char dc_gauntlet_get_model_name()
 	// Get instance.
 	instance = dc_gauntlet_get_instance();
 
-	result = getlocalvar(instance + DC_GUANTLET_VAR_KEY_MODEL_NAME);
+	result = getlocalvar(instance + DC_GUANTLET_MEMBER_MODEL_NAME);
 
 	if (typeof(result) != openborconstant("VT_STR"))
 	{
@@ -26,5 +26,5 @@ char dc_gauntlet_set_model_name(char value)
 	// Get instance.
 	instance = dc_gauntlet_get_instance();
 
-	setlocalvar(instance + DC_GUANTLET_VAR_KEY_MODEL_NAME, value);
+	setlocalvar(instance + DC_GUANTLET_MEMBER_MODEL_NAME, value);
 }

@@ -14,7 +14,7 @@ int dc_gauntlet_get_projectile_direction()
 	// Get instance.
 	instance = dc_gauntlet_get_instance();
 
-	result = getlocalvar(instance + DC_GAUNTLET_VAR_KEY_PROJECTILE_DIRECTION);
+	result = getlocalvar(instance + DC_GAUNTLET_MEMBER_PROJECTILE_DIRECTION);
 
 	if (typeof(result) != openborconstant("VT_INTEGER"))
 	{
@@ -31,7 +31,7 @@ int dc_gauntlet_set_projectile_direction(int value)
 	// Get instance.
 	instance = dc_gauntlet_get_instance();
 
-	setlocalvar(instance + DC_GAUNTLET_VAR_KEY_PROJECTILE_DIRECTION, value);
+	setlocalvar(instance + DC_GAUNTLET_MEMBER_PROJECTILE_DIRECTION, value);
 }
 
 void dc_gauntlet_get_projectile_stationary()
@@ -42,7 +42,7 @@ void dc_gauntlet_get_projectile_stationary()
 	// Get instance.
 	instance = dc_gauntlet_get_instance();
 
-	result = getlocalvar(instance + DC_GAUNTLET_VAR_KEY_PROJECTILE_STATIONARY);
+	result = getlocalvar(instance + DC_GAUNTLET_MEMBER_PROJECTILE_STATIONARY);
 
 	if (typeof(result) != openborconstant("VT_INTEGER"))
 	{
@@ -57,7 +57,7 @@ int dc_gauntlet_set_projectile_stationary(int value)
 	char id;
 
 	// Get ID.
-	id = dc_gauntlet_get_instance() + DC_GAUNTLET_VAR_KEY_PROJECTILE_STATIONARY;
+	id = dc_gauntlet_get_instance() + DC_GAUNTLET_MEMBER_PROJECTILE_STATIONARY;
 
 	// If value is default, make sure the variable
 	// is deleted. The get function returns a default
@@ -81,7 +81,7 @@ void dc_gauntlet_get_projectile_type()
 	// Get instance.
 	instance = dc_gauntlet_get_instance();
 
-	result = getlocalvar(instance + DC_GAUNTLET_VAR_KEY_PROJECTILE_TYPE);
+	result = getlocalvar(instance + DC_GAUNTLET_MEMBER_PROJECTILE_TYPE);
 
 	if (typeof(result) != openborconstant("VT_INTEGER"))
 	{
@@ -96,7 +96,7 @@ int dc_gauntlet_set_projectile_type(int value)
 	char id;
 
 	// Get ID.
-	id = dc_gauntlet_get_instance() + DC_GAUNTLET_VAR_KEY_PROJECTILE_TYPE;
+	id = dc_gauntlet_get_instance() + DC_GAUNTLET_MEMBER_PROJECTILE_TYPE;
 
 	// If value is default, make sure the variable
 	// is deleted. The get function returns a default

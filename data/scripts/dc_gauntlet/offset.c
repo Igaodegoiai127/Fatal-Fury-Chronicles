@@ -12,7 +12,7 @@ int dc_gauntlet_get_invert_x()
 	// Get instance.
 	instance = dc_gauntlet_get_instance();
 
-	result = getlocalvar(instance + DC_GAUNTLET_VAR_KEY_INVERT_X);
+	result = getlocalvar(instance + DC_GAUNTLET_MEMBER_INVERT_X);
 
 	if (typeof(result) != openborconstant("VT_INTEGER"))
 	{
@@ -27,7 +27,7 @@ int dc_gauntlet_set_invert_x(int value)
 	char id;
 
 	// Get ID.
-	id = dc_gauntlet_get_instance() + DC_GAUNTLET_VAR_KEY_INVERT_X;
+	id = dc_gauntlet_get_instance() + DC_GAUNTLET_MEMBER_INVERT_X;
 
 	// If value is default, make sure the variable
 	// is deleted.
@@ -50,7 +50,7 @@ int dc_gauntlet_get_invert_y()
 	// Get instance.
 	instance = dc_gauntlet_get_instance();
 
-	result = getlocalvar(instance + DC_GAUNTLET_VAR_KEY_INVERT_Y);
+	result = getlocalvar(instance + DC_GAUNTLET_MEMBER_INVERT_Y);
 
 	if (typeof(result) != openborconstant("VT_INTEGER"))
 	{
@@ -67,7 +67,7 @@ int dc_gauntlet_set_invert_y(int value)
 	// Get instance.
 	instance = dc_gauntlet_get_instance();
 
-	setlocalvar(instance + DC_GAUNTLET_VAR_KEY_INVERT_Y, value);
+	setlocalvar(instance + DC_GAUNTLET_MEMBER_INVERT_Y, value);
 }
 
 // Invert Z offset settings.
@@ -79,7 +79,7 @@ int dc_gauntlet_get_invert_z()
 	// Get instance.
 	instance = dc_gauntlet_get_instance();
 
-	result = getlocalvar(instance + DC_GAUNTLET_VAR_KEY_INVERT_Z);
+	result = getlocalvar(instance + DC_GAUNTLET_MEMBER_INVERT_Z);
 
 	if (typeof(result) != openborconstant("VT_INTEGER"))
 	{
@@ -96,7 +96,7 @@ int dc_gauntlet_set_invert_z(int value)
 	// Get instance.
 	instance = dc_gauntlet_get_instance();
 
-	setlocalvar(instance + DC_GAUNTLET_VAR_KEY_INVERT_Z, value);
+	setlocalvar(instance + DC_GAUNTLET_MEMBER_INVERT_Z, value);
 }
 
 // X axis offset.
@@ -108,7 +108,7 @@ int dc_gauntlet_get_offset_x()
 	// Get instance.
 	instance = dc_gauntlet_get_instance();
 
-	result = getlocalvar(instance + DC_GAUNTLET_VAR_KEY_OFFSET_X);
+	result = getlocalvar(instance + DC_GAUNTLET_MEMBER_OFFSET_X);
 
 	if (typeof(result) != openborconstant("VT_INTEGER"))
 	{
@@ -125,7 +125,7 @@ int dc_gauntlet_set_offset_x(int value)
 	// Get instance.
 	instance = dc_gauntlet_get_instance();
 
-	setlocalvar(instance + DC_GAUNTLET_VAR_KEY_OFFSET_X, value);
+	setlocalvar(instance + DC_GAUNTLET_MEMBER_OFFSET_X, value);
 }
 
 // Y axis offset.
@@ -137,7 +137,7 @@ int dc_gauntlet_get_offset_y()
 	// Get instance.
 	instance = dc_gauntlet_get_instance();
 
-	result = getlocalvar(instance + DC_GAUNTLET_VAR_KEY_OFFSET_Y);
+	result = getlocalvar(instance + DC_GAUNTLET_MEMBER_OFFSET_Y);
 
 	if (typeof(result) != openborconstant("VT_INTEGER"))
 	{
@@ -154,7 +154,7 @@ int dc_gauntlet_set_offset_y(int value)
 	// Get instance.
 	instance = dc_gauntlet_get_instance();
 
-	setlocalvar(instance + DC_GAUNTLET_VAR_KEY_OFFSET_Y, value);
+	setlocalvar(instance + DC_GAUNTLET_MEMBER_OFFSET_Y, value);
 }
 
 // Z axis offset.
@@ -166,7 +166,7 @@ int dc_gauntlet_get_offset_z()
 	// Get instance.
 	instance = dc_gauntlet_get_instance();
 
-	result = getlocalvar(instance + DC_GAUNTLET_VAR_KEY_OFFSET_Z);
+	result = getlocalvar(instance + DC_GAUNTLET_MEMBER_OFFSET_Z);
 
 	if (typeof(result) != openborconstant("VT_INTEGER"))
 	{
@@ -183,7 +183,7 @@ int dc_gauntlet_set_offset_z(int value)
 	// Get instance.
 	instance = dc_gauntlet_get_instance();
 
-	setlocalvar(instance + DC_GAUNTLET_VAR_KEY_OFFSET_Z, value);
+	setlocalvar(instance + DC_GAUNTLET_MEMBER_OFFSET_Z, value);
 }
 
 

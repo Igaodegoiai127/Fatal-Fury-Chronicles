@@ -12,7 +12,7 @@ int dc_gauntlet_get_direction_adjust()
 	// Get instance.
 	instance = dc_gauntlet_get_instance();
 
-	result = getlocalvar(instance + DC_GAUNTLET_VAR_KEY_DIRECTION_ADJUST);
+	result = getlocalvar(instance + DC_GAUNTLET_MEMBER_DIRECTION_ADJUST);
 
 	if (typeof(result) != openborconstant("VT_INTEGER"))
 	{
@@ -27,7 +27,7 @@ int dc_gauntlet_set_direction_adjust(int value)
 	char id;
 
 	// Get ID.
-	id = dc_gauntlet_get_instance() + DC_GAUNTLET_VAR_KEY_DIRECTION_ADJUST;
+	id = dc_gauntlet_get_instance() + DC_GAUNTLET_MEMBER_DIRECTION_ADJUST;
 
 	// If value is default, make sure the variable
 	// is deleted.

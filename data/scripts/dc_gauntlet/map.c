@@ -8,7 +8,7 @@ int dc_gauntlet_get_map()
 	// Get instance.
 	instance = dc_gauntlet_get_instance();
 
-	result = getlocalvar(instance + DC_GAUNTLET_VAR_KEY_MAP);
+	result = getlocalvar(instance + DC_GAUNTLET_MEMBER_MAP);
 
 	if (typeof(result) != openborconstant("VT_INTEGER"))
 	{
@@ -23,7 +23,7 @@ int dc_gauntlet_set_map(int value)
 	char id;
 
 	// Get ID.
-	id = dc_gauntlet_get_instance() + DC_GAUNTLET_VAR_KEY_MAP;
+	id = dc_gauntlet_get_instance() + DC_GAUNTLET_MEMBER_MAP;
 
 	// If value is default, make sure the variable
 	// is deleted.
