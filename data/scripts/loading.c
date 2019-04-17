@@ -66,6 +66,20 @@ void oncreate()
 	dc_fidelity_setup("Galford_Weller", DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_MEDIUM, "data/chars/galford/sounds/voice-atk-1.wav");
 	dc_fidelity_setup("Galford_Weller", DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_MEDIUM, "data/chars/galford/sounds/voice-atk-2.wav");	
 
+	//  Ray
+	dc_fidelity_setup("Ray", DC_FIDELITY_TYPE_VOICE_BATTLE_CRY, "data/chars/ray/sounds/mua_ps2_sm_day_job.wav");
+	dc_fidelity_setup("Ray", DC_FIDELITY_TYPE_VOICE_BATTLE_CRY, "data/chars/ray/sounds/mua_ps2_sm_dumb_one.wav");
+	dc_fidelity_setup("Ray", DC_FIDELITY_TYPE_VOICE_BATTLE_CRY, "data/chars/ray/sounds/mua_ps2_sm_how_embarrasing.wav");
+	dc_fidelity_setup("Ray", DC_FIDELITY_TYPE_VOICE_BATTLE_CRY, "data/chars/ray/sounds/mua_ps2_sm_i_won.wav");
+	dc_fidelity_setup("Ray", DC_FIDELITY_TYPE_VOICE_BATTLE_CRY, "data/chars/ray/sounds/mua_ps2_sm_like_this.wav");
+	dc_fidelity_setup("Ray", DC_FIDELITY_TYPE_VOICE_BATTLE_CRY, "data/chars/ray/sounds/mua_ps2_sm_look_at_that_i_win.wav");
+	dc_fidelity_setup("Ray", DC_FIDELITY_TYPE_VOICE_BATTLE_CRY, "data/chars/ray/sounds/mua_ps2_sm_lucky_i_went_easy.wav");
+	dc_fidelity_setup("Ray", DC_FIDELITY_TYPE_VOICE_BATTLE_CRY, "data/chars/ray/sounds/mua_ps2_sm_stand_up.wav");
+	dc_fidelity_setup("Ray", DC_FIDELITY_TYPE_VOICE_BATTLE_CRY, "data/chars/ray/sounds/mua_ps2_sm_surprise.wav");
+	dc_fidelity_setup("Ray", DC_FIDELITY_TYPE_VOICE_BATTLE_CRY, "data/chars/ray/sounds/mua_ps2_sm_tips.wav");
+	dc_fidelity_setup("Ray", DC_FIDELITY_TYPE_VOICE_BATTLE_CRY, "data/chars/ray/sounds/mua_ps2_sm_you_can_do_better.wav");
+
+
 	//  Ryu
 	dc_fidelity_setup("Ryu", "Hadouken", "data/chars/ryu/sounds/voice-hadouken-0c.wav");
 
@@ -81,6 +95,9 @@ void oncreate()
 	dc_fidelity_setup("Terry_Bogard", DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_MEDIUM, "data/chars/terry/sounds/rb_terry_voice_attack_light_1.wav");
 	dc_fidelity_setup("Terry_Bogard", DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_HEAVY, "data/chars/terry/sounds/rb_terry_voice_attack_heavy_0.wav");
 	dc_fidelity_setup("Terry_Bogard", DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_HEAVY, "data/chars/terry/sounds/rb_terry_voice_attack_heavy_1.wav");
+
+	dc_fidelity_setup("Terry_Bogard", DC_FIDELITY_TYPE_VOICE_BATTLE_CRY, "data/chars/terry/sounds/terry_clip_buy_you_a_drink.wav");
+	dc_fidelity_setup("Terry_Bogard", DC_FIDELITY_TYPE_VOICE_BATTLE_CRY, "data/chars/terry/sounds/terry_clip_goodnight.wav");
 }
 
 void ondestroy()
