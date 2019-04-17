@@ -28,6 +28,7 @@ bflash			Block
 
 onspawnscript		data/chars/ray/scripts/onspawn.c
 animationscript		data/chars/ray/scripts/animation.c
+didhitscript		data/chars/ray/scripts/didhitscript.c
 takedamagescript	data/scripts/common/event_damage.c
 
 palette   		data/chars/ray/default.act			# Light blue jeans, white shirt, red bolt
