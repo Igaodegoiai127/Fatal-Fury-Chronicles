@@ -1,6 +1,4 @@
-music		data/music/sound_beach_ff1.ogg 282658
-#272658 
-						
+music		data/music/sound_beach_ff1.ogg 575197						
 
 background	data/bgs/BEACH/back0001
 frontpanel	data/bgs/BEACH/fore0002
@@ -45,7 +43,7 @@ spawn4 50 45
 #wall  200      270    0          0           320            320           100     30  0
 
 #basemap {xpos} {zpos} {xsize} {zsize} {amin} {amax} 
-basemap 200		270		200		200	  0      100 
+#basemap 200		270		200		200	  0      100 
 
 # {int} Layer order from panel toward background.
 # {alpha} Model order along {int} layer.
