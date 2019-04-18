@@ -3,7 +3,9 @@
 
 // Dependencies
 
-// Function macros
+// Name of library. Used mainly as a base for variable IDs. Must
+// be unique vs all other libraries. Try to keep it short.
+#define DC_GAUNTLET_BASE_ID	 "dcgaun"
 
 // Base values
 #define DC_GAUNTLET_DRAWMETHOD_SCALE_MAX_X			256
@@ -66,6 +68,6 @@
 #define DC_GAUNTLET_VAR_KEY_PROJECTILE_STATIONARY	DC_GAUNTLET_BASE_ID + 14
 #define DC_GAUNTLET_VAR_KEY_PROJECTILE_TYPE			DC_GAUNTLET_BASE_ID + 15
 #define DC_GAUNTLET_VAR_KEY_SPAWN					DC_GAUNTLET_BASE_ID + 16
-#define DC_GAUNTLET_VAR_KEY_THE_END					18			// Should always last, with a value one higher than previous key ID.
+#define DC_GAUNTLET_VAR_KEY_THE_END					17			// Should always last, with a value one higher than previous key ID.
 
 #endif // !DC_GAUNTLET_CONFIG
