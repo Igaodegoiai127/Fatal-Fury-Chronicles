@@ -3,7 +3,7 @@
 // Which instance is in use?
 int dc_gauntlet_get_instance()
 {
-	void result = getlocalvar(DC_GAUNTLET_VAR_KEY_INSTANCE);
+	void result = getlocalvar(DC_GAUNTLET_MEMBER_INSTANCE);
 
 	if (!result)
 	{
@@ -15,7 +15,7 @@ int dc_gauntlet_get_instance()
 
 void dc_gauntlet_set_instance(int value)
 {
-	setlocalvar(DC_GAUNTLET_VAR_KEY_INSTANCE, value);
+	setlocalvar(DC_GAUNTLET_MEMBER_INSTANCE, value);
 }
 
 // Caskey, Damon V.
@@ -57,7 +57,7 @@ void dc_gauntlet_free_instance()
 	instance = dc_gauntlet_get_instance();
 
 	// Loop from 0 to end count of library variables.
-	for (i = 0; i < DC_GAUNTLET_VAR_KEY_THE_END; i++)
+	for (i = 0; i < DC_GAUNTLET_MEMBER_THE_END; i++)
 	{
 		// Concatenate the variable ID.
 		id = instance + DC_GAUNTLET_BASE_ID + i;
@@ -85,7 +85,7 @@ void dc_gauntlet_dump_instance()
 	log("\n\t " + "Instance: " + instance);
 
 	// Loop from 0 to end count of instance variables.
-	for (i = 0; i < DC_GAUNTLET_VAR_KEY_THE_END; i++)
+	for (i = 0; i < DC_GAUNTLET_MEMBER_THE_END; i++)
 	{
 		// Concatenate the variable ID.
 		id = instance + DC_GAUNTLET_BASE_ID + i;
@@ -118,7 +118,7 @@ void dc_gauntlet_export_instance()
 	instance = dc_gauntlet_get_instance();
 
 	// Loop from 0 to end count of instance variables.
-	for (i = 0; i < DC_GAUNTLET_VAR_KEY_THE_END; i++)
+	for (i = 0; i < DC_GAUNTLET_MEMBER_THE_END; i++)
 	{
 		// Concatenate the variable ID.
 		id = instance + DC_GAUNTLET_BASE_ID + i;
@@ -147,7 +147,7 @@ void dc_gauntlet_import_instance()
 	instance = dc_gauntlet_get_instance();
 
 	// Loop from 0 to end count of instance variables.
-	for (i = 0; i < DC_GAUNTLET_VAR_KEY_THE_END; i++)
+	for (i = 0; i < DC_GAUNTLET_MEMBER_THE_END; i++)
 	{
 		// Concatenate the variable ID.
 		id = instance + DC_GAUNTLET_BASE_ID + i;
@@ -174,7 +174,7 @@ void dc_gauntlet_free_export()
 	instance = dc_gauntlet_get_instance();
 
 	// Loop from 0 to end count of library variables.
-	for (i = 0; i < DC_GAUNTLET_VAR_KEY_THE_END; i++)
+	for (i = 0; i < DC_GAUNTLET_MEMBER_THE_END; i++)
 	{
 		// Concatenate the variable ID.
 		id = instance + DC_GAUNTLET_BASE_ID + i;
