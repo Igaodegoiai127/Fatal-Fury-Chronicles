@@ -1,5 +1,6 @@
 #include "data/scripts/dc_gauntlet/config.h"
 
+#import "data/scripts/dc_gauntlet/instance.c"
 
 // Base entity functions will act on.
 // Get

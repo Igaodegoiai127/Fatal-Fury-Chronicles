@@ -1,6 +1,7 @@
 #include "data/scripts/dc_gauntlet/config.h"
 
 #import "data/scripts/dc_gauntlet/entity.c"
+#import "data/scripts/dc_gauntlet/instance.c"
 
 // Accessors and Mutators
 // Invert X offset settings.

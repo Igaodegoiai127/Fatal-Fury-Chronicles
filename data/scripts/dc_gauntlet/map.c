@@ -1,5 +1,7 @@
 #include "data/scripts/dc_gauntlet/config.h"
 
+#import "data/scripts/dc_gauntlet/instance.c"
+
 int dc_gauntlet_get_map()
 {
 	int instance;

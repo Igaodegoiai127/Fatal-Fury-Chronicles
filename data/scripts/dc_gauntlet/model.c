@@ -1,5 +1,7 @@
 #include "data/scripts/dc_gauntlet/config.h"
 
+#import "data/scripts/dc_gauntlet/instance.c"
+
 // Primary acting entity.
 char dc_gauntlet_get_model_name()
 {
