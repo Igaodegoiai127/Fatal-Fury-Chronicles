@@ -70,16 +70,14 @@ void main()
 					}
 					else
 					{
-						dc_fidelity_quick_play(DC_FIDELITY_TYPE_VOICE_PAIN);
+						dc_fidelity_quick_play(DC_FIDELITY_TYPE_VOICE_PAIN_FALL);
 					}
 				}
 			}
 			else
 			{
-				// Non knockdown hit. We want to play pain 50% of the time.
-				dc_fidelity_set_sound_chance(0.5);
-				dc_fidelity_quick_play(DC_FIDELITY_TYPE_VOICE_PAIN);
-				dc_fidelity_set_sound_chance(NULL());
+				// Non knockdown hit.
+				dc_fidelity_quick_play(DC_FIDELITY_TYPE_VOICE_PAIN);				
 			}
 		}
 		else
