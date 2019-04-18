@@ -543,6 +543,9 @@ anim attack2
 	
 	frame	data/chars/ryu/34_2.png
 	frame	data/chars/ryu/34_3.png
+
+	idle	1	
+
 	frame	data/chars/ryu/34_4.png
 	
 	bbox.position.x 68
