@@ -3,14 +3,13 @@
     "",
     "\\data",
     "\\data\\chars",
-    "\\data\\chars\\ray",
     "\\data\\chars\\ray\\scripts",
-    "\\data\\chars\\terry",
     "\\data\\scripts",
     "\\data\\scripts\\com",
     "\\data\\scripts\\common",
-    "\\data\\scripts\\dc_fidelity"
+    "\\data\\scripts\\dc_fidelity",
+    "\\data\\scripts\\dc_instance"
   ],
-  "SelectedNode": "\\data\\scripts\\common\\event_damage.c",
+  "SelectedNode": "\\data\\scripts\\dc_instance\\operation.c",
   "PreviewInSolutionExplorer": true
 }

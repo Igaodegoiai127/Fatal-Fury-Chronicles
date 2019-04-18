@@ -445,6 +445,7 @@ anim Freespecial10 # Hadouken
 	@cmd dc_gauntlet_set_model_name "ryu_hadouken"
 	@cmd dc_gauntlet_set_offset_x 75
 	@cmd dc_gauntlet_set_offset_y 70
+	#cmd dc_gauntlet_set_instance 5
 	@cmd dc_gauntlet_dump_instance()
 	@cmd dc_guantlet_spawn_projectile()
 
