@@ -20,7 +20,7 @@ subject_to_wall	0
 hostile			player
 candamage		player obstacle
 combostyle		1
-atchain			1 1 2 0 
+atchain			1 1 2 0 3
 nopassiveblock	1
 holdblock		2
 blockodds		1
@@ -28,7 +28,7 @@ bflash			Block
 
 onspawnscript		data/chars/ray/scripts/onspawn.c
 animationscript		data/chars/ray/scripts/animation.c
-didhitscript		data/chars/ray/scripts/didhitscript.c
+didhitscript		data/scripts/common/event_hit.c
 takedamagescript	data/scripts/common/event_damage.c
 
 palette   		data/chars/ray/default.act			# Light blue jeans, white shirt, red bolt
@@ -369,21 +369,27 @@ anim attack1
 
 	range 10 70
 	
-	delay   10
+	delay   1
 	offset	75 170
      	
 		
 	bbox.position.x 64
 	bbox.position.y 72
 	bbox.size.x 34
-	bbox.size.y 97
-
+	bbox.size.y 97		
      	
-		# Alternate combo finish.
-		@cmd	dc_combo_alt openborconstant("ANI_FOLLOW5")
+	# Alternate combo finish.
+	@cmd	dc_combo_alt openborconstant("ANI_FOLLOW5")
+	frame	data/chars/ray/10_0.png
+	
+	@cmd	dc_fidelity_quick_play DC_FIDELITY_TYPE_SOUND_ATTACK_LIGHT
+	@cmd	dc_fidelity_quick_play DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_LIGHT
+
+	delay 9	
+
 	frame	data/chars/ray/10_0.png
      	
-     	delay	5
+     delay	5
      	
 	bbox.position.x 68
 	bbox.position.y 72
@@ -444,10 +450,14 @@ anim attack2
 	bbox.size.y 97
      	
      	
-		delay   8
-		sound	data/chars/ray/at1.wav
+	delay   8
+	
+	@cmd	dc_fidelity_quick_play DC_FIDELITY_TYPE_SOUND_ATTACK_MEDIUM
+	@cmd	dc_fidelity_quick_play DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_HEAVY
+	
 	frame	data/chars/ray/10_0.png
-     	delay   9
+    
+	delay   9
      	
 	bbox.position.x 55
 	bbox.position.y 72
@@ -518,6 +528,8 @@ anim attack3
 	bbox.size.x 36
 	bbox.size.y 96
 	
+	@cmd	dc_fidelity_quick_play DC_FIDELITY_TYPE_SOUND_ATTACK_MEDIUM
+	@cmd	dc_fidelity_quick_play DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_HEAVY
 
 	frame	data/chars/ray/10_0.png
     	delay   9
@@ -593,6 +605,10 @@ anim follow5
 	bbox.size.y 96
     
     frame	data/chars/ray/13_0.png
+
+	@cmd	dc_fidelity_quick_play DC_FIDELITY_TYPE_SOUND_ATTACK_HEAVY
+	@cmd	dc_fidelity_quick_play DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_HEAVY
+
     frame	data/chars/ray/13_1.png
     
 	bbox.position.x 82
