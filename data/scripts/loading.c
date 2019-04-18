@@ -67,24 +67,45 @@ void oncreate()
 	dc_fidelity_setup("Galford_Weller", DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_MEDIUM, "data/chars/galford/sounds/voice-atk-2.wav");	
 
 	//  Ray
-	dc_fidelity_setup("Ray", DC_FIDELITY_TYPE_VOICE_BATTLE_CRY, "data/chars/ray/sounds/mua_ps2_sm_day_job.wav");
-	dc_fidelity_setup("Ray", DC_FIDELITY_TYPE_VOICE_BATTLE_CRY, "data/chars/ray/sounds/mua_ps2_sm_dumb_one.wav");
-	dc_fidelity_setup("Ray", DC_FIDELITY_TYPE_VOICE_BATTLE_CRY, "data/chars/ray/sounds/mua_ps2_sm_how_embarrasing.wav");
-	dc_fidelity_setup("Ray", DC_FIDELITY_TYPE_VOICE_BATTLE_CRY, "data/chars/ray/sounds/mua_ps2_sm_i_won.wav");
-	dc_fidelity_setup("Ray", DC_FIDELITY_TYPE_VOICE_BATTLE_CRY, "data/chars/ray/sounds/mua_ps2_sm_like_this.wav");
-	dc_fidelity_setup("Ray", DC_FIDELITY_TYPE_VOICE_BATTLE_CRY, "data/chars/ray/sounds/mua_ps2_sm_look_at_that_i_win.wav");
-	dc_fidelity_setup("Ray", DC_FIDELITY_TYPE_VOICE_BATTLE_CRY, "data/chars/ray/sounds/mua_ps2_sm_lucky_i_went_easy.wav");
-	dc_fidelity_setup("Ray", DC_FIDELITY_TYPE_VOICE_BATTLE_CRY, "data/chars/ray/sounds/mua_ps2_sm_stand_up.wav");
-	dc_fidelity_setup("Ray", DC_FIDELITY_TYPE_VOICE_BATTLE_CRY, "data/chars/ray/sounds/mua_ps2_sm_surprise.wav");
-	dc_fidelity_setup("Ray", DC_FIDELITY_TYPE_VOICE_BATTLE_CRY, "data/chars/ray/sounds/mua_ps2_sm_tips.wav");
-	dc_fidelity_setup("Ray", DC_FIDELITY_TYPE_VOICE_BATTLE_CRY, "data/chars/ray/sounds/mua_ps2_sm_you_can_do_better.wav");
+	dc_fidelity_setup("Ray", DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_LIGHT, "data/chars/ray/sounds/spi_001e_01.wav");
+	dc_fidelity_setup("Ray", DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_LIGHT, "data/chars/ray/sounds/spi_002e_01.wav");
+	dc_fidelity_setup("Ray", DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_LIGHT, "data/chars/ray/sounds/spi_003e_01.wav");
+	dc_fidelity_setup("Ray", DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_LIGHT, "data/chars/ray/sounds/spi_004e_01.wav");
 
+	dc_fidelity_setup("Ray", DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_HEAVY, "data/chars/ray/sounds/spi_005e_01.wav");
+	dc_fidelity_setup("Ray", DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_HEAVY, "data/chars/ray/sounds/spi_006e_01.wav");
+	dc_fidelity_setup("Ray", DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_HEAVY, "data/chars/ray/sounds/spi_007e_01.wav");
+	dc_fidelity_setup("Ray", DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_HEAVY, "data/chars/ray/sounds/spi_008e_01.wav");
+	dc_fidelity_setup("Ray", DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_HEAVY, "data/chars/ray/sounds/spi_009e_01.wav");
+
+	dc_fidelity_setup("Ray", DC_FIDELITY_TYPE_VOICE_BATTLE_TAUNT, "data/chars/ray/sounds/spi_023e_01.wav");
+	dc_fidelity_setup("Ray", DC_FIDELITY_TYPE_VOICE_BATTLE_TAUNT, "data/chars/ray/sounds/spi_024e.wav");
+	dc_fidelity_setup("Ray", DC_FIDELITY_TYPE_VOICE_BATTLE_TAUNT, "data/chars/ray/sounds/spi_025e.wav");
+	dc_fidelity_setup("Ray", DC_FIDELITY_TYPE_VOICE_BATTLE_TAUNT, "data/chars/ray/sounds/spi_028e_pu.wav");
+	dc_fidelity_setup("Ray", DC_FIDELITY_TYPE_VOICE_BATTLE_TAUNT, "data/chars/ray/sounds/spi_029e_pu.wav");
+	dc_fidelity_setup("Ray", DC_FIDELITY_TYPE_VOICE_BATTLE_TAUNT, "data/chars/ray/sounds/spi_033be_pu.wav");
+	dc_fidelity_setup("Ray", DC_FIDELITY_TYPE_VOICE_BATTLE_TAUNT, "data/chars/ray/sounds/spi_033e_pu.wav");
+	dc_fidelity_setup("Ray", DC_FIDELITY_TYPE_VOICE_BATTLE_TAUNT, "data/chars/ray/sounds/spi_037e.wav");
+	dc_fidelity_setup("Ray", DC_FIDELITY_TYPE_VOICE_BATTLE_TAUNT, "data/chars/ray/sounds/spi_038e.wav");
+	dc_fidelity_setup("Ray", DC_FIDELITY_TYPE_VOICE_BATTLE_TAUNT, "data/chars/ray/sounds/spi_074e.wav");
+	dc_fidelity_setup("Ray", DC_FIDELITY_TYPE_VOICE_BATTLE_TAUNT, "data/chars/ray/sounds/spi_074e_pu.wav");	
+
+	dc_fidelity_setup("Ray", DC_FIDELITY_TYPE_VOICE_PAIN, "data/chars/ray/sounds/spi_013e_01.wav");
+	dc_fidelity_setup("Ray", DC_FIDELITY_TYPE_VOICE_PAIN, "data/chars/ray/sounds/spi_014e_01.wav");
+	dc_fidelity_setup("Ray", DC_FIDELITY_TYPE_VOICE_PAIN, "data/chars/ray/sounds/spi_015e_01.wav");
+	dc_fidelity_setup("Ray", DC_FIDELITY_TYPE_VOICE_PAIN, "data/chars/ray/sounds/spi_016e_01.wav");
+	dc_fidelity_setup("Ray", DC_FIDELITY_TYPE_VOICE_PAIN, "data/chars/ray/sounds/spi_017e_01.wav");
+
+	dc_fidelity_setup("Ray", DC_FIDELITY_TYPE_VOICE_PAIN_FALL, "data/chars/ray/sounds/spi_018e_01.wav");
+	dc_fidelity_setup("Ray", DC_FIDELITY_TYPE_VOICE_PAIN_FALL, "data/chars/ray/sounds/spi_019e_01.wav");
+	dc_fidelity_setup("Ray", DC_FIDELITY_TYPE_VOICE_PAIN_FALL, "data/chars/ray/sounds/spi_020e_01.wav");
 
 	//  Ryu
 	dc_fidelity_setup("Ryu", "Hadouken", "data/chars/ryu/sounds/voice-hadouken-0c.wav");
 
 	// Terry
 	dc_fidelity_setup("Terry_Bogard", "power_wave", "data/chars/terry/sounds/rb-terry-power-wave-0.wav");
+	
 	dc_fidelity_setup("Terry_Bogard", DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_LIGHT, "data/chars/terry/sounds/rb_terry_voice_attack_light_0.wav");
 	dc_fidelity_setup("Terry_Bogard", DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_LIGHT, "data/chars/terry/sounds/rb_terry_voice_attack_light_1.wav");
 	dc_fidelity_setup("Terry_Bogard", DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_LIGHT, "data/chars/terry/sounds/rb_terry_voice_attack_light_2.wav");
@@ -96,8 +117,8 @@ void oncreate()
 	dc_fidelity_setup("Terry_Bogard", DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_HEAVY, "data/chars/terry/sounds/rb_terry_voice_attack_heavy_0.wav");
 	dc_fidelity_setup("Terry_Bogard", DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_HEAVY, "data/chars/terry/sounds/rb_terry_voice_attack_heavy_1.wav");
 
-	dc_fidelity_setup("Terry_Bogard", DC_FIDELITY_TYPE_VOICE_BATTLE_CRY, "data/chars/terry/sounds/terry_clip_buy_you_a_drink.wav");
-	dc_fidelity_setup("Terry_Bogard", DC_FIDELITY_TYPE_VOICE_BATTLE_CRY, "data/chars/terry/sounds/terry_clip_goodnight.wav");
+	dc_fidelity_setup("Terry_Bogard", DC_FIDELITY_TYPE_VOICE_BATTLE_TAUNT, "data/chars/terry/sounds/terry_clip_buy_you_a_drink.wav");
+	dc_fidelity_setup("Terry_Bogard", DC_FIDELITY_TYPE_VOICE_BATTLE_TAUNT, "data/chars/terry/sounds/terry_clip_goodnight.wav");
 }
 
 void ondestroy()
