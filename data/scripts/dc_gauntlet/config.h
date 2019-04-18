@@ -50,7 +50,6 @@
 
 // Variable keys. Used to identify cross function
 // variables used throughout library.
-#define DC_GAUNTLET_BASE_ID					"dcgaun"	// Base name of every var ID. Must be unique vs. all other libraries.
 #define DC_GAUNTLET_VAR_KEY_INSTANCE				DC_GAUNTLET_BASE_ID + 0
 #define DC_GAUNTLET_VAR_KEY_DIRECTION_ADJUST		DC_GAUNTLET_BASE_ID + 1
 #define DC_GAUNTLET_VAR_KEY_ENT						DC_GAUNTLET_BASE_ID + 2
