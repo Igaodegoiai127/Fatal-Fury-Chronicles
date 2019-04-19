@@ -132,9 +132,6 @@
     <ClCompile Include="data\scripts\dc_initialize\main.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="data\scripts\dc_spinner\config.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="data\scripts\dc_spinner\main.c">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -451,6 +448,12 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="data\scripts\dc_instance\operation.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="data\scripts\dc_spinner\instance.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="data\scripts\dc_math\instance.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

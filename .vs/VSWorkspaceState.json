@@ -3,13 +3,8 @@
     "",
     "\\data",
     "\\data\\chars",
-    "\\data\\chars\\ray\\scripts",
     "\\data\\scripts",
-    "\\data\\scripts\\com",
-    "\\data\\scripts\\common",
-    "\\data\\scripts\\dc_fidelity",
-    "\\data\\scripts\\dc_instance"
+    "\\data\\scripts\\com"
   ],
-  "SelectedNode": "\\data\\scripts\\dc_instance\\operation.c",
   "PreviewInSolutionExplorer": true
 }
