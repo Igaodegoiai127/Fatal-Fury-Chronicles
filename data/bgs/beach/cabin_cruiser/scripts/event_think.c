@@ -56,8 +56,8 @@ float dc_water_float_fall_velocity()
 {
 	float result;
 
-	dc_d20_set_range_lower(DC_MOVEMENT_FLOAT_MIN_FALL_VELOCITY);
-	dc_d20_set_range_upper(DC_MOVEMENT_FLOAT_MAX_FALL_VELOCITY);
+	dc_d20_set_range_min(DC_MOVEMENT_FLOAT_MIN_FALL_VELOCITY);
+	dc_d20_set_range_max(DC_MOVEMENT_FLOAT_MAX_FALL_VELOCITY);
 
 	result = dc_d20_random_int() * 0.01;
 
@@ -70,8 +70,8 @@ float dc_water_float_rise_velocity()
 {
 	float result;
 
-	dc_d20_set_range_lower(DC_MOVEMENT_FLOAT_MIN_RISE_VELOCITY);
-	dc_d20_set_range_upper(DC_MOVEMENT_FLOAT_MAX_RISE_VELOCITY);
+	dc_d20_set_range_min(DC_MOVEMENT_FLOAT_MIN_RISE_VELOCITY);
+	dc_d20_set_range_max(DC_MOVEMENT_FLOAT_MAX_RISE_VELOCITY);
 
 	result = dc_d20_random_int() * 0.01;
 
