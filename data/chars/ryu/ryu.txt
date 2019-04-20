@@ -476,7 +476,7 @@ anim Freespecial10 # Hadouken
 	
 	frame	data/chars/ryu/43_11.png
 
-anim attack1
+anim attack1 # Jab
 	
 	range 24 70
 	
@@ -487,6 +487,12 @@ anim attack1
 	bbox.position.y 46
 	bbox.size.x 34
 	bbox.size.y 101
+
+	@cmd	dc_fidelity_quick_play DC_FIDELITY_TYPE_SOUND_ATTACK_LIGHT
+	
+	@cmd	dc_fidelity_set_sound_chance 0.5
+	@cmd	dc_fidelity_quick_play DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_LIGHT
+	@cmd	dc_fidelity_set_sound_chance NULL()
 
 	frame	data/chars/ryu/16_0.png
 	
@@ -516,7 +522,7 @@ anim attack1
 	bbox.size.y 99
 	frame	data/chars/ryu/16_4.png
 
-anim attack2
+anim attack5 # Straight
 	delay	5
 	offset	82 147
 	
@@ -524,6 +530,12 @@ anim attack2
 	bbox.position.y 49
 	bbox.size.x 38
 	bbox.size.y 98
+
+	@cmd	dc_fidelity_quick_play DC_FIDELITY_TYPE_SOUND_ATTACK_LIGHT
+	
+	@cmd	dc_fidelity_set_sound_chance 0.5
+	@cmd	dc_fidelity_quick_play DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_LIGHT
+	@cmd	dc_fidelity_set_sound_chance NULL()
 
 	frame	data/chars/ryu/34_0.png
 	
@@ -556,7 +568,7 @@ anim attack2
 	
 	frame	data/chars/ryu/16_4.png
 
-anim attack3 # Hook
+anim attack6 # Hook
 
 	delay	6
 	offset	82 147
@@ -575,6 +587,12 @@ anim attack3 # Hook
 	
 	delay	5
 	
+	@cmd	dc_fidelity_quick_play DC_FIDELITY_TYPE_SOUND_ATTACK_MEDIUM
+	
+	@cmd	dc_fidelity_set_sound_chance 0.5
+	@cmd	dc_fidelity_quick_play DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_MEDIUM
+	@cmd	dc_fidelity_set_sound_chance NULL()
+
 	frame	data/chars/ryu/36_1.png
 	frame	data/chars/ryu/36_2.png
 	
@@ -615,7 +633,7 @@ anim attack3 # Hook
 	frame	data/chars/ryu/36_8.png	
 	frame	data/chars/ryu/16_4.png
 
- anim attack4 # Spin Kick
+ anim attack7 # Spin Kick
 	
 	range 24 80
 	
@@ -674,3 +692,276 @@ anim attack3 # Hook
 	bbox.size.y 98
 	
 	frame	data/chars/ryu/20_8.png
+
+anim follow82 # Down Attack
+	
+	range 10 82
+	
+	delay	5
+	offset	82 147
+	
+	bbox.position.x 74
+	bbox.position.y 46
+	bbox.size.x 34
+	bbox.size.y 101
+
+	@cmd	dc_fidelity_quick_play DC_FIDELITY_TYPE_SOUND_ATTACK_MEDIUM
+	
+	@cmd	dc_fidelity_quick_play DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_MEDIUM
+
+	frame	data/chars/ryu/21_0.png	
+	frame	data/chars/ryu/21_1.png	
+	bbox.position.x 82
+	bbox.position.y 45
+	bbox.size.x 48
+	bbox.size.y 104
+	frame	data/chars/ryu/21_2.png
+	
+	delay 10
+	
+	attack.damage.force 15
+	attack.position.x 93
+	attack.position.y 104
+	attack.reaction.pause.time 10
+	attack.size.x 72
+	attack.size.y 36
+	attack.staydown.rise.time -200
+	attack.ground.mode 2
+	attack.effect.hit.flash.model flash_fatal_fury
+	
+	frame	data/chars/ryu/21_3.png
+	frame	data/chars/ryu/21_4.png
+	
+	delay 8
+	
+	bbox.position.x 76
+	bbox.position.y 53
+	bbox.size.x 36
+	bbox.size.y 94
+	frame	data/chars/ryu/21_5.png
+	bbox.position.x 69
+	bbox.position.y 50
+	bbox.size.x 36
+	bbox.size.y 98
+	frame	data/chars/ryu/21_6.png
+anim attack2 # Gut Punch
+	
+	range -5 50
+	
+	delay	5
+	offset	96 147
+	
+	bbox.position.x 76
+	bbox.position.y 49
+	bbox.size.x 36
+	bbox.size.y 98
+
+	@cmd	dc_fidelity_quick_play DC_FIDELITY_TYPE_SOUND_ATTACK_LIGHT
+	
+	@cmd	dc_fidelity_set_sound_chance 0.5
+	@cmd	dc_fidelity_quick_play DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_LIGHT
+	@cmd	dc_fidelity_set_sound_chance NULL()
+
+	
+	frame	data/chars/ryu/17_0.png
+	
+	
+	
+	bbox.position.x 82
+	bbox.position.y 51
+	bbox.size.x 39
+	bbox.size.y 94
+	
+	frame	data/chars/ryu/76_0.png
+	
+	delay 8
+	
+	
+	
+	attack.damage.force 10
+	attack.position.x 95
+	attack.position.y 75
+	attack.reaction.pause.time 10
+	attack.size.x 57
+	attack.size.y 17
+	
+	bbox.position.x 89
+	bbox.position.y 52
+	bbox.size.x 37
+	bbox.size.y 96
+	
+	frame	data/chars/ryu/76_1.png	
+	frame	data/chars/ryu/76_2.png
+	
+	bbox.position.x 82
+	bbox.position.y 51
+	bbox.size.x 39
+	bbox.size.y 94
+	
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.size.x 0
+	attack.size.y 0
+	
+	idle 1
+	
+	frame	data/chars/ryu/76_3.png
+	
+	offset 82 147
+	
+	bbox.position.x 71
+	bbox.position.y 50
+	bbox.size.x 32
+	bbox.size.y 97
+	
+	frame	data/chars/ryu/16_4.png
+anim attack3 # Elbow Jab
+	range -5 50
+	
+	delay	5
+	offset	82 147
+	
+	bbox.position.x 82
+	bbox.position.y 49
+	bbox.size.x 38
+	bbox.size.y 98
+
+	@cmd	dc_fidelity_quick_play DC_FIDELITY_TYPE_SOUND_ATTACK_LIGHT
+	
+	@cmd	dc_fidelity_set_sound_chance 0.5
+	@cmd	dc_fidelity_quick_play DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_LIGHT
+	@cmd	dc_fidelity_set_sound_chance NULL()
+
+	
+	frame	data/chars/ryu/35_0.png
+	
+	attack.damage.force 10
+	attack.position.x 78
+	attack.position.y 50
+	attack.reaction.pause.time 10
+	attack.size.x 54
+	attack.size.y 22
+	
+	bbox.position.x 77
+	bbox.position.y 47
+	bbox.size.x 32
+	bbox.size.y 100
+	
+	frame	data/chars/ryu/35_1.png
+	
+	delay 8
+	
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.size.x 0
+	attack.size.y 0
+	
+	frame	data/chars/ryu/35_2.png
+
+	idle 1
+	
+	frame	data/chars/ryu/35_3.png	
+	
+	bbox.position.x 70
+	bbox.position.y 49
+	bbox.size.x 33
+	bbox.size.y 97
+	
+	frame	data/chars/ryu/16_4.png
+anim attack4 # Axe Kick
+	
+	range -5 50
+	
+	delay	5
+	offset	82 147
+	
+	bbox.position.x 82
+	bbox.position.y 49
+	bbox.size.x 38
+	bbox.size.y 98
+	
+	frame	data/chars/ryu/22_0.png
+	
+	@cmd	dc_fidelity_quick_play DC_FIDELITY_TYPE_SOUND_ATTACK_HEAVY
+	@cmd	dc_fidelity_quick_play DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_MEDIUM
+	
+	frame	data/chars/ryu/22_1.png
+	
+	attack.damage.force 10
+	attack.effect.hit.flash.model flash_fatal_fury
+	attack.position.x 82
+	attack.position.y 18
+	attack.reaction.pause.time 12
+	attack.size.x 51
+	attack.size.y 40
+	
+	bbox.position.x 84
+	bbox.position.y 36
+	bbox.size.x 33
+	bbox.size.y 111
+	
+	frame	data/chars/ryu/22_2.png
+	
+	delay 8
+	
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.size.x 0
+	attack.size.y 0
+	
+	@cmd	dc_fidelity_quick_play DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_HEAVY
+	
+	frame	data/chars/ryu/22_3.png
+	
+	attack.damage.force 12
+	attack.effect.hit.flash.model flash_fatal_fury
+	attack.position.x 121
+	attack.position.y 50
+	attack.reaction.fall.force 2
+	attack.reaction.pause.time 12
+	attack.size.x 57
+	attack.size.y 22
+	
+	bbox.position.x 87
+	bbox.position.y 45
+	bbox.size.x 42
+	bbox.size.y 101
+	frame	data/chars/ryu/22_4.png
+	
+	attack.damage.force 9
+	attack.effect.hit.flash.model flash_fatal_fury
+	attack.position.x 129
+	attack.position.y 107
+	attack.reaction.pause.time 10
+	attack.size.x 39
+	attack.size.y 22
+	
+	bbox.position.x 82
+	bbox.position.y 49
+	bbox.size.x 43
+	bbox.size.y 97
+	frame	data/chars/ryu/22_5.png
+	
+	
+	
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.size.x 0
+	attack.size.y 0
+	frame	data/chars/ryu/22_6.png
+	bbox.position.x 74
+	bbox.position.y 47
+	bbox.size.x 33
+	bbox.size.y 99
+	frame	data/chars/ryu/22_7.png
+	
+	bbox.position.x 70
+	bbox.position.y 49
+	bbox.size.x 33
+	bbox.size.y 97
+	
+	frame	data/chars/ryu/16_4.png
