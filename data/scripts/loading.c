@@ -101,7 +101,9 @@ void oncreate()
 	dc_fidelity_setup("Ray", DC_FIDELITY_TYPE_VOICE_PAIN_FALL, "data/chars/ray/sounds/spi_020e_01.wav");
 
 	//  Ryu
+	dc_fidelity_setup("Ryu", "Hadouken", "data/chars/ryu/sounds/ABD_CV_E_0000000B_01.wav");
 	dc_fidelity_setup("Ryu", "Hadouken", "data/chars/ryu/sounds/voice-hadouken-0c.wav");
+
 
 	// Terry
 	dc_fidelity_setup("Terry_Bogard", "power_wave", "data/chars/terry/sounds/rb-terry-power-wave-0.wav");
