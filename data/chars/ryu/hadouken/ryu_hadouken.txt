@@ -8,6 +8,7 @@ remove		 0
 palette	data/chars/ryu/hadouken/1_0.png
 
 script data/chars/ryu/hadouken/onmovex.c
+onspawnscript data/chars/ryu/hadouken/onspawnscript.c
 
 anim idle
 
