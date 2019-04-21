@@ -35,7 +35,9 @@ com		d -> f -> a		freespecial10
 palette			data/chars/ryu/pal_0.act
 alternatepal	data/chars/ryu/pal_1.act
 
-animationscript data/chars/ryu/script/event_animation_pc.c
+animationscript		data/chars/ryu/script/event_animation_pc.c
+didhitscript		data/scripts/common/event_hit.c
+takedamagescript	data/scripts/common/event_damage.c
 
 anim selectin
 
@@ -445,8 +447,6 @@ anim Freespecial10 # Hadouken
 	@cmd dc_gauntlet_set_model_name "ryu_hadouken"
 	@cmd dc_gauntlet_set_offset_x 75
 	@cmd dc_gauntlet_set_offset_y 70
-	#cmd dc_gauntlet_set_instance 5
-	@cmd dc_gauntlet_dump_instance()
 	@cmd dc_guantlet_spawn_projectile()
 
 	frame	data/chars/ryu/43_4.png
@@ -588,10 +588,7 @@ anim attack6 # Hook
 	delay	5
 	
 	@cmd	dc_fidelity_quick_play DC_FIDELITY_TYPE_SOUND_ATTACK_MEDIUM
-	
-	@cmd	dc_fidelity_set_sound_chance 0.5
 	@cmd	dc_fidelity_quick_play DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_MEDIUM
-	@cmd	dc_fidelity_set_sound_chance NULL()
 
 	frame	data/chars/ryu/36_1.png
 	frame	data/chars/ryu/36_2.png
@@ -706,7 +703,6 @@ anim follow82 # Down Attack
 	bbox.size.y 101
 
 	@cmd	dc_fidelity_quick_play DC_FIDELITY_TYPE_SOUND_ATTACK_MEDIUM
-	
 	@cmd	dc_fidelity_quick_play DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_MEDIUM
 
 	frame	data/chars/ryu/21_0.png	
@@ -744,6 +740,7 @@ anim follow82 # Down Attack
 	bbox.size.x 36
 	bbox.size.y 98
 	frame	data/chars/ryu/21_6.png
+
 anim attack2 # Gut Punch
 	
 	range -5 50
@@ -756,10 +753,10 @@ anim attack2 # Gut Punch
 	bbox.size.x 36
 	bbox.size.y 98
 
-	@cmd	dc_fidelity_quick_play DC_FIDELITY_TYPE_SOUND_ATTACK_LIGHT
+	@cmd	dc_fidelity_quick_play DC_FIDELITY_TYPE_SOUND_ATTACK_MEDIUM
 	
 	@cmd	dc_fidelity_set_sound_chance 0.5
-	@cmd	dc_fidelity_quick_play DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_LIGHT
+	@cmd	dc_fidelity_quick_play DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_MEDIUM
 	@cmd	dc_fidelity_set_sound_chance NULL()
 
 	
@@ -816,6 +813,7 @@ anim attack2 # Gut Punch
 	bbox.size.y 97
 	
 	frame	data/chars/ryu/16_4.png
+
 anim attack3 # Elbow Jab
 	range -5 50
 	
@@ -870,6 +868,7 @@ anim attack3 # Elbow Jab
 	bbox.size.y 97
 	
 	frame	data/chars/ryu/16_4.png
+
 anim attack4 # Axe Kick
 	
 	range -5 50
@@ -965,3 +964,209 @@ anim attack4 # Axe Kick
 	bbox.size.y 97
 	
 	frame	data/chars/ryu/16_4.png
+anim pain # Normal Pain
+	
+	delay	11
+	offset	82 147
+		
+	bbox.position.x 51
+	bbox.position.y 44
+	bbox.size.x 53
+	bbox.size.y 103
+	
+	frame	data/chars/ryu/R_PAIN_1.png
+	
+	bbox.position.x 34
+	bbox.position.y 49
+	bbox.size.x 60
+	bbox.size.y 97
+	
+	frame	data/chars/ryu/R_PAIN_2.png
+	
+	bbox.position.x 49
+	bbox.position.y 47
+	bbox.size.x 52
+	bbox.size.y 100
+	
+	frame	data/chars/ryu/R_PAIN_1.png
+	
+	bbox.position.x 61
+	bbox.position.y 46
+	bbox.size.x 48
+	bbox.size.y 102
+	
+	frame	data/chars/ryu/R_PAIN_0.png
+anim pain2 # Middle pain
+	
+	delay	11
+	offset	82 147
+		
+	bbox.position.x 39
+	bbox.position.y 61
+	bbox.size.x 55
+	bbox.size.y 84
+	
+	frame	data/chars/ryu/R_PAIN_MID_1.png
+	
+	bbox.position.x 33
+	bbox.position.y 60
+	bbox.size.x 59
+	bbox.size.y 87
+	
+	frame	data/chars/ryu/R_PAIN_MID_2.png
+	
+	bbox.position.x 41
+	bbox.position.y 57
+	bbox.size.x 52
+	bbox.size.y 92
+	
+	frame	data/chars/ryu/R_PAIN_MID_1.png
+	
+	bbox.position.x 53
+	bbox.position.y 50
+	bbox.size.x 45
+	bbox.size.y 97
+	
+	frame	data/chars/ryu/R_PAIN_MID_0.png
+anim fall # Normal Fall
+	
+	dropframe 1
+	landframe 2
+	
+	delay	-1000
+	
+	offset	82 140
+	
+	bbox.position.x 67
+	bbox.position.y 60
+	bbox.size.x 41
+	bbox.size.y 58
+	
+	attack.block.penetrate 0
+	attack.damage.force 10
+	attack.damage.type 1
+	attack.effect.hit.flash.disable 0
+	attack.position.x 63
+	attack.position.y 52
+	attack.reaction.fall.force 1
+	attack.reaction.pause.time 10
+	attack.size.x 44
+	attack.size.y 65
+	attack.size.z.1 0
+	
+	frame	data/chars/ryu/R_TILT_UP_0.png
+	
+	offset	82 140
+	
+	bbox.position.x 48
+	bbox.position.y 98
+	bbox.size.x 86
+	bbox.size.y 31
+	
+	attack.block.penetrate 0
+	attack.damage.force 10
+	attack.damage.type 1
+	attack.effect.hit.flash.disable 0
+	attack.position.x 48
+	attack.position.y 98
+	attack.reaction.fall.force 1
+	attack.reaction.pause.time 10
+	attack.size.x 86
+	attack.size.y 31
+	attack.size.z.1 0
+	
+	frame	data/chars/ryu/R_HORIZONTAL_UP_PAIN_0.png
+	
+	delay 15
+	
+	offset	82 140
+	
+	bbox.position.x 42
+	bbox.position.y 110
+	bbox.size.x 86
+	bbox.size.y 31
+	
+	attack.block.penetrate 0
+	attack.damage.force 10
+	attack.damage.type 1
+	attack.effect.hit.flash.disable 0
+	attack.position.x 42
+	attack.position.y 110
+	attack.reaction.fall.force 1
+	attack.reaction.pause.time 10
+	attack.size.x 86
+	attack.size.y 31
+	attack.size.z.1 0
+	
+	frame	data/chars/ryu/R_FALLING_UP_0.png	
+	
+		delay	20
+		
+	bbox.position.x 47
+	bbox.position.y 99
+	bbox.size.x 80
+	bbox.size.y 43
+	
+	
+		delay	8		
+		offset	85 140
+		
+	attack.block.penetrate 0
+	attack.damage.force 0
+	attack.damage.type 1
+	attack.effect.hit.flash.disable 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.reaction.pause.time 0
+	attack.size.x 0
+	attack.size.y 0
+	attack.size.z.1 0
+	
+	bbox.position.x 47
+	bbox.position.y 99
+	bbox.size.x 80
+	bbox.size.y 43
+	
+	frame	data/chars/ryu/R_LAYING_UP_PAIN_0.png
+	
+	offset	82 143
+	
+	bbox.position.x 44
+	bbox.position.y 115
+	bbox.size.x 84
+	bbox.size.y 32
+	
+	frame	data/chars/ryu/R_LAYING_UP_0
+anim rise # Normal Rise
+	
+	jumpframe 3 1.5 0 0 hop_liftoff
+	landframe 8 jump_land
+	
+	delay 7
+	offset 82 147
+	
+	frame data/chars/ryu/53_0.png
+	frame data/chars/ryu/53_1.png
+	frame data/chars/ryu/53_2.png
+	frame data/chars/ryu/53_3.png
+	frame data/chars/ryu/53_4.png
+	
+	offset 90 140
+	
+	frame data/chars/ryu/10_6.png
+	frame data/chars/ryu/10_7.png
+	
+	delay -1000
+	
+	frame data/chars/ryu/10_8.png
+	
+	delay  5
+	offset 82 147
+		
+	frame data/chars/ryu/7_0.png
+	
+	
+	
+	
+	
