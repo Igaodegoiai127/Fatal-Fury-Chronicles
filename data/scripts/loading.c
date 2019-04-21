@@ -117,7 +117,6 @@ void oncreate()
 	dc_fidelity_setup("Ryu", DC_FIDELITY_TYPE_VOICE_BATTLE_TAUNT, "data/chars/ryu/sounds/ryu_116e_01.wav");
 	dc_fidelity_setup("Ryu", DC_FIDELITY_TYPE_VOICE_BATTLE_TAUNT, "data/chars/ryu/sounds/ryu_117e_01.wav");
 
-	dc_fidelity_setup("Ryu", DC_FIDELITY_TYPE_VOICE_PAIN, "data/chars/ryu/sounds/ABD_CV_E_0000000B_01.wav");
 	dc_fidelity_setup("Ryu", DC_FIDELITY_TYPE_VOICE_PAIN, "data/chars/ryu/sounds/ABD_CV_E_00000030_01.wav");
 	dc_fidelity_setup("Ryu", DC_FIDELITY_TYPE_VOICE_PAIN, "data/chars/ryu/sounds/ABD_CV_E_00000031_01.wav");
 	dc_fidelity_setup("Ryu", DC_FIDELITY_TYPE_VOICE_PAIN, "data/chars/ryu/sounds/ABD_CV_E_00000032_01.wav");
