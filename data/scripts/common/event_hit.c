@@ -53,16 +53,14 @@ void dc_common_didhit()
 
 				if (type == openborconstant("TYPE_PLAYER"))
 				{
-					log("\n event_hit_play");
-
 					//dc_fidelity_set_sound_chance(0.5);
-					dc_fidelity_quick_play(DC_FIDELITY_TYPE_VOICE_BATTLE_TAUNT);
+					dc_fidelity_timed_play(DC_FIDELITY_TYPE_VOICE_BATTLE_TAUNT, 175);
 					//dc_fidelity_set_sound_chance(NULL());
 
 				}
 				else
 				{
-					dc_fidelity_quick_play(DC_FIDELITY_TYPE_VOICE_BATTLE_TAUNT);
+					dc_fidelity_timed_play(DC_FIDELITY_TYPE_VOICE_BATTLE_TAUNT, 175);
 				}
 			}
 		}

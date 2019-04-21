@@ -1,6 +1,7 @@
 // Import functions.
 #include "data/scripts/dc_afterimage/main.c"
 #include "data/scripts/dc_kanga/main.c"
+#include "data/scripts/dc_fidelity/main.c"
 
 #define DC_UPDATED_KEY_SCREEN          "key_screen"
 #define OG_SCREEN_SIZE_MAX_X			openborvariant("hresolution")
@@ -59,9 +60,12 @@ void main() {
 		ent = getentity(i);
 
 		// Execute tint effect on entity.
-		//dc_kanga_auto_tint(ent);
+		dc_kanga_auto_tint(ent);
 		
 	}	
+
+	// Time delay sounds.
+	dc_fidelity_play_timed();
 
 	// Draw after images
 	trai0001();
