@@ -101,13 +101,40 @@ void oncreate()
 	dc_fidelity_setup("Ray", DC_FIDELITY_TYPE_VOICE_PAIN_FALL, "data/chars/ray/sounds/spi_020e_01.wav");
 
 	//  Ryu
+	dc_fidelity_setup("Ryu", DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_LIGHT, "data/chars/ryu/sounds/ryu_001e_01.wav");
+	dc_fidelity_setup("Ryu", DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_LIGHT, "data/chars/ryu/sounds/ryu_002e_01.wav");
+	dc_fidelity_setup("Ryu", DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_LIGHT, "data/chars/ryu/sounds/ryu_003e_01.wav");
+	dc_fidelity_setup("Ryu", DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_MEDIUM, "data/chars/ryu/sounds/ryu_004e_01.wav");
+	dc_fidelity_setup("Ryu", DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_MEDIUM, "data/chars/ryu/sounds/ryu_005e_01.wav");
+	dc_fidelity_setup("Ryu", DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_MEDIUM, "data/chars/ryu/sounds/ryu_006e_01.wav");
+	dc_fidelity_setup("Ryu", DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_HEAVY, "data/chars/ryu/sounds/ryu_007e_01.wav");
+	dc_fidelity_setup("Ryu", DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_HEAVY, "data/chars/ryu/sounds/ryu_008e_01.wav");
+	dc_fidelity_setup("Ryu", DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_HEAVY, "data/chars/ryu/sounds/ryu_009e_01.wav");
+
+	dc_fidelity_setup("Ryu", DC_FIDELITY_TYPE_VOICE_BATTLE_TAUNT, "data/chars/ryu/sounds/ryu_044e_01.wav");
+	dc_fidelity_setup("Ryu", DC_FIDELITY_TYPE_VOICE_BATTLE_TAUNT, "data/chars/ryu/sounds/ryu_045e_01.wav");
+	dc_fidelity_setup("Ryu", DC_FIDELITY_TYPE_VOICE_BATTLE_TAUNT, "data/chars/ryu/sounds/ryu_049e_01.wav");
+	dc_fidelity_setup("Ryu", DC_FIDELITY_TYPE_VOICE_BATTLE_TAUNT, "data/chars/ryu/sounds/ryu_116e_01.wav");
+	dc_fidelity_setup("Ryu", DC_FIDELITY_TYPE_VOICE_BATTLE_TAUNT, "data/chars/ryu/sounds/ryu_117e_01.wav");
+
+	dc_fidelity_setup("Ryu", DC_FIDELITY_TYPE_VOICE_PAIN, "data/chars/ryu/sounds/ABD_CV_E_0000000B_01.wav");
+	dc_fidelity_setup("Ryu", DC_FIDELITY_TYPE_VOICE_PAIN, "data/chars/ryu/sounds/ABD_CV_E_00000030_01.wav");
+	dc_fidelity_setup("Ryu", DC_FIDELITY_TYPE_VOICE_PAIN, "data/chars/ryu/sounds/ABD_CV_E_00000031_01.wav");
+	dc_fidelity_setup("Ryu", DC_FIDELITY_TYPE_VOICE_PAIN, "data/chars/ryu/sounds/ABD_CV_E_00000032_01.wav");
+	dc_fidelity_setup("Ryu", DC_FIDELITY_TYPE_VOICE_PAIN, "data/chars/ryu/sounds/ABD_CV_E_00000033_01.wav");
+	dc_fidelity_setup("Ryu", DC_FIDELITY_TYPE_VOICE_PAIN, "data/chars/ryu/sounds/ABD_CV_E_00000034_01.wav");
+
+	dc_fidelity_setup("Ryu", DC_FIDELITY_TYPE_VOICE_PAIN_FALL, "data/chars/ryu/sounds/ABD_CV_E_00000035_01.wav");
+	dc_fidelity_setup("Ryu", DC_FIDELITY_TYPE_VOICE_PAIN_FALL, "data/chars/ryu/sounds/ABD_CV_E_00000036_01.wav");
+	dc_fidelity_setup("Ryu", DC_FIDELITY_TYPE_VOICE_PAIN_FALL, "data/chars/ryu/sounds/ABD_CV_E_00000037_01.wav");
+	dc_fidelity_setup("Ryu", DC_FIDELITY_TYPE_VOICE_PAIN_FALL, "data/chars/ryu/sounds/ABD_CV_E_00000038_01.wav");
+	dc_fidelity_setup("Ryu", DC_FIDELITY_TYPE_VOICE_PAIN_FALL, "data/chars/ryu/sounds/ABD_CV_E_00000039_01.wav");
+
 	dc_fidelity_setup("Ryu", "Hadouken", "data/chars/ryu/sounds/ABD_CV_E_0000000B_01.wav");
 	dc_fidelity_setup("Ryu", "Hadouken", "data/chars/ryu/sounds/voice-hadouken-0c.wav");
 
 	dc_fidelity_setup("ryu_hadouken", DC_FIDELITY_TYPE_SOUND_SPAWN, "data/chars/ryu/hadouken/ryu_se_hadou_01.wav");
-
-
-
+	   
 	// Terry
 	dc_fidelity_setup("Terry_Bogard", "power_wave", "data/chars/terry/sounds/rb-terry-power-wave-0.wav");
 	
