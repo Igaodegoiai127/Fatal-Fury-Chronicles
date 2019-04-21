@@ -1170,3 +1170,92 @@ anim rise # Normal Rise
 	
 	
 	
+anim runattack # Run Attack
+	
+	jumpframe 0 0 1.2 0 0
+	
+	delay	6
+	offset	82 147
+
+	bbox.position.x 76
+	bbox.position.y 45
+	bbox.size.x 34
+	bbox.size.y 100
+
+	frame	data/chars/ryu/77_0.png
+	
+	bbox.position.x 81
+	bbox.position.y 52
+	bbox.size.x 34
+	bbox.size.y 92
+	
+	@cmd	dc_fidelity_quick_play DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_HEAVY
+	
+	frame	data/chars/ryu/77_1.png
+	
+	bbox.position.x 80
+	bbox.position.y 58
+	bbox.size.x 36
+	bbox.size.y 88
+	
+	@cmd	dc_fidelity_quick_play DC_FIDELITY_TYPE_SOUND_ATTACK_HEAVY
+	
+	frame	data/chars/ryu/77_2.png
+	
+	bbox.position.x 85
+	bbox.position.y 65
+	bbox.size.x 47
+	bbox.size.y 81
+	
+	attack.damage.force 16
+	attack.position.x 108
+	attack.position.y 71
+	attack.reaction.fall.force 1
+	attack.reaction.pause.time 12
+	attack.size.x 67
+	attack.size.y 15
+	
+	frame	data/chars/ryu/77_3.png
+	
+	bbox.position.x 87
+	bbox.position.y 58
+	bbox.size.x 43
+	bbox.size.y 88
+	
+	attack.damage.force 8
+	attack.position.x 109
+	attack.position.y 71
+	attack.reaction.fall.force 1
+	attack.reaction.pause.time 12
+	attack.size.x 63
+	attack.size.y 15
+	
+	frame	data/chars/ryu/77_4.png
+	
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.size.x 0
+	attack.size.y 0
+	
+	frame	data/chars/ryu/77_5.png
+	
+	@cmd	dc_velocity_set_velocity_x NULL()
+		@cmd	dc_velocity_apply_velocity_x
+	
+	frame	data/chars/ryu/77_6.png
+	frame	data/chars/ryu/77_7.png
+	
+	bbox.position.x 77
+	bbox.position.y 54
+	bbox.size.x 40
+	bbox.size.y 91
+	
+	frame	data/chars/ryu/77_8.png
+	
+	bbox.position.x 68
+	bbox.position.y 51
+	bbox.size.x 38
+	bbox.size.y 95
+	
+	frame	data/chars/ryu/77_9.png
