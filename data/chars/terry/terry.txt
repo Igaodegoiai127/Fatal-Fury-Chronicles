@@ -1879,32 +1879,10 @@ anim pain2	# Middle pain.
 	
 	frame	data/chars/terry/R_PAIN_MID_0.png
 
-anim fall
+anim fall # Normal Fall
 
-	dropframe 2
-	landframe 3
-
-	delay	12
-	offset	76 155
-		
-	bbox.position.x 52
-	bbox.position.y 63
-	bbox.size.x 31
-	bbox.size.y 94
-	
-	attack.block.penetrate 0
-	attack.damage.force 10
-	attack.damage.type 1
-	attack.effect.hit.flash.disable 0
-	attack.position.x 52
-	attack.position.y 63
-	attack.reaction.fall.force 1
-	attack.reaction.pause.time 10
-	attack.size.x 31
-	attack.size.y 94
-	attack.size.z.1 0
-	
-	frame	data/chars/terry/R_PAIN_0.png
+	dropframe 1
+	landframe 2
 	
 	delay	-1000
 	
