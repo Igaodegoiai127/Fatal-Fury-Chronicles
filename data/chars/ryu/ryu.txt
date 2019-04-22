@@ -31,6 +31,7 @@ bflash			Block
 load	ryu_hadouken
 
 com		d -> f -> a		freespecial10
+com		f -> d -> f -> a		freespecial11
 
 palette			data/chars/ryu/pal_0.act
 alternatepal	data/chars/ryu/pal_1.act
@@ -1259,3 +1260,90 @@ anim runattack # Run Attack
 	bbox.size.y 95
 	
 	frame	data/chars/ryu/77_9.png
+anim freespecial11 # Upper Thrust Kick
+	jumpframe 1 0 1.2 0 0
+	
+	delay	8
+	offset	82 147
+
+	bbox.position.x 58
+	bbox.position.y 49
+	bbox.size.x 43
+	bbox.size.y 98
+
+	frame	data/chars/ryu/18_0.png
+	
+	bbox.position.x 44
+	bbox.position.y 52
+	bbox.size.x 43
+	bbox.size.y 95
+	
+	@cmd	dc_fidelity_quick_play DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_HEAVY
+	
+	frame	data/chars/ryu/78_0.png
+	
+	bbox.position.x 39
+	bbox.position.y 47
+	bbox.size.x 45
+	bbox.size.y 100
+	
+	@cmd	dc_fidelity_quick_play DC_FIDELITY_TYPE_SOUND_ATTACK_HEAVY
+	
+	frame	data/chars/ryu/78_1.png
+	
+	bbox.position.x 32
+	bbox.position.y 46
+	bbox.size.x 70
+	bbox.size.y 101
+	
+	attack.damage.force 20
+	attack.position.x 81
+	attack.position.y 38
+	attack.reaction.fall.force 2
+	attack.reaction.fall.velocity.x 2.5
+	attack.reaction.fall.velocity.y 4.0
+	attack.reaction.pause.time 12
+	attack.size.x 58
+	attack.size.y 23
+	attack.effect.hit.flash.model flash_fatal_fury
+	attack.damage.land.mode 1
+	
+	frame	data/chars/ryu/78_2.png
+	
+	attack.damage.force 16
+	attack.position.x 81
+	attack.position.y 38
+	attack.reaction.fall.force 1
+	attack.reaction.fall.velocity.x 2.0
+	attack.reaction.fall.velocity.y 3.0
+	attack.reaction.pause.time 12
+	attack.size.x 58
+	attack.size.y 23
+	attack.effect.hit.flash.model flash_fatal_fury
+	attack.damage.land.mode 1
+	
+	frame	data/chars/ryu/78_3.png
+	
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.size.x 0
+	attack.size.y 0
+	
+	frame	data/chars/ryu/78_4.png
+	@cmd	dc_velocity_set_velocity_x NULL()
+		@cmd	dc_velocity_apply_velocity_x
+	frame	data/chars/ryu/78_3.png
+	frame	data/chars/ryu/18_4.png	
+	bbox.position.x 57
+	bbox.position.y 46
+	bbox.size.x 47
+	bbox.size.y 102
+	frame	data/chars/ryu/18_5.png
+	bbox.position.x 64
+	bbox.position.y 47
+	bbox.size.x 44
+	bbox.size.y 99
+	frame	data/chars/ryu/16_4.png
+	
+	
