@@ -10,8 +10,6 @@ Ray McDougal (AI)
 #include "data/scripts/dc_grapple/main.c" 
 #include "data/scripts/dc_fidelity/main.c" 
 
-#include "data/scripts/com/targ0001.h"
-
 // Very simple alternate attack. If first performing an attack
 // and combo has at least one hit in it, then randomly perform
 // an alternate. This is so we can give a bit of variety 
