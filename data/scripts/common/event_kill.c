@@ -1,6 +1,3 @@
-#include "data/scripts/vars/colors.h"
-#include "data/scripts/vars/entity.h"
-#include "data/scripts/com/bind0008.h"
 #include "data/scripts/dc_kanga/main.c"
 
 void main()
@@ -36,14 +33,14 @@ void entity_kill()
 	{
 		if (getentityproperty(vSelf, "model") != "effe0001")    //Self not the fatality or effect model?
 		{
-			vBindhe = getentityvar(vSelf, BINDHE);              //Get any bound effect.
+			vBindhe = getentityvar(vSelf, "bound_hit_effect");              //Get any bound effect.
 
 			if (getentityproperty(vBindhe, "exists"))           //Bound effect exists?
 			{
 				killentity(vBindhe);                            //Then kill it.
 			}
 
-			vSpawn = bind0008("effe0001", "effe0001", MAPBURN, 0, 0, 0, 0, 1, openborconstant("ANI_FOLLOW14"), 0, 0);   //Spawn fatality model.
+			//vSpawn = bind0008("effe0001", "effe0001", MAPBURN, 0, 0, 0, 0, 1, openborconstant("ANI_FOLLOW14"), 0, 0);   //Spawn fatality model.
 
 			dc_kanga_z_position_autoscale(vSpawn);                                   //Apply draw settings.
 		}
@@ -55,19 +52,13 @@ void entity_kill()
 
 	// Moved from kill0001.c so we could eliminate it.
 	// Was used by boat in sound beach stage.
-	void vBinde = getentityvar(vSelf, BINDE);		   //Get any bound effect.
-
-	if (getentityproperty(vBinde, "exists"))           //Bound effect exists?
-	{
-		killentity(vBinde);                            //Then kill it.
-	}
-	
+	// Check for entity bound to us and kill it here.
 
 
 
 	if (getentityproperty(vParent, "exists"))                   //Parent exists?
 	{
-		vBindhe = getentityvar(vParent, BINDHE);               //Get parent's bound effect variant.
+		vBindhe = getentityvar(vParent, "bound_hit_effect");               //Get parent's bound effect variant.
 		if (vBindhe == vSelf)                                  //Was bound effect same as self?
 		{
 			dc_kanga_z_position_autoscale(vParent);                                  //Update parent's draw.

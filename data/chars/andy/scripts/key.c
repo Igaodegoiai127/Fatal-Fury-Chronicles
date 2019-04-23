@@ -1,5 +1,3 @@
-#include "data/scripts/vars/entity.h"
-
 //Andy Bogard key key capture.
 
 void main(){

@@ -1,6 +1,3 @@
-#include "data/scripts/vars/entity.h"
-#include "data/scripts/com/trai0004.h"
-
 /*
 On hit for Andy Bogard.
 */
@@ -17,7 +14,7 @@ void main()
     int  iZ;                                                                                //Caller Z.
     int  iDType;                                                                            //Defender type.
     int  iBlock     = getlocalvar("blocked");                                               //Attack blocked?
-    int  iStatus    = getentityvar(vSelf, STATUS);                                          //Power up status.
+    int  istatus    = getentityvar(vSelf, "entity_status");                                          //Power up status.
 
     if (iAni == openborconstant("ANI_FREESPECIAL19") 
         || iAni == openborconstant("ANI_FREESPECIAL21"))                                    //Bakushin or Ku Bakushin freespecial?
@@ -47,9 +44,9 @@ void main()
         }        
     }
 
-    if (!iBlock && iStatus == 1) //Attack not blocked and in power up mode?
+    if (!iBlock && istatus == 1) //Attack not blocked and in power up mode?
     {
-        trai0004();
+		// Shadow hit function.
     } 
 }
 

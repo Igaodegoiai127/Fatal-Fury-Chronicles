@@ -41,7 +41,7 @@ takedamagescript	data/chars/andy/scripts/dama0001.c
 didhitscript		data/scripts/common/event_hit.c
 onmovezscript		data/scripts/common/event_move_z.c
 onspawnscript		data/chars/galford/scripts/onspawn.c
-onfallscript		data/chars/andy/scripts/fall0001.c
+onfallscript		data/scripts/common/event_fall.c
 onmoveascript		data/chars/galford/scripts/event_move_a.c
 onpainscript		data/scripts/common/event_pain.c
 
@@ -1274,7 +1274,7 @@ anim grabforward
 		delay	6
 		frame	data/chars/andy/andy0417
 		frame	data/chars/andy/andy0418
-	@cmd	bind0008 "flash" "flash" 0 1 30 10 0 0 0 0 1
+	#cmd	bind0008 "flash" "flash" 0 1 30 10 0 0 0 0 1
 	#@cmd	dama0001 1 20 10 "ATK_NORMAL9" 1 2.5 3 0 0 0 0
 		frame	data/chars/andy/andy0419
 		frame	data/chars/andy/andy0420

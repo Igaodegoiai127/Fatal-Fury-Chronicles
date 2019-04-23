@@ -43,7 +43,7 @@ takedamagescript	data/chars/andy/scripts/dama0001.c
 didhitscript		data/scripts/common/event_hit.c
 onmovezscript		data/scripts/common/event_move_z.c
 #onspawnscript		data/scripts/common/event_spawn_level_items.c
-onfallscript		data/chars/andy/scripts/fall0001.c
+onfallscript		data/scripts/common/event_fall.c
 onpainscript		data/scripts/common/event_pain.c
 
 # Sub Entites
@@ -1569,7 +1569,7 @@ anim freespecial18
 	delay	6
 	
 	
-	@cmd	bind0008 "paus0001" "visual" 12 1 -10 80 1 1 openborconstant("ANI_FOLLOW3") 0 1
+	#cmd	bind0008 "paus0001" "visual" 12 1 -10 80 1 1 openborconstant("ANI_FOLLOW3") 0 1
 
 
 		frame	data/chars/andy/3_0.png
@@ -1592,7 +1592,7 @@ anim freespecial18
 	delay	6
 	attack	90 100 80 85 9 0 0 0 15
 	#cmd stereo_sound_command_here "sand0007.wav"
-	@cmd	bind0008 "effe0001" "visual" 13 1 15 50 0 1 openborconstant("ANI_FOLLOW11") 0 1
+	#cmd	bind0008 "effe0001" "visual" 13 1 15 50 0 1 openborconstant("ANI_FOLLOW11") 0 1
 		frame	data/chars/andy/andy0243
 	delay	1
 	attack	0
@@ -1633,7 +1633,7 @@ anim freespecial18
 	attack	0
 		frame	data/chars/andy/andy0245
 	delay	-100
-	@cmd	bind0008 "effe0001" "visual3" 13 1 -15 15 0 1 openborconstant("ANI_FOLLOW11") 0 1
+	#cmd	bind0008 "effe0001" "visual3" 13 1 -15 15 0 1 openborconstant("ANI_FOLLOW11") 0 1
 	attack	70 100 110 85 9 10 0 0 15
 	dropv	3 3 0
 		frame	data/chars/andy/andy0246
@@ -1895,7 +1895,7 @@ anim follow4
 	delay	6
 	offset	100 200
 	bbox	0
-	@cmd	bind0008 "paus0001" "visual" 12 1 -10 80 1 1 openborconstant("ANI_FOLLOW5") 0 1
+	#cmd	bind0008 "paus0001" "visual" 12 1 -10 80 1 1 openborconstant("ANI_FOLLOW5") 0 1
 		frame	data/chars/andy/3_0.png
 	#cmd stereo_sound_command_here "vand0020.wav"					#Voice effect.
 		frame	data/chars/andy/andy0202
@@ -1916,7 +1916,7 @@ anim follow4
 	delay	6
 	attack	90 100 80 85 0 1 0 0 5
 	#cmd stereo_sound_command_here "sand0007.wav"
-	@cmd	bind0008 "effe0001" "visual" 13 1 15 50 0 1 openborconstant("ANI_FOLLOW11") 0 1
+	#cmd	bind0008 "effe0001" "visual" 13 1 15 50 0 1 openborconstant("ANI_FOLLOW11") 0 1
 		frame	data/chars/andy/andy0243
 	delay	1
 	attack	0
@@ -1970,7 +1970,7 @@ anim follow4
 		frame	data/chars/andy/andy0245
 		frame	data/chars/andy/andy0245
 	delay	-100
-	@cmd	bind0008 "effe0001" "visual3" 13 1 -15 15 0 1 openborconstant("ANI_FOLLOW11") 0 1
+	#cmd	bind0008 "effe0001" "visual3" 13 1 -15 15 0 1 openborconstant("ANI_FOLLOW11") 0 1
 	attack	70 100 110 85 12 1 0 1 15
 	dropv	3 2 0
 		frame	data/chars/andy/andy0246
@@ -2025,8 +2025,8 @@ anim follow5
 	#cmd stereo_sound_command_here "soun0016.wav"									#Sound effect.
 	#cmd stereo_sound_command_here "vand0039.wav"									#voice effect.
 	@cmd	bind0010 1 15 0 -2 -1 HELDP
-	@cmd	bind0008 "flash" "flash" 0 1 30 100 0 0 0 0 1						#Hit flash
-	@cmd	bind0008 "effe0001" "effe0001" 12 1 30 100 0 0 openborconstant("ANI_FOLLOW9") 0 0	#Spawn "C4 on the face".
+	#cmd	bind0008 "flash" "flash" 0 1 30 100 0 0 0 0 1						#Hit flash
+	#cmd	bind0008 "effe0001" "effe0001" 12 1 30 100 0 0 openborconstant("ANI_FOLLOW9") 0 0	#Spawn "C4 on the face".
 		frame	data/chars/andy/andy0173
 	offset	100 210
 		frame	data/chars/andy/andy0176
@@ -2107,7 +2107,7 @@ anim follow6
 	#cmd stereo_sound_command_here "vand0008.wav"					#Voice effect.
 		frame	data/chars/andy/andy0417
 		frame	data/chars/andy/andy0418
-	@cmd	bind0008 "flash" "flash" 0 1 30 10 0 0 0 0 1
+	#cmd	bind0008 "flash" "flash" 0 1 30 10 0 0 0 0 1
 	#@cmd	dama0001 1 15 10 "ATK_NORMAL9" -1 2.5 3 0 0 0 0
 		frame	data/chars/andy/andy0419
 		frame	data/chars/andy/andy0420
@@ -2172,7 +2172,7 @@ anim follow7
 	delay	7
 		frame	data/chars/andy/andy0391
 		frame	data/chars/andy/andy0392
-	@cmd 	paus0001 1 1000
+	#cmd 	paus0001 1 1000
 		frame	data/chars/andy/andy0393
 		frame	data/chars/andy/andy0394
 	delay	15
@@ -2189,14 +2189,14 @@ anim follow7
 	delay	50
 		frame	data/chars/andy/andy0403
 	delay	5
-	@cmd	paus0001 0 0
+	#cmd	paus0001 0 0
 	#cmd stereo_sound_command_here "vand0015.wav"
 		frame	data/chars/andy/andy0404
 	attack6  115 130 65 20 70 10 0 0 5
 	damageonlanding 0 1
 	dropv	 3 3 0
 	#cmd stereo_sound_command_here "soun0015.wav"
-	@cmd 	bind0008 "effe0001" "effe0001" 13 1 65 52 1 1 openborconstant("ANI_FOLLOW7") 0 1
+	#cmd 	bind0008 "effe0001" "effe0001" 13 1 65 52 1 1 openborconstant("ANI_FOLLOW7") 0 1
 		frame	data/chars/andy/andy0405
 	delay	50
 		frame	data/chars/andy/andy0406
@@ -2218,7 +2218,7 @@ anim follow8
 	delay	4
 	offset	100 200
 	bbox	75 135 30 65
-	@cmd	bind0008 "paus0001" "visual" 12 1 -25 90 -1 1 openborconstant("ANI_FOLLOW5") 0 1
+	#cmd	bind0008 "paus0001" "visual" 12 1 -25 90 -1 1 openborconstant("ANI_FOLLOW5") 0 1
 		frame	data/chars/andy/andy0271
 		frame	data/chars/andy/andy0272
 	#cmd stereo_sound_command_here "sand0003.wav"
@@ -2301,7 +2301,7 @@ anim follow9
 	delay	10
 	attack  140 125 60 20 0 0 0 0 10
 	#cmd stereo_sound_command_here "sand0001.wav"
-	@cmd	bind0008 "effe0001" "effe0001" 13 1 90 38 1 1 openborconstant("ANI_FOLLOW6") 0 1
+	#cmd	bind0008 "effe0001" "effe0001" 13 1 90 38 1 1 openborconstant("ANI_FOLLOW6") 0 1
 		frame	data/chars/andy/andy0566
 	delay	7
 	attack	0
@@ -2312,7 +2312,7 @@ anim follow9
 	delay	10
 	attack  140 125 60 20 0 0 0 0 10
 	#cmd stereo_sound_command_here "sand0001.wav"
-	@cmd	bind0008 "effe0001" "effe0001" 13 1 90 38 1 1 openborconstant("ANI_FOLLOW6") 0 1
+	#cmd	bind0008 "effe0001" "effe0001" 13 1 90 38 1 1 openborconstant("ANI_FOLLOW6") 0 1
 		frame	data/chars/andy/andy0566
 	attack	0
 	delay	7
@@ -2322,7 +2322,7 @@ anim follow9
 	move	0
 		frame	data/chars/andy/andy0391
 		frame	data/chars/andy/andy0392
-	@cmd 	paus0001 1 1000
+	#cmd 	paus0001 1 1000
 		frame	data/chars/andy/andy0393
 		frame	data/chars/andy/andy0394
 	delay	15
@@ -2339,14 +2339,14 @@ anim follow9
 	delay	50
 		frame	data/chars/andy/andy0403
 	delay	5
-	@cmd	paus0001 0 0
+	#cmd	paus0001 0 0
 	#cmd stereo_sound_command_here "vand0015.wav"
 		frame	data/chars/andy/andy0404
 	attack6  115 130 65 20 100 10 0 0 5
 	damageonlanding 0 1
 	dropv	 3 3 0
 	#cmd stereo_sound_command_here "soun0015.wav"
-	@cmd 	bind0008 "effe0001" "effe0001" 14 1 65 52 1 1 openborconstant("ANI_FOLLOW7") 0 1
+	#cmd 	bind0008 "effe0001" "effe0001" 14 1 65 52 1 1 openborconstant("ANI_FOLLOW7") 0 1
 		frame	data/chars/andy/andy0405
 	delay	50
 		frame	data/chars/andy/andy0406
@@ -2705,10 +2705,11 @@ anim follow92
 		frame	data/chars/andy/andy0268
 		frame	data/chars/andy/andy0269
 		frame	data/chars/andy/3_0.png
-	@cmd	setentityvar getlocalvar("self") STATUS 1
+	@cmd	setentityvar getlocalvar("self") "entity_status" 1
 		frame	data/chars/andy/andy0339
 	#cmd stereo_sound_command_here "vand 0003.wav"
-	@cmd	summ0001 "andypa" "andypa" -1 0 240 0 220 1 openborconstant("ANI_FOLLOW1") 0 1
+	# Cut scene poster.
+	#cmd	summ0001 "andypa" "andypa" -1 0 240 0 220 1 openborconstant("ANI_FOLLOW1") 0 1
 		frame	data/chars/andy/andy0340
 		frame	data/chars/andy/andy0341
 		frame	data/chars/andy/andy0342
@@ -2851,7 +2852,7 @@ anim grabforward
 	#cmd stereo_sound_command_here "vand0008.wav"					#Voice effect.
 		frame	data/chars/andy/andy0417
 		frame	data/chars/andy/andy0418
-	@cmd	bind0008 "flash" "flash" 0 1 30 10 0 0 0 0 1
+	#cmd	bind0008 "flash" "flash" 0 1 30 10 0 0 0 0 1
 	#@cmd	dama0001 1 20 10 "ATK_NORMAL9" 1 2.5 3 0 0 0 0
 		frame	data/chars/andy/andy0419
 		frame	data/chars/andy/andy0420
@@ -3001,7 +3002,7 @@ anim grabdown
 	delay	12
 	offset	100 240
 	move	-20
-	@cmd	bind0008 "flash" "flash" 0 1 20 75 0 0 0 0 1
+	#cmd	bind0008 "flash" "flash" 0 1 20 75 0 0 0 0 1
 	#@cmd	dama0001 1 20 10 "ATK_NORMAL" -1 2 2 0 0 0 0
 		frame	data/chars/andy/21_6.png
 	delay	10

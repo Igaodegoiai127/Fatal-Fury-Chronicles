@@ -1,17 +1,14 @@
-#include "data/scripts/vars/entity.h"
-#include "data/scripts/vars/anims.h"
-
 void main()
 {
 	void target = getlocalvar("damagetaker");
 
 	// If not already powered up, and has powered up animation,
 	// then set the power up animation.
-	if (getentityvar(target, STATUS) != 1)
+	if (getentityvar(target, "entity_status") != 1)
 	{
-		if (getentityproperty(target, "animvalid", POWUP))
+		if (getentityproperty(target, "animvalid", openborconstant("ANI_FOLLOW92")))
 		{
-			changeentityproperty(target, "animation", POWUP);
+			changeentityproperty(target, "animation", openborconstant("ANI_FOLLOW92"));
 		}
 	}
 }

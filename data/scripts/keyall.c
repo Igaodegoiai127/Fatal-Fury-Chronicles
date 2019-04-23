@@ -1,8 +1,4 @@
-#include "data/scripts/vars/anims.h"
-#include "data/scripts/vars/entity.h"
-
 #include "data/scripts/dc_disney/main.c"
-
 
 void oncreate()
 {
@@ -21,6 +17,11 @@ void ondestroy()
 	log("- oncreate().");
 	log("\n");
 }
+
+#define ANIMATION_AIR_BLOCK openborconstant("ANI_FOLLOW80")
+#define ANIMATION_AIR_BACK_ATTACK openborconstant("ANI_FOLLOW81")
+#define ANIMATION_ALTERNATE_JUMPATTACK2 openborconstant("ANI_FOLLOW89")
+#define ANIMATION_DOWN_ATTACK openborconstant("ANI_FOLLOW82")
 
 void main(){
     
@@ -42,7 +43,7 @@ void main(){
 		return;
 	}
 
-	// Get AI status flags.
+	// Get AI "entity_status" flags.
 	idle		= getentityproperty(ent, "aiflag", "idling");    
 	attacking	= getentityproperty(ent, "aiflag", "attacking");
 	jumping		= getentityproperty(ent, "aiflag", "jumping");
@@ -81,12 +82,6 @@ void main(){
 		{
 			return;
 		}
-
-		// Air back attack.
-		if(dc_command_air_back_attack(player_index);
-		{
-			return;
-		}
            
 		// Alternate drop attack (Attack + down, not moving).
 		if (dc_command_air_alternate_drop_attack(player_index))
@@ -96,18 +91,8 @@ void main(){
     }
     else if (attacking)
     {                
-		// Dodge counter attack.
-		if (dc_command_dodge_attack(player_index))
-		{
-			return;
-		}
-
-		//  Side step follow up attacks.
-		if (dc_command_sidestep_follow_up(player_index))
-		{
-			return;
-		}
-    }
+		
+    }	
 }
 
 // Caskey, Damon V.
@@ -152,76 +137,6 @@ int dc_check_sidestep_complete(void ent)
 
 	// Got this far - we can return true.
 	return 1;
-}
-
-// Caskey, Damon V.
-// 2018-11-03
-//
-// Perform sidestep attacks if available.
-int dc_command_sidestep_follow_up(int player_index)
-{
-	void ent;
-	int key_press;
-	int key_hold;
-	int success; 
-
-	// Get base entity.
-	ent = getplayerproperty(player_index, "entity");
-
-	// Have to be finished with sidestep.
-	if (!dc_check_sidestep_complete(ent))
-	{
-		return 0;
-	}
-
-	// Verify key press.
-	key_press = getplayerproperty(player_index, "newkeys");
-
-	if (!(key_press & openborconstant("FLAG_ATTACK")))
-	{
-		return 0;
-	}
-
-	// Must have the animation.
-	if (!getentityproperty(ent, "animvalid", DODATK))
-	{
-		return 0;
-	}
-
-	// Set the direction.
-	dc_command_direction_switch(player_index);
-
-	//  Perform action based on direction key.
-	key_hold = getplayerproperty(player_index, "keys");
-
-	if (key_hold & openborconstant("FLAG_MOVEUP"))
-	{
-		success = dc_disney_perform_attack(DODATKSU);
-	}
-	else if (key_hold & openborconstant("FLAG_MOVEDOWN"))
-	{
-		success = dc_disney_perform_attack(DODATKSD);
-	}
-	else
-	{
-		success = dc_disney_perform_attack(DODATKD);
-	}
-
-	// If animation set function returned true, then
-	// animation was available and played. Return 
-	// true.
-	if (success)
-	{
-		// Clear key flag from key press.
-		key_press -= openborconstant("FLAG_ATTACK");
-		changeplayerproperty(player_index, "newkeys", key_press);
-
-		// Return true.
-		return 1;
-	}
-
-	return 0;
-	
 }
 
 // Caskey, Damon V.
@@ -400,69 +315,16 @@ int dc_command_airblock(int player_index)
 	}
 
 	// Must have an air block.
-	if (!getentityproperty(ent, "animvalid", AIRBLOCK))
+	if (!getentityproperty(ent, "animvalid", ANIMATION_AIR_BLOCK))
 	{
 		return 0;
 	}
 
 	// Set the animation.
-	dc_disney_play_animation(AIRBLOCK);
+	dc_disney_play_animation(ANIMATION_AIR_BLOCK);
 
 	// Clear key flag from key press.
 	key_press -= openborconstant("FLAG_SPECIAL");
-	changeplayerproperty(player_index, "newkeys", key_press);
-
-	// Return true.
-	return 1;
-
-}
-
-// Caskey, Damon  V.
-// 2018-11-03
-//
-// Perform air back attack on command if possible. Return true on success.
-int dc_command_air_back_attack(int player_index)
-{
-	void ent;
-	int key_press;
-	int attacking;
-	
-	// Get base entity.
-	ent = getplayerproperty(player_index, "entity");
-
-	// Verify key press.
-	key_press = getplayerproperty(player_index, "newkeys");
-
-	if (!(key_press & openborconstant("FLAG_ATTACK")))
-	{
-		return 0;
-	}
-
-	// Verify key back.
-	if (!dc_check_key_back(player_index))
-	{
-		return 0;
-	}
-
-	// Can't be attacking.
-	attacking = getentityproperty(ent, "aiflag", "attacking");
-
-	if (attacking)
-	{
-		return 0;
-	}
-
-	// Must have the animation.
-	if (!getentityproperty(ent, "animvalid", AIRBACK))
-	{
-		return 0;
-	}
-
-	// Set the animation.
-	dc_disney_play_animation(AIRBACK);
-
-	// Clear key flag from key press.
-	key_press -= openborconstant("FLAG_ATTACK");
 	changeplayerproperty(player_index, "newkeys", key_press);
 
 	// Return true.
@@ -520,61 +382,13 @@ int dc_command_air_alternate_drop_attack(int player_index)
 	}
 
 	// Must have the animation.
-	if (!getentityproperty(ent, "animvalid", AIRJ2AL))
+	if (!getentityproperty(ent, "animvalid", ANIMATION_ALTERNATE_JUMPATTACK2))
 	{
 		return 0;
 	}
 
 	// Set the animation.
-	dc_disney_play_animation(AIRJ2AL);
-
-	// Clear key flag from key press.
-	key_press -= openborconstant("FLAG_ATTACK");
-	changeplayerproperty(player_index, "newkeys", key_press);
-
-	// Return true.
-	return 1;
-
-}
-
-// Caskey, Damon  V.
-// 2018-11-03
-//
-// Perform attack out of dodge while changing direction
-// accoring to player command. Return true on success.
-int dc_command_dodge_attack(int player_index)
-{
-	void ent;
-	int key_press;
-	int animation;
-
-	// Get base entity.
-	ent = getplayerproperty(player_index, "entity");
-
-	animation = getentityproperty(ent, "animationid");
-
-	if (animation != openborconstant("ANI_SPECIAL"))
-	{
-		return 0;
-	}
-
-	// Verify key press.
-	key_press = getplayerproperty(player_index, "newkeys");
-
-	if (!(key_press & openborconstant("FLAG_ATTACK")))
-	{
-		return 0;
-	}
-
-	// Must have the animation.
-	if (!getentityproperty(ent, "animvalid", DODATK))
-	{
-		return 0;
-	}
-
-	// Set the direction and animation.
-	dc_command_direction_switch(player_index);
-	dc_disney_perform_attack(DODATK);
+	dc_disney_play_animation(ANIMATION_ALTERNATE_JUMPATTACK2);
 
 	// Clear key flag from key press.
 	key_press -= openborconstant("FLAG_ATTACK");
@@ -618,14 +432,14 @@ int dc_try_down_attack(int player_index)
 	}
 
 	// Must have a down attack.
-	if (!getentityproperty(ent, "animvalid", ATKDOWN))
+	if (!getentityproperty(ent, "animvalid", ANIMATION_DOWN_ATTACK))
 	{
 		return 0;
 	}
 
 	// Must have a target within range of Down attack.
 	// Any target in range of down attack?
-	target = findtarget(ent, ATKDOWN);
+	target = findtarget(ent, ANIMATION_DOWN_ATTACK);
 
 	if (!target)
 	{
@@ -646,7 +460,7 @@ int dc_try_down_attack(int player_index)
 	}
 
 	// If we got this far then we can set a down attack.
-	dc_disney_perform_attack(ATKDOWN);
+	dc_disney_perform_attack(ANIMATION_DOWN_ATTACK);
 
 	// Stop moving in case we were walking.
 	changeentityproperty(ent, "velocity", 0, 0, 0); 

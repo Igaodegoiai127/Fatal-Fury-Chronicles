@@ -1,5 +1,3 @@
-#include "data/scripts/vars/entity.h"
-
 //Terry Bogard key key capture.
 
 void main(){

@@ -1,7 +1,5 @@
 //Blocked by obstacle.
 
-#include "data/scripts/com/bind0008.h"  
-
 #include "data/scripts/dc_damage/main.c"
 
 void main()
@@ -62,7 +60,7 @@ void obstacle_block_main()
 				iDamage += ((-iXDir) * 3);																//Set damage (Resigned velocity * 3).
 			}
 
-			bind0008("flash", "flash", 0, 1, 0, 0, 0, 0, 0, 0, 1);										//Spawn flash.
+			// bind0008("flash", "flash", 0, 1, 0, 0, 0, 0, 0, 0, 1);										//Spawn flash.
 
 			// Damage self
 			dc_damage_set_entity(vSelf);

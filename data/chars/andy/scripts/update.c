@@ -1,6 +1,4 @@
-#include "data/scripts/vars/entity.h"
 #include "data/scripts/dc_afterimage/main.c"
-#include "data/scripts/com/trai0003.h"
 
 //Andy Bogard's update.
 
@@ -8,12 +6,12 @@ void main()
 {
     void vSelf      = getlocalvar("self");
     int  iAni       = getentityproperty(vSelf, "animationid");
-    int  iStatus    = getentityvar(vSelf, STATUS);
+    int  entity_status = getentityvar(vSelf, "entity_status");
 
-    if (iStatus == 1)
+    if (entity_status == 1)
     {
         trai0002(vSelf); //Shadow trails.
-        trai0003(); //After hits.
+        //trai0003(); //After hits.
         return;
     }
 
