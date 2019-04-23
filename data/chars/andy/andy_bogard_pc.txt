@@ -1289,7 +1289,7 @@ anim freespecial10
 	delay	4
 	#cmd stereo_sound_command_here "sand0003.wav"
 	attack	65 100 95 35 0 0 0 0 15
-	@cmd	bind0003 "andybe" "andybe" 2 1 15 60 1 1 5
+	#cmd	bind0003 "andybe" "andybe" 2 1 15 60 1 1 5
 		frame	data/chars/andy/andy0256
 	delay	1
 	attack	0
@@ -1597,7 +1597,7 @@ anim freespecial18
 	delay	1
 	attack	0
 	#cmd stereo_sound_command_here "sand0008.wav"
-	@cmd	bind0003 "andybe" "visual2" 3 1 1 1 1 1 6
+	#cmd	bind0003 "andybe" "visual2" 3 1 1 1 1 1 6
 		frame	data/chars/andy/andy0243
 	delay	3
 	attack	90 100 110 85 9 0 0 0 10
@@ -1921,7 +1921,7 @@ anim follow4
 	delay	1
 	attack	0
 	#cmd stereo_sound_command_here "sand0008.wav"
-	@cmd	bind0003 "andybe" "visual2" 3 1 1 1 1 1 6
+	#cmd	bind0003 "andybe" "visual2" 3 1 1 1 1 1 6
 		frame	data/chars/andy/andy0243
 	delay	3
 	attack	90 100 110 85 0 1 0 0 5

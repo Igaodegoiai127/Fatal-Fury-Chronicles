@@ -7,7 +7,6 @@ Andy Bogard
 #include "data/scripts/vars/entity.h"
 
 
-#include "data/scripts/com/bind0003.h"
 #include "data/scripts/com/bind0008.h"
 #include "data/scripts/com/targ0001.h"
 #include "data/scripts/com/paus0001.h"

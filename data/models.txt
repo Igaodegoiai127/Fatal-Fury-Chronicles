@@ -1,5 +1,5 @@
 colourselect 	1
-ajspecial 		1
+ajspecial 		0
 spdirection 	1 1 1 1
 maxfollows		120
 maxidles		4

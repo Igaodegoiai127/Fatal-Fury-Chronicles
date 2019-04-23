@@ -31,13 +31,7 @@ anim attack2
 	frame	data/chars/misc/blank.png
 	frame	data/chars/galford/160_1_1_trail_0.png
 	frame	data/chars/galford/160_2_1_trail_0.png
-	frame	data/chars/galford/160_3_0_trail_0.png
-
-		@cmd	killentity getlocalvar("self")
-
-	frame	data/chars/misc/blank.png
-	frame	data/chars/misc/blank.png
-	frame	data/chars/misc/blank.png
+	frame	data/chars/galford/160_3_0_trail_0.png		
 
 anim attack3
 
@@ -50,11 +44,7 @@ anim attack3
 	frame	data/chars/misc/blank.png
 	frame	data/chars/galford/806_2_0_trail_0.png
 	frame	data/chars/galford/806_3_0_trail_0.png
-	frame	data/chars/galford/806_4_0_trail_0.png
-
-		@cmd	killentity getlocalvar("self")
-
-	frame	data/chars/misc/blank.png
+	frame	data/chars/galford/806_4_0_trail_0.png		
 
 anim attack5
 
@@ -67,14 +57,7 @@ anim attack5
 	frame	data/chars/misc/blank.png
 	frame	data/chars/misc/blank.png
 	frame	data/chars/galford/804_1_0_trail_0.png
-	frame	data/chars/galford/804_3_0_trail_0.png
-	frame	data/chars/misc/blank.png
-	frame	data/chars/misc/blank.png
-	frame	data/chars/misc/blank.png
-
-		@cmd	killentity getlocalvar("self")
-
-	frame	data/chars/misc/blank.png
+	frame	data/chars/galford/804_3_0_trail_0.png	
 
 anim attack6
 
@@ -86,8 +69,4 @@ anim attack6
 	frame	data/chars/misc/blank.png
 	frame	data/chars/galford/805_1_0_trail_0.png
 	frame	data/chars/galford/805_3_0_trail_0.png
-	frame	data/chars/misc/blank.png
-
-		@cmd	killentity getlocalvar("self")
-
-	frame	data/chars/misc/blank.png
+	
