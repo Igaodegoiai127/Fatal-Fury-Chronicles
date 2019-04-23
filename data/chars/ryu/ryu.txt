@@ -30,6 +30,7 @@ bflash			Block
 
 load	ryu_hadouken
 
+com		a + j		freespecial2
 com		d -> f -> a		freespecial10
 com		f -> d -> f -> a		freespecial11
 
@@ -1347,3 +1348,303 @@ anim freespecial11 # Upper Thrust Kick
 	frame	data/chars/ryu/16_4.png
 	
 	
+
+anim jumpattack # Vertical jump attack	
+	
+	delay	7
+	offset	82 147
+	
+	bbox.position.x 67
+	bbox.position.y 37
+	bbox.size.x 31
+	bbox.size.y 90
+
+	frame	data/chars/ryu/39_0.png
+	
+	@cmd	dc_fidelity_quick_play DC_FIDELITY_TYPE_SOUND_ATTACK_HEAVY
+	@cmd	dc_fidelity_quick_play DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_HEAVY
+	
+	frame	data/chars/ryu/39_1.png
+	
+	bbox.position.x 73
+	bbox.position.y 33
+	bbox.size.x 34
+	bbox.size.y 97
+	
+	attack.damage.force 16
+	attack.effect.hit.flash.model flash_fatal_fury
+	attack.position.x 83
+	attack.position.y 69
+	attack.reaction.fall.force 1
+	attack.reaction.pause.time 12
+	attack.size.x 67
+	attack.size.y 21
+	
+	frame	data/chars/ryu/39_2.png
+	
+	delay 8
+	
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.size.x 0
+	attack.size.y 0
+	
+	frame	data/chars/ryu/39_3.png
+	
+	bbox.position.x 67
+	bbox.position.y 32
+	bbox.size.x 47
+	bbox.size.y 85
+	
+	frame	data/chars/ryu/39_4.png	
+	frame	data/chars/ryu/39_5.png
+	
+	bbox.position.x 68
+	bbox.position.y 38
+	bbox.size.x 37
+	bbox.size.y 89
+	
+	frame	data/chars/ryu/10_7.png
+	
+	bbox.position.x 64
+	bbox.position.y 31
+	bbox.size.x 39
+	bbox.size.y 105
+	
+	frame	data/chars/ryu/10_8.png
+	
+	
+
+anim jumpattack2 # Knee of DOOM!
+	
+	delay	5
+	offset	82 147
+	
+	bbox.position.x 67
+	bbox.position.y 41
+	bbox.size.x 38
+	bbox.size.y 60
+
+	frame	data/chars/ryu/40_0.png
+	
+	@cmd	dc_fidelity_quick_play DC_FIDELITY_TYPE_SOUND_ATTACK_LIGHT
+	@cmd	dc_fidelity_quick_play DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_MEDIUM
+	
+	attack.damage.force 12
+	attack.effect.hit.flash.model flash_fatal_fury
+	attack.position.x 72
+	attack.position.y 80
+	attack.reaction.fall.force 1
+	attack.reaction.pause.time 12
+	attack.size.x 48
+	attack.size.y 35
+	
+	frame	data/chars/ryu/40_1.png
+	
+	delay	8
+	
+	attack.damage.force 6
+	attack.position.x 0
+	attack.position.y 0
+	attack.size.x 0
+	attack.size.y 0
+	
+	frame	data/chars/ryu/40_2.png	
+	frame	data/chars/ryu/40_3.png
+	frame	data/chars/ryu/40_2.png	
+	frame	data/chars/ryu/40_3.png
+	frame	data/chars/ryu/40_2.png	
+	frame	data/chars/ryu/40_3.png
+	frame	data/chars/ryu/40_2.png	
+	frame	data/chars/ryu/40_3.png
+	frame	data/chars/ryu/40_2.png	
+	frame	data/chars/ryu/40_3.png
+	frame	data/chars/ryu/40_2.png	
+	frame	data/chars/ryu/40_3.png
+	
+	bbox.position.x 68
+	bbox.position.y 40
+	bbox.size.x 34
+	bbox.size.y 65
+	
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.size.x 0
+	attack.size.y 0
+	
+	frame	data/chars/ryu/40_4.png
+	
+	bbox.position.x 68
+	bbox.position.y 38
+	bbox.size.x 37
+	bbox.size.y 89
+	
+	frame	data/chars/ryu/10_6.png
+	frame	data/chars/ryu/10_7.png
+	
+	bbox.position.x 64
+	bbox.position.y 31
+	bbox.size.x 39
+	bbox.size.y 105
+	
+	frame	data/chars/ryu/10_8.png
+anim jumpforward # Heel Kick
+	
+	delay	7
+	offset	82 147
+	
+	bbox.position.x 61
+	bbox.position.y 40
+	bbox.size.x 41
+	bbox.size.y 60
+
+	frame	data/chars/ryu/41_0.png
+	
+	@cmd	dc_fidelity_quick_play DC_FIDELITY_TYPE_SOUND_ATTACK_HEAVY
+	@cmd	dc_fidelity_quick_play DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_HEAVY
+	
+	frame	data/chars/ryu/41_1.png
+	
+	
+	attack.damage.force 16
+	attack.effect.hit.flash.model flash_fatal_fury
+	attack.position.x 76
+	attack.position.y 84
+	attack.reaction.fall.force 1
+	attack.reaction.pause.time 12
+	attack.size.x 74
+	attack.size.y 22
+	
+	frame	data/chars/ryu/41_2.png
+	
+	delay 15	
+	
+	bbox.position.x 61
+	bbox.position.y 41
+	bbox.size.x 41
+	bbox.size.y 59
+	
+	attack.damage.force 8
+		
+	frame	data/chars/ryu/41_3.png
+	
+	delay 8
+	
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.size.x 0
+	attack.size.y 0
+	
+	bbox.position.x 62
+	bbox.position.y 42
+	bbox.size.x 43
+	bbox.size.y 64
+	
+	frame	data/chars/ryu/41_4.png
+	
+	bbox.position.x 71
+	bbox.position.y 40
+	bbox.size.x 36
+	bbox.size.y 70
+	
+	frame	data/chars/ryu/10_6.png
+	
+	bbox.position.x 68
+	bbox.position.y 36
+	bbox.size.x 36
+	bbox.size.y 82
+	
+	frame	data/chars/ryu/10_7.png
+	
+	bbox.position.x 64
+	bbox.position.y 31
+	bbox.size.x 39
+	bbox.size.y 105
+	
+	frame	data/chars/ryu/10_8.png
+anim freespecial2 # Back attack
+	
+	range -50 0
+	
+	delay	4
+	offset	82 147
+	
+	bbox.position.x 71
+	bbox.position.y 50
+	bbox.size.x 29
+	bbox.size.y 98
+
+	frame	data/chars/ryu/79_0.png	
+	frame	data/chars/ryu/79_1.png
+	
+	delay 5
+	
+	bbox.position.x 77
+	bbox.position.y 50
+	bbox.size.x 31
+	bbox.size.y 97
+	
+	@cmd	dc_fidelity_quick_play DC_FIDELITY_TYPE_SOUND_ATTACK_HEAVY
+	@cmd	dc_fidelity_quick_play DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_MEDIUM
+	
+	frame	data/chars/ryu/79_2.png	
+	
+	bbox.position.x 87
+	bbox.position.y 48
+	bbox.size.x 37
+	bbox.size.y 98
+	
+	frame	data/chars/ryu/79_3.png
+	
+	bbox.position.x 84
+	bbox.position.y 53
+	bbox.size.x 42
+	bbox.size.y 93
+	
+	attack.damage.force 12
+	attack.effect.hit.flash.model flash_fatal_fury
+	attack.position.x 26
+	attack.position.y 43
+	attack.reaction.fall.force 1
+	attack.reaction.pause.time 12
+	attack.size.x 57
+	attack.size.y 31
+	
+	frame	data/chars/ryu/79_4.png
+	
+	delay 8
+	
+	frame	data/chars/ryu/79_5.png
+	
+	bbox.position.x 84
+	bbox.position.y 46
+	bbox.size.x 38
+	bbox.size.y 101
+	
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.size.x 0
+	attack.size.y 0
+	
+	frame	data/chars/ryu/79_6.png
+	
+	bbox.position.x 68
+	bbox.position.y 51
+	bbox.size.x 39
+	bbox.size.y 98
+	
+	frame	data/chars/ryu/79_7.png
+	
+	delay 6
+	
+	bbox.position.x 65
+	bbox.position.y 50
+	bbox.size.x 37
+	bbox.size.y 96
+	
+	frame	data/chars/ryu/79_1.png
+	frame	data/chars/ryu/79_0.png
