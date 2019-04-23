@@ -1,37 +1,7 @@
 #include "data/scripts/dc_gauntlet/config.h"
 
 #import "data/scripts/dc_gauntlet/instance.c"
-
-// Base entity functions will act on.
-// Get
-void dc_gauntlet_get_entity()
-{
-	int instance;
-	void result;
-
-	// Get instance.
-	instance = dc_gauntlet_get_instance();
-
-	result = getlocalvar(instance + DC_GAUNTLET_MEMBER_ENT);
-
-	if (typeof(result) != openborconstant("VT_PTR"))
-	{
-		result = DC_GAUNTLET_DEFAULT_ENT;
-	}
-
-	return result;
-}
-
-// Set
-void dc_gauntlet_set_entity(void value)
-{
-	int instance;
-
-	// Get instance.
-	instance = dc_gauntlet_get_instance();
-
-	setlocalvar(instance + DC_GAUNTLET_MEMBER_ENT, value);
-}
+#import "data/scripts/dc_gauntlet/entity.c"
 
 void dc_gauntlet_set_spawn_entry(char property, void value)
 {
@@ -46,5 +16,25 @@ void dc_gauntlet_clear_spawn_entry()
 void dc_gauntlet_spawn()
 {
 	return spawn();
+}
+
+// Caskey, Damon V.
+// 2019-04-23
+//
+// Just a one step way to run spawn functions when we
+// all we need is a quick spawn.
+void dc_gauntlet_quick_spawn(char model_name)
+{
+	void spawn;
+
+	dc_gauntlet_clear_spawn_entry();	
+
+	dc_gauntlet_set_spawn_entry("name", model_name);
+
+	spawn = dc_gauntlet_spawn();
+
+	dc_gauntlet_clear_spawn_entry();
+
+	return spawn;
 }
 
