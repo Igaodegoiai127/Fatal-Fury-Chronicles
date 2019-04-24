@@ -90,8 +90,7 @@ void main(){
 		}
     }
     else if (attacking)
-    {                
-		
+    {	
     }	
 }
 

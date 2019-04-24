@@ -5,7 +5,7 @@ maxfollows		120
 maxidles		4
 maxwalks		4
 maxattacks      10
-maxfreespecials 100
+maxfreespecials 120
 maxattacktypes  20
 noaircancel     2
 
