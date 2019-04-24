@@ -30,14 +30,15 @@ bflash			Block
 
 load	ryu_hadouken
 
-com		a + j		freespecial2
-com		d -> a		freespecial3 # Plane force Down
-com		u -> a		freespecial4 # Plane force Up
-com		d -> a + j		freespecial5 # Plane attack Down
-com		u -> a + j		freespecial6 # Plane attack Down
-com		d -> f -> a		freespecial10
-com		f -> d -> f -> a		freespecial11 # Upper Thrust Kick
-com     f -> d -> f -> j Freespecial12 # Shoryuken
+com		a + j				freespecial2
+com		d -> a				freespecial3	# Plane force Down
+com		u -> a				freespecial4	# Plane force Up
+com		d -> a + j			freespecial5	# Plane attack Down
+com		u -> a + j			freespecial6	# Plane attack Down
+com		d -> f -> a			freespecial10	# Hadouken
+com		f -> d -> f -> a	freespecial11	# Upper Thrust Kick
+com     f -> d -> f -> j	freespecial12	# Shoryuken
+com     f -> d -> j			freespecial13	# Hurricane Kick
 
 palette			data/chars/ryu/pal_0.act
 alternatepal	data/chars/ryu/pal_1.act
@@ -258,18 +259,31 @@ anim jumpdelay
 
 	frame	data/chars/ryu/7_0.png
 
+
 anim jumpland
 
-		delay	4
-		offset	82 147
+	delay	4
+	offset	82 147
 	
-		bbox.position.x	66
-		bbox.position.y 49
-		bbox.size.x		38
-		bbox.size.y		98
+	bbox.position.x 69
+	bbox.position.y 58
+	bbox.size.x 36
+	bbox.size.y 88
 
 	frame	data/chars/ryu/7_0.png
+	
+	bbox.position.x 66
+	bbox.position.y 76
+	bbox.size.x 39
+	bbox.size.y 73
+	
 	frame	data/chars/ryu/7_1.png
+	
+	bbox.position.x 69
+	bbox.position.y 58
+	bbox.size.x 36
+	bbox.size.y 88
+	
 	frame	data/chars/ryu/7_0.png
 
 anim jump
@@ -2353,3 +2367,189 @@ anim freespecial12 # Shoryuken
 	bbox.size.y 91
 	
 	frame	data/chars/ryu/7_0.png
+
+anim freespecial13 # Hurricane Kick
+	
+	energycost 8
+	mponly 1
+	
+	jumpframe 1 2 0 0 jump_liftoff
+	landframe 21 jump_land
+	
+	#loop 1 8 10
+	
+	range 10 72
+	
+	delay	3
+	offset	82 147
+	
+	frame	data/chars/ryu/7_0.png	
+	
+	@cmd	dc_fidelity_quick_play DC_FIDELITY_TYPE_SOUND_ATTACK_HEAVY
+	@cmd	dc_fidelity_quick_play "Tatsu"
+	
+	attack.damage.force 8
+	attack.effect.hit.flash.model flash_fatal_fury
+	attack.position.x 83
+	attack.position.y 72
+	attack.size.x 35
+	attack.size.y 44
+	
+	frame	data/chars/ryu/47_0.png
+	
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.size.x 0
+	attack.size.y 0
+	
+	@cmd dc_velocity_set_velocity_x 2
+	@cmd dc_velocity_apply_velocity_x
+	
+	frame	data/chars/ryu/47_1.png
+	frame	data/chars/ryu/47_2.png
+	frame	data/chars/ryu/47_3.png
+	
+	# Float in the air.
+	@cmd set_entity_property getlocalvar("self") "toss_time" openborvariant("elapsed_time")+25
+	frame	data/chars/ryu/47_4.png
+	
+	# Active (leg extended)
+	
+	# Start 1 Spin	
+	
+	delay 5
+	
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.size.x 0
+	attack.size.y 0
+	
+	frame	data/chars/ryu/47_5.png
+	
+	# Float in the air.
+	@cmd set_entity_property getlocalvar("self") "toss_time" openborvariant("elapsed_time")+100
+	@cmd	dc_fidelity_quick_play DC_FIDELITY_TYPE_SOUND_ATTACK_HEAVY
+	
+	attack.damage.force 16
+	attack.effect.hit.flash.model flash_fatal_fury
+	attack.position.x 81
+	attack.position.y 65
+	attack.reaction.fall.force 1
+	attack.reaction.pause.time 12
+	attack.size.x 70
+	attack.size.y 20
+	attack.size.z.1 15
+	attack.size.z.2 15
+	
+	jugglecost 10
+	
+	frame	data/chars/ryu/47_6.png
+	
+	attack.damage.force 16
+	attack.effect.hit.flash.model flash_fatal_fury
+	attack.position.x 73
+	attack.position.y 64
+	attack.reaction.fall.force 1
+	attack.reaction.pause.time 12
+	attack.size.x 37
+	attack.size.y 25
+	attack.size.z.1 0
+	attack.size.z.2 30
+	
+	jugglecost 10
+	
+	frame	data/chars/ryu/47_7.png	
+	
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.size.x 0
+	attack.size.y 0
+	
+	frame	data/chars/ryu/47_8.png	
+	
+	attack.damage.force 16
+	attack.effect.hit.flash.model flash_fatal_fury
+	attack.position.x 30
+	attack.position.y 65
+	attack.reaction.fall.force 1
+	attack.reaction.pause.time 12
+	attack.size.x 53
+	attack.size.y 20
+	attack.size.z.1 15
+	attack.size.z.2 15
+	
+	jugglecost 10
+	
+	frame	data/chars/ryu/47_9.png	
+	
+	attack.damage.force 16
+	attack.effect.hit.flash.model flash_fatal_fury
+	attack.position.x 64
+	attack.position.y 64
+	attack.reaction.fall.force 1
+	attack.reaction.pause.time 12
+	attack.size.x 37
+	attack.size.y 25
+	attack.size.z.1 30
+	attack.size.z.2 0
+	
+	jugglecost 10
+	
+	# End 1 spin
+	frame	data/chars/ryu/47_10.png
+
+	# If player is holding Jump and hasn't
+	# run out of spins oe energy we loop back.	
+	@cmd dc_disney_loop 6
+	
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.size.x 0
+	attack.size.y 0
+		
+	frame	data/chars/ryu/47_11.png
+	
+	# Stop floating.
+	@cmd set_entity_property getlocalvar("self") "toss_time" openborvariant("elapsed_time")
+	frame	data/chars/ryu/47_12.png
+	frame	data/chars/ryu/47_13.png
+	frame	data/chars/ryu/47_14.png
+	frame	data/chars/ryu/47_15.png
+	frame	data/chars/ryu/47_16.png
+
+	# Falling jump.
+	frame	data/chars/ryu/10_7.png
+	
+	delay -1000
+	
+	frame	data/chars/ryu/10_8.png
+	
+	delay	4
+	offset	82 147
+	
+	bbox.position.x 69
+	bbox.position.y 58
+	bbox.size.x 36
+	bbox.size.y 88
+
+	frame	data/chars/ryu/7_0.png
+	
+	bbox.position.x 66
+	bbox.position.y 76
+	bbox.size.x 39
+	bbox.size.y 73
+	
+	frame	data/chars/ryu/7_1.png
+	
+	bbox.position.x 69
+	bbox.position.y 58
+	bbox.size.x 36
+	bbox.size.y 88
+	
+	frame	data/chars/ryu/7_0.png
+	
+	
