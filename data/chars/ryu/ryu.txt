@@ -2224,3 +2224,19 @@ anim runjumpattack # Dive kick
 	bbox.size.y 105
 	
 	frame	data/chars/ryu/10_8.png
+
+anim get
+	
+	delay	10
+	offset	82 147	
+
+	bbox.position.x	66
+	bbox.position.y 49
+	bbox.size.x		38
+	bbox.size.y		98
+
+	frame	data/chars/ryu/83_0.png
+	frame	data/chars/ryu/83_1.png
+	frame	data/chars/ryu/83_2.png	
+	frame	data/chars/ryu/57_8.png
+	frame	data/chars/ryu/19_0.png
