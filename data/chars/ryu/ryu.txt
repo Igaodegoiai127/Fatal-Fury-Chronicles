@@ -36,7 +36,8 @@ com		u -> a		freespecial4 # Plane force Up
 com		d -> a + j		freespecial5 # Plane attack Down
 com		u -> a + j		freespecial6 # Plane attack Down
 com		d -> f -> a		freespecial10
-com		f -> d -> f -> a		freespecial11
+com		f -> d -> f -> a		freespecial11 # Upper Thrust Kick
+com     f -> d -> f -> j Freespecial12 # Shoryuken
 
 palette			data/chars/ryu/pal_0.act
 alternatepal	data/chars/ryu/pal_1.act
@@ -2240,3 +2241,115 @@ anim get
 	frame	data/chars/ryu/83_2.png	
 	frame	data/chars/ryu/57_8.png
 	frame	data/chars/ryu/19_0.png
+
+anim freespecial12 # Shoryuken
+	
+	energycost 10
+	mponly 1
+	
+	jumpframe 3 5 0.4 0 jump_liftoff
+	dropframe 4
+	landframe 10 jump_land
+	
+	loop 1 8 10
+	
+	range 10 72
+	
+	delay	5
+	offset	82 147
+	
+	frame	data/chars/ryu/45_0.png	
+	
+	@cmd	dc_fidelity_quick_play DC_FIDELITY_TYPE_SOUND_ATTACK_HEAVY
+	@cmd	dc_fidelity_quick_play "Shoryuken"
+	
+	
+	frame	data/chars/ryu/45_1.png
+	
+	attack.damage.force 19
+	attack.position.x 90
+	attack.position.y 59
+	attack.reaction.fall.force 1
+	attack.reaction.fall.velocity.x 1.5
+	attack.reaction.fall.velocity.y 5.0
+	attack.reaction.fall.velocity.z 0
+	attack.reaction.pause.time 12
+	attack.size.x 56
+	attack.size.y 39
+	
+	frame	data/chars/ryu/45_2.png
+
+	delay -1000
+
+	bbox.position.x 75
+	bbox.position.y 28
+	bbox.size.x 26
+	bbox.size.y 50
+	
+	attack.damage.force 16
+	attack.position.x 89
+	attack.position.y -3
+	attack.reaction.fall.force 1
+	attack.reaction.fall.velocity.x 1.5
+	attack.reaction.fall.velocity.y 5.0
+	attack.reaction.fall.velocity.z 0
+	attack.reaction.pause.time 12
+	attack.size.x 46
+	attack.size.y 85
+	
+	frame	data/chars/ryu/45_3.png
+	
+	delay 5
+	
+	frame	data/chars/ryu/45_4.png
+	
+	
+	
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.size.x 0
+	attack.size.y 0
+	
+	bbox.position.x 75
+	bbox.position.y 31
+	bbox.size.x 32
+	bbox.size.y 75
+	
+	frame	data/chars/ryu/45_5.png
+	frame	data/chars/ryu/45_6.png	
+	frame	data/chars/ryu/45_7.png
+	
+	# Loop start
+	frame	data/chars/ryu/45_8.png
+
+	# Loop End	
+	frame	data/chars/ryu/45_9.png
+	
+	bbox.position.x 69
+	bbox.position.y 48
+	bbox.size.x 37
+	bbox.size.y 101
+	
+	frame	data/chars/ryu/45_10.png
+	
+	bbox.position.x 69
+	bbox.position.y 56
+	bbox.size.x 35
+	bbox.size.y 91
+	
+	frame	data/chars/ryu/7_0.png
+	
+	bbox.position.x 66
+	bbox.position.y 77
+	bbox.size.x 43
+	bbox.size.y 73
+	
+	frame	data/chars/ryu/7_1.png
+	
+	bbox.position.x 69
+	bbox.position.y 56
+	bbox.size.x 35
+	bbox.size.y 91
+	
+	frame	data/chars/ryu/7_0.png
