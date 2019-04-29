@@ -1,0 +1,66 @@
+# Hit flash
+
+name		control
+type		none
+shadow		0
+
+onspawnscript 	data/chars/misc/flash/flash/scripts/event_spawn.c
+onkillscript  	data/scripts/common/event_kill.c
+
+anim idle	
+	
+	delay	2
+	offset	130 215
+		frame	data/chars/misc/blank.png
+
+# Stun collapse
+anim follow20
+
+	jumpframe 10 1 -0.2 0
+	dropframe 11
+	landframe 12
+	
+	delay	50
+	offset	75 115
+
+	@cmd dc_elmers_set_entity dc_elmers_find_first_bound getlocalvar("self")
+
+	@cmd dc_elmers_set_bind_animation_match openborconstant("BIND_ANIMATION_DEFINED")+openborconstant("BIND_ANIMATION_FRAME")
+	@cmd dc_elmers_set_bind_property "animation_id"  DC_ELMERS_REACT_ANIMATION
+	@cmd dc_elmers_set_bind_property "animation_frame"  DC_ELMERS_REACT_PAIN_MID_1
+
+    frame data/chars/ray/R_LAYING_UP_0.png
+	
+	delay	12
+	offset	75 170
+	
+	frame	data/chars/ray/39_0.png
+	frame	data/chars/ray/39_1.png
+	frame	data/chars/ray/39_2.png
+		
+	delay	3
+	move	-3
+
+	frame	data/chars/ray/39_3.png
+		move	3
+	frame	data/chars/ray/39_3.png
+		move	-3
+	frame	data/chars/ray/39_3.png
+		move	3
+	frame	data/chars/ray/39_3.png
+		move	0
+		delay	50
+	frame	data/chars/ray/R_PAIN_MID_0.png
+	frame	data/chars/ray/R_PAIN_MID_1.png
+		delay   -1000
+		offset	75 150
+		bbox	50 73 57 58
+    frame	data/chars/ray/R_TILT_UP_0.png
+		offset	75 120
+		bbox	40 95 60 35
+    frame	data/chars/ray/R_FALLING_UP_0.png
+		delay	20
+		offset	75 115
+    frame	data/chars/ray/R_LAYING_UP_PAIN_0.png
+		bbox	27 97 104 27
+    frame	data/chars/ray/R_LAYING_UP_0.png

@@ -100,7 +100,10 @@ void oncreate()
 	dc_fidelity_setup("Ray", DC_FIDELITY_TYPE_VOICE_PAIN_FALL, "data/chars/ray/sounds/spi_019e_01.wav");
 	dc_fidelity_setup("Ray", DC_FIDELITY_TYPE_VOICE_PAIN_FALL, "data/chars/ray/sounds/spi_020e_01.wav");
 
-	//  Ryu
+	//  Ryu  
+	dc_fidelity_setup("Ryu", DC_FIDELITY_TYPE_VOICE_SPAWN_NEW, "data/chars/ryu/sounds/ABD_CV_E_00000000_01.wav");
+	dc_fidelity_setup("Ryu", DC_FIDELITY_TYPE_VOICE_SPAWN_NEW, "data/chars/ryu/sounds/ryu_038e_01.wav");
+
 	dc_fidelity_setup("Ryu", DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_LIGHT, "data/chars/ryu/sounds/ryu_001e_01.wav");
 	dc_fidelity_setup("Ryu", DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_LIGHT, "data/chars/ryu/sounds/ryu_002e_01.wav");
 	dc_fidelity_setup("Ryu", DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_LIGHT, "data/chars/ryu/sounds/ryu_003e_01.wav");
@@ -137,6 +140,9 @@ void oncreate()
 
 	dc_fidelity_setup("Ryu", "Tatus", "data/chars/ryu/sounds/ABD_CV_E_00000010_01.wav");
 	dc_fidelity_setup("Ryu", "Tatsu", "data/chars/ryu/sounds/ryu_052e_01.wav");
+
+	dc_fidelity_setup("Ryu", "Thrust", "data/chars/ryu/sounds/ryu_053e_01.wav");
+	dc_fidelity_setup("Ryu", "Thrust", "data/chars/ryu/sounds/ryu_054e_01.wav");
 
 	dc_fidelity_setup("ryu_hadouken", DC_FIDELITY_TYPE_SOUND_SPAWN, "data/chars/ryu/hadouken/ryu_se_hadou_01.wav");
 	   

@@ -279,7 +279,7 @@ at	320
 spawn		crat0001
 item 		appl0001
 itemalias	Apple
-health		200
+health		2
 coords		570 215
 at		400
 

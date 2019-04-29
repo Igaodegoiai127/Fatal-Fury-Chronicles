@@ -44,7 +44,7 @@ palette			data/chars/ryu/pal_0.act
 alternatepal	data/chars/ryu/pal_1.act
 
 animationscript		data/chars/ryu/script/event_animation_pc.c
-didhitscript		data/scripts/common/event_hit.c
+didhitscript		data/chars/ryu/script/event_didhit.c
 takedamagescript	data/scripts/common/event_damage.c
 
 anim selectin
@@ -802,7 +802,7 @@ anim attack2 # Gut Punch
 	@cmd	dc_fidelity_set_sound_chance NULL()
 
 	
-	frame	data/chars/ryu/17_0.png
+	frame	data/chars/ryu/16_0.png
 	
 	
 	
@@ -1319,7 +1319,7 @@ anim freespecial11 # Upper Thrust Kick
 	bbox.size.x 43
 	bbox.size.y 95
 	
-	@cmd	dc_fidelity_quick_play DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_HEAVY
+	@cmd	dc_fidelity_quick_play "Thrust"
 	
 	frame	data/chars/ryu/78_0.png
 	
@@ -2553,3 +2553,259 @@ anim freespecial13 # Hurricane Kick
 	frame	data/chars/ryu/7_0.png
 	
 	
+
+anim chargeattack # Focus Punch
+	
+	range 24 93
+	
+	delay	8
+	offset	82 147
+	
+	bbox.position.x 71
+	bbox.position.y 50
+	bbox.size.x 33
+	bbox.size.y 96
+	
+	frame	data/chars/ryu/77_9.png
+	
+	bbox.position.x 76
+	bbox.position.y 55
+	bbox.size.x 40
+	bbox.size.y 92
+	
+	frame	data/chars/ryu/32_0.png
+	frame	data/chars/ryu/32_1.png
+	
+	bbox.position.x 74
+	bbox.position.y 52
+	bbox.size.x 49
+	bbox.size.y 94
+	
+	frame	data/chars/ryu/32_2.png
+	
+	delay 5
+	
+	@cmd	dc_fidelity_quick_play DC_FIDELITY_TYPE_SOUND_ATTACK_HEAVY
+	@cmd	dc_fidelity_quick_play "Thrust"
+	
+	bbox.position.x 83
+	bbox.position.y 50
+	bbox.size.x 45
+	bbox.size.y 96
+	
+	frame	data/chars/ryu/17_1.png
+	
+	bbox.position.x 91
+	bbox.position.y 53
+	bbox.size.x 40
+	bbox.size.y 93
+	
+	frame	data/chars/ryu/17_2.png
+	
+	attack.block.penetrate 1
+	attack.damage.force 12
+	attack.effect.hit.flash.model flash_fatal_fury
+	attack.position.x 116
+	attack.position.y 66
+	attack.reaction.fall.force 1
+	attack.reaction.pause.time 12
+	attack.size.x 58
+	attack.size.y 16
+	
+	frame	data/chars/ryu/17_3.png
+	
+	delay 8
+	
+	frame	data/chars/ryu/17_4.png
+	
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.size.x 0
+	attack.size.y 0
+	
+	frame	data/chars/ryu/17_5.png
+	frame	data/chars/ryu/17_6.png
+	
+	bbox.position.x 82
+	bbox.position.y 49
+	bbox.size.x 35
+	bbox.size.y 97
+	
+	frame	data/chars/ryu/17_7.png
+	
+	bbox.position.x 68
+	bbox.position.y 51
+	bbox.size.x 39
+	bbox.size.y 98
+	
+	frame	data/chars/ryu/16_3.png
+	frame	data/chars/ryu/16_4.png
+anim spawn # Spawn in
+	
+	delay	40
+	offset	82 147
+
+	frame	data/chars/ryu/59_0.png
+	
+	delay 20
+	
+	@cmd	dc_fidelity_quick_play DC_FIDELITY_TYPE_VOICE_SPAWN_NEW
+	
+	frame	data/chars/ryu/59_0.png
+	
+	delay 12
+	
+	frame	data/chars/ryu/59_1.png
+	frame	data/chars/ryu/59_2.png
+	
+
+	
+	delay 20
+	
+	frame	data/chars/ryu/59_3.png
+	frame	data/chars/ryu/59_4.png
+	frame	data/chars/ryu/59_5.png
+	
+	delay 12
+	
+	frame	data/chars/ryu/59_6.png	
+	frame	data/chars/ryu/59_7.png
+	frame	data/chars/ryu/59_8.png
+	
+	
+anim grab # Grab
+	
+	offset 83 147
+	
+	bbox.position.x 64
+	bbox.position.y 51
+	bbox.size.x 49
+	bbox.size.y 95
+	
+	frame data/chars/ryu/49_0.png
+
+anim grabattack # Grab knee
+	
+	delay 4
+	
+	offset 83 147
+	
+	bbox.position.x 64
+	bbox.position.y 51
+	bbox.size.x 49
+	bbox.size.y 95
+	
+	@cmd	dc_fidelity_quick_play DC_FIDELITY_TYPE_SOUND_ATTACK_MEDIUM
+	@cmd	dc_fidelity_quick_play DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_LIGHT
+	
+	frame data/chars/ryu/49_0.png
+	
+	bbox.position.x 79
+	bbox.position.y 43
+	bbox.size.x 39
+	bbox.size.y 105
+	
+	frame data/chars/ryu/31_0.png
+	
+	bbox.position.x 87
+	bbox.position.y 43
+	bbox.size.x 38
+	bbox.size.y 104
+	
+	frame data/chars/ryu/31_1.png
+	
+	bbox.position.x 88
+	bbox.position.y 46
+	bbox.size.x 40
+	bbox.size.y 100
+	
+	attack.damage.force 8
+	attack.effect.hit.flash.model flash_fatal_fury
+	attack.position.x 121
+	attack.position.y 57
+	attack.reaction.pause.time 12
+	attack.size.x 33
+	attack.size.y 35
+	
+	frame data/chars/ryu/31_2.png
+	frame data/chars/ryu/31_3.png
+	frame data/chars/ryu/31_4.png
+	frame data/chars/ryu/31_5.png
+	frame data/chars/ryu/31_6.png
+	
+	bbox.position.x 72
+	bbox.position.y 46
+	bbox.size.x 35
+	bbox.size.y 101
+	
+	frame data/chars/ryu/31_7.png
+
+anim grabattack2 # Grab finisher
+	
+	delay 8
+	
+	offset 83 147
+	
+	bbox.position.x 64
+	bbox.position.y 51
+	bbox.size.x 49
+	bbox.size.y 95
+	
+	@cmd	dc_fidelity_quick_play DC_FIDELITY_TYPE_SOUND_ATTACK_MEDIUM
+	@cmd	dc_fidelity_quick_play DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_MEDIUM
+	
+	frame data/chars/ryu/49_0.png
+	frame data/chars/ryu/17_0.png
+	
+	bbox.position.x 83
+	bbox.position.y 47
+	bbox.size.x 37
+	bbox.size.y 99
+	
+	frame data/chars/ryu/30_0.png
+	
+	delay 8
+	
+	bbox.position.x 89
+	bbox.position.y 50
+	bbox.size.x 36
+	bbox.size.y 96
+	
+	attack.damage.force 8
+	attack.position.x 108
+	attack.position.y 62
+	attack.reaction.fall.force 2
+	attack.reaction.pause.time 12
+	attack.size.x 43
+	attack.size.y 11
+	
+	frame data/chars/ryu/30_1.png
+	
+	bbox.position.x 88
+	bbox.position.y 51
+	bbox.size.x 40
+	bbox.size.y 95
+	
+	attack.damage.force 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.size.x 0
+	attack.size.y 0
+	
+	frame data/chars/ryu/30_2.png
+	frame data/chars/ryu/30_3.png
+	
+	bbox.position.x 84
+	bbox.position.y 48
+	bbox.size.x 36
+	bbox.size.y 98
+	
+	frame data/chars/ryu/30_4.png
+	
+	bbox.position.x 73
+	bbox.position.y 47
+	bbox.size.x 36
+	bbox.size.y 99
+	
+	frame data/chars/ryu/30_5.png
