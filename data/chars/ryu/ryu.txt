@@ -2373,8 +2373,8 @@ anim freespecial13 # Hurricane Kick
 	energycost 8
 	mponly 1
 	
-	jumpframe 1 2 0 0 jump_liftoff
-	landframe 21 jump_land
+	jumpframe 1 2.5 0 0 jump_liftoff
+	landframe 20 jump_land
 	
 	#loop 1 8 10
 	
@@ -2411,7 +2411,14 @@ anim freespecial13 # Hurricane Kick
 	frame	data/chars/ryu/47_3.png
 	
 	# Float in the air.
+	@cmd dc_velocity_apply_velocity_y
 	@cmd set_entity_property getlocalvar("self") "toss_time" openborvariant("elapsed_time")+25
+	
+	bbox.position.x 67
+	bbox.position.y 28
+	bbox.size.x 28
+	bbox.size.y 34
+	
 	frame	data/chars/ryu/47_4.png
 	
 	# Active (leg extended)
@@ -2425,6 +2432,11 @@ anim freespecial13 # Hurricane Kick
 	attack.position.y 0
 	attack.size.x 0
 	attack.size.y 0
+	
+	bbox.position.x 70
+	bbox.position.y 26
+	bbox.size.x 31
+	bbox.size.y 38
 	
 	frame	data/chars/ryu/47_5.png
 	
@@ -2445,6 +2457,10 @@ anim freespecial13 # Hurricane Kick
 	
 	jugglecost 10
 	
+	bbox.position.x 75
+	bbox.position.y 23
+	bbox.size.x 31
+	bbox.size.y 44
 	frame	data/chars/ryu/47_6.png
 	
 	attack.damage.force 16
@@ -2510,12 +2526,19 @@ anim freespecial13 # Hurricane Kick
 	attack.position.y 0
 	attack.size.x 0
 	attack.size.y 0
-		
+	
+	bbox.position.x 71
+	bbox.position.y 28
+	bbox.size.x 37
+	bbox.size.y 73
 	frame	data/chars/ryu/47_11.png
 	
 	# Stop floating.
 	@cmd set_entity_property getlocalvar("self") "toss_time" openborvariant("elapsed_time")
 	frame	data/chars/ryu/47_12.png
+	
+	delay 5
+	
 	frame	data/chars/ryu/47_13.png
 	frame	data/chars/ryu/47_14.png
 	frame	data/chars/ryu/47_15.png
@@ -2526,6 +2549,10 @@ anim freespecial13 # Hurricane Kick
 	
 	delay -1000
 	
+	bbox.position.x 65
+	bbox.position.y 26
+	bbox.size.x 38
+	bbox.size.y 101
 	frame	data/chars/ryu/10_8.png
 	
 	delay	4
@@ -2604,7 +2631,6 @@ anim chargeattack # Focus Punch
 	
 	attack.block.penetrate 1
 	attack.damage.force 12
-	attack.effect.hit.flash.model flash_fatal_fury
 	attack.position.x 116
 	attack.position.y 66
 	attack.reaction.fall.force 1
@@ -2809,3 +2835,31 @@ anim grabattack2 # Grab finisher
 	bbox.size.y 99
 	
 	frame data/chars/ryu/30_5.png
+anim grabforward # Shoulder Throw
+	
+	delay 8
+	
+	offset 83 147
+	
+	bbox.position.x 64
+	bbox.position.y 51
+	bbox.size.x 49
+	bbox.size.y 95
+	
+	frame data/chars/ryu/49_0.png
+	frame data/chars/ryu/43_11.png
+	frame data/chars/ryu/36_8.png	
+	frame data/chars/ryu/84_0.png	
+	frame data/chars/ryu/84_1.png
+	frame data/chars/ryu/84_2.png
+	frame data/chars/ryu/84_3.png
+	frame data/chars/ryu/84_4.png
+	frame data/chars/ryu/84_5.png	
+	frame data/chars/ryu/84_6.png
+	
+	delay 10
+	
+	frame data/chars/ryu/84_7.png
+	frame data/chars/ryu/84_8.png
+	frame data/chars/ryu/19_0.png
+	
