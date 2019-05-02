@@ -2835,6 +2835,7 @@ anim grabattack2 # Grab finisher
 	bbox.size.y 99
 	
 	frame data/chars/ryu/30_5.png
+
 anim grabforward # Shoulder Throw
 	
 	delay 8
@@ -2847,6 +2848,18 @@ anim grabforward # Shoulder Throw
 	bbox.size.y 95
 	
 	frame data/chars/ryu/49_0.png
+	
+	# Grab target binds to us.
+	@cmd dc_elmers_set_entity dc_elmers_get_targets_opponent()
+
+	@cmd dc_elmers_set_offset_x 0
+	@cmd dc_elmers_set_offset_y 0
+	@cmd dc_elmers_set_offset_z 0
+
+	@cmd dc_elmers_set_bind_sort_id 200
+
+	@cmd dc_elmers_quick_bind
+
 	frame data/chars/ryu/43_11.png
 	frame data/chars/ryu/36_8.png	
 	frame data/chars/ryu/84_0.png	
