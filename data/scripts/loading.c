@@ -50,6 +50,9 @@ void oncreate()
 	//  Hit flash
 	dc_fidelity_setup("Flash", DC_FIDELITY_TYPE_SOUND_SPAWN, "data/sounds/custom/double_dragon_2_hit_0.wav");
 	dc_fidelity_setup("flash_fatal_fury", DC_FIDELITY_TYPE_SOUND_SPAWN, "data/sounds/custom/fatal_fury_1_hit.wav");
+	dc_fidelity_setup("flash_indirect", DC_FIDELITY_TYPE_SOUND_SPAWN, "data/sounds/custom/sor1_hit_0.wav");
+
+	
 
 	// Galford
 	dc_fidelity_setup("Galford_Weller", DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_HEAVY, "data/chars/galford/sounds/voice-atk-3.wav");

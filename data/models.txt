@@ -12,6 +12,7 @@ noaircancel     2
 # Flash/Hit sparks.
 load	Flash				data/chars/misc/flash/flash.txt
 load	flash_fatal_fury	data/chars/misc/flash/flash_fatal_fury.txt
+load	flash_indirect		data/chars/misc/flash/flash_indirect.txt
 
 load	Block				data/chars/misc/cvs_block_flash/block.txt
 load    fall_land			data/chars/misc/cvs_land_dust/fall_land.txt
@@ -70,10 +71,10 @@ know	terry_crack_shoot		data/chars/terry/crack_shoot/terry_crack_shoot.txt
 know	terry_power_wave		data/chars/terry/terry_power_wave.txt
 know	terry_power_wave_fist	data/chars/terry/terry_power_wave_fist.txt
 load    Terry					data/chars/terry/terry.txt
-know	andybe					data/chars/andy/andybe.txt				# Bound visuals.
-know	andypa					data/chars/andy/andypa.txt				# Pause visuals.
-know	andy_dark_rain_fire		data/chars/andy/andy_dark_rain_fire.txt
-load	Andy					data/chars/andy/andy_bogard_pc.txt		# PC Andy.
+#know	andybe					data/chars/andy/andybe.txt				# Bound visuals.
+#know	andypa					data/chars/andy/andypa.txt				# Pause visuals.
+#know	andy_dark_rain_fire		data/chars/andy/andy_dark_rain_fire.txt
+#load	Andy					data/chars/andy/andy_bogard_pc.txt		# PC Andy.
 
 
 know	raid0001		data/chars/raiden/raiden.txt
