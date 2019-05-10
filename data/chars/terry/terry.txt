@@ -1455,7 +1455,7 @@ anim follow51 # Defense poses
 	attack.size.x 68
 	attack.size.y 66
 	
-frame	data/chars/terry/R_TILT_DOWN_0.png
+frame	data/chars/terry/R_TILT_FORWARD_0.png
 	
 	offset	91 166
 	
