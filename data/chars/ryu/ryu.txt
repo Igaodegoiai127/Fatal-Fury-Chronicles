@@ -2848,24 +2848,126 @@ anim grabforward # Shoulder Throw
 	bbox.size.y 95
 	
 	frame data/chars/ryu/49_0.png
-	
+
 	# Grab target binds to us.
 	@cmd dc_elmers_set_entity dc_elmers_get_targets_opponent()
 
-	@cmd dc_elmers_set_offset_x 0
-	@cmd dc_elmers_set_offset_y 0
-	@cmd dc_elmers_set_offset_z 0
+	# Put into thrown state.
+	@cmd set_entity_property dc_elmers_get_entity() "blast_state" openborconstant("BLAST_ATTACK")
 
-	@cmd dc_elmers_set_bind_sort_id 200
+	# Break openbor grab system link.
+	@cmd dc_elmers_break_native_link()
 
+	# Adjust offsets, direction, sorting.
+	@cmd dc_elmers_set_offset_x 31
+	@cmd dc_elmers_set_offset_y -2
+	@cmd dc_elmers_set_bind_sort_id 1
+
+	# Apply bind and adjustments.
 	@cmd dc_elmers_quick_bind
 
-	frame data/chars/ryu/43_11.png
-	frame data/chars/ryu/36_8.png	
+	# Set animation matching.
+	@cmd dc_elmers_set_bind_animation_match openborconstant("BIND_ANIMATION_DEFINED")+openborconstant("BIND_ANIMATION_FRAME_DEFINED")
+	@cmd dc_elmers_set_bind_animation_id DC_ELMERS_REACT_ANIMATION
+
+	# Set pose
+	@cmd dc_elmers_set_bind_animation_frame DC_ELMERS_REACT_PAIN_0
+
+	@cmd	dc_fidelity_quick_play DC_FIDELITY_TYPE_SOUND_ATTACK_HEAVY
+	frame data/chars/ryu/43_11.png	
+
+	# Adjust offsets, direction, sorting.
+	@cmd dc_elmers_set_offset_x 18
+	@cmd dc_elmers_set_offset_y -2
+		
+	# Apply bind and adjustments.
+	@cmd dc_elmers_quick_bind	
+
+	# Set pose
+	@cmd dc_elmers_set_bind_animation_frame DC_ELMERS_REACT_PAIN_1
+	
+
+	frame data/chars/ryu/36_8.png
+
+	delay 12
+
+	# Adjust offsets, direction, sorting.
+	@cmd dc_elmers_set_offset_x -30
+	@cmd dc_elmers_set_offset_y -2
+	@cmd dc_elmers_set_bind_sort_id -1
+
+	# Apply bind and adjustments.
+	@cmd dc_elmers_quick_bind	
+
+	# Set pose
+	@cmd dc_elmers_set_bind_animation_frame DC_ELMERS_REACT_PAIN_MID_0
+	
 	frame data/chars/ryu/84_0.png	
+
+	# Adjust offsets, direction, sorting.
+	@cmd dc_elmers_set_offset_x -44
+	@cmd dc_elmers_set_offset_y 64
+
+	# Apply bind and adjustments.
+	@cmd dc_elmers_quick_bind	
+
+	# Set pose
+	@cmd dc_elmers_set_bind_animation_frame DC_ELMERS_REACT_TILT_DOWN_0
+
 	frame data/chars/ryu/84_1.png
+
+	delay 8
+
+	# Adjust offsets, direction, sorting.
+	@cmd dc_elmers_set_offset_x -21
+	@cmd dc_elmers_set_offset_y 94
+	@cmd dc_elmers_set_direction openborconstant("DIRECTION_ADJUST_OPPOSITE")
+	
+	# Apply bind and adjustments.
+	@cmd dc_elmers_quick_bind	
+
+	# Set pose
+	@cmd dc_elmers_set_bind_animation_frame DC_ELMERS_REACT_HORIZONTAL_DOWN_0
+	
+	@cmd	dc_fidelity_quick_play DC_FIDELITY_TYPE_SOUND_ATTACK_HEAVY
+	@cmd	dc_fidelity_quick_play DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_HEAVY
+
 	frame data/chars/ryu/84_2.png
+
+	# Adjust offsets, direction, sorting.
+	@cmd dc_elmers_set_offset_x 51
+	@cmd dc_elmers_set_offset_y 104
+	@cmd dc_elmers_set_direction openborconstant("DIRECTION_ADJUST_OPPOSITE")
+	
+	# Apply bind and adjustments.
+	@cmd dc_elmers_quick_bind	
+
+	# Set pose
+	@cmd dc_elmers_set_bind_animation_frame DC_ELMERS_REACT_VERTICAL_DOWN_0
+
 	frame data/chars/ryu/84_3.png
+
+	# Adjust offsets, direction, sorting.
+	@cmd dc_elmers_set_offset_x 55
+	@cmd dc_elmers_set_offset_y 20
+		
+	# Apply bind and adjustments.
+	@cmd dc_elmers_quick_release
+	@cmd dc_elmers_apply_position	
+
+	@cmd dc_damage_set_entity dc_elmers_get_entity()
+	@cmd dc_damage_set_attack_type openborconstant("ATK_NORMAL10")
+	@cmd dc_damage_set_projectile openborconstant("BLAST_ATTACK")
+	@cmd dc_damage_set_damage_on_landing_force 30
+	@cmd dc_damage_set_direction_adjust openborconstant("DIRECTION_ADJUST_SAME")
+	@cmd dc_damage_set_drop_velocity_x 3.5
+	@cmd dc_damage_set_drop_velocity_y 2.0
+	
+	@cmd dc_damage_apply_damage
+
+	# Clear this instance of elmers for next use.
+	@cmd dc_elmers_reset_instance
+
 	frame data/chars/ryu/84_4.png
 	frame data/chars/ryu/84_5.png	
 	frame data/chars/ryu/84_6.png
@@ -2875,4 +2977,115 @@ anim grabforward # Shoulder Throw
 	frame data/chars/ryu/84_7.png
 	frame data/chars/ryu/84_8.png
 	frame data/chars/ryu/19_0.png
+	
+anim grabbackward # Stomach Throw
+
+	flipframe 10
+
+	delay 10
+	
+	offset 83 147
+	
+	bbox.position.x 64
+	bbox.position.y 51
+	bbox.size.x 49
+	bbox.size.y 95
+	
+	frame data/chars/ryu/49_0.png
+
+	# Grab target binds to us.
+	@cmd dc_elmers_set_entity dc_elmers_get_targets_opponent()
+
+	# Put into thrown state.
+	@cmd set_entity_property dc_elmers_get_entity() "blast_state" openborconstant("BLAST_ATTACK")
+
+	# Break openbor grab system link.
+	@cmd dc_elmers_break_native_link()
+
+	# Adjust offsets, direction, sorting.
+	@cmd dc_elmers_set_offset_x 31
+	@cmd dc_elmers_set_offset_y -2
+	@cmd dc_elmers_set_direction openborconstant("DIRECTION_ADJUST_OPPOSITE")
+	@cmd dc_elmers_set_bind_sort_id -1
+
+	# Apply bind and adjustments.
+	@cmd dc_elmers_quick_bind
+
+	# Set animation matching.
+	@cmd dc_elmers_set_bind_animation_match openborconstant("BIND_ANIMATION_DEFINED")+openborconstant("BIND_ANIMATION_FRAME_DEFINED")
+	@cmd dc_elmers_set_bind_animation_id DC_ELMERS_REACT_ANIMATION
+
+	# Set pose
+	@cmd dc_elmers_set_bind_animation_frame DC_ELMERS_REACT_PAIN_MID_1
+
+	@cmd	dc_fidelity_quick_play DC_FIDELITY_TYPE_SOUND_ATTACK_HEAVY
+	@cmd	dc_fidelity_quick_play DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_HEAVY
+	
+	frame data/chars/ryu/50_0.png	
+
+	# Adjust offsets, direction, sorting.
+	@cmd dc_elmers_set_offset_x 18
+	@cmd dc_elmers_set_offset_y 65
+		
+	# Apply bind and adjustments.
+	@cmd dc_elmers_quick_bind	
+
+	# Set pose
+	@cmd dc_elmers_set_bind_animation_frame DC_ELMERS_REACT_TILT_DOWN_0
+	
+
+	frame data/chars/ryu/50_1.png
+
+	# Adjust offsets, direction, sorting.
+	@cmd dc_elmers_set_offset_x  -40
+	@cmd dc_elmers_set_offset_y  65
+	@cmd dc_elmers_set_direction openborconstant("DIRECTION_ADJUST_SAME")
+
+	# Apply bind and adjustments.
+	@cmd dc_elmers_quick_bind	
+
+	# Set pose
+	@cmd dc_elmers_set_bind_animation_frame DC_ELMERS_REACT_VERTICAL_DOWN_0
+	
+	frame data/chars/ryu/50_2.png	
+
+	delay 12
+
+	# Adjust offsets, direction, sorting.
+	@cmd dc_elmers_set_offset_x -75
+	@cmd dc_elmers_set_offset_y 10
+		
+	# Apply bind and adjustments.
+	@cmd dc_elmers_quick_release
+	@cmd dc_elmers_apply_position	
+
+	@cmd dc_damage_set_entity dc_elmers_get_entity()
+	@cmd dc_damage_set_attack_type openborconstant("ATK_NORMAL10")
+	@cmd dc_damage_set_projectile openborconstant("BLAST_ATTACK")
+	@cmd dc_damage_set_damage_on_landing_force 30
+	@cmd dc_damage_set_direction_adjust openborconstant("DIRECTION_ADJUST_OPPOSITE")
+	@cmd dc_damage_set_drop_velocity_x 2.5
+	@cmd dc_damage_set_drop_velocity_y 3.0
+	
+	@cmd dc_damage_apply_damage
+
+	# Clear this instance of elmers for next use.
+	@cmd dc_elmers_reset_instance
+
+	frame data/chars/ryu/50_3.png
+	frame data/chars/ryu/50_4.png
+	frame data/chars/ryu/50_5.png
+
+	delay 12
+
+	frame data/chars/ryu/50_6.png
+	
+	delay 10
+	
+	frame data/chars/ryu/50_7.png	
+	frame data/chars/ryu/50_8.png
+	
+	delay 10
+	
+	frame data/chars/ryu/16_4.png
 	
