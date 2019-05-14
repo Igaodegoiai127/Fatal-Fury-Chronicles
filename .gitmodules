@@ -77,3 +77,6 @@
 [submodule "data/scripts/dc_instance"]
 	path = data/scripts/dc_instance
 	url = https://github.com/DCurrent/openbor-script-instance
+[submodule "data/scripts/dc_gracie"]
+	path = data/scripts/dc_gracie
+	url = https://github.com/DCurrent/openbor-script-gracie
