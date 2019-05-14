@@ -240,15 +240,6 @@
     <ClCompile Include="data\scripts\dc_math\percentage.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="data\scripts\dc_grapple\functions.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="data\scripts\dc_grapple\main.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="data\scripts\dc_grapple\release.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="data\scripts\dc_afterimage\main.c">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -492,6 +483,42 @@
     <ClCompile Include="data\scripts\dc_elmers\position_config.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="data\scripts\dc_elmers\grapple.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="data\scripts\dc_elmers\instance.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="data\scripts\dc_elmers\direction.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="data\scripts\dc_damage\velocity.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="data\scripts\dc_damage\position.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="data\scripts\dc_elmers\position.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="data\scripts\dc_elmers\bind.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="data\scripts\dc_elmers\entity.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="data\scripts\dc_elmers\level.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="data\scripts\dc_elmers\macro.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="data\scripts\dc_elmers\main.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="data\scripts\dc_elmers\offset.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="data\scripts\com\bind0003.h">
@@ -527,9 +554,6 @@
     <ClInclude Include="data\scripts\dc_math\config.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="data\scripts\dc_grapple\config.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="data\scripts\dc_afterimage\config.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -552,6 +576,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="data\scripts\dc_elmers\config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="data\scripts\dc_elmers\grapple_config.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -11521,6 +11548,7 @@
     <None Include="data\scripts\dc_instance\.gitattributes" />
     <None Include="data\scripts\dc_instance\README.md" />
     <None Include="data\chars\ryu\pal_1.act" />
+    <None Include="..\..\..\..\DCCURR~1\AppData\Local\Temp\Rar$DRa22840.10828\openbor-script-grapple-29da632d51bbc75ae7e51ca2029e9e56092813a2\README.md" />
   </ItemGroup>
   <ItemGroup>
     <Media Include="data\chars\galford\sounds\voice-atk-0.wav">

@@ -33,6 +33,7 @@ takedamagescript	data/scripts/common/event_damage.c
 
 palette   		data/chars/ray/default.act			# Light blue jeans, white shirt, red bolt
 alternatepal	data/chars/ray/default_no_bolt.act 
+alternatepal	data/chars/ray/adam_hunter.act 
 
 anim block
 

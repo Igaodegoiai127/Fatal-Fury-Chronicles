@@ -153,7 +153,9 @@
     <ClCompile Include="data\scripts\dc_damage\damage.c" />
     <ClCompile Include="data\scripts\dc_damage\direction.c" />
     <ClCompile Include="data\scripts\dc_damage\main.c" />
+    <ClCompile Include="data\scripts\dc_damage\position.c" />
     <ClCompile Include="data\scripts\dc_damage\toss.c" />
+    <ClCompile Include="data\scripts\dc_damage\velocity.c" />
     <ClCompile Include="data\scripts\dc_disney\alternate_on_health.c" />
     <ClCompile Include="data\scripts\dc_disney\alternate_on_range.c" />
     <ClCompile Include="data\scripts\dc_disney\animation.c" />
@@ -164,6 +166,16 @@
     <ClCompile Include="data\scripts\dc_disney\play_animation.c" />
     <ClCompile Include="data\scripts\dc_disney\perform_attack.c" />
     <ClCompile Include="data\scripts\dc_draw\rgb_increment.c" />
+    <ClCompile Include="data\scripts\dc_elmers\bind.c" />
+    <ClCompile Include="data\scripts\dc_elmers\direction.c" />
+    <ClCompile Include="data\scripts\dc_elmers\entity.c" />
+    <ClCompile Include="data\scripts\dc_elmers\grapple.c" />
+    <ClCompile Include="data\scripts\dc_elmers\instance.c" />
+    <ClCompile Include="data\scripts\dc_elmers\level.c" />
+    <ClCompile Include="data\scripts\dc_elmers\macro.c" />
+    <ClCompile Include="data\scripts\dc_elmers\main.c" />
+    <ClCompile Include="data\scripts\dc_elmers\offset.c" />
+    <ClCompile Include="data\scripts\dc_elmers\position.c" />
     <ClCompile Include="data\scripts\dc_elmers\position_config.c" />
     <ClCompile Include="data\scripts\dc_elmers\palette.c" />
     <ClCompile Include="data\scripts\dc_fidelity\adjustments.c" />
@@ -184,9 +196,6 @@
     <ClCompile Include="data\scripts\dc_gauntlet\model.c" />
     <ClCompile Include="data\scripts\dc_gauntlet\offset.c" />
     <ClCompile Include="data\scripts\dc_gauntlet\projectile.c" />
-    <ClCompile Include="data\scripts\dc_grapple\functions.c" />
-    <ClCompile Include="data\scripts\dc_grapple\main.c" />
-    <ClCompile Include="data\scripts\dc_grapple\release.c" />
     <ClCompile Include="data\scripts\dc_hansburg\command.c" />
     <ClCompile Include="data\scripts\dc_hansburg\entity.c" />
     <ClCompile Include="data\scripts\dc_hansburg\instance.c" />
@@ -266,9 +275,9 @@
     <ClInclude Include="data\scripts\dc_damage\config.h" />
     <ClInclude Include="data\scripts\dc_disney\config.h" />
     <ClInclude Include="data\scripts\dc_elmers\config.h" />
+    <ClInclude Include="data\scripts\dc_elmers\grapple_config.h" />
     <ClInclude Include="data\scripts\dc_fidelity\config.h" />
     <ClInclude Include="data\scripts\dc_gauntlet\config.h" />
-    <ClInclude Include="data\scripts\dc_grapple\config.h" />
     <ClInclude Include="data\scripts\dc_hansburg\config.h" />
     <ClInclude Include="data\scripts\dc_initialize\config.h" />
     <ClInclude Include="data\scripts\dc_instance\config.h" />
@@ -3968,6 +3977,7 @@
     <Text Include="logs\ScriptLog.txt" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="..\..\..\..\DCCURR~1\AppData\Local\Temp\Rar$DRa22840.10828\openbor-script-grapple-29da632d51bbc75ae7e51ca2029e9e56092813a2\README.md" />
     <None Include="..\..\personal\resources\pal_0.ACT" />
     <None Include=".gitignore" />
     <None Include="a26efe22.exe" />
