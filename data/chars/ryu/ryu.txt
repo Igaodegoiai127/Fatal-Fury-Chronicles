@@ -2699,8 +2699,10 @@ anim spawn # Spawn in
 	frame	data/chars/ryu/59_7.png
 	frame	data/chars/ryu/59_8.png
 	
-	
 anim grab # Grab
+	
+	loop	1
+	delay	3
 	
 	offset 83 147
 	
@@ -2709,6 +2711,23 @@ anim grab # Grab
 	bbox.size.x 49
 	bbox.size.y 95
 	
+	frame data/chars/ryu/49_0.png
+
+	offset 81 147
+
+	frame data/chars/ryu/49_0.png
+
+	offset 83 147
+
+	frame data/chars/ryu/49_0.png
+
+	offset 81 147
+
+	frame data/chars/ryu/49_0.png
+
+	delay 50
+	offset 83 147
+
 	frame data/chars/ryu/49_0.png
 
 anim grabattack # Grab knee
@@ -2789,19 +2808,17 @@ anim grabattack2 # Grab finisher
 	# grappled entity into a better position.
 
 	# Set up the grapple.
-	@cmd dc_elmers_grapple_initialize
+	@cmd dc_elmers_initialize_grapple
 
 	# Adjust grapple properties.
-	@cmd dc_elmers_grapple_set_offset_x 10
-	@cmd dc_elmers_grapple_set_offset_y -2
-	@cmd dc_elmers_grapple_set_sorting DC_ELMERS_SORT_BACK
-	@cmd dc_elmers_grapple_set_direction openborconstant("DIRECTION_ADJUST_OPPOSITE")
-	@cmd dc_elmers_grapple_set_pose DC_ELMERS_REACT_HELD_0
-	#cmd dc_elmers_grapple_set_blast_state openborconstant("BLAST_NONE")
-	@cmd dc_elmers_grapple_set_attack_state openborconstant("ATTACKING_NONE")
+	@cmd dc_elmers_set_offset_x 10
+	@cmd dc_elmers_set_offset_y -2
+	@cmd dc_elmers_set_sorting DC_ELMERS_SORT_BACK
+	@cmd dc_elmers_set_direction openborconstant("DIRECTION_ADJUST_OPPOSITE")
+	@cmd dc_elmers_set_frame DC_ELMERS_REACT_HELD_0
 
 	# Apply grapple properties.
-	@cmd dc_elmers_grapple_apply
+	@cmd dc_elmers_apply_grapple
 
 	frame data/chars/ryu/17_0.png
 	
@@ -2860,130 +2877,8 @@ anim grabattack2 # Grab finisher
 	
 	frame data/chars/ryu/30_5.png
 
-anim grabforward # Shoulder Throw
 	
-	delay 8
-	
-	offset 83 147
-	
-	bbox.position.x 64
-	bbox.position.y 51
-	bbox.size.x 49
-	bbox.size.y 95
-	
-	frame data/chars/ryu/49_0.png
-
-	# Set up the grapple.
-	@cmd dc_elmers_grapple_initialize
-
-	# Adjust grapple properties.
-	@cmd dc_elmers_grapple_set_offset_x 31
-	@cmd dc_elmers_grapple_set_offset_y -2
-	@cmd dc_elmers_grapple_set_sorting DC_ELMERS_SORT_FRONT
-	@cmd dc_elmers_grapple_set_pose DC_ELMERS_REACT_PAIN_0
-
-	# Apply grapple properties.
-	@cmd dc_elmers_grapple_apply
-
-	# Play sound effect
-	@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_SOUND_ATTACK_HEAVY
-	
-	frame data/chars/ryu/43_11.png	
-
-	# Adjust grapple properties.
-	@cmd dc_elmers_grapple_set_offset_x 18
-	@cmd dc_elmers_grapple_set_offset_y -2
-	@cmd dc_elmers_grapple_set_pose DC_ELMERS_REACT_PAIN_1
-
-	# Apply grapple properties.
-	@cmd dc_elmers_grapple_apply
-
-	frame data/chars/ryu/36_8.png
-
-	delay 12
-
-	# Adjust grapple properties.
-	@cmd dc_elmers_grapple_set_offset_x -30
-	@cmd dc_elmers_grapple_set_offset_y -2
-	@cmd dc_elmers_grapple_set_sorting DC_ELMERS_SORT_BACK
-	@cmd dc_elmers_grapple_set_pose DC_ELMERS_REACT_PAIN_MID_0
-	
-	# Apply grapple properties.
-	@cmd dc_elmers_grapple_apply
-
-	frame data/chars/ryu/84_0.png	
-
-	# Adjust grapple properties.
-	@cmd dc_elmers_grapple_set_offset_x -44
-	@cmd dc_elmers_grapple_set_offset_y 64
-	@cmd dc_elmers_grapple_set_pose DC_ELMERS_REACT_TILT_DOWN_0
-
-	# Apply grapple properties.
-	@cmd dc_elmers_grapple_apply
-
-	frame data/chars/ryu/84_1.png
-
-	delay 8
-
-	# Adjust grapple properties.
-	@cmd dc_elmers_grapple_set_offset_x -21
-	@cmd dc_elmers_grapple_set_offset_y 94
-	@cmd dc_elmers_grapple_set_direction openborconstant("DIRECTION_ADJUST_OPPOSITE")
-	@cmd dc_elmers_grapple_set_pose DC_ELMERS_REACT_HORIZONTAL_DOWN_0
-
-	# Apply grapple properties.
-	@cmd dc_elmers_grapple_apply
-	
-	# Play sound effect.
-	@cmd	dc_fidelity_quick_play DC_FIDELITY_TYPE_SOUND_ATTACK_HEAVY
-	@cmd	dc_fidelity_quick_play DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_HEAVY
-
-	frame data/chars/ryu/84_2.png
-
-	# Adjust grapple properties.
-	@cmd dc_elmers_grapple_set_offset_x 51
-	@cmd dc_elmers_grapple_set_offset_y 104
-	@cmd dc_elmers_grapple_set_direction openborconstant("DIRECTION_ADJUST_OPPOSITE")
-	@cmd dc_elmers_grapple_set_pose DC_ELMERS_REACT_VERTICAL_DOWN_0
-
-	# Apply grapple properties.
-	@cmd dc_elmers_grapple_apply
-
-	frame data/chars/ryu/84_3.png
-
-	# Now we want to toss the grappled entity away
-	# and cause damage when they land.
-
-	# Adjust grapple properties.
-	@cmd dc_elmers_grapple_set_offset_x 55
-	@cmd dc_elmers_grapple_set_offset_y 20
-		
-	# Apply grapple properties, and end grapple.
-	@cmd dc_elmers_quick_release	
-
-	# Adjust damage properties.
-	@cmd dc_damage_set_entity dc_elmers_get_entity()
-	@cmd dc_damage_set_attack_type openborconstant("ATK_NORMAL10")
-	@cmd dc_damage_set_projectile openborconstant("BLAST_ATTACK")
-	@cmd dc_damage_set_damage_on_landing_force 30
-	@cmd dc_damage_set_direction_adjust openborconstant("DIRECTION_ADJUST_SAME")
-	@cmd dc_damage_set_drop_velocity_x 3.5
-	@cmd dc_damage_set_drop_velocity_y 2.0
-	
-	# Apply damage.
-	@cmd dc_damage_apply_damage	
-
-	frame data/chars/ryu/84_4.png
-	frame data/chars/ryu/84_5.png	
-	frame data/chars/ryu/84_6.png
-	
-	delay 10
-	
-	frame data/chars/ryu/84_7.png
-	frame data/chars/ryu/84_8.png
-	frame data/chars/ryu/19_0.png
-	
-anim grabbackward # Stomach Throw
+anim grabbackward # Circle Throw
 
 	flipframe 10
 
@@ -2999,38 +2894,38 @@ anim grabbackward # Stomach Throw
 	frame data/chars/ryu/49_0.png
 	
 	# Set up the grapple.
-	@cmd dc_elmers_grapple_initialize
+	@cmd dc_elmers_initialize_grapple
 
 	# Adjust grapple properties.
-	@cmd dc_elmers_grapple_set_offset_x 31
-	@cmd dc_elmers_grapple_set_offset_y -2
-	@cmd dc_elmers_grapple_set_direction openborconstant("DIRECTION_ADJUST_OPPOSITE")
-	@cmd dc_elmers_grapple_set_sorting DC_ELMERS_SORT_BACK
-	@cmd dc_elmers_grapple_set_pose DC_ELMERS_REACT_PAIN_MID_1
+	@cmd dc_elmers_set_offset_x 31
+	@cmd dc_elmers_set_offset_y -2
+	@cmd dc_elmers_set_direction openborconstant("DIRECTION_ADJUST_OPPOSITE")
+	@cmd dc_elmers_set_sorting DC_ELMERS_SORT_BACK
+	@cmd dc_elmers_set_frame DC_ELMERS_REACT_PAIN_MID_1
 
 	# Apply grapple properties.
-	@cmd dc_elmers_grapple_apply	
+	@cmd dc_elmers_apply_grapple	
 	
 	frame data/chars/ryu/50_0.png	
 
 	# Adjust grapple properties.
-	@cmd dc_elmers_grapple_set_offset_x 18
-	@cmd dc_elmers_grapple_set_offset_y 65
-	@cmd dc_elmers_grapple_set_pose DC_ELMERS_REACT_TILT_DOWN_0
+	@cmd dc_elmers_set_offset_x 18
+	@cmd dc_elmers_set_offset_y 65
+	@cmd dc_elmers_set_frame DC_ELMERS_REACT_TILT_DOWN_0
 	
 	# Apply grapple properties.
-	@cmd dc_elmers_grapple_apply	
+	@cmd dc_elmers_quick_bind	
 
 	frame data/chars/ryu/50_1.png
 
 	# Adjust grapple properties.
-	@cmd dc_elmers_grapple_set_offset_x -40
-	@cmd dc_elmers_grapple_set_offset_y 65
-	@cmd dc_elmers_grapple_set_direction openborconstant("DIRECTION_ADJUST_SAME")
-	@cmd dc_elmers_grapple_set_pose DC_ELMERS_REACT_VERTICAL_DOWN_0
+	@cmd dc_elmers_set_offset_x -40
+	@cmd dc_elmers_set_offset_y 65
+	@cmd dc_elmers_set_direction openborconstant("DIRECTION_ADJUST_SAME")
+	@cmd dc_elmers_set_frame DC_ELMERS_REACT_VERTICAL_DOWN_0
 	
 	# Apply grapple properties.
-	@cmd dc_elmers_grapple_apply
+	@cmd dc_elmers_apply_grapple
 
 	# Play sound effect.
 	@cmd	dc_fidelity_quick_play DC_FIDELITY_TYPE_SOUND_ATTACK_HEAVY
@@ -3044,14 +2939,13 @@ anim grabbackward # Stomach Throw
 	# and cause damage when they land.
 
 	# Adjust grapple properties.
-	@cmd dc_elmers_grapple_set_offset_x -75
-	@cmd dc_elmers_grapple_set_offset_y 10
+	@cmd dc_elmers_set_offset_x -75
+	@cmd dc_elmers_set_offset_y 10
 		
-	# Apply grapple properties, and end grapple.
-	@cmd dc_elmers_quick_release	
+	# End grapple and send entity pointer to damage library.
+	@cmd dc_damage_set_entity					dc_elmers_end_grapple()
 
 	# Adjust damage properties.
-	@cmd dc_damage_set_entity					dc_elmers_get_entity()
 	@cmd dc_damage_set_attack_type				openborconstant("ATK_NORMAL10")
 	@cmd dc_damage_set_projectile				openborconstant("BLAST_ATTACK")
 	@cmd dc_damage_set_damage_on_landing_force	30
@@ -3078,4 +2972,192 @@ anim grabbackward # Stomach Throw
 	delay 10
 	
 	frame data/chars/ryu/16_4.png
+
+anim grabforward # Shoulder Throw
 	
+	delay 8
+	
+	offset 83 147
+	
+	bbox.position.x 64
+	bbox.position.y 51
+	bbox.size.x 49
+	bbox.size.y 95
+	
+	frame data/chars/ryu/49_0.png
+
+	delay 1000
+
+
+	# Set up the grapple.
+	@cmd dc_elmers_initialize_grapple
+
+	# Adjust grapple properties.
+	@cmd dc_elmers_set_offset_x 31
+	@cmd dc_elmers_set_offset_y -2
+	@cmd dc_elmers_set_sorting DC_ELMERS_SORT_FRONT
+	@cmd dc_elmers_set_frame DC_ELMERS_REACT_PAIN_0
+
+	# Apply grapple properties.
+	@cmd dc_elmers_apply_grapple
+
+	# Play sound effect
+	@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_SOUND_ATTACK_HEAVY
+	
+	frame data/chars/ryu/43_11.png	
+
+	# Adjust grapple properties.
+	@cmd dc_elmers_set_offset_x 18
+	@cmd dc_elmers_set_offset_y -2
+	@cmd dc_elmers_set_frame DC_ELMERS_REACT_PAIN_1
+
+	# Apply grapple properties.
+	@cmd dc_elmers_apply_grapple
+
+	frame data/chars/ryu/36_8.png
+
+	delay 12
+
+	# Adjust grapple properties.
+	@cmd dc_elmers_set_offset_x -30
+	@cmd dc_elmers_set_offset_y -2
+	@cmd dc_elmers_set_sorting DC_ELMERS_SORT_BACK
+	@cmd dc_elmers_set_frame DC_ELMERS_REACT_PAIN_MID_0
+	
+	# Apply grapple properties.
+	@cmd dc_elmers_apply_grapple
+
+	frame data/chars/ryu/84_0.png	
+
+	# Adjust grapple properties.
+	@cmd dc_elmers_set_offset_x -44
+	@cmd dc_elmers_set_offset_y 64
+	@cmd dc_elmers_set_frame DC_ELMERS_REACT_TILT_DOWN_0
+
+	# Apply grapple properties.
+	@cmd dc_elmers_apply_grapple
+
+	frame data/chars/ryu/84_1.png
+
+	delay 8
+
+	# Adjust grapple properties.
+	@cmd dc_elmers_set_offset_x -21
+	@cmd dc_elmers_set_offset_y 94
+	@cmd dc_elmers_set_direction openborconstant("DIRECTION_ADJUST_OPPOSITE")
+	@cmd dc_elmers_set_frame DC_ELMERS_REACT_HORIZONTAL_DOWN_0
+
+	# Apply grapple properties.
+	@cmd dc_elmers_apply_grapple
+	
+	# Play sound effect.
+	@cmd	dc_fidelity_quick_play DC_FIDELITY_TYPE_SOUND_ATTACK_HEAVY
+	@cmd	dc_fidelity_quick_play DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_HEAVY
+
+	frame data/chars/ryu/84_2.png
+
+	# Adjust grapple properties.
+	@cmd dc_elmers_set_offset_x 51
+	@cmd dc_elmers_set_offset_y 104
+	@cmd dc_elmers_set_direction openborconstant("DIRECTION_ADJUST_OPPOSITE")
+	@cmd dc_elmers_set_frame DC_ELMERS_REACT_VERTICAL_DOWN_0
+
+	# Apply grapple properties.
+	@cmd dc_elmers_apply_grapple
+
+	frame data/chars/ryu/84_3.png
+
+	# Now we want to toss the grappled entity away
+	# and cause damage when they land.
+
+	# Adjust grapple properties.
+	@cmd dc_elmers_set_offset_x 55
+	@cmd dc_elmers_set_offset_y 20
+	
+	# Populate damage entity with grappled entity.
+	@cmd dc_damage_set_entity dc_elmers_get_entity()
+	
+	# End grapple.
+	@cmd dc_elmers_end_grapple	
+
+	# Adjust damage properties.
+	@cmd dc_damage_set_attack_type openborconstant("ATK_NORMAL10")
+	@cmd dc_damage_set_projectile openborconstant("BLAST_ATTACK")
+	@cmd dc_damage_set_damage_on_landing_force 30
+	@cmd dc_damage_set_direction_adjust openborconstant("DIRECTION_ADJUST_SAME")
+	@cmd dc_damage_set_drop_velocity_x 3.5
+	@cmd dc_damage_set_drop_velocity_y 2.0
+	
+	# Apply damage.
+	@cmd dc_damage_apply_damage	
+
+	frame data/chars/ryu/84_4.png
+	frame data/chars/ryu/84_5.png	
+	frame data/chars/ryu/84_6.png
+	
+	delay 10
+	
+	frame data/chars/ryu/84_7.png
+	frame data/chars/ryu/84_8.png
+	frame data/chars/ryu/19_0.png
+
+
+anim follow11 # Switch to back
+	
+	flipframe 5
+
+	delay 8
+	
+	offset 83 147
+	
+	bbox.position.x 64
+	bbox.position.y 51
+	bbox.size.x 49
+	bbox.size.y 95
+	
+	frame data/chars/ryu/49_0.png
+
+	# Set up the grapple.
+	@cmd dc_elmers_initialize_grapple
+
+	# Adjust grapple properties.
+	@cmd dc_elmers_set_offset_x 31
+	@cmd dc_elmers_set_offset_y -2
+	@cmd dc_elmers_set_sorting DC_ELMERS_SORT_FRONT
+	@cmd dc_elmers_set_frame DC_ELMERS_REACT_PAIN_0
+
+	# Apply grapple properties.
+	@cmd dc_elmers_apply_grapple
+
+	# Play sound effect
+	@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_SOUND_ATTACK_HEAVY
+	
+	frame data/chars/ryu/43_11.png	
+
+	# Adjust grapple properties.
+	@cmd dc_elmers_set_offset_x 18
+	@cmd dc_elmers_set_offset_y -2
+	@cmd dc_elmers_set_frame DC_ELMERS_REACT_PAIN_1
+
+	# Apply grapple properties.
+	@cmd dc_elmers_apply_grapple
+
+	frame data/chars/ryu/36_8.png
+
+	delay 35
+
+	# Adjust grapple properties.
+	@cmd dc_elmers_set_offset_x -30
+	@cmd dc_elmers_set_offset_y -2
+	@cmd dc_elmers_set_sorting DC_ELMERS_SORT_BACK
+	@cmd dc_elmers_set_frame DC_ELMERS_REACT_PAIN_MID_0
+	@cmd dc_elmers_set_direction openborconstant("DIRECTION_ADJUST_OPPOSITE")
+
+	# Apply grapple properties.
+	@cmd dc_elmers_apply_grapple
+
+	frame data/chars/ryu/84_0.png
+	
+	#cmd dc_disney_perform_attack DC_ELMERS_GRAB_BACK
+	@cmd dc_elmers_apply_grab
+	frame data/chars/ryu/84_0.png

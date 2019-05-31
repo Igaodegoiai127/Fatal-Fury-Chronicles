@@ -1,4 +1,4 @@
-#include "data/scripts/dc_grapple/main.c"
+#include "data/scripts/dc_elmers/main.c"
 #include "data/scripts/dc_fidelity/main.c"
 
 #define HP_LOW 0.25
@@ -17,7 +17,8 @@ void main()
 	ent = getlocalvar("self");
 
 	// Release any grappled entities.
-	dc_grapple_release_all(ent);
+	dc_elmers_set_target(ent);
+	dc_elmers_disrupt_grapple();
 
 	hp = 0.0 + get_entity_property(ent, "hp");
 

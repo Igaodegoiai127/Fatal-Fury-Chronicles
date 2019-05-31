@@ -1,4 +1,5 @@
 #include "data/scripts/dc_disney/main.c"
+#include "data/scripts/dc_elmers/main.c"
 
 void oncreate()
 {
@@ -27,11 +28,7 @@ void main(){
     
 	int     player_index;		// Player index.
 	void    ent;				// Player entity.
-	int     idle;				// AI flag.
-	int		attacking;			// AI flag.
-	int		jumping;			// AI flag.
-	int		blocking;
-	
+		
 	player_index = getlocalvar("player");
 
 	// Populate the variables.
@@ -41,19 +38,13 @@ void main(){
 	if (!ent)
 	{
 		return;
-	}
-
-	// Get AI "entity_status" flags.
-	idle		= getentityproperty(ent, "aiflag", "idling");    
-	attacking	= getentityproperty(ent, "aiflag", "attacking");
-	jumping		= getentityproperty(ent, "aiflag", "jumping");
-	blocking	= get_entity_property(ent, "block_state");
+	}	
 
 	// Set base entity for animation control library.
 	dc_disney_set_entity(ent);
 
 	// Run different action attempts based on basic entity state.
-	if (idle)
+	if (get_entity_property(ent, "idle_state"))
     {
 		// Backward dash (2x Special)
 		if (dc_command_back_dash(player_index))
@@ -67,7 +58,7 @@ void main(){
 			return;
 		}
 	}
-	else if (blocking)
+	else if (get_entity_property(ent, "block_state"))
 	{
 		// Backward dash (2x Special)
 		if (dc_command_back_dash(player_index))
@@ -75,7 +66,7 @@ void main(){
 			return;
 		}
 	}
-    else if (jumping)
+    else if (get_entity_property(ent, "jump_state"))
     {
 		// Air block.
 		if (dc_command_airblock(player_index))
@@ -89,9 +80,15 @@ void main(){
 			return;
 		}
     }
-    else if (attacking)
+    else if (get_entity_property(ent, "attack_state"))
     {	
-    }	
+    }
+	else if (get_entity_property(ent, "link"))
+	{
+		dc_try_grapple_side_switch();
+	}
+
+	
 }
 
 // Caskey, Damon V.
@@ -467,6 +464,34 @@ int dc_try_down_attack(int player_index)
 	// Clear attack flag from key press.
 	key_press -= openborconstant("FLAG_ATTACK");
 	changeplayerproperty(player_index, "newkeys", key_press);
+
+	// Return true.
+	return 1;
+}
+
+// Caskey, Damon V.
+// 2018-11-01
+//
+// Verify conditions for switching sides and do it if possible.
+int dc_try_grapple_side_switch(int player_index)
+{
+	int key_press;	// Key pressed.	
+
+	// Key press validation.
+	key_press = getplayerproperty(player_index, "playkeys");
+
+	if (!(key_press & openborconstant("FLAG_JUMP")))
+	{
+		return 0;
+	}	
+
+	// Run the action function.
+	dc_elmers_set_target(getplayerproperty(player_index, "entity"));
+	dc_elmers_side_switch();
+	
+	// Clear flag from key press.
+	key_press -= openborconstant("FLAG_JUMP");
+	changeplayerproperty(player_index, "playkeys", 0);
 
 	// Return true.
 	return 1;

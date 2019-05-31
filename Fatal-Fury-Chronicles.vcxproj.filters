@@ -180,9 +180,6 @@
     <ClCompile Include="data\scripts\dc_velocity\velocity.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="data\scripts\dc_damage\config.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="data\scripts\dc_damage\damage.c">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -411,9 +408,6 @@
     <ClCompile Include="data\scripts\dc_kanga\entity.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="data\scripts\dc_elmers\palette.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="data\scripts\dc_initialize\initialize_flash_default.c">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -480,43 +474,64 @@
     <ClCompile Include="data\scripts\common\common_didhit.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="data\scripts\dc_elmers\position_config.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="data\scripts\dc_elmers\grapple.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="data\scripts\dc_elmers\instance.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="data\scripts\dc_elmers\direction.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="data\scripts\dc_damage\velocity.c">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="data\scripts\dc_damage\position.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="data\scripts\dc_elmers\position.c">
+    <ClCompile Include="data\scripts\dc_gracie\instance.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="data\scripts\dc_elmers\bind.c">
+    <ClCompile Include="data\scripts\dc_gracie\grapple.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="data\scripts\dc_elmers\entity.c">
+    <ClCompile Include="data\scripts\dc_gracie\offset.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="data\scripts\dc_elmers\level.c">
+    <ClCompile Include="data\scripts\dc_gracie\direction.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="data\scripts\dc_elmers\macro.c">
+    <ClCompile Include="data\scripts\dc_gracie\candamage.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="data\scripts\dc_elmers\main.c">
+    <ClCompile Include="data\scripts\dc_gracie\pose.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="data\scripts\dc_elmers\offset.c">
+    <ClCompile Include="data\scripts\dc_gracie\blast.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="data\scripts\dc_gracie\sort.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="data\scripts\dc_gracie\attacking.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="data\scripts\dc_gracie\main.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="data\scripts\dc_gracie\entity.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="data\scripts\dc_damage\instance.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="data\scripts\dc_damage\drop.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="data\scripts\dc_damage\entity.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="data\scripts\dc_damage\damage_force.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="data\scripts\dc_damage\damage_type.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="data\scripts\dc_damage\damage_land.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="data\scripts\dc_damage\projectile.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -575,10 +590,10 @@
     <ClInclude Include="data\scripts\dc_janet\config.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="data\scripts\dc_elmers\config.h">
+    <ClInclude Include="data\scripts\dc_gracie\config.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="data\scripts\dc_elmers\grapple_config.h">
+    <ClInclude Include="data\scripts\dc_elmers\config.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
