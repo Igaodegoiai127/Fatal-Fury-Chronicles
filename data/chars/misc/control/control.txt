@@ -25,7 +25,7 @@ anim follow20
 
 	@cmd dc_elmers_set_entity dc_elmers_find_first_bound getlocalvar("self")
 
-	@cmd dc_elmers_set_bind_animation_match openborconstant("BIND_ANIMATION_DEFINED")+openborconstant("BIND_ANIMATION_FRAME")
+	@cmd dc_elmers_set_animation_match openborconstant("BIND_ANIMATION_DEFINED")+openborconstant("BIND_ANIMATION_FRAME")
 	@cmd dc_elmers_set_bind_property "animation_id"  DC_ELMERS_REACT_ANIMATION
 	@cmd dc_elmers_set_bind_property "animation_frame"  DC_ELMERS_REACT_PAIN_MID_1
 
