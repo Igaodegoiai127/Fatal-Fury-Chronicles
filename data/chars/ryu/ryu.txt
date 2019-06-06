@@ -2711,24 +2711,24 @@ anim grab # Grab
 	bbox.size.x 49
 	bbox.size.y 95
 	
-	frame data/chars/ryu/49_0.png
+	frame data/chars/ryu/grab_0.png
 
 	offset 81 147
 
-	frame data/chars/ryu/49_0.png
+	frame data/chars/ryu/grab_0.png
 
 	offset 83 147
 
-	frame data/chars/ryu/49_0.png
+	frame data/chars/ryu/grab_0.png
 
 	offset 81 147
 
-	frame data/chars/ryu/49_0.png
+	frame data/chars/ryu/grab_0.png
 
 	delay 50
 	offset 83 147
 
-	frame data/chars/ryu/49_0.png
+	frame data/chars/ryu/grab_0.png
 
 anim grabattack # Grab knee
 	
@@ -2744,7 +2744,7 @@ anim grabattack # Grab knee
 	@cmd	dc_fidelity_quick_play DC_FIDELITY_TYPE_SOUND_ATTACK_MEDIUM
 	@cmd	dc_fidelity_quick_play DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_LIGHT
 	
-	frame data/chars/ryu/49_0.png
+	frame data/chars/ryu/grab_0.png
 	
 	bbox.position.x 79
 	bbox.position.y 43
@@ -2801,7 +2801,7 @@ anim grabattack2 # Grab finisher
 	@cmd	dc_fidelity_quick_play DC_FIDELITY_TYPE_SOUND_ATTACK_MEDIUM
 	@cmd	dc_fidelity_quick_play DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_MEDIUM
 	
-	frame data/chars/ryu/49_0.png
+	frame data/chars/ryu/grab_0.png
 
 	# The punch swings just a bit forward, so 
 	# we'll use the grapple system to move
@@ -2891,7 +2891,7 @@ anim grabbackward # Circle Throw
 	bbox.size.x 49
 	bbox.size.y 95
 	
-	frame data/chars/ryu/49_0.png
+	frame data/chars/ryu/grab_0.png
 	
 	# Set up the grapple.
 	@cmd dc_elmers_initialize_grapple
@@ -2984,7 +2984,7 @@ anim grabforward # Shoulder Throw
 	bbox.size.x 49
 	bbox.size.y 95
 	
-	frame data/chars/ryu/49_0.png
+	frame data/chars/ryu/grab_0.png
 
 	delay 1000
 
@@ -3115,7 +3115,7 @@ anim follow11 # Switch to back
 	bbox.size.x 49
 	bbox.size.y 95
 	
-	frame data/chars/ryu/49_0.png
+	frame data/chars/ryu/grab_0.png
 
 	# Set up the grapple.
 	@cmd dc_elmers_initialize_grapple
@@ -3158,6 +3158,9 @@ anim follow11 # Switch to back
 
 	frame data/chars/ryu/84_0.png
 	
-	#cmd dc_disney_perform_attack DC_ELMERS_GRAB_BACK
-	@cmd dc_elmers_apply_grab
+	#cmd dc_disney_adjust_direction openborconstant("DIRECTION_ADJUST_OPPOSITE")
+	#@cmd dc_elmers_apply_grab
+	@cmd dc_disney_perform_attack DC_ELMERS_GRAB_BACK
+	
+	
 	frame data/chars/ryu/84_0.png
