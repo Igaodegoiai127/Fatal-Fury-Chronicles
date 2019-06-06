@@ -124,8 +124,8 @@ anim select
 		fshadow 0
 		loop	1 8
 
-	frame	data/chars/ryu/0_0.png
-	frame	data/chars/ryu/0_1.png
+	frame	data/chars/ryu/idle_0.png
+	frame	data/chars/ryu/idle_1.png
 	frame	data/chars/ryu/61_0.png
 	frame	data/chars/ryu/61_1.png
 	frame	data/chars/ryu/61_2.png
@@ -161,13 +161,13 @@ anim idle
 	bbox.size.x		38
 	bbox.size.y		98
 
-	frame	data/chars/ryu/0_0.png
-	frame	data/chars/ryu/0_1.png
-	frame	data/chars/ryu/0_2.png
-	frame	data/chars/ryu/0_3.png
-	frame	data/chars/ryu/0_4.png
-	frame	data/chars/ryu/0_5.png
-	frame	data/chars/ryu/0_6.png
+	frame	data/chars/ryu/idle_0.png
+	frame	data/chars/ryu/idle_1.png
+	frame	data/chars/ryu/idle_2.png
+	frame	data/chars/ryu/idle_3.png
+	frame	data/chars/ryu/idle_4.png
+	frame	data/chars/ryu/idle_5.png
+	frame	data/chars/ryu/idle_6.png
 
 
 anim walk
