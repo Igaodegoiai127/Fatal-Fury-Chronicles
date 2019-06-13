@@ -243,11 +243,11 @@ anim charge
 		bbox.size.x		38
 		bbox.size.y		98
 
-	frame	data/chars/ryu/55_0.png
-	frame	data/chars/ryu/55_1.png
+	frame	data/chars/ryu/charge_start_0.png
+	frame	data/chars/ryu/charge_start_1.png
 		delay	4
-	frame	data/chars/ryu/55_2.png
-	frame	data/chars/ryu/55_3.png
+	frame	data/chars/ryu/charge_0.png
+	frame	data/chars/ryu/charge_1.png
 
 anim jumpdelay
 
