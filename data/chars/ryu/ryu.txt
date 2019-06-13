@@ -205,14 +205,14 @@ anim backwalk
 		bbox.size.x		38
 		bbox.size.y		98
 
-	frame	data/chars/ryu/3_0.png
-	frame	data/chars/ryu/3_1.png
-	frame	data/chars/ryu/3_2.png
-	frame	data/chars/ryu/3_3.png
-	frame	data/chars/ryu/3_4.png
-	frame	data/chars/ryu/3_5.png
-	frame	data/chars/ryu/3_6.png
-	frame	data/chars/ryu/3_7.png
+	frame	data/chars/ryu/walk_back_0.png
+	frame	data/chars/ryu/walk_back_1.png
+	frame	data/chars/ryu/walk_back_2.png
+	frame	data/chars/ryu/walk_back_3.png
+	frame	data/chars/ryu/walk_back_4.png
+	frame	data/chars/ryu/walk_back_5.png
+	frame	data/chars/ryu/walk_back_6.png
+	frame	data/chars/ryu/walk_back_7.png
 
 anim run
 
