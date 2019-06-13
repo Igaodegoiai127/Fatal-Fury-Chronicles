@@ -41,6 +41,8 @@ com     f -> d -> f -> j	freespecial12	# Shoryuken
 com     f -> d -> j			freespecial13	# Hurricane Kick
 
 palette			data/chars/ryu/pal_0.act
+palette			data/chars/ryu/select_0.png
+
 alternatepal	data/chars/ryu/pal_1.act
 
 animationscript		data/chars/ryu/script/event_animation_pc.c
@@ -182,14 +184,14 @@ anim walk
 		bbox.size.x		38
 		bbox.size.y		98
 
-	frame	data/chars/ryu/2_0.png
-	frame	data/chars/ryu/2_1.png
-	frame	data/chars/ryu/2_2.png
-	frame	data/chars/ryu/2_3.png
-	frame	data/chars/ryu/2_4.png
-	frame	data/chars/ryu/2_5.png
-	frame	data/chars/ryu/2_6.png
-	frame	data/chars/ryu/2_7.png
+	frame	data/chars/ryu/walk_0.png
+	frame	data/chars/ryu/walk_1.png
+	frame	data/chars/ryu/walk_2.png
+	frame	data/chars/ryu/walk_3.png
+	frame	data/chars/ryu/walk_4.png
+	frame	data/chars/ryu/walk_5.png
+	frame	data/chars/ryu/walk_6.png
+	frame	data/chars/ryu/walk_7.png
 
 anim backwalk
 
