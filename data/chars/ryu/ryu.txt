@@ -334,6 +334,30 @@ anim forwardjump
 	frame	data/chars/ryu/jump_forward_7.png
 
 
+anim blockrelease
+
+		delay	6
+		offset	82 147
+	
+		bbox.position.x	66
+		bbox.position.y 49
+		bbox.size.x		38
+		bbox.size.y		98
+
+	frame	data/chars/ryu/block_start_0.png
+
+anim blockstart
+
+		delay	6
+		offset	82 147
+	
+		bbox.position.x	66
+		bbox.position.y 49
+		bbox.size.x		38
+		bbox.size.y		98
+
+	frame	data/chars/ryu/block_start_0.png
+
 anim block
 
 		delay	8
@@ -344,8 +368,7 @@ anim block
 		bbox.size.x		38
 		bbox.size.y		98
 
-	frame	data/chars/ryu/12_0.png
-	frame	data/chars/ryu/12_1.png
+	frame	data/chars/ryu/block_0.png
 
 
 anim freespecial # Backward Dash
