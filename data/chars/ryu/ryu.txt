@@ -323,15 +323,15 @@ anim forwardjump
 		bbox.size.x		38
 		bbox.size.y		98
 
-	frame	data/chars/ryu/11_0.png
+	frame	data/chars/ryu/jump_forward_0.png
 		delay	8
-	frame	data/chars/ryu/11_1.png
-	frame	data/chars/ryu/11_2.png
-	frame	data/chars/ryu/11_3.png
-	frame	data/chars/ryu/11_4.png
-	frame	data/chars/ryu/11_5.png
-	frame	data/chars/ryu/11_6.png
-	frame	data/chars/ryu/11_7.png
+	frame	data/chars/ryu/jump_forward_1.png
+	frame	data/chars/ryu/jump_forward_2.png
+	frame	data/chars/ryu/jump_forward_3.png
+	frame	data/chars/ryu/jump_forward_4.png
+	frame	data/chars/ryu/jump_forward_5.png
+	frame	data/chars/ryu/jump_forward_6.png
+	frame	data/chars/ryu/jump_forward_7.png
 
 
 anim block
