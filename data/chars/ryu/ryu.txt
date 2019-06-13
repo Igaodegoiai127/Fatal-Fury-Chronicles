@@ -404,12 +404,12 @@ anim attackdown # Sidestep down
 	delay	8
 	bbox 0
 	
-	frame	data/chars/ryu/5_0.png
-	frame	data/chars/ryu/5_1.png
+	frame	data/chars/ryu/dash_0.png
+	frame	data/chars/ryu/dash_1.png
 	
 	delay	-1000
 	
-	frame	data/chars/ryu/5_2.png
+	frame	data/chars/ryu/dash_2.png
 		
 	delay	10
 		
@@ -418,7 +418,7 @@ anim attackdown # Sidestep down
 	bbox.size.x		38
 	bbox.size.y		98	
 	 
-	frame	data/chars/ryu/5_3.png
+	frame	data/chars/ryu/dash_3.png
 
 
 anim attackup
@@ -441,12 +441,12 @@ anim attackup
 	delay	8		
 	bbox 0
 	
-	frame	data/chars/ryu/5_0.png
-	frame	data/chars/ryu/5_1.png
+	frame	data/chars/ryu/dash_0.png
+	frame	data/chars/ryu/dash_1.png
 	
 	delay	-1000
 	
-	frame	data/chars/ryu/5_2.png
+	frame	data/chars/ryu/dash_2.png
 	
 	delay	10
 		
@@ -455,7 +455,7 @@ anim attackup
 	bbox.size.x		38
 	bbox.size.y		98
 	
-	frame	data/chars/ryu/5_3.png
+	frame	data/chars/ryu/dash_3.png
 
 anim Freespecial10 # Hadouken
 	
