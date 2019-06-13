@@ -366,13 +366,13 @@ anim freespecial # Backward Dash
 		bbox 0
 		move -10
 
-	frame	data/chars/ryu/6_0.png
+	frame	data/chars/ryu/dash_back_0.png
 	
 		move	0
 	
-	frame	data/chars/ryu/6_1.png
+	frame	data/chars/ryu/dash_back_1.png
 		delay	-1000
-	frame	data/chars/ryu/6_2.png
+	frame	data/chars/ryu/dash_back_2.png
 		delay	10
 		bbox.position.x	66
 		bbox.position.y 49
@@ -381,7 +381,7 @@ anim freespecial # Backward Dash
 
 		move	-10
 
-	frame	data/chars/ryu/6_3.png
+	frame	data/chars/ryu/dash_back_3.png
 
 
 anim attackdown # Sidestep down
