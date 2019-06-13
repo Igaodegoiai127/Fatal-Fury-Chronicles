@@ -225,12 +225,12 @@ anim run
 		bbox.size.x		38
 		bbox.size.y		98
 
-	frame	data/chars/ryu/4_0.png
-	frame	data/chars/ryu/4_1.png
-	frame	data/chars/ryu/4_2.png
-	frame	data/chars/ryu/4_3.png
-	frame	data/chars/ryu/4_4.png
-	frame	data/chars/ryu/4_5.png
+	frame	data/chars/ryu/run_0.png
+	frame	data/chars/ryu/run_1.png
+	frame	data/chars/ryu/run_2.png
+	frame	data/chars/ryu/run_3.png
+	frame	data/chars/ryu/run_4.png
+	frame	data/chars/ryu/run_5.png
 
 anim charge
 
@@ -1607,35 +1607,25 @@ anim freespecial2 # Back attack
 	
 	range -50 0
 	
-	delay	4
+	delay	6
 	offset	82 147
-	
-	bbox.position.x 71
-	bbox.position.y 50
-	bbox.size.x 29
-	bbox.size.y 98
-
-	frame	data/chars/ryu/79_0.png	
-	frame	data/chars/ryu/79_1.png
-	
-	delay 5
 	
 	bbox.position.x 77
 	bbox.position.y 50
 	bbox.size.x 31
 	bbox.size.y 97
-	
-	@cmd	dc_fidelity_quick_play DC_FIDELITY_TYPE_SOUND_ATTACK_HEAVY
-	@cmd	dc_fidelity_quick_play DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_MEDIUM
-	
-	frame	data/chars/ryu/79_2.png	
+		
+	frame	data/chars/ryu/attack_back_0.png	
 	
 	bbox.position.x 87
 	bbox.position.y 48
 	bbox.size.x 37
 	bbox.size.y 98
 	
-	frame	data/chars/ryu/79_3.png
+	@cmd	dc_fidelity_quick_play DC_FIDELITY_TYPE_SOUND_ATTACK_HEAVY
+	@cmd	dc_fidelity_quick_play DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_MEDIUM
+
+	frame	data/chars/ryu/attack_back_1.png
 	
 	bbox.position.x 84
 	bbox.position.y 53
@@ -1651,11 +1641,11 @@ anim freespecial2 # Back attack
 	attack.size.x 57
 	attack.size.y 31
 	
-	frame	data/chars/ryu/79_4.png
+	frame	data/chars/ryu/attack_back_2.png
 	
 	delay 8
 	
-	frame	data/chars/ryu/79_5.png
+	frame	data/chars/ryu/attack_back_3.png
 	
 	bbox.position.x 84
 	bbox.position.y 46
@@ -1668,24 +1658,14 @@ anim freespecial2 # Back attack
 	attack.size.x 0
 	attack.size.y 0
 	
-	frame	data/chars/ryu/79_6.png
+	frame	data/chars/ryu/attack_back_4.png
 	
 	bbox.position.x 68
 	bbox.position.y 51
 	bbox.size.x 39
 	bbox.size.y 98
 	
-	frame	data/chars/ryu/79_7.png
-	
-	delay 6
-	
-	bbox.position.x 65
-	bbox.position.y 50
-	bbox.size.x 37
-	bbox.size.y 96
-	
-	frame	data/chars/ryu/79_1.png
-	frame	data/chars/ryu/79_0.png
+	frame	data/chars/ryu/attack_back_5.png
 
 anim freespecial3 # Plane Force Down
 	
