@@ -1190,11 +1190,11 @@ anim rise # Normal Rise
 	delay 7
 	offset 82 147
 	
-	frame data/chars/ryu/53_0.png
-	frame data/chars/ryu/53_1.png
-	frame data/chars/ryu/53_2.png
-	frame data/chars/ryu/53_3.png
-	frame data/chars/ryu/53_4.png
+	frame data/chars/ryu/rise_0.png
+	frame data/chars/ryu/rise_1.png
+	frame data/chars/ryu/rise_2.png
+	frame data/chars/ryu/rise_3.png
+	frame data/chars/ryu/rise_4.png
 	
 	offset 90 140
 	
