@@ -174,12 +174,12 @@ anim idle # Ready stance.
 	bbox.size.x 37
 	bbox.size.y 105
 
-	frame	data/chars/terry/0_0.png
-	frame	data/chars/terry/0_1.png
-	frame	data/chars/terry/0_2.png
-	frame	data/chars/terry/0_3.png
-	frame	data/chars/terry/0_2.png
-	frame	data/chars/terry/0_1.png
+	frame	data/chars/terry/idle_0.png
+	frame	data/chars/terry/idle_1.png
+	frame	data/chars/terry/idle_2.png
+	frame	data/chars/terry/idle_3.png
+	frame	data/chars/terry/idle_2.png
+	frame	data/chars/terry/idle_1.png
 
 anim idle3 # Strafe (opponent front Z)
 
@@ -195,10 +195,10 @@ anim idle3 # Strafe (opponent front Z)
 	bbox.size.x 42
 	bbox.size.y 105
 
-	frame	data/chars/terry/4_0.png
-	frame	data/chars/terry/4_1.png
-	frame	data/chars/terry/4_2.png
-	frame	data/chars/terry/4_1.png
+	frame	data/chars/terry/idle_3_0.png
+	frame	data/chars/terry/idle_3_1.png
+	frame	data/chars/terry/idle_3_2.png
+	frame	data/chars/terry/idle_3_1.png
 
 #anim sleep
 
@@ -229,11 +229,11 @@ anim walk # Normal walk
 	bbox.size.x 42
 	bbox.size.y 105
 
-	frame	data/chars/terry/2_0.png
-	frame	data/chars/terry/2_1.png
-	frame	data/chars/terry/2_2.png
-	frame	data/chars/terry/2_3.png
-	frame	data/chars/terry/2_4.png
+	frame	data/chars/terry/walk_0.png
+	frame	data/chars/terry/walk_1.png
+	frame	data/chars/terry/walk_2.png
+	frame	data/chars/terry/walk_3.png
+	frame	data/chars/terry/walk_4.png
 
 #Strafe walk (opponent in front on Z)
 anim walk3 # Strafe Walk
@@ -250,11 +250,11 @@ anim walk3 # Strafe Walk
 	bbox.size.x 42
 	bbox.size.y 105
 
-	frame	data/chars/terry/3_0.png
-	frame	data/chars/terry/3_1.png
-	frame	data/chars/terry/3_2.png
-	frame	data/chars/terry/3_3.png
-	frame	data/chars/terry/3_4.png
+	frame	data/chars/terry/walk_3_0.png
+	frame	data/chars/terry/walk_3_1.png
+	frame	data/chars/terry/walk_3_2.png
+	frame	data/chars/terry/walk_3_3.png
+	frame	data/chars/terry/walk_3_4.png
 
 anim run # Dash
 
@@ -273,10 +273,10 @@ anim run # Dash
 	bbox.size.x 45
 	bbox.size.y 84
 		
-	frame	data/chars/terry/24_0.png
-	frame	data/chars/terry/24_1.png
+	frame	data/chars/terry/jump_land_0.png
+	frame	data/chars/terry/jump_land_2.png
 		@cmd dc_disney_dash_stop
-	frame	data/chars/terry/24_1.png
+	frame	data/chars/terry/jump_land_2.png
 
 anim get # Get
 
@@ -298,7 +298,7 @@ anim get # Get
 	bbox.size.x 40
 	bbox.size.y 86
 	
-	frame	data/chars/terry/24_1.png	
+	frame	data/chars/terry/jump_land_2.png	
 
 
 anim 	attack1 # Long Jab
@@ -850,8 +850,8 @@ anim 	attack7	# Jumping spin kick.
 	bbox.size.x 41
 	bbox.size.y 90
 		
-	frame	data/chars/terry/24_0.png	
-	frame	data/chars/terry/24_1.png
+	frame	data/chars/terry/jump_land_0.png	
+	frame	data/chars/terry/jump_land_2.png
 
 anim runattack # Power Charge
 
@@ -1207,21 +1207,21 @@ anim freespecial6 # Rising tackle
 	bbox.size.x 36
 	bbox.size.y 85
 		
-	frame 	data/chars/terry/24_0.png
+	frame 	data/chars/terry/jump_land_0.png
 	
 	bbox.position.x 61
 	bbox.position.y 83
 	bbox.size.x 40
 	bbox.size.y 75
 	
-	frame data/chars/terry/1_0.png
+	frame data/chars/terry/jump_land_1.png
 	
 	bbox.position.x 65
 	bbox.position.y 74
 	bbox.size.x 36
 	bbox.size.y 85
 	
-	frame 	data/chars/terry/24_1.png
+	frame 	data/chars/terry/jump_land_2.png
 
 #*****Followups****************************************************************************
 
@@ -1340,7 +1340,7 @@ anim follow51 # Defense poses
 	bbox.size.x 37
 	bbox.size.y 105
 
-	frame	data/chars/terry/0_0.png
+	frame	data/chars/terry/idle_0.png
 		
 	delay	-100
 	offset	63 158
@@ -1555,7 +1555,7 @@ anim jumpdelay
 	bbox.size.x 40
 	bbox.size.y 86
 	
-	frame data/chars/terry/24_1.png
+	frame data/chars/terry/jump_land_2.png
 
 anim jumpland # Jump land
 
@@ -1567,21 +1567,21 @@ anim jumpland # Jump land
 	bbox.size.x 40
 	bbox.size.y 86
 	
-	frame data/chars/terry/24_0.png
+	frame data/chars/terry/jump_land_0.png
 	
 	bbox.position.x 61
 	bbox.position.y 83
 	bbox.size.x 40
 	bbox.size.y 75
 	
-	frame data/chars/terry/1_0.png
+	frame data/chars/terry/jump_land_1.png
 	
 	bbox.position.x 61
 	bbox.position.y 75
 	bbox.size.x 40
 	bbox.size.y 86
 	
-	frame data/chars/terry/24_1.png
+	frame data/chars/terry/jump_land_2.png
 
 anim jump # Jump
 
@@ -1786,7 +1786,7 @@ anim blockpain3	# Low block.
 	bbox.size.x 43
 	bbox.size.y 75
 	
-	frame	data/chars/terry/1_0.png
+	frame	data/chars/terry/jump_land_1.png
 	bbox.position.x 58
 	bbox.position.y 73
 	bbox.size.x 45
@@ -1803,7 +1803,7 @@ anim rise # Rise
 	frame	data/chars/terry/41_0.png
 	frame	data/chars/terry/41_1.png
 	frame	data/chars/terry/41_2.png
-	frame	data/chars/terry/24_1.png
+	frame	data/chars/terry/jump_land_2.png
 
 anim pain # Normal pain
 
@@ -2287,7 +2287,7 @@ anim freespecial # Backward dash
 	bbox.size.x 0
 	bbox.size.y 0
 	
-	frame data/chars/terry/24_1.png
+	frame data/chars/terry/jump_land_2.png
 	
 	delay -1000
 	
@@ -2307,7 +2307,7 @@ anim freespecial # Backward dash
 	bbox.size.x 40
 	bbox.size.y 86
 	
-	frame data/chars/terry/24_1.png
+	frame data/chars/terry/jump_land_2.png
 	
 anim freespecial10 # Power Wave
 
@@ -2412,7 +2412,7 @@ anim freespecial10 # Power Wave
 	bbox.size.x 40
 	bbox.size.y 86
 	
-	frame data/chars/terry/24_1.png
+	frame data/chars/terry/jump_land_2.png
 
  anim freespecial11 # Crack Shoot
 	
@@ -2534,18 +2534,18 @@ anim freespecial10 # Power Wave
 	bbox.size.x 40
 	bbox.size.y 86
 	
-	frame data/chars/terry/24_0.png
+	frame data/chars/terry/jump_land_0.png
 	
 	bbox.position.x 64
 	bbox.position.y 87
 	bbox.size.x 40
 	bbox.size.y 71
 	
-	frame data/chars/terry/1_0.png
+	frame data/chars/terry/jump_land_1.png
 	
 	bbox.position.x 61
 	bbox.position.y 75
 	bbox.size.x 40
 	bbox.size.y 86
 	
-	frame data/chars/terry/24_1.png
+	frame data/chars/terry/jump_land_2.png
