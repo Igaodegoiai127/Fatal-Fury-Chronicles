@@ -300,16 +300,16 @@ anim jump
 		bbox.size.x		38
 		bbox.size.y		98
 
-	frame	data/chars/ryu/10_0.png
+	frame	data/chars/ryu/jump_0.png
 		delay	8
-	frame	data/chars/ryu/10_1.png
-	frame	data/chars/ryu/10_2.png
-	frame	data/chars/ryu/10_3.png
-	frame	data/chars/ryu/10_4.png
-	frame	data/chars/ryu/10_5.png
-	frame	data/chars/ryu/10_6.png
-	frame	data/chars/ryu/10_7.png
-	frame	data/chars/ryu/10_8.png
+	frame	data/chars/ryu/jump_1.png
+	frame	data/chars/ryu/jump_2.png
+	frame	data/chars/ryu/jump_3.png
+	frame	data/chars/ryu/jump_4.png
+	frame	data/chars/ryu/jump_5.png
+	frame	data/chars/ryu/jump_6.png
+	frame	data/chars/ryu/jump_7.png
+	frame	data/chars/ryu/jump_8.png
 
 anim forwardjump
 
@@ -1198,12 +1198,12 @@ anim rise # Normal Rise
 	
 	offset 90 140
 	
-	frame data/chars/ryu/10_6.png
-	frame data/chars/ryu/10_7.png
+	frame data/chars/ryu/jump_6.png
+	frame data/chars/ryu/jump_7.png
 	
 	delay -1000
 	
-	frame data/chars/ryu/10_8.png
+	frame data/chars/ryu/jump_8.png
 	
 	delay  5
 	offset 82 147
@@ -1447,14 +1447,14 @@ anim jumpattack # Vertical jump attack
 	bbox.size.x 37
 	bbox.size.y 89
 	
-	frame	data/chars/ryu/10_7.png
+	frame	data/chars/ryu/jump_7.png
 	
 	bbox.position.x 64
 	bbox.position.y 31
 	bbox.size.x 39
 	bbox.size.y 105
 	
-	frame	data/chars/ryu/10_8.png
+	frame	data/chars/ryu/jump_8.png
 	
 	
 
@@ -1518,15 +1518,15 @@ anim jumpattack2 # Knee of DOOM!
 	bbox.size.x 37
 	bbox.size.y 89
 	
-	frame	data/chars/ryu/10_6.png
-	frame	data/chars/ryu/10_7.png
+	frame	data/chars/ryu/jump_6.png
+	frame	data/chars/ryu/jump_7.png
 	
 	bbox.position.x 64
 	bbox.position.y 31
 	bbox.size.x 39
 	bbox.size.y 105
 	
-	frame	data/chars/ryu/10_8.png
+	frame	data/chars/ryu/jump_8.png
 
 anim jumpforward # Heel Kick
 	
@@ -1588,21 +1588,21 @@ anim jumpforward # Heel Kick
 	bbox.size.x 36
 	bbox.size.y 70
 	
-	frame	data/chars/ryu/10_6.png
+	frame	data/chars/ryu/jump_6.png
 	
 	bbox.position.x 68
 	bbox.position.y 36
 	bbox.size.x 36
 	bbox.size.y 82
 	
-	frame	data/chars/ryu/10_7.png
+	frame	data/chars/ryu/jump_7.png
 	
 	bbox.position.x 64
 	bbox.position.y 31
 	bbox.size.x 39
 	bbox.size.y 105
 	
-	frame	data/chars/ryu/10_8.png
+	frame	data/chars/ryu/jump_8.png
 anim freespecial2 # Back attack
 	
 	range -50 0
@@ -1891,8 +1891,8 @@ anim freespecial5 # Plane attack down
 	bbox.size.x 35
 	bbox.size.y 110
 	
-	frame	data/chars/ryu/10_0.png
-	frame	data/chars/ryu/10_1.png
+	frame	data/chars/ryu/jump_0.png
+	frame	data/chars/ryu/jump_1.png
 	
 	bbox.position.x 65
 	bbox.position.y 41
@@ -1931,12 +1931,12 @@ anim freespecial5 # Plane attack down
 	attack.size.x 0
 	attack.size.y 0
 	
-	frame	data/chars/ryu/10_6.png
-	frame	data/chars/ryu/10_7.png
+	frame	data/chars/ryu/jump_6.png
+	frame	data/chars/ryu/jump_7.png
 	
 	delay -1000
 	
-	frame	data/chars/ryu/10_8.png
+	frame	data/chars/ryu/jump_8.png
 	
 	delay	4
 	offset	82 147
@@ -1974,7 +1974,7 @@ anim freespecial6 # Plane attack up
 	bbox.size.x 35
 	bbox.size.y 110
 	
-	frame	data/chars/ryu/10_0.png
+	frame	data/chars/ryu/jump_0.png
 	frame	data/chars/ryu/81_0.png
 	
 	bbox.position.x 65
@@ -2019,12 +2019,12 @@ anim freespecial6 # Plane attack up
 	attack.size.y 0
 	
 	frame	data/chars/ryu/81_7.png
-	frame	data/chars/ryu/10_6.png
-	frame	data/chars/ryu/10_7.png
+	frame	data/chars/ryu/jump_6.png
+	frame	data/chars/ryu/jump_7.png
 	
 	delay -1000
 	
-	frame	data/chars/ryu/10_8.png
+	frame	data/chars/ryu/jump_8.png
 	
 	delay	4
 	offset	82 147
@@ -2206,21 +2206,21 @@ anim runjumpattack # Dive kick
 	bbox.size.x 36
 	bbox.size.y 70
 	
-	frame	data/chars/ryu/10_6.png
+	frame	data/chars/ryu/jump_6.png
 	
 	bbox.position.x 68
 	bbox.position.y 36
 	bbox.size.x 36
 	bbox.size.y 82
 	
-	frame	data/chars/ryu/10_7.png
+	frame	data/chars/ryu/jump_7.png
 	
 	bbox.position.x 64
 	bbox.position.y 31
 	bbox.size.x 39
 	bbox.size.y 105
 	
-	frame	data/chars/ryu/10_8.png
+	frame	data/chars/ryu/jump_8.png
 
 anim get
 	
@@ -2527,7 +2527,7 @@ anim freespecial13 # Hurricane Kick
 	frame	data/chars/ryu/47_16.png
 
 	# Falling jump.
-	frame	data/chars/ryu/10_7.png
+	frame	data/chars/ryu/jump_7.png
 	
 	delay -1000
 	
@@ -2535,7 +2535,7 @@ anim freespecial13 # Hurricane Kick
 	bbox.position.y 26
 	bbox.size.x 38
 	bbox.size.y 101
-	frame	data/chars/ryu/10_8.png
+	frame	data/chars/ryu/jump_8.png
 	
 	delay	4
 	offset	82 147
