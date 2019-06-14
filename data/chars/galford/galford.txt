@@ -72,8 +72,8 @@ anim spawn
 		subentity Poppy  
 		summonframe 1 -20 15 0 0  
 
-	frame	data/chars/galford/0_0_0.png
-	frame	data/chars/galford/0_0_0.png
+	frame	data/chars/galford/idle_0_0.png
+	frame	data/chars/galford/idle_0_0.png
 
 #anim respawn
 
@@ -169,17 +169,17 @@ anim idle
 		offset	140 207
 		bbox	130 120 45 90
 	
-	frame	data/chars/galford/0_0_0.png
-	frame	data/chars/galford/0_1_0.png
-	frame	data/chars/galford/0_2_0.png
-	frame	data/chars/galford/0_3_0.png
-	frame	data/chars/galford/0_4_0.png
-	frame	data/chars/galford/0_5_0.png
-	frame	data/chars/galford/0_6_0.png
-	frame	data/chars/galford/0_7_0.png
-	frame	data/chars/galford/0_8_0.png
-	frame	data/chars/galford/0_9_0.png
-	frame	data/chars/galford/0_10_0.png
+	frame	data/chars/galford/idle_0_0.png
+	frame	data/chars/galford/idle_1_0.png
+	frame	data/chars/galford/idle_2_0.png
+	frame	data/chars/galford/idle_3_0.png
+	frame	data/chars/galford/idle_4_0.png
+	frame	data/chars/galford/idle_5_0.png
+	frame	data/chars/galford/idle_6_0.png
+	frame	data/chars/galford/idle_7_0.png
+	frame	data/chars/galford/idle_8_0.png
+	frame	data/chars/galford/idle_9_0.png
+	frame	data/chars/galford/idle_10_0.png
 
 #anim sleep
 
@@ -204,16 +204,16 @@ anim walk
 		offset	140 207
 		bbox	130 120 45 90
 	
-	frame	data/chars/galford/12_0_0.png
-	frame	data/chars/galford/12_1_0.png
-	frame	data/chars/galford/12_2_0.png
-	frame	data/chars/galford/12_3_0.png
-	frame	data/chars/galford/12_4_0.png
-	frame	data/chars/galford/12_5_0.png
-	frame	data/chars/galford/12_6_0.png
-	frame	data/chars/galford/12_7_0.png
-	frame	data/chars/galford/12_8_0.png
-	frame	data/chars/galford/12_9_0.png
+	frame	data/chars/galford/walk_0_0.png
+	frame	data/chars/galford/walk_1_0.png
+	frame	data/chars/galford/walk_2_0.png
+	frame	data/chars/galford/walk_3_0.png
+	frame	data/chars/galford/walk_4_0.png
+	frame	data/chars/galford/walk_5_0.png
+	frame	data/chars/galford/walk_6_0.png
+	frame	data/chars/galford/walk_7_0.png
+	frame	data/chars/galford/walk_8_0.png
+	frame	data/chars/galford/walk_9_0.png
 
 anim backwalk
 
@@ -234,10 +234,10 @@ anim run
 		offset	140 207
 		bbox	130 120 45 90
 	
-	frame	data/chars/galford/53_0_0.png
-	frame	data/chars/galford/53_2_0.png
-	frame	data/chars/galford/53_3_0.png
-	frame	data/chars/galford/53_4_0.png
+	frame	data/chars/galford/run_0_0.png
+	frame	data/chars/galford/run_2_0.png
+	frame	data/chars/galford/run_3_0.png
+	frame	data/chars/galford/run_4_0.png
 
 anim get
 
@@ -633,7 +633,7 @@ anim attack7
 		offset	140 207
 		bbox	130 120 45 90
 	
-	frame	data/chars/galford/6_0_0.png
+	frame	data/chars/galford/jump_land_0_0.png
 
 		@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_HEAVY
 	
@@ -664,14 +664,14 @@ anim attack7
 
 		delay	-1000
 
-	frame	data/chars/galford/18_4_0.png
+	frame	data/chars/galford/jump_6_0.png
 	
 		# landing
 		delay	6
 
-	frame	data/chars/galford/6_0_0.png
-	frame	data/chars/galford/6_1_0.png
-	frame	data/chars/galford/6_0_0.png
+	frame	data/chars/galford/jump_land_0_0.png
+	frame	data/chars/galford/jump_land_1_0.png
+	frame	data/chars/galford/jump_land_0_0.png
 
 anim chargeattack
 
@@ -869,30 +869,30 @@ anim freespecial
 		offset	140 207
 		bbox	130 120 45 90
 	
-	frame	data/chars/galford/6_0_0.png
+	frame	data/chars/galford/jump_land_0_0.png
 		
 		bbox	130 120 45 90
 		@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_LIGHT
 		
 		delay	8
 
-	frame	data/chars/galford/808_0_0.png	
+	frame	data/chars/galford/dash_back_0_0.png	
 	
 		move	-15
 
-	frame	data/chars/galford/808_1_0.png
+	frame	data/chars/galford/dash_back_1_0.png
 
 		delay	-1000
 		move	-25
 	
 		
-	frame	data/chars/galford/110_2_0.png
+	frame	data/chars/galford/dash_back_2_0.png
 	
 		delay	1
 		move	0
 		@cmd performattack getlocalvar("self") openborconstant("ANI_FOLLOW93") 0
 
-	frame	data/chars/galford/110_2_0.png
+	frame	data/chars/galford/dash_back_2_0.png
 
 anim follow93
 
@@ -907,28 +907,28 @@ anim follow93
 
 		move	0
 
-	frame	data/chars/galford/110_2_0.png
+	frame	data/chars/galford/dash_back_2_0.png
 	
 	
-	frame	data/chars/galford/110_3_0.png
+	frame	data/chars/galford/dash_back_3_0.png
 		
 		delay	12
 		move	-30
 	
-	frame	data/chars/galford/110_4_0.png	
+	frame	data/chars/galford/dash_back_4_0.png	
 	
 		move	-15
 		delay	-1000
-	frame	data/chars/galford/21_0_0.png
+	frame	data/chars/galford/jump_forward_0_0.png
 
 		
 		delay	6
 		move	-10
 
-	frame	data/chars/galford/6_0_0.png
+	frame	data/chars/galford/jump_land_0_0.png
 		move	0
-	frame	data/chars/galford/6_1_0.png
-	frame	data/chars/galford/6_0_0.png
+	frame	data/chars/galford/jump_land_1_0.png
+	frame	data/chars/galford/jump_land_0_0.png
 
 anim freespecial2
 
@@ -1175,7 +1175,7 @@ anim jumpdelay
 		offset	140 207
 		bbox	115 124 50 85
 	
-	frame	data/chars/galford/6_0_0.png
+	frame	data/chars/galford/jump_land_0_0.png
 
 anim jumpland
 
@@ -1183,9 +1183,9 @@ anim jumpland
 		offset	140 207
 		bbox	115 124 50 85
 	
-	frame	data/chars/galford/6_0_0.png
-	frame	data/chars/galford/6_1_0.png
-	frame	data/chars/galford/6_0_0.png
+	frame	data/chars/galford/jump_land_0_0.png
+	frame	data/chars/galford/jump_land_1_0.png
+	frame	data/chars/galford/jump_land_0_0.png
 
 anim jump
 
@@ -1197,20 +1197,20 @@ anim jump
 		offset	140 207
 		bbox	115 100 50 85	
 
-	frame	data/chars/galford/16_0_0.png
+	frame	data/chars/galford/jump_0_0.png
 
 		delay	8
 		bbox	115 100 50 80	
 
-	frame	data/chars/galford/16_2_0.png
-	frame	data/chars/galford/16_3_0.png
-	frame	data/chars/galford/18_0_0.png
-	frame	data/chars/galford/18_1_0.png
-	frame	data/chars/galford/18_3_0.png
+	frame	data/chars/galford/jump_1_0.png
+	frame	data/chars/galford/jump_2_0.png
+	frame	data/chars/galford/jump_3_0.png
+	frame	data/chars/galford/jump_4_0.png
+	frame	data/chars/galford/jump_5_0.png
 		
 		bbox	115 100 50 85
 	
-	frame	data/chars/galford/18_4_0.png
+	frame	data/chars/galford/jump_6_0.png
 
 anim forwardjump
 
@@ -1218,31 +1218,31 @@ anim forwardjump
 		offset	140 207
 		bbox	125 104 50 80	
 
-	frame	data/chars/galford/21_0_0.png
+	frame	data/chars/galford/jump_forward_0_0.png
 	
 		bbox	85 104 100 55	
 
-	frame	data/chars/galford/21_2_0.png
+	frame	data/chars/galford/jump_forward_1_0.png
 
 		bbox	110 100 55 95
 
-	frame	data/chars/galford/21_3_0.png
+	frame	data/chars/galford/jump_forward_2_0.png
 
 		bbox	120 100 45 95
 
-	frame	data/chars/galford/23_0_0.png
+	frame	data/chars/galford/jump_forward_3_0.png
 
 		bbox	120 140 80 50
 
-	frame	data/chars/galford/23_1_0.png
+	frame	data/chars/galford/jump_forward_4_0.png
 
 		bbox	105 130 80 65
 
-	frame	data/chars/galford/23_2_0.png
+	frame	data/chars/galford/jump_forward_5_0.png
 
 		bbox	110 115 50 80
 
-	frame	data/chars/galford/23_3_0.png
+	frame	data/chars/galford/jump_forward_6_0.png
 
 anim runjump
 
@@ -1250,31 +1250,31 @@ anim runjump
 		offset	140 207
 		bbox	125 104 50 80	
 
-	frame	data/chars/galford/21_0_0.png
+	frame	data/chars/galford/jump_forward_0_0.png
 	
 		bbox	85 104 100 55	
 
-	frame	data/chars/galford/21_2_0.png
+	frame	data/chars/galford/jump_forward_1_0.png
 
 		bbox	110 100 55 95
 
-	frame	data/chars/galford/21_3_0.png
+	frame	data/chars/galford/jump_forward_2_0.png
 
 		bbox	120 100 45 95
 
-	frame	data/chars/galford/23_0_0.png
+	frame	data/chars/galford/jump_forward_3_0.png
 
 		bbox	120 140 80 50
 
-	frame	data/chars/galford/23_1_0.png
+	frame	data/chars/galford/jump_forward_4_0.png
 
 		bbox	105 130 80 65
 
-	frame	data/chars/galford/23_2_0.png
+	frame	data/chars/galford/jump_forward_5_0.png
 
 		bbox	110 115 50 80
 
-	frame	data/chars/galford/23_3_0.png
+	frame	data/chars/galford/jump_forward_6_0.png
 
 anim jumpattack
 
@@ -1383,7 +1383,7 @@ anim blockrelease
 		offset	140 207
 		bbox	130 120 45 90
 	
-	frame	data/chars/galford/800_0_0.png
+	frame	data/chars/galford/block_start_0_0.png
 
 anim blockstart
 
@@ -1391,7 +1391,7 @@ anim blockstart
 		offset	140 207
 		bbox	130 120 45 90
 	
-	frame	data/chars/galford/800_0_0.png
+	frame	data/chars/galford/block_start_0_0.png
 
 anim block
 
@@ -1399,7 +1399,7 @@ anim block
 		offset	140 207
 		bbox	130 120 45 90
 	
-	frame	data/chars/galford/800_1_0.png
+	frame	data/chars/galford/block_0_0.png
 
 anim blockpain
 
@@ -1411,29 +1411,25 @@ anim blockpain
 
 		move	-2
 	
-	frame	data/chars/galford/802_0_0.png
+	frame	data/chars/galford/block_impact_0_0.png
 	
 		move	0
-		offset	153 210
+		offset	143 207
 	
-	frame	data/chars/galford/802_0_0.png
+	frame	data/chars/galford/block_impact_0_0.png
 	
 		offset	140 207
 	
-	frame	data/chars/galford/802_0_0.png
+	frame	data/chars/galford/block_impact_0_0.png
 	
-		offset	153 210
+		offset	143 207
 	
-	frame	data/chars/galford/802_0_0.png
+	frame	data/chars/galford/block_impact_0_0.png
 	
-		delay	6
-		offset	150 210
-	
-	frame	data/chars/galford/801_0_0.png
-		
+		delay	20
 		offset	140 207
-
-	frame	data/chars/galford/801_0_0.png
+	
+	frame	data/chars/galford/block_impact_1_0.png
 
 anim land
 
