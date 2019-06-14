@@ -264,8 +264,8 @@ anim run # Dash
 	bbox.position.y 66
 	bbox.size.x 45
 	bbox.size.y 91
-	frame	data/chars/terry/8_0.png
-	frame	data/chars/terry/8_1.png
+	frame	data/chars/terry/dash_0.png
+	frame	data/chars/terry/dash_1.png
 		delay	5
 		
 	bbox.position.x 60
@@ -864,7 +864,7 @@ anim runattack # Power Charge
 	bbox.size.x 42
 	bbox.size.y 94
 	
-	frame	data/chars/terry/8_0.png
+	frame	data/chars/terry/dash_0.png
 	
 	bbox.position.x 48
 	bbox.position.y 80
@@ -2291,14 +2291,14 @@ anim freespecial # Backward dash
 	
 	delay -1000
 	
-	frame data/chars/terry/7_0.png
+	frame data/chars/terry/dash_back_0.png
 	
 	bbox.position.x 52
 	bbox.position.y 59
 	bbox.size.x 34
 	bbox.size.y 73
 	
-	frame data/chars/terry/7_1.png
+	frame data/chars/terry/dash_back_1.png
 	
 	delay 8
 	
