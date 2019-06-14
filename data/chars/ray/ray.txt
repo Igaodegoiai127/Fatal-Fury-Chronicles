@@ -82,12 +82,12 @@ anim idle
 	bbox.size.x 34
 	bbox.size.y 97
 	
-    frame	data/chars/ray/0_0.png
-    frame	data/chars/ray/0_1.png
-    frame	data/chars/ray/0_2.png
-    frame	data/chars/ray/0_3.png
-    frame	data/chars/ray/0_2.png
-    frame	data/chars/ray/0_1.png
+    frame	data/chars/ray/idle_0.png
+    frame	data/chars/ray/idle_1.png
+    frame	data/chars/ray/idle_2.png
+    frame	data/chars/ray/idle_3.png
+    frame	data/chars/ray/idle_2.png
+    frame	data/chars/ray/idle_1.png
 
 anim walk
 		
