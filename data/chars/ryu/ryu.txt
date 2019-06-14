@@ -490,19 +490,19 @@ anim Freespecial10 # Hadouken
 	bbox.size.x 38
 	bbox.size.y 98
 
-	frame	data/chars/ryu/43_0.png
+	frame	data/chars/ryu/hadouken_0.png
 	
 	@cmd dc_fidelity_quick_play "Hadouken"
 
-	frame	data/chars/ryu/43_1.png
-	frame	data/chars/ryu/43_2.png
+	frame	data/chars/ryu/hadouken_1.png
+	frame	data/chars/ryu/hadouken_2.png
 	
 	bbox.position.x 78
 	bbox.position.y 51
 	bbox.size.x 43
 	bbox.size.y 95
 	
-	frame	data/chars/ryu/43_3.png
+	frame	data/chars/ryu/hadouken_3.png
 	
 	delay 6
 	
@@ -516,32 +516,32 @@ anim Freespecial10 # Hadouken
 	@cmd dc_gauntlet_set_offset_y 70
 	@cmd dc_guantlet_spawn_projectile()
 
-	frame	data/chars/ryu/43_4.png
-	frame	data/chars/ryu/43_5.png
-	frame	data/chars/ryu/43_6.png
-	frame	data/chars/ryu/43_7.png
-	frame	data/chars/ryu/43_8.png
+	frame	data/chars/ryu/hadouken_4.png
+	frame	data/chars/ryu/hadouken_5.png
+	frame	data/chars/ryu/hadouken_6.png
+	frame	data/chars/ryu/hadouken_7.png
+	frame	data/chars/ryu/hadouken_8.png
 	
 	bbox.position.x 81
 	bbox.position.y 58
 	bbox.size.x 44
 	bbox.size.y 89
 	
-	frame	data/chars/ryu/43_9.png
+	frame	data/chars/ryu/hadouken_9.png
 	
 	bbox.position.x 78
 	bbox.position.y 50
 	bbox.size.x 37
 	bbox.size.y 98
 	
-	frame	data/chars/ryu/43_10.png
+	frame	data/chars/ryu/hadouken_10.png
 	
 	bbox.position.x 71
 	bbox.position.y 48
 	bbox.size.x 38
 	bbox.size.y 103
 	
-	frame	data/chars/ryu/43_11.png
+	frame	data/chars/ryu/hadouken_11.png
 
 anim attack1 # Jab
 	
@@ -3009,7 +3009,7 @@ anim grabforward # Shoulder Throw
 	# Play sound effect
 	@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_SOUND_ATTACK_HEAVY
 	
-	frame data/chars/ryu/43_11.png	
+	frame data/chars/ryu/hadouken_11.png	
 
 	# Adjust grapple properties.
 	@cmd dc_elmers_set_offset_x 18
@@ -3137,7 +3137,7 @@ anim follow11 # Switch to back
 	# Play sound effect
 	@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_SOUND_ATTACK_HEAVY
 	
-	frame data/chars/ryu/43_11.png	
+	frame data/chars/ryu/hadouken_11.png	
 
 	# Adjust grapple properties.
 	@cmd dc_elmers_set_offset_x 18
