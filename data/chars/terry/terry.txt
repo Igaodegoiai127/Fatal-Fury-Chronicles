@@ -291,7 +291,7 @@ anim get # Get
 	frame	data/chars/terry/26_0.png
 	delay 12
 	
-	frame	data/chars/terry/41_2.png
+	frame	data/chars/terry/rise_2.png
 	
 	bbox.position.x 61
 	bbox.position.y 75
@@ -1197,9 +1197,9 @@ anim freespecial6 # Rising tackle
 	bbox.size.x 36
 	bbox.size.y 76
 	
-	frame	data/chars/terry/30_3.png
+	frame	data/chars/terry/jump_3.png
 		delay	-1000
-	frame	data/chars/terry/30_4.png
+	frame	data/chars/terry/jump_4.png
 		delay	8
 		
 	bbox.position.x 65
@@ -1595,7 +1595,7 @@ anim jump # Jump
 	bbox.size.x 32
 	bbox.size.y 105
 	
-	frame data/chars/terry/30_0.png
+	frame data/chars/terry/jump_0.png
 	
 	delay	8
 	
@@ -1604,28 +1604,28 @@ anim jump # Jump
 	bbox.size.x 32
 	bbox.size.y 93
 	
-	frame data/chars/terry/30_1.png
+	frame data/chars/terry/jump_1.png
 
 	bbox.position.x 69
 	bbox.position.y 50
 	bbox.size.x 32
 	bbox.size.y 74
 	
-	frame data/chars/terry/30_2.png
+	frame data/chars/terry/jump_2.png
 	
 	bbox.position.x 69
 	bbox.position.y 49
 	bbox.size.x 32
 	bbox.size.y 93
 	
-	frame data/chars/terry/30_3.png
+	frame data/chars/terry/jump_3.png
 	
 	bbox.position.x 69
 	bbox.position.y 52
 	bbox.size.x 32
 	bbox.size.y 100
 	
-	frame data/chars/terry/30_4.png
+	frame data/chars/terry/jump_4.png
 
 
 anim forwardjump # Jump forward
@@ -1640,7 +1640,7 @@ anim forwardjump # Jump forward
 	bbox.size.x 53
 	bbox.size.y 80
 	
-	frame data/chars/terry/31_0.png
+	frame data/chars/terry/jump_forward_0.png
 		
 		delay	8
 		
@@ -1649,37 +1649,37 @@ anim forwardjump # Jump forward
 	bbox.size.x 53
 	bbox.size.y 55
 		
-	frame data/chars/terry/31_1.png
-	frame data/chars/terry/31_2.png
-	frame data/chars/terry/31_3.png
+	frame data/chars/terry/jump_forward_1.png
+	frame data/chars/terry/jump_forward_2.png
+	frame data/chars/terry/jump_forward_3.png
 	
 	bbox.position.x 42
 	bbox.position.y 61
 	bbox.size.x 75
 	bbox.size.y 42
 	
-	frame data/chars/terry/31_4.png
+	frame data/chars/terry/jump_forward_4.png
 	
 	bbox.position.x 52
 	bbox.position.y 53
 	bbox.size.x 52
 	bbox.size.y 82
 	
-	frame data/chars/terry/31_5.png
+	frame data/chars/terry/jump_forward_5.png
 	
 	bbox.position.x 69
 	bbox.position.y 49
 	bbox.size.x 32
 	bbox.size.y 93
 	
-	frame data/chars/terry/30_3.png
+	frame data/chars/terry/jump_3.png
 	
 	bbox.position.x 69
 	bbox.position.y 52
 	bbox.size.x 32
 	bbox.size.y 100
 	
-	frame data/chars/terry/30_4.png
+	frame data/chars/terry/jump_4.png
 
 anim blockrelease # Block release
 
@@ -1800,9 +1800,9 @@ anim rise # Rise
 		delay	12
 		offset	76 155
 		bbox 	0
-	frame	data/chars/terry/41_0.png
-	frame	data/chars/terry/41_1.png
-	frame	data/chars/terry/41_2.png
+	frame	data/chars/terry/rise_0.png
+	frame	data/chars/terry/rise_1.png
+	frame	data/chars/terry/rise_2.png
 	frame	data/chars/terry/jump_land_2.png
 
 anim pain # Normal pain
@@ -2057,14 +2057,14 @@ anim jumpattack # Heavy air punch
 	bbox.size.x 32
 	bbox.size.y 93
 	
-	frame data/chars/terry/30_3.png
+	frame data/chars/terry/jump_3.png
 	
 	bbox.position.x 69
 	bbox.position.y 52
 	bbox.size.x 32
 	bbox.size.y 100
 	
-	frame data/chars/terry/30_4.png
+	frame data/chars/terry/jump_4.png
 
 anim runjumpattack
 	
@@ -2123,14 +2123,14 @@ anim runjumpattack
 	bbox.size.x 32
 	bbox.size.y 93
 	
-	frame data/chars/terry/30_3.png
+	frame data/chars/terry/jump_3.png
 	
 	bbox.position.x 69
 	bbox.position.y 52
 	bbox.size.x 32
 	bbox.size.y 100
 	
-	frame data/chars/terry/30_4.png
+	frame data/chars/terry/jump_4.png
 	
 anim jumpforward
 	
@@ -2195,14 +2195,14 @@ anim jumpforward
 	bbox.size.x 32
 	bbox.size.y 93
 	
-	frame data/chars/terry/30_3.png
+	frame data/chars/terry/jump_3.png
 	
 	bbox.position.x 69
 	bbox.position.y 52
 	bbox.size.x 32
 	bbox.size.y 100
 	
-	frame data/chars/terry/30_4.png
+	frame data/chars/terry/jump_4.png
 
 anim jumpattack2
 	
@@ -2264,14 +2264,14 @@ anim jumpattack2
 	bbox.size.x 32
 	bbox.size.y 93
 	
-	frame data/chars/terry/30_3.png
+	frame data/chars/terry/jump_3.png
 	
 	bbox.position.x 69
 	bbox.position.y 52
 	bbox.size.x 32
 	bbox.size.y 100
 	
-	frame data/chars/terry/30_4.png
+	frame data/chars/terry/jump_4.png
 
 anim freespecial # Backward dash
 	
