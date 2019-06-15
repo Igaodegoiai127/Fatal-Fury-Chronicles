@@ -1031,6 +1031,7 @@ anim attack4 # Axe Kick
 	bbox.size.y 97
 	
 	frame	data/chars/ryu/16_4.png
+
 anim pain # Normal Pain
 	
 	delay	11
@@ -1063,6 +1064,7 @@ anim pain # Normal Pain
 	bbox.size.y 102
 	
 	frame	data/chars/ryu/R_PAIN_0.png
+
 anim pain2 # Middle pain
 	
 	delay	11
@@ -1095,6 +1097,7 @@ anim pain2 # Middle pain
 	bbox.size.y 97
 	
 	frame	data/chars/ryu/R_PAIN_MID_0.png
+
 anim fall # Normal Fall
 	
 	dropframe 1
@@ -1205,6 +1208,7 @@ anim fall # Normal Fall
 	bbox.size.y 32
 	
 	frame	data/chars/ryu/R_LAYING_UP_0
+
 anim rise # Normal Rise
 	
 	jumpframe 3 1.5 0 0 hop_liftoff
@@ -1326,6 +1330,7 @@ anim runattack # Run Attack
 	bbox.size.y 95
 	
 	frame	data/chars/ryu/77_9.png
+
 anim freespecial11 # Upper Thrust Kick
 	jumpframe 1 0 1.2 0 0
 	
@@ -1626,6 +1631,7 @@ anim jumpforward # Heel Kick
 	bbox.size.y 105
 	
 	frame	data/chars/ryu/jump_8.png
+
 anim freespecial2 # Back attack
 	
 	range -50 0
@@ -1889,6 +1895,7 @@ anim freespecial4 # Plane force up
 	bbox.size.y 101
 	
 	frame	data/chars/ryu/19_0.png
+
 anim freespecial5 # Plane attack down
 	
 	range 20 100
@@ -1972,6 +1979,7 @@ anim freespecial5 # Plane attack down
 	frame	data/chars/ryu/duck_start_0.png
 	frame	data/chars/ryu/duck_start_1.png
 	frame	data/chars/ryu/duck_start_0.png
+
 anim freespecial6 # Plane attack up
 	
 	range 20 100
@@ -2060,6 +2068,7 @@ anim freespecial6 # Plane attack up
 	frame	data/chars/ryu/duck_start_0.png
 	frame	data/chars/ryu/duck_start_1.png
 	frame	data/chars/ryu/duck_start_0.png
+
 anim freespecial7 # Plane step attack
 	
 	range 1 1
@@ -2277,13 +2286,13 @@ anim freespecial12 # Shoryuken
 	delay	5
 	offset	82 147
 	
-	frame	data/chars/ryu/45_0.png	
+	frame	data/chars/ryu/shoryuken_0.png	
 	
 	@cmd	dc_fidelity_quick_play DC_FIDELITY_TYPE_SOUND_ATTACK_HEAVY
 	@cmd	dc_fidelity_quick_play "Shoryuken"
 	
 	
-	frame	data/chars/ryu/45_1.png
+	frame	data/chars/ryu/shoryuken_1.png
 	
 	attack.damage.force 19
 	attack.position.x 90
@@ -2296,7 +2305,7 @@ anim freespecial12 # Shoryuken
 	attack.size.x 56
 	attack.size.y 39
 	
-	frame	data/chars/ryu/45_2.png
+	frame	data/chars/ryu/shoryuken_2.png
 
 	delay -1000
 
@@ -2316,11 +2325,11 @@ anim freespecial12 # Shoryuken
 	attack.size.x 46
 	attack.size.y 85
 	
-	frame	data/chars/ryu/45_3.png
+	frame	data/chars/ryu/shoryuken_3.png
 	
 	delay 5
 	
-	frame	data/chars/ryu/45_4.png
+	frame	data/chars/ryu/shoryuken_4.png
 	
 	
 	
@@ -2335,22 +2344,22 @@ anim freespecial12 # Shoryuken
 	bbox.size.x 32
 	bbox.size.y 75
 	
-	frame	data/chars/ryu/45_5.png
-	frame	data/chars/ryu/45_6.png	
-	frame	data/chars/ryu/45_7.png
+	frame	data/chars/ryu/shoryuken_5.png
+	frame	data/chars/ryu/shoryuken_6.png	
+	frame	data/chars/ryu/shoryuken_7.png
 	
 	# Loop start
-	frame	data/chars/ryu/45_8.png
+	frame	data/chars/ryu/shoryuken_8.png
 
 	# Loop End	
-	frame	data/chars/ryu/45_9.png
+	frame	data/chars/ryu/shoryuken_9.png
 	
 	bbox.position.x 69
 	bbox.position.y 48
 	bbox.size.x 37
 	bbox.size.y 101
 	
-	frame	data/chars/ryu/45_10.png
+	frame	data/chars/ryu/shoryuken_10.png
 	
 	bbox.position.x 69
 	bbox.position.y 56
@@ -2400,7 +2409,7 @@ anim freespecial13 # Hurricane Kick
 	attack.size.x 35
 	attack.size.y 44
 	
-	frame	data/chars/ryu/47_0.png
+	frame	data/chars/ryu/tatsu_0.png
 	
 	attack.damage.force 0
 	attack.position.x 0
@@ -2411,9 +2420,9 @@ anim freespecial13 # Hurricane Kick
 	@cmd dc_velocity_set_velocity_x 2
 	@cmd dc_velocity_apply_velocity_x
 	
-	frame	data/chars/ryu/47_1.png
-	frame	data/chars/ryu/47_2.png
-	frame	data/chars/ryu/47_3.png
+	frame	data/chars/ryu/tatsu_1.png
+	frame	data/chars/ryu/tatsu_2.png
+	frame	data/chars/ryu/tatsu_3.png
 	
 	# Float in the air.
 	@cmd dc_velocity_apply_velocity_y
@@ -2424,7 +2433,7 @@ anim freespecial13 # Hurricane Kick
 	bbox.size.x 28
 	bbox.size.y 34
 	
-	frame	data/chars/ryu/47_4.png
+	frame	data/chars/ryu/tatsu_4.png
 	
 	# Active (leg extended)
 	
@@ -2443,7 +2452,7 @@ anim freespecial13 # Hurricane Kick
 	bbox.size.x 31
 	bbox.size.y 38
 	
-	frame	data/chars/ryu/47_5.png
+	frame	data/chars/ryu/tatsu_5.png
 	
 	# Float in the air.
 	@cmd set_entity_property getlocalvar("self") "toss_time" openborvariant("elapsed_time")+100
@@ -2466,7 +2475,7 @@ anim freespecial13 # Hurricane Kick
 	bbox.position.y 23
 	bbox.size.x 31
 	bbox.size.y 44
-	frame	data/chars/ryu/47_6.png
+	frame	data/chars/ryu/tatsu_6.png
 	
 	attack.damage.force 16
 	attack.effect.hit.flash.model flash_fatal_fury
@@ -2481,7 +2490,7 @@ anim freespecial13 # Hurricane Kick
 	
 	jugglecost 10
 	
-	frame	data/chars/ryu/47_7.png	
+	frame	data/chars/ryu/tatsu_7.png	
 	
 	attack.damage.force 0
 	attack.position.x 0
@@ -2489,7 +2498,7 @@ anim freespecial13 # Hurricane Kick
 	attack.size.x 0
 	attack.size.y 0
 	
-	frame	data/chars/ryu/47_8.png	
+	frame	data/chars/ryu/tatsu_8.png	
 	
 	attack.damage.force 16
 	attack.effect.hit.flash.model flash_fatal_fury
@@ -2504,7 +2513,7 @@ anim freespecial13 # Hurricane Kick
 	
 	jugglecost 10
 	
-	frame	data/chars/ryu/47_9.png	
+	frame	data/chars/ryu/tatsu_9.png	
 	
 	attack.damage.force 16
 	attack.effect.hit.flash.model flash_fatal_fury
@@ -2520,7 +2529,7 @@ anim freespecial13 # Hurricane Kick
 	jugglecost 10
 	
 	# End 1 spin
-	frame	data/chars/ryu/47_10.png
+	frame	data/chars/ryu/tatsu_10.png
 
 	# If player is holding Jump and hasn't
 	# run out of spins oe energy we loop back.	
@@ -2536,18 +2545,18 @@ anim freespecial13 # Hurricane Kick
 	bbox.position.y 28
 	bbox.size.x 37
 	bbox.size.y 73
-	frame	data/chars/ryu/47_11.png
+	frame	data/chars/ryu/tatsu_11.png
 	
 	# Stop floating.
 	@cmd set_entity_property getlocalvar("self") "toss_time" openborvariant("elapsed_time")
-	frame	data/chars/ryu/47_12.png
+	frame	data/chars/ryu/tatsu_12.png
 	
 	delay 5
 	
-	frame	data/chars/ryu/47_13.png
-	frame	data/chars/ryu/47_14.png
-	frame	data/chars/ryu/47_15.png
-	frame	data/chars/ryu/47_16.png
+	frame	data/chars/ryu/tatsu_13.png
+	frame	data/chars/ryu/tatsu_14.png
+	frame	data/chars/ryu/tatsu_15.png
+	frame	data/chars/ryu/tatsu_16.png
 
 	# Falling jump.
 	frame	data/chars/ryu/jump_7.png
@@ -2825,7 +2834,7 @@ anim grabattack2 # Grab finisher
 	# Apply grapple properties.
 	@cmd dc_elmers_apply_grapple
 
-	frame data/chars/ryu/17_0.png
+	frame data/chars/ryu/16_4.png
 	
 	bbox.position.x 83
 	bbox.position.y 47
