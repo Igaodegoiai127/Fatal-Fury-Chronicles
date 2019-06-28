@@ -3115,8 +3115,39 @@ anim grabforward # Shoulder Throw
 	frame data/chars/ryu/84_8.png
 	frame data/chars/ryu/19_0.png
 
-
 anim follow11 # Switch to back
+
+	delay 8
+	
+	offset 83 147
+	
+	bbox.position.x 64
+	bbox.position.y 51
+	bbox.size.x 49
+	bbox.size.y 95
+	
+	frame data/chars/ryu/grab_0.png
+
+	# Set up the grapple.
+	@cmd dc_elmers_initialize_reverse_grapple
+	@cmd dc_elmers_set_direction openborconstant("DIRECTION_ADJUST_OPPOSITE")
+	@cmd dc_elmers_set_frame DC_ELMERS_REACT_PAIN_MID_1
+	@cmd dc_elmers_apply_grapple
+	#cmd dc_elmers_swap_entities
+
+	frame data/chars/ryu/grab_0.png
+
+	
+	@cmd dc_elmers_apply_grapple
+	frame data/chars/ryu/grab_switch_0.png
+	frame data/chars/ryu/grab_switch_1.png
+	frame data/chars/ryu/grab_switch_2.png
+	frame data/chars/ryu/grab_switch_3.png
+	frame data/chars/ryu/grab_switch_4.png
+	frame data/chars/ryu/grab_switch_5.png
+	frame data/chars/ryu/grab_switch_6.png
+
+anim follow31 # Switch to back old
 	
 	flipframe 5
 
