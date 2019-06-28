@@ -1,0 +1,72 @@
+#Bound effects; spawned in synch with main enitity to produce transparent blur effect.
+
+name	     galford_trail	
+type	     none
+health	     100
+#speed	     10		
+alpha	     1
+
+palette	 	data/chars/galford/motion_0.act
+
+anim idle
+
+		delay	-1000
+		offset	75 150
+	frame	data/chars/misc/blank.png
+
+anim attack2
+
+		delay	-1000
+		offset	140 207
+
+	frame	data/chars/misc/blank.png
+
+anim attack1
+
+	# V-cut slash.
+
+		delay	-1000
+		offset	140 207
+	
+	frame	data/chars/misc/blank.png
+	frame	data/chars/galford/atk_v-cut_1_motion.png
+	frame	data/chars/galford/atk_v-cut_2_motion.png
+	frame	data/chars/galford/atk_v-cut_3_motion.png		
+
+anim attack3
+
+	# Reverse V-cut slash.
+
+		delay	-1000
+		offset	140 207
+
+	frame	data/chars/misc/blank.png
+	frame	data/chars/misc/blank.png
+	frame	data/chars/galford/atk_v-cut_back_2_motion.png
+	frame	data/chars/galford/atk_v-cut_back_3_motion.png
+	frame	data/chars/galford/atk_v-cut_back_4_motion.png		
+
+anim attack5
+
+	# Cross slash
+
+		delay	-1000
+		offset	140 207
+	
+	frame	data/chars/misc/blank.png
+	frame	data/chars/misc/blank.png
+	frame	data/chars/misc/blank.png
+	frame	data/chars/galford/804_1_0_trail_0.png
+	frame	data/chars/galford/804_3_0_trail_0.png	
+
+anim attack6
+
+	# Backhand slash
+
+		delay	-1000
+		offset	140 207
+	
+	frame	data/chars/misc/blank.png
+	frame	data/chars/galford/805_1_0_trail_0.png
+	frame	data/chars/galford/805_3_0_trail_0.png
+	

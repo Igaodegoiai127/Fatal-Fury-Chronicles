@@ -15,7 +15,7 @@ nopassiveblock  1
 nodieblink   	2
 falldie      	2
 risetime     	150
-running      	30 4 2 1 1
+running      	30 4.2 2 1 1
 makeinv      	3
 projectilehit 	player
 candamage     	enemy obstacle
@@ -52,8 +52,8 @@ load	galford_trail
 
 #*****Alternates*******
 
-palette	       data/chars/galford/pal_0.act
-alternatepal   data/chars/galford/pal_1.act
+palette	       data/chars/galford/jo_musashi_shinobi.ACT
+#alternatepal   data/chars/galford/pal_1.act
 
 #*****Commands*****************************************************************************
 
@@ -69,11 +69,11 @@ anim spawn
 		delay	1
 		offset	140 207
 		bbox	130 120 45 90
-		subentity Poppy  
-		summonframe 1 -20 15 0 0  
+		#subentity Poppy  
+		#summonframe 1 -20 15 0 0  
 
-	frame	data/chars/galford/idle_0_0.png
-	frame	data/chars/galford/idle_0_0.png
+	frame	data/chars/galford/idle_0.png
+	frame	data/chars/galford/idle_0.png
 
 #anim respawn
 
@@ -169,17 +169,17 @@ anim idle
 		offset	140 207
 		bbox	130 120 45 90
 	
-	frame	data/chars/galford/idle_0_0.png
-	frame	data/chars/galford/idle_1_0.png
-	frame	data/chars/galford/idle_2_0.png
-	frame	data/chars/galford/idle_3_0.png
-	frame	data/chars/galford/idle_4_0.png
-	frame	data/chars/galford/idle_5_0.png
-	frame	data/chars/galford/idle_6_0.png
-	frame	data/chars/galford/idle_7_0.png
-	frame	data/chars/galford/idle_8_0.png
-	frame	data/chars/galford/idle_9_0.png
-	frame	data/chars/galford/idle_10_0.png
+	frame	data/chars/galford/idle_0.png
+	frame	data/chars/galford/idle_1.png
+	frame	data/chars/galford/idle_2.png
+	frame	data/chars/galford/idle_3.png
+	frame	data/chars/galford/idle_4.png
+	frame	data/chars/galford/idle_5.png
+	frame	data/chars/galford/idle_6.png
+	frame	data/chars/galford/idle_7.png
+	frame	data/chars/galford/idle_8.png
+	frame	data/chars/galford/idle_9.png
+	frame	data/chars/galford/idle_10.png
 
 #anim sleep
 
@@ -204,16 +204,16 @@ anim walk
 		offset	140 207
 		bbox	130 120 45 90
 	
-	frame	data/chars/galford/walk_0_0.png
-	frame	data/chars/galford/walk_1_0.png
-	frame	data/chars/galford/walk_2_0.png
-	frame	data/chars/galford/walk_3_0.png
-	frame	data/chars/galford/walk_4_0.png
-	frame	data/chars/galford/walk_5_0.png
-	frame	data/chars/galford/walk_6_0.png
-	frame	data/chars/galford/walk_7_0.png
-	frame	data/chars/galford/walk_8_0.png
-	frame	data/chars/galford/walk_9_0.png
+	frame	data/chars/galford/walk_0.png
+	frame	data/chars/galford/walk_1.png
+	frame	data/chars/galford/walk_2.png
+	frame	data/chars/galford/walk_3.png
+	frame	data/chars/galford/walk_4.png
+	frame	data/chars/galford/walk_5.png
+	frame	data/chars/galford/walk_6.png
+	frame	data/chars/galford/walk_7.png
+	frame	data/chars/galford/walk_8.png
+	frame	data/chars/galford/walk_9.png
 
 anim backwalk
 
@@ -323,7 +323,7 @@ anim runslide
 
 #*****Attack*******************************************************************************
 
-anim attack1
+anim attack2
 
 	# Palm strike.
 
@@ -353,10 +353,10 @@ anim attack1
 		#cmd dc_damage_set_damage_on_landing_force 20
 		#cmd dc_damage_apply_damage
 
-		#cmd dc_elmers_set_entity		getentityproperty(getlocalvar("self") "opponent")	
-		#cmd dc_elmers_set_invert_x	DC_ELMERS_INVERT_POSITION
-		#cmd dc_elmers_set_offset_x	-5
-		#cmd dc_elmers_adjust_position
+		@cmd dc_elmers_set_entity		getentityproperty(getlocalvar("self") "opponent")	
+		@cmd dc_elmers_set_invert_x	DC_ELMERS_INVERT_POSITION
+		@cmd dc_elmers_set_offset_x	-5
+		@cmd dc_elmers_reposition_to_offset
 
 	frame	data/chars/galford/83_3_0.png
 	
@@ -384,112 +384,125 @@ anim attack1
 
 ############
 
-anim attack2
+anim attack1
 
 	# V-cut slash.
 
-		fastattack 1
-		range   -40 50
+	fastattack 1
+	range   -40 50
 
-		delay	5
-		offset	140 207
-		bbox	130 120 45 90
+	delay	5
+	offset	140 207
+	
+	bbox.position.x 130
+	bbox.position.y 120
+	bbox.size.x 45
+	bbox.size.y 90
 	
 		@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_SOUND_ATTACK_MEDIUM_BLADE
-	frame	data/chars/galford/164_12_0.png
+		
+	frame	data/chars/galford/atk_v-cut_0.png
 
-	attack.position.x				125
-	attack.position.y				115
-	attack.size.x					100
-	attack.size.y					50
-	attack.damage.force				12
-	attack.damage.type				2	
-	attack.reaction.fall.velocity.x	1.2
-	attack.reaction.fall.velocity.y	3
-	attack.reaction.fall.velocity.z	0
-	attack.reaction.pause.time		8
+	attack.damage.force 12
+	attack.damage.type 2
+	attack.position.x 125
+	attack.position.y 115
+	attack.reaction.fall.velocity.x 1.2
+	attack.reaction.fall.velocity.y 3.0
+	attack.reaction.fall.velocity.z 0.0
+	attack.reaction.pause.time 8
+	attack.size.x 100
+	attack.size.y 50
 
 	@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_MEDIUM
 		
 	# Spawn sub entity and set it as entity for binding.
 	@cmd dc_elmers_quick_motion dc_gauntlet_quick_spawn("galford_trail")
-
-	frame	data/chars/galford/160_1_1.png
-
-		attack.position.x				145
-		attack.position.y				150
-		attack.size.x					80
-		attack.size.y					35
-		attack.damage.force				12
-		attack.damage.type				2
-		attack.reaction.fall.velocity.x	1.2
-		attack.reaction.fall.velocity.y	3
-		attack.reaction.fall.velocity.z	0
-		attack.reaction.pause.time		8
-		
-	frame	data/chars/galford/160_2_1.png
 	
-		delay	6
-		attack	0
+	frame	data/chars/galford/atk_v-cut_1.png
 
-	frame	data/chars/galford/160_3_0.png
+	attack.damage.force 12
+	attack.damage.type 2
+	attack.position.x 145
+	attack.position.y 150
+	attack.reaction.fall.velocity.x 1.2
+	attack.reaction.fall.velocity.y 3.0
+	attack.reaction.fall.velocity.z 0.0
+	attack.reaction.pause.time 8
+	attack.size.x 80
+	attack.size.y 35
+		
+	frame	data/chars/galford/atk_v-cut_2.png
+	
+	delay	6
+	
+	attack.block.penetrate 0
+	attack.damage.force 0
+	attack.damage.type 1
+	attack.effect.hit.flash.disable 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.reaction.pause.time 0
+	attack.size.x 0
+	attack.size.y 0
+	attack.size.z.1 0
 
-		delay	12
-		idle	1
-	frame	data/chars/galford/160_4_0.png
-
-		delay	6
-
-	frame	data/chars/galford/160_6_0.png
-	frame	data/chars/galford/164_12_0.png
+	frame	data/chars/galford/atk_v-cut_3.png
+		
+	idle	1
+	
+	frame	data/chars/galford/atk_v-cut_4.png
+	frame	data/chars/galford/atk_v-cut_5.png
+	frame	data/chars/galford/atk_v-cut_6.png
+	frame	data/chars/galford/atk_v-cut_0.png
 
 anim attack3
 
 	# Reverse V-cut slash.
 
-		fastattack 1
-		range   -40 50
+	fastattack 1
+	range   -40 50
 
-		delay	6
-		offset	140 207
-		bbox	130 120 45 90
+	delay	6
+	offset	140 207
+	bbox	130 120 45 90
 
-		@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_SOUND_ATTACK_MEDIUM_BLADE
-	frame	data/chars/galford/806_0_0.png
+	@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_SOUND_ATTACK_MEDIUM_BLADE
+	frame	data/chars/galford/atk_v-cut_back_0.png
 
 	@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_MEDIUM
 	
 	# Spawn sub entity and set it as entity for binding.
 	@cmd dc_elmers_quick_motion dc_gauntlet_quick_spawn("galford_trail")
 	
-	frame	data/chars/galford/806_1_0.png
+	frame	data/chars/galford/atk_v-cut_back_1.png
 
-		delay	8
+	delay	8
 		
-	frame	data/chars/galford/806_2_0.png
+	frame	data/chars/galford/atk_v-cut_back_2.png
 
-		attack.position.x				125
-		attack.position.y				60
-		attack.size.x					95
-		attack.size.y					105
-		attack.damage.force				12
-		attack.damage.type				2
-		attack.reaction.fall.velocity.x	1.2
-		attack.reaction.fall.velocity.y	3
-		attack.reaction.fall.velocity.z	0
-		attack.reaction.pause.time		8
-
-	frame	data/chars/galford/806_3_0.png
+	attack.position.x				125
+	attack.position.y				60
+	attack.size.x					95
+	attack.size.y					105
+	attack.damage.force				12
+	attack.damage.type				2
+	attack.reaction.fall.velocity.x	1.2
+	attack.reaction.fall.velocity.y	3
+	attack.reaction.fall.velocity.z	0
+	attack.reaction.pause.time		8
 	
-		delay	6
-		attack	0
+	frame	data/chars/galford/atk_v-cut_back_3.png
+	
+	delay	6
+	attack	0
 
-	frame	data/chars/galford/806_4_0.png
-	frame	data/chars/galford/806_5_0.png
-
-		delay	6
-
-	frame	data/chars/galford/97_2_0.png		
+	frame	data/chars/galford/atk_v-cut_back_4.png
+	frame	data/chars/galford/atk_v-cut_back_5.png
+	frame	data/chars/galford/atk_v-cut_back_6.png
+	frame	data/chars/galford/atk_v-cut_back_7.png
+	frame	data/chars/galford/atk_v-cut_0.png
 	
 anim attack4
 
@@ -1246,33 +1259,54 @@ anim forwardjump
 
 anim runjump
 
-		delay	10
+		delay	15
 		offset	140 207
-		bbox	125 104 50 80	
+	bbox.position.x 125
+	bbox.position.y 104
+	bbox.size.x 50
+	bbox.size.y 80
 
 	frame	data/chars/galford/jump_forward_0_0.png
 	
-		bbox	85 104 100 55	
+	delay 2
+	
+	bbox.position.x 140
+	bbox.position.y 81
+	bbox.size.x 54
+	bbox.size.y 62
 
-	frame	data/chars/galford/jump_forward_1_0.png
+	offset 150 170
 
-		bbox	110 100 55 95
+	frame	data/chars/galford/jump_run_0.png
+	frame	data/chars/galford/jump_run_1.png
+	frame	data/chars/galford/jump_run_2.png
+	frame	data/chars/galford/jump_run_3.png
+	frame	data/chars/galford/jump_run_4.png
+	frame	data/chars/galford/jump_run_5.png
+	frame	data/chars/galford/jump_run_6.png
+	frame	data/chars/galford/jump_run_7.png
+	frame	data/chars/galford/jump_run_0.png
+	frame	data/chars/galford/jump_run_1.png
+	frame	data/chars/galford/jump_run_2.png
+	frame	data/chars/galford/jump_run_3.png
+	frame	data/chars/galford/jump_run_4.png
+	frame	data/chars/galford/jump_run_5.png
+	frame	data/chars/galford/jump_run_6.png
+	frame	data/chars/galford/jump_run_7.png
+	frame	data/chars/galford/jump_run_0.png
+	frame	data/chars/galford/jump_run_1.png
+	frame	data/chars/galford/jump_run_2.png
+	frame	data/chars/galford/jump_run_3.png
+	frame	data/chars/galford/jump_run_4.png
+	frame	data/chars/galford/jump_run_5.png
+	frame	data/chars/galford/jump_run_6.png
 
-	frame	data/chars/galford/jump_forward_2_0.png
+offset	140 207
 
-		bbox	120 100 45 95
-
-	frame	data/chars/galford/jump_forward_3_0.png
-
-		bbox	120 140 80 50
-
-	frame	data/chars/galford/jump_forward_4_0.png
-
-		bbox	105 130 80 65
-
-	frame	data/chars/galford/jump_forward_5_0.png
-
-		bbox	110 115 50 80
+	bbox.position.x 110
+	bbox.position.y 115
+	bbox.size.x 50
+	bbox.size.y 80
 
 	frame	data/chars/galford/jump_forward_6_0.png
 
