@@ -234,10 +234,10 @@ anim run
 		offset	140 207
 		bbox	130 120 45 90
 	
-	frame	data/chars/galford/run_0_0.png
-	frame	data/chars/galford/run_2_0.png
-	frame	data/chars/galford/run_3_0.png
-	frame	data/chars/galford/run_4_0.png
+	frame	data/chars/galford/run_0.png
+	frame	data/chars/galford/run_1.png
+	frame	data/chars/galford/run_2.png
+	frame	data/chars/galford/run_3.png
 
 anim get
 
@@ -646,7 +646,7 @@ anim attack7
 		offset	140 207
 		bbox	130 120 45 90
 	
-	frame	data/chars/galford/jump_land_0_0.png
+	frame	data/chars/galford/jump_land_2.png
 
 		@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_HEAVY
 	
@@ -677,14 +677,14 @@ anim attack7
 
 		delay	-1000
 
-	frame	data/chars/galford/jump_6_0.png
+	frame	data/chars/galford/jump_6.png
 	
 		# landing
 		delay	6
 
-	frame	data/chars/galford/jump_land_0_0.png
-	frame	data/chars/galford/jump_land_1_0.png
-	frame	data/chars/galford/jump_land_0_0.png
+	frame	data/chars/galford/jump_land_0.png
+	frame	data/chars/galford/jump_land_1.png
+	frame	data/chars/galford/jump_land_2.png
 
 anim chargeattack
 
@@ -882,7 +882,7 @@ anim freespecial
 		offset	140 207
 		bbox	130 120 45 90
 	
-	frame	data/chars/galford/jump_land_0_0.png
+	frame	data/chars/galford/jump_land_2.png
 		
 		bbox	130 120 45 90
 		@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_LIGHT
@@ -932,16 +932,17 @@ anim follow93
 	
 		move	-15
 		delay	-1000
-	frame	data/chars/galford/jump_forward_0_0.png
+	frame	data/chars/galford/jump_forward_0.png
 
 		
 		delay	6
 		move	-10
 
-	frame	data/chars/galford/jump_land_0_0.png
+	frame	data/chars/galford/jump_land_0.png
 		move	0
-	frame	data/chars/galford/jump_land_1_0.png
-	frame	data/chars/galford/jump_land_0_0.png
+
+	frame	data/chars/galford/jump_land_1.png
+	frame	data/chars/galford/jump_land_2.png
 
 anim freespecial2
 
@@ -1188,17 +1189,17 @@ anim jumpdelay
 		offset	140 207
 		bbox	115 124 50 85
 	
-	frame	data/chars/galford/jump_land_0_0.png
+	frame	data/chars/galford/jump_land_2.png
 
 anim jumpland
 
-		delay	4
-		offset	140 207
-		bbox	115 124 50 85
+	delay	4
+	offset	140 207
+	bbox	115 124 50 85
 	
-	frame	data/chars/galford/jump_land_0_0.png
-	frame	data/chars/galford/jump_land_1_0.png
-	frame	data/chars/galford/jump_land_0_0.png
+	frame	data/chars/galford/jump_land_0.png
+	frame	data/chars/galford/jump_land_1.png
+	frame	data/chars/galford/jump_land_2.png
 
 anim jump
 
@@ -1210,20 +1211,20 @@ anim jump
 		offset	140 207
 		bbox	115 100 50 85	
 
-	frame	data/chars/galford/jump_0_0.png
+	frame	data/chars/galford/jump_0.png
 
 		delay	8
 		bbox	115 100 50 80	
 
-	frame	data/chars/galford/jump_1_0.png
-	frame	data/chars/galford/jump_2_0.png
-	frame	data/chars/galford/jump_3_0.png
-	frame	data/chars/galford/jump_4_0.png
-	frame	data/chars/galford/jump_5_0.png
+	frame	data/chars/galford/jump_1.png
+	frame	data/chars/galford/jump_2.png
+	frame	data/chars/galford/jump_3.png
+	frame	data/chars/galford/jump_4.png
+	frame	data/chars/galford/jump_5.png
 		
 		bbox	115 100 50 85
 	
-	frame	data/chars/galford/jump_6_0.png
+	frame	data/chars/galford/jump_6.png
 
 anim forwardjump
 
@@ -1231,31 +1232,31 @@ anim forwardjump
 		offset	140 207
 		bbox	125 104 50 80	
 
-	frame	data/chars/galford/jump_forward_0_0.png
+	frame	data/chars/galford/jump_forward_0.png
 	
 		bbox	85 104 100 55	
 
-	frame	data/chars/galford/jump_forward_1_0.png
+	frame	data/chars/galford/jump_forward_1.png
 
 		bbox	110 100 55 95
 
-	frame	data/chars/galford/jump_forward_2_0.png
+	frame	data/chars/galford/jump_forward_2.png
 
 		bbox	120 100 45 95
 
-	frame	data/chars/galford/jump_forward_3_0.png
+	frame	data/chars/galford/jump_forward_3.png
 
 		bbox	120 140 80 50
 
-	frame	data/chars/galford/jump_forward_4_0.png
+	frame	data/chars/galford/jump_forward_4.png
 
 		bbox	105 130 80 65
 
-	frame	data/chars/galford/jump_forward_5_0.png
+	frame	data/chars/galford/jump_forward_5.png
 
 		bbox	110 115 50 80
 
-	frame	data/chars/galford/jump_forward_6_0.png
+	frame	data/chars/galford/jump_forward_6.png
 
 anim runjump
 
@@ -1266,7 +1267,7 @@ anim runjump
 	bbox.size.x 50
 	bbox.size.y 80
 
-	frame	data/chars/galford/jump_forward_0_0.png
+	frame	data/chars/galford/jump_forward_0.png
 	
 	delay 2
 	
@@ -1308,7 +1309,7 @@ offset	140 207
 	bbox.size.x 50
 	bbox.size.y 80
 
-	frame	data/chars/galford/jump_forward_6_0.png
+	frame	data/chars/galford/jump_forward_6.png
 
 anim jumpattack
 
