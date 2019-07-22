@@ -52,8 +52,8 @@ load	galford_trail
 
 #*****Alternates*******
 
-palette	       data/chars/galford/jo_musashi_shinobi.ACT
-#alternatepal   data/chars/galford/pal_1.act
+palette	       data/chars/galford/og_navy.act
+alternatepal   data/chars/galford/og_navy_mask.act
 
 #*****Commands*****************************************************************************
 
@@ -358,7 +358,7 @@ anim attack2
 		@cmd dc_elmers_set_offset_x	-5
 		@cmd dc_elmers_reposition_to_offset
 
-	frame	data/chars/galford/83_3_0.png
+	frame	data/chars/galford/atk_palm_0.png
 	
 		delay	3
 		
@@ -372,13 +372,13 @@ anim attack2
 		attack.reaction.fall.velocity.z	0
 		attack.reaction.pause.time		6
 	
-	frame	data/chars/galford/83_6_0.png
-	frame	data/chars/galford/83_4_0.png
+	frame	data/chars/galford/atk_palm_1.png
+	frame	data/chars/galford/atk_palm_2.png
 	
 		delay	4
 		attack	0
 
-	frame	data/chars/galford/83_5_0.png
+	frame	data/chars/galford/atk_palm_3.png
 
 ############
 
@@ -511,38 +511,51 @@ anim attack4
 		range	-40 50
 		delay	5
 		offset	140 207
-		bbox	130 120 45 90
+	bbox.position.x 130
+	bbox.position.y 120
+	bbox.size.x 45
+	bbox.size.y 90
 	
-	frame	data/chars/galford/172_0_0.png
+	frame	data/chars/galford/atk_side_kick_high_0.png
 
 		@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_HEAVY
 
-	frame	data/chars/galford/172_1_0.png
-	frame	data/chars/galford/172_2_0.png
+	frame	data/chars/galford/atk_side_kick_high_1.png
+	frame	data/chars/galford/atk_side_kick_high_2.png
 
-		attack.position.x				140
-		attack.position.y				85
-		attack.size.x					70
-		attack.size.y					60
-		attack.damage.force				14
-		attack.reaction.fall.force		1
-		attack.reaction.fall.velocity.x	1
-		attack.reaction.fall.velocity.y 5
-		attack.reaction.fall.velocity.z 0
-		attack.reaction.pause.time		12
+	attack.damage.force 14
+	attack.position.x 140
+	attack.position.y 85
+	attack.reaction.fall.force 1
+	attack.reaction.fall.velocity.x 1.0
+	attack.reaction.fall.velocity.y 5.0
+	attack.reaction.fall.velocity.z 0.0
+	attack.reaction.pause.time 12
+	attack.size.x 81
+	attack.size.y 60
 
-	frame	data/chars/galford/172_3_0.png
+	frame	data/chars/galford/atk_side_kick_high_3.png
 
 		delay	8
 
-	frame	data/chars/galford/172_4_0.png
+	frame	data/chars/galford/atk_side_kick_high_4.png
 
-		attack	0
+	attack.block.penetrate 0
+	attack.damage.force 0
+	attack.damage.type 1
+	attack.effect.hit.flash.disable 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.reaction.pause.time 0
+	attack.size.x 0
+	attack.size.y 0
+	attack.size.z.1 0
 
-	frame	data/chars/galford/172_3_0.png
-	frame	data/chars/galford/172_2_0.png
-	frame	data/chars/galford/172_1_0.png
-	frame	data/chars/galford/172_0_0.png
+	frame	data/chars/galford/atk_side_kick_high_3.png
+	frame	data/chars/galford/atk_side_kick_high_2.png
+	frame	data/chars/galford/atk_side_kick_high_1.png
+	frame	data/chars/galford/atk_side_kick_high_0.png
 
 anim attack5
 
@@ -552,17 +565,17 @@ anim attack5
 		offset	140 207
 		bbox	130 120 45 90
 	
-	frame	data/chars/galford/97_2_0.png
+	frame	data/chars/galford/atk_cross_cut_0.png
 		
 	@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_MEDIUM
 	@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_SOUND_ATTACK_MEDIUM_BLADE
 
-	frame	data/chars/galford/325_21_0.png
+	frame	data/chars/galford/atk_cross_cut_1.png
 
 	# Spawn sub entity and set it as entity for binding.
 	@cmd dc_elmers_quick_motion dc_gauntlet_quick_spawn("galford_trail")
 
-	frame	data/chars/galford/804_0_0.png
+	frame	data/chars/galford/atk_cross_cut_2.png
 
 		attack.position.x				135
 		attack.position.y				130
@@ -575,25 +588,19 @@ anim attack5
 		attack.reaction.fall.velocity.z	0
 		attack.reaction.pause.time		10
 
-	frame	data/chars/galford/804_1_0.png
+	frame	data/chars/galford/atk_cross_cut_3.png
 
 		delay	6
 		attack	0
 
-	frame	data/chars/galford/804_3_0.png
+	frame	data/chars/galford/atk_cross_cut_4.png
 	
 		idle	1
 
-	frame	data/chars/galford/804_2_0.png
-	frame	data/chars/galford/804_4_0.png
-
-		offset	165 210
-
-	frame	data/chars/galford/161_6_0.png
-	
-		offset	140 207
-
-	frame	data/chars/galford/164_12_0.png
+	frame	data/chars/galford/atk_cross_cut_5.png
+	frame	data/chars/galford/atk_cross_cut_6.png
+	frame	data/chars/galford/atk_cross_cut_7.png
+	frame	data/chars/galford/atk_cross_cut_0.png
 	
 
 anim attack6
@@ -607,7 +614,7 @@ anim attack6
 		@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_MEDIUM
 		@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_SOUND_ATTACK_MEDIUM_BLADE
 
-	frame	data/chars/galford/805_0_0.png	
+	frame	data/chars/galford/atk_cross_cut_back_0.png	
 
 	attack.position.x				135
 	attack.position.y				130
@@ -623,17 +630,17 @@ anim attack6
 	# Spawn sub entity and set it as entity for binding.
 	@cmd dc_elmers_quick_motion dc_gauntlet_quick_spawn("galford_trail")
 
-	frame	data/chars/galford/805_1_0.png
+	frame	data/chars/galford/atk_cross_cut_back_1.png
 
 		delay	8
 		attack	0		
 
-	frame	data/chars/galford/805_3_0.png
+	frame	data/chars/galford/atk_cross_cut_back_2.png
 
 		idle	1
 
-	frame	data/chars/galford/805_2_0.png
-	frame	data/chars/galford/325_21_0.png
+	frame	data/chars/galford/atk_cross_cut_back_3.png
+	frame	data/chars/galford/atk_v-cut_0.png
 	
 anim attack7
 
@@ -650,12 +657,12 @@ anim attack7
 
 		@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_HEAVY
 	
-	frame	data/chars/galford/173_4_0.png
+	frame	data/chars/galford/atk_j_spin_kick_0.png
 		
 		delay	8
 	
-	frame	data/chars/galford/803_0_0.png
-	frame	data/chars/galford/803_1_0.png
+	frame	data/chars/galford/atk_j_spin_kick_1.png
+	frame	data/chars/galford/atk_j_spin_kick_2.png
 
 		attack.position.x				130
 		attack.position.y				130
@@ -668,12 +675,12 @@ anim attack7
 		attack.reaction.fall.velocity.z	0
 		attack.reaction.pause.time		12
 
-	frame	data/chars/galford/803_2_0.png
+	frame	data/chars/galford/atk_j_spin_kick_3.png
 
 		attack	0
 
-	frame	data/chars/galford/803_3_0.png
-	frame	data/chars/galford/421_23_0.png
+	frame	data/chars/galford/atk_j_spin_kick_4.png
+	frame	data/chars/galford/atk_j_spin_kick_5.png
 
 		delay	-1000
 
@@ -695,29 +702,29 @@ anim chargeattack
 		offset	140 207
 		bbox	130 120 45 90
 	
-	frame	data/chars/galford/97_2_0.png
-	frame	data/chars/galford/164_0_0.png
-	frame	data/chars/galford/164_1_0.png
-	frame	data/chars/galford/164_0_0.png
+	frame	data/chars/galford/atk_cross_cut_0.png
+	frame	data/chars/galford/atk_justice_slash_0.png
+	frame	data/chars/galford/atk_justice_slash_1.png
+	frame	data/chars/galford/atk_justice_slash_0.png
 
 		@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_HEAVY
 		@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_SOUND_ATTACK_HEAVY_BLADE		
 
-	frame	data/chars/galford/165_2_0.png
-	frame	data/chars/galford/165_3_0.png
-	frame	data/chars/galford/165_5_1.png
-	frame	data/chars/galford/165_6_0.png
-	frame	data/chars/galford/165_7_0.png
+	frame	data/chars/galford/atk_justice_slash_2.png
+	frame	data/chars/galford/atk_justice_slash_3.png
+	frame	data/chars/galford/atk_justice_slash_4.png
+	frame	data/chars/galford/atk_justice_slash_5.png
+	frame	data/chars/galford/atk_justice_slash_6.png
 		
 		delay	16
 
-	frame	data/chars/galford/165_8_0.png
+	frame	data/chars/galford/atk_justice_slash_7.png
 
 		delay	10
 
-	frame	data/chars/galford/163_8_0.png
-	frame	data/chars/galford/163_9_0.png
-	frame	data/chars/galford/164_12_0.png
+	frame	data/chars/galford/atk_c_cut_1.png
+	frame	data/chars/galford/atk_c_cut_0.png
+	frame	data/chars/galford/atk_cross_cut_0.png
 
 
 anim runattack
@@ -889,23 +896,23 @@ anim freespecial
 		
 		delay	8
 
-	frame	data/chars/galford/dash_back_0_0.png	
+	frame	data/chars/galford/dash_back_0.png	
 	
 		move	-15
 
-	frame	data/chars/galford/dash_back_1_0.png
+	frame	data/chars/galford/dash_back_1.png
 
 		delay	-1000
 		move	-25
 	
 		
-	frame	data/chars/galford/dash_back_2_0.png
+	frame	data/chars/galford/dash_back_2.png
 	
 		delay	1
 		move	0
 		@cmd performattack getlocalvar("self") openborconstant("ANI_FOLLOW93") 0
 
-	frame	data/chars/galford/dash_back_2_0.png
+	frame	data/chars/galford/dash_back_2.png
 
 anim follow93
 
@@ -920,15 +927,15 @@ anim follow93
 
 		move	0
 
-	frame	data/chars/galford/dash_back_2_0.png
+	frame	data/chars/galford/dash_back_2.png
 	
 	
-	frame	data/chars/galford/dash_back_3_0.png
+	frame	data/chars/galford/dash_back_3.png
 		
 		delay	12
 		move	-30
 	
-	frame	data/chars/galford/dash_back_4_0.png	
+	frame	data/chars/galford/dash_back_4.png	
 	
 		move	-15
 		delay	-1000
@@ -1164,24 +1171,24 @@ anim grab
 		@cmd	dc_elmers_set_offset_x	40
 		@cmd	dc_elmers_apply_position
 	
-	frame	data/chars/galford/807_0_0.png
+	frame	data/chars/galford/grab_0.png
 		
 		offset 157 210
 	
-	frame	data/chars/galford/807_0_0.png
+	frame	data/chars/galford/grab_0.png
 
 		offset 140 207
 	
-	frame	data/chars/galford/807_0_0.png
+	frame	data/chars/galford/grab_0.png
 
 		offset 157 210
 	
-	frame	data/chars/galford/807_0_0.png
+	frame	data/chars/galford/grab_0.png
 
 		delay	50
 		offset 140 207
 	
-	frame	data/chars/galford/807_0_0.png
+	frame	data/chars/galford/grab_0.png
 
 anim jumpdelay
 
@@ -1377,22 +1384,46 @@ anim jumpforward
 
 		delay	8
 		offset	140 207
-		bbox	130 120 45 90
+	bbox.position.x 106
+	bbox.position.y 113
+	bbox.size.x 47
+	bbox.size.y 54
 		
 		@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_MEDIUM
 		# dc_fidelity_quick_play DC_FIDELITY_TYPE_SOUND_ATTACK_MEDIUM
 
-	frame	data/chars/galford/361_8_0.png
+	frame	data/chars/galford/atk_jump_side_kick_0.png
 	
 		delay	20
-		attack  120 160 92 46 16 1
+	attack.block.penetrate 0
+	attack.damage.force 16
+	attack.damage.type 1
+	attack.effect.hit.flash.disable 0
+	attack.position.x 118
+	attack.position.y 150
+	attack.reaction.fall.force 1
+	attack.reaction.pause.time 0
+	attack.size.x 82
+	attack.size.y 46
+	attack.size.z.1 0
 	
-	frame	data/chars/galford/361_9_0.png
+	frame	data/chars/galford/atk_jump_side_kick_1.png
 	
 		delay	-1000
-		attack	0
+	attack.block.penetrate 0
+	attack.damage.force 0
+	attack.damage.type 1
+	attack.effect.hit.flash.disable 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.reaction.pause.time 0
+	attack.size.x 0
+	attack.size.y 0
+	attack.size.z.1 0
 
-	frame	data/chars/galford/361_8_0.png
+	frame	data/chars/galford/atk_jump_side_kick_0.png
+	frame	data/chars/galford/jump_forward_6.png
 
 anim runjumpattack
 
@@ -1418,7 +1449,7 @@ anim blockrelease
 		offset	140 207
 		bbox	130 120 45 90
 	
-	frame	data/chars/galford/block_start_0_0.png
+	frame	data/chars/galford/block_start_0.png
 
 anim blockstart
 
@@ -1426,7 +1457,7 @@ anim blockstart
 		offset	140 207
 		bbox	130 120 45 90
 	
-	frame	data/chars/galford/block_start_0_0.png
+	frame	data/chars/galford/block_start_0.png
 
 anim block
 
@@ -1434,7 +1465,7 @@ anim block
 		offset	140 207
 		bbox	130 120 45 90
 	
-	frame	data/chars/galford/block_0_0.png
+	frame	data/chars/galford/block_0.png
 
 anim blockpain
 
@@ -1446,25 +1477,25 @@ anim blockpain
 
 		move	-2
 	
-	frame	data/chars/galford/block_impact_0_0.png
+	frame	data/chars/galford/block_impact_0.png
 	
 		move	0
 		offset	143 207
 	
-	frame	data/chars/galford/block_impact_0_0.png
+	frame	data/chars/galford/block_impact_0.png
 	
 		offset	140 207
 	
-	frame	data/chars/galford/block_impact_0_0.png
+	frame	data/chars/galford/block_impact_0.png
 	
 		offset	143 207
 	
-	frame	data/chars/galford/block_impact_0_0.png
+	frame	data/chars/galford/block_impact_0.png
 	
 		delay	20
 		offset	140 207
 	
-	frame	data/chars/galford/block_impact_1_0.png
+	frame	data/chars/galford/block_impact_1.png
 
 anim land
 
