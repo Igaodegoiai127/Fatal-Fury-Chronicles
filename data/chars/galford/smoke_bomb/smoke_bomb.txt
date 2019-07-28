@@ -1,0 +1,37 @@
+name         galford_smoke_bomb
+type	     none
+health	     100
+alpha	     1
+speedf		 0.0
+nomove		1
+antigravity	100
+
+palette	data/chars/galford/smoke_bomb/default.act
+
+anim idle
+
+	delay	6
+	offset	50 48
+
+	frame	data/chars/galford/smoke_bomb/idle_0.png
+	
+	delay	1
+
+	frame	data/chars/galford/smoke_bomb/idle_1.png
+	frame	data/chars/galford/smoke_bomb/idle_2.png
+	
+	delay	8
+
+	frame	data/chars/galford/smoke_bomb/idle_3.png
+	frame	data/chars/galford/smoke_bomb/idle_4.png
+	frame	data/chars/galford/smoke_bomb/idle_5.png
+	frame	data/chars/galford/smoke_bomb/idle_6.png	
+	frame	data/chars/galford/smoke_bomb/idle_7.png
+	frame	data/chars/galford/smoke_bomb/idle_8.png
+	frame	data/chars/galford/smoke_bomb/idle_9.png
+	frame	data/chars/galford/smoke_bomb/idle_10.png
+
+	@cmd killentity getlocalvar("self")
+	frame	data/chars/galford/smoke_bomb/idle_10.png
+
+	

@@ -48,12 +48,14 @@ onpainscript		data/scripts/common/event_pain.c
 #*****Sub Entites*****
 
 load	Poppy
+load	galford_smoke_bomb
 load	galford_trail
 
 #*****Alternates*******
 
 palette	       data/chars/galford/og_navy.act
 alternatepal   data/chars/galford/og_navy_mask.act
+alternatepal   data/chars/galford/2019_default.act
 
 #*****Commands*****************************************************************************
 
@@ -66,14 +68,53 @@ com	u d a    	freespecial5		# Plane attack down.
 
 anim spawn		
 
-		delay	1
-		offset	140 207
-		bbox	130 120 45 90
-		#subentity Poppy  
-		#summonframe 1 -20 15 0 0  
+	subentity Poppy  
+	summonframe 1 -20 15 0 0 
 
-	frame	data/chars/galford/idle_0.png
-	frame	data/chars/galford/idle_0.png
+	jumpframe 1 0.2 0 0
+	landframe 11
+	
+
+	#dealy before appearing.
+	delay	100
+	offset	140 207	 
+	frame	data/chars/misc/blank.png
+
+	delay	5
+	
+
+	# We're our own target, so we're just adjusting to an
+	# offset above the starting position and applying.
+	@cmd dc_elmers_set_offset_y 85
+	@cmd dc_elmers_apply_position
+	@cmd dc_elmers_free_instance
+
+	@cmd dc_elmers_set_offset_x 5
+	@cmd dc_elmers_set_offset_y 95
+	@cmd dc_elmers_quick_overlay dc_gauntlet_quick_spawn("galford_smoke_bomb")
+	
+	frame	data/chars/galford/jump_run_0.png
+	frame	data/chars/galford/jump_run_1.png
+	frame	data/chars/galford/jump_run_2.png
+	frame	data/chars/galford/jump_run_3.png
+	frame	data/chars/galford/jump_run_4.png
+	frame	data/chars/galford/jump_run_5.png
+	frame	data/chars/galford/jump_run_6.png
+
+	delay	5
+
+	frame	data/chars/galford/jump_3.png
+	frame	data/chars/galford/jump_4.png
+	
+	delay	-1000
+
+	frame	data/chars/galford/jump_5.png
+	
+	delay	15
+
+	frame	data/chars/galford/jump_land_0.png
+	frame	data/chars/galford/jump_land_1.png
+	frame	data/chars/galford/jump_land_2.png
 
 #anim respawn
 
@@ -418,7 +459,6 @@ anim attack1
 		
 	# Spawn sub entity and set it as entity for binding.
 	@cmd dc_elmers_quick_motion dc_gauntlet_quick_spawn("galford_trail")
-	
 	frame	data/chars/galford/atk_v-cut_1.png
 
 	attack.damage.force 12
