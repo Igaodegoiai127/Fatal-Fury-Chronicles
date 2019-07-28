@@ -1,10 +1,3 @@
-
-#*****Settings***************************************************************************
-
-#*****icons*****
-
-#*****General*****
-
 name	     	Poppy
 type	     	npc
 subtype			follow
@@ -20,89 +13,78 @@ hostile			none
 gfxshadow    	1
 dust		flash_fall_land flash_jump_land flash_jump_liftoff
 
-#*****Scripts*****
-
-palette	       data/chars/galford/pal_0.act
-
-#anim select
+palette	       data/chars/poppy/idle_0.png
 
 anim idle
 
 	#Ready stance.
 
-		loop 	1
-		delay	4
-		offset	135 192
-		bbox 	0
-		range	75 500
-		rangez	0 500
+	loop 	1
+	delay	4
+	offset	135 192
+	bbox 	0
+	range	75 500
+	rangez	0 500
 		
-	frame	data/chars/poppy/0_0.png
-	frame	data/chars/poppy/0_1.png
+	frame	data/chars/poppy/idle_0.png
+	frame	data/chars/poppy/idle_1.png
 
 anim walk
 
-		loop 	1
-		delay	6
-		offset	135 192
-		bbox 	0
+	loop 	1
+	delay	6
+	offset	135 192
+	bbox 	0
 
-	frame	data/chars/poppy/1_0.png
-	frame	data/chars/poppy/1_1.png
-	frame	data/chars/poppy/1_2.png
-	frame	data/chars/poppy/1_3.png
-	frame	data/chars/poppy/1_4.png
-	frame	data/chars/poppy/1_5.png
-	frame	data/chars/poppy/1_6.png
-	frame	data/chars/poppy/1_7.png
+	frame	data/chars/poppy/walk_0.png
+	frame	data/chars/poppy/walk_1.png
+	frame	data/chars/poppy/walk_2.png
+	frame	data/chars/poppy/walk_3.png
+	frame	data/chars/poppy/walk_4.png
+	frame	data/chars/poppy/walk_5.png
+	frame	data/chars/poppy/walk_6.png
+	frame	data/chars/poppy/walk_7.png
 
 anim backwalk
 
-		loop 	1
-		delay	6
-		offset	135 192
-		bbox 	0
+	loop 	1
+	delay	6
+	offset	135 192
+	bbox 	0
 
-	frame	data/chars/poppy/2_0.png
-	frame	data/chars/poppy/2_1.png
-	frame	data/chars/poppy/2_2.png
-	frame	data/chars/poppy/2_3.png
-	frame	data/chars/poppy/2_4.png
-	frame	data/chars/poppy/2_5.png
-	frame	data/chars/poppy/2_6.png
-	frame	data/chars/poppy/2_7.png
+	frame	data/chars/poppy/walk_back_0.png
+	frame	data/chars/poppy/walk_back_1.png
+	frame	data/chars/poppy/walk_back_2.png
+	frame	data/chars/poppy/walk_back_3.png
+	frame	data/chars/poppy/walk_back_4.png
+	frame	data/chars/poppy/walk_back_5.png
+	frame	data/chars/poppy/walk_back_6.png
+	frame	data/chars/poppy/walk_back_7.png
 
 anim run
 
-		loop 	1
-		delay	3
-		offset	135 192
-		bbox 	0
+	loop 	1
+	delay	3
+	offset	135 192
+	bbox 	0
 
-	frame	data/chars/poppy/1_0.png
-	frame	data/chars/poppy/1_1.png
-	frame	data/chars/poppy/1_2.png
-	frame	data/chars/poppy/1_3.png
-	frame	data/chars/poppy/1_4.png
-	frame	data/chars/poppy/1_5.png
-	frame	data/chars/poppy/1_6.png
-	frame	data/chars/poppy/1_7.png
+	frame	data/chars/poppy/walk_0.png
+	frame	data/chars/poppy/walk_1.png
+	frame	data/chars/poppy/walk_2.png
+	frame	data/chars/poppy/walk_3.png
+	frame	data/chars/poppy/walk_4.png
+	frame	data/chars/poppy/walk_5.png
+	frame	data/chars/poppy/walk_6.png
+	frame	data/chars/poppy/walk_7.png
 
 anim turn
 
 	delay	8
-		offset	135 192
-		bbox 	0
+	offset	135 192
+	bbox 	0
 
-	frame	data/chars/poppy/14_3.png
-	frame	data/chars/poppy/14_2.png
-	frame	data/chars/poppy/14_1.png
-	frame	data/chars/poppy/14_0.png
+	frame	data/chars/poppy/turn_3.png
+	frame	data/chars/poppy/turn_2.png
+	frame	data/chars/poppy/turn_1.png
+	frame	data/chars/poppy/turn_0.png
 
-
-#*****Attack*******************************************************************************
-
-
-#*****Footer********************************************************************************
-
-#Always make sure to include a single blank line at bottom of file.
