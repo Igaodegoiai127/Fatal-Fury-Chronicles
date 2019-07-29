@@ -72,10 +72,10 @@ anim spawn
 	summonframe 1 -20 15 0 0 
 
 	jumpframe 1 0.2 0 0
-	landframe 11
+	landframe 11 jump_land
 	
 
-	#dealy before appearing.
+	#delay before appearing.
 	delay	100
 	offset	140 207	 
 	frame	data/chars/misc/blank.png

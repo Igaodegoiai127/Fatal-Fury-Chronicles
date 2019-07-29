@@ -534,6 +534,63 @@
     <ClCompile Include="data\scripts\dc_damage\projectile.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="data\scripts\dc_disney\direction.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="data\scripts\dc_elmers\attacking.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="data\scripts\dc_elmers\bind.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="data\scripts\dc_elmers\blast.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="data\scripts\dc_elmers\candamage.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="data\scripts\dc_elmers\direction.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="data\scripts\dc_elmers\entity.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="data\scripts\dc_elmers\grapple.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="data\scripts\dc_elmers\instance.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="data\scripts\dc_elmers\level.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="data\scripts\dc_elmers\macro.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="data\scripts\dc_elmers\main.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="data\scripts\dc_elmers\offset.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="data\scripts\dc_elmers\palette.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="data\scripts\dc_elmers\position.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="data\scripts\dc_elmers\position_config.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="data\scripts\dc_elmers\tag.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="data\scripts\dc_math\round.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="data\scripts\dc_elmers\size.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="data\scripts\com\bind0003.h">
@@ -11428,6 +11485,78 @@
     <Image Include="data\chars\ryu\17_7.png">
       <Filter>Resource Files</Filter>
     </Image>
+    <Image Include="data\chars\poppy\0_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\poppy\0_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\poppy\1_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\poppy\1_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\poppy\1_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\poppy\1_3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\poppy\1_4.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\poppy\1_5.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\poppy\1_6.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\poppy\1_7.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\poppy\2_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\poppy\2_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\poppy\2_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\poppy\2_3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\poppy\2_4.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\poppy\2_5.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\poppy\2_6.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\poppy\2_7.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\poppy\14_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\poppy\14_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\poppy\14_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\poppy\14_3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\poppy\idle_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\poppy\idle_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
   </ItemGroup>
   <ItemGroup>
     <Text Include="data\levels.txt" />
@@ -11478,7 +11607,6 @@
     <Text Include="data\bgs\beach\cabin_cruiser\cabin_cruiser.txt" />
     <Text Include="data\chars\misc\dust\flash_fall_land.txt" />
     <Text Include="data\chars\galford\galford.txt" />
-    <Text Include="data\chars\galford\galford-trails.txt" />
     <Text Include="data\chars\misc\pickups\fatal_fury_scroll\scro0001.txt" />
     <Text Include="data\chars\misc\flash\block.txt" />
     <Text Include="data\chars\ryu\ryu.txt" />
@@ -11503,6 +11631,8 @@
     <Text Include="data\chars\misc\cvs_block_flash\block.txt" />
     <Text Include="data\chars\ryu\hadouken\ryu_hadouken.txt" />
     <Text Include="data\chars\misc\control\control.txt" />
+    <Text Include="data\chars\galford\galford_trail.txt" />
+    <Text Include="data\chars\poppy\poppy.txt" />
   </ItemGroup>
   <ItemGroup>
     <None Include="data\chars\andy\wild-ambition-front-throw.psd" />
@@ -11564,6 +11694,8 @@
     <None Include="data\scripts\dc_instance\README.md" />
     <None Include="data\chars\ryu\pal_1.act" />
     <None Include="..\..\..\..\DCCURR~1\AppData\Local\Temp\Rar$DRa22840.10828\openbor-script-grapple-29da632d51bbc75ae7e51ca2029e9e56092813a2\README.md" />
+    <None Include="data\scripts\dc_elmers\README.md" />
+    <None Include="data\chars\poppy\base_cs.act" />
   </ItemGroup>
   <ItemGroup>
     <Media Include="data\chars\galford\sounds\voice-atk-0.wav">
