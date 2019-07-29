@@ -15,6 +15,33 @@ dust		flash_fall_land flash_jump_land flash_jump_liftoff
 
 palette	       data/chars/poppy/idle_0.png
 
+animationscript 	data/chars/galford/scripts/animation.c
+
+anim spawn 
+	
+	loop 1 1 4
+	jumpframe 0 0.2 0 0
+	landframe 5 jump_land
+
+	offset	135 192
+	delay	1
+
+	@cmd dc_elmers_set_offset_x 5
+	@cmd dc_elmers_set_offset_y 5
+	@cmd dc_elmers_quick_overlay dc_gauntlet_quick_spawn("galford_smoke_bomb")
+
+	frame	data/chars/misc/blank.png
+	
+	delay 5
+
+	frame data/chars/poppy/somersault_0.png
+	frame data/chars/poppy/somersault_1.png
+	frame data/chars/poppy/somersault_2.png
+	frame data/chars/poppy/somersault_3.png
+	
+	frame data/chars/poppy/jump_start_1.png
+	frame data/chars/poppy/jump_start_0.png
+
 anim idle
 
 	#Ready stance.
