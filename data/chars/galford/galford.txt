@@ -425,7 +425,7 @@ anim attack2
 
 ############
 
-anim attack1
+anim grabattack2 #attack1 
 
 	# V-cut slash.
 
@@ -1893,3 +1893,67 @@ anim burn
 #*****Footer********************************************************************************
 
 #Always make sure to include a single blank line at bottom of file.
+
+anim attack # grabattack2 # Roundhouse kick
+	
+	delay	9
+	offset	140 207
+	
+	bbox.position.x 114
+	bbox.position.y 116
+	bbox.size.x 45
+	bbox.size.y 93	
+	
+	@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_MEDIUM
+
+	frame data/chars/galford/atk_straight_0.png
+	
+	bbox.position.x 148
+	bbox.position.y 102
+	bbox.size.x 33
+	bbox.size.y 107
+	
+	@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_SOUND_ATTACK_MEDIUM
+
+	frame data/chars/galford/atk_round_kick_0.png
+	bbox.position.x 163
+	bbox.position.y 100
+	bbox.size.x 54
+	bbox.size.y 110
+	
+	attack.damage.force 0
+	attack.position.x 205
+	attack.position.y 95
+	attack.size.x 43
+	attack.size.y 36
+	
+	frame data/chars/galford/atk_round_kick_1.png
+	
+	delay 8
+	
+	attack 0
+	
+	frame data/chars/galford/atk_round_kick_2.png
+	
+	bbox.position.x 160
+	bbox.position.y 95
+	bbox.size.x 37
+	bbox.size.y 115
+	
+	frame data/chars/galford/atk_round_kick_3.png
+	
+	bbox.position.x 124
+	bbox.position.y 114
+	bbox.size.x 38
+	bbox.size.y 95
+	
+	frame data/chars/galford/atk_round_kick_4.png
+	
+	delay 10	
+	
+	bbox.position.x 125
+	bbox.position.y 118
+	bbox.size.x 45
+	bbox.size.y 89
+	
+	frame data/chars/galford/block_start_0.png
