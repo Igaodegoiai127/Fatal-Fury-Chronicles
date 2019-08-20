@@ -922,7 +922,7 @@ anim freespecial
 
 	# Back Handspring
 
-		jumpframe 2 1 -1.3 0 hop_liftoff
+		jumpframe 2 1.3 -1.3 0 hop_liftoff
 		landframe 4 jump_land
 
 		delay	6
@@ -958,7 +958,7 @@ anim follow93
 
 	# Back handspring (part 2).
 
-		jumpframe 2 1 -1.3 0
+		jumpframe 2 1.3 -1.3 0 hop_liftoff
 		landframe 4 jump_land
 
 		delay	4
@@ -977,7 +977,7 @@ anim follow93
 	
 	frame	data/chars/galford/dash_back_4.png	
 	
-		move	-15
+		move	0
 		delay	-1000
 	frame	data/chars/galford/jump_forward_0.png
 
