@@ -21,7 +21,7 @@ gfxshadow    	1
 blockpain    	1
 sleepwait       1000
 combostyle		1
-atchain      	1 2 3 4 0 5 6 7
+atchain      	7 2 3 4 0 5 6 7
 height 			95
 dust			fall_land jump_land jump_liftoff
 mpset 			100 3 50 1 2 2
@@ -167,7 +167,7 @@ anim run
 	frame	data/chars/galford/run_2_u.png
 	frame	data/chars/galford/run_3_u.png
 
-anim attack2
+anim attack1
 
 	# Palm strike.
 
@@ -224,10 +224,6 @@ anim attack2
 
 	frame	data/chars/galford/atk_palm_3_u.png
 
-############
-
-############
-
 anim attack4
 
 	# High side kick
@@ -281,6 +277,7 @@ anim attack4
 	frame	data/chars/galford/atk_side_kick_high_1_u.png
 	frame	data/chars/galford/atk_side_kick_high_0_u.png
 
+	
 anim attack7
 
 	# Jump spinning kick

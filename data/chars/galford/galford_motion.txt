@@ -1,6 +1,6 @@
 #Bound effects; spawned in synch with main enitity to produce transparent blur effect.
 
-name	     galford_trail	
+name	     galford_motion	
 type	     none
 health	     100
 #speed	     10		
@@ -14,14 +14,14 @@ anim idle
 		offset	75 150
 	frame	data/chars/misc/blank.png
 
-anim attack2
+anim attack1
 
 		delay	-1000
 		offset	140 207
 
 	frame	data/chars/misc/blank.png
 
-anim attack1
+anim attack2
 
 	# V-cut slash.
 
@@ -56,8 +56,8 @@ anim attack5
 	frame	data/chars/misc/blank.png
 	frame	data/chars/misc/blank.png
 	frame	data/chars/misc/blank.png
-	frame	data/chars/galford/804_1_0_trail_0.png
-	frame	data/chars/galford/804_3_0_trail_0.png	
+	frame	data/chars/galford/atk_cross_cut_3_motion.png
+	frame	data/chars/galford/atk_cross_cut_4_motion.png	
 
 anim attack6
 
@@ -67,6 +67,6 @@ anim attack6
 		offset	140 207
 	
 	frame	data/chars/misc/blank.png
-	frame	data/chars/galford/805_1_0_trail_0.png
-	frame	data/chars/galford/805_3_0_trail_0.png
+	frame	data/chars/galford/atk_cross_cut_back_1_motion.png
+	frame	data/chars/galford/atk_cross_cut_back_2_motion.png
 	

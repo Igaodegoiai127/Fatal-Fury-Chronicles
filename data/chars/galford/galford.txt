@@ -24,7 +24,7 @@ gfxshadow    	1
 blockpain    	1
 sleepwait       1000
 combostyle		1
-atchain      	1 2 3 4 0 5 6 7
+atchain      	7 2 3 4 0 5 6 7
 height 			95
 dust			fall_land jump_land jump_liftoff
 mpset 			100 3 50 1 2 2
@@ -50,7 +50,7 @@ onpainscript		data/scripts/common/event_pain.c
 load	galford_unarmed
 load	Poppy
 load	galford_smoke_bomb
-load	galford_trail
+load	galford_motion
 
 weapons galford_unarmed Galford
 
@@ -380,7 +380,7 @@ anim runslide
 
 #*****Attack*******************************************************************************
 
-anim attack2
+anim attack1
 
 	# Palm strike.
 
@@ -441,7 +441,7 @@ anim attack2
 
 ############
 
-anim grabattack2 #attack1 
+anim attack2 
 
 	# V-cut slash.
 
@@ -474,7 +474,7 @@ anim grabattack2 #attack1
 	@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_MEDIUM
 		
 	# Spawn sub entity and set it as entity for binding.
-	@cmd dc_elmers_quick_motion dc_gauntlet_quick_spawn("galford_trail")
+	@cmd dc_elmers_quick_motion dc_gauntlet_quick_spawn("galford_motion")
 	frame	data/chars/galford/atk_v-cut_1.png
 
 	attack.damage.force 12
@@ -530,7 +530,7 @@ anim attack3
 	@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_MEDIUM
 	
 	# Spawn sub entity and set it as entity for binding.
-	@cmd dc_elmers_quick_motion dc_gauntlet_quick_spawn("galford_trail")
+	@cmd dc_elmers_quick_motion dc_gauntlet_quick_spawn("galford_motion")
 	
 	frame	data/chars/galford/atk_v-cut_back_1.png
 
@@ -629,7 +629,7 @@ anim attack5
 	frame	data/chars/galford/atk_cross_cut_1.png
 
 	# Spawn sub entity and set it as entity for binding.
-	@cmd dc_elmers_quick_motion dc_gauntlet_quick_spawn("galford_trail")
+	@cmd dc_elmers_quick_motion dc_gauntlet_quick_spawn("galford_motion")
 
 	frame	data/chars/galford/atk_cross_cut_2.png
 
@@ -656,7 +656,7 @@ anim attack5
 	frame	data/chars/galford/atk_cross_cut_5.png
 	frame	data/chars/galford/atk_cross_cut_6.png
 	frame	data/chars/galford/atk_cross_cut_7.png
-	frame	data/chars/galford/atk_cross_cut_0.png
+	frame	data/chars/galford/atk_v-cut_0.png
 	
 
 anim attack6
@@ -684,18 +684,20 @@ anim attack6
 	attack.reaction.pause.time		10
 
 	# Spawn sub entity and set it as entity for binding.
-	@cmd dc_elmers_quick_motion dc_gauntlet_quick_spawn("galford_trail")
+	@cmd dc_elmers_quick_motion dc_gauntlet_quick_spawn("galford_motion")
 
 	frame	data/chars/galford/atk_cross_cut_back_1.png
 
-		delay	8
-		attack	0		
+	delay	6
+	attack	0		
 
 	frame	data/chars/galford/atk_cross_cut_back_2.png
-
-		idle	1
-
 	frame	data/chars/galford/atk_cross_cut_back_3.png
+
+	idle	1
+
+	frame	data/chars/galford/atk_cross_cut_back_4.png
+	frame	data/chars/galford/atk_v-cut_back_7.png
 	frame	data/chars/galford/atk_v-cut_0.png
 	
 anim attack7
@@ -1910,7 +1912,7 @@ anim burn
 
 #Always make sure to include a single blank line at bottom of file.
 
-anim attack # grabattack2 # Roundhouse kick
+anim grabattack2 # Roundhouse kick
 	
 	delay	9
 	offset	140 207
