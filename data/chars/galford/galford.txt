@@ -47,9 +47,12 @@ onpainscript		data/scripts/common/event_pain.c
 
 #*****Sub Entites*****
 
+load	galford_unarmed
 load	Poppy
 load	galford_smoke_bomb
 load	galford_trail
+
+weapons galford_unarmed Galford
 
 #*****Alternates*******
 
@@ -64,7 +67,20 @@ com f d a    	freespecial3  		# Force plane down.
 com	d u a    	freespecial4		# Plane attack up.
 com	u d a    	freespecial5		# Plane attack down.
 
+com	d f s     	freespecial6		# Weapon switch (for testing).
+
 #*****Basic********************************************************************************
+
+anim freespecial6
+
+	weaponframe 1 1 
+	
+	delay	30
+	offset	140 207
+	bbox	130 120 45 90
+	
+	frame	data/chars/galford/jump_start_0.png
+	frame	data/chars/galford/jump_start_0.png
 
 anim spawn		
 

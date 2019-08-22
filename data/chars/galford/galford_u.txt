@@ -1,0 +1,731 @@
+icon		data/chars/galford/icon_default.png	1
+icondie		data/chars/galford/icon_ko.png		1
+iconpain	data/chars/galford/icon_pain.png	1
+
+name	     	galford_unarmed
+type	     	none
+bounce	     	2
+health	     	200
+speed	     	12
+holdblock    	2
+nopassiveblock  1
+nodieblink   	2
+falldie      	2
+risetime     	150
+running      	30 4.2 2 1 1
+makeinv      	3
+projectilehit 	player
+candamage     	enemy obstacle
+hostile			enemy
+gfxshadow    	1
+blockpain    	1
+sleepwait       1000
+combostyle		1
+atchain      	1 2 3 4 0 5 6 7
+height 			95
+dust			fall_land jump_land jump_liftoff
+mpset 			100 3 50 1 2 2
+jumpheight		4
+bflash			Block
+
+# Can't be rearmed by getting hit, lol
+weaploss		2
+
+palette	       data/chars/galford/og_navy.act
+alternatepal   data/chars/galford/og_navy_mask.act
+alternatepal   data/chars/galford/2019_default.act
+
+com f u a    	freespecial2  		# Force plane up.
+com f d a    	freespecial3  		# Force plane down.
+com	d u a    	freespecial4		# Plane attack up.
+com	u d a    	freespecial5		# Plane attack down.
+
+com	d f s     	freespecial6		# Weapon switch (for testing).
+
+script				data/chars/andy/scripts/update.c
+keyscript 			data/chars/andy/scripts/key.c
+animationscript 	data/chars/galford/scripts/animation.c
+didblockscript  	data/scripts/common/event_block.c
+takedamagescript	data/chars/andy/scripts/dama0001.c
+didhitscript		data/scripts/common/event_hit.c
+onmovezscript		data/scripts/common/event_move_z.c
+onspawnscript		data/chars/galford/scripts/onspawn.c
+onfallscript		data/scripts/common/event_fall.c
+onmoveascript		data/chars/galford/scripts/event_move_a.c
+onpainscript		data/scripts/common/event_pain.c
+
+anim freespecial6
+
+	weaponframe 1 0 
+	
+	delay	30
+	offset	140 207
+	bbox	130 120 45 90
+	
+	frame	data/chars/galford/jump_start_0_u.png
+	frame	data/chars/galford/jump_start_0_u.png
+
+anim spawn		
+
+	subentity Poppy  
+	summonframe 1 -20 15 0 0 
+
+	jumpframe 1 0.2 0 0
+	landframe 11 jump_land
+	
+
+	#delay before appearing.
+	delay	100
+	offset	140 207	 
+	frame	data/chars/misc/blank.png
+
+	delay	5
+	
+
+	# We're our own target, so we're just adjusting to an
+	# offset above the starting position and applying.
+	@cmd dc_elmers_set_offset_y 85
+	@cmd dc_elmers_apply_position
+	@cmd dc_elmers_free_instance
+
+	@cmd dc_elmers_set_offset_x 5
+	@cmd dc_elmers_set_offset_y 95
+	@cmd dc_elmers_quick_overlay dc_gauntlet_quick_spawn("galford_smoke_bomb")
+	
+	frame	data/chars/galford/jump_run_0.png
+	frame	data/chars/galford/jump_run_1.png
+	frame	data/chars/galford/jump_run_2.png
+	frame	data/chars/galford/jump_run_3.png
+	frame	data/chars/galford/jump_run_4.png
+	frame	data/chars/galford/jump_run_5.png
+	frame	data/chars/galford/jump_run_6.png
+
+	delay	5
+
+	frame	data/chars/galford/jump_3.png
+	frame	data/chars/galford/jump_4.png
+	
+	delay	-1000
+
+	frame	data/chars/galford/jump_5.png
+	
+	delay	15
+
+	frame	data/chars/galford/jump_land_0.png
+	frame	data/chars/galford/jump_land_1.png
+	frame	data/chars/galford/jump_land_2.png
+
+anim idle
+
+	loop 	1
+	
+		delay	10
+		offset	140 207
+		bbox	130 120 45 90
+	
+	frame	data/chars/galford/idle_0_u.png
+	frame	data/chars/galford/idle_1_u.png
+	frame	data/chars/galford/idle_2_u.png
+	frame	data/chars/galford/idle_3_u.png
+	frame	data/chars/galford/idle_4_u.png
+	frame	data/chars/galford/idle_5_u.png
+	frame	data/chars/galford/idle_6_u.png
+	frame	data/chars/galford/idle_7_u.png
+	frame	data/chars/galford/idle_8_u.png
+	frame	data/chars/galford/idle_9_u.png
+	frame	data/chars/galford/idle_10_u.png
+
+anim walk
+
+		loop	1
+
+		delay	10
+		offset	140 207
+		bbox	130 120 45 90
+	
+	frame	data/chars/galford/walk_0_u.png
+	frame	data/chars/galford/walk_1_u.png
+	frame	data/chars/galford/walk_2_u.png
+	frame	data/chars/galford/walk_3_u.png
+	frame	data/chars/galford/walk_4_u.png
+	frame	data/chars/galford/walk_5_u.png
+	frame	data/chars/galford/walk_6_u.png
+	frame	data/chars/galford/walk_7_u.png
+	frame	data/chars/galford/walk_8_u.png
+	frame	data/chars/galford/walk_9_u.png
+
+anim run
+
+	loop	1
+
+		delay	8
+		offset	140 207
+		bbox	130 120 45 90
+	
+	frame	data/chars/galford/run_0_u.png
+	frame	data/chars/galford/run_1_u.png
+	frame	data/chars/galford/run_2_u.png
+	frame	data/chars/galford/run_3_u.png
+
+anim attack2
+
+	# Palm strike.
+
+		delay	5
+		offset	140 207
+		
+		bbox.position.x			130
+		bbox.position.y			120
+		bbox.size.x				45
+		bbox.size.y				90
+	
+		# Play voice 50% of the time and clear chance so default is used for 
+		# any subsequent sound play calls.
+		@cmd dc_fidelity_set_sound_chance 0.5
+		@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_LIGHT
+		@cmd dc_fidelity_set_sound_chance NULL()
+		
+		@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_SOUND_ATTACK_LIGHT
+
+		#cmd dc_damage_set_damage_force 1
+		#cmd dc_damage_set_drop_force 50
+		#cmd dc_damage_set_entity getentityproperty(getlocalvar("self") "opponent")
+		#cmd dc_damage_set_other getlocalvar("self")
+		#cmd dc_damage_set_drop_velocity_x 0.01
+		#cmd dc_damage_set_drop_velocity_z 0.01
+		#cmd dc_damage_set_drop_velocity_y 8.0
+		#cmd dc_damage_set_damage_on_landing_force 20
+		#cmd dc_damage_apply_damage
+
+		@cmd dc_elmers_set_entity		getentityproperty(getlocalvar("self") "opponent")	
+		@cmd dc_elmers_set_invert_x	DC_ELMERS_INVERT_POSITION
+		@cmd dc_elmers_set_offset_x	-5
+		@cmd dc_elmers_reposition_to_offset
+
+	frame	data/chars/galford/atk_palm_0_u.png
+	
+		delay	3
+		
+		attack.position.x				140
+		attack.position.y				130
+		attack.size.x					73
+		attack.size.y					24
+		attack.damage.force				5
+		attack.reaction.fall.velocity.x	1
+		attack.reaction.fall.velocity.y	1
+		attack.reaction.fall.velocity.z	0
+		attack.reaction.pause.time		6
+	
+	frame	data/chars/galford/atk_palm_1_u.png
+	frame	data/chars/galford/atk_palm_2_u.png
+	
+		delay	4
+		attack	0
+
+	frame	data/chars/galford/atk_palm_3_u.png
+
+############
+
+############
+
+anim attack4
+
+	# High side kick
+
+		range	-40 50
+		delay	5
+		offset	140 207
+	bbox.position.x 130
+	bbox.position.y 120
+	bbox.size.x 45
+	bbox.size.y 90
+	
+	frame	data/chars/galford/atk_side_kick_high_0_u.png
+
+		@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_HEAVY
+
+	frame	data/chars/galford/atk_side_kick_high_1_u.png
+	frame	data/chars/galford/atk_side_kick_high_2_u.png
+
+	attack.damage.force 14
+	attack.position.x 140
+	attack.position.y 85
+	attack.reaction.fall.force 1
+	attack.reaction.fall.velocity.x 1.0
+	attack.reaction.fall.velocity.y 5.0
+	attack.reaction.fall.velocity.z 0.0
+	attack.reaction.pause.time 12
+	attack.size.x 81
+	attack.size.y 60
+
+	frame	data/chars/galford/atk_side_kick_high_3_u.png
+
+		delay	8
+
+	frame	data/chars/galford/atk_side_kick_high_4_u.png
+
+	attack.block.penetrate 0
+	attack.damage.force 0
+	attack.damage.type 1
+	attack.effect.hit.flash.disable 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.reaction.pause.time 0
+	attack.size.x 0
+	attack.size.y 0
+	attack.size.z.1 0
+
+	frame	data/chars/galford/atk_side_kick_high_3_u.png
+	frame	data/chars/galford/atk_side_kick_high_2_u.png
+	frame	data/chars/galford/atk_side_kick_high_1_u.png
+	frame	data/chars/galford/atk_side_kick_high_0_u.png
+
+anim attack7
+
+	# Jump spinning kick
+
+		jumpframe 2 2.2 0 0 hop_liftoff
+		landframe 8 jump_land
+
+		delay	6
+		offset	140 207
+		bbox	130 120 45 90
+	
+	frame	data/chars/galford/jump_land_2_u.png
+
+		@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_HEAVY
+	
+	frame	data/chars/galford/atk_j_spin_kick_0_u.png
+		
+		delay	8
+	
+	frame	data/chars/galford/atk_j_spin_kick_1_u.png
+	frame	data/chars/galford/atk_j_spin_kick_2_u.png
+
+		attack.position.x				130
+		attack.position.y				130
+		attack.size.x					95
+		attack.size.y					25
+		attack.damage.force				14
+		attack.reaction.fall.force		1
+		attack.reaction.fall.velocity.x	1.2
+		attack.reaction.fall.velocity.y	3
+		attack.reaction.fall.velocity.z	0
+		attack.reaction.pause.time		12
+
+	frame	data/chars/galford/atk_j_spin_kick_3_u.png
+
+		attack	0
+
+	frame	data/chars/galford/atk_j_spin_kick_4_u.png
+	frame	data/chars/galford/atk_j_spin_kick_5_u.png
+
+		delay	-1000
+
+	frame	data/chars/galford/jump_6_u.png
+	
+		# landing
+		delay	6
+
+	frame	data/chars/galford/jump_land_0_u.png
+	frame	data/chars/galford/jump_land_1_u.png
+	frame	data/chars/galford/jump_land_2_u.png
+
+anim freespecial
+
+	# Back Handspring
+
+	jumpframe 2 1.5 -1.5 0 hop_liftoff
+	landframe 4 jump_land
+
+	delay	6
+	offset	140 207
+	bbox	130 120 45 90
+	
+	frame	data/chars/galford/jump_land_2_u.png
+		
+	bbox	130 120 45 90
+	@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_LIGHT
+		
+	delay	8
+
+	frame	data/chars/galford/dash_back_0_u.png	
+	
+	move	-15
+
+	frame	data/chars/galford/dash_back_1_u.png
+
+	delay	-1000
+	move	-25
+	
+		
+	frame	data/chars/galford/dash_back_2_u.png
+	
+	delay	1
+	move	0
+	@cmd performattack getlocalvar("self") openborconstant("ANI_FOLLOW93") 0
+
+	frame	data/chars/galford/dash_back_2_u.png
+
+anim follow93
+
+	# Back handspring (part 2).
+
+	jumpframe 2 1.5 -1.5 0 hop_liftoff
+	landframe 4 jump_land
+
+	delay	4
+	offset	140 207
+	bbox	130 120 45 90
+
+	move	0
+
+	frame	data/chars/galford/dash_back_2_u.png	
+	frame	data/chars/galford/dash_back_3_u.png
+		
+	delay	12
+	move	-40
+	
+	frame	data/chars/galford/dash_back_4_u.png	
+	
+	move	0
+	delay	-1000
+
+	frame	data/chars/galford/jump_forward_0_u.png
+		
+	delay	6
+	move	-10
+
+	frame	data/chars/galford/jump_land_0_u.png
+	
+	move	0
+
+	frame	data/chars/galford/jump_land_1_u.png
+	frame	data/chars/galford/jump_land_2_u.png
+
+anim grab
+
+	loop	1
+	delay	3
+	offset	140 207
+	bbox	130 120 45 90
+		
+	@cmd	dc_elmers_set_invert_x	DC_ELMERS_INVERT_DIRECTION
+	@cmd	dc_elmers_set_entity		getentityproperty(getlocalvar("self") "opponent")
+	@cmd	dc_elmers_set_offset_x	40
+	@cmd	dc_elmers_apply_position
+	
+	frame	data/chars/galford/grab_0_u.png
+		
+	offset 157 210
+	
+	frame	data/chars/galford/grab_0_u.png
+
+	offset 140 207
+	
+	frame	data/chars/galford/grab_0_u.png
+
+	offset 157 210
+	
+	frame	data/chars/galford/grab_0_u.png
+
+	delay	50
+	offset 140 207
+	
+	frame	data/chars/galford/grab_0_u.png
+
+anim jumpdelay
+
+	delay	8
+	offset	140 207
+	bbox	115 124 50 85
+	
+	frame	data/chars/galford/jump_land_2_u.png
+
+anim jumpland
+
+	delay	4
+	offset	140 207
+	bbox	115 124 50 85
+	
+	frame	data/chars/galford/jump_land_0_u.png
+	frame	data/chars/galford/jump_land_1_u.png
+	frame	data/chars/galford/jump_land_2_u.png
+
+anim jump
+
+	range 0 50
+
+	dropframe 1
+
+	delay	-1
+	offset	140 207
+	bbox	115 100 50 85	
+
+	frame	data/chars/galford/jump_0_u.png
+
+	delay	8
+	bbox	115 100 50 80	
+
+	frame	data/chars/galford/jump_1_u.png
+	frame	data/chars/galford/jump_2_u.png
+	frame	data/chars/galford/jump_3_u.png
+	frame	data/chars/galford/jump_4_u.png
+	frame	data/chars/galford/jump_5_u.png
+		
+	bbox	115 100 50 85
+	
+	frame	data/chars/galford/jump_6_u.png
+
+anim forwardjump
+
+	delay	10
+	offset	140 207
+	bbox	125 104 50 80	
+
+	frame	data/chars/galford/jump_forward_0_u.png
+	
+	bbox	85 104 100 55	
+
+	frame	data/chars/galford/jump_forward_1_u.png
+
+	bbox	110 100 55 95
+
+	frame	data/chars/galford/jump_forward_2_u.png
+
+	bbox	120 100 45 95
+
+	frame	data/chars/galford/jump_forward_3_u.png
+
+	bbox	120 140 80 50
+
+	frame	data/chars/galford/jump_forward_4_u.png
+
+	bbox	105 130 80 65
+
+	frame	data/chars/galford/jump_forward_5_u.png
+
+	bbox	110 115 50 80
+
+	frame	data/chars/galford/jump_forward_6_u.png
+
+anim runjump
+
+	delay	15
+	offset	140 207
+	bbox.position.x 125
+	bbox.position.y 104
+	bbox.size.x 50
+	bbox.size.y 80
+
+	frame	data/chars/galford/jump_forward_0_u.png
+	
+	delay 2
+	
+	bbox.position.x 140
+	bbox.position.y 81
+	bbox.size.x 54
+	bbox.size.y 62
+
+	offset 150 170
+
+	frame	data/chars/galford/jump_run_0.png
+	frame	data/chars/galford/jump_run_1.png
+	frame	data/chars/galford/jump_run_2.png
+	frame	data/chars/galford/jump_run_3.png
+	frame	data/chars/galford/jump_run_4.png
+	frame	data/chars/galford/jump_run_5.png
+	frame	data/chars/galford/jump_run_6.png
+	frame	data/chars/galford/jump_run_7.png
+	frame	data/chars/galford/jump_run_0.png
+	frame	data/chars/galford/jump_run_1.png
+	frame	data/chars/galford/jump_run_2.png
+	frame	data/chars/galford/jump_run_3.png
+	frame	data/chars/galford/jump_run_4.png
+	frame	data/chars/galford/jump_run_5.png
+	frame	data/chars/galford/jump_run_6.png
+	frame	data/chars/galford/jump_run_7.png
+	frame	data/chars/galford/jump_run_0.png
+	frame	data/chars/galford/jump_run_1.png
+	frame	data/chars/galford/jump_run_2.png
+	frame	data/chars/galford/jump_run_3.png
+	frame	data/chars/galford/jump_run_4.png
+	frame	data/chars/galford/jump_run_5.png
+	frame	data/chars/galford/jump_run_6.png
+
+offset	140 207
+
+	bbox.position.x 110
+	bbox.position.y 115
+	bbox.size.x 50
+	bbox.size.y 80
+
+	frame	data/chars/galford/jump_forward_6_u.png
+
+anim jumpforward
+
+	#Side kick
+
+	delay	8
+	offset	140 207
+	bbox.position.x 106
+	bbox.position.y 113
+	bbox.size.x 47
+	bbox.size.y 54
+		
+	@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_MEDIUM
+	@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_SOUND_ATTACK_MEDIUM
+
+	frame	data/chars/galford/atk_jump_side_kick_0_u.png
+	
+	delay	20
+	
+	attack.block.penetrate 0
+	attack.damage.force 16
+	attack.damage.type 1
+	attack.effect.hit.flash.disable 0
+	attack.position.x 118
+	attack.position.y 150
+	attack.reaction.fall.force 1
+	attack.reaction.pause.time 0
+	attack.size.x 82
+	attack.size.y 46
+	attack.size.z.1 0
+	
+	frame	data/chars/galford/atk_jump_side_kick_1_u.png
+	
+	delay	-1000
+
+	attack.block.penetrate 0
+	attack.damage.force 0
+	attack.damage.type 1
+	attack.effect.hit.flash.disable 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.reaction.pause.time 0
+	attack.size.x 0
+	attack.size.y 0
+	attack.size.z.1 0
+
+	frame	data/chars/galford/atk_jump_side_kick_0_u.png
+	frame	data/chars/galford/jump_forward_6_u.png
+
+anim blockrelease
+
+	delay	6
+	offset	140 207
+	bbox	130 120 45 90
+	
+	frame	data/chars/galford/block_start_0_u.png
+
+anim blockstart
+
+	delay	6
+	offset	140 207
+	bbox	130 120 45 90
+	
+	frame	data/chars/galford/block_start_0_u.png
+
+anim block
+
+	delay	6
+	offset	140 207
+	bbox	130 120 45 90
+	
+	frame	data/chars/galford/block_0_u.png
+
+anim blockpain
+
+	#Normal block
+
+	delay	3
+	offset	140 207
+	bbox	130 120 45 90
+
+	move	-2
+	
+	frame	data/chars/galford/block_impact_0_u.png
+	
+	move	0
+	offset	143 207
+	
+	frame	data/chars/galford/block_impact_0_u.png
+	
+	offset	140 207
+	
+	frame	data/chars/galford/block_impact_0_u.png
+	
+	offset	143 207
+	
+	frame	data/chars/galford/block_impact_0_u.png
+	
+	delay	20
+	offset	140 207
+	
+	frame	data/chars/galford/block_impact_1_u.png
+
+anim attack # grabattack2 # Roundhouse kick
+	
+	delay	9
+	offset	140 207
+	
+	bbox.position.x 114
+	bbox.position.y 116
+	bbox.size.x 45
+	bbox.size.y 93	
+	
+	@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_MEDIUM
+
+	frame data/chars/galford/atk_straight_0_u.png
+	
+	bbox.position.x 148
+	bbox.position.y 102
+	bbox.size.x 33
+	bbox.size.y 107
+	
+	@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_SOUND_ATTACK_MEDIUM
+
+	frame data/chars/galford/atk_round_kick_0_u.png
+	bbox.position.x 163
+	bbox.position.y 100
+	bbox.size.x 54
+	bbox.size.y 110
+	
+	attack.damage.force 0
+	attack.position.x 205
+	attack.position.y 95
+	attack.size.x 43
+	attack.size.y 36
+	
+	frame data/chars/galford/atk_round_kick_1_u.png
+	
+	delay 8
+	
+	attack 0
+	
+	frame data/chars/galford/atk_round_kick_2_u.png
+	
+	bbox.position.x 160
+	bbox.position.y 95
+	bbox.size.x 37
+	bbox.size.y 115
+	
+	frame data/chars/galford/atk_round_kick_3_u.png
+	
+	bbox.position.x 124
+	bbox.position.y 114
+	bbox.size.x 38
+	bbox.size.y 95
+	
+	frame data/chars/galford/atk_round_kick_4_u.png
+	
+	delay 10	
+	
+	bbox.position.x 125
+	bbox.position.y 118
+	bbox.size.x 45
+	bbox.size.y 89
+	
+	frame data/chars/galford/block_start_0_u.png
