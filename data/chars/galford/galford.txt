@@ -24,7 +24,7 @@ gfxshadow    	1
 blockpain    	1
 sleepwait       1000
 combostyle		1
-atchain      	7 2 3 4 0 5 6 7
+atchain      	1 2 3 4 0 5 6 7
 height 			95
 dust			fall_land jump_land jump_liftoff
 mpset 			100 3 50 1 2 2
@@ -410,10 +410,10 @@ anim attack1
 		#cmd dc_damage_set_damage_on_landing_force 20
 		#cmd dc_damage_apply_damage
 
-		@cmd dc_elmers_set_entity		getentityproperty(getlocalvar("self") "opponent")	
-		@cmd dc_elmers_set_invert_x	DC_ELMERS_INVERT_POSITION
-		@cmd dc_elmers_set_offset_x	-5
-		@cmd dc_elmers_reposition_to_offset
+		#cmd dc_elmers_set_entity		getentityproperty(getlocalvar("self") "opponent")	
+		#cmd dc_elmers_set_invert_x	DC_ELMERS_INVERT_POSITION
+		#cmd dc_elmers_set_offset_x	-5
+		#cmd dc_elmers_reposition_to_offset
 
 	frame	data/chars/galford/atk_palm_0.png
 	
@@ -753,20 +753,24 @@ anim attack7
 
 anim chargeattack
 
-		chargetime    	1
-		counterattack 	1
+	chargetime    	1
+	counterattack 	1
 
-		delay	6
-		offset	140 207
-		bbox	130 120 45 90
+	delay	6
+	offset	140 207
+	bbox	130 120 45 90
 	
 	frame	data/chars/galford/atk_cross_cut_0.png
 	frame	data/chars/galford/atk_justice_slash_0.png
+
 	frame	data/chars/galford/atk_justice_slash_1.png
 	frame	data/chars/galford/atk_justice_slash_0.png
 
-		@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_HEAVY
-		@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_SOUND_ATTACK_HEAVY_BLADE		
+	# Spawn sub entity and set it as entity for binding.
+	@cmd dc_elmers_quick_motion dc_gauntlet_quick_spawn("galford_motion")
+
+	@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_HEAVY
+	@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_SOUND_ATTACK_HEAVY_BLADE
 
 	frame	data/chars/galford/atk_justice_slash_2.png
 	frame	data/chars/galford/atk_justice_slash_3.png
@@ -774,11 +778,11 @@ anim chargeattack
 	frame	data/chars/galford/atk_justice_slash_5.png
 	frame	data/chars/galford/atk_justice_slash_6.png
 		
-		delay	16
+	delay	16
 
 	frame	data/chars/galford/atk_justice_slash_7.png
 
-		delay	10
+	delay	10
 
 	frame	data/chars/galford/atk_c_cut_1.png
 	frame	data/chars/galford/atk_c_cut_0.png

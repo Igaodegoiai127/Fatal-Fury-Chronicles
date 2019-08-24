@@ -70,3 +70,20 @@ anim attack6
 	frame	data/chars/galford/atk_cross_cut_back_1_motion.png
 	frame	data/chars/galford/atk_cross_cut_back_2_motion.png
 	
+anim chargeattack
+
+	delay	-1000
+	offset	140 207
+	
+	frame	data/chars/misc/blank.png
+	frame	data/chars/misc/blank.png
+
+	frame	data/chars/misc/blank.png
+	frame	data/chars/misc/blank.png
+
+	frame	data/chars/galford/atk_justice_slash_2_motion.png
+	frame	data/chars/galford/atk_justice_slash_3_motion.png
+	frame	data/chars/galford/atk_justice_slash_4_motion.png
+	frame	data/chars/galford/atk_justice_slash_5_motion.png
+	frame	data/chars/misc/blank.png		
+	
