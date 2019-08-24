@@ -87,3 +87,15 @@ anim chargeattack
 	frame	data/chars/galford/atk_justice_slash_5_motion.png
 	frame	data/chars/misc/blank.png		
 	
+
+anim jumpattack2 #Jump V Cut
+
+	loop 1 3
+
+	delay	-1000
+	offset	140 207
+
+	frame	data/chars/misc/blank.png
+	frame	data/chars/galford/atk_jump_v_cut_1_motion.png	
+	frame	data/chars/galford/atk_jump_v_cut_2_motion.png
+	frame	data/chars/misc/blank.png
