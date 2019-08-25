@@ -380,7 +380,7 @@ anim runslide
 
 #*****Attack*******************************************************************************
 
-anim attack1
+anim attack8
 
 	# Palm strike.
 
@@ -436,6 +436,53 @@ anim attack1
 		attack	0
 
 	frame	data/chars/galford/atk_palm_3.png
+
+anim attack1	# Backhand.
+
+		delay	5
+		offset	140 207
+		
+	bbox.position.x 130
+	bbox.position.y 120
+	bbox.size.x 45
+	bbox.size.y 90
+	
+		# Play voice 50% of the time and clear chance so default is used for 
+		# any subsequent sound play calls.
+		@cmd dc_fidelity_set_sound_chance 0.5
+		@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_LIGHT
+		@cmd dc_fidelity_set_sound_chance NULL()
+		
+		@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_SOUND_ATTACK_LIGHT
+
+	frame	data/chars/galford/atk_backhand_0.png
+		
+	attack.damage.force 5
+	attack.position.x 140
+	attack.position.y 118
+	attack.reaction.fall.velocity.x 1.0
+	attack.reaction.fall.velocity.y 1.0
+	attack.reaction.fall.velocity.z 0.0
+	attack.reaction.pause.time 6
+	attack.size.x 81
+	attack.size.y 22
+	
+	frame	data/chars/galford/atk_backhand_1.png
+
+	attack.block.penetrate 0
+	attack.damage.force 0
+	attack.damage.type 1
+	attack.effect.hit.flash.disable 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.reaction.pause.time 0
+	attack.size.x 0
+	attack.size.y 0
+	attack.size.z.1 0
+	
+	frame	data/chars/galford/atk_backhand_2.png
+	frame	data/chars/galford/atk_backhand_3.png
 
 ############
 
@@ -1415,7 +1462,7 @@ offset	140 207
 	bbox.size.y 62
 		
 @cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_MEDIUM
-@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_SOUND_ATTACK_MEDIUM_BLADE
+@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_SOUND_ATTACK_MEDIUM
 
 frame	data/chars/galford/atk_jump_v_cut_0.png
 
