@@ -154,6 +154,69 @@ anim walk
 	frame	data/chars/galford/walk_8_u.png
 	frame	data/chars/galford/walk_9_u.png
 
+anim attackdown # Sidestep down
+
+	delay	4
+	offset	140 207
+
+	cancel 0 4 0 f a freespecial7
+
+	jumpframe 1 1 -1 1.5 hop_liftoff
+	landframe 2 jump_land
+	
+	bbox.position.x	130
+	bbox.position.y 120
+	bbox.size.x		45
+	bbox.size.y		90
+	
+	frame	data/chars/galford/jump_start_0_u.png		
+	
+	delay	-1000
+	bbox 0
+	
+	frame	data/chars/galford/dash_down_0_u.png
+		
+	delay	10
+		
+	bbox.position.x	66
+	bbox.position.y 49
+	bbox.size.x		38
+	bbox.size.y		98	
+	 
+	frame	data/chars/galford/jump_start_0_u.png
+
+
+anim attackup
+
+		delay	4
+	offset	140 207
+
+	cancel 0 4 0 f a freespecial7
+
+	jumpframe 1 1 -1 -1.5 hop_liftoff
+	landframe 2 jump_land
+	
+	bbox.position.x	130
+	bbox.position.y 120
+	bbox.size.x		45
+	bbox.size.y		90
+	
+	frame	data/chars/galford/jump_start_0_u.png		
+	
+	delay	-1000
+	bbox 0
+	
+	frame	data/chars/galford/dash_up_0_u.png
+		
+	delay	10
+		
+	bbox.position.x	66
+	bbox.position.y 49
+	bbox.size.x		38
+	bbox.size.y		98	
+	 
+	frame	data/chars/galford/jump_start_0_u.png
+
 anim run
 
 	loop	1
