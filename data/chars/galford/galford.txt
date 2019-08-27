@@ -559,6 +559,7 @@ anim attack2
 		
 	frame	data/chars/galford/atk_v-cut_0.png
 
+	attack.effect.hit.flash.model flash_cvs_cut_heavy
 	attack.damage.force 12
 	attack.damage.type 2
 	attack.position.x 125
@@ -576,6 +577,7 @@ anim attack2
 	@cmd dc_elmers_quick_motion dc_gauntlet_quick_spawn("galford_motion")
 	frame	data/chars/galford/atk_v-cut_1.png
 
+	attack.effect.hit.flash.model flash_cvs_cut_heavy
 	attack.damage.force 12
 	attack.damage.type 2
 	attack.position.x 145
@@ -637,6 +639,7 @@ anim attack3
 		
 	frame	data/chars/galford/atk_v-cut_back_2.png
 
+	attack.effect.hit.flash.model	flash_cvs_cut_heavy
 	attack.position.x				125
 	attack.position.y				60
 	attack.size.x					95
@@ -732,16 +735,17 @@ anim attack5
 
 	frame	data/chars/galford/atk_cross_cut_2.png
 
-		attack.position.x				135
-		attack.position.y				130
-		attack.size.x					95
-		attack.size.y					18
-		attack.damage.force				14
-		attack.damage.type				2
-		attack.reaction.fall.velocity.x	1.2
-		attack.reaction.fall.velocity.y	3
-		attack.reaction.fall.velocity.z	0
-		attack.reaction.pause.time		10
+	attack.effect.hit.flash.model	flash_cvs_cut_heavy
+	attack.position.x				135
+	attack.position.y				130
+	attack.size.x					95
+	attack.size.y					18
+	attack.damage.force				14
+	attack.damage.type				2
+	attack.reaction.fall.velocity.x	1.2
+	attack.reaction.fall.velocity.y	3
+	attack.reaction.fall.velocity.z	0
+	attack.reaction.pause.time		10
 
 	frame	data/chars/galford/atk_cross_cut_3.png
 
@@ -771,6 +775,7 @@ anim attack6
 
 	frame	data/chars/galford/atk_cross_cut_back_0.png	
 
+	attack.effect.hit.flash.model	flash_cvs_cut_heavy
 	attack.position.x				135
 	attack.position.y				130
 	attack.size.x					95
@@ -1487,6 +1492,7 @@ frame	data/chars/galford/atk_jump_v_cut_0.png
 	attack.block.penetrate 0
 	attack.damage.force 25
 	attack.damage.type 2
+	attack.effect.hit.flash.model flash_cvs_cut_heavy
 	attack.effect.hit.flash.disable 0
 	attack.position.x 130
 	attack.position.y 100
