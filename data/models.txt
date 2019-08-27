@@ -13,6 +13,8 @@ noaircancel     2
 load	Flash				data/chars/misc/flash/flash.txt
 load	flash_fatal_fury	data/chars/misc/flash/flash_fatal_fury.txt
 load	flash_indirect		data/chars/misc/flash/flash_indirect.txt
+load    flash_blood_cut		data/chars/misc/blood_cut/flash_blood_cut.txt
+load	flash_cvs_cut_heavy data/chars/misc/cvs_cut_flash_heavy/cvs_cut_flash_heavy.txt	
 
 load	Block				data/chars/misc/cvs_block_flash/block.txt
 load    fall_land			data/chars/misc/cvs_land_dust/fall_land.txt
@@ -81,7 +83,8 @@ know	raid0001			data/chars/raiden/raiden.txt
 #load	Raiden				data/chars/raiden/raid0001.txt
 know 	Poppy				data/chars/poppy/poppy.txt
 know 	galford_smoke_bomb	data/chars/galford/smoke_bomb/smoke_bomb.txt
-know 	galford_trail		data/chars/galford/galford_trail.txt
+know 	galford_motion		data/chars/galford/galford_motion.txt
+know 	galford_unarmed		data/chars/galford/galford_u.txt
 load 	Galford				data/chars/galford/galford.txt
 know	ryu_hadouken		data/chars/ryu/hadouken/ryu_hadouken.txt
 load 	Ryu					data/chars/ryu/ryu.txt
