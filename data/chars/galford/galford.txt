@@ -225,18 +225,19 @@ anim idle
 		delay	10
 		offset	140 207
 		bbox	130 120 45 90
-	
+		
+	frame	data/chars/galford/idle_6.png
+	frame	data/chars/galford/idle_7.png
+	frame	data/chars/galford/idle_8.png
+	frame	data/chars/galford/idle_9.png
+	frame	data/chars/galford/idle_10.png
 	frame	data/chars/galford/idle_0.png
 	frame	data/chars/galford/idle_1.png
 	frame	data/chars/galford/idle_2.png
 	frame	data/chars/galford/idle_3.png
 	frame	data/chars/galford/idle_4.png
 	frame	data/chars/galford/idle_5.png
-	frame	data/chars/galford/idle_6.png
-	frame	data/chars/galford/idle_7.png
-	frame	data/chars/galford/idle_8.png
-	frame	data/chars/galford/idle_9.png
-	frame	data/chars/galford/idle_10.png
+	
 
 #anim sleep
 
@@ -432,62 +433,6 @@ anim runslide
 
 #*****Attack*******************************************************************************
 
-anim attack8
-
-	# Palm strike.
-
-		delay	5
-		offset	140 207
-		
-		bbox.position.x			130
-		bbox.position.y			120
-		bbox.size.x				45
-		bbox.size.y				90
-	
-		# Play voice 50% of the time and clear chance so default is used for 
-		# any subsequent sound play calls.
-		@cmd dc_fidelity_set_sound_chance 0.5
-		@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_LIGHT
-		@cmd dc_fidelity_set_sound_chance NULL()
-		
-		@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_SOUND_ATTACK_LIGHT
-
-		#cmd dc_damage_set_damage_force 1
-		#cmd dc_damage_set_drop_force 50
-		#cmd dc_damage_set_entity getentityproperty(getlocalvar("self") "opponent")
-		#cmd dc_damage_set_other getlocalvar("self")
-		#cmd dc_damage_set_drop_velocity_x 0.01
-		#cmd dc_damage_set_drop_velocity_z 0.01
-		#cmd dc_damage_set_drop_velocity_y 8.0
-		#cmd dc_damage_set_damage_on_landing_force 20
-		#cmd dc_damage_apply_damage
-
-		#cmd dc_elmers_set_entity		getentityproperty(getlocalvar("self") "opponent")	
-		#cmd dc_elmers_set_invert_x	DC_ELMERS_INVERT_POSITION
-		#cmd dc_elmers_set_offset_x	-5
-		#cmd dc_elmers_reposition_to_offset
-
-	frame	data/chars/galford/atk_palm_0.png
-	
-		delay	3
-		
-		attack.position.x				140
-		attack.position.y				130
-		attack.size.x					73
-		attack.size.y					24
-		attack.damage.force				5
-		attack.reaction.fall.velocity.x	1
-		attack.reaction.fall.velocity.y	1
-		attack.reaction.fall.velocity.z	0
-		attack.reaction.pause.time		6
-	
-	frame	data/chars/galford/atk_palm_1.png
-	frame	data/chars/galford/atk_palm_2.png
-	
-		delay	4
-		attack	0
-
-	frame	data/chars/galford/atk_palm_3.png
 
 anim attack1	# Backhand.
 
@@ -534,6 +479,9 @@ anim attack1	# Backhand.
 	attack.size.z.1 0
 	
 	frame	data/chars/galford/atk_backhand_2.png
+	
+	idle 1
+	
 	frame	data/chars/galford/atk_backhand_3.png
 
 ############
@@ -681,6 +629,7 @@ anim attack4
 	frame	data/chars/galford/atk_side_kick_high_1.png
 	frame	data/chars/galford/atk_side_kick_high_2.png
 
+	attack.effect.hit.flash.model	flash_fatal_fury	
 	attack.damage.force 14
 	attack.position.x 140
 	attack.position.y 85
@@ -826,6 +775,7 @@ anim attack7
 	frame	data/chars/galford/atk_j_spin_kick_1.png
 	frame	data/chars/galford/atk_j_spin_kick_2.png
 
+		attack.effect.hit.flash.model	flash_fatal_fury
 		attack.position.x				130
 		attack.position.y				130
 		attack.size.x					95
@@ -1462,7 +1412,16 @@ anim jumpattack
 	bbox	95 95 35 60
 		frame	data/chars/andy/andy0171
 		frame	data/chars/andy/andy0167
-	attack	95 100 46 25 20 1
+
+	attack.effect.hit.flash.model	flash_fatal_fury	
+	attack.damage.force 20
+	attack.position.x 95
+	attack.position.y 100
+	attack.reaction.fall.force 1
+	attack.reaction.pause.time 12
+	attack.size.x 46
+	attack.size.y 25
+
 		frame	data/chars/andy/andy0168
 		frame	data/chars/andy/andy0169
 	attack	0
@@ -1564,6 +1523,8 @@ anim jumpforward
 	frame	data/chars/galford/atk_jump_side_kick_0.png
 	
 		delay	20
+
+	attack.effect.hit.flash.model	flash_fatal_fury	
 	attack.block.penetrate 0
 	attack.damage.force 16
 	attack.damage.type 1
@@ -1575,6 +1536,7 @@ anim jumpforward
 	attack.size.x 82
 	attack.size.y 46
 	attack.size.z.1 0
+
 	
 	frame	data/chars/galford/atk_jump_side_kick_1.png
 	
