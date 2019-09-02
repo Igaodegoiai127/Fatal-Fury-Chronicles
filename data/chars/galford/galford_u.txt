@@ -386,7 +386,7 @@ anim attack4
 	frame	data/chars/galford/atk_palm_straight_3.png
 	frame	data/chars/galford/atk_palm_straight_4.png
 
-anim attack6 # Palm strike.
+anim attack6 # Palm hook.
 
 		delay	5
 		offset	140 207
@@ -401,38 +401,41 @@ anim attack6 # Palm strike.
 		@cmd dc_elmers_set_offset_x	-5
 		@cmd dc_elmers_reposition_to_offset
 
-	frame	data/chars/galford/atk_palm_0_u.png		
+	frame	data/chars/galford/atk_palm_hook_0_u.png		
 	bbox.position.x 107
 	bbox.position.y 118
 	bbox.size.x 46
 	bbox.size.y 89
-	frame	data/chars/galford/atk_palm_1_u.png
+	frame	data/chars/galford/atk_palm_hook_1_u.png
 	
 	@cmd	dc_fidelity_quick_play DC_FIDELITY_TYPE_SOUND_ATTACK_MEDIUM
 	@cmd	dc_fidelity_quick_play DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_MEDIUM
 	
-	frame	data/chars/galford/atk_palm_2_u.png
-	frame	data/chars/galford/atk_palm_0_u.png
-	
-	delay 6
+	frame	data/chars/galford/atk_palm_hook_2_u.png
+	frame	data/chars/galford/atk_palm_hook_3_u.png
 	
 	attack.damage.force 15
 	attack.position.x 140
-	attack.position.y 130
+	attack.position.y 118
 	attack.reaction.pause.time 12
 	attack.size.x 81
-	attack.size.y 24
+	attack.size.y 19
 
 	bbox.position.x 126
 	bbox.position.y 121
 	bbox.size.x 56
 	bbox.size.y 86
-	frame	data/chars/galford/atk_palm_3_u.png
+	
+	frame	data/chars/galford/atk_palm_hook_4_u.png
 	
 	attack 0
 	
-	frame	data/chars/galford/atk_palm_4_u.png
-	frame	data/chars/galford/atk_palm_5_u.png
+	frame	data/chars/galford/atk_palm_hook_5_u.png
+	
+	delay 6
+	
+	frame	data/chars/galford/atk_palm_hook_6_u.png
+	frame	data/chars/galford/atk_palm_hook_7_u.png	
 	
 anim attack7
 
