@@ -245,8 +245,7 @@ anim attack1	# Backhand.
 		@cmd dc_fidelity_set_sound_chance 0.5
 		@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_LIGHT
 		@cmd dc_fidelity_set_sound_chance NULL()
-		
-		@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_SOUND_ATTACK_LIGHT
+
 
 	frame	data/chars/galford/atk_backhand_0_u.png
 		
@@ -279,6 +278,105 @@ anim attack1	# Backhand.
 	idle 1
 	
 	frame	data/chars/galford/atk_backhand_3_u.png
+	
+anim attack2	# Elbow to backhand.
+
+	fastattack 1
+
+		delay	5
+		offset	140 207
+		range -40 50
+		
+	bbox.position.x 130
+	bbox.position.y 120
+	bbox.size.x 45
+	bbox.size.y 90
+	
+		# Play voice 50% of the time and clear chance so default is used for 
+		# any subsequent sound play calls.
+		
+		@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_MEDIUM
+				
+		@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_SOUND_ATTACK_MEDIUM
+
+	frame	data/chars/galford/atk_elbow_jab_0_u.png
+	frame	data/chars/galford/atk_elbow_jab_1_u.png
+	frame	data/chars/galford/atk_elbow_jab_2_u.png
+		
+				  attack.damage.lethal.disable 1
+	attack.damage.force 5
+	attack.position.x 139
+	attack.position.y 142
+	attack.reaction.pause.time 15
+	attack.size.x 60
+	attack.size.y 14
+	
+	frame	data/chars/galford/atk_elbow_jab_3_u.png
+
+	attack 0
+	
+	@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_MEDIUM
+	
+	@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_SOUND_ATTACK_MEDIUM
+	
+	frame	data/chars/galford/atk_elbow_jab_4_u.png
+	
+	attack.damage.force 8
+	attack.position.x 139
+	attack.position.y 122
+	attack.size.x 63
+	attack.size.y 11
+	attack.reaction.pause.time 15
+	
+	frame	data/chars/galford/atk_elbow_jab_backhand_0_u.png
+	
+	attack 0
+	
+	frame	data/chars/galford/atk_elbow_jab_backhand_1_u.png
+	
+	idle 1
+	
+	frame	data/chars/galford/atk_elbow_jab_backhand_0_u.png
+	
+	
+	anim attack3	# Straight (short).
+
+	fastattack 1
+
+		delay	10
+		offset	140 207
+		range -40 50
+		
+	bbox.position.x 130
+	bbox.position.y 120
+	bbox.size.x 45
+	bbox.size.y 90
+	
+		# Play voice 50% of the time and clear chance so default is used for 
+		# any subsequent sound play calls.
+		
+		@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_MEDIUM		
+		
+		@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_SOUND_ATTACK_MEDIUM	
+
+	frame	data/chars/galford/atk_straight_0_u.png
+		
+	delay 8
+		
+	attack.damage.force 15
+	attack.position.x 140
+	attack.position.y 134
+	attack.reaction.pause.time 12
+	attack.size.x 59
+	attack.size.y 13
+	
+	frame	data/chars/galford/atk_straight_short_0_u.png
+	frame	data/chars/galford/atk_straight_short_1_u.png
+	
+	attack 0
+	
+	frame	data/chars/galford/atk_straight_short_0_u.png	
+	frame	data/chars/galford/block_start_0_u.png
 
 
 
