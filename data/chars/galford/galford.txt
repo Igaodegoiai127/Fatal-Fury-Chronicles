@@ -278,7 +278,7 @@ anim attackdown # Sidestep down
 	delay	4
 	offset	140 207
 
-	cancel 0 4 0 f a freespecial7
+	cancel 2 2 0 a freespecial7
 
 	jumpframe 1 1 -1 1.5 hop_liftoff
 	landframe 2 jump_land
@@ -310,7 +310,7 @@ anim attackup
 		delay	4
 	offset	140 207
 
-	cancel 0 4 0 f a freespecial7
+	cancel 2 2 0 a freespecial7
 
 	jumpframe 1 1 -1 -1.5 hop_liftoff
 	landframe 2 jump_land
@@ -488,9 +488,7 @@ anim attack1	# Backhand.
 
 ############
 
-anim attack2 
-
-	# V-cut slash.
+anim attack2 # V-cut slash.
 
 	fastattack 1
 	range   -40 50
@@ -508,7 +506,7 @@ anim attack2
 	frame	data/chars/galford/atk_v-cut_0.png
 
 	attack.effect.hit.flash.model flash_cvs_cut_heavy
-	attack.damage.force 12
+	attack.damage.force 36
 	attack.damage.type 2
 	attack.position.x 125
 	attack.position.y 115
@@ -526,7 +524,7 @@ anim attack2
 	frame	data/chars/galford/atk_v-cut_1.png
 
 	attack.effect.hit.flash.model flash_cvs_cut_heavy
-	attack.damage.force 12
+	attack.damage.force 36
 	attack.damage.type 2
 	attack.position.x 145
 	attack.position.y 150
@@ -560,7 +558,7 @@ anim attack2
 	frame	data/chars/galford/atk_v-cut_4.png
 	frame	data/chars/galford/atk_v-cut_5.png
 	frame	data/chars/galford/atk_v-cut_6.png
-	frame	data/chars/galford/atk_v-cut_0.png
+	frame	data/chars/galford/atk_v-cut_7.png
 
 anim attack3
 
@@ -592,7 +590,7 @@ anim attack3
 	attack.position.y				60
 	attack.size.x					95
 	attack.size.y					105
-	attack.damage.force				12
+	attack.damage.force				36
 	attack.damage.type				2
 	attack.reaction.fall.velocity.x	1.2
 	attack.reaction.fall.velocity.y	3
@@ -608,7 +606,7 @@ anim attack3
 	frame	data/chars/galford/atk_v-cut_back_5.png
 	frame	data/chars/galford/atk_v-cut_back_6.png
 	frame	data/chars/galford/atk_v-cut_back_7.png
-	frame	data/chars/galford/atk_v-cut_0.png
+	frame	data/chars/galford/atk_v-cut_7.png
 	
 anim attack4
 
@@ -689,7 +687,7 @@ anim attack5
 	attack.position.y				130
 	attack.size.x					95
 	attack.size.y					18
-	attack.damage.force				14
+	attack.damage.force				42
 	attack.damage.type				2
 	attack.reaction.fall.velocity.x	1.2
 	attack.reaction.fall.velocity.y	3
@@ -729,7 +727,7 @@ anim attack6
 	attack.position.y				130
 	attack.size.x					95
 	attack.size.y					18
-	attack.damage.force				14
+	attack.damage.force				42
 	attack.reaction.fall.velocity.x	1.2
 	attack.reaction.fall.velocity.y	3
 	attack.reaction.fall.velocity.z	0
@@ -805,20 +803,27 @@ anim attack7
 	frame	data/chars/galford/jump_land_1.png
 	frame	data/chars/galford/jump_land_2.png
 
-anim chargeattack
+anim chargeattack #Justice Slayer
 
 	chargetime    	1
 	counterattack 	1
 
-	delay	6
+	delay	8
 	offset	140 207
-	bbox	130 120 45 90
+	bbox.position.x 130
+	bbox.position.y 120
+	bbox.size.x 45
+	bbox.size.y 90
 	
 	frame	data/chars/galford/atk_cross_cut_0.png
-	frame	data/chars/galford/atk_justice_slash_0.png
-
+	bbox.position.x 100
+	bbox.position.y 109
+	bbox.size.x 65
+	bbox.size.y 97
 	frame	data/chars/galford/atk_justice_slash_1.png
 	frame	data/chars/galford/atk_justice_slash_0.png
+
+	delay 6
 
 	# Spawn sub entity and set it as entity for binding.
 	@cmd dc_elmers_quick_motion dc_gauntlet_quick_spawn("galford_motion")
@@ -826,21 +831,85 @@ anim chargeattack
 	@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_HEAVY
 	@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_SOUND_ATTACK_HEAVY_BLADE
 
+	bbox.position.x 156
+	bbox.position.y 98
+	bbox.size.x 52
+	bbox.size.y 108
 	frame	data/chars/galford/atk_justice_slash_2.png
+	bbox.position.x 187
+	bbox.position.y 113
+	bbox.size.x 56
+	bbox.size.y 97
+	
 	frame	data/chars/galford/atk_justice_slash_3.png
+	
+	attack.block.penetrate 1
+	attack.damage.force 70
+	attack.damage.type 2
+	attack.effect.hit.flash.disable 0
+	attack.effect.hit.flash.model flash_cvs_cut_heavy
+	attack.position.x 194
+	attack.position.y 106
+	attack.reaction.fall.force 3
+	attack.reaction.pause.time 50
+	attack.size.x 114
+	attack.size.y 53
+	bbox.position.x 195
+	bbox.position.y 119
+	bbox.size.x 64
+	bbox.size.y 88
 	frame	data/chars/galford/atk_justice_slash_4.png
+	
+	delay 8
+	
+	attack.damage.force 0
+	attack.position.x 194
+	attack.position.y 150
+	attack.size.x 104
+	attack.size.y 58
+	bbox.position.x 194
+	bbox.position.y 131
+	bbox.size.x 77
+	bbox.size.y 78
 	frame	data/chars/galford/atk_justice_slash_5.png
+	
+	attack.block.penetrate 0
+	attack.damage.force 0
+	attack.damage.type 1
+	attack.effect.hit.flash.disable 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.reaction.pause.time 0
+	attack.size.x 0
+	attack.size.y 0
+	attack.size.z.1 0
+	
 	frame	data/chars/galford/atk_justice_slash_6.png
 		
-	delay	16
+	delay	35
 
 	frame	data/chars/galford/atk_justice_slash_7.png
 
-	delay	10
+	delay 7	
 
-	frame	data/chars/galford/atk_c_cut_1.png
-	frame	data/chars/galford/atk_c_cut_0.png
-	frame	data/chars/galford/atk_cross_cut_0.png
+	bbox.position.x 188
+	bbox.position.y 112
+	bbox.size.x 56
+	bbox.size.y 98
+	frame	data/chars/galford/atk_justice_slash_8.png
+	
+	frame	data/chars/galford/atk_c_cut_8.png
+	bbox.position.x 159
+	bbox.position.y 101
+	bbox.size.x 38
+	bbox.size.y 109
+	frame	data/chars/galford/atk_c_cut_9.png
+	bbox.position.x 123
+	bbox.position.y 110
+	bbox.size.x 62
+	bbox.size.y 100
+	frame	data/chars/galford/atk_c_cut_10.png
 
 
 anim runattack
@@ -2048,3 +2117,115 @@ anim grabattack2 # Roundhouse kick
 	bbox.size.y 89
 	
 	frame data/chars/galford/block_start_0.png
+
+anim freespecial7 # Plane step attack
+	
+	fastattack 1
+	range   55 155
+
+	delay	5
+	offset	140 207
+	
+	bbox.position.x 130
+	bbox.position.y 120
+	bbox.size.x 45
+	bbox.size.y 90
+		
+	frame	data/chars/galford/atk_v-cut_0.png
+	
+	bbox.position.x 161
+	bbox.position.y 101
+	bbox.size.x 36
+	bbox.size.y 109
+	
+	frame	data/chars/galford/atk_c_cut_0.png
+	
+	bbox.position.x 187
+	bbox.position.y 101
+	bbox.size.x 47
+	bbox.size.y 108
+	
+	@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_MEDIUM
+	
+	@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_SOUND_ATTACK_MEDIUM_BLADE
+	
+	frame	data/chars/galford/atk_c_cut_1.png
+
+	delay 3
+
+	attack.damage.force 40
+	attack.damage.type 2
+	attack.effect.hit.flash.model flash_cvs_cut_heavy
+	attack.position.x 210
+	attack.position.y 106
+	attack.reaction.fall.velocity.x 1.2
+	attack.reaction.fall.velocity.y 3.0
+	attack.reaction.fall.velocity.z 0.0
+	attack.reaction.pause.time 20
+	attack.size.x 84
+	attack.size.y 51
+
+	
+		
+	# Spawn sub entity and set it as entity for binding.
+	@cmd dc_elmers_quick_motion dc_gauntlet_quick_spawn("galford_motion")
+	bbox.position.x 189
+	bbox.position.y 116
+	bbox.size.x 63
+	bbox.size.y 94
+	frame	data/chars/galford/atk_c_cut_2.png
+	frame	data/chars/galford/atk_c_cut_3.png
+
+	attack.damage.force 40
+	attack.damage.type 2
+	attack.effect.hit.flash.model flash_cvs_cut_heavy
+	attack.position.x 195
+	attack.position.y 148
+	attack.reaction.fall.velocity.x 1.2
+	attack.reaction.fall.velocity.y 3.0
+	attack.reaction.fall.velocity.z 0.0
+	attack.reaction.pause.time 20
+	attack.size.x 91
+	attack.size.y 62
+		
+	delay 8
+		
+	frame	data/chars/galford/atk_c_cut_4.png
+		
+	attack 0
+	
+	frame	data/chars/galford/atk_c_cut_5.png
+
+	delay 10
+	
+	frame	data/chars/galford/atk_c_cut_6.png
+	
+	delay 5
+	
+	bbox.position.x 200
+	bbox.position.y 123
+	bbox.size.x 53
+	bbox.size.y 86
+	
+	frame	data/chars/galford/atk_c_cut_7.png
+	
+	bbox.position.x 182
+	bbox.position.y 109
+	bbox.size.x 54
+	bbox.size.y 98
+	
+	frame	data/chars/galford/atk_c_cut_8.png
+	
+	bbox.position.x 161
+	bbox.position.y 100
+	bbox.size.x 39
+	bbox.size.y 107
+	
+	frame	data/chars/galford/atk_c_cut_9.png
+	bbox.position.x 131
+	bbox.position.y 113
+	bbox.size.x 53
+	bbox.size.y 97
+	frame	data/chars/galford/atk_c_cut_10.png
+	
+	

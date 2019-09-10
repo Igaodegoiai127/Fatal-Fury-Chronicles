@@ -79,7 +79,6 @@ anim chargeattack
 	frame	data/chars/misc/blank.png
 
 	frame	data/chars/misc/blank.png
-	frame	data/chars/misc/blank.png
 
 	frame	data/chars/galford/atk_justice_slash_2_motion.png
 	frame	data/chars/galford/atk_justice_slash_3_motion.png
@@ -90,12 +89,23 @@ anim chargeattack
 
 anim jumpattack2 #Jump V Cut
 
-	loop 1 3
-
 	delay	-1000
 	offset	140 207
 
 	frame	data/chars/misc/blank.png
 	frame	data/chars/galford/atk_jump_v_cut_1_motion.png	
 	frame	data/chars/galford/atk_jump_v_cut_2_motion.png
+	frame	data/chars/misc/blank.png
+
+anim freespecial7 # Plane step attack
+	
+	delay	-1000
+	offset	140 207	
+		
+	frame	data/chars/misc/blank.png
+	frame	data/chars/misc/blank.png	
+	frame	data/chars/misc/blank.png
+	frame	data/chars/galford/atk_c_cut_2_motion.png
+	frame	data/chars/galford/atk_c_cut_3_motion.png		
+	frame	data/chars/galford/atk_c_cut_4_motion.png	
 	frame	data/chars/misc/blank.png
