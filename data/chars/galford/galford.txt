@@ -62,6 +62,7 @@ alternatepal   data/chars/galford/2019_default.act
 
 #*****Commands*****************************************************************************
 
+com		a + j				freespecial2    # Back attack
 com f u a    	freespecial2  		# Force plane up.
 com f d a    	freespecial3  		# Force plane down.
 com	d u a    	freespecial4		# Plane attack up.
@@ -1102,31 +1103,99 @@ anim follow93
 	frame	data/chars/galford/jump_land_1.png
 	frame	data/chars/galford/jump_land_2.png
 
-anim freespecial2
-
-	#Plane force up (Palm upper)
+anim freespecial2 # Back attack
 
 	fastattack 1
+	range   -105 0
 
-	delay	8
-	offset	100 200
-	bbox	75 110 35 90
-		frame	data/chars/andy/20_0.png
-		frame	data/chars/andy/20_1.png
 	delay	6
-		frame	data/chars/andy/20_2.png
-	attack6	90 130 55 70 10 1 0 0 20
-		frame	data/chars/andy/20_3.png
-	attack	0
-		frame	data/chars/andy/20_4.png
-		frame	data/chars/andy/20_5.png
-	delay	12
-	attack6	130 90 55 60 10 1 0 0 20
-	damageonlanding 0 1
-	dropv   4 0.5 -0.5
-		frame	data/chars/andy/20_6.png
-	attack	0
-		frame	data/chars/andy/20_7.png
+	offset	140 207
+	
+	bbox.position.x 130
+	bbox.position.y 120
+	bbox.size.x 45
+	bbox.size.y 90
+	
+		@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_SOUND_ATTACK_MEDIUM_BLADE
+		
+	frame	data/chars/galford/atk_cross_cut_0.png
+	bbox.position.x 126
+	bbox.position.y 112
+	bbox.size.x 35
+	bbox.size.y 95
+	frame	data/chars/galford/atk_back_0.png
+
+
+	attack.damage.force 36
+	attack.damage.type 2
+	attack.effect.hit.flash.model flash_cvs_cut_heavy
+	attack.position.x 32
+	attack.position.y 149
+	attack.reaction.fall.velocity.x 1.2
+	attack.reaction.fall.velocity.y 3.0
+	attack.reaction.fall.velocity.z 0.0
+	attack.reaction.pause.time 8
+	attack.size.x 115
+	attack.size.y 15
+
+	@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_MEDIUM
+		
+	# Spawn sub entity and set it as entity for binding.
+	@cmd dc_elmers_quick_motion dc_gauntlet_quick_spawn("galford_motion")
+	bbox.position.x 90
+	bbox.position.y 124
+	bbox.size.x 56
+	bbox.size.y 83
+	frame	data/chars/galford/atk_back_1.png
+
+	attack.damage.force 36
+	attack.damage.type 2
+	attack.effect.hit.flash.model flash_cvs_cut_heavy
+	attack.position.x 59
+	attack.position.y 137
+	attack.reaction.fall.velocity.x 1.2
+	attack.reaction.fall.velocity.y 3.0
+	attack.reaction.fall.velocity.z 0.0
+	attack.reaction.pause.time 8
+	attack.size.x 62
+	attack.size.y 17
+		
+	bbox.position.x 84
+	bbox.position.y 138
+	bbox.size.x 57
+	bbox.size.y 69
+	frame	data/chars/galford/atk_back_2.png	
+	
+	attack.block.penetrate 0
+	attack.damage.force 0
+	attack.damage.type 1
+	attack.effect.hit.flash.disable 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.reaction.pause.time 0
+	attack.size.x 0
+	attack.size.y 0
+	attack.size.z.1 0
+
+	frame	data/chars/galford/atk_back_3.png		
+	frame	data/chars/galford/atk_back_4.png
+	frame	data/chars/galford/atk_back_5.png	
+	
+	delay 8
+	
+	bbox.position.x 90
+	bbox.position.y 124
+	bbox.size.x 55
+	bbox.size.y 84
+	frame	data/chars/galford/atk_back_6.png
+	bbox.position.x 127
+	bbox.position.y 117
+	bbox.size.x 46
+	bbox.size.y 91
+	
+	frame	data/chars/galford/atk_v-cut_7.png
+	
 
 anim freespecial3
 
