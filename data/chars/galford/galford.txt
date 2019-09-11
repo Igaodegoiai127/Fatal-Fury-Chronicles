@@ -1108,44 +1108,47 @@ anim freespecial2 # Back attack
 	fastattack 1
 	range   -105 0
 
-	delay	6
+	delay	5
 	offset	140 207
 	
 	bbox.position.x 130
 	bbox.position.y 120
 	bbox.size.x 45
 	bbox.size.y 90
-	
-		@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_SOUND_ATTACK_MEDIUM_BLADE
 		
 	frame	data/chars/galford/atk_cross_cut_0.png
+	
 	bbox.position.x 126
 	bbox.position.y 112
 	bbox.size.x 35
 	bbox.size.y 95
-	frame	data/chars/galford/atk_back_0.png
-
-
-	attack.damage.force 36
-	attack.damage.type 2
-	attack.effect.hit.flash.model flash_cvs_cut_heavy
-	attack.position.x 32
-	attack.position.y 149
-	attack.reaction.fall.velocity.x 1.2
-	attack.reaction.fall.velocity.y 3.0
-	attack.reaction.fall.velocity.z 0.0
-	attack.reaction.pause.time 8
-	attack.size.x 115
-	attack.size.y 15
 
 	@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_MEDIUM
-		
-	# Spawn sub entity and set it as entity for binding.
-	@cmd dc_elmers_quick_motion dc_gauntlet_quick_spawn("galford_motion")
+	@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_SOUND_ATTACK_MEDIUM_BLADE
+
+	frame	data/chars/galford/atk_back_0.png
+
 	bbox.position.x 90
 	bbox.position.y 124
 	bbox.size.x 56
 	bbox.size.y 83
+
+	attack.damage.force 40
+	attack.damage.type 2
+	attack.effect.hit.flash.model flash_cvs_cut_heavy
+	attack.position.x 32
+	attack.position.y 149
+	attack.reaction.fall.force 3
+	attack.reaction.fall.velocity.x 1.2
+	attack.reaction.fall.velocity.y 3.0
+	attack.reaction.fall.velocity.z 0.0
+	attack.reaction.pause.time 25
+	attack.size.x 115
+	attack.size.y 15	
+		
+	# Spawn sub entity and set it as entity for binding.
+	@cmd dc_elmers_quick_motion dc_gauntlet_quick_spawn("galford_motion")	
+
 	frame	data/chars/galford/atk_back_1.png
 
 	attack.damage.force 36
@@ -1153,10 +1156,11 @@ anim freespecial2 # Back attack
 	attack.effect.hit.flash.model flash_cvs_cut_heavy
 	attack.position.x 59
 	attack.position.y 137
+	attack.reaction.fall.force 3
 	attack.reaction.fall.velocity.x 1.2
 	attack.reaction.fall.velocity.y 3.0
 	attack.reaction.fall.velocity.z 0.0
-	attack.reaction.pause.time 8
+	attack.reaction.pause.time 25
 	attack.size.x 62
 	attack.size.y 17
 		
@@ -1164,6 +1168,7 @@ anim freespecial2 # Back attack
 	bbox.position.y 138
 	bbox.size.x 57
 	bbox.size.y 69
+
 	frame	data/chars/galford/atk_back_2.png	
 	
 	attack.block.penetrate 0
@@ -1180,9 +1185,9 @@ anim freespecial2 # Back attack
 
 	frame	data/chars/galford/atk_back_3.png		
 	frame	data/chars/galford/atk_back_4.png
-	frame	data/chars/galford/atk_back_5.png	
 	
 	delay 8
+	frame	data/chars/galford/atk_back_5.png		
 	
 	bbox.position.x 90
 	bbox.position.y 124

@@ -97,6 +97,17 @@ anim jumpattack2 #Jump V Cut
 	frame	data/chars/galford/atk_jump_v_cut_2_motion.png
 	frame	data/chars/misc/blank.png
 
+anim freespecial2 # Back attack
+	
+	delay	-1000
+	offset	140 207	
+		
+	frame	data/chars/misc/blank.png
+	frame	data/chars/misc/blank.png
+	frame	data/chars/galford/atk_back_1_motion.png
+	frame	data/chars/galford/atk_back_2_motion.png	
+	frame	data/chars/misc/blank.png
+
 anim freespecial7 # Plane step attack
 	
 	delay	-1000
