@@ -2303,3 +2303,60 @@ anim freespecial7 # Plane step attack
 	frame	data/chars/galford/atk_c_cut_10.png
 	
 	
+anim follow82 # Down Attack
+	
+
+	range 30 120
+
+	delay	8
+	offset	140 207
+	bbox.position.x 126
+	bbox.position.y 112
+	bbox.size.x 41
+	bbox.size.y 94
+		
+		@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_MEDIUM
+		@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_SOUND_ATTACK_MEDIUM
+
+	frame	data/chars/galford/atk_spin_kick_low_0.png
+	bbox.position.x 155
+	bbox.position.y 115
+	bbox.size.x 44
+	bbox.size.y 94
+	frame	data/chars/galford/atk_spin_kick_low_1.png
+	
+	delay	12
+
+	attack.block.penetrate 0
+	attack.damage.force 15
+	attack.damage.type 1
+	attack.effect.hit.flash.disable 0
+	attack.effect.hit.flash.model flash_fatal_fury
+	attack.position.x 169
+	attack.position.y 182
+	attack.reaction.fall.force 1
+	attack.reaction.pause.time 12
+	attack.size.x 91
+	attack.size.y 21
+	attack.size.z.1 0
+	attack.ground.mode 2
+	
+	bbox.position.x 160
+	bbox.position.y 124
+	bbox.size.x 45
+	bbox.size.y 85
+	frame	data/chars/galford/atk_spin_kick_low_2.png
+	
+	delay 8
+	
+	attack 0
+
+	bbox.position.x 141
+	bbox.position.y 116
+	bbox.size.x 50
+	bbox.size.y 93
+	frame	data/chars/galford/atk_spin_kick_low_3.png
+
+	delay 12
+	
+	frame	data/chars/galford/atk_j_spin_kick_0.png
