@@ -242,18 +242,7 @@ anim idle
 
 #anim sleep
 
-anim faint
-
-	#Heavy fatigue.
-
-	loop	1
-	delay	18
-	offset	100 200
-	bbox	75 135 30 65
-		frame	data/chars/andy/andy0383
-		frame	data/chars/andy/andy0384
-		frame	data/chars/andy/andy0385
-		frame	data/chars/andy/andy0384
+#anim faint
 
 anim walk
 
@@ -1792,27 +1781,34 @@ anim land
 
 anim rise
 
-	jumpframe 3 1.2 0.2 0 hop_liftoff
-	landframe 5 jump_land
+	jumpframe 3 1 0 0 hop_liftoff
+	landframe 9 jump_land
 
 	delay	8
-	offset	100 200
-		frame	data/chars/andy/andy0251
-	move	-20
-		frame	data/chars/andy/andy0241
-	move	0
-		frame	data/chars/andy/andy0242
-	delay	12
-	move	30
-		frame	data/chars/andy/andy0250
-	move	0
-	delay	-1
-		frame	data/chars/andy/andy0246
-	delay	8
-		frame	data/chars/andy/andy0247
-		frame	data/chars/andy/andy0248
-		frame	data/chars/andy/andy0249
-		frame	data/chars/andy/3_0.png
+	offset	140 207
+	
+	frame	data/chars/galford/rise_0.png
+	frame	data/chars/galford/rise_1.png
+	frame	data/chars/galford/rise_2.png
+	frame	data/chars/galford/rise_3.png
+	frame	data/chars/galford/jump_2.png
+	frame	data/chars/galford/jump_3.png
+	frame	data/chars/galford/jump_4.png
+	frame	data/chars/galford/jump_5.png
+	
+	delay -1000
+	
+	frame	data/chars/galford/jump_6.png
+	
+	delay 5
+	
+	frame	data/chars/galford/jump_land_0.png
+	frame	data/chars/galford/jump_land_1.png
+	frame	data/chars/galford/duck_start_0.png
+
+
+
+
 
 anim grabbed
 
@@ -1830,79 +1826,139 @@ anim grabbed
 	offset	90 200
 		frame	data/chars/andy/andy0352
 
-anim pain
+anim pain # Normal Pain
+	
+	delay	11
+	offset	140 207
+		
+	bbox.position.x 96
+	bbox.position.y 123
+	bbox.size.x 82
+	bbox.size.y 84
+	
+	frame	data/chars/galford/R_PAIN_1.png
+	
+	bbox.position.x 89
+	bbox.position.y 124
+	bbox.size.x 94
+	bbox.size.y 86
+	
+	frame	data/chars/galford/R_PAIN_2.png
+	
+	bbox.position.x 89
+	bbox.position.y 108
+	bbox.size.x 92
+	bbox.size.y 103
+	
+	frame	data/chars/galford/R_PAIN_1.png
+	
+	bbox.position.x 93
+	bbox.position.y 108
+	bbox.size.x 93
+	bbox.size.y 103
+	
+	frame	data/chars/galford/R_PAIN_0.png
 
-	jumpframe 0 0 -0.1 0
-
-	delay	8
-	offset	100 200
-	bbox	85 100 30 40
-		frame	data/chars/andy/andy0348
-		frame	data/chars/andy/andy0349
-		frame	data/chars/andy/andy0350
-		frame	data/chars/andy/andy0351
-		frame	data/chars/andy/andy0350
-		frame	data/chars/andy/andy0349
-		frame	data/chars/andy/andy0348
-
-anim pain2
-
-	#Middle pain.
-
-	jumpframe 0 0 -0.1 0
-
-	delay	8
-	offset	100 200
-	bbox	85 100 30 40
-		frame	data/chars/andy/andy0355
-		frame	data/chars/andy/andy0352
-		frame	data/chars/andy/andy0353
-		frame	data/chars/andy/andy0354
-		frame	data/chars/andy/andy0353
-		frame	data/chars/andy/andy0352
-		frame	data/chars/andy/andy0355
-
-anim fall
-
+anim fall # Normal Fall
+	
 	dropframe 1
-	landframe 4
-
-	delay	-1
-	offset	100 200
-	bbox	65 170 75 30
-	attack  65 170 75 30 8
-		frame	data/chars/andy/andy0360
-	delay	15
-		frame	data/chars/andy/andy0361
-		frame	data/chars/andy/andy0362
-	delay	-1
-		frame	data/chars/andy/andy0364
-	delay	20
-	attack	0
-	bbox	0
-		frame	data/chars/andy/andy0362
-		frame	data/chars/andy/andy0366
-
-#anim fall3
-
-	#Swept.
-
 	landframe 3
-
-	delay	12
-	offset	100 200
-	bbox	65 170 75 30
-	attack  65 170 75 30 8
-		frame	data/chars/andy/andy0386
-		frame	data/chars/andy/andy0369
-	delay	-100
-		frame	data/chars/andy/andy0365
-	delay	10
-	attack	0
-	bbox	0
-		frame	data/chars/andy/andy0375
-		frame	data/chars/andy/andy0367
-		frame	data/chars/andy/andy0368
+	
+	delay	-1000
+	
+	offset	140 207
+	
+	bbox.position.x 114
+	bbox.position.y 145
+	bbox.size.x 86
+	bbox.size.y 44
+	
+	attack.block.penetrate 0
+	attack.damage.force 10
+	attack.damage.type 1
+	attack.effect.hit.flash.disable 0
+	attack.position.x 113
+	attack.position.y 145
+	attack.reaction.fall.force 1
+	attack.reaction.pause.time 10
+	attack.size.x 87
+	attack.size.y 43
+	attack.size.z.1 0
+	
+	frame	data/chars/galford/R_FALLING_UP_LIFT_0.png
+	
+	bbox.position.x 107
+	bbox.position.y 136
+	bbox.size.x 88
+	bbox.size.y 46
+	
+	attack.block.penetrate 0
+	attack.damage.force 10
+	attack.damage.type 1
+	attack.effect.hit.flash.disable 0
+	attack.position.x 107
+	attack.position.y 135
+	attack.reaction.fall.force 1
+	attack.reaction.pause.time 10
+	attack.size.x 88
+	attack.size.y 46
+	attack.size.z.1 0
+	
+	frame	data/chars/galford/R_FALLING_UP_CENTER_0.png
+	
+	delay 15
+	
+	bbox.position.x 104
+	bbox.position.y 124
+	bbox.size.x 78
+	bbox.size.y 57
+	
+	attack.block.penetrate 0
+	attack.damage.force 10
+	attack.damage.type 1
+	attack.effect.hit.flash.disable 0
+	attack.position.x 103
+	attack.position.y 137
+	attack.reaction.fall.force 1
+	attack.reaction.pause.time 10
+	attack.size.x 79
+	attack.size.y 43
+	attack.size.z.1 0
+	
+	frame	data/chars/galford/R_FALLING_UP_0.png	
+	
+	delay 8
+	
+	bbox.position.x 106
+	bbox.position.y 146
+	bbox.size.x 81
+	bbox.size.y 62
+		
+	attack.block.penetrate 0
+	attack.damage.force 0
+	attack.damage.type 1
+	attack.effect.hit.flash.disable 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.reaction.pause.time 0
+	attack.size.x 0
+	attack.size.y 0
+	attack.size.z.1 0
+	
+	bbox.position.x 106
+	bbox.position.y 146
+	bbox.size.x 81
+	bbox.size.y 62
+	
+	frame	data/chars/galford/R_LAYING_UP_PAIN_0.png
+	
+	bbox.position.x 102
+	bbox.position.y 183
+	bbox.size.x 114
+	bbox.size.y 27
+	
+	frame	data/chars/galford/R_LAYING_UP_0
 
 anim fall5
 
