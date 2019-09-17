@@ -1044,83 +1044,76 @@ anim follow82 # Down Attack
 	
 anim freespecial2 # Back Attack
 	
-	range -20 -118
+	range 0 -83
 
-	delay	6
+	delay	5
 	offset	140 207
-	bbox.position.x 104
-	bbox.position.y 121
-	bbox.size.x 71
-	bbox.size.y 86
+	bbox.position.x 121
+	bbox.position.y 117
+	bbox.size.x 53
+	bbox.size.y 90
 
-	frame	data/chars/galford/duck_start_0_u.png
-	frame	data/chars/galford/duck_start_1_u.png
-	
-	delay 8
-	
-	bbox.position.x 99
-	bbox.position.y 132
-	bbox.size.x 64
-	bbox.size.y 76
+	frame	data/chars/galford/atk_backhand_swing_0_u.png		
+	frame	data/chars/galford/atk_backhand_swing_1_u.png
 	
 	@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_MEDIUM
-		@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_SOUND_ATTACK_MEDIUM
+	@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_SOUND_ATTACK_MEDIUM
 	
-	frame	data/chars/galford/atk_sweep_back_0_u.png
-	
-	bbox.position.x 87
-	bbox.position.y 132
-	bbox.size.x 75
-	bbox.size.y 75
-	
-	frame	data/chars/galford/atk_sweep_back_1_u.png
-	
-	attack.block.penetrate 0
-	attack.damage.force 15
-	attack.damage.type 1
-	attack.effect.hit.flash.disable 0
-	attack.effect.hit.flash.model flash_fatal_fury
-	attack.position.x 22
-	attack.position.y 171
-	attack.reaction.fall.force 1
-	attack.reaction.pause.time 12
-	attack.size.x 98
-	attack.size.y 15
-	attack.size.z.1 0
-	
-	bbox.position.x 61
-	bbox.position.y 136
-	bbox.size.x 82
-	bbox.size.y 71
-	
-	frame	data/chars/galford/atk_sweep_back_2_u.png
-	
-	delay 8
-	
-	attack 0
-
-	bbox.position.x 100
-	bbox.position.y 139
-	bbox.size.x 73
-	bbox.size.y 71
-	
-	frame	data/chars/galford/atk_sweep_back_3_u.png
+	frame	data/chars/galford/atk_backhand_swing_2_u.png
 	
 	delay 6
 	
-	bbox.position.x 102
-	bbox.position.y 127
-	bbox.size.x 67
-	bbox.size.y 80
+	attack.damage.force 20
+	attack.position.x 56
+	attack.position.y 140
+	attack.reaction.fall.force 1
+	attack.reaction.fall.velocity.x 1.2
+	attack.reaction.fall.velocity.y 3.0
+	attack.reaction.fall.velocity.z 0.0
+	attack.reaction.pause.time 20
+	attack.size.x 88
+	attack.size.y 11
 	
-	frame	data/chars/galford/duck_start_1_u.png
+	bbox.position.x 86
+	bbox.position.y 124
+	bbox.size.x 78
+	bbox.size.y 85
+	frame	data/chars/galford/atk_backhand_swing_3_u.png
+		
+	attack.damage.force 20
+	attack.position.x 70
+	attack.position.y 134
+	attack.reaction.fall.force 1
+	attack.reaction.fall.velocity.x 1.2
+	attack.reaction.fall.velocity.y 3.0
+	attack.reaction.fall.velocity.z 0.0
+	attack.reaction.pause.time 20
+	attack.size.x 32
+	attack.size.y 15
 	
-	bbox.position.x 101
-	bbox.position.y 119
-	bbox.size.x 72
-	bbox.size.y 87
+	bbox.position.x 82
+	bbox.position.y 132
+	bbox.size.x 80
+	bbox.size.y 75
+	frame	data/chars/galford/atk_backhand_swing_4_u.png
 	
-	frame	data/chars/galford/duck_start_0_u.png
+	attack 0
+	
+	frame	data/chars/galford/atk_backhand_swing_5_u.png
+	frame	data/chars/galford/atk_backhand_swing_6_u.png
+	frame	data/chars/galford/atk_backhand_swing_7_u.png
+	bbox.position.x 96
+	bbox.position.y 111
+	bbox.size.x 65
+	bbox.size.y 98
+	frame	data/chars/galford/atk_backhand_swing_8_u.png
+	bbox.position.x 117
+	bbox.position.y 118
+	bbox.size.x 59
+	bbox.size.y 89
+	frame	data/chars/galford/atk_backhand_swing_9_u.png
+	
+	
 	
 anim freespecial7 # Plane step attack
 	
