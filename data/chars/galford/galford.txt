@@ -80,8 +80,8 @@ anim freespecial6
 	offset	140 207
 	bbox	130 120 45 90
 	
-	frame	data/chars/galford/jump_start_0.png
-	frame	data/chars/galford/jump_start_0.png
+	frame	data/chars/galford/duck_start_1.png
+	frame	data/chars/galford/duck_start_1.png
 
 anim spawn		
 
@@ -131,7 +131,7 @@ anim spawn
 
 	frame	data/chars/galford/jump_land_0.png
 	frame	data/chars/galford/jump_land_1.png
-	frame	data/chars/galford/jump_land_2.png
+	frame	data/chars/galford/duck_start_0.png
 
 #anim respawn
 
@@ -289,7 +289,7 @@ anim attackdown # Sidestep down
 	bbox.size.x		45
 	bbox.size.y		90
 	
-	frame	data/chars/galford/jump_start_0.png		
+	frame	data/chars/galford/duck_start_1.png		
 	
 	delay	-1000
 	bbox 0
@@ -303,7 +303,7 @@ anim attackdown # Sidestep down
 	bbox.size.x		38
 	bbox.size.y		98	
 	 
-	frame	data/chars/galford/jump_start_0.png
+	frame	data/chars/galford/duck_start_1.png
 
 
 anim attackup
@@ -321,7 +321,7 @@ anim attackup
 	bbox.size.x		45
 	bbox.size.y		90
 	
-	frame	data/chars/galford/jump_start_0.png		
+	frame	data/chars/galford/duck_start_1.png		
 	
 	delay	-1000
 	bbox 0
@@ -335,7 +335,7 @@ anim attackup
 	bbox.size.x		38
 	bbox.size.y		98	
 	 
-	frame	data/chars/galford/jump_start_0.png
+	frame	data/chars/galford/duck_start_1.png
 
 anim run
 
@@ -763,7 +763,7 @@ anim attack7
 		offset	140 207
 		bbox	130 120 45 90
 	
-	frame	data/chars/galford/jump_land_2.png
+	frame	data/chars/galford/duck_start_0.png
 
 		@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_HEAVY
 	
@@ -802,7 +802,7 @@ anim attack7
 
 	frame	data/chars/galford/jump_land_0.png
 	frame	data/chars/galford/jump_land_1.png
-	frame	data/chars/galford/jump_land_2.png
+	frame	data/chars/galford/duck_start_0.png
 
 anim chargeattack #Justice Slayer
 
@@ -1041,7 +1041,7 @@ anim freespecial
 		offset	140 207
 		bbox	130 120 45 90
 	
-	frame	data/chars/galford/jump_land_2.png
+	frame	data/chars/galford/duck_start_0.png
 		
 		bbox	130 120 45 90
 		@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_LIGHT
@@ -1101,7 +1101,7 @@ anim follow93
 		move	0
 
 	frame	data/chars/galford/jump_land_1.png
-	frame	data/chars/galford/jump_land_2.png
+	frame	data/chars/galford/duck_start_0.png
 
 anim freespecial2 # Back attack
 
@@ -1421,7 +1421,7 @@ anim jumpdelay
 		offset	140 207
 		bbox	115 124 50 85
 	
-	frame	data/chars/galford/jump_land_2.png
+	frame	data/chars/galford/duck_start_0.png
 
 anim jumpland
 
@@ -1431,7 +1431,7 @@ anim jumpland
 	
 	frame	data/chars/galford/jump_land_0.png
 	frame	data/chars/galford/jump_land_1.png
-	frame	data/chars/galford/jump_land_2.png
+	frame	data/chars/galford/duck_start_0.png
 
 anim jump
 

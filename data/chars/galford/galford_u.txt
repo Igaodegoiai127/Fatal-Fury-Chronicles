@@ -35,6 +35,8 @@ palette	       data/chars/galford/og_navy.act
 alternatepal   data/chars/galford/og_navy_mask.act
 alternatepal   data/chars/galford/2019_default.act
 
+com		a + j				freespecial2    # Back attack
+
 com f u a    	freespecial2  		# Force plane up.
 com f d a    	freespecial3  		# Force plane down.
 com	d u a    	freespecial4		# Plane attack up.
@@ -62,8 +64,8 @@ anim freespecial6
 	offset	140 207
 	bbox	130 120 45 90
 	
-	frame	data/chars/galford/jump_start_0_u.png
-	frame	data/chars/galford/jump_start_0_u.png
+	frame	data/chars/galford/duck_start_1_u.png
+	frame	data/chars/galford/duck_start_1_u.png
 
 anim spawn		
 
@@ -113,7 +115,7 @@ anim spawn
 
 	frame	data/chars/galford/jump_land_0.png
 	frame	data/chars/galford/jump_land_1.png
-	frame	data/chars/galford/jump_land_2.png
+	frame	data/chars/galford/duck_start_0.png
 
 anim idle
 
@@ -159,7 +161,7 @@ anim attackdown # Sidestep down
 	delay	4
 	offset	140 207
 
-	cancel 0 4 0 f a freespecial7
+	cancel 2 2 0 a freespecial7
 
 	jumpframe 1 1 -1 1.5 hop_liftoff
 	landframe 2 jump_land
@@ -169,7 +171,7 @@ anim attackdown # Sidestep down
 	bbox.size.x		45
 	bbox.size.y		90
 	
-	frame	data/chars/galford/jump_start_0_u.png		
+	frame	data/chars/galford/duck_start_1_u.png		
 	
 	delay	-1000
 	bbox 0
@@ -183,7 +185,7 @@ anim attackdown # Sidestep down
 	bbox.size.x		38
 	bbox.size.y		98	
 	 
-	frame	data/chars/galford/jump_start_0_u.png
+	frame	data/chars/galford/duck_start_1_u.png
 
 
 anim attackup
@@ -191,7 +193,7 @@ anim attackup
 		delay	4
 	offset	140 207
 
-	cancel 0 4 0 f a freespecial7
+	cancel 2 2 0 a freespecial7
 
 	jumpframe 1 1 -1 -1.5 hop_liftoff
 	landframe 2 jump_land
@@ -201,7 +203,7 @@ anim attackup
 	bbox.size.x		45
 	bbox.size.y		90
 	
-	frame	data/chars/galford/jump_start_0_u.png		
+	frame	data/chars/galford/duck_start_1_u.png		
 	
 	delay	-1000
 	bbox 0
@@ -215,7 +217,7 @@ anim attackup
 	bbox.size.x		38
 	bbox.size.y		98	
 	 
-	frame	data/chars/galford/jump_start_0_u.png
+	frame	data/chars/galford/duck_start_1_u.png
 
 anim run
 
@@ -245,6 +247,8 @@ anim attack1	# Backhand.
 		@cmd dc_fidelity_set_sound_chance 0.5
 		@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_LIGHT
 		@cmd dc_fidelity_set_sound_chance NULL()
+		
+		@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_SOUND_ATTACK_LIGHT
 
 
 	frame	data/chars/galford/atk_backhand_0_u.png
@@ -379,9 +383,7 @@ anim attack3 # Short straight.
 
 
 
-anim attack4
-
-	# High side kick
+anim attack4	# High side kick
 
 		range	-40 50
 		delay	5
@@ -436,6 +438,8 @@ anim attack4
 
  anim attack5	# Palm Straight.
 
+	range 50 83
+
 		delay	5
 		offset	140 207
 		
@@ -444,13 +448,8 @@ anim attack4
 	bbox.size.x 45
 	bbox.size.y 90
 	
-		# Play voice 50% of the time and clear chance so default is used for 
-		# any subsequent sound play calls.
-		@cmd dc_fidelity_set_sound_chance 0.5
-		@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_LIGHT
-		@cmd dc_fidelity_set_sound_chance NULL()
-		
-		@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_SOUND_ATTACK_LIGHT
+		@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_MEDIUM		
+		@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_SOUND_ATTACK_MEDIUM
 
 	#frame	data/chars/galford/atk_palm_straight_0.png	
 	frame	data/chars/galford/atk_palm_straight_0.png
@@ -458,8 +457,8 @@ anim attack4
 	attack.damage.force 12
 	attack.position.x 138
 	attack.position.y 127
-	attack.reaction.pause.time 10
-	attack.size.x 81
+	attack.reaction.pause.time 15
+	attack.size.x 85
 	attack.size.y 17
 	
 	frame	data/chars/galford/atk_palm_straight_1.png
@@ -484,6 +483,8 @@ anim attack4
 	frame	data/chars/galford/atk_palm_straight_4.png
 
 anim attack6 # Palm hook.
+
+	range 50 83
 
 		delay	5
 		offset	140 207
@@ -514,8 +515,8 @@ anim attack6 # Palm hook.
 	attack.damage.force 15
 	attack.position.x 140
 	attack.position.y 118
-	attack.reaction.pause.time 12
-	attack.size.x 81
+	attack.reaction.pause.time 20
+	attack.size.x 84
 	attack.size.y 19
 
 	bbox.position.x 126
@@ -534,9 +535,7 @@ anim attack6 # Palm hook.
 	frame	data/chars/galford/atk_palm_hook_6_u.png
 	frame	data/chars/galford/atk_palm_hook_7_u.png	
 	
-anim attack7
-
-	# Jump spinning kick
+anim attack7 # Jump spinning kick
 
 		jumpframe 2 2.2 0 0 hop_liftoff
 		landframe 8 jump_land
@@ -545,7 +544,7 @@ anim attack7
 		offset	140 207
 		bbox	130 120 45 90
 	
-	frame	data/chars/galford/jump_land_2_u.png
+	frame	data/chars/galford/duck_start_0_u.png
 
 		@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_HEAVY
 	
@@ -584,7 +583,7 @@ anim attack7
 
 	frame	data/chars/galford/jump_land_0_u.png
 	frame	data/chars/galford/jump_land_1_u.png
-	frame	data/chars/galford/jump_land_2_u.png
+	frame	data/chars/galford/duck_start_0_u.png
 
 anim freespecial
 
@@ -597,7 +596,7 @@ anim freespecial
 	offset	140 207
 	bbox	130 120 45 90
 	
-	frame	data/chars/galford/jump_land_2_u.png
+	frame	data/chars/galford/duck_start_0_u.png
 		
 	bbox	130 120 45 90
 	@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_LIGHT
@@ -656,7 +655,7 @@ anim follow93
 	move	0
 
 	frame	data/chars/galford/jump_land_1_u.png
-	frame	data/chars/galford/jump_land_2_u.png
+	frame	data/chars/galford/duck_start_0_u.png
 
 anim grab
 
@@ -695,7 +694,7 @@ anim jumpdelay
 	offset	140 207
 	bbox	115 124 50 85
 	
-	frame	data/chars/galford/jump_land_2_u.png
+	frame	data/chars/galford/duck_start_0_u.png
 
 anim jumpland
 
@@ -705,7 +704,7 @@ anim jumpland
 	
 	frame	data/chars/galford/jump_land_0_u.png
 	frame	data/chars/galford/jump_land_1_u.png
-	frame	data/chars/galford/jump_land_2_u.png
+	frame	data/chars/galford/duck_start_0_u.png
 
 anim jump
 
@@ -1042,4 +1041,157 @@ anim follow82 # Down Attack
 	delay 12
 	
 	frame	data/chars/galford/atk_j_spin_kick_0_u.png
+	
+anim freespecial2 # Back Attack
+	
+	range -20 -118
+
+	delay	6
+	offset	140 207
+	bbox.position.x 104
+	bbox.position.y 121
+	bbox.size.x 71
+	bbox.size.y 86
+
+	frame	data/chars/galford/duck_start_0_u.png
+	frame	data/chars/galford/duck_start_1_u.png
+	
+	delay 8
+	
+	bbox.position.x 99
+	bbox.position.y 132
+	bbox.size.x 64
+	bbox.size.y 76
+	
+	@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_MEDIUM
+		@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_SOUND_ATTACK_MEDIUM
+	
+	frame	data/chars/galford/atk_sweep_back_0_u.png
+	
+	bbox.position.x 87
+	bbox.position.y 132
+	bbox.size.x 75
+	bbox.size.y 75
+	
+	frame	data/chars/galford/atk_sweep_back_1_u.png
+	
+	attack.block.penetrate 0
+	attack.damage.force 15
+	attack.damage.type 1
+	attack.effect.hit.flash.disable 0
+	attack.effect.hit.flash.model flash_fatal_fury
+	attack.position.x 22
+	attack.position.y 171
+	attack.reaction.fall.force 1
+	attack.reaction.pause.time 12
+	attack.size.x 98
+	attack.size.y 15
+	attack.size.z.1 0
+	
+	bbox.position.x 61
+	bbox.position.y 136
+	bbox.size.x 82
+	bbox.size.y 71
+	
+	frame	data/chars/galford/atk_sweep_back_2_u.png
+	
+	delay 8
+	
+	attack 0
+
+	bbox.position.x 100
+	bbox.position.y 139
+	bbox.size.x 73
+	bbox.size.y 71
+	
+	frame	data/chars/galford/atk_sweep_back_3_u.png
+	
+	delay 6
+	
+	bbox.position.x 102
+	bbox.position.y 127
+	bbox.size.x 67
+	bbox.size.y 80
+	
+	frame	data/chars/galford/duck_start_1_u.png
+	
+	bbox.position.x 101
+	bbox.position.y 119
+	bbox.size.x 72
+	bbox.size.y 87
+	
+	frame	data/chars/galford/duck_start_0_u.png
+	
+anim freespecial7 # Plane step attack
+	
+	fastattack 1
+	range   35 130
+
+	delay	2
+	offset	140 207
+	
+	bbox.position.x 111
+	bbox.position.y 125
+	bbox.size.x 54
+	bbox.size.y 84
+		
+	frame	data/chars/galford/duck_start_0_u.png
+	frame	data/chars/galford/duck_start_1_u.png	
+	frame	data/chars/galford/duck_start_2_u.png
+	
+	delay 8
+	
+	@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_MEDIUM	
+	@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_SOUND_ATTACK_MEDIUM
+	
+	bbox.position.x 133
+	bbox.position.y 137
+	bbox.size.x 54
+	bbox.size.y 75
+	frame	data/chars/galford/atk_sweep_0_u.png
+	
+	bbox.position.x 142
+	bbox.position.y 135
+	bbox.size.x 67
+	bbox.size.y 74
+	
+	frame	data/chars/galford/atk_sweep_1_u.png
+
+	attack.damage.force 12
+	attack.effect.hit.flash.model flash_fatal_fury
+	attack.position.x 176
+	attack.position.y 173
+	attack.reaction.fall.force 1
+	attack.reaction.fall.velocity.x 1.2
+	attack.reaction.fall.velocity.y 3.0
+	attack.reaction.fall.velocity.z 0.0
+	attack.reaction.pause.time 15
+	attack.size.x 95
+	attack.size.y 19
+	
+	delay 10
+	
+	bbox.position.x 156
+	bbox.position.y 139
+	bbox.size.x 75
+	bbox.size.y 71
+	frame	data/chars/galford/atk_sweep_2_u.png
+	
+	delay 8
+	
+	attack 0
+	
+	frame	data/chars/galford/atk_sweep_3_u.png
+	frame	data/chars/galford/atk_sweep_4_u.png
+	
+	frame	data/chars/galford/duck_0_u.png
+	
+	delay 2
+	
+	frame	data/chars/galford/duck_start_2_u.png
+	frame	data/chars/galford/duck_start_1_u.png	
+	frame	data/chars/galford/duck_start_0_u.png
+
+	
+	
 	
