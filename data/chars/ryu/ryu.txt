@@ -30,7 +30,7 @@ bflash			Block
 
 load	ryu_hadouken
 
-com		a + j				freespecial2
+com		a + j				freespecial2    # Back attack
 com		d -> a				freespecial3	# Plane force Down
 com		u -> a				freespecial4	# Plane force Up
 com		d -> a + j			freespecial5	# Plane attack Down
