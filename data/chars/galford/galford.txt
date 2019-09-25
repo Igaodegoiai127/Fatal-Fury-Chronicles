@@ -1807,9 +1807,6 @@ anim rise
 	frame	data/chars/galford/duck_start_0.png
 
 
-
-
-
 anim grabbed
 
 	delay	3
@@ -1868,21 +1865,21 @@ anim fall # Normal Fall
 	
 	offset	140 207
 	
-	bbox.position.x 114
-	bbox.position.y 145
-	bbox.size.x 86
-	bbox.size.y 44
+	bbox.position.x 124
+	bbox.position.y 123
+	bbox.size.x 44
+	bbox.size.y 82
 	
 	attack.block.penetrate 0
 	attack.damage.force 10
 	attack.damage.type 1
 	attack.effect.hit.flash.disable 0
-	attack.position.x 113
-	attack.position.y 145
+	attack.position.x 124
+	attack.position.y 122
 	attack.reaction.fall.force 1
 	attack.reaction.pause.time 10
-	attack.size.x 87
-	attack.size.y 43
+	attack.size.x 44
+	attack.size.y 85
 	attack.size.z.1 0
 	
 	frame	data/chars/galford/R_FALLING_UP_LIFT_0.png

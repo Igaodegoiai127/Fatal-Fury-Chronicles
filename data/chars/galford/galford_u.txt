@@ -1185,6 +1185,163 @@ anim freespecial7 # Plane step attack
 	frame	data/chars/galford/duck_start_1_u.png	
 	frame	data/chars/galford/duck_start_0_u.png
 
+anim pain # Normal Pain
 	
+	delay	11
+	offset	140 207
+		
+	bbox.position.x 96
+	bbox.position.y 123
+	bbox.size.x 82
+	bbox.size.y 84
 	
+	frame	data/chars/galford/R_PAIN_1_u.png
 	
+	bbox.position.x 89
+	bbox.position.y 124
+	bbox.size.x 94
+	bbox.size.y 86
+	
+	frame	data/chars/galford/R_PAIN_2_u.png
+	
+	bbox.position.x 89
+	bbox.position.y 108
+	bbox.size.x 92
+	bbox.size.y 103
+	
+	frame	data/chars/galford/R_PAIN_1_u.png
+	
+	bbox.position.x 93
+	bbox.position.y 108
+	bbox.size.x 93
+	bbox.size.y 103
+	
+	frame	data/chars/galford/R_PAIN_0_u.png
+
+anim fall # Normal Fall
+	
+	dropframe 1
+	landframe 3
+	
+	delay	-1000
+	
+	offset	140 207
+	
+	bbox.position.x 122
+	bbox.position.y 123
+	bbox.size.x 50
+	bbox.size.y 86
+	
+	attack.block.penetrate 0
+	attack.damage.force 10
+	attack.damage.type 1
+	attack.effect.hit.flash.disable 0
+	attack.position.x 123
+	attack.position.y 124
+	attack.reaction.fall.force 1
+	attack.reaction.pause.time 10
+	attack.size.x 50
+	attack.size.y 85
+	attack.size.z.1 0
+	
+	frame	data/chars/galford/R_FALLING_UP_LIFT_0_u.png
+	
+	bbox.position.x 107
+	bbox.position.y 136
+	bbox.size.x 88
+	bbox.size.y 46
+	
+	attack.block.penetrate 0
+	attack.damage.force 10
+	attack.damage.type 1
+	attack.effect.hit.flash.disable 0
+	attack.position.x 107
+	attack.position.y 135
+	attack.reaction.fall.force 1
+	attack.reaction.pause.time 10
+	attack.size.x 88
+	attack.size.y 46
+	attack.size.z.1 0
+	
+	frame	data/chars/galford/R_FALLING_UP_CENTER_0_u.png
+	
+	delay 15
+	
+	bbox.position.x 104
+	bbox.position.y 124
+	bbox.size.x 78
+	bbox.size.y 57
+	
+	attack.block.penetrate 0
+	attack.damage.force 10
+	attack.damage.type 1
+	attack.effect.hit.flash.disable 0
+	attack.position.x 103
+	attack.position.y 137
+	attack.reaction.fall.force 1
+	attack.reaction.pause.time 10
+	attack.size.x 79
+	attack.size.y 43
+	attack.size.z.1 0
+	
+	frame	data/chars/galford/R_FALLING_UP_0_u.png	
+	
+	delay 8
+	
+	bbox.position.x 106
+	bbox.position.y 146
+	bbox.size.x 81
+	bbox.size.y 62
+		
+	attack.block.penetrate 0
+	attack.damage.force 0
+	attack.damage.type 1
+	attack.effect.hit.flash.disable 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.reaction.pause.time 0
+	attack.size.x 0
+	attack.size.y 0
+	attack.size.z.1 0
+	
+	bbox.position.x 106
+	bbox.position.y 146
+	bbox.size.x 81
+	bbox.size.y 62
+	
+	frame	data/chars/galford/R_LAYING_UP_PAIN_0_u.png
+	
+	bbox.position.x 102
+	bbox.position.y 183
+	bbox.size.x 114
+	bbox.size.y 27
+	
+	frame	data/chars/galford/R_LAYING_UP_0_u.png
+	
+	anim rise
+
+	jumpframe 3 1 0 0 hop_liftoff
+	landframe 9 jump_land
+
+	delay	8
+	offset	140 207
+	
+	frame	data/chars/galford/rise_0_u.png
+	frame	data/chars/galford/rise_1_u.png
+	frame	data/chars/galford/rise_2_u.png
+	frame	data/chars/galford/rise_3_u.png
+	frame	data/chars/galford/jump_2_u.png
+	frame	data/chars/galford/jump_3_u.png
+	frame	data/chars/galford/jump_4_u.png
+	frame	data/chars/galford/jump_5_u.png
+	
+	delay -1000
+	
+	frame	data/chars/galford/jump_6_u.png
+	
+	delay 5
+	
+	frame	data/chars/galford/jump_land_0_u.png
+	frame	data/chars/galford/jump_land_1_u.png
+	frame	data/chars/galford/duck_start_0_u.png
