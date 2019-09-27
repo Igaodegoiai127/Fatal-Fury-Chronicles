@@ -51,11 +51,12 @@ load	galford_armed
 load	Poppy
 load	galford_smoke_bomb
 load	galford_motion
+load	Justice_Sword
 
 # In game, we want Galford to start armed, but it's a lot simpler to configure 
 # ability to pick up lost weapon and such by making the armed state a weapon model 
 # and switching to it on spawn.
-weapons galford_armed Galford
+weapons galford_armed
 
 #*****Alternates*******
 

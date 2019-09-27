@@ -28,8 +28,13 @@ mpset 			100 3 50 1 2 2
 jumpheight		4
 bflash			Block
 
-# Can't be rearmed by getting hit, lol
-weaploss		2
+
+
+# In game, we want Galford to start armed, but it's a lot simpler to configure 
+# ability to pick up lost weapon and such by making the armed state a weapon model 
+# and switching to it on spawn.
+weapons		galford_armed
+weaploss	1
 
 palette	       data/chars/galford/og_navy.act
 alternatepal   data/chars/galford/og_navy_mask.act

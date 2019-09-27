@@ -1,0 +1,47 @@
+# Galford's primary weapon.
+
+#*****icons*****
+
+icon	data/chars/galford/weapon/icon_default.png 					
+	
+#*****General*****
+
+name	    Justice_Sword
+nolife		1
+type		item
+subtype 	weapon
+counter 	3
+typeshot 	1
+weapnum 	1
+gfxshadow 	1
+
+
+palette data/chars/galford/og_navy.ACT
+
+anim spawn
+
+	jumpframe 0 5 0.2 0
+	landframe 1 jump_land
+	
+
+	offset 140 207
+
+	delay -1000
+
+	frame data/chars/galford/weapon/idle_0.png
+	
+	delay 1	
+
+	frame data/chars/galford/weapon/idle_0.png
+
+anim idle
+
+	offset 140 207
+
+	delay -1000
+
+	bbox.position.x 104
+	bbox.position.y 201
+	bbox.size.x 70
+	bbox.size.y 10
+	frame data/chars/galford/weapon/idle_0.png

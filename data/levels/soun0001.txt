@@ -214,6 +214,10 @@ itemmap		12
 coords		700 230
 at		0
 
+spawn	Justice_Sword
+coords	200 230
+at	0
+
 spawn	musi0001
 Alias   Estrada
 coords	465 210
