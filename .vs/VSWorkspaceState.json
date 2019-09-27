@@ -2,10 +2,12 @@
   "ExpandedNodes": [
     "",
     "\\data",
-    "\\data\\chars\\andy",
-    "\\data\\scripts",
-    "\\data\\scripts\\com"
+    "\\data\\chars",
+    "\\data\\chars\\galford",
+    "\\data\\chars\\misc",
+    "\\data\\chars\\misc\\blood_cut",
+    "\\data\\chars\\misc\\flash"
   ],
-  "SelectedNode": "\\data\\scripts\\com\\bind0008.h",
+  "SelectedNode": "\\data\\chars\\galford\\galford.txt",
   "PreviewInSolutionExplorer": true
 }

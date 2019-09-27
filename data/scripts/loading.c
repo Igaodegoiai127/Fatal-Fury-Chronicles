@@ -51,6 +51,7 @@ void oncreate()
 	dc_fidelity_setup("Flash", DC_FIDELITY_TYPE_SOUND_SPAWN, "data/sounds/custom/double_dragon_2_hit_0.wav");
 	dc_fidelity_setup("flash_fatal_fury", DC_FIDELITY_TYPE_SOUND_SPAWN, "data/sounds/custom/fatal_fury_1_hit.wav");
 	dc_fidelity_setup("flash_indirect", DC_FIDELITY_TYPE_SOUND_SPAWN, "data/sounds/custom/sor1_hit_0.wav");
+	dc_fidelity_setup("flash_cvs_cut_heavy", DC_FIDELITY_TYPE_SOUND_SPAWN, "data/sounds/custom/mvc_slash_0.wav");
 
 	
 

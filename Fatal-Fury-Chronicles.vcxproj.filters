@@ -591,6 +591,12 @@
     <ClCompile Include="data\scripts\dc_elmers\size.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="data\chars\misc\cvs_cut_flash_heavy\scripts\animation.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="data\scripts\dc_gauntlet\autokill.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="data\scripts\com\bind0003.h">
@@ -11557,6 +11563,1674 @@
     <Image Include="data\chars\poppy\idle_1.png">
       <Filter>Resource Files</Filter>
     </Image>
+    <Image Include="data\chars\poppy\somersault_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\poppy\somersault_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\poppy\somersault_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\poppy\somersault_3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\poppy\turn_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\poppy\turn_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\poppy\turn_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\poppy\turn_3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\poppy\walk_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\poppy\walk_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\poppy\walk_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\poppy\walk_3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\poppy\walk_4.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\poppy\walk_5.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\poppy\walk_6.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\poppy\walk_7.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\poppy\walk_back_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\poppy\walk_back_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\poppy\walk_back_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\poppy\walk_back_3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\poppy\walk_back_4.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\poppy\walk_back_5.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\poppy\walk_back_6.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\poppy\walk_back_7.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\poppy\jump_start_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\poppy\jump_start_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_c_cut_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_c_cut_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_cross_cut_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_cross_cut_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_cross_cut_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_cross_cut_3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_cross_cut_4.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_cross_cut_5.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_cross_cut_6.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_cross_cut_7.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_cross_cut_back_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_cross_cut_back_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_cross_cut_back_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_cross_cut_back_3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_j_spin_kick_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_j_spin_kick_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_j_spin_kick_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_j_spin_kick_3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_j_spin_kick_4.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_j_spin_kick_5.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_jump_side_kick_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_jump_side_kick_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_justice_slash_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_justice_slash_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_justice_slash_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_justice_slash_3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_justice_slash_4.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_justice_slash_5.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_justice_slash_6.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_justice_slash_7.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_palm_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_palm_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_palm_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_palm_3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_round_kick_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_round_kick_0_u.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_round_kick_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_round_kick_1_u.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_round_kick_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_round_kick_2_u.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_round_kick_3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_round_kick_3_u.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_round_kick_4.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_round_kick_4_u.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_side_kick_high_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_side_kick_high_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_side_kick_high_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_side_kick_high_3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_side_kick_high_4.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_straight_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_straight_0_u.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_v-cut_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_v-cut_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_v-cut_1_motion.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_v-cut_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_v-cut_2_motion.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_v-cut_3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_v-cut_3_motion.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_v-cut_4.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_v-cut_5.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_v-cut_6.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_v-cut_back_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_v-cut_back_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_v-cut_back_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_v-cut_back_2_motion.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_v-cut_back_3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_v-cut_back_3_motion.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_v-cut_back_4.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_v-cut_back_4_motion.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_v-cut_back_5.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_v-cut_back_6.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_v-cut_back_7.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\base.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\block_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\block_impact_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\block_impact_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\block_start_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\dash_back_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\dash_back_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\dash_back_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\dash_back_3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\dash_back_4.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\grab_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\icon_default.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\icon_ko.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\icon_pain.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\idle_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\idle_0_u.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\idle_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\idle_1_u.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\idle_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\idle_2_u.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\idle_3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\idle_3_u.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\idle_4.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\idle_4_u.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\idle_5.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\idle_5_u.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\idle_6.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\idle_7.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\idle_8.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\idle_9.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\idle_10.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\jump_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\jump_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\jump_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\jump_3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\jump_4.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\jump_5.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\jump_6.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\jump_forward_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\jump_forward_0_u.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\jump_forward_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\jump_forward_1_u.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\jump_forward_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\jump_forward_2_u.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\jump_forward_3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\jump_forward_3_u.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\jump_forward_4.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\jump_forward_4_u.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\jump_forward_5.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\jump_forward_5_u.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\jump_forward_6.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\jump_forward_6_u.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\jump_land_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\jump_land_0_u.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\jump_land_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\jump_land_1_u.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\jump_land_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\jump_land_2_u.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\jump_run_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\jump_run_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\jump_run_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\jump_run_3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\jump_run_4.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\jump_run_5.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\jump_run_6.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\jump_run_7.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\jump_start_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\jump_start_0_u.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\run_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\run_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\run_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\run_3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\sheet.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\walk_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\walk_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\walk_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\walk_3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\walk_4.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\walk_5.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\walk_6.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\walk_7.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\walk_8.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\walk_9.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_cross_cut_back_1_motion.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_cross_cut_3_motion.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_cross_cut_4_motion.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_cross_cut_back_2_motion.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_cross_cut_back_4.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_j_spin_kick_0_u.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_j_spin_kick_1_u.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_j_spin_kick_2_u.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_j_spin_kick_3_u.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_j_spin_kick_4_u.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_j_spin_kick_5_u.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_jump_side_kick_0_u.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_jump_side_kick_1_u.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_palm_0_u.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_palm_1_u.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_palm_2_u.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_palm_3_u.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_side_kick_high_0_u.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_side_kick_high_1_u.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_side_kick_high_2_u.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_side_kick_high_3_u.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_side_kick_high_4_u.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\block_0_u.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\block_impact_0_u.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\block_impact_1_u.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\block_start_0_u.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\dash_back_0_u.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\dash_back_1_u.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\dash_back_2_u.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\dash_back_3_u.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\dash_back_4_u.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\grab_0_u.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\idle_6_u.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\idle_7_u.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\idle_8_u.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\idle_9_u.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\idle_10_u.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\jump_0_u.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\jump_1_u.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\jump_2_u.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\jump_3_u.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\jump_4_u.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\jump_5_u.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\jump_6_u.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\run_0_u.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\run_1_u.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\run_2_u.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\run_3_u.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\walk_0_u.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\walk_1_u.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\walk_2_u.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\walk_3_u.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\walk_4_u.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\walk_5_u.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\walk_6_u.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\walk_7_u.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\walk_8_u.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\walk_9_u.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_backhand_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_backhand_0_u.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_backhand_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_backhand_1_u.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_backhand_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_backhand_2_u.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_backhand_3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_backhand_3_u.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_jump_v_cut_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_jump_v_cut_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_jump_v_cut_1_motion.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_jump_v_cut_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_jump_v_cut_2_motion.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_jump_v_cut_3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_justice_slash_2_motion.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_justice_slash_3_motion.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_justice_slash_4_motion.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_justice_slash_5_motion.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\dash_down_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\dash_down_0_u.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\dash_up_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\dash_up_0_u.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\cvs_cut_flash_heavy\idle_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\cvs_cut_flash_heavy\idle_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\cvs_cut_flash_heavy\idle_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\cvs_cut_flash_heavy\idle_3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\cvs_cut_flash_heavy\idle_4.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\cvs_cut_flash_heavy\idle_5.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\cvs_cut_flash_heavy\idle_6.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\cvs_cut_flash_heavy\idle_7.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\cvs_cut_flash_heavy\idle_8.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\cvs_cut_flash_heavy\idle_9.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\cvs_cut_flash_heavy\idle_10.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\misc\cvs_cut_flash_heavy\idle_11.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_c_cut_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_c_cut_3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_c_cut_4.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_c_cut_5.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_c_cut_6.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_c_cut_7.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_c_cut_8.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_elbow_jab_0_u.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_elbow_jab_1_u.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_elbow_jab_2_u.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_elbow_jab_3_u.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_elbow_jab_4_u.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_elbow_jab_5_u.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_elbow_jab_backhand_0_u.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_elbow_jab_backhand_1_u.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_elbow_jab_backhand_2_u.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_palm_4_u.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_palm_5_u.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_palm_6_u.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_palm_7_u.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_palm_hook_0_u.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_palm_hook_1_u.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_palm_hook_2_u.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_palm_hook_3_u.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_palm_hook_4_u.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_palm_hook_5_u.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_palm_hook_6_u.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_palm_hook_7_u.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_palm_straight_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_palm_straight_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_palm_straight_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_palm_straight_3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_palm_straight_4.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_straight_short_0_u.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_straight_short_1_u.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_straight_short_2_u.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_straight_short_3_u.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_c_cut_2_motion.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_c_cut_3_motion.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_c_cut_4_motion.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_c_cut_9.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_c_cut_10.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_back_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_back_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_back_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_back_3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_back_4.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_back_5.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_back_6.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_back_1_motion.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_back_2_motion.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_justice_slash_8.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_v-cut_7.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\strike_heads_catch_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\pal_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\pal_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\pal_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\pal_3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_spin_kick_low_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_spin_kick_low_0_u.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_spin_kick_low_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_spin_kick_low_1_u.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_spin_kick_low_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_spin_kick_low_2_u.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_spin_kick_low_3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_spin_kick_low_3_u.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_backhand_swing_0_u.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_backhand_swing_1_u.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_backhand_swing_2_u.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_backhand_swing_3_u.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_backhand_swing_4_u.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_backhand_swing_5_u.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_backhand_swing_6_u.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_backhand_swing_7_u.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_backhand_swing_8_u.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_backhand_swing_9_u.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_sweep_0_u.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_sweep_1_u.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_sweep_2_u.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_sweep_3_u.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\atk_sweep_4_u.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\duck_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\duck_0_u.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\duck_start_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\duck_start_0_u.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\duck_start_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\duck_start_1_u.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\duck_start_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\duck_start_2_u.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ray\idle_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ray\idle_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ray\idle_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ray\idle_3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ray\jump_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ray\jump_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ray\jump_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ray\jump_3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ray\jump_land_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ray\jump_land_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ray\block_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ray\block_start_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ray\duck_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ray\icon_default.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ray\R_TILT_FORWARD_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ray\rise_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ray\rise_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ray\rise_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ray\rise_3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ray\turn_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ray\turn_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ray\turn_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ray\walk_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ray\walk_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ray\walk_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ray\walk_3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ray\walk_4.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ray\walk_5.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ray\walk_back_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ray\walk_back_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ray\walk_back_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ray\walk_back_3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ray\walk_back_4.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ray\walk_back_5.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\sprites\font4.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\sprites\font6.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\84_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\84_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\84_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\84_3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\84_4.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\84_5.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\84_6.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\84_7.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\84_8.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\attack_back_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\attack_back_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\attack_back_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\attack_back_3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\attack_back_4.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\attack_back_5.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\block_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\block_start_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\charge_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\charge_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\charge_start_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\charge_start_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\dash_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\dash_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\dash_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\dash_3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\dash_back_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\dash_back_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\dash_back_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\dash_back_3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\duck_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\duck_start_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\duck_start_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\get_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\get_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\get_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\get_3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\grab_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\grab_switch_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\grab_switch_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\grab_switch_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\grab_switch_3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\grab_switch_4.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\grab_switch_5.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\grab_switch_6.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\hadouken_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\hadouken_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\hadouken_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\hadouken_3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\hadouken_4.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\hadouken_5.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\hadouken_6.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\hadouken_7.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\hadouken_8.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\hadouken_9.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\hadouken_10.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\hadouken_11.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\idle_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\idle_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\idle_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\idle_3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\idle_4.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\idle_5.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\idle_6.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\jump_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\jump_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\jump_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\jump_3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\jump_4.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\jump_5.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\jump_6.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\jump_7.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\jump_8.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\jump_forward_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\jump_forward_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\jump_forward_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\jump_forward_3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\jump_forward_4.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\jump_forward_5.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\jump_forward_6.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\jump_forward_7.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\walk_back_7.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\shoryuken_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\shoryuken_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\shoryuken_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\shoryuken_3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\shoryuken_4.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\shoryuken_5.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\shoryuken_6.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\shoryuken_7.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\shoryuken_8.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\shoryuken_9.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\shoryuken_10.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\tatsu_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\tatsu_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\tatsu_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\tatsu_3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\tatsu_4.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\tatsu_5.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\tatsu_6.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\tatsu_7.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\tatsu_8.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\tatsu_9.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\tatsu_10.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\tatsu_11.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\tatsu_12.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\tatsu_13.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\tatsu_14.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\tatsu_15.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\tatsu_16.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\turn_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\turn_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\walk_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\walk_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\walk_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\walk_3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\walk_4.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\walk_5.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\walk_6.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\walk_7.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\walk_back_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\walk_back_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\walk_back_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\walk_back_3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\walk_back_4.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\walk_back_5.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\walk_back_6.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\rise_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\rise_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\rise_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\rise_3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\rise_4.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\run_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\run_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\run_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\run_3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\run_4.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\run_5.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\R_TILT_FORWARD_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\50_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\50_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\50_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\50_3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\50_4.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\50_5.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\50_6.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\50_7.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\ryu\50_8.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\smoke_bomb\idle_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\smoke_bomb\idle_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\smoke_bomb\idle_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\smoke_bomb\idle_3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\smoke_bomb\idle_4.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\smoke_bomb\idle_5.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\smoke_bomb\idle_6.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\smoke_bomb\idle_7.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\smoke_bomb\idle_8.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\smoke_bomb\idle_9.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\smoke_bomb\idle_10.png">
+      <Filter>Resource Files</Filter>
+    </Image>
   </ItemGroup>
   <ItemGroup>
     <Text Include="data\levels.txt" />
@@ -11631,8 +13305,13 @@
     <Text Include="data\chars\misc\cvs_block_flash\block.txt" />
     <Text Include="data\chars\ryu\hadouken\ryu_hadouken.txt" />
     <Text Include="data\chars\misc\control\control.txt" />
-    <Text Include="data\chars\galford\galford_trail.txt" />
     <Text Include="data\chars\poppy\poppy.txt" />
+    <Text Include="data\chars\galford\galford-trails.txt" />
+    <Text Include="data\chars\galford\galford_motion.txt" />
+    <Text Include="data\chars\galford\galford_u.txt" />
+    <Text Include="data\chars\misc\flash\flash_indirect.txt" />
+    <Text Include="data\chars\misc\cvs_cut_flash_heavy\cvs_cut_flash_heavy.txt" />
+    <Text Include="data\chars\galford\smoke_bomb\smoke_bomb.txt" />
   </ItemGroup>
   <ItemGroup>
     <None Include="data\chars\andy\wild-ambition-front-throw.psd" />
@@ -11696,6 +13375,34 @@
     <None Include="..\..\..\..\DCCURR~1\AppData\Local\Temp\Rar$DRa22840.10828\openbor-script-grapple-29da632d51bbc75ae7e51ca2029e9e56092813a2\README.md" />
     <None Include="data\scripts\dc_elmers\README.md" />
     <None Include="data\chars\poppy\base_cs.act" />
+    <None Include="data\chars\poppy\working.psd" />
+    <None Include="data\chars\poppy\default.ACT" />
+    <None Include="data\chars\galford\2019_default.ACT" />
+    <None Include="data\chars\galford\base.act" />
+    <None Include="data\chars\galford\base_cs.ACT" />
+    <None Include="data\chars\galford\motion_0.act" />
+    <None Include="data\chars\galford\og_navy.ACT" />
+    <None Include="data\chars\galford\og_navy_mask.ACT" />
+    <None Include="data\chars\galford\select_0_sp.psd" />
+    <None Include="data\chars\galford\sheet.psd" />
+    <None Include="data\chars\galford\sheet_1.psd" />
+    <None Include="data\chars\galford\working_cs.psd" />
+    <None Include="data\chars\misc\cvs_cut_flash_heavy\default.act" />
+    <None Include="data\chars\ray\adam_hunter.act" />
+    <None Include="data\chars\ray\default.ACT" />
+    <None Include="data\chars\ray\default_no_bolt.ACT" />
+    <None Include="data\music\boss.bor" />
+    <None Include="data\music\boss2.bor" />
+    <None Include="data\music\complete.bor" />
+    <None Include="data\music\end.bor" />
+    <None Include="data\music\gameover.bor" />
+    <None Include="data\music\intro.bor" />
+    <None Include="data\music\menu.bor" />
+    <None Include="data\music\ooo.bor" />
+    <None Include="data\music\pre.bor" />
+    <None Include="data\music\remix.bor" />
+    <None Include="data\music\sound_beach_ff1.ogg" />
+    <None Include="data\chars\galford\smoke_bomb\default.act" />
   </ItemGroup>
   <ItemGroup>
     <Media Include="data\chars\galford\sounds\voice-atk-0.wav">
@@ -11813,6 +13520,162 @@
       <Filter>Resource Files</Filter>
     </Media>
     <Media Include="data\sounds\custom\unknown_fall_land.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="data\music\boss.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="data\music\boss2.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="data\sounds\custom\avp_soldier_ko_0.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="data\sounds\custom\avp_soldier_ko_1.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="data\sounds\custom\fatal_fury_rebout_ko.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="data\sounds\custom\fighters_history_2_ray_ko.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="data\sounds\custom\mortal_kombat_pain_0.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="data\sounds\custom\mvc_slash_0.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="data\sounds\custom\ninja_spirit_ko.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="data\sounds\custom\punisher_ko_0.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="data\sounds\custom\punisher_ko_1.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="data\sounds\custom\punisher_ko_2.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="data\sounds\custom\sor1_hit_0.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="data\sounds\custom\sor2_ko_0.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="data\sounds\custom\sor2_ko_1.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="data\sounds\custom\sor3_ko.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="data\sounds\custom\unknown_ko.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="data\chars\ryu\hadouken\ryu_se_hadou_01.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="data\chars\ryu\sounds\ABD_CV_E_00000000_01.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="data\chars\ryu\sounds\ABD_CV_E_0000000B_01.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="data\chars\ryu\sounds\ABD_CV_E_0000000E_01.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="data\chars\ryu\sounds\ABD_CV_E_00000010_01.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="data\chars\ryu\sounds\ABD_CV_E_00000030_01.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="data\chars\ryu\sounds\ABD_CV_E_00000031_01.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="data\chars\ryu\sounds\ABD_CV_E_00000032_01.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="data\chars\ryu\sounds\ABD_CV_E_00000033_01.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="data\chars\ryu\sounds\ABD_CV_E_00000034_01.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="data\chars\ryu\sounds\ABD_CV_E_00000035_01.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="data\chars\ryu\sounds\ABD_CV_E_00000036_01.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="data\chars\ryu\sounds\ABD_CV_E_00000037_01.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="data\chars\ryu\sounds\ABD_CV_E_00000038_01.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="data\chars\ryu\sounds\ABD_CV_E_00000039_01.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="data\chars\ryu\sounds\ryu_001e_01.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="data\chars\ryu\sounds\ryu_002e_01.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="data\chars\ryu\sounds\ryu_003e_01.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="data\chars\ryu\sounds\ryu_004e_01.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="data\chars\ryu\sounds\ryu_005e_01.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="data\chars\ryu\sounds\ryu_006e_01.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="data\chars\ryu\sounds\ryu_007e_01.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="data\chars\ryu\sounds\ryu_008e_01.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="data\chars\ryu\sounds\ryu_009e_01.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="data\chars\ryu\sounds\ryu_038e_01.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="data\chars\ryu\sounds\ryu_044e_01.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="data\chars\ryu\sounds\ryu_045e_01.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="data\chars\ryu\sounds\ryu_049e_01.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="data\chars\ryu\sounds\ryu_051e_01.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="data\chars\ryu\sounds\ryu_052e_01.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="data\chars\ryu\sounds\ryu_053e_01.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="data\chars\ryu\sounds\ryu_054e_01.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="data\chars\ryu\sounds\ryu_116e_01.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="data\chars\ryu\sounds\ryu_117e_01.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="data\chars\ryu\sounds\voice-hadouken-0c.wav">
       <Filter>Resource Files</Filter>
     </Media>
   </ItemGroup>

@@ -24,6 +24,7 @@ atchain			1 1 2 0 3
 nopassiveblock	1
 holdblock		2
 blockodds		1
+#blockodds		2147483647
 bflash			Block
 
 onspawnscript		data/chars/ray/scripts/onspawn.c

@@ -84,7 +84,7 @@ know	raid0001			data/chars/raiden/raiden.txt
 know 	Poppy				data/chars/poppy/poppy.txt
 know 	galford_smoke_bomb	data/chars/galford/smoke_bomb/smoke_bomb.txt
 know 	galford_motion		data/chars/galford/galford_motion.txt
-know 	galford_unarmed		data/chars/galford/galford_u.txt
+know 	galford_armed		data/chars/galford/galford_armed.txt
 load 	Galford				data/chars/galford/galford.txt
 know	ryu_hadouken		data/chars/ryu/hadouken/ryu_hadouken.txt
 load 	Ryu					data/chars/ryu/ryu.txt

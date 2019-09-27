@@ -1,6 +1,8 @@
 #include "data/scripts/dc_gauntlet/config.h"
 
 #import "data/scripts/dc_gauntlet/instance.c"
+
+#import "data/scripts/dc_gauntlet/autokill.c"
 #import "data/scripts/dc_gauntlet/direction.c"
 #import "data/scripts/dc_gauntlet/entity.c"
 #import "data/scripts/dc_gauntlet/functions.c"
