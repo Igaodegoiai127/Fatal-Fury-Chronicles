@@ -74,6 +74,8 @@ anim freespecial6
 	frame	data/chars/galford/duck_start_1.png
 	frame	data/chars/galford/duck_start_1.png
 	
+
+
 anim idle
 
 	loop 	1
@@ -82,22 +84,25 @@ anim idle
 		offset	140 207
 		bbox	130 120 45 90
 		
+
 	frame	data/chars/galford/idle_6.png
+
+
 	frame	data/chars/galford/idle_7.png
 	frame	data/chars/galford/idle_8.png
+
 	frame	data/chars/galford/idle_9.png
 	frame	data/chars/galford/idle_10.png
+
 	frame	data/chars/galford/idle_0.png
 	frame	data/chars/galford/idle_1.png
+
 	frame	data/chars/galford/idle_2.png
 	frame	data/chars/galford/idle_3.png
+
 	frame	data/chars/galford/idle_4.png
 	frame	data/chars/galford/idle_5.png
 	
-
-#anim sleep
-
-#anim faint
 
 anim walk
 
@@ -1432,7 +1437,7 @@ anim jumpattack # Jump Heavy Cut
 	frame	data/chars/galford/atk_jump_heavy_cut_1.png
 	
 	@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_HEAVY
-	@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_SOUND_ATTACK_HEAVY
+	@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_SOUND_ATTACK_HEAVY_BLADE
 	
 	@cmd dc_elmers_quick_motion dc_gauntlet_quick_spawn("galford_motion")
 	
@@ -1492,7 +1497,7 @@ anim jumpattack2 #Jump V Cut
 		bbox.size.y 62
 			
 	@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_MEDIUM
-	@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_SOUND_ATTACK_MEDIUM
+	@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_SOUND_ATTACK_HEAVY_BLADE
 	
 	frame	data/chars/galford/atk_jump_v_cut_0.png
 	
@@ -2216,53 +2221,74 @@ anim follow82 # Down Attack
 
 	delay	8
 	offset	140 207
-	bbox.position.x 126
-	bbox.position.y 112
-	bbox.size.x 41
-	bbox.size.y 94
+	bbox.position.x 125
+	bbox.position.y 111
+	bbox.size.x 47
+	bbox.size.y 95
 		
-		@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_MEDIUM
-		@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_SOUND_ATTACK_MEDIUM
+		
 
-	frame	data/chars/galford/atk_spin_kick_low_0.png
-	bbox.position.x 155
-	bbox.position.y 115
-	bbox.size.x 44
-	bbox.size.y 94
-	frame	data/chars/galford/atk_spin_kick_low_1.png
+	frame	data/chars/galford/atk_cross_cut_0.png
 	
-	delay	12
+	@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_MEDIUM
+	@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_SOUND_ATTACK_MEDIUM_BLADE
+
+	frame	data/chars/galford/atk_downward_chop_cut_0.png
+
+	bbox.position.x 122
+	bbox.position.y 140
+	bbox.size.x 53
+	bbox.size.y 69
+
+	frame	data/chars/galford/atk_downward_chop_cut_1.png
+	
+	delay	6
 
 	attack.block.penetrate 0
-	attack.damage.force 15
-	attack.damage.type 1
+	attack.damage.force 25
+	attack.damage.type 2
 	attack.effect.hit.flash.disable 0
-	attack.effect.hit.flash.model flash_fatal_fury
-	attack.position.x 169
-	attack.position.y 182
+	attack.effect.hit.flash.model flash_cvs_cut_heavy
+	attack.position.x 160
+	attack.position.y 205
 	attack.reaction.fall.force 1
 	attack.reaction.pause.time 12
-	attack.size.x 91
-	attack.size.y 21
+	attack.size.x 100
+	attack.size.y 5
 	attack.size.z.1 0
 	attack.ground.mode 2
+	attack.staydown.rise.time -200
 	
-	bbox.position.x 160
-	bbox.position.y 124
-	bbox.size.x 45
-	bbox.size.y 85
-	frame	data/chars/galford/atk_spin_kick_low_2.png
+	bbox.position.x 127
+	bbox.position.y 149
+	bbox.size.x 64
+	bbox.size.y 58
 	
-	delay 8
+	frame	data/chars/galford/atk_downward_chop_cut_2.png
 	
 	attack 0
-
-	bbox.position.x 141
-	bbox.position.y 116
-	bbox.size.x 50
-	bbox.size.y 93
-	frame	data/chars/galford/atk_spin_kick_low_3.png
-
-	delay 12
 	
-	frame	data/chars/galford/atk_j_spin_kick_0.png
+	frame	data/chars/galford/atk_downward_chop_cut_3.png
+	frame	data/chars/galford/atk_downward_chop_cut_4.png
+	
+	
+	bbox.position.x 122
+	bbox.position.y 143
+	bbox.size.x 53
+	bbox.size.y 64
+	
+	frame	data/chars/galford/atk_downward_chop_cut_5.png
+	
+	bbox.position.x 117
+	bbox.position.y 117
+	bbox.size.x 52
+	bbox.size.y 89
+	
+	frame	data/chars/galford/atk_downward_chop_cut_6.png
+	
+	bbox.position.x 121
+	bbox.position.y 114
+	bbox.size.x 55
+	bbox.size.y 92
+	
+	frame	data/chars/galford/atk_cross_cut_0.png

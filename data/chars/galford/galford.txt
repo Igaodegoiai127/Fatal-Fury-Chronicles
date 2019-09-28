@@ -1211,6 +1211,7 @@ anim follow82 # Down Attack
 	attack.size.y 21
 	attack.size.z.1 0
 	attack.ground.mode 2
+	attack.staydown.rise.time -200
 	
 	bbox.position.x 160
 	bbox.position.y 124
