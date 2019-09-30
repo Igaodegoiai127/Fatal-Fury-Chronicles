@@ -78,13 +78,15 @@ com	d f s     	freespecial6		# Weapon switch (for testing).
 
 anim freespecial6
 
-	weaponframe 1 1 
+	#weaponframe 0 1 
 	
 	delay	30
 	offset	140 207
 	bbox	130 120 45 90
 	
 	frame	data/chars/galford/duck_start_1_u.png
+	@cmd weapon_spawn()
+
 	frame	data/chars/galford/duck_start_1_u.png
 
 anim spawn		
@@ -607,7 +609,7 @@ anim attack6 # Palm hook.
 
 	range 50 83
 
-		delay	5
+		delay	3
 		offset	140 207
 		
 	bbox.position.x 122
@@ -631,6 +633,9 @@ anim attack6 # Palm hook.
 	@cmd	dc_fidelity_quick_play DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_MEDIUM
 	
 	frame	data/chars/galford/atk_palm_hook_2_u.png
+	
+	delay 6
+	
 	frame	data/chars/galford/atk_palm_hook_3_u.png
 	
 	attack.damage.force 15
@@ -651,7 +656,7 @@ anim attack6 # Palm hook.
 	
 	frame	data/chars/galford/atk_palm_hook_5_u.png
 	
-	delay 6
+	delay 8
 	
 	frame	data/chars/galford/atk_palm_hook_6_u.png
 	frame	data/chars/galford/atk_palm_hook_7_u.png	

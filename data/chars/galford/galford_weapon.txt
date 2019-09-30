@@ -18,21 +18,23 @@ gfxshadow 	1
 
 palette data/chars/galford/og_navy.ACT
 
-anim spawn
+didhitscript data/chars/galford/weapon_didhit.c
 
-	jumpframe 0 5 0.2 0
-	landframe 1 jump_land
+#anim spawn
+
+#	jumpframe 0 5 0.2 0
+#	landframe 1 jump_land
 	
 
-	offset 140 207
+#	offset 140 207
 
-	delay -1000
+#	delay -1000
 
-	frame data/chars/galford/weapon/idle_0.png
+#	frame data/chars/galford/weapon/idle_0.png
 	
-	delay 1	
+#	delay 1	
 
-	frame data/chars/galford/weapon/idle_0.png
+#	frame data/chars/galford/weapon/idle_0.png
 
 anim idle
 
@@ -40,8 +42,8 @@ anim idle
 
 	delay -1000
 
-	bbox.position.x 104
-	bbox.position.y 201
-	bbox.size.x 70
-	bbox.size.y 10
+	bbox.position.x 136
+	bbox.position.y 148
+	bbox.size.x 10
+	bbox.size.y 62
 	frame data/chars/galford/weapon/idle_0.png
