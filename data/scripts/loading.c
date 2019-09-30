@@ -68,7 +68,9 @@ void oncreate()
 
 	dc_fidelity_setup("Galford_Weller", DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_MEDIUM, "data/chars/galford/sounds/voice-atk-0.wav");
 	dc_fidelity_setup("Galford_Weller", DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_MEDIUM, "data/chars/galford/sounds/voice-atk-1.wav");
-	dc_fidelity_setup("Galford_Weller", DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_MEDIUM, "data/chars/galford/sounds/voice-atk-2.wav");	
+	dc_fidelity_setup("Galford_Weller", DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_MEDIUM, "data/chars/galford/sounds/voice-atk-2.wav");
+
+	dc_fidelity_setup("Galford_Weller", "sheath_sword", "data/chars/galford/sounds/sound_sheath_sword.wav");
 
 	//  Ray
 	dc_fidelity_setup("Ray", DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_LIGHT, "data/chars/ray/sounds/spi_001e_01.wav");
