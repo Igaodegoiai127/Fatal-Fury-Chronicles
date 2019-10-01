@@ -19,22 +19,39 @@ gfxshadow 	1
 palette data/chars/galford/og_navy.ACT
 
 didhitscript data/chars/galford/weapon_didhit.c
+animationscript data/scripts/dc_fidelity/main.c
 
-#anim spawn
+anim spawn
 
-#	jumpframe 0 5 0.2 0
-#	landframe 1 jump_land
+	jumpframe 0 5.5 1 0
+	landframe 10 jump_land
+
+	loop 1 1 9	
+
+	offset 140 207
+
+	delay 1
+
+	# set_entity_property getlocalvar("self") "autokill" 1
+	frame data/chars/galford/weapon/spin_0.png
+
+	delay 3
+
+	frame data/chars/galford/weapon/spin_0.png
+	@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_SOUND_ATTACK_LIGHT
+	frame data/chars/galford/weapon/spin_1.png
+	frame data/chars/galford/weapon/spin_2.png
+	frame data/chars/galford/weapon/spin_3.png
+	frame data/chars/galford/weapon/spin_4.png
+	@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_SOUND_ATTACK_LIGHT
+	frame data/chars/galford/weapon/spin_5.png
+	frame data/chars/galford/weapon/spin_6.png
+	frame data/chars/galford/weapon/spin_7.png
+	frame data/chars/galford/weapon/spin_7.png
 	
+	delay 1	
 
-#	offset 140 207
-
-#	delay -1000
-
-#	frame data/chars/galford/weapon/idle_0.png
-	
-#	delay 1	
-
-#	frame data/chars/galford/weapon/idle_0.png
+	frame data/chars/galford/weapon/idle_0.png
 
 anim idle
 

@@ -53,7 +53,7 @@ script				data/chars/andy/scripts/update.c
 keyscript 			data/chars/andy/scripts/key.c
 animationscript 	data/chars/galford/scripts/animation.c
 didblockscript  	data/scripts/common/event_block.c
-takedamagescript	data/chars/andy/scripts/dama0001.c
+takedamagescript	data/chars/galford/scripts/takedamage.c
 didhitscript		data/scripts/common/event_hit.c
 onmovezscript		data/scripts/common/event_move_z.c
 onspawnscript		data/chars/galford/scripts/onspawn.c

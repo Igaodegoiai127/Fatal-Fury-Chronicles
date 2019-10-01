@@ -597,6 +597,9 @@
     <ClCompile Include="data\scripts\dc_gauntlet\autokill.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="data\chars\galford\weapon_didhit.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="data\scripts\com\bind0003.h">
@@ -13229,6 +13232,36 @@
       <Filter>Resource Files</Filter>
     </Image>
     <Image Include="data\chars\galford\smoke_bomb\idle_10.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\weapon\icon_default.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\weapon\idle_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\weapon\spin_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\weapon\spin_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\weapon\spin_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\weapon\spin_3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\weapon\spin_4.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\weapon\spin_5.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\weapon\spin_6.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\chars\galford\weapon\spin_7.png">
       <Filter>Resource Files</Filter>
     </Image>
   </ItemGroup>

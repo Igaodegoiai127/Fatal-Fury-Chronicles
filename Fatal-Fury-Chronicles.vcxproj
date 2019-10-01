@@ -113,6 +113,7 @@
     <ClCompile Include="data\chars\galford\scripts\animation.c" />
     <ClCompile Include="data\chars\galford\scripts\event_move_a.c" />
     <ClCompile Include="data\chars\galford\scripts\onspawn.c" />
+    <ClCompile Include="data\chars\galford\weapon_didhit.c" />
     <ClCompile Include="data\chars\misc\control\script\event_animationscript.c" />
     <ClCompile Include="data\chars\misc\control\script\event_onspawnscript.c" />
     <ClCompile Include="data\chars\misc\cvs_block_flash\scripts\event_spawn.c" />
@@ -1517,6 +1518,16 @@
     <Image Include="data\chars\galford\walk_8_u.png" />
     <Image Include="data\chars\galford\walk_9.png" />
     <Image Include="data\chars\galford\walk_9_u.png" />
+    <Image Include="data\chars\galford\weapon\icon_default.png" />
+    <Image Include="data\chars\galford\weapon\idle_0.png" />
+    <Image Include="data\chars\galford\weapon\spin_0.png" />
+    <Image Include="data\chars\galford\weapon\spin_1.png" />
+    <Image Include="data\chars\galford\weapon\spin_2.png" />
+    <Image Include="data\chars\galford\weapon\spin_3.png" />
+    <Image Include="data\chars\galford\weapon\spin_4.png" />
+    <Image Include="data\chars\galford\weapon\spin_5.png" />
+    <Image Include="data\chars\galford\weapon\spin_6.png" />
+    <Image Include="data\chars\galford\weapon\spin_7.png" />
     <Image Include="data\chars\galford\working.png" />
     <Image Include="data\chars\misc\blank.png" />
     <Image Include="data\chars\misc\crat0001\aapa0011.png" />
