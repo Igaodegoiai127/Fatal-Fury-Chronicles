@@ -1785,6 +1785,9 @@ anim follow82 # Down Attack
 	bbox.size.x 53
 	bbox.size.y 69
 
+	# Spawn sub entity and set it as entity for binding.
+	@cmd dc_elmers_quick_motion dc_gauntlet_quick_spawn("galford_motion")
+
 	frame	data/chars/galford/atk_downward_chop_cut_1.png
 	
 	delay	6

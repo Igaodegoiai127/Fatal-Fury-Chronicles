@@ -131,3 +131,18 @@ anim freespecial7 # Plane step attack
 	frame	data/chars/galford/atk_c_cut_3_motion.png		
 	frame	data/chars/galford/atk_c_cut_4_motion.png	
 	frame	data/chars/misc/blank.png
+
+
+anim follow82 # Down Attack
+	
+	delay	-1000
+	offset	140 207
+
+	frame	data/chars/misc/blank.png
+	frame	data/chars/misc/blank.png
+
+	frame	data/chars/galford/atk_downward_chop_cut_1_motion.png	
+	frame	data/chars/galford/atk_downward_chop_cut_2_motion.png
+	frame	data/chars/misc/blank.png
+	
+	
