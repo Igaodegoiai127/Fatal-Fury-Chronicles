@@ -37,6 +37,9 @@ spawn4 50 45
 
 #*****Stage*****
 
+light 256 -32
+at 0
+
 #wall 1 185 1 1 2800 2800 5 1000
 
 #wall {xpos} {zpos} {upperleft} {lowerleft} {upperright} {lowerright} {depth} {alt} {type}
