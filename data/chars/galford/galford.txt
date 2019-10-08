@@ -510,7 +510,7 @@ anim attack4	# High side kick
 
 		range	-40 50
 		delay	5
-		offset	140 207
+		offset	155 207
 	bbox.position.x 130
 	bbox.position.y 120
 	bbox.size.x 45
@@ -720,6 +720,7 @@ anim chargeattack # Roundhouse kick
 	bbox.position.y 116
 	bbox.size.x 45
 	bbox.size.y 93
+	frame data/chars/galford/block_start_0_u.png
 	
 	@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_HEAVY
 
@@ -770,9 +771,12 @@ anim chargeattack # Roundhouse kick
 	bbox.size.x 38
 	bbox.size.y 95
 	
-	frame data/chars/galford/atk_round_kick_4_u.png
+	delay 6
 	
-	delay 10	
+	frame data/chars/galford/atk_round_kick_4_u.png
+	frame data/chars/galford/atk_round_kick_5_u.png
+	#frame data/chars/galford/atk_round_kick_6_u.png	
+	delay 15	
 	
 	bbox.position.x 125
 	bbox.position.y 118
@@ -780,6 +784,8 @@ anim chargeattack # Roundhouse kick
 	bbox.size.y 89
 	
 	frame data/chars/galford/block_start_0_u.png
+	
+	
 anim freespecial
 
 	# Back Handspring

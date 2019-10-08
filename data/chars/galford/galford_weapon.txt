@@ -19,9 +19,10 @@ gfxshadow 	1
 palette data/chars/galford/og_navy.ACT
 
 didhitscript data/chars/galford/weapon_didhit.c
-animationscript data/scripts/dc_fidelity/main.c
+animationscript data/chars/galford/weapon/animation.c
 
-anim spawn
+# Weapon drops - can be picked back up.
+anim follow1
 
 	jumpframe 0 5.5 1 0
 	landframe 10 jump_land
@@ -32,7 +33,6 @@ anim spawn
 
 	delay 1
 
-	# set_entity_property getlocalvar("self") "autokill" 1
 	frame data/chars/galford/weapon/spin_0.png
 
 	delay 3
@@ -49,8 +49,40 @@ anim spawn
 	frame data/chars/galford/weapon/spin_7.png
 	frame data/chars/galford/weapon/spin_7.png
 	
-	delay 1	
+	delay 1		
+	@cmd dc_disney_play_animation openborconstant("ANI_IDLE")
+	frame data/chars/galford/weapon/idle_0.png
 
+# Weapon is lost and taken out of play.
+anim follow2
+
+	jumpframe 0 5.5 1 0
+	landframe 10 jump_land
+
+	loop 1 1 9	
+
+	offset 140 207
+
+	delay 1
+
+	@cmd set_entity_property getlocalvar("self") "autokill" 1
+	frame data/chars/galford/weapon/spin_0.png
+
+	delay 3
+
+	frame data/chars/galford/weapon/spin_0.png
+	@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_SOUND_ATTACK_LIGHT
+	frame data/chars/galford/weapon/spin_1.png
+	frame data/chars/galford/weapon/spin_2.png
+	frame data/chars/galford/weapon/spin_3.png
+	frame data/chars/galford/weapon/spin_4.png
+	@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_SOUND_ATTACK_LIGHT
+	frame data/chars/galford/weapon/spin_5.png
+	frame data/chars/galford/weapon/spin_6.png
+	frame data/chars/galford/weapon/spin_7.png
+	frame data/chars/galford/weapon/spin_7.png
+	
+	delay 1		
 	frame data/chars/galford/weapon/idle_0.png
 
 anim idle

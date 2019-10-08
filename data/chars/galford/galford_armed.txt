@@ -34,7 +34,7 @@ bflash			Block
 # ability to pick up lost weapon and such by making the armed state a weapon model 
 # and switching to it on spawn.
 weapons		galford_armed
-weaploss	1
+weaploss	3
 
 palette	       data/chars/galford/og_navy.act
 alternatepal   data/chars/galford/og_navy_mask.act
@@ -525,7 +525,7 @@ anim attack4 # High side kick
 
 		range	-40 50
 		delay	5
-		offset	140 207
+		offset	155 207
 	bbox.position.x 130
 	bbox.position.y 120
 	bbox.size.x 45
@@ -1312,7 +1312,7 @@ anim jumpattack2 #Jump V Cut
 		bbox.size.y 62
 			
 	@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_MEDIUM
-	@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_SOUND_ATTACK_HEAVY_BLADE
+	@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_SOUND_ATTACK_MEDIUM_BLADE
 	
 	frame	data/chars/galford/atk_jump_v_cut_0.png
 	
