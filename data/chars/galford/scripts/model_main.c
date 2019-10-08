@@ -1,5 +1,6 @@
 #include "data/chars/galford/scripts/model_config.h"
 #include "data/scripts/dc_disney/main.c"
+#include "data/scripts/dc_gauntlet/main.c"
 
 // Galford loses his sword under certain conditions.
 void try_weapon_drop(void ent)
@@ -121,7 +122,8 @@ void do_weapon_drop(void ent, void weapon_ent)
 	// use follow1 (weapon falls to ground as item).
 	if (dropcount >= GALFORD_WEAPON_MAX_DROP)
 	{
-		dc_disney_play_animation(openborconstant("ANI_FOLLOW2"));		
+		dc_disney_play_animation(openborconstant("ANI_FOLLOW2"));
+		setlocalvar(GALFORD_WEAPON_DROP_COUNT_KEY, NULL());
 	}
 	else
 	{
@@ -152,4 +154,29 @@ void do_weapon_drop(void ent, void weapon_ent)
 
 	changeentityproperty(ent, "weapon", GALFORD_WEAPON_UNARMED);
 
+}
+
+
+// Mimics spawning with a weapon pick up. 
+void weapon_spawn()
+{
+	void ent = getlocalvar("self");
+	void spawn = dc_gauntlet_quick_spawn("Justice_Sword");
+	int animation;
+
+	// Item spawns at our position, but hidden on Z axis.
+	set_entity_property(spawn, "position_x", get_entity_property(ent, "position_x"));
+	set_entity_property(spawn, "position_y", get_entity_property(ent, "position_y"));
+	set_entity_property(spawn, "position_z", openborconstant("ITEM_HIDE_POSITION_Z"));
+
+	// Make sure engine knowns this is a weapon type spawn.
+	set_entity_property(spawn, "spawn_type", openborconstant("SPAWN_TYPE_WEAPON"));
+
+	// Now we "pick up" the item. Our weapon changes and the item
+	// pointer is stored in our weapon item property, just like
+	// the engine's native pickup. 
+	set_entity_property(ent, "weapon_item", spawn);
+	changeentityproperty(ent, "weapon", 1);
+
+	
 }
