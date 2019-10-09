@@ -1,6 +1,4 @@
 #include "data/chars/galford/scripts/model_config.h"
-#include "data/scripts/dc_disney/main.c"
-#include "data/scripts/dc_gauntlet/main.c"
 
 // Galford loses his sword under certain conditions.
 void try_weapon_drop(void ent)
