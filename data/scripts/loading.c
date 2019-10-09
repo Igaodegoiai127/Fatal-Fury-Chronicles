@@ -56,6 +56,10 @@ void oncreate()
 	
 
 	// Galford
+	dc_fidelity_setup("Galford_Weller", DC_FIDELITY_TYPE_VOICE_SPAWN_NEW, "data/chars/galford/sounds/voice-lets-go-poppy.wav");
+
+	dc_fidelity_setup("Galford_Weller", DC_FIDELITY_TYPE_VOICE_KO, "data/chars/galford/sounds/voice-no.wav");
+
 	dc_fidelity_setup("Galford_Weller", DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_HEAVY, "data/chars/galford/sounds/voice-atk-3.wav");
 	dc_fidelity_setup("Galford_Weller", DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_HEAVY, "data/chars/galford/sounds/voice-atk-4.wav");
 	dc_fidelity_setup("Galford_Weller", DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_HEAVY, "data/chars/galford/sounds/voice-atk-5.wav");

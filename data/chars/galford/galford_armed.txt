@@ -75,8 +75,57 @@ anim freespecial6
 	
 @cmd weapon_spawn()
 frame	data/chars/galford/duck_start_1.png
-	
 
+anim spawn		
+
+	subentity Poppy  
+	summonframe 1 -20 15 0 0 
+
+	jumpframe 1 0.2 0 0
+	landframe 11 jump_land
+	
+	#delay before appearing.
+	delay	100
+	offset	140 207	 
+
+	frame	data/chars/misc/blank.png
+
+	delay	5	
+
+	# We're our own target, so we're just adjusting to an
+	# offset above the starting position and applying.
+	@cmd dc_elmers_set_offset_y 85
+	@cmd dc_elmers_apply_position
+	@cmd dc_elmers_free_instance
+
+	@cmd dc_elmers_set_offset_x 5
+	@cmd dc_elmers_set_offset_y 95
+	@cmd dc_elmers_quick_overlay dc_gauntlet_quick_spawn("galford_smoke_bomb")	
+
+	# Spawn voice.
+	@cmd	dc_fidelity_quick_play DC_FIDELITY_TYPE_VOICE_SPAWN_NEW
+	frame	data/chars/galford/jump_run_0.png
+	frame	data/chars/galford/jump_run_1.png
+	frame	data/chars/galford/jump_run_2.png
+	frame	data/chars/galford/jump_run_3.png
+	frame	data/chars/galford/jump_run_4.png
+	frame	data/chars/galford/jump_run_5.png
+	frame	data/chars/galford/jump_run_6.png
+
+	delay	5
+
+	frame	data/chars/galford/jump_3.png
+	frame	data/chars/galford/jump_4.png
+	
+	delay	-1000
+
+	frame	data/chars/galford/jump_5.png
+	
+	delay	15
+
+	frame	data/chars/galford/jump_land_0.png
+	frame	data/chars/galford/jump_land_1.png
+	frame	data/chars/galford/duck_start_0.png	
 
 anim idle
 
