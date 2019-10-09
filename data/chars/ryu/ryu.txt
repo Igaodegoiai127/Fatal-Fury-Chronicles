@@ -2681,6 +2681,7 @@ anim chargeattack # Focus Punch
 	
 	frame	data/chars/ryu/16_3.png
 	frame	data/chars/ryu/16_4.png
+
 anim spawn # Spawn in
 	
 	delay	40
