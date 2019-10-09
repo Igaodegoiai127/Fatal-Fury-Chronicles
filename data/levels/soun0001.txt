@@ -1,4 +1,4 @@
-music		data/music/sound_beach_ff1.ogg 575197						
+music		data/music/sound_beach_ff1.ogg 646118
 
 background	data/bgs/BEACH/back0001
 frontpanel	data/bgs/BEACH/fore0002
