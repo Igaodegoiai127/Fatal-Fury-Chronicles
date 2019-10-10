@@ -74,6 +74,17 @@ void oncreate()
 	dc_fidelity_setup("Galford_Weller", DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_MEDIUM, "data/chars/galford/sounds/voice-atk-1.wav");
 	dc_fidelity_setup("Galford_Weller", DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_MEDIUM, "data/chars/galford/sounds/voice-atk-2.wav");
 
+	dc_fidelity_setup("Galford_Weller", DC_FIDELITY_TYPE_VOICE_PAIN, "data/chars/galford/sounds/voice-pain-0.wav");
+	dc_fidelity_setup("Galford_Weller", DC_FIDELITY_TYPE_VOICE_PAIN, "data/chars/galford/sounds/voice-pain-1.wav");
+	dc_fidelity_setup("Galford_Weller", DC_FIDELITY_TYPE_VOICE_PAIN, "data/chars/galford/sounds/voice-pain-2.wav");
+	dc_fidelity_setup("Galford_Weller", DC_FIDELITY_TYPE_VOICE_PAIN, "data/chars/galford/sounds/voice-pain-3.wav");
+
+	dc_fidelity_setup("Galford_Weller", DC_FIDELITY_TYPE_VOICE_PAIN_FALL, "data/chars/galford/sounds/voice-pain-0.wav");
+	dc_fidelity_setup("Galford_Weller", DC_FIDELITY_TYPE_VOICE_PAIN_FALL, "data/chars/galford/sounds/voice-pain-1.wav");
+	dc_fidelity_setup("Galford_Weller", DC_FIDELITY_TYPE_VOICE_PAIN_FALL, "data/chars/galford/sounds/voice-pain-2.wav");
+	dc_fidelity_setup("Galford_Weller", DC_FIDELITY_TYPE_VOICE_PAIN_FALL, "data/chars/galford/sounds/voice-pain-3.wav");
+	
+
 	dc_fidelity_setup("Galford_Weller", "sheath_sword", "data/chars/galford/sounds/sound_sheath_sword.wav");
 
 	//  Ray
