@@ -23,7 +23,7 @@ anim spawn
 	jumpframe 0 0.2 0 0
 	landframe 5 jump_land
 
-	offset	135 192
+	offset	135 189
 	delay	1
 
 	@cmd dc_elmers_set_offset_x 5
@@ -48,7 +48,7 @@ anim idle
 
 	loop 	1
 	delay	4
-	offset	135 192
+	offset	135 189
 	bbox 	0
 	range	75 500
 	rangez	0 500
@@ -60,7 +60,7 @@ anim walk
 
 	loop 	1
 	delay	6
-	offset	135 192
+	offset	135 189
 	bbox 	0
 
 	frame	data/chars/poppy/walk_0.png
@@ -76,7 +76,7 @@ anim backwalk
 
 	loop 	1
 	delay	6
-	offset	135 192
+	offset	135 189
 	bbox 	0
 
 	frame	data/chars/poppy/walk_back_0.png
@@ -92,7 +92,7 @@ anim run
 
 	loop 	1
 	delay	3
-	offset	135 192
+	offset	135 189
 	bbox 	0
 
 	frame	data/chars/poppy/walk_0.png
@@ -107,7 +107,7 @@ anim run
 anim turn
 
 	delay	8
-	offset	135 192
+	offset	135 189
 	bbox 	0
 
 	frame	data/chars/poppy/turn_3.png
