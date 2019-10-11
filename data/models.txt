@@ -15,6 +15,7 @@ load	flash_fatal_fury	data/chars/misc/flash/flash_fatal_fury.txt
 load	flash_indirect		data/chars/misc/flash/flash_indirect.txt
 load    flash_blood_cut		data/chars/misc/blood_cut/flash_blood_cut.txt
 load	flash_cvs_cut_heavy data/chars/misc/cvs_cut_flash_heavy/cvs_cut_flash_heavy.txt	
+load	flash_cvs_cut_blunt data/chars/misc/cvs_cut_flash_blunt/cvs_cut_flash_blunt.txt
 
 load	Block				data/chars/misc/cvs_block_flash/block.txt
 load    fall_land			data/chars/misc/cvs_land_dust/fall_land.txt
