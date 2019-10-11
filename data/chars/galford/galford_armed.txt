@@ -1156,6 +1156,64 @@ anim grab
 		offset 140 207
 	
 	frame	data/chars/galford/grab_0.png
+	
+anim grabattack2 # Stab
+
+	fastattack 1
+	range   -40 50
+
+	delay	6
+	offset	140 207
+	
+	bbox.position.x 130
+	bbox.position.y 120
+	bbox.size.x 45
+	bbox.size.y 90
+	
+		
+		
+	frame	data/chars/galford/atk_v-cut_0.png
+
+	@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_MEDIUM
+	
+	@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_SOUND_ATTACK_MEDIUM_BLADE
+		
+	# Spawn sub entity and set it as entity for binding.
+	@cmd dc_elmers_quick_motion dc_gauntlet_quick_spawn("galford_motion")
+	frame	data/chars/galford/atk_stab_0.png
+	frame	data/chars/galford/atk_stab_1.png
+	
+	delay 10
+	
+	attack.damage.force 30
+	attack.damage.type 2
+	attack.effect.hit.flash.model flash_cvs_cut_heavy
+	attack.position.x 161
+	attack.position.y 155
+	attack.reaction.fall.force 3	
+	attack.reaction.pause.time 15
+	attack.size.x 57
+	attack.size.y 5	
+	
+	frame	data/chars/galford/atk_stab_2.png	
+	attack.block.penetrate 0
+	attack.damage.force 0
+	attack.damage.type 1
+	attack.effect.hit.flash.disable 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.reaction.pause.time 0
+	attack.size.x 0
+	attack.size.y 0
+	attack.size.z.1 0
+	frame	data/chars/galford/atk_stab_3.png
+	
+	frame	data/chars/galford/atk_v-cut_6.png		
+	
+	@cmd dc_fidelity_quick_play "sheath_sword"
+	
+	frame	data/chars/galford/atk_v-cut_7.png
 
 anim jumpdelay
 
