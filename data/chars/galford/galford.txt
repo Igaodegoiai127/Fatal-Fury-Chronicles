@@ -51,6 +51,7 @@ load	galford_armed
 load	Poppy
 load	galford_smoke_bomb
 load	galford_motion
+load	galford_overlay
 load	Justice_Sword
 
 # In game, we want Galford to start armed, but it's a lot simpler to configure 
@@ -113,7 +114,7 @@ anim spawn
 
 	@cmd dc_elmers_set_offset_x 5
 	@cmd dc_elmers_set_offset_y 95
-	@cmd dc_elmers_quick_overlay dc_gauntlet_quick_spawn("galford_smoke_bomb")	
+	@cmd dc_elmers_quick_spot dc_gauntlet_quick_spawn("galford_smoke_bomb")	
 
 	# Spawn voice.
 	@cmd	dc_fidelity_quick_play DC_FIDELITY_TYPE_VOICE_SPAWN_NEW
@@ -895,6 +896,38 @@ anim grab
 		offset 140 207
 	
 	frame	data/chars/galford/grab_0_u.png
+
+anim attack # Knee
+
+	fastattack 1
+	range   -40 50
+
+	delay	6
+	offset	140 207
+	
+	bbox.position.x 130
+	bbox.position.y 120
+	bbox.size.x 45
+	bbox.size.y 90		
+		
+	frame	data/chars/galford/atk_grab_knee_0.png
+
+	@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_MEDIUM	
+	@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_SOUND_ATTACK_MEDIUM_BLADE
+		
+	# Spawn sub entity and set it as entity for binding.
+	@cmd dc_elmers_quick_overlay dc_gauntlet_quick_spawn("galford_overlay")
+	frame	data/chars/galford/atk_grab_knee_1.png	
+	frame	data/chars/galford/atk_grab_knee_2.png
+	frame	data/chars/galford/atk_grab_knee_3.png	
+	frame	data/chars/galford/atk_grab_knee_4.png
+	
+	frame	data/chars/galford/atk_grab_knee_1.png
+	
+	frame	data/chars/galford/atk_grab_knee_0.png
+	
+	delay 40
+	frame	data/chars/galford/grab_0.png
 
 anim jumpdelay
 

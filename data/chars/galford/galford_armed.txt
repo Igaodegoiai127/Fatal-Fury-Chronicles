@@ -100,7 +100,7 @@ anim spawn
 
 	@cmd dc_elmers_set_offset_x 5
 	@cmd dc_elmers_set_offset_y 95
-	@cmd dc_elmers_quick_overlay dc_gauntlet_quick_spawn("galford_smoke_bomb")	
+	@cmd dc_elmers_quick_spot dc_gauntlet_quick_spawn("galford_smoke_bomb")	
 
 	# Spawn voice.
 	@cmd	dc_fidelity_quick_play DC_FIDELITY_TYPE_VOICE_SPAWN_NEW
@@ -478,7 +478,7 @@ anim attack2 # V-cut slash.
 	@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_MEDIUM
 		
 	# Spawn sub entity and set it as entity for binding.
-	@cmd dc_elmers_quick_motion dc_gauntlet_quick_spawn("galford_motion")
+	@cmd dc_elmers_quick_particle dc_gauntlet_quick_spawn("galford_motion")
 	frame	data/chars/galford/atk_v-cut_1.png
 
 	attack.effect.hit.flash.model flash_cvs_cut_heavy
@@ -536,7 +536,7 @@ anim attack3 # Reverse V-cut slash.
 	@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_MEDIUM
 	
 	# Spawn sub entity and set it as entity for binding.
-	@cmd dc_elmers_quick_motion dc_gauntlet_quick_spawn("galford_motion")
+	@cmd dc_elmers_quick_particle dc_gauntlet_quick_spawn("galford_motion")
 	
 	frame	data/chars/galford/atk_v-cut_back_1.png
 
@@ -641,7 +641,7 @@ anim attack5 # Cross slash
 	frame	data/chars/galford/atk_cross_cut_1.png
 
 	# Spawn sub entity and set it as entity for binding.
-	@cmd dc_elmers_quick_motion dc_gauntlet_quick_spawn("galford_motion")
+	@cmd dc_elmers_quick_particle dc_gauntlet_quick_spawn("galford_motion")
 
 	frame	data/chars/galford/atk_cross_cut_2.png
 
@@ -713,7 +713,7 @@ anim attack6	# Backhand slash
 	attack.size.y 18
 
 	# Spawn sub entity and set it as entity for binding.
-	@cmd dc_elmers_quick_motion dc_gauntlet_quick_spawn("galford_motion")
+	@cmd dc_elmers_quick_particle dc_gauntlet_quick_spawn("galford_motion")
 
 	frame	data/chars/galford/atk_cross_cut_back_1.png
 
@@ -819,7 +819,7 @@ anim chargeattack #Justice Slayer
 	delay 6
 
 	# Spawn sub entity and set it as entity for binding.
-	@cmd dc_elmers_quick_motion dc_gauntlet_quick_spawn("galford_motion")
+	@cmd dc_elmers_quick_particle dc_gauntlet_quick_spawn("galford_motion")
 
 	@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_HEAVY
 	@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_SOUND_ATTACK_HEAVY_BLADE
@@ -1060,7 +1060,7 @@ anim freespecial2 # Back attack
 	attack.size.y 15	
 		
 	# Spawn sub entity and set it as entity for binding.
-	@cmd dc_elmers_quick_motion dc_gauntlet_quick_spawn("galford_motion")	
+	@cmd dc_elmers_quick_particle dc_gauntlet_quick_spawn("galford_motion")	
 
 	frame	data/chars/galford/atk_back_1.png
 
@@ -1157,6 +1157,138 @@ anim grab
 	
 	frame	data/chars/galford/grab_0.png
 	
+anim attack # Knee
+
+	fastattack 1
+	range   -40 50
+
+	delay	6
+	offset	140 207
+	
+	bbox.position.x 130
+	bbox.position.y 120
+	bbox.size.x 45
+	bbox.size.y 90
+	
+		
+		
+	frame	data/chars/galford/atk_grab_knee_0.png
+
+	@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_MEDIUM	
+	@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_SOUND_ATTACK_MEDIUM_BLADE
+		
+	# Spawn sub entity and set it as entity for binding.
+	@cmd dc_elmers_quick_overlay dc_gauntlet_quick_spawn("galford_overlay")
+	frame	data/chars/galford/atk_grab_knee_1.png	
+	frame	data/chars/galford/atk_grab_knee_2.png
+	frame	data/chars/galford/atk_grab_knee_3.png	
+	frame	data/chars/galford/atk_grab_knee_4.png
+	
+	frame	data/chars/galford/atk_grab_knee_1.png
+	
+	frame	data/chars/galford/atk_grab_knee_0.png
+
+anim grabattack # Knee
+
+	fastattack 1
+	range   -40 50
+
+	delay	6
+	offset	140 207
+	
+	bbox.position.x 130
+	bbox.position.y 120
+	bbox.size.x 45
+	bbox.size.y 90
+	
+	# Set up the grapple.
+	@cmd dc_elmers_initialize_grapple
+
+	# Adjust grapple properties.
+	@cmd dc_elmers_set_offset_x 38
+	@cmd dc_elmers_set_offset_y -2
+	@cmd dc_elmers_set_direction openborconstant("DIRECTION_ADJUST_OPPOSITE")
+	@cmd dc_elmers_set_sorting DC_ELMERS_SORT_BACK
+	@cmd dc_elmers_set_frame DC_ELMERS_REACT_PAIN_MID_0
+
+	# Apply grapple properties.
+	@cmd dc_elmers_apply_grapple	
+		
+	frame	data/chars/galford/atk_grab_knee_0.png
+
+	@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_MEDIUM	
+	@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_SOUND_ATTACK_MEDIUM_BLADE
+		
+	# Spawn sub entity and set it as entity for binding.
+	@cmd dc_elmers_set_instance 1
+	@cmd dc_elmers_quick_overlay dc_gauntlet_quick_spawn("galford_overlay")
+
+	# Adjust grapple properties.
+	@cmd dc_elmers_set_instance NULL()
+	@cmd dc_elmers_set_offset_x 38
+	@cmd dc_elmers_set_offset_y -2
+	@cmd dc_elmers_set_direction openborconstant("DIRECTION_ADJUST_OPPOSITE")
+	@cmd dc_elmers_set_sorting DC_ELMERS_SORT_FRONT
+	@cmd dc_elmers_set_frame DC_ELMERS_REACT_PAIN_MID_1
+
+	# Apply grapple properties.
+	@cmd dc_elmers_apply_grapple
+
+	frame	data/chars/galford/atk_grab_knee_1.png	
+
+	# Spawn sub entity and set it as entity for binding.
+	@cmd dc_elmers_set_instance 2
+	@cmd dc_elmers_set_offset_x 42
+	@cmd dc_elmers_set_offset_y 68
+	@cmd dc_elmers_quick_spot dc_gauntlet_quick_spawn("flash_fatal_fury")
+
+	# Adjust grapple properties.
+	@cmd dc_elmers_set_instance NULL()
+	@cmd dc_elmers_set_offset_x 38
+	@cmd dc_elmers_set_offset_y -2
+	@cmd dc_elmers_set_direction openborconstant("DIRECTION_ADJUST_OPPOSITE")
+	@cmd dc_elmers_set_sorting DC_ELMERS_SORT_FRONT
+	@cmd dc_elmers_set_frame DC_ELMERS_REACT_PAIN_MID_2
+
+	# Apply grapple properties.
+	@cmd dc_elmers_apply_grapple
+
+	frame	data/chars/galford/atk_grab_knee_2.png
+	frame	data/chars/galford/atk_grab_knee_3.png	
+	frame	data/chars/galford/atk_grab_knee_4.png
+	
+	# Adjust grapple properties.
+	@cmd dc_elmers_set_instance NULL()
+	@cmd dc_elmers_set_offset_x 38
+	@cmd dc_elmers_set_offset_y -2
+	@cmd dc_elmers_set_direction openborconstant("DIRECTION_ADJUST_OPPOSITE")
+	@cmd dc_elmers_set_sorting DC_ELMERS_SORT_FRONT
+	@cmd dc_elmers_set_frame DC_ELMERS_REACT_PAIN_MID_1
+
+	# Apply grapple properties.
+	@cmd dc_elmers_apply_grapple
+
+	frame	data/chars/galford/atk_grab_knee_1.png
+	
+	# Adjust grapple properties.
+	@cmd dc_elmers_set_offset_x 38
+	@cmd dc_elmers_set_offset_y -2
+	@cmd dc_elmers_set_direction openborconstant("DIRECTION_ADJUST_OPPOSITE")
+	@cmd dc_elmers_set_sorting DC_ELMERS_SORT_BACK
+	@cmd dc_elmers_set_frame DC_ELMERS_REACT_PAIN_MID_0
+	
+	# Apply grapple properties.
+	@cmd dc_elmers_apply_grapple
+
+	frame	data/chars/galford/atk_grab_knee_0.png
+
+	delay 1
+
+	@cmd dc_elmers_end_grapple
+	frame	data/chars/galford/grab_0.png
+	
+
+
 anim grabattack2 # Stab
 
 	fastattack 1
@@ -1179,7 +1311,7 @@ anim grabattack2 # Stab
 	@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_SOUND_ATTACK_MEDIUM_BLADE
 		
 	# Spawn sub entity and set it as entity for binding.
-	@cmd dc_elmers_quick_motion dc_gauntlet_quick_spawn("galford_motion")
+	@cmd dc_elmers_quick_particle dc_gauntlet_quick_spawn("galford_motion")
 	frame	data/chars/galford/atk_stab_0.png
 	frame	data/chars/galford/atk_stab_1.png
 	
@@ -1361,7 +1493,7 @@ anim jumpattack # Jump Heavy Cut
 	@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_HEAVY
 	@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_SOUND_ATTACK_HEAVY_BLADE
 	
-	@cmd dc_elmers_quick_motion dc_gauntlet_quick_spawn("galford_motion")
+	@cmd dc_elmers_quick_particle dc_gauntlet_quick_spawn("galford_motion")
 	
 	delay 6
 	
@@ -1380,7 +1512,7 @@ anim jumpattack # Jump Heavy Cut
 	attack.size.y 97
 	
 	# Spawn sub entity and set it as entity for binding.
-	@cmd dc_elmers_quick_motion dc_gauntlet_quick_spawn("galford_motion")
+	@cmd dc_elmers_quick_particle dc_gauntlet_quick_spawn("galford_motion")
 	
 	frame	data/chars/galford/atk_jump_heavy_cut_3.png	
 		
@@ -1435,7 +1567,7 @@ anim jumpattack2 #Jump V Cut
 		attack.size.y 58
 	
 	# Spawn sub entity and set it as entity for binding.
-	@cmd dc_elmers_quick_motion dc_gauntlet_quick_spawn("galford_motion")
+	@cmd dc_elmers_quick_particle dc_gauntlet_quick_spawn("galford_motion")
 	
 	frame	data/chars/galford/atk_jump_v_cut_1.png	
 		
@@ -1803,7 +1935,7 @@ anim freespecial7 # Plane step attack
 	
 		
 	# Spawn sub entity and set it as entity for binding.
-	@cmd dc_elmers_quick_motion dc_gauntlet_quick_spawn("galford_motion")
+	@cmd dc_elmers_quick_particle dc_gauntlet_quick_spawn("galford_motion")
 	bbox.position.x 189
 	bbox.position.y 116
 	bbox.size.x 63
@@ -1893,7 +2025,7 @@ anim follow82 # Down Attack
 	bbox.size.y 69
 
 	# Spawn sub entity and set it as entity for binding.
-	@cmd dc_elmers_quick_motion dc_gauntlet_quick_spawn("galford_motion")
+	@cmd dc_elmers_quick_particle dc_gauntlet_quick_spawn("galford_motion")
 
 	frame	data/chars/galford/atk_downward_chop_cut_1.png
 	

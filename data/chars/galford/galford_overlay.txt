@@ -1,0 +1,45 @@
+name         galford_overlay
+type	     enemy
+health	     100
+alpha	     0
+speedf		 0.0
+nomove		1
+antigravity	100
+
+palette	       data/chars/galford/og_navy.act
+
+anim idle
+
+	delay	4
+	offset	55 125
+
+	frame	data/chars/misc/blank.png
+
+anim attack # Knee
+
+	delay	-1000
+	offset	140 207
+	
+	frame	data/chars/misc/blank.png	
+	frame	data/chars/galford/atk_grab_knee_1_front.png	
+	frame	data/chars/galford/atk_grab_knee_2_front.png
+	frame	data/chars/galford/atk_grab_knee_3_front.png	
+	frame	data/chars/galford/atk_grab_knee_4_front.png	
+	frame	data/chars/galford/atk_grab_knee_1_front.png	
+	frame	data/chars/misc/blank.png
+	frame	data/chars/misc/blank.png
+
+anim grabattack # Knee
+
+	delay	-1000
+	offset	140 207
+	
+	frame	data/chars/misc/blank.png	
+	frame	data/chars/galford/atk_grab_knee_1_front.png	
+	frame	data/chars/galford/atk_grab_knee_2_front.png
+	frame	data/chars/galford/atk_grab_knee_3_front.png	
+	frame	data/chars/galford/atk_grab_knee_4_front.png	
+	frame	data/chars/galford/atk_grab_knee_1_front.png	
+	frame	data/chars/misc/blank.png
+	frame	data/chars/misc/blank.png
+	

@@ -3001,9 +3001,6 @@ anim grabforward # Shoulder Throw
 	
 	frame data/chars/ryu/grab_0.png
 
-	delay 1000
-
-
 	# Set up the grapple.
 	@cmd dc_elmers_initialize_grapple
 

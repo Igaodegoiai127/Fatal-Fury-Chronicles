@@ -2521,11 +2521,9 @@ anim freespecial10 # Power Wave
 	bbox.size.x 38
 	bbox.size.y 68
 
-	# Spawn the motion trail.
-	@cmd dc_elmers_set_palette_match DC_ELMERS_PALETTE_MATCH_TABLE
-	@cmd dc_elmers_quick_motion dc_gauntlet_quick_spawn("terry_crack_shoot")
-	@cmd dc_elmers_set_palette_match DC_ELMERS_DEFAULT_PALETTE_MATCH
-
+	# Spawn the blur overlay.
+	@cmd dc_elmers_quick_overlay dc_gauntlet_quick_spawn("terry_crack_shoot")
+	
 	frame data/chars/terry/51_0.png	
 		
 	bbox.position.x 54

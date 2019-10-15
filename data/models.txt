@@ -83,6 +83,7 @@ load    Terry					data/chars/terry/terry.txt
 know	raid0001			data/chars/raiden/raiden.txt
 #load	Raiden				data/chars/raiden/raid0001.txt
 know 	Poppy				data/chars/poppy/poppy.txt
+know 	galford_overlay		data/chars/galford/galford_overlay.txt
 know 	galford_smoke_bomb	data/chars/galford/smoke_bomb/smoke_bomb.txt
 know 	galford_motion		data/chars/galford/galford_motion.txt
 know 	galford_armed		data/chars/galford/galford_armed.txt

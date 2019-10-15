@@ -28,7 +28,7 @@ anim spawn
 
 	@cmd dc_elmers_set_offset_x 5
 	@cmd dc_elmers_set_offset_y 5
-	@cmd dc_elmers_quick_overlay dc_gauntlet_quick_spawn("galford_smoke_bomb")
+	@cmd dc_elmers_quick_spot dc_gauntlet_quick_spawn("galford_smoke_bomb")
 
 	frame	data/chars/misc/blank.png
 	
