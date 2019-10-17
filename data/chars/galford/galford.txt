@@ -414,11 +414,11 @@ anim attack1	# Backhand.
 	
 	frame	data/chars/galford/atk_backhand_3_u.png
 	
-anim attack2	# Elbow to backhand.
+anim attack2	# Palm mid.
 
 	fastattack 1
 
-	delay	5
+	delay	6
 	offset	140 207
 	range -40 50
 		
@@ -434,42 +434,27 @@ anim attack2	# Elbow to backhand.
 				
 		@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_SOUND_ATTACK_MEDIUM
 
-	frame	data/chars/galford/atk_elbow_jab_0_u.png
-	frame	data/chars/galford/atk_elbow_jab_1_u.png
-	frame	data/chars/galford/atk_elbow_jab_2_u.png
+	frame	data/chars/galford/atk_palm_mid_0_u.png
+	frame	data/chars/galford/atk_palm_mid_1_u.png
+	
 		
-	attack.damage.force 8
-	attack.position.x 139
-	attack.position.y 137
+	attack.damage.force 12
+	attack.position.x 140
+	attack.position.y 148
 	attack.reaction.pause.time 15
-	attack.size.x 58
-	attack.size.y 13
+	attack.size.x 51
+	attack.size.y 18
 	
-	frame	data/chars/galford/atk_elbow_jab_3_u.png
+	frame	data/chars/galford/atk_palm_mid_2_u.png
 
-	attack 0
-	
-	@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_SOUND_ATTACK_MEDIUM
-	
-	frame	data/chars/galford/atk_elbow_jab_4_u.png
-	
-	attack.damage.force 6
-	attack.position.x 139
-	attack.position.y 122
-	attack.reaction.pause.time 15
-	attack.size.x 70
-	attack.size.y 11
-	
-	frame	data/chars/galford/atk_elbow_jab_backhand_0_u.png
-	
-	attack 0
-	
-	frame	data/chars/galford/atk_elbow_jab_backhand_1_u.png	
+	attack 0	
+	frame	data/chars/galford/atk_palm_mid_3_u.png
+	frame	data/chars/galford/atk_palm_mid_4_u.png	
+	frame	data/chars/galford/atk_straight_short_3_u.png	
 	
 	idle 1
 	
-	frame	data/chars/galford/atk_elbow_jab_backhand_2_u.png
-	
+	frame	data/chars/galford/block_start_0_u.png	
 	
 
 anim attack3 # Short straight.
@@ -897,7 +882,7 @@ anim grab
 	
 	frame	data/chars/galford/grab_0_u.png
 
-anim attack # Knee
+anim grabattack # Knee
 
 	fastattack 1
 	range   -40 50
@@ -908,26 +893,206 @@ anim attack # Knee
 	bbox.position.x 130
 	bbox.position.y 120
 	bbox.size.x 45
-	bbox.size.y 90		
+	bbox.size.y 90
+	
+	# Set up the grapple.
+	@cmd dc_elmers_initialize_grapple_hold
+
+	# Adjust grapple properties.
+	@cmd dc_elmers_set_offset_x 36
+	@cmd dc_elmers_set_offset_y 0
+	@cmd dc_elmers_set_direction openborconstant("DIRECTION_ADJUST_OPPOSITE")
+	@cmd dc_elmers_set_sorting DC_ELMERS_SORT_BACK
+	@cmd dc_elmers_set_frame DC_ELMERS_REACT_PAIN_MID_0
+
+	# Apply grapple properties.
+	@cmd dc_elmers_apply_grapple	
 		
-	frame	data/chars/galford/atk_grab_knee_0.png
+	frame	data/chars/galford/atk_grab_knee_0_u.png
 
 	@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_MEDIUM	
 	@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_SOUND_ATTACK_MEDIUM_BLADE
 		
 	# Spawn sub entity and set it as entity for binding.
+	@cmd dc_elmers_set_instance 1
 	@cmd dc_elmers_quick_overlay dc_gauntlet_quick_spawn("galford_overlay")
-	frame	data/chars/galford/atk_grab_knee_1.png	
-	frame	data/chars/galford/atk_grab_knee_2.png
-	frame	data/chars/galford/atk_grab_knee_3.png	
-	frame	data/chars/galford/atk_grab_knee_4.png
+	@cmd dc_elmers_set_sorting DC_ELMERS_SORT_FRONT_EX_1
+
+	# Adjust grapple properties.
+	@cmd dc_elmers_set_instance NULL()
+	@cmd dc_elmers_set_offset_x 38
+	@cmd dc_elmers_set_offset_y -2
+	@cmd dc_elmers_set_direction openborconstant("DIRECTION_ADJUST_OPPOSITE")
+	@cmd dc_elmers_set_sorting DC_ELMERS_SORT_FRONT
+	@cmd dc_elmers_set_frame DC_ELMERS_REACT_PAIN_MID_1
+
+	# Apply grapple properties.
+	#cmd dc_elmers_apply_grapple
+
+	frame	data/chars/galford/atk_grab_knee_1_u.png	
+
+	# Spawn sub entity and set it as entity for binding.
+	@cmd dc_elmers_set_instance 2
+	@cmd dc_elmers_set_offset_x 42
+	@cmd dc_elmers_set_offset_y 68
+	@cmd dc_elmers_quick_spot dc_gauntlet_quick_flash("flash_fatal_fury")
+	@cmd dc_elmers_set_sorting DC_ELMERS_SORT_FRONT_EX_2
 	
-	frame	data/chars/galford/atk_grab_knee_1.png
+	# Apply damage.
+	@cmd dc_elmers_set_instance NULL()
+	@cmd dc_damage_set_damage_force	8
+	@cmd dc_damage_set_entity dc_elmers_get_entity()
+
+	# Release grapple and disable future grapple calls if damage
+	# will kill target entity.
+	@cmd dc_elmers_conditional_end_grapple 	dc_damage_check_ko()
 	
-	frame	data/chars/galford/atk_grab_knee_0.png
+	@cmd dc_damage_apply_damage	
+
+	# Adjust grapple properties.
+	@cmd dc_elmers_set_instance NULL()
+	@cmd dc_elmers_set_offset_x 38
+	@cmd dc_elmers_set_offset_y -2
+	@cmd dc_elmers_set_direction openborconstant("DIRECTION_ADJUST_OPPOSITE")
+	@cmd dc_elmers_set_sorting DC_ELMERS_SORT_FRONT
+	@cmd dc_elmers_set_frame DC_ELMERS_REACT_PAIN_MID_2
+
+	# Apply grapple properties.
+	@cmd dc_elmers_apply_grapple
+
+	frame	data/chars/galford/atk_grab_knee_2_u.png
+	frame	data/chars/galford/atk_grab_knee_3_u.png	
+	frame	data/chars/galford/atk_grab_knee_4_u.png
 	
-	delay 40
-	frame	data/chars/galford/grab_0.png
+	# Adjust grapple properties.
+	@cmd dc_elmers_set_instance NULL()
+	@cmd dc_elmers_set_offset_x 38
+	@cmd dc_elmers_set_offset_y -2
+	@cmd dc_elmers_set_direction openborconstant("DIRECTION_ADJUST_OPPOSITE")
+	@cmd dc_elmers_set_sorting DC_ELMERS_SORT_FRONT
+	@cmd dc_elmers_set_frame DC_ELMERS_REACT_PAIN_MID_1
+
+	# Apply grapple properties.
+	@cmd dc_elmers_apply_grapple
+
+	frame	data/chars/galford/atk_grab_knee_1_u.png
+	
+	# Adjust grapple properties.
+	@cmd dc_elmers_set_offset_x 36
+	@cmd dc_elmers_set_offset_y 0
+	@cmd dc_elmers_set_direction openborconstant("DIRECTION_ADJUST_OPPOSITE")
+	@cmd dc_elmers_set_sorting DC_ELMERS_SORT_BACK
+	@cmd dc_elmers_set_animation_id openborconstant("ANI_GRABBED")
+	@cmd dc_elmers_set_frame 0
+	
+	# Apply grapple properties.
+	@cmd dc_elmers_apply_grapple	
+	frame	data/chars/galford/atk_grab_knee_5_u.png
+
+	delay 1	
+	@cmd dc_elmers_end_grapple_hold
+	frame	data/chars/galford/grab_0_u.png
+
+anim grabattack2 # Roundhouse kick
+	
+	fastattack 1
+
+	delay	5
+	offset	140 207
+	range -40 50
+		
+	bbox.position.x 130
+	bbox.position.y 120
+	bbox.size.x 45
+	bbox.size.y 90
+	
+		# Play voice 50% of the time and clear chance so default is used for 
+		# any subsequent sound play calls.
+		@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_LIGHT
+				
+		@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_SOUND_ATTACK_MEDIUM
+
+	frame	data/chars/galford/atk_elbow_jab_0_u.png
+	frame	data/chars/galford/atk_elbow_jab_1_u.png
+	frame	data/chars/galford/atk_elbow_jab_2_u.png
+	
+	attack.damage.lethal.disable 1
+	attack.block.penetrate 1
+	attack.damage.force 8
+	attack.position.x 182
+	attack.position.y 136
+	attack.reaction.pause.time 18
+	attack.size.x 10
+	attack.size.y 14
+	
+	frame	data/chars/galford/atk_elbow_jab_3_u.png
+
+	attack 0
+	
+	@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_SOUND_ATTACK_MEDIUM
+	
+	frame	data/chars/galford/atk_elbow_jab_4_u.png
+	
+	attack.damage.lethal.disable 1
+	attack.block.penetrate 1
+	attack.damage.force 6
+	attack.position.x 193
+	attack.position.y 121
+	attack.reaction.pause.time 18
+	attack.size.x 18
+	attack.size.y 13
+	
+	frame	data/chars/galford/atk_elbow_jab_backhand_0_u.png
+	
+	attack 0
+	
+	frame	data/chars/galford/atk_elbow_jab_backhand_1_u.png	
+	
+	idle 1
+	
+	frame	data/chars/galford/atk_elbow_jab_backhand_2_u.png
+
+	delay	5
+	offset	140 207
+	range -40 50
+		
+	bbox.position.x 130
+	bbox.position.y 120
+	bbox.size.x 45
+	bbox.size.y 90
+		
+		@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_MEDIUM		
+		
+		@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_SOUND_ATTACK_MEDIUM	
+frame	data/chars/galford/atk_elbow_jab_0_u.png
+	frame	data/chars/galford/atk_straight_short_0_u.png
+		
+	delay 8
+	
+	attack.damage.lethal.disable 0
+	attack.block.penetrate 1
+	attack.damage.force 12
+	attack.position.x 158
+	attack.position.y 137
+	attack.reaction.fall.force 1
+	attack.reaction.fall.velocity.x 1.2
+	attack.reaction.fall.velocity.y 3.0
+	attack.reaction.fall.velocity.z 0.0
+	attack.reaction.pause.time 20
+	attack.size.x 41
+	attack.size.y 14
+	
+	frame	data/chars/galford/atk_straight_short_1_u.png
+	
+	delay 12
+	
+	frame	data/chars/galford/atk_straight_short_2_u.png
+	
+	delay 8
+	attack 0
+	
+	frame	data/chars/galford/atk_straight_short_3_u.png
+	frame	data/chars/galford/block_start_0_u.png
 
 anim jumpdelay
 
@@ -1161,69 +1326,7 @@ anim blockpain
 	
 	frame	data/chars/galford/block_impact_1_u.png
 
-anim grabattack2 # Roundhouse kick
-	
-	delay	9
-	offset	140 207
-	
-	bbox.position.x 114
-	bbox.position.y 116
-	bbox.size.x 45
-	bbox.size.y 93	
-	
-	@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_MEDIUM
 
-	frame data/chars/galford/atk_straight_0_u.png
-	
-	bbox.position.x 148
-	bbox.position.y 102
-	bbox.size.x 33
-	bbox.size.y 107
-	
-	@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_SOUND_ATTACK_MEDIUM
-
-	frame data/chars/galford/atk_round_kick_0_u.png
-	bbox.position.x 163
-	bbox.position.y 100
-	bbox.size.x 54
-	bbox.size.y 110
-	
-	attack.damage.force 0
-	attack.position.x 205
-	attack.position.y 95
-	attack.size.x 43
-	attack.size.y 36
-	
-	frame data/chars/galford/atk_round_kick_1_u.png
-	
-	delay 8
-	
-	attack 0
-	
-	frame data/chars/galford/atk_round_kick_2_u.png
-	
-	bbox.position.x 160
-	bbox.position.y 95
-	bbox.size.x 37
-	bbox.size.y 115
-	
-	frame data/chars/galford/atk_round_kick_3_u.png
-	
-	bbox.position.x 124
-	bbox.position.y 114
-	bbox.size.x 38
-	bbox.size.y 95
-	
-	frame data/chars/galford/atk_round_kick_4_u.png
-	
-	delay 10	
-	
-	bbox.position.x 125
-	bbox.position.y 118
-	bbox.size.x 45
-	bbox.size.y 89
-	
-	frame data/chars/galford/block_start_0_u.png
 
 anim follow82 # Down Attack
 	

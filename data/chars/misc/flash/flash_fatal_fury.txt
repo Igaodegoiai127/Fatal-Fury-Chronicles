@@ -24,4 +24,7 @@ anim idle
 		frame	data/chars/misc/flash/flash/0_8.png
 		frame	data/chars/misc/flash/flash/0_9.png
 		frame	data/chars/misc/flash/flash/0_10.png
+
+		@cmd log "\n flash_fatal_fury - autokill: "+get_entity_property(getlocalvar("self"),"autokill")
+
 		frame	data/chars/misc/flash/flash/0_11.png

@@ -1157,37 +1157,6 @@ anim grab
 	
 	frame	data/chars/galford/grab_0.png
 	
-anim attack # Knee
-
-	fastattack 1
-	range   -40 50
-
-	delay	6
-	offset	140 207
-	
-	bbox.position.x 130
-	bbox.position.y 120
-	bbox.size.x 45
-	bbox.size.y 90
-	
-		
-		
-	frame	data/chars/galford/atk_grab_knee_0.png
-
-	@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_MEDIUM	
-	@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_SOUND_ATTACK_MEDIUM_BLADE
-		
-	# Spawn sub entity and set it as entity for binding.
-	@cmd dc_elmers_quick_overlay dc_gauntlet_quick_spawn("galford_overlay")
-	frame	data/chars/galford/atk_grab_knee_1.png	
-	frame	data/chars/galford/atk_grab_knee_2.png
-	frame	data/chars/galford/atk_grab_knee_3.png	
-	frame	data/chars/galford/atk_grab_knee_4.png
-	
-	frame	data/chars/galford/atk_grab_knee_1.png
-	
-	frame	data/chars/galford/atk_grab_knee_0.png
-
 anim grabattack # Knee
 
 	fastattack 1
@@ -1202,11 +1171,11 @@ anim grabattack # Knee
 	bbox.size.y 90
 	
 	# Set up the grapple.
-	@cmd dc_elmers_initialize_grapple
+	@cmd dc_elmers_initialize_grapple_hold
 
 	# Adjust grapple properties.
-	@cmd dc_elmers_set_offset_x 38
-	@cmd dc_elmers_set_offset_y -2
+	@cmd dc_elmers_set_offset_x 36
+	@cmd dc_elmers_set_offset_y 0
 	@cmd dc_elmers_set_direction openborconstant("DIRECTION_ADJUST_OPPOSITE")
 	@cmd dc_elmers_set_sorting DC_ELMERS_SORT_BACK
 	@cmd dc_elmers_set_frame DC_ELMERS_REACT_PAIN_MID_0
@@ -1222,6 +1191,7 @@ anim grabattack # Knee
 	# Spawn sub entity and set it as entity for binding.
 	@cmd dc_elmers_set_instance 1
 	@cmd dc_elmers_quick_overlay dc_gauntlet_quick_spawn("galford_overlay")
+	@cmd dc_elmers_set_sorting DC_ELMERS_SORT_FRONT_EX_1
 
 	# Adjust grapple properties.
 	@cmd dc_elmers_set_instance NULL()
@@ -1232,7 +1202,7 @@ anim grabattack # Knee
 	@cmd dc_elmers_set_frame DC_ELMERS_REACT_PAIN_MID_1
 
 	# Apply grapple properties.
-	@cmd dc_elmers_apply_grapple
+	#cmd dc_elmers_apply_grapple
 
 	frame	data/chars/galford/atk_grab_knee_1.png	
 
@@ -1240,7 +1210,19 @@ anim grabattack # Knee
 	@cmd dc_elmers_set_instance 2
 	@cmd dc_elmers_set_offset_x 42
 	@cmd dc_elmers_set_offset_y 68
-	@cmd dc_elmers_quick_spot dc_gauntlet_quick_spawn("flash_fatal_fury")
+	@cmd dc_elmers_quick_spot dc_gauntlet_quick_flash("flash_fatal_fury")
+	@cmd dc_elmers_set_sorting DC_ELMERS_SORT_FRONT_EX_2
+	
+	# Apply damage.
+	@cmd dc_elmers_set_instance NULL()
+	@cmd dc_damage_set_damage_force	8
+	@cmd dc_damage_set_entity dc_elmers_get_entity()
+
+	# Release grapple and disable future grapple calls if damage
+	# will kill target entity.
+	@cmd dc_elmers_conditional_end_grapple 	dc_damage_check_ko()
+	
+	@cmd dc_damage_apply_damage	
 
 	# Adjust grapple properties.
 	@cmd dc_elmers_set_instance NULL()
@@ -1271,24 +1253,21 @@ anim grabattack # Knee
 	frame	data/chars/galford/atk_grab_knee_1.png
 	
 	# Adjust grapple properties.
-	@cmd dc_elmers_set_offset_x 38
-	@cmd dc_elmers_set_offset_y -2
+	@cmd dc_elmers_set_offset_x 36
+	@cmd dc_elmers_set_offset_y 0
 	@cmd dc_elmers_set_direction openborconstant("DIRECTION_ADJUST_OPPOSITE")
 	@cmd dc_elmers_set_sorting DC_ELMERS_SORT_BACK
-	@cmd dc_elmers_set_frame DC_ELMERS_REACT_PAIN_MID_0
+	@cmd dc_elmers_set_animation_id openborconstant("ANI_GRABBED")
+	@cmd dc_elmers_set_frame 0
 	
 	# Apply grapple properties.
-	@cmd dc_elmers_apply_grapple
+	@cmd dc_elmers_apply_grapple	
+	frame	data/chars/galford/atk_grab_knee_5.png
 
-	frame	data/chars/galford/atk_grab_knee_0.png
-
-	delay 1
-
-	@cmd dc_elmers_end_grapple
+	delay 1	
+	@cmd dc_elmers_end_grapple_hold
 	frame	data/chars/galford/grab_0.png
 	
-
-
 anim grabattack2 # Stab
 
 	fastattack 1
