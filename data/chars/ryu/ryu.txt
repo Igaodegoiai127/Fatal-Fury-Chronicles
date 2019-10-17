@@ -2961,6 +2961,8 @@ anim grabbackward # Circle Throw
 	@cmd dc_damage_set_entity					dc_elmers_end_grapple()
 
 	# Adjust damage properties.
+	
+	@cmd dc_damage_set_damage_force				30
 	@cmd dc_damage_set_attack_type				openborconstant("ATK_NORMAL10")
 	@cmd dc_damage_set_projectile				openborconstant("BLAST_ATTACK")
 	@cmd dc_damage_set_damage_on_landing_force	30
