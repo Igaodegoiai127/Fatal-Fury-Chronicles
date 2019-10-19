@@ -418,7 +418,7 @@ anim attack2	# Palm mid.
 
 	fastattack 1
 
-	delay	6
+	delay	5
 	offset	140 207
 	range -40 50
 		
@@ -441,7 +441,7 @@ anim attack2	# Palm mid.
 	attack.damage.force 12
 	attack.position.x 140
 	attack.position.y 148
-	attack.reaction.pause.time 15
+	attack.reaction.pause.time 10
 	attack.size.x 51
 	attack.size.y 18
 	
@@ -457,7 +457,7 @@ anim attack2	# Palm mid.
 	frame	data/chars/galford/block_start_0_u.png	
 	
 
-anim attack3 # Short straight.
+anim attack3 # Elbow Upper.
 	
 	fastattack 1
 
@@ -469,33 +469,28 @@ anim attack3 # Short straight.
 	bbox.position.y 120
 	bbox.size.x 45
 	bbox.size.y 90
-		
-		@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_MEDIUM		
-		
-		@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_SOUND_ATTACK_MEDIUM	
-
-	frame	data/chars/galford/atk_straight_short_0_u.png
-		
-	delay 6
 	
+	@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_MEDIUM		
+		
+		@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_SOUND_ATTACK_MEDIUM
+	
+	frame	data/chars/galford/atk_elbow_upper_0_u.png
+	
+	delay 6
+		
 	attack.damage.force 12
-	attack.position.x 139
-	attack.position.y 138
-	attack.reaction.pause.time 18
-	attack.size.x 70
+	attack.position.x 140
+	attack.position.y 115
+	attack.reaction.pause.time 12
+	attack.size.x 52
 	attack.size.y 11
 	
-	frame	data/chars/galford/atk_straight_short_1_u.png
-	frame	data/chars/galford/atk_straight_short_2_u.png
+	frame	data/chars/galford/atk_elbow_upper_1_u.png
 	
-	delay 8
 	attack 0
 	
-	frame	data/chars/galford/atk_straight_short_3_u.png
-
-	idle 1
-	
-	frame	data/chars/galford/block_start_0_u.png
+	frame	data/chars/galford/atk_elbow_upper_2_u.png	
+	frame	data/chars/galford/block_start_0.png
 
 
 
