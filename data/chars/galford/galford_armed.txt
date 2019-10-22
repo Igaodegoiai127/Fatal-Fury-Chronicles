@@ -943,9 +943,7 @@ anim runattack
 
 
 
-anim freespecial
-
-	# Back Handspring
+anim freespecial # Back Dash - Back Handspring
 
 		jumpframe 2 1.5 -1.5 0 hop_liftoff
 		landframe 4 jump_land
@@ -979,9 +977,7 @@ anim freespecial
 
 	frame	data/chars/galford/dash_back_2.png
 
-anim follow93
-
-	# Back handspring (part 2).
+anim follow93 # Back dash Back handspring (part 2).
 
 		jumpframe 2 1.5 -1.5 0 hop_liftoff
 		landframe 4 jump_land
@@ -1326,6 +1322,225 @@ anim grabattack2 # Stab
 	
 	frame	data/chars/galford/atk_v-cut_7.png
 
+anim grabforward # Moondust throw
+
+	jumpframe 1 1.2 -0.2 0 jump_liftoff
+	landframe 7 flash_slam_heavy 
+
+	delay	12
+	offset	140 207
+	
+	bbox.position.x 130
+	bbox.position.y 120
+	bbox.size.x 45
+	bbox.size.y 90	
+	
+	# Set up the grapple.
+	@cmd dc_elmers_initialize_grapple
+
+	# Adjust grapple properties.
+	@cmd dc_elmers_set_offset_x 31
+	@cmd dc_elmers_set_offset_y -2
+	@cmd dc_elmers_set_direction openborconstant("DIRECTION_ADJUST_OPPOSITE")
+	@cmd dc_elmers_set_sorting DC_ELMERS_SORT_BACK
+	@cmd dc_elmers_set_frame DC_ELMERS_REACT_PAIN_MID_1
+
+	# Apply grapple properties.
+	@cmd dc_elmers_apply_grapple
+	
+	@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_LIGHT
+	
+	frame	data/chars/galford/atk_grab_knee_5.png
+	
+	delay 4
+	
+	@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_HEAVY
+	
+	# Adjust grapple properties.
+	@cmd dc_elmers_set_offset_x 40
+	@cmd dc_elmers_set_offset_y 65
+	@cmd dc_elmers_set_direction openborconstant("DIRECTION_ADJUST_OPPOSITE")
+	@cmd dc_elmers_set_frame DC_ELMERS_REACT_TILT_FORWARD_0
+	
+	# Apply grapple properties.
+	@cmd dc_elmers_apply_grapple
+	
+	frame	data/chars/galford/moondust_throw_0.png
+	
+	# Adjust grapple properties.
+	@cmd dc_elmers_set_offset_x 10
+	@cmd dc_elmers_set_offset_y 80
+	@cmd dc_elmers_set_direction openborconstant("DIRECTION_ADJUST_SAME")
+	@cmd dc_elmers_set_frame DC_ELMERS_REACT_HORIZONTAL_DOWN_0
+	
+	# Apply grapple properties.
+	@cmd dc_elmers_apply_grapple
+	
+	frame	data/chars/galford/moondust_throw_1.png
+	
+	# Adjust grapple properties.
+	@cmd dc_elmers_set_offset_x -20
+	@cmd dc_elmers_set_offset_y 80
+	@cmd dc_elmers_set_direction openborconstant("DIRECTION_ADJUST_OPPOSITE")
+	@cmd dc_elmers_set_frame DC_ELMERS_REACT_TILT_DOWN_0
+	
+	# Apply grapple properties.
+	@cmd dc_elmers_apply_grapple
+	
+	frame	data/chars/galford/moondust_throw_2.png
+	
+	# Adjust grapple properties.
+	@cmd dc_elmers_set_offset_x -35
+	@cmd dc_elmers_set_offset_y 55
+	@cmd dc_elmers_set_direction openborconstant("DIRECTION_ADJUST_SAME")
+	@cmd dc_elmers_set_frame DC_ELMERS_REACT_VERTICAL_DOWN_0
+	
+	# Apply grapple properties.
+	@cmd dc_elmers_apply_grapple
+	
+	frame	data/chars/galford/moondust_throw_3.png
+	
+	# Adjust grapple properties.
+	@cmd dc_elmers_set_offset_x -30
+	@cmd dc_elmers_set_offset_y 20
+	@cmd dc_elmers_set_direction openborconstant("DIRECTION_ADJUST_OPPOSITE")
+	@cmd dc_elmers_set_frame DC_ELMERS_REACT_FALLING_UP_TILT_0
+	
+	# Apply grapple properties.
+	@cmd dc_elmers_apply_grapple
+	
+	frame	data/chars/galford/moondust_throw_4.png
+	
+	delay -1000
+	
+	# Adjust grapple properties.
+	@cmd dc_elmers_set_offset_x -10
+	@cmd dc_elmers_set_offset_y 5
+	@cmd dc_elmers_set_direction openborconstant("DIRECTION_ADJUST_OPPOSITE")
+	@cmd dc_elmers_set_frame DC_ELMERS_REACT_FALLING_UP_0
+	
+	# Apply grapple properties.
+	@cmd dc_elmers_apply_grapple
+	
+	frame	data/chars/galford/moondust_throw_5.png
+	
+	delay 8
+	
+	@cmd dc_damage_set_entity dc_elmers_get_entity()
+	@cmd dc_damage_set_damage_force	30
+	@cmd dc_damage_set_attack_type	openborconstant("ATK_LAND")		
+	
+	# Apply damage.
+	@cmd dc_damage_apply_damage	
+	
+	# Adjust grapple properties.
+	@cmd dc_elmers_set_offset_x 5
+	@cmd dc_elmers_set_offset_y 0
+	@cmd dc_elmers_set_direction openborconstant("DIRECTION_ADJUST_OPPOSITE")
+	@cmd dc_elmers_set_frame DC_ELMERS_REACT_LAYING_UP_PAIN_0
+	
+	# Apply grapple properties.
+	@cmd dc_elmers_apply_grapple
+	
+	frame	data/chars/galford/moondust_throw_6.png
+	
+	delay 30
+	
+	# Adjust grapple properties.
+	@cmd dc_elmers_set_offset_x 5
+	@cmd dc_elmers_set_offset_y 0
+	@cmd dc_elmers_set_direction openborconstant("DIRECTION_ADJUST_OPPOSITE")
+	@cmd dc_elmers_set_frame DC_ELMERS_REACT_LAYING_UP_0
+	
+	# Apply grapple properties.
+	@cmd dc_elmers_apply_grapple
+	
+	frame	data/chars/galford/moondust_throw_6.png
+	
+	# Release entity and bounce them away with knockdown.
+	@cmd dc_elmers_end_grapple
+	
+	@cmd dc_damage_set_damage_force				0
+	@cmd dc_damage_set_attack_type				openborconstant("ATK_NORMAL11")
+	@cmd dc_damage_set_projectile				openborconstant("BLAST_ATTACK")
+	@cmd dc_damage_set_damage_on_landing_force	0
+	@cmd dc_damage_set_direction_adjust			openborconstant("DIRECTION_ADJUST_OPPOSITE")
+	@cmd dc_damage_set_drop_velocity_x			2.5
+	@cmd dc_damage_set_drop_velocity_y			2.0
+	
+	# Apply damage.
+	@cmd dc_damage_apply_damage
+	
+	# Bounce away.
+	@cmd performattack getlocalvar("self") openborconstant("ANI_FOLLOW21") 0
+	frame	data/chars/galford/jump_back_0.png
+	
+anim follow21 # Moondust Throw bounce
+
+	jumpframe 0 3.2 -1.2 0 jump_liftoff
+	landframe 7 jump_land
+
+	delay	8
+	offset	140 207
+	bbox.position.x 106
+	bbox.position.y 119
+	bbox.size.x 58
+	bbox.size.y 84
+
+	frame	data/chars/galford/jump_back_0.png
+	
+	bbox.position.x 102
+	bbox.position.y 127
+	bbox.size.x 85
+	bbox.size.y 59
+
+	frame	data/chars/galford/jump_back_1.png
+
+	bbox.position.x 104
+	bbox.position.y 114
+	bbox.size.x 75
+	bbox.size.y 70
+
+	frame	data/chars/galford/jump_back_2.png
+
+	bbox.position.x 104
+	bbox.position.y 87
+	bbox.size.x 55
+	bbox.size.y 98
+
+	frame	data/chars/galford/jump_back_3.png
+
+	bbox.position.x 115
+	bbox.position.y 90
+	bbox.size.x 54
+	bbox.size.y 94
+
+	frame	data/chars/galford/jump_back_4.png
+
+	bbox.position.x 75
+	bbox.position.y 111
+	bbox.size.x 100
+	bbox.size.y 57
+
+	frame	data/chars/galford/jump_back_5.png
+
+	delay -1000
+
+	bbox.position.x 104
+	bbox.position.y 108
+	bbox.size.x 65
+	bbox.size.y 102
+
+	frame	data/chars/galford/jump_back_6.png
+	
+	delay	4
+	offset	140 207
+	bbox	115 124 50 85
+	
+	frame	data/chars/galford/jump_land_0.png
+	frame	data/chars/galford/jump_land_1.png
+	frame	data/chars/galford/duck_start_0.png
+	
 anim jumpdelay
 
 	delay	8

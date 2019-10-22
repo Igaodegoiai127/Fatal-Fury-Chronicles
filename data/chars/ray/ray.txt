@@ -929,6 +929,24 @@ anim follow10
 	attack.size.x 57
 	attack.size.y 64
 	
+	frame	data/chars/ray/R_TILT_DOWN_0.png
+	
+	offset	75 115
+	
+	bbox.position.x 51
+	bbox.position.y 91
+	bbox.size.x 58
+	bbox.size.y 65
+	
+	attack.damage.force 10
+	attack.effect.hit.flash.model flash_indirect
+	attack.reaction.fall.force 1
+	attack.reaction.pause.time 10
+	attack.position.x 51
+	attack.position.y 90
+	attack.size.x 57
+	attack.size.y 64
+	
 	frame	data/chars/ray/R_TILT_FORWARD_0.png
 	
 	bbox.position.x 46
@@ -1075,4 +1093,58 @@ anim fall10 # Thrown
 	bbox.position.y 97
 	bbox.size.x 104
 	bbox.size.y 27
+	frame	data/chars/ray/R_LAYING_UP_0.png
+
+anim fall1 # Flat fall 
+
+	   
+    landframe 1
+
+	delay   -1000
+	offset	75 115
+		
+	attack.block.penetrate 0
+	attack.damage.force 0
+	attack.damage.type 1
+	attack.effect.hit.flash.disable 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.reaction.pause.time 0
+	attack.size.x 0
+	attack.size.y 0
+	attack.size.z.1 0
+	
+	bbox.position.x 31
+	bbox.position.y 96
+	bbox.size.x 93
+	bbox.size.y 28
+	frame	data/chars/ray/R_FALLING_UP_0.png	
+	
+	delay   10
+	offset	75 115
+	
+	attack.block.penetrate 0
+	attack.damage.force 0
+	attack.damage.type 1
+	attack.effect.hit.flash.disable 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.reaction.fall.force 0
+	attack.reaction.pause.time 0
+	attack.size.x 0
+	attack.size.y 0
+	attack.size.z.1 0
+	
+	bbox.position.x 31
+	bbox.position.y 96
+	bbox.size.x 93
+	bbox.size.y 28
+	frame	data/chars/ray/R_LAYING_UP_PAIN_0.png
+	
+	bbox.position.x 27
+	bbox.position.y 97
+	bbox.size.x 104
+	bbox.size.y 27
+	
 	frame	data/chars/ray/R_LAYING_UP_0.png
