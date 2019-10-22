@@ -7,6 +7,7 @@ void main() {
 	float pos_z;
 	int aggression;	
 	int spawn_type;
+	int mp;
 
 	ent = getlocalvar("self");
 	pos_z = getentityproperty(ent, "z");
@@ -35,15 +36,27 @@ void main() {
 	{
 		changedrawmethod(ent, "enabled", 1);
 		changedrawmethod(ent, "alpha", 1);
-		changedrawmethod(ent, "scalex", 128);
-		changedrawmethod(ent, "scaley", 128);
+		
+		mp = getentityproperty(ent, "maxmp");
+
+		if (mp <= 0)
+		{
+			mp = 128;
+		}
+		
+		changedrawmethod(ent, "scalex", mp);
+		changedrawmethod(ent, "scaley", mp);
 
 		//dc_kanga_z_position_autoscale(ent);
 	}
 
 	// By default OpenBOR spawns dust effects in front of
 	// parent, but we want them behind.
-	set_entity_property(ent, "position_z", pos_z - 1);
+	if (getentityproperty(ent, "throwdamage") != 1)
+	{
+		set_entity_property(ent, "position_z", pos_z - 1);
+	}
+	
 
 	// Play sound.
 	dc_fidelity_quick_play(DC_FIDELITY_TYPE_SOUND_SPAWN);
