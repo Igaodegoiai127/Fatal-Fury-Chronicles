@@ -4,6 +4,9 @@ name	flash_slam_heavy
 type	none
 lifespan 2
 shadow	0
+mp 256
+guardpoints 1
+throwdamage 1
 
 onspawnscript 	data/scripts/common/event_spawn_dust.c
 onkillscript	data/scripts/common/event_kill.c
@@ -14,8 +17,10 @@ anim idle
 
 	#Normal dust.
 
-	delay	10
-	offset	75 40
+		quakeframe 0 4 -3
+
+	delay	8
+	offset	75 30
 		frame	data/chars/misc/dust/0_0.png
 		frame	data/chars/misc/dust/0_1.png
 		frame	data/chars/misc/dust/0_2.png
