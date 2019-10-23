@@ -1904,3 +1904,93 @@ anim fall # Normal Fall
 	frame	data/chars/galford/jump_land_0_u.png
 	frame	data/chars/galford/jump_land_1_u.png
 	frame	data/chars/galford/duck_start_0_u.png
+	
+anim riseattack
+	
+	fastattack 1
+	range   0 90
+
+	delay	8
+	offset	140 207
+	bbox.position.x 112
+	bbox.position.y 163
+	bbox.size.x 83
+	bbox.size.y 49
+	
+	frame data/chars/galford/rise_b_0_u.png
+		
+	bbox.position.x 115
+	bbox.position.y 155
+	bbox.size.x 54
+	bbox.size.y 55
+	
+	frame data/chars/galford/rise_b_1_u.png
+	frame data/chars/galford/rise_b_2_u.png
+	
+	delay 12
+	
+	@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_HEAVY
+	@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_SOUND_ATTACK_HEAVY	
+	
+	bbox.position.x 122
+	bbox.position.y 137
+	bbox.size.x 51
+	bbox.size.y 70
+	
+	frame data/chars/galford/atk_duck_straight_0.png
+	
+	delay 10	
+		
+	attack.damage.force 10
+	attack.position.x 140
+	attack.position.y 154
+	attack.reaction.fall.force 1
+	attack.reaction.fall.velocity.x 1.2
+	attack.reaction.fall.velocity.y 3.0
+	attack.reaction.fall.velocity.z 0.0
+	attack.reaction.pause.time 12
+	attack.size.x 90
+	attack.size.y 16
+	
+	bbox.position.x 124
+	bbox.position.y 143
+	bbox.size.x 80
+	bbox.size.y 66
+	
+	frame data/chars/galford/atk_duck_straight_1.png
+	
+	attack 0
+	
+	frame data/chars/galford/atk_duck_straight_2.png
+	
+	delay 12	
+	
+	bbox.position.x 117
+	bbox.position.y 133
+	bbox.size.x 57
+	bbox.size.y 76
+	
+	frame data/chars/galford/atk_duck_straight_3.png	
+		
+	bbox.position.x 107
+	bbox.position.y 136
+	bbox.size.x 60
+	bbox.size.y 72
+	
+	delay 8
+	
+	frame data/chars/galford/duck_start_2_u.png	
+	
+	bbox.position.x 107
+	bbox.position.y 127
+	bbox.size.x 60
+	bbox.size.y 82
+	
+	frame data/chars/galford/duck_start_1_u.png
+	
+	bbox.position.x 109
+	bbox.position.y 121
+	bbox.size.x 59
+	bbox.size.y 87
+	
+	frame data/chars/galford/duck_start_0_u.png

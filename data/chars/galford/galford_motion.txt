@@ -145,4 +145,17 @@ anim follow82 # Down Attack
 	frame	data/chars/galford/atk_downward_chop_cut_2_motion.png
 	frame	data/chars/misc/blank.png
 	
+anim riseattack
 	
+	delay	-1000
+	offset	140 207
+	
+	
+	frame	data/chars/misc/blank.png
+	frame	data/chars/misc/blank.png
+	frame	data/chars/misc/blank.png	
+	
+	frame	data/chars/misc/blank.png	
+	frame data/chars/galford/atk_duck_backhand_cut_1_motion.png	
+	frame data/chars/galford/atk_duck_backhand_cut_2_motion.png	
+	frame	data/chars/misc/blank.png

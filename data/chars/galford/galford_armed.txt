@@ -2275,3 +2275,127 @@ anim follow82 # Down Attack
 	@cmd dc_fidelity_quick_play "sheath_sword"	
 	
 	frame	data/chars/galford/atk_cross_cut_0.png
+
+anim riseattack
+	
+	fastattack 1
+	range   0 100
+
+	delay	8
+	offset	140 207
+	bbox.position.x 112
+	bbox.position.y 163
+	bbox.size.x 83
+	bbox.size.y 49
+	
+	frame data/chars/galford/rise_b_0.png
+		
+	bbox.position.x 115
+	bbox.position.y 155
+	bbox.size.x 54
+	bbox.size.y 55
+	
+	frame data/chars/galford/rise_b_1.png
+	frame data/chars/galford/rise_b_2.png
+	
+	delay 12
+	
+	@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_HEAVY
+		
+	bbox.position.x 120
+	bbox.position.y 136
+	bbox.size.x 40
+	bbox.size.y 72
+	
+	frame data/chars/galford/atk_duck_backhand_cut_0.png
+	
+	delay 6
+	
+	@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_SOUND_ATTACK_HEAVY_BLADE
+	
+	# Spawn sub entity and set it as entity for binding.
+	@cmd dc_elmers_quick_particle dc_gauntlet_quick_spawn("galford_motion")
+	
+	bbox.position.x 130
+	bbox.position.y 136
+	bbox.size.x 45
+	bbox.size.y 72
+	
+	attack.damage.force 25
+	attack.damage.type 2
+	attack.effect.hit.flash.disable 0
+	attack.effect.hit.flash.model flash_cvs_cut_heavy
+	attack.position.x 140
+	attack.position.y 175
+	attack.reaction.fall.force 2
+	attack.reaction.pause.time 20
+	attack.size.x 100
+	attack.size.y 32
+	
+	frame data/chars/galford/atk_duck_backhand_cut_1.png	
+	
+	delay 8
+	
+	attack.damage.force 25
+	attack.damage.type 2
+	attack.effect.hit.flash.disable 0
+	attack.effect.hit.flash.model flash_cvs_cut_heavy
+	attack.position.x 163
+	attack.position.y 150
+	attack.reaction.fall.force 2
+	attack.reaction.pause.time 20
+	attack.size.x 55
+	attack.size.y 29
+	
+	bbox.position.x 136
+	bbox.position.y 150
+	bbox.size.x 52
+	bbox.size.y 57
+	
+	frame data/chars/galford/atk_duck_backhand_cut_2.png
+	
+	delay 12
+	
+	attack 0
+	
+	frame data/chars/galford/atk_duck_backhand_cut_3.png
+	frame data/chars/galford/atk_duck_backhand_cut_4.png
+	
+	bbox.position.x 130
+	bbox.position.y 136
+	bbox.size.x 45
+	bbox.size.y 72
+	
+	frame data/chars/galford/atk_duck_backhand_cut_5.png	
+	
+	bbox.position.x 120
+	bbox.position.y 136
+	bbox.size.x 40
+	bbox.size.y 72
+	
+	@cmd dc_fidelity_quick_play "sheath_sword"
+	
+	frame data/chars/galford/atk_duck_backhand_cut_0.png
+	
+	delay 8
+		
+	bbox.position.x 107
+	bbox.position.y 136
+	bbox.size.x 60
+	bbox.size.y 72
+	
+	frame data/chars/galford/duck_start_2.png	
+	
+	bbox.position.x 107
+	bbox.position.y 127
+	bbox.size.x 60
+	bbox.size.y 82
+	
+	frame data/chars/galford/duck_start_1.png
+	
+	bbox.position.x 109
+	bbox.position.y 121
+	bbox.size.x 59
+	bbox.size.y 87
+	
+	frame data/chars/galford/duck_start_0.png
