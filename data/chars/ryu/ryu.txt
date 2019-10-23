@@ -2926,7 +2926,7 @@ anim grabbackward # Circle Throw
 	# Adjust grapple properties.
 	@cmd dc_elmers_set_offset_x 18
 	@cmd dc_elmers_set_offset_y 65
-	@cmd dc_elmers_set_frame DC_ELMERS_REACT_TILT_DOWN_0
+	@cmd dc_elmers_set_frame DC_ELMERS_REACT_TILT_FORWARD_0
 	
 	# Apply grapple properties.
 	@cmd dc_elmers_quick_bind	
@@ -2962,7 +2962,6 @@ anim grabbackward # Circle Throw
 
 	# Adjust damage properties.
 	
-	@cmd dc_damage_set_damage_force				30
 	@cmd dc_damage_set_attack_type				openborconstant("ATK_NORMAL10")
 	@cmd dc_damage_set_projectile				openborconstant("BLAST_ATTACK")
 	@cmd dc_damage_set_damage_on_landing_force	30
@@ -3046,7 +3045,7 @@ anim grabforward # Shoulder Throw
 	# Adjust grapple properties.
 	@cmd dc_elmers_set_offset_x -44
 	@cmd dc_elmers_set_offset_y 64
-	@cmd dc_elmers_set_frame DC_ELMERS_REACT_TILT_DOWN_0
+	@cmd dc_elmers_set_frame DC_ELMERS_REACT_TILT_FORWARD_0
 
 	# Apply grapple properties.
 	@cmd dc_elmers_apply_grapple
@@ -3056,10 +3055,10 @@ anim grabforward # Shoulder Throw
 	delay 8
 
 	# Adjust grapple properties.
-	@cmd dc_elmers_set_offset_x -21
-	@cmd dc_elmers_set_offset_y 94
-	@cmd dc_elmers_set_direction openborconstant("DIRECTION_ADJUST_OPPOSITE")
-	@cmd dc_elmers_set_frame DC_ELMERS_REACT_HORIZONTAL_DOWN_0
+	@cmd dc_elmers_set_offset_x -10
+	@cmd dc_elmers_set_offset_y 104
+	@cmd dc_elmers_set_direction openborconstant("DIRECTION_ADJUST_SAME")
+	@cmd dc_elmers_set_frame DC_ELMERS_REACT_TILT_DOWN_0
 
 	# Apply grapple properties.
 	@cmd dc_elmers_apply_grapple
