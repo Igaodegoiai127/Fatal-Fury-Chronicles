@@ -159,3 +159,17 @@ anim riseattack
 	frame data/chars/galford/atk_duck_backhand_cut_1_motion.png	
 	frame data/chars/galford/atk_duck_backhand_cut_2_motion.png	
 	frame	data/chars/misc/blank.png
+
+anim grabbackward # Soldust throw
+
+	delay	-1000
+	offset	140 207
+	
+	frame	data/chars/misc/blank.png
+	frame	data/chars/misc/blank.png
+	frame	data/chars/misc/blank.png
+	frame	data/chars/misc/blank.png
+	frame	data/chars/misc/blank.png
+	frame	data/chars/galford/grab_soldust_throw_4_motion.png
+	frame	data/chars/galford/grab_soldust_throw_5_motion.png
+	frame	data/chars/misc/blank.png
