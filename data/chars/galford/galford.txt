@@ -1132,7 +1132,7 @@ anim grabforward # Moondust throw
 	# Apply grapple properties.
 	@cmd dc_elmers_apply_grapple
 	
-	frame	data/chars/galford/moondust_throw_0_u.png
+	frame	data/chars/galford/grab_moondust_throw_0_u.png
 	
 	# Adjust grapple properties.
 	@cmd dc_elmers_set_offset_x 10
@@ -1143,7 +1143,7 @@ anim grabforward # Moondust throw
 	# Apply grapple properties.
 	@cmd dc_elmers_apply_grapple
 	
-	frame	data/chars/galford/moondust_throw_1_u.png
+	frame	data/chars/galford/grab_moondust_throw_1_u.png
 	
 	# Adjust grapple properties.
 	@cmd dc_elmers_set_offset_x -20
@@ -1154,7 +1154,7 @@ anim grabforward # Moondust throw
 	# Apply grapple properties.
 	@cmd dc_elmers_apply_grapple
 	
-	frame	data/chars/galford/moondust_throw_2_u.png
+	frame	data/chars/galford/grab_moondust_throw_2_u.png
 	
 	# Adjust grapple properties.
 	@cmd dc_elmers_set_offset_x -35
@@ -1165,7 +1165,7 @@ anim grabforward # Moondust throw
 	# Apply grapple properties.
 	@cmd dc_elmers_apply_grapple
 	
-	frame	data/chars/galford/moondust_throw_3_u.png
+	frame	data/chars/galford/grab_somersault_0_u.png
 	
 	# Adjust grapple properties.
 	@cmd dc_elmers_set_offset_x -30
@@ -1176,7 +1176,7 @@ anim grabforward # Moondust throw
 	# Apply grapple properties.
 	@cmd dc_elmers_apply_grapple
 	
-	frame	data/chars/galford/moondust_throw_4_u.png
+	frame	data/chars/galford/grab_somersault_1_u.png
 	
 	delay -1000
 	
@@ -1189,7 +1189,7 @@ anim grabforward # Moondust throw
 	# Apply grapple properties.
 	@cmd dc_elmers_apply_grapple
 	
-	frame	data/chars/galford/moondust_throw_5_u.png
+	frame	data/chars/galford/grab_somersault_2_u.png
 	
 	delay 8
 	
@@ -1209,9 +1209,9 @@ anim grabforward # Moondust throw
 	# Apply grapple properties.
 	@cmd dc_elmers_apply_grapple
 	
-	frame	data/chars/galford/moondust_throw_6_u.png
+	frame	data/chars/galford/grab_moondust_throw_land_0_u.png
 	
-	delay 30
+	delay 10
 	
 	# Adjust grapple properties.
 	@cmd dc_elmers_set_offset_x 5
@@ -1220,9 +1220,11 @@ anim grabforward # Moondust throw
 	@cmd dc_elmers_set_frame DC_ELMERS_REACT_LAYING_UP_0
 	
 	# Apply grapple properties.
-	@cmd dc_elmers_apply_grapple
-	
-	frame	data/chars/galford/moondust_throw_6_u.png
+	@cmd dc_elmers_apply_grapple	
+
+	frame	data/chars/galford/grab_moondust_throw_land_1_u.png
+	frame	data/chars/galford/grab_moondust_throw_land_2_u.png	
+	frame	data/chars/galford/grab_moondust_throw_land_3_u.png
 	
 	# Release entity and bounce them away with knockdown.
 	@cmd dc_elmers_end_grapple
@@ -1392,7 +1394,7 @@ anim grabbackward # Soldust throw
 	# Apply grapple properties.
 	@cmd dc_elmers_apply_grapple
 	
-	@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_SOUND_ATTACK_HEAVY_BLADE
+	@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_SOUND_ATTACK_HEAVY
 	
 	frame	data/chars/galford/grab_soldust_throw_3_u.png
 	
@@ -1414,8 +1416,8 @@ anim grabbackward # Soldust throw
 	@cmd dc_damage_apply_damage
 	
 	@cmd dc_elmers_set_instance 2
-	@cmd dc_elmers_set_offset_x -35
-	@cmd dc_elmers_set_offset_y 25
+	@cmd dc_elmers_set_offset_x -40
+	@cmd dc_elmers_set_offset_y 35
 	@cmd dc_elmers_quick_spot dc_gauntlet_quick_flash("Flash")
 	@cmd dc_elmers_set_instance NULL()
 	
@@ -1429,9 +1431,15 @@ anim grabbackward # Soldust throw
 	frame	data/chars/galford/grab_soldust_throw_7_u.png	
 	
 	delay 10
+
+	move 12
 	
 	frame	data/chars/galford/grab_soldust_throw_8_u.png
+	
+	move 0
+
 	frame	data/chars/galford/block_start_0.png
+
 anim jumpdelay
 
 	delay	8
