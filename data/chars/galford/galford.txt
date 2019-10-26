@@ -1308,6 +1308,130 @@ anim follow21 # Moondust Throw bounce
 	frame	data/chars/galford/jump_land_1_u.png
 	frame	data/chars/galford/duck_start_0_u.png
 
+anim grabbackward # Soldust throw
+
+	flipframe 9
+	jumpframe 2 1.5 -0.2 0 jump_liftoff
+	landframe 5 jump_land 
+
+	delay	12
+	offset	140 207
+	
+	bbox.position.x 130
+	bbox.position.y 120
+	bbox.size.x 45
+	bbox.size.y 90
+	
+	# Set up the grapple.
+	@cmd dc_elmers_initialize_grapple
+
+	# Adjust grapple properties.
+	@cmd dc_elmers_set_offset_x 31
+	@cmd dc_elmers_set_offset_y -2
+	@cmd dc_elmers_set_direction openborconstant("DIRECTION_ADJUST_OPPOSITE")
+	@cmd dc_elmers_set_sorting DC_ELMERS_SORT_BACK
+	@cmd dc_elmers_set_frame DC_ELMERS_REACT_PAIN_MID_1
+
+	# Apply grapple properties.
+	@cmd dc_elmers_apply_grapple
+	
+	@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_LIGHT
+	
+	frame	data/chars/galford/atk_grab_knee_5_u.png
+	
+	delay 10
+	
+	@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_VOICE_ATTACK_SHOUT_HEAVY
+	
+	# Adjust grapple properties.
+	@cmd dc_elmers_set_offset_x 31
+	@cmd dc_elmers_set_offset_y -2
+	@cmd dc_elmers_set_direction openborconstant("DIRECTION_ADJUST_OPPOSITE")
+	@cmd dc_elmers_set_frame DC_ELMERS_REACT_PAIN_MID_2
+	
+	# Apply grapple properties.
+	@cmd dc_elmers_apply_grapple
+	
+	bbox.position.x 115
+	bbox.position.y 110
+	bbox.size.x 58
+	bbox.size.y 96
+	
+	frame	data/chars/galford/grab_soldust_throw_0_u.png
+	
+	# Adjust grapple properties.
+	@cmd dc_elmers_set_offset_x 33
+	@cmd dc_elmers_set_offset_y 50
+	@cmd dc_elmers_set_direction openborconstant("DIRECTION_ADJUST_OPPOSITE")
+	@cmd dc_elmers_set_frame DC_ELMERS_REACT_TILT_FORWARD_0
+	
+	# Apply grapple properties.
+	@cmd dc_elmers_apply_grapple
+	
+	frame	data/chars/galford/grab_soldust_throw_1_u.png
+	
+	# Adjust grapple properties.
+	@cmd dc_elmers_set_offset_x -10
+	@cmd dc_elmers_set_offset_y 80
+	@cmd dc_elmers_set_direction openborconstant("DIRECTION_ADJUST_OPPOSITE")
+	@cmd dc_elmers_set_frame DC_ELMERS_REACT_TILT_DOWN_0
+	
+	# Apply grapple properties.
+	@cmd dc_elmers_apply_grapple
+	
+	frame	data/chars/galford/grab_soldust_throw_2_u.png
+	
+	delay -1000
+	
+	# Adjust grapple properties.
+	@cmd dc_elmers_set_offset_x -52
+	@cmd dc_elmers_set_offset_y 20
+	@cmd dc_elmers_set_direction openborconstant("DIRECTION_ADJUST_OPPOSITE")
+	@cmd dc_elmers_set_frame DC_ELMERS_REACT_FALLING_UP_TILT_0
+	
+	# Apply grapple properties.
+	@cmd dc_elmers_apply_grapple
+	
+	@cmd dc_fidelity_quick_play DC_FIDELITY_TYPE_SOUND_ATTACK_HEAVY_BLADE
+	
+	frame	data/chars/galford/grab_soldust_throw_3_u.png
+	
+	delay 15
+	
+	# Release entity and bounce them away with knockdown.
+	@cmd dc_damage_set_entity dc_elmers_get_entity()
+	@cmd dc_elmers_end_grapple
+	
+	@cmd dc_damage_set_damage_force				30
+	@cmd dc_damage_set_attack_type				openborconstant("ATK_NORMAL")
+	@cmd dc_damage_set_projectile				openborconstant("BLAST_ATTACK")
+	@cmd dc_damage_set_damage_on_landing_force	0
+	@cmd dc_damage_set_direction_adjust			openborconstant("DIRECTION_ADJUST_OPPOSITE")
+	@cmd dc_damage_set_drop_velocity_x			1.5
+	@cmd dc_damage_set_drop_velocity_y			2.0
+	
+	# Apply damage.
+	@cmd dc_damage_apply_damage
+	
+	@cmd dc_elmers_set_instance 2
+	@cmd dc_elmers_set_offset_x -35
+	@cmd dc_elmers_set_offset_y 25
+	@cmd dc_elmers_quick_spot dc_gauntlet_quick_flash("Flash")
+	@cmd dc_elmers_set_instance NULL()
+	
+	
+	frame	data/chars/galford/grab_soldust_throw_4_u.png	
+	
+	delay 8
+	
+	frame	data/chars/galford/grab_soldust_throw_5_u.png	
+	frame	data/chars/galford/grab_soldust_throw_6_u.png	
+	frame	data/chars/galford/grab_soldust_throw_7_u.png	
+	
+	delay 10
+	
+	frame	data/chars/galford/grab_soldust_throw_8_u.png
+	frame	data/chars/galford/block_start_0.png
 anim jumpdelay
 
 	delay	8
