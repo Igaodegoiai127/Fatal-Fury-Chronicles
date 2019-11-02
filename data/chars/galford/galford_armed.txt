@@ -50,7 +50,7 @@ com	u d a    	freespecial5		# Plane attack down.
 com	d f s     	freespecial6		# Weapon switch (for testing).
 
 script				data/chars/andy/scripts/update.c
-keyscript 			data/chars/andy/scripts/key.c
+keyscript 			data/chars/galford/scripts/key.c
 animationscript 	data/chars/galford/scripts/animation.c
 didblockscript  	data/scripts/common/event_block.c
 takedamagescript	data/chars/galford/scripts/takedamage.c
@@ -1806,6 +1806,117 @@ offset	140 207
 	bbox.position.y 115
 	bbox.size.x 50
 	bbox.size.y 80
+
+	frame	data/chars/galford/jump_forward_6.png
+
+anim follow40	# Edge/wall/obstacle jump start
+
+	range -40 40
+
+	delay	12
+	offset	140 207
+	
+	bbox.position.x 108
+	bbox.position.y 99
+	bbox.size.x 48
+	bbox.size.y 62
+	
+	frame	data/chars/galford/jump_wall_start_0.png
+	
+	@cmd dc_hansburg_do_edge_jump_finish	
+	frame	data/chars/galford/jump_wall_start_0.png
+
+anim follow41 # Edge/wall/obstacle jump
+
+	jumpframe 0 3 2.5 0
+
+	delay	8
+	offset	140 207
+	bbox	125 104 50 80	
+
+	move 20
+	frame	data/chars/galford/jump_forward_0.png
+	
+	move 0
+	bbox	85 104 100 55	
+
+	frame	data/chars/galford/jump_forward_1.png
+
+	bbox	110 100 55 95
+
+	frame	data/chars/galford/jump_forward_2.png
+
+	bbox	120 100 45 95
+
+	frame	data/chars/galford/jump_forward_3.png
+
+	bbox	120 140 80 50
+
+	frame	data/chars/galford/jump_forward_4.png
+
+	bbox	105 130 80 65
+
+	frame	data/chars/galford/jump_forward_5.png
+
+	bbox	110 115 50 80
+
+	frame	data/chars/galford/jump_forward_6.png
+
+anim follow42 # Double jump, Neutral
+
+	jumpframe 0 3 0 0
+	dropframe 1
+
+	delay	-1
+	offset	140 207
+	bbox	115 100 50 85	
+
+	frame	data/chars/galford/jump_0.png
+
+	delay	8
+	bbox	115 100 50 80	
+
+	frame	data/chars/galford/jump_1.png
+	frame	data/chars/galford/jump_2.png
+	frame	data/chars/galford/jump_3.png
+	frame	data/chars/galford/jump_4.png
+	frame	data/chars/galford/jump_5.png
+		
+	bbox	115 100 50 85
+	
+	frame	data/chars/galford/jump_6.png
+
+anim follow43 # Double jump, forward
+
+	jumpframe 0 3 2 0
+
+	delay	10
+	offset	140 207
+	bbox	125 104 50 80	
+
+	frame	data/chars/galford/jump_forward_0.png
+	
+	bbox	85 104 100 55	
+
+	frame	data/chars/galford/jump_forward_1.png
+
+	bbox	110 100 55 95
+
+	frame	data/chars/galford/jump_forward_2.png
+
+	bbox	120 100 45 95
+
+	frame	data/chars/galford/jump_forward_3.png
+
+	bbox	120 140 80 50
+
+	frame	data/chars/galford/jump_forward_4.png
+
+	bbox	105 130 80 65
+
+	frame	data/chars/galford/jump_forward_5.png
+
+	bbox	110 115 50 80
 
 	frame	data/chars/galford/jump_forward_6.png
 

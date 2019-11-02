@@ -34,7 +34,7 @@ bflash			Block
 #*****Scripts*****
 
 script				data/chars/andy/scripts/update.c
-keyscript 			data/chars/andy/scripts/key.c
+keyscript 			data/chars/galford/scripts/key.c
 animationscript 	data/chars/galford/scripts/animation.c
 didblockscript  	data/scripts/common/event_block.c
 takedamagescript	data/chars/galford/scripts/takedamage.c
