@@ -710,14 +710,15 @@ anim attack6 # Round Kick
 
 	frame	data/chars/terry/atk_round_kick_2.png
 	
+	idle 1
+
 	bbox.position.x 78
 	bbox.position.y 57
 	bbox.size.x 34
 	bbox.size.y 97
 	
 	frame	data/chars/terry/atk_round_kick_1.png
-	
-	idle 1
+
 	
 	bbox.position.x 58
 	bbox.position.y 60
